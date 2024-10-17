@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="user-scalable=no">
+    <title>Joystick und Video</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: rgb(128, 128, 128);
+            font-size: xx-large;
+            height: 100vh;
+            display: grid;
+            grid-template-columns: 320px 1fr;
+        }
+
+        #dynamicimage {
+            width: 100%;
+            height: 100%;
+        }
+
+        canvas {
+           height: 100vh;
+           background-color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <img id="dynamicimage" src="http://192.168.4.3/capture" alt="Video Stream">
+    <canvas id="canvas"></canvas>
+
+    <script>
+        var canvas, ctx;
+        var width, height, radius, x_orig, y_orig;
+
+        const Directions = Object.freeze({
+            UP: 'up',
+            DOWN: 'down',
+            RIGHT: 'right',
+            LEFT: 'left',
+            UP_LEFT: 'up_left',
+            UP_RIGHT: 'up_right',
+            DOWN_LEFT: 'down_left',
+            DOWN_RIGHT: 'down_right',
+            HALT: 'halt'
+        });
+
+        function send(speed, direction) {
+            var xhr = new XMLHttpRequest();
+            xhr.open("GET", "/coords?speed=" + speed + "&direction=" + direction, true);
+            xhr.send();
+        }
+
+        function get_direction(angle_in_degrees) {
+            if (angle_in_degrees <= 22.5 || angle_in_degrees > 337.5) return Directions.RIGHT;
+            if (angle_in_degrees <= 67.5) return Directions.UP_RIGHT;
+            if (angle_in_degrees <= 112.5) return Directions.UP;
+            if (angle_in_degrees <= 157.5) return Directions.UP_LEFT;
+            if (angle_in_degrees <= 202.5) return Directions.LEFT;
+            if (angle_in_degrees <= 247.5) return Directions.DOWN_LEFT;
+            if (angle_in_degrees <= 292.5) return Directions.DOWN;
+            return Directions.DOWN_RIGHT;
+        }
+
+        let prev_speed = -1, prev_dir = Directions.HALT;
+
+        window.addEventListener('load', () => {
+            canvas = document.getElementById('canvas');
+            ctx = canvas.getContext('2d');
+
+            document.addEventListener('mousedown', startDrawing);
+            document.addEventListener('mouseup', stopDrawing);
+            document.addEventListener('mousemove', Draw);
+
+            document.addEventListener('touchstart', startDrawing);
+            document.addEventListener('touchend', stopDrawing);
+            document.addEventListener('touchmove', Draw);
+
+            window.addEventListener('resize', resizeCanvas);
+            resizeCanvas(); 
+        });
+
+        function updateImage() {
+            const img = document.getElementById('dynamicimage');
+            const timestamp = new Date().getTime();
+            const newSrc = 'http://192.168.4.3/capture?time=' + timestamp;
+            const newImg = new Image();
+            newImg.src = newSrc;
+            newImg.onload = function() {
+                img.src = newSrc; // Nur nach vollständigem Laden aktualisieren
+            };
+        }
+
+        setInterval(updateImage, 250); // 250ms für höhere Bildrate
+
+        function resizeCanvas() {
+            width = window.innerWidth;
+            height = window.innerHeight;
+            radius = Math.min(width, height) / 5;
+            ctx.canvas.width = width * 0.5;
+            ctx.canvas.height = height;
+
+            x_orig = ctx.canvas.width - radius - 100;
+            y_orig = height / 2;
+
+            background();
+            joystick(x_orig, y_orig);
+        }
+
+        function background() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            ctx.beginPath();
+            ctx.arc(x_orig, y_orig, radius + 20, 0, Math.PI * 2, true);
+            ctx.fillStyle = '#ECE5E5';
+            ctx.fill();
+        }
+
+        function joystick(x, y) {
+            ctx.beginPath();
+            ctx.arc(x, y, radius, 0, Math.PI * 2, true);
+            ctx.fillStyle = '#808080';
+            ctx.fill();
+            ctx.strokeStyle = '#a0a0a0';
+            ctx.lineWidth = 8;
+            ctx.stroke();
+        }
+
+        let coord = { x: 0, y: 0 };
+        let paint = false;
+
+        function getPosition(event) {
+            const mouse_x = event.clientX || (event.touches && event.touches[0].clientX);
+            const mouse_y = event.clientY || (event.touches && event.touches[0].clientY);
+            coord.x = mouse_x - canvas.offsetLeft;
+            coord.y = mouse_y - canvas.offsetTop;
+        }
+
+        function is_it_in_the_circle() {
+            const current_radius = Math.sqrt(Math.pow(coord.x - x_orig, 2) + Math.pow(coord.y - y_orig, 2));
+            return radius >= current_radius;
+        }
+
+        function startDrawing(event) {
+            paint = true;
+            getPosition(event);
+            if (is_it_in_the_circle()) {
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+                background();
+                joystick(coord.x, coord.y);
+                Draw(event);
+            }
+        }
+
+        function stopDrawing() {
+            paint = false;
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            background();
+            joystick(x_orig, y_orig);
+            send(0, Directions.HALT);  // Send a HALT signal when the joystick is released
+        }
+
+        function Draw(event) {
+            if (paint) {
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+                background();
+                var angle_in_degrees, x, y, speed;
+                var angle = Math.atan2((coord.y - y_orig), (coord.x - x_orig));
+
+                angle_in_degrees = Math.round((Math.sign(angle) === -1) ? -angle * 180 / Math.PI : 360 - angle * 180 / Math.PI);
+
+                getPosition(event);
+
+                if (is_it_in_the_circle()) {
+                    joystick(coord.x, coord.y);
+                    x = coord.x;
+                    y = coord.y;
+                } else {
+                    x = radius * Math.cos(angle) + x_orig;
+                    y = radius * Math.sin(angle) + y_orig;
+                    joystick(x, y);
+                }
+
+                speed = Math.round(100 * Math.sqrt(Math.pow(x - x_orig, 2) + Math.pow(y - y_orig, 2)) / radius);
+                var direction = get_direction(angle_in_degrees);
+
+                if (speed != prev_speed || direction != prev_dir) {  // Only send if direction or speed changes
+                    send(speed, direction);
+                    prev_speed = speed;
+                    prev_dir = direction;
+                }
+
+                console.log("speed: " + speed + " direction: " + direction);
+            }
+        }
+    </script>
+</body>
+</html>
