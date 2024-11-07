@@ -1,6 +1,15 @@
 #include <WiFi.h>
 #include <SPIFFS.h>
 #include <WebServer.h>
+#include <HCSR04.h>
+
+int leftwheel_pwm = 32;
+int leftwheel_brake = 33;
+int leftwheel = 25;
+
+int rightwheel = 19;
+int rightwheel_brake = 18;
+int rightwheel_pwm = 5;
 
 // Deine WLAN-Zugangsdaten
 const char *ssid = "Carybot";
@@ -34,10 +43,13 @@ void handleRoot()
   server.send(200, "text/html", html);               // HTML an den Client senden
 }
 
+String speed;
+String dir;
+
 void handleCoords()
 {
-  String speed = server.arg("speed");
-  String dir = server.arg("direction");
+  speed = server.arg("speed");
+  dir = server.arg("direction");
 
   Serial.print("Speed: ");
   Serial.println(speed);
@@ -75,10 +87,84 @@ void setup()
   // Webserver starten
   server.begin();
   Serial.println("HTTP server started");
+
+  pinMode(leftwheel, OUTPUT);
+  pinMode(leftwheel_pwm, OUTPUT);
+  pinMode(leftwheel_brake, OUTPUT);
+  digitalWrite(leftwheel_brake, HIGH);
+
+  pinMode(rightwheel, OUTPUT);
+  pinMode(rightwheel_pwm, OUTPUT);
+  pinMode(rightwheel_brake, OUTPUT);
+  digitalWrite(rightwheel_brake, HIGH);
 }
 
+int speed_cb = 0;
+
+void navigate(String dir)
+{
+  speed_cb = speed.toInt() * 2.55;
+  digitalWrite(leftwheel_brake, LOW);
+  digitalWrite(rightwheel_brake, LOW);
+
+  if (dir == "up")
+  {
+    digitalWrite(leftwheel, HIGH);
+    digitalWrite(rightwheel, LOW);
+  }
+  else if (dir == "down")
+  {
+    digitalWrite(leftwheel, LOW);
+    digitalWrite(rightwheel, HIGH);
+  }
+  else if (dir == "left")
+  {
+    digitalWrite(leftwheel, LOW);
+    digitalWrite(rightwheel, LOW);
+  }
+  else if (dir == "right")
+  {
+    digitalWrite(leftwheel, HIGH);
+    digitalWrite(rightwheel, HIGH);
+  }
+  else if (dir == "up_left")
+  {
+    digitalWrite(leftwheel_brake, HIGH);
+    digitalWrite(rightwheel, LOW);
+  }
+  else if (dir == "up_right")
+  {
+    digitalWrite(leftwheel, HIGH);
+    digitalWrite(rightwheel_brake, HIGH);
+  }
+  else if (dir == "down_left")
+  {
+    digitalWrite(leftwheel_brake, HIGH);
+    digitalWrite(rightwheel, HIGH);
+  }
+  else if (dir == "down_right")
+  {
+    digitalWrite(leftwheel, LOW);
+    digitalWrite(rightwheel_brake, HIGH);
+  }
+  else if (dir == "halt")
+  {
+    digitalWrite(leftwheel_brake, HIGH);
+    digitalWrite(rightwheel_brake, HIGH);
+  }
+  else
+  {
+    digitalWrite(leftwheel_brake, HIGH);
+    digitalWrite(rightwheel_brake, HIGH);
+  }
+
+  analogWrite(leftwheel_pwm, speed_cb);
+  analogWrite(rightwheel_pwm, speed_cb);
+}
+    
 void loop()
 {
   // Handle Client-Anfragen
   server.handleClient();
+  navigate(dir);
 }
