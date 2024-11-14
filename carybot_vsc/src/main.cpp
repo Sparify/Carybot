@@ -46,7 +46,7 @@ void handleRoot()
 String speed;
 String dir;
 
-void handleCoords()
+void handleRobot()
 {
   speed = server.arg("speed");
   dir = server.arg("direction");
@@ -57,6 +57,11 @@ void handleCoords()
   Serial.println(dir);
 
   server.send(200, "text/plain", "Coords received");
+}
+
+void handleCam()
+{
+  
 }
 
 void setup()
@@ -82,7 +87,8 @@ void setup()
 
   // Webserver-Root definieren
   server.on("/", handleRoot);
-  server.on("/coords", HTTP_GET, handleCoords);
+  server.on("/move_robot", HTTP_GET, handleRobot);
+  server.on("/move_cam", HTTP_GET, handleCam);
 
   // Webserver starten
   server.begin();
@@ -161,7 +167,7 @@ void navigate(String dir)
   analogWrite(leftwheel_pwm, speed_cb);
   analogWrite(rightwheel_pwm, speed_cb);
 }
-    
+
 void loop()
 {
   // Handle Client-Anfragen

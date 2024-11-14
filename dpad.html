@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="user-scalable=no">
+    <meta name="viewport" content="user-scalable=no" scroll="no">
     <title>Carybot</title>
     <link rel="stylesheet" href="mystyles.css">
 </head>
@@ -13,7 +13,7 @@
     <div id="menu" class="mymenu">
         <a href="javascript:void(0)" class="closebtn" onclick="closemenu()">&times;</a>
         <a href="#">Steuerung</a>
-        <a href="#">Daten</a>
+        <a href="daten.html">Daten</a>
     </div>
 
     <img src="menu-icon.svg" alt="Menü" class="menu-icon" onclick="openmenu()">
@@ -37,8 +37,10 @@
                 oninput="speed_change(this.value)">
         </div>
         <div class="camera-container">
-            <div class="button left">←</div>
-            <div class="button right">→</div>
+            <div class="button left" onmousedown="move_camera(Directions.LEFT)" ontouchstart="move_camera(Directions.LEFT)"
+            onmouseup="stop()" ontouchend="stop()" onmouseleave="stop()" >←</div>
+            <div class="button right" onmousedown="move_camera(Directions.RIGHT)" ontouchstart="move_camera(Directions.RIGHT)"
+            onmouseup="stop()" ontouchend="stop()" onmouseleave="stop()">→</div>
         </div>
     </div>
 </body>
