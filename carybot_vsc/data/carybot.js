@@ -1,4 +1,4 @@
- /*  function updateImage() {
+   function updateImage() {
             const img = document.getElementById('dynamicimage');
             const timestamp = new Date().getTime();
             const newSrc = 'http://192.168.4.3/capture?time=' + timestamp;
@@ -7,9 +7,10 @@
             newImg.onload = function () {
                 img.src = newSrc;
             }
+            console.log("refresh cam");
         }
 
-        setInterval(updateImage, 100);*/
+        setInterval(updateImage, 100);
 
         function openmenu() {
             document.getElementById("menu").style.width = "250px";

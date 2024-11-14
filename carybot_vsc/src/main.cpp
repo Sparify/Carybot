@@ -1,7 +1,6 @@
 #include <WiFi.h>
 #include <SPIFFS.h>
 #include <WebServer.h>
-#include <HCSR04.h>
 
 int leftwheel_pwm = 32;
 int leftwheel_brake = 33;
@@ -36,11 +35,45 @@ String readFile(fs::FS &fs, const char *path)
   return fileContent;
 }
 
-// Handler für die Root-Seite ("/")
 void handleRoot()
 {
-  String html = readFile(SPIFFS, "/webserver.html"); // HTML-Datei von SPIFFS laden
-  server.send(200, "text/html", html);               // HTML an den Client senden
+  String dpad = readFile(SPIFFS, "/dpad.html");
+  server.send(200, "text/html", dpad);
+}
+
+void handleControl()
+{
+  String dpad = readFile(SPIFFS, "/dpad.html");
+  server.send(200, "text/html", dpad);
+}
+
+void handleIcon()
+{
+  String icon = readFile(SPIFFS, "/menu-icon.svg");
+  server.send(200, "image/svg+xml", icon);
+}
+
+void handleStyles()
+{
+  String css = readFile(SPIFFS, "/mystyles.css");
+  server.send(200, "text/css", css);
+}
+
+void handleScript()
+{
+  String js = readFile(SPIFFS, "/carybot.js");
+  server.send(200, "application/javascript", js);
+}
+
+void handleDaten()
+{
+  String daten = readFile(SPIFFS, "/daten.html");
+  server.send(200, "text/html", daten);
+}
+
+void handleFavicon()
+{
+  server.send(204);
 }
 
 String speed;
@@ -61,7 +94,6 @@ void handleRobot()
 
 void handleCam()
 {
-  
 }
 
 void setup()
@@ -85,10 +117,16 @@ void setup()
   }
   Serial.println("SPIFFS mounted successfully");
 
-  // Webserver-Root definieren
-  server.on("/", handleRoot);
   server.on("/move_robot", HTTP_GET, handleRobot);
   server.on("/move_cam", HTTP_GET, handleCam);
+
+  server.on("/", handleRoot);
+  server.on("/dpad.html", handleControl);
+  server.on("/menu-icon.svg", handleIcon);
+  server.on("/mystyles.css", handleStyles);
+  server.on("/carybot.js", handleScript);
+  server.on("/daten.html", handleDaten);
+  server.on("/favicon.ico", handleFavicon);
 
   // Webserver starten
   server.begin();
@@ -170,7 +208,6 @@ void navigate(String dir)
 
 void loop()
 {
-  // Handle Client-Anfragen
   server.handleClient();
   navigate(dir);
 }

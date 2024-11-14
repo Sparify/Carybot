@@ -31,6 +31,11 @@
 const char *ssid = "Carybot";
 const char *password = "123456789";
 
+IPAddress local_IP(192,168,4,3);
+IPAddress gateway(192, 168, 4, 1);
+IPAddress subnet(255, 255, 255, 0);
+
+
 WebServer server(80);
 
 void startCameraServer();
@@ -47,6 +52,10 @@ void setup() {
 
   esp_task_wdt_init(&wdt_config);
   esp_task_wdt_add(NULL);
+
+  if(!WiFi.config(local_IP, gateway, subnet)){
+    Serial.println("Fehler bei der IP-Konfiguration");
+  }
 
   WiFi.begin(ssid, password);
   while (WiFi.status() != WL_CONNECTED) {
@@ -117,7 +126,7 @@ void startCameraServer() {
     html += "<img id='camImage' src='/capture' width='100%'>";
     html += "</body></html>";
 
-    server.send(100, "text/html", html);
+    server.send(200, "text/html", html);
   });
 
   server.on("/capture", HTTP_GET, []() {
