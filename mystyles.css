@@ -1,3 +1,9 @@
+body {
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
 .dpad-container {
     display: grid;
     grid-template-areas:
@@ -127,7 +133,8 @@ input[type=range] {
 
 #main {
     transition: margin-left .5s;
-    padding: 20px;
+    padding: 0;
+    height: 100%;
 }
 
 @media screen and (max-height: 450px) {
