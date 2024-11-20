@@ -15,13 +15,13 @@
      const menu = document.getElementById("menu");
      const main = document.getElementById("main");
 
-     if (menu.style.width === "250px") {
+     if (menu.style.width === "300px") {
          menu.style.width = "0";
          main.style.marginLeft = "0";
          document.body.style.backgroundColor = "white";
      } else {
-         menu.style.width = "250px";
-         main.style.marginLeft = "250px";
+         menu.style.width = "300px";
+         main.style.marginLeft = "300px";
          document.body.style.backgroundColor = "rgba(0,0,0,0,4)";
      }
  }

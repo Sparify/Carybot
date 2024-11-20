@@ -132,9 +132,13 @@ input[type=range] {
 }
 
 #main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     transition: margin-left .5s;
     padding: 0;
     height: 100%;
+    gap: 20px;
 }
 
 @media screen and (max-height: 450px) {
@@ -156,4 +160,11 @@ input[type=range] {
     cursor: pointer;
     z-index: 2;
     background-color: transparent
+}
+
+.daten {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: white;
+    font-size: 1.2em;
 }
