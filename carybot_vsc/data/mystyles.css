@@ -132,13 +132,9 @@ input[type=range] {
 }
 
 #main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     transition: margin-left .5s;
     padding: 0;
     height: 100%;
-    gap: 20px;
 }
 
 @media screen and (max-height: 450px) {

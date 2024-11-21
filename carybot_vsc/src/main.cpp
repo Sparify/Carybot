@@ -65,12 +65,6 @@ void handleScript()
   server.send(200, "application/javascript", js);
 }
 
-void handleDaten()
-{
-  String daten = readFile(SPIFFS, "/daten.html");
-  server.send(200, "text/html", daten);
-}
-
 void handleFavicon()
 {
   server.send(204);
@@ -94,6 +88,7 @@ void handleRobot()
 
 void handleCam()
 {
+  // Kamera-Servo Steuerung
 }
 
 void setup()
@@ -125,7 +120,6 @@ void setup()
   server.on("/menu-icon.svg", handleIcon);
   server.on("/mystyles.css", handleStyles);
   server.on("/carybot.js", handleScript);
-  server.on("/daten.html", handleDaten);
   server.on("/favicon.ico", handleFavicon);
 
   // Webserver starten
