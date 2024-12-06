@@ -1,4 +1,4 @@
- /*  function updateImage() {
+   function updateImage() {
             const img = document.getElementById('dynamicimage');
             const timestamp = new Date().getTime();
             const newSrc = 'http://192.168.4.3/capture?time=' + timestamp;
@@ -9,7 +9,7 @@
             }
         }
 
-        setInterval(updateImage, 100);*/
+        setInterval(updateImage, 100);
 
  function togglemenu() {
      const menu = document.getElementById("menu");
@@ -66,6 +66,9 @@
  function stop() {
      if (currentdir_robot !== Directions.HALT) {
          currentdir_robot = Directions.HALT;
+         var xhr = new XMLHttpRequest();
+         xhr.open("GET", "/move_robot?speed=" + speed + "&direction=" + Directions.HALT, true);
+         xhr.send();
          console.log("Direction: halt");
      }
 
