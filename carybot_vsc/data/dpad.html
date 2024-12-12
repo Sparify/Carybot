@@ -20,26 +20,19 @@
     <div id="main">
         <img id="dynamicimage" alt="Video Stream" src="http://192.168.4.3/capture">
         <div class="dpad-container">
-            <div class="button up" onmousedown="send(Directions.UP)" ontouchstart="send(Directions.UP)"
-                onmouseup="stop()" ontouchend="stop()" onmouseleave="stop()">↑</div>
-            <div class="button left" onmousedown="send(Directions.LEFT)" ontouchstart="send(Directions.LEFT)"
-                onmouseup="stop()" ontouchend="stop()" onmouseleave="stop()">←</div>
-            <div class="button center" onmousedown="send(Directions.HALT)" ontouchstart="send(Directions.HALT)"
-                onmouseup="stop()" ontouchend="stop()" onmouseleave="stop()"></div>
-            <div class="button right" onmousedown="send(Directions.RIGHT)" ontouchstart="send(Directions.RIGHT)"
-                onmouseup="stop()" ontouchend="stop()" onmouseleave="stop()">→</div>
-            <div class="button down" onmousedown="send(Directions.DOWN)" ontouchstart="send(Directions.DOWN)"
-                onmouseup="stop()" ontouchend="stop()" onmouseleave="stop()">↓</div>
+            <div class="button up" data-direction="up">↑</div>
+            <div class="button left" data-direction="left">←</div>
+            <div class="button center" data-direction="halt"></div>
+            <div class="button right" data-direction="right">→</div>
+            <div class="button down" data-direction="down">↓</div>
         </div>
         <div class="slider-container">
             <input type="range" min="0" max="100" value="50" class="slider" id="rangeSlider"
                 oninput="speed_change(this.value)">
         </div>
         <div class="camera-container">
-            <div class="button left" onmousedown="move_camera(Directions.LEFT)" ontouchstart="move_camera(Directions.LEFT)"
-            onmouseup="stop()" ontouchend="stop()" onmouseleave="stop()" >←</div>
-            <div class="button right" onmousedown="move_camera(Directions.RIGHT)" ontouchstart="move_camera(Directions.RIGHT)"
-            onmouseup="stop()" ontouchend="stop()" onmouseleave="stop()">→</div>
+            <div class="button left" data-direction="left">←</div>
+            <div class="button right" data-direction="right">→</div>
         </div>
     </div>
 </body>

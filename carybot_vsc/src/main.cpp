@@ -29,18 +29,22 @@ void handleWebSocketMessage(void *arg, uint8_t *data, size_t len)
   if (info->final && info->index == 0 && info->len == len && info->opcode == WS_TEXT)
   {
     String message = String((char *)data).substring(0, len);
-    Serial.println("Nachricht empfangen: " + message);
+    Serial.println("Nachricht empfangen: " + message + "\n");
 
-    StaticJsonDocument<200> jsonDoc;
+    const size_t CAPACITY = JSON_OBJECT_SIZE(2);
+    StaticJsonDocument<CAPACITY> jsonDoc;
     DeserializationError error = deserializeJson(jsonDoc, message);
 
-    if(!error){
-      if(jsonDoc.containsKey("robot_direction")){
+    if (!error)
+    {
+      if (jsonDoc.containsKey("robot_direction"))
+      {
         dir = jsonDoc["robot_direction"].as<String>();
         speed = jsonDoc["speed"].as<String>();
-        Serial.println("Direction :" + dir + "  Speed: " + speed);
+        Serial.println("Direction :" + dir + "\nSpeed: " + speed + "\n\n");
       }
-      else if(jsonDoc.containsKey("cam_direction")){
+      else if (jsonDoc.containsKey("cam_direction"))
+      {
         // #ToDo: KameraSteuerung
       }
     }
