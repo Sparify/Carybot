@@ -1,6 +1,8 @@
 #include <WiFi.h>
 #include <SPIFFS.h>
-#include <WebServer.h>
+#include <ESPAsyncWebServer.h>
+#include <AsyncTCP.h>
+#include "ArduinoJson.h"
 
 int leftwheel_pwm = 32;
 int leftwheel_brake = 33;
@@ -15,7 +17,43 @@ const char *ssid = "Carybot";
 const char *password = "123456789";
 
 // Webserver läuft auf Port 80
-WebServer server(80);
+AsyncWebServer server(80);
+AsyncWebSocket ws("/ws");
+
+String speed = "0";
+String dir = "halt";
+
+void handleWebSocketMessage(void *arg, uint8_t *data, size_t len)
+{
+  AwsFrameInfo *info = (AwsFrameInfo *)arg;
+  if (info->final && info->index == 0 && info->len == len && info->opcode == WS_TEXT)
+  {
+    String message = String((char *)data).substring(0, len);
+    Serial.println("Nachricht empfangen: " + message);
+
+    StaticJsonDocument<200> jsonDoc;
+    DeserializationError error = deserializeJson(jsonDoc, message);
+
+    if(!error){
+      if(jsonDoc.containsKey("robot_direction")){
+        dir = jsonDoc["robot_direction"].as<String>();
+        speed = jsonDoc["speed"].as<String>();
+        Serial.println("Direction :" + dir + "  Speed: " + speed);
+      }
+      else if(jsonDoc.containsKey("cam_direction")){
+        // #ToDo: KameraSteuerung
+      }
+    }
+  }
+}
+
+void onEvent(AsyncWebSocket *server, AsyncWebSocketClient *client, AwsEventType type, void *arg, uint8_t *data, size_t len)
+{
+  if (type == WS_EVT_DATA)
+  {
+    handleWebSocketMessage(arg, data, len);
+  }
+}
 
 // Funktion zum Laden der HTML-Datei aus SPIFFS
 String readFile(fs::FS &fs, const char *path)
@@ -33,72 +71,6 @@ String readFile(fs::FS &fs, const char *path)
     fileContent += String((char)file.read());
   }
   return fileContent;
-}
-
-void setCommonHeaders()
-{
-  server.sendHeader("Access-Control-Allow-Origin", "*");
-  server.sendHeader("Access-Control-Allow-Methods", "GET, POST, OPTIONS");
-  server.sendHeader("Access-Control-Allow-Headers", "Content-Type");
-}
-
-void handleRoot()
-{
-  setCommonHeaders();
-  String dpad = readFile(SPIFFS, "/dpad.html");
-  server.send(200, "text/html", dpad);
-}
-
-void handleControl()
-{
-  setCommonHeaders();
-  String dpad = readFile(SPIFFS, "/dpad.html");
-  server.send(200, "text/html", dpad);
-}
-
-void handleIcon()
-{
-  setCommonHeaders();
-  String icon = readFile(SPIFFS, "/menu-icon.svg");
-  server.send(200, "image/svg+xml", icon);
-}
-
-void handleStyles()
-{
-  setCommonHeaders();
-  String css = readFile(SPIFFS, "/mystyles.css");
-  server.send(200, "text/css", css);
-}
-
-void handleScript()
-{
-  setCommonHeaders();
-  String js = readFile(SPIFFS, "/carybot.js");
-  server.send(200, "application/javascript", js);
-}
-
-void handleFavicon()
-{
-  setCommonHeaders();
-  server.send(204);
-}
-
-String speed = "0";
-String dir = "halt";
-
-void handleRobot()
-{
-  setCommonHeaders();
-
-  speed = server.arg("speed");
-  dir = server.arg("direction");
-
-  Serial.print("Speed: ");
-  Serial.println(speed);
-  Serial.print("Direction: ");
-  Serial.println(dir);
-
-  server.send(200, "text/plain", "Coords received");
 }
 
 void handleCam()
@@ -134,22 +106,28 @@ void setup()
   }
   Serial.println("SPIFFS mounted successfully");
 
-  server.on("/move_robot", HTTP_GET, handleRobot);
-  server.on("/move_cam", HTTP_GET, handleCam);
+  ws.onEvent(onEvent);
+  server.addHandler(&ws);
 
-  server.onNotFound([]()
-                    { 
-                    setCommonHeaders();
-                    server.send(404, "text/plain", "Not Found"); });
+  server.on("/", HTTP_GET, [](AsyncWebServerRequest *request)
+            {
+    String dpad = readFile(SPIFFS, "/dpad.html");
+    request->send(200, "text/html", dpad); });
 
-  server.on("/", HTTP_GET, []()
-            { handleRoot(); });
+  server.on("/menu-icon.svg", HTTP_GET, [](AsyncWebServerRequest *request)
+            {
+    String icon = readFile(SPIFFS, "/menu-icon.svg");
+    request->send(200, "image/svg+xml", icon); });
 
-  server.on("/dpad.html", handleControl);
-  server.on("/menu-icon.svg", handleIcon);
-  server.on("/mystyles.css", handleStyles);
-  server.on("/carybot.js", handleScript);
-  server.on("/favicon.ico", handleFavicon);
+  server.on("/mystyles.css", HTTP_GET, [](AsyncWebServerRequest *request)
+            {
+    String css = readFile(SPIFFS, "/mystyles.css");
+    request->send(200, "text/css", css); });
+
+  server.on("/carybot.js", HTTP_GET, [](AsyncWebServerRequest *request)
+            {
+    String js = readFile(SPIFFS, "/carybot.js");
+    request->send(200, "application/javascript", js); });
 
   // Webserver starten
   server.begin();
@@ -250,6 +228,6 @@ void navigate()
 
 void loop()
 {
-  server.handleClient();
+  ws.cleanupClients();
   navigate();
 }

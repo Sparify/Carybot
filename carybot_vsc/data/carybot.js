@@ -43,12 +43,20 @@
      speed = input_speed;
  }
 
+ const websocket = new WebSocket(`ws://${window.location.host}/ws`);
+ websocket.onmessage = (event) => {
+    console.log("Nachricht: ", event.data);
+ };
+
  function send(direction) {
      if (currentdir_robot !== direction) {
          currentdir_robot = direction;
-         var xhr = new XMLHttpRequest();
-         xhr.open("GET", "/move_robot?speed=" + speed + "&direction=" + direction, true);
-         xhr.send();
+
+         const message = JSON.stringify({
+            robot_direction: currentdir_robot,
+            speed: speed
+         });
+         websocket.send(message);
          console.log("Direction: " + direction + " Speed: " + speed);
      }
  }
@@ -56,9 +64,11 @@
  function move_camera(direction) {
      if (currentdir_cam !== direction) {
          currentdir_cam = direction;
-         var xhr = new XMLHttpRequest();
-         xhr.open("GET", "/move_cam?direction=" + direction, true);
-         xhr.send();
+
+         const message = JSON.stringify({
+            cam_direction: currentdir_cam
+         });
+         websocket.send(message)
          console.log("Direction cam: " + direction);
      }
  }
@@ -66,9 +76,7 @@
  function stop() {
      if (currentdir_robot !== Directions.HALT) {
          currentdir_robot = Directions.HALT;
-         var xhr = new XMLHttpRequest();
-         xhr.open("GET", "/move_robot?speed=" + speed + "&direction=" + Directions.HALT, true);
-         xhr.send();
+         websocket.send(Directions.HALT);
          console.log("Direction: halt");
      }
 
