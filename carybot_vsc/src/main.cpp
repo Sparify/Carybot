@@ -72,23 +72,22 @@ void handleWebSocketMessage(void *arg, uint8_t *data, size_t len)
   if (info->final && info->index == 0 && info->len == len && info->opcode == WS_TEXT)
   {
     String message = String((char *)data).substring(0, len);
-    //Serial.println("Nachricht empfangen: " + message + "\n");
+    // Serial.println("Nachricht empfangen: " + message + "\n");
 
-    const size_t CAPACITY = JSON_OBJECT_SIZE(2);
-    StaticJsonDocument<CAPACITY> jsonDoc;
+    StaticJsonDocument<200> jsonDoc;
     DeserializationError error = deserializeJson(jsonDoc, message);
 
     if (!error)
     {
       if (jsonDoc.containsKey("robot_direction"))
       {
-        dir = stringToDirection(jsonDoc["robot_direction"].as<String>());
+        const char *robot_direction = jsonDoc["robot_direction"];
+        if (robot_direction)
+        {
+          dir = stringToDirection(robot_direction);
+        }
         speed = jsonDoc["speed"].as<String>();
-        //Serial.println("Direction :" + String(dir) + "\nSpeed: " + speed + "\n\n");
-      }
-      else if (jsonDoc.containsKey("cam_direction"))
-      {
-        // #ToDo: KameraSteuerung
+        // Serial.println("Direction :" + String(dir) + "\nSpeed: " + speed + "\n\n");
       }
     }
   }
@@ -219,13 +218,14 @@ void stop()
   Serial.println("Stop");
 }
 
-void cam_turnRight(){
+void cam_turnRight()
+{
   // #TODO
   Serial.println("Cam_Rechts");
-  
 }
 
-void cam_turnLeft(){
+void cam_turnLeft()
+{
   // #TODO
   Serial.println("Cam_Links");
 }
@@ -241,7 +241,6 @@ void navigate()
   {
     speed_cb = speed.toInt() * 2.55;
     lastSpeed = speed_cb;
-    lastDir = dir;
 
     // Motorbremsen deaktivieren
     digitalWrite(leftwheel_brake, LOW);
@@ -268,7 +267,7 @@ void navigate()
     case HALT:
       stop();
       break;
-    
+
     case CAM_LEFT:
       cam_turnLeft();
       break;
@@ -289,6 +288,8 @@ void navigate()
       analogWrite(rightwheel_pwm, speed_cb);
       lastPWM = speed_cb;
     }
+
+    lastDir = dir;
   }
 }
 
