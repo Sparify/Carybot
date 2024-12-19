@@ -20,8 +20,51 @@ const char *password = "123456789";
 AsyncWebServer server(80);
 AsyncWebSocket ws("/ws");
 
+enum Direction
+{
+  HALT,
+  UP,
+  DOWN,
+  LEFT,
+  RIGHT,
+  CAM_RIGHT,
+  CAM_LEFT
+};
+
 String speed = "0";
-String dir = "halt";
+Direction dir = HALT;
+
+Direction stringToDirection(const String &str)
+{
+  if (str == "up")
+  {
+    return UP;
+  }
+  else if (str == "down")
+  {
+    return DOWN;
+  }
+  else if (str == "left")
+  {
+    return LEFT;
+  }
+  else if (str == "right")
+  {
+    return RIGHT;
+  }
+  else if (str == "cam_left")
+  {
+    return CAM_LEFT;
+  }
+  else if (str == "cam_right")
+  {
+    return CAM_RIGHT;
+  }
+  else
+  {
+    return HALT;
+  }
+}
 
 void handleWebSocketMessage(void *arg, uint8_t *data, size_t len)
 {
@@ -29,7 +72,7 @@ void handleWebSocketMessage(void *arg, uint8_t *data, size_t len)
   if (info->final && info->index == 0 && info->len == len && info->opcode == WS_TEXT)
   {
     String message = String((char *)data).substring(0, len);
-    Serial.println("Nachricht empfangen: " + message + "\n");
+    //Serial.println("Nachricht empfangen: " + message + "\n");
 
     const size_t CAPACITY = JSON_OBJECT_SIZE(2);
     StaticJsonDocument<CAPACITY> jsonDoc;
@@ -39,9 +82,9 @@ void handleWebSocketMessage(void *arg, uint8_t *data, size_t len)
     {
       if (jsonDoc.containsKey("robot_direction"))
       {
-        dir = jsonDoc["robot_direction"].as<String>();
+        dir = stringToDirection(jsonDoc["robot_direction"].as<String>());
         speed = jsonDoc["speed"].as<String>();
-        Serial.println("Direction :" + dir + "\nSpeed: " + speed + "\n\n");
+        //Serial.println("Direction :" + String(dir) + "\nSpeed: " + speed + "\n\n");
       }
       else if (jsonDoc.containsKey("cam_direction"))
       {
@@ -75,13 +118,6 @@ String readFile(fs::FS &fs, const char *path)
     fileContent += String((char)file.read());
   }
   return fileContent;
-}
-
-void handleCam()
-{
-  // setCommonHeaders();
-
-  // ToDo: Kamera-Servo Steuerung
 }
 
 void setup()
@@ -152,37 +188,53 @@ void moveForward()
 {
   digitalWrite(leftwheel, HIGH);
   digitalWrite(rightwheel, LOW);
+  Serial.println("Vorwärts");
 }
 
 void moveBackward()
 {
   digitalWrite(leftwheel, LOW);
   digitalWrite(rightwheel, HIGH);
+  Serial.println("Rückwärts");
 }
 
 void turnLeft()
 {
   digitalWrite(leftwheel, LOW);
   digitalWrite(rightwheel, LOW);
+  Serial.println("Links");
 }
 
 void turnRight()
 {
   digitalWrite(leftwheel, HIGH);
   digitalWrite(rightwheel, HIGH);
+  Serial.println("Rechts");
 }
 
 void stop()
 {
   digitalWrite(leftwheel_brake, HIGH);
   digitalWrite(rightwheel_brake, HIGH);
+  Serial.println("Stop");
+}
+
+void cam_turnRight(){
+  // #TODO
+  Serial.println("Cam_Rechts");
+  
+}
+
+void cam_turnLeft(){
+  // #TODO
+  Serial.println("Cam_Links");
 }
 
 int speed_cb = 0;
 
 void navigate()
 {
-  static String lastDir = "";
+  static Direction lastDir = HALT;
   static int lastSpeed = -1;
 
   if (dir != lastDir || speed_cb != lastSpeed)
@@ -195,29 +247,39 @@ void navigate()
     digitalWrite(leftwheel_brake, LOW);
     digitalWrite(rightwheel_brake, LOW);
 
-    if (dir == "up") // Vorwärts
+    switch (dir)
     {
+    case UP:
       moveForward();
-    }
-    else if (dir == "down") // Rückwärts
-    {
+      break;
+
+    case DOWN:
       moveBackward();
-    }
-    else if (dir == "left") // Links
-    {
+      break;
+
+    case LEFT:
       turnLeft();
-    }
-    else if (dir == "right") // Rechts
-    {
+      break;
+
+    case RIGHT:
       turnRight();
-    }
-    else if (dir == "halt")
-    {
+      break;
+
+    case HALT:
       stop();
-    }
-    else
-    {
+      break;
+    
+    case CAM_LEFT:
+      cam_turnLeft();
+      break;
+
+    case CAM_RIGHT:
+      cam_turnRight();
+      break;
+
+    default:
       stop();
+      break;
     }
 
     static int lastPWM = -1;

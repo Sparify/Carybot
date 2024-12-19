@@ -27,11 +27,11 @@
    }
 
    document.addEventListener('dragstart', event => {
-    event.preventDefault();
+       event.preventDefault();
    });
 
    document.addEventListener('contextmenu', event => {
-        event.preventDefault();
+       event.preventDefault();
    });
 
    document.addEventListener('mousedown', (event) => {
@@ -132,7 +132,10 @@
        if (websocket.readyState === WebSocket.OPEN) {
            if (currentdir_robot !== Directions.HALT) {
                currentdir_robot = Directions.HALT;
-               websocket.send(Directions.HALT);
+               websocket.send(JSON.stringify({
+                   robot_direction: Directions.HALT,
+                   speed: speed
+               }));
                console.log('Message sent: halt');
            }
        } else {
@@ -141,19 +144,6 @@
    }
 
    connectWebSocket();
-
-
-   function move_camera(direction) {
-       if (currentdir_cam !== direction) {
-           currentdir_cam = direction;
-
-           const message = JSON.stringify({
-               cam_direction: currentdir_cam
-           });
-           websocket.send(message)
-           console.log("Direction cam: " + direction);
-       }
-   }
 
    function updateSliderValue(value) {
        console.log("Slider Wert: " + value);
