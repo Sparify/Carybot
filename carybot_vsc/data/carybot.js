@@ -26,6 +26,14 @@
        }
    }
 
+   document.addEventListener('dragstart', event => {
+    event.preventDefault();
+   });
+
+   document.addEventListener('contextmenu', event => {
+        event.preventDefault();
+   });
+
    document.addEventListener('mousedown', (event) => {
        const target = event.target.closest('.button');
        if (target) {
@@ -84,6 +92,7 @@
 
        websocket.onopen = () => {
            console.log('WebSocket connection established');
+           document.getElementById('Verbindung').innerText = 'Verbindungsstatus: Connected';
        };
 
        websocket.onmessage = (event) => {
@@ -92,11 +101,13 @@
 
        websocket.onclose = () => {
            console.error('WebSocket closed. Attempting to reconnect...');
+           document.getElementById('Verbindung').innerText = 'Verbindungsstatus: Disconnected';
            setTimeout(connectWebSocket, 5000); // Versuche, die Verbindung wiederherzustellen.
        };
 
        websocket.onerror = (error) => {
            console.error('WebSocket error:', error);
+           document.getElementById('Verbindung').innerText = 'Verbindungsstatus: Error';
        };
    }
 
@@ -119,11 +130,11 @@
 
    function stop() {
        if (websocket.readyState === WebSocket.OPEN) {
-            if(currentdir_robot !== Directions.HALT){
-                currentdir_robot = Directions.HALT;
-                websocket.send(Directions.HALT);
-                console.log('Message sent: halt');
-            }
+           if (currentdir_robot !== Directions.HALT) {
+               currentdir_robot = Directions.HALT;
+               websocket.send(Directions.HALT);
+               console.log('Message sent: halt');
+           }
        } else {
            console.error('Cannot send message. WebSocket is not open.');
        }

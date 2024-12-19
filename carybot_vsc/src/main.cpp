@@ -230,8 +230,16 @@ void navigate()
   }
 }
 
+unsigned int lastCleanup = 0;
+const unsigned long cleanupInterval = 100;
+
 void loop()
 {
-  ws.cleanupClients();
+  unsigned long now = millis();
+  if (now - lastCleanup > cleanupInterval)
+  {
+    ws.cleanupClients();
+    lastCleanup = now;
+  }
   navigate();
 }
