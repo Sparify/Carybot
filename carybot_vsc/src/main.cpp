@@ -4,13 +4,24 @@
 #include <AsyncTCP.h>
 #include "ArduinoJson.h"
 
-int leftwheel_pwm = 32;
-int leftwheel_brake = 33;
-int leftwheel = 25;
+int leftfrontwheel_pwm = 32;
+int leftfrontwheel_brake = 33;
+int leftfrontwheel = 25;
 
-int rightwheel = 19;
-int rightwheel_brake = 18;
-int rightwheel_pwm = 5;
+/*------------------WIP*/
+int leftrearwheel_pwm = 19;
+int leftrearwheel_brake = 18;
+int leftrearwheel = 5;
+
+
+int rightfrontwheel = 15;
+int rightfrontwheel_brake = 2;
+int rightfrontwheel_pwm = 4;
+
+/*-----------------WIP*/
+int rightrearwheel = 12;
+int rightrearwheel_brake = 14;
+int rightrearwheel_pwm = 27;
 
 // Deine WLAN-Zugangsdaten
 const char *ssid = "Carybot";
@@ -172,49 +183,72 @@ void setup()
   server.begin();
   Serial.println("HTTP server started");
 
-  pinMode(leftwheel, OUTPUT);
-  pinMode(leftwheel_pwm, OUTPUT);
-  pinMode(leftwheel_brake, OUTPUT);
-  digitalWrite(leftwheel_brake, HIGH);
+  pinMode(leftfrontwheel, OUTPUT);
+  pinMode(leftfrontwheel_pwm, OUTPUT);
+  pinMode(leftfrontwheel_brake, OUTPUT);
+  digitalWrite(leftfrontwheel_brake, HIGH);
 
-  pinMode(rightwheel, OUTPUT);
-  pinMode(rightwheel_pwm, OUTPUT);
-  pinMode(rightwheel_brake, OUTPUT);
-  digitalWrite(rightwheel_brake, HIGH);
+  pinMode(rightfrontwheel, OUTPUT);
+  pinMode(rightfrontwheel_pwm, OUTPUT);
+  pinMode(rightfrontwheel_brake, OUTPUT);
+  digitalWrite(rightfrontwheel_brake, HIGH);
+
+  
+  pinMode(leftrearwheel, OUTPUT);
+  pinMode(leftrearwheel_pwm, OUTPUT);
+  pinMode(leftrearwheel_brake, OUTPUT);
+  digitalWrite(leftrearwheel_brake, HIGH);
+
+
+  pinMode(rightrearwheel, OUTPUT);
+  pinMode(rightrearwheel_pwm, OUTPUT);
+  pinMode(rightrearwheel_brake, OUTPUT);
+  digitalWrite(rightrearwheel_brake, HIGH);
+
 }
 
 void moveForward()
 {
-  digitalWrite(leftwheel, HIGH);
-  digitalWrite(rightwheel, LOW);
+  digitalWrite(leftfrontwheel, HIGH);
+  digitalWrite(rightfrontwheel, LOW); 
+  digitalWrite(leftrearwheel, HIGH);
+  digitalWrite(rightrearwheel, LOW);
   Serial.println("Vorwärts");
 }
 
 void moveBackward()
 {
-  digitalWrite(leftwheel, LOW);
-  digitalWrite(rightwheel, HIGH);
+  digitalWrite(leftfrontwheel, LOW);
+  digitalWrite(rightfrontwheel, HIGH);
+  digitalWrite(leftrearwheel, LOW);
+  digitalWrite(rightrearwheel, HIGH);
   Serial.println("Rückwärts");
 }
 
 void turnLeft()
 {
-  digitalWrite(leftwheel, LOW);
-  digitalWrite(rightwheel, LOW);
+  digitalWrite(leftfrontwheel, LOW);
+  digitalWrite(rightfrontwheel, LOW);
+  digitalWrite(leftrearwheel, LOW);
+  digitalWrite(rightrearwheel, LOW);
   Serial.println("Links");
 }
 
 void turnRight()
 {
-  digitalWrite(leftwheel, HIGH);
-  digitalWrite(rightwheel, HIGH);
+  digitalWrite(leftfrontwheel, HIGH);
+  digitalWrite(rightfrontwheel, HIGH);
+  digitalWrite(leftrearwheel, HIGH);
+  digitalWrite(rightrearwheel, HIGH);
   Serial.println("Rechts");
 }
 
 void stop()
 {
-  digitalWrite(leftwheel_brake, HIGH);
-  digitalWrite(rightwheel_brake, HIGH);
+  digitalWrite(leftfrontwheel_brake, HIGH);
+  digitalWrite(rightfrontwheel_brake, HIGH);
+  digitalWrite(leftrearwheel_brake, HIGH);
+  digitalWrite(rightrearwheel_brake, HIGH);
   Serial.println("Stop");
 }
 
@@ -243,8 +277,10 @@ void navigate()
     lastSpeed = speed_cb;
 
     // Motorbremsen deaktivieren
-    digitalWrite(leftwheel_brake, LOW);
-    digitalWrite(rightwheel_brake, LOW);
+    digitalWrite(leftfrontwheel_brake, LOW);
+    digitalWrite(rightfrontwheel_brake, LOW);
+    digitalWrite(leftrearwheel_brake, LOW);
+    digitalWrite(rightrearwheel_brake, LOW);
 
     switch (dir)
     {
@@ -284,8 +320,10 @@ void navigate()
     static int lastPWM = -1;
     if (lastPWM != speed_cb)
     {
-      analogWrite(leftwheel_pwm, speed_cb);
-      analogWrite(rightwheel_pwm, speed_cb);
+      analogWrite(leftfrontwheel_pwm, speed_cb);
+      analogWrite(rightfrontwheel_pwm, speed_cb);
+      analogWrite(leftrearwheel_pwm, speed_cb);
+      analogWrite(rightrearwheel_pwm, speed_cb);
       lastPWM = speed_cb;
     }
 
