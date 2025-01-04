@@ -13,7 +13,6 @@ int leftrearwheel_pwm = 19;
 int leftrearwheel_brake = 18;
 int leftrearwheel = 5;
 
-
 int rightfrontwheel = 15;
 int rightfrontwheel_brake = 2;
 int rightfrontwheel_pwm = 4;
@@ -193,24 +192,21 @@ void setup()
   pinMode(rightfrontwheel_brake, OUTPUT);
   digitalWrite(rightfrontwheel_brake, HIGH);
 
-  
   pinMode(leftrearwheel, OUTPUT);
   pinMode(leftrearwheel_pwm, OUTPUT);
   pinMode(leftrearwheel_brake, OUTPUT);
   digitalWrite(leftrearwheel_brake, HIGH);
 
-
   pinMode(rightrearwheel, OUTPUT);
   pinMode(rightrearwheel_pwm, OUTPUT);
   pinMode(rightrearwheel_brake, OUTPUT);
   digitalWrite(rightrearwheel_brake, HIGH);
-
 }
 
 void moveForward()
 {
   digitalWrite(leftfrontwheel, HIGH);
-  digitalWrite(rightfrontwheel, LOW); 
+  digitalWrite(rightfrontwheel, LOW);
   digitalWrite(leftrearwheel, HIGH);
   digitalWrite(rightrearwheel, LOW);
   Serial.println("Vorwärts");
@@ -256,12 +252,20 @@ void cam_turnRight()
 {
   // #TODO
   Serial.println("Cam_Rechts");
+  digitalWrite(leftfrontwheel_brake, HIGH);
+  digitalWrite(rightfrontwheel_brake, HIGH);
+  digitalWrite(leftrearwheel_brake, HIGH);
+  digitalWrite(rightrearwheel_brake, HIGH);
 }
 
 void cam_turnLeft()
 {
   // #TODO
   Serial.println("Cam_Links");
+  digitalWrite(leftfrontwheel_brake, HIGH);
+  digitalWrite(rightfrontwheel_brake, HIGH);
+  digitalWrite(leftrearwheel_brake, HIGH);
+  digitalWrite(rightrearwheel_brake, HIGH);
 }
 
 int speed_cb = 0;
