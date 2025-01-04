@@ -11,12 +11,12 @@
 <body>
     <script src="carybot.js"></script>
     <div id="menu" class="mymenu">
-        <p id="Verbindung" class="daten"></p>
         <p id="Gewicht" class="daten">Gewicht: - kg</p>
         <p id="Akkustand" class="daten">Akkustand: - %</p>
     </div>
 
     <img src="menu-icon.svg" alt="Menü" class="menu-icon" onclick="togglemenu()">
+    <span id="connectionStatus" class="status-box disconnected">Disconnected</span>
 
     <div id="main">
         <img id="dynamicimage" alt="Video Stream" src="http://192.168.4.3/capture">

@@ -170,3 +170,28 @@ input[type=range] {
     color: white;
     font-size: 1.2em;
 }
+
+.status-box {
+    top: 10px;
+    left: 50px;
+    z-index: 2;
+    position: fixed;
+    padding: 5px 10px;
+    margin-left: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: white;
+}
+
+.status-box.connected {
+    background-color: green;
+}
+
+.status-box.disconnected {
+    background-color: red;
+}
+
+.status-box.error {
+    background-color: yellow;
+    color: black;
+}
