@@ -26,6 +26,17 @@ int rightrearwheel_pwm = 27;
 const char *ssid = "Carybot";
 const char *password = "123456789";
 
+//Spannung-Messung für Akkustand
+#define PIN_TEST 34               // Analoger Eingangspin
+#define REF_VOLTAGE 3.3           // Referenzspannung des ESP32
+#define PIN_STEPS 4095.0          // ADC-Auflösung des ESP32 (12-bit)
+const float R1 = 120000.0;        // Widerstand R1 (120 kOhm)
+const float R2 = 10800.0;         // Widerstand R2 (11 kOhm)
+float vout = 0.0;                 // Gemessene Ausgangsspannung
+float vin = 0.0;                  // Berechnete Eingangsspannung
+int rawValue = 0;                 // Rohwert vom ADC
+//--------------------------------
+
 // Webserver läuft auf Port 80
 AsyncWebServer server(80);
 AsyncWebSocket ws("/ws");
@@ -201,6 +212,8 @@ void setup()
   pinMode(rightrearwheel_pwm, OUTPUT);
   pinMode(rightrearwheel_brake, OUTPUT);
   digitalWrite(rightrearwheel_brake, HIGH);
+
+  pinMode(PIN_TEST, INPUT);
 }
 
 void moveForward()
@@ -347,4 +360,17 @@ void loop()
     lastCleanup = now;
   }
   navigate();
+  //Spannungsmessung
+  rawValue = analogRead(PIN_TEST);
+  vout = (rawValue * REF_VOLTAGE) / PIN_STEPS;
+  vin = vout / (R2 / (R1 + R2));
+  if (vin < 0.09) {
+      vin = 0.0;
+  }
+  Serial.println("U = " + String(vin+1, 1) + " V"); // Spannung mit 2 Dezimalstellen
+  float batteryPercentage = ((vin -9) /4) *100; // Vin in mV gemessen
+  float akku_round = round(batteryPercentage /10 ) *10; 
+  Serial.println("Akkustand: " + String(akku_round,0) + "%");
+  //------------------
+
 }
