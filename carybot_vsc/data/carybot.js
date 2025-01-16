@@ -98,13 +98,22 @@ function connectWebSocket() {
 
     websocket.onmessage = (event) => {
         console.log('Received:', event.data);
+
+        try {
+            const data = JSON.parse(event.data);
+            if(data.battery){
+                document.getElementById('Akkustand').innerText = "Akkustand: " + data.battery + "%";
+            }
+        } catch(e) {
+            console.error('Error parsing JSON (Battery):', e);
+        }
     };
 
-    websocket.onclose = () => {
-        console.error('WebSocket closed. Attempting to reconnect...');
+    websocket.onclose = (event) => {
+        console.error('WebSocket closed. Attempting to reconnect...', event);
         document.getElementById('connectionStatus').innerText = 'Disconnected';
         document.getElementById('connectionStatus').className = 'status-box disconnected';
-        setTimeout(connectWebSocket, 5000); // Versuche, die Verbindung wiederherzustellen.
+        setTimeout(connectWebSocket, 5000); 
     };
 
     websocket.onerror = (error) => {
@@ -113,6 +122,8 @@ function connectWebSocket() {
         document.getElementById('connectionStatus').className = 'status-box error';
     };
 }
+
+connectWebSocket();
 
 function send(direction) {
     if (websocket.readyState === WebSocket.OPEN) {

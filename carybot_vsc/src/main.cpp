@@ -387,6 +387,10 @@ void loop()
     float akku_round = round(batteryPercentage / 10) * 10;
     Serial.println("Akkustand: " + String(akku_round, 0) + "%");
     Serial.println(distanceSensor.measureDistanceCm());
+
+    String batterystatus = String(akku_round, 0);
+    String message = "{\"battery\": \"" + batterystatus + "\"}";
+    ws.textAll(message);
   }
 }
 
