@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="user-scalable=no" scroll="no">
+    <title>Carybot</title>
+    <link rel="stylesheet" href="mystyles.css">
+</head>
+
+<body>
+    <script src="carybot.js"></script>
+    <div id="menu" class="mymenu">
+        <p id="Gewicht" class="daten">Gewicht: - kg</p>
+        <p id="Akkustand" class="daten">Akkustand: - %</p>
+    </div>
+
+    <img src="menu-icon.svg" alt="Menü" class="menu-icon" onclick="togglemenu()">
+    <span id="connectionStatus" class="status-box disconnected">Disconnected</span>
+
+    <div id="main">
+        <img id="dynamicimage" alt="Video Stream"/>
+        <div class="dpad-container">
+            <div class="button up" data-direction="up">↑</div>
+            <div class="button left" data-direction="left">←</div>
+            <div class="button center" data-direction="halt"></div>
+            <div class="button right" data-direction="right">→</div>
+            <div class="button down" data-direction="down">↓</div>
+        </div>
+        <div class="slider-container">
+            <input type="range" min="0" max="100" value="50" class="slider" id="rangeSlider"
+                oninput="speed_change(this.value)">
+        </div>
+        <div class="camera-container">
+            <div class="button left" data-direction="cam_left">←</div>
+            <div class="button right" data-direction="cam_right">→</div>
+        </div>
+    </div>
+</body>
+
+</html>

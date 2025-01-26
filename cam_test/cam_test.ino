@@ -4,7 +4,10 @@
 #include "soc/soc.h"
 #include "soc/rtc_cntl_reg.h"
 #include "esp_task_wdt.h"
-
+#include <ESPAsyncWebServer.h>
+#include <WebSocketsServer.h>
+#include <SPIFFS.h>
+#include "ArduinoJson.h"
 
 #define CAMERA_MODEL_AI_THINKER
 
@@ -28,43 +31,158 @@
 #define PCLK_GPIO_NUM 22
 #endif
 
-const char *ssid = "Carybot";
-const char *password = "123456789";
+const char *ssid = "Galaxy A54 5G C0C9";
+const char *password = "Arnstein87";
 
-IPAddress local_IP(192,168,4,3);
-IPAddress gateway(192, 168, 4, 1);
-IPAddress subnet(255, 255, 255, 0);
+AsyncWebServer server(80);
+WebSocketsServer websocket(81);  // WebSocket-Server auf Port 81
 
+void handleWebSocketMessage(uint8_t num, uint8_t *payload, size_t length) {
+  String message = String((char *)payload).substring(0, length);
+  Serial.println("WebSocket-Nachricht empfangen: " + message);
 
-WebServer server(80);
+  StaticJsonDocument<200> jsonDoc;
+  DeserializationError error = deserializeJson(jsonDoc, message);
 
-void startCameraServer();
+  if (!error) {
+    if (jsonDoc.containsKey("robot_direction")) {
+      const char *robot_direction = jsonDoc["robot_direction"];
+      Serial.println("Robot direction: " + String(robot_direction));
+    }
+  }
+}
+
+void onWebSocketEvent(uint8_t num, WStype_t type, uint8_t *payload, size_t length) {
+  switch (type) {
+    case WStype_TEXT:
+      handleWebSocketMessage(num, payload, length);
+      break;
+
+    case WStype_BIN:
+      Serial.println("Binärdaten empfangen (nicht unterstützt)");
+      break;
+
+    case WStype_DISCONNECTED:
+      Serial.printf("[WS] Client %u disconnected.\n", num);
+      break;
+
+    case WStype_CONNECTED:
+      IPAddress ip = websocket.remoteIP(num);
+      Serial.printf("[WS] Client %u connected from %s.\n", num, ip.toString().c_str());
+      break;
+  }
+}
+
+void sendCameraFrame() {
+  camera_fb_t *fb = esp_camera_fb_get();
+  if (!fb) {
+    Serial.println("Kamerafehler: Kein Frame erhalten");
+    return;
+  }
+
+  websocket.broadcastBIN(fb->buf, fb->len);  // Senden der Binärdaten an alle verbundenen Clients
+  esp_camera_fb_return(fb);
+}
+
+String readFile(fs::FS &fs, const char *path) {
+  File file = fs.open(path, "r");
+  if (!file || file.isDirectory()) {
+    Serial.println("- failed to open file for reading");
+    return String();
+  }
+
+  String fileContent;
+  while (file.available()) {
+    fileContent += String((char)file.read());
+  }
+  return fileContent;
+}
+
 
 void setup() {
   Serial.begin(115200);
   WRITE_PERI_REG(RTC_CNTL_BROWN_OUT_REG, 0);
-
-  esp_task_wdt_config_t wdt_config = {
-    .timeout_ms = 10000,   // 10 Sekunden Timeout
-    .idle_core_mask = 0,   // Standardkonfiguration
-    .trigger_panic = true  // System neu starten bei Auslösung
-  };
-
-  esp_task_wdt_init(&wdt_config);
-  esp_task_wdt_add(NULL);
-
-  if(!WiFi.config(local_IP, gateway, subnet)){
-    Serial.println("Fehler bei der IP-Konfiguration");
-  }
 
   WiFi.begin(ssid, password);
   while (WiFi.status() != WL_CONNECTED) {
     delay(500);
     Serial.print(".");
   }
-  Serial.println("WLAN verbunden!");
+  Serial.println("\nWLAN verbunden!");
   Serial.print("IP-Adresse: ");
   Serial.println(WiFi.localIP());
+
+  if (!SPIFFS.begin(true)) {
+    Serial.println("Fehler beim Mounten von SPIFFS");
+    return;
+  }
+
+  server.on("/", HTTP_GET, [](AsyncWebServerRequest *request) {
+    String dpad = readFile(SPIFFS, "/dpad.html");
+    request->send(200, "text/html", dpad);
+  });
+
+  server.on("/menu-icon.svg", HTTP_GET, [](AsyncWebServerRequest *request) {
+    String icon = readFile(SPIFFS, "/menu-icon.svg");
+    request->send(200, "image/svg+xml", icon);
+  });
+
+  server.on("/mystyles.css", HTTP_GET, [](AsyncWebServerRequest *request) {
+    String css = readFile(SPIFFS, "/mystyles.css");
+    request->send(200, "text/css", css);
+  });
+
+  server.on("/carybot.js", HTTP_GET, [](AsyncWebServerRequest *request) {
+    String js = readFile(SPIFFS, "/carybot.js");
+    request->send(200, "application/javascript", js);
+  });
+
+  Serial.println("SPIFFS-Dateien erfolgreich geladen");
+
+  server.on("/", HTTP_GET, [](AsyncWebServerRequest *request) {
+    String html = R"rawliteral(
+      <!DOCTYPE html>
+      <html lang="en">
+      <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>ESP32-CAM WebSocket Stream</title>
+          <script>
+              let websocket;
+              function connectWebSocket() {
+                  websocket = new WebSocket('ws://' + window.location.hostname + ':81');
+
+                  websocket.onmessage = function(event) {
+                      const blob = new Blob([event.data], { type: 'image/jpeg' });
+                      const url = URL.createObjectURL(blob);
+                      const img = document.getElementById('stream');
+                      img.src = url;
+                  };
+
+                  websocket.onopen = function() {
+                      console.log('WebSocket verbunden');
+                  };
+
+                  websocket.onclose = function() {
+                      console.log('WebSocket getrennt. Erneuter Versuch in 5 Sekunden...');
+                      setTimeout(connectWebSocket, 5000);
+                  };
+              }
+              connectWebSocket();
+          </script>
+      </head>
+      <body>
+          <h1>ESP32-CAM WebSocket Stream</h1>
+          <img id="stream" alt="Live Stream" style="width: 100%; max-width: 640px;" />
+      </body>
+      </html>
+    )rawliteral";
+    request->send(200, "text/html", html);
+  });
+
+  server.begin();
+  websocket.begin();
+  websocket.onEvent(onWebSocketEvent);
 
   camera_config_t config;
   config.ledc_channel = LEDC_CHANNEL_0;
@@ -85,69 +203,21 @@ void setup() {
   config.pin_sccb_scl = SIOC_GPIO_NUM;
   config.pin_pwdn = PWDN_GPIO_NUM;
   config.pin_reset = RESET_GPIO_NUM;
-
-  // Erhöhte XCLK-Frequenz
   config.xclk_freq_hz = 24000000;
   config.pixel_format = PIXFORMAT_JPEG;
-
-  // Kleinere Bildgröße und höhere Qualität für schnellere Übertragung
-  config.frame_size = FRAMESIZE_QVGA;  // 320x240 Pixel für mehr FPS
-  config.jpeg_quality = 12;            // Höhere Kompression, aber noch akzeptable Qualität
-  config.fb_count = 3;                 // Mehr Frame-Buffer für schnellere Verarbeitung
-
+  config.frame_size = FRAMESIZE_QVGA;
+  config.jpeg_quality = 12;
+  config.fb_count = 3;
 
   esp_err_t err = esp_camera_init(&config);
   if (err != ESP_OK) {
     Serial.printf("Kamera-Init fehlgeschlagen mit Fehler 0x%x", err);
     return;
   }
-
-  startCameraServer();
 }
 
 void loop() {
-  server.handleClient();
-
-  esp_task_wdt_reset();
-}
-
-void startCameraServer() {
-  server.on("/", HTTP_GET, []() {
-    String html = "<html><head><title>ESP32-CAM Live-Stream</title>";
-    html += "<script type='text/javascript'>";
-    html += "function reloadImage() {";
-    html += "  var img = document.getElementById('camImage');";
-    html += "  img.src = '/capture?_t=' + new Date().getTime();";
-    html += "}";
-    // Schnellere Bildaktualisierung
-    html += "setInterval(reloadImage, 100);";
-    html += "</script></head><body>";
-    html += "<h1>ESP32-CAM Live-Stream</h1>";
-    html += "<img id='camImage' src='/capture' width='100%'>";
-    html += "</body></html>";
-
-    server.send(200, "text/html", html);
-  });
-
-  server.on("/capture", HTTP_GET, []() {
-    camera_fb_t *fb = esp_camera_fb_get();
-    if (!fb) {
-      server.send(503, "text/plain", "Kamerafehler");
-      return;
-    }
-
-    server.sendHeader("Access-Control-Allow-Origin", "*");
-    server.setContentLength(fb->len);
-    server.send(200, "image/jpeg", "");
-
-    WiFiClient client = server.client();
-    client.write(fb->buf, fb->len);
-
-    esp_camera_fb_return(fb);
-    Serial.printf("Freier Speicher: %d bytes\n", esp_get_free_heap_size());
-    Serial.printf("WiFi RSSI: %d\n", WiFi.RSSI());
-  });
-
-  server.begin();
-  Serial.println("Kamera-Server gestartet.");
+  websocket.loop();
+  sendCameraFrame();
+  delay(100);  // ~10 FPS
 }
