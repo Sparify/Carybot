@@ -177,7 +177,7 @@ void setup() {
       </body>
       </html>
     )rawliteral";
-    request->send(200, "text/html", html);
+    request->send(100, "text/html", html);
   });
 
   server.begin();
@@ -216,8 +216,17 @@ void setup() {
   }
 }
 
+unsigned int lastCleanup = 0;
+const unsigned long cleanupInterval = 50; // ~20 FPS
+
 void loop() {
+  unsigned long now = millis();
+
+  if(now - lastCleanup > cleanupInterval){
   websocket.loop();
   sendCameraFrame();
-  delay(100);  // ~10 FPS
+  lastCleanup = now;
+  }
+;
+
 }

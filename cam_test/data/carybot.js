@@ -78,18 +78,18 @@ let websocket_cam;
 function connectWebSocket_cam() {
     websocket_cam = new WebSocket('ws://' + window.location.hostname + ':81');  // WebSocket-Verbindung zum ESP32
 
-    websocket_cam.onmessage = function(event) {
+    websocket_cam.onmessage = function (event) {
         const blob = new Blob([event.data], { type: 'image/jpeg' });
         const url = URL.createObjectURL(blob);
         const img = document.getElementById('dynamicimage');
-        img.src = url;  // Setzen des neuen Bildes im <img> Tag
+        img.src = url;
     };
 
-    websocket_cam.onopen = function() {
+    websocket_cam.onopen = function () {
         console.log('WebSocket cam verbunden');
     };
 
-    websocket_cam.onclose = function() {
+    websocket_cam.onclose = function () {
         console.log('WebSocket Cam getrennt. Erneuter Versuch in 5 Sekunden...');
         setTimeout(connectWebSocket_cam, 5000);  // Versuchen, die Verbindung erneut herzustellen
     };
@@ -102,13 +102,28 @@ let websocket_carybot;
 function connectWebSocket_carybot() {
     websocket_carybot = new WebSocket('ws://192.168.136.42:8080');
 
-    websocket_carybot.onopen = function() {
+    websocket_carybot.onopen = function () {
         console.log("WebSocket Carybot verbunden");
         document.getElementById('connectionStatus').innerText = 'Connected';
         document.getElementById('connectionStatus').className = 'status-box connected';
     }
 
-    websocket_carybot.onclose = function() {
+    websocket_carybot.onmessage = (event) => {
+        console.log("Received:", event.data);
+
+        try {
+            const data = JSON.parse(event.data);
+            if (data.battery) {
+                document.getElementById('Akkustand').innerText = "Akkustand: " + data.battery + "%";
+            }
+        } catch (e) {
+            console.error("Error parsing JSON (Battery):", e);
+        }
+
+    };
+
+
+    websocket_carybot.onclose = function () {
         document.getElementById('connectionStatus').innerText = 'Disonnected';
         document.getElementById('connectionStatus').className = 'status-box disconnected';
 
@@ -120,7 +135,7 @@ function connectWebSocket_carybot() {
 connectWebSocket_carybot();
 
 function send(direction) {
-    if(currentdir_robot !== direction){
+    if (currentdir_robot !== direction) {
         currentdir_robot = direction;
 
         const message = JSON.stringify({
@@ -130,14 +145,14 @@ function send(direction) {
 
         console.log("Direction: " + direction + " Speed: " + speed);
 
-        if(websocket_cam.readyState === WebSocket.OPEN) {
+        if (websocket_cam.readyState === WebSocket.OPEN) {
             websocket_cam.send(message);
             console.log("An CAM gesendet");
         } else {
             console.error("Senden fehlgeschlagen. WebSocket Cam is not open");
         }
 
-        if(websocket_carybot.readyState === WebSocket.OPEN) {
+        if (websocket_carybot.readyState === WebSocket.OPEN) {
             websocket_carybot.send(message);
             console.log("An Carybot gesendet");
         } else {
@@ -147,9 +162,9 @@ function send(direction) {
 }
 
 function stop() {
-    if(currentdir_robot !== Directions.HALT) {
+    if (currentdir_robot !== Directions.HALT) {
         currentdir_robot = Directions.HALT;
-        
+
         const message = JSON.stringify({
             robot_direction: Directions.HALT,
             speed: speed
@@ -157,13 +172,13 @@ function stop() {
 
         console.log('Message sent: halt');
 
-        if(websocket_cam.readyState === WebSocket.OPEN) {
+        if (websocket_cam.readyState === WebSocket.OPEN) {
             websocket_cam.send(message);
         } else {
             console.error("Senden fehlgeschlagen. WebSocket Cam is not open");
         }
 
-        if(websocket_carybot.readyState === WebSocket.OPEN) {
+        if (websocket_carybot.readyState === WebSocket.OPEN) {
             websocket_carybot.send(message);
         } else {
             console.error("Senden fehlgeschlagen. WebSocket Carybot is not open");

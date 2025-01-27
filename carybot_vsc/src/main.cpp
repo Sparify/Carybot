@@ -315,18 +315,9 @@ void navigate()
   }
 }
 
-unsigned int lastCleanup = 0;
-const unsigned long cleanupInterval = 100;
-
 void loop()
 {
   websocket.loop();
-
-  unsigned long now = millis();
-  if (now - lastCleanup > cleanupInterval)
-  {
-    lastCleanup = now;
-  }
   navigate();
   // Spannungsmessung
   rawValue = analogRead(PIN_TEST);
@@ -349,5 +340,6 @@ void loop()
 
     String batterystatus = String(akku_round, 0);
     String message = "{\"battery\": \"" + batterystatus + "\"}";
+    websocket.broadcastTXT(message.c_str());
   }
 }
