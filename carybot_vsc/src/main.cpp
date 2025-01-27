@@ -107,7 +107,10 @@ void handleWebSocketMessage(uint8_t num, uint8_t *payload, size_t length) {
   if (!error) {
     if (jsonDoc.containsKey("robot_direction")) {
       const char *robot_direction = jsonDoc["robot_direction"];
-      Serial.println("Robot direction: " + String(robot_direction));
+      if(robot_direction) {
+        dir = stringToDirection(robot_direction);
+      }
+      speed = jsonDoc["speed"].as<String>();
     }
   }
 }
