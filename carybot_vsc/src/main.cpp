@@ -28,17 +28,14 @@ int rightrearwheel_brake = 14;
 int rightrearwheel_pwm = 27;
 
 // Deine WLAN-Zugangsdaten
-// const char *ssid = "Carybot";
-// const char *password = "123456789";
-const char *ssid = "Galaxy A54 5G C0C9";
-const char *password = "Arnstein87";
-const char *websocket_server = "192.168.136.48";
+const char *ssid = "Carybot";
+const char *password = "123456789";
 
 WebSocketsServer websocket(8080);
 
-//IPAddress local_IP(192, 168, 4, 3);
-//IPAddress gateway(192, 168, 136, 48);
-//IPAddress subnet(255, 255, 255, 0);
+IPAddress local_IP(192, 168, 4, 3);
+IPAddress gateway(192, 168, 4, 1);
+IPAddress subnet(255, 255, 255, 0);
 
 // Spannung-Messung für Akkustand
 #define PIN_TEST 34        // Analoger Eingangspin
@@ -140,10 +137,11 @@ void setup()
 {
   Serial.begin(115200);
 
-  /*if (!WiFi.config(local_IP, gateway, subnet))
+  if (!WiFi.config(local_IP, gateway, subnet))
   {
     Serial.println("Fehler bei der IP-Konfiguration");
-  }*/
+    return;
+  }
 
   WiFi.begin(ssid, password);
   while (WiFi.status() != WL_CONNECTED)

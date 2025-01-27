@@ -31,8 +31,12 @@
 #define PCLK_GPIO_NUM 22
 #endif
 
-const char *ssid = "Galaxy A54 5G C0C9";
-const char *password = "Arnstein87";
+const char *ssid = "Carybot";
+const char *password = "123456789";
+
+IPAddress local_IP(192, 168, 4, 1);
+IPAddress gateway(192, 168, 4, 1);
+IPAddress subnet(255, 255, 255, 0);
 
 AsyncWebServer server(80);
 WebSocketsServer websocket(81);  // WebSocket-Server auf Port 81
@@ -103,14 +107,19 @@ void setup() {
   Serial.begin(115200);
   WRITE_PERI_REG(RTC_CNTL_BROWN_OUT_REG, 0);
 
-  WiFi.begin(ssid, password);
-  while (WiFi.status() != WL_CONNECTED) {
-    delay(500);
-    Serial.print(".");
+  if (!WiFi.softAPConfig(local_IP, gateway, subnet)) {
+    Serial.println("AP-Konfiguration fehlgeschlagen.");
+    return;
   }
-  Serial.println("\nWLAN verbunden!");
+
+  if (!WiFi.softAP(ssid, password)) {
+    Serial.println("AP konnte nicht gestartet werden.");
+    return;
+  }
+
+  Serial.println("Access Point gestartet!");
   Serial.print("IP-Adresse: ");
-  Serial.println(WiFi.localIP());
+  Serial.println(WiFi.softAPIP());
 
   if (!SPIFFS.begin(true)) {
     Serial.println("Fehler beim Mounten von SPIFFS");

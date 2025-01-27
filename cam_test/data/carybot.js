@@ -100,7 +100,7 @@ connectWebSocket_cam();
 let websocket_carybot;
 
 function connectWebSocket_carybot() {
-    websocket_carybot = new WebSocket('ws://192.168.136.42:8080');
+    websocket_carybot = new WebSocket('ws://192.168.4.3:8080');
 
     websocket_carybot.onopen = function () {
         console.log("WebSocket Carybot verbunden");
