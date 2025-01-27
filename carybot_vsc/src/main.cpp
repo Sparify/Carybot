@@ -1,11 +1,9 @@
 #include <WiFi.h>
-#include <SPIFFS.h>
-#include <ESPAsyncWebServer.h>
-#include <AsyncTCP.h>
 #include "ArduinoJson.h"
 #include "HCSR04.h"
+#include "WebSocketsServer.h"
 
-UltraSonicDistanceSensor distanceSensor(13, 12);  // Initialize sensor that uses digital pins 13 and 12.
+UltraSonicDistanceSensor distanceSensor(13, 12); // Initialize sensor that uses digital pins 13 and 12.
 
 unsigned long startMillis;
 unsigned long currentMillis;
@@ -30,8 +28,17 @@ int rightrearwheel_brake = 14;
 int rightrearwheel_pwm = 27;
 
 // Deine WLAN-Zugangsdaten
-const char *ssid = "Carybot";
-const char *password = "123456789";
+// const char *ssid = "Carybot";
+// const char *password = "123456789";
+const char *ssid = "Galaxy A54 5G C0C9";
+const char *password = "Arnstein87";
+const char *websocket_server = "192.168.136.48";
+
+WebSocketsServer websocket(8080);
+
+//IPAddress local_IP(192, 168, 4, 3);
+//IPAddress gateway(192, 168, 136, 48);
+//IPAddress subnet(255, 255, 255, 0);
 
 // Spannung-Messung für Akkustand
 #define PIN_TEST 34        // Analoger Eingangspin
@@ -43,10 +50,6 @@ float vout = 0.0;          // Gemessene Ausgangsspannung
 float vin = 0.0;           // Berechnete Eingangsspannung
 int rawValue = 0;          // Rohwert vom ADC
 //--------------------------------
-
-// Webserver läuft auf Port 80
-AsyncWebServer server(80);
-AsyncWebSocket ws("/ws");
 
 enum Direction
 {
@@ -94,111 +97,63 @@ Direction stringToDirection(const String &str)
   }
 }
 
-void handleWebSocketMessage(void *arg, uint8_t *data, size_t len)
-{
-  AwsFrameInfo *info = (AwsFrameInfo *)arg;
-  if (info->final && info->index == 0 && info->len == len && info->opcode == WS_TEXT)
-  {
-    String message = String((char *)data).substring(0, len);
-    // Serial.println("Nachricht empfangen: " + message + "\n");
+void handleWebSocketMessage(uint8_t num, uint8_t *payload, size_t length) {
+  String message = String((char *)payload).substring(0, length);
+  Serial.println("WebSocket-Nachricht empfangen: " + message);
 
-    StaticJsonDocument<200> jsonDoc;
-    DeserializationError error = deserializeJson(jsonDoc, message);
+  StaticJsonDocument<200> jsonDoc;
+  DeserializationError error = deserializeJson(jsonDoc, message);
 
-    if (!error)
-    {
-      if (jsonDoc.containsKey("robot_direction"))
-      {
-        const char *robot_direction = jsonDoc["robot_direction"];
-        if (robot_direction)
-        {
-          dir = stringToDirection(robot_direction);
-        }
-        speed = jsonDoc["speed"].as<String>();
-        // Serial.println("Direction :" + String(dir) + "\nSpeed: " + speed + "\n\n");
-      }
+  if (!error) {
+    if (jsonDoc.containsKey("robot_direction")) {
+      const char *robot_direction = jsonDoc["robot_direction"];
+      Serial.println("Robot direction: " + String(robot_direction));
     }
   }
 }
 
-void onEvent(AsyncWebSocket *server, AsyncWebSocketClient *client, AwsEventType type, void *arg, uint8_t *data, size_t len)
-{
-  if (type == WS_EVT_DATA)
-  {
-    handleWebSocketMessage(arg, data, len);
-  }
-}
+void onWebSocketEvent(uint8_t num, WStype_t type, uint8_t *payload, size_t length) {
+  switch (type) {
+    case WStype_TEXT:
+      handleWebSocketMessage(num, payload, length);
+      break;
 
-// Funktion zum Laden der HTML-Datei aus SPIFFS
-String readFile(fs::FS &fs, const char *path)
-{
-  File file = fs.open(path, "r");
-  if (!file || file.isDirectory())
-  {
-    Serial.println("- failed to open file for reading");
-    return String();
-  }
+    case WStype_BIN:
+      Serial.println("Binärdaten empfangen (nicht unterstützt)");
+      break;
 
-  String fileContent;
-  while (file.available())
-  {
-    fileContent += String((char)file.read());
+    case WStype_DISCONNECTED:
+      Serial.printf("[WS] Client %u disconnected.\n", num);
+      break;
+
+    case WStype_CONNECTED:
+      IPAddress ip = websocket.remoteIP(num);
+      Serial.printf("[WS] Client %u connected from %s.\n", num, ip.toString().c_str());
+      break;
   }
-  return fileContent;
 }
 
 void setup()
 {
-  // Serielle Kommunikation starten
   Serial.begin(115200);
 
-  // WLAN-Verbindung herstellen
-  Serial.print("Setting AP (Access Point)…");
-  WiFi.softAP(ssid, password);
-  WiFi.softAPConfig(IPAddress(192, 168, 4, 1), IPAddress(192, 168, 4, 1), IPAddress(255, 255, 255, 0));
-  WiFi.setTxPower(WIFI_POWER_19_5dBm);
-  Serial.println("Hotspot started");
-
-  Serial.print("IP address: ");
-  Serial.println(WiFi.softAPIP());
-
-  // SPIFFS initialisieren
-  if (!SPIFFS.begin(true))
+  /*if (!WiFi.config(local_IP, gateway, subnet))
   {
-    Serial.println("An error has occurred while mounting SPIFFS");
-    while (true)
-    {
-      delay(1); // Programm stoppen
-    }
+    Serial.println("Fehler bei der IP-Konfiguration");
+  }*/
+
+  WiFi.begin(ssid, password);
+  while (WiFi.status() != WL_CONNECTED)
+  {
+    delay(500);
+    Serial.println(".");
   }
-  Serial.println("SPIFFS mounted successfully");
+  Serial.println("WLAN verbunden");
+  Serial.print("IP-Adresse: ");
+  Serial.println(WiFi.localIP());
 
-  ws.onEvent(onEvent);
-  server.addHandler(&ws);
-
-  server.on("/", HTTP_GET, [](AsyncWebServerRequest *request)
-            {
-    String dpad = readFile(SPIFFS, "/dpad.html");
-    request->send(200, "text/html", dpad); });
-
-  server.on("/menu-icon.svg", HTTP_GET, [](AsyncWebServerRequest *request)
-            {
-    String icon = readFile(SPIFFS, "/menu-icon.svg");
-    request->send(200, "image/svg+xml", icon); });
-
-  server.on("/mystyles.css", HTTP_GET, [](AsyncWebServerRequest *request)
-            {
-    String css = readFile(SPIFFS, "/mystyles.css");
-    request->send(200, "text/css", css); });
-
-  server.on("/carybot.js", HTTP_GET, [](AsyncWebServerRequest *request)
-            {
-    String js = readFile(SPIFFS, "/carybot.js");
-    request->send(200, "application/javascript", js); });
-
-  // Webserver starten
-  server.begin();
-  Serial.println("HTTP server started");
+  websocket.begin();
+  websocket.onEvent(onWebSocketEvent);
 
   pinMode(leftfrontwheel, OUTPUT);
   pinMode(leftfrontwheel_pwm, OUTPUT);
@@ -362,10 +317,11 @@ const unsigned long cleanupInterval = 100;
 
 void loop()
 {
+  websocket.loop();
+
   unsigned long now = millis();
   if (now - lastCleanup > cleanupInterval)
   {
-    ws.cleanupClients();
     lastCleanup = now;
   }
   navigate();
@@ -378,10 +334,10 @@ void loop()
     vin = 0.0;
   }
 
-  currentMillis = millis();                  
-  if (currentMillis - startMillis >= period) 
+  currentMillis = millis();
+  if (currentMillis - startMillis >= period)
   {
-    startMillis = currentMillis;                        
+    startMillis = currentMillis;
     Serial.println("U = " + String(vin + 1, 1) + " V"); // Spannung mit 2 Dezimalstellen
     float batteryPercentage = ((vin - 9) / 4) * 100;    // Vin in mV gemessen
     float akku_round = round(batteryPercentage / 10) * 10;
@@ -390,7 +346,5 @@ void loop()
 
     String batterystatus = String(akku_round, 0);
     String message = "{\"battery\": \"" + batterystatus + "\"}";
-    ws.textAll(message);
   }
 }
-
