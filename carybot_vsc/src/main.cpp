@@ -2,6 +2,11 @@
 #include "ArduinoJson.h"
 #include "HCSR04.h"
 #include "WebSocketsServer.h"
+#include <HX711_ADC.h>
+
+const int HX711_dout = 4;
+const int HX711_sck = 5;
+HX711_ADC LoadCell(HX711_dout, HX711_sck);
 
 UltraSonicDistanceSensor distanceSensor(13, 12); // Initialize sensor that uses digital pins 13 and 12.
 
@@ -36,6 +41,10 @@ WebSocketsServer websocket(8080);
 IPAddress local_IP(192, 168, 4, 3);
 IPAddress gateway(192, 168, 4, 1);
 IPAddress subnet(255, 255, 255, 0);
+
+//Gewicht ueber HX711
+float weight = 0.0;
+//-----------------------
 
 // Spannung-Messung für Akkustand
 #define PIN_TEST 34        // Analoger Eingangspin
@@ -179,6 +188,21 @@ void setup()
   pinMode(PIN_TEST, INPUT);
 
   startMillis = millis();
+
+  LoadCell.begin();
+  float calibrationValue; // calibration value (see example file "Calibration.ino")
+  calibrationValue = 696.0; // uncomment this if you want to set the calibration value in the sketch
+  unsigned long stabilizingtime = 2000; // preciscion right after power-up can be improved by adding a few seconds of stabilizing time
+  boolean _tare = true; //set this to false if you don't want tare to be performed in the next step
+  LoadCell.start(stabilizingtime, _tare);
+  if (LoadCell.getTareTimeoutFlag()) {
+    Serial.println("Timeout, check MCU>HX711 wiring and pin designations");
+    while (1);
+  }
+  else {
+    LoadCell.setCalFactor(calibrationValue); // set calibration value (float)
+    Serial.println("Startup is complete");
+  }
 }
 
 void moveForward()
@@ -336,8 +360,16 @@ void loop()
     Serial.println("Akkustand: " + String(akku_round, 0) + "%");
     Serial.println(distanceSensor.measureDistanceCm());
 
+    weight = LoadCell.getData();
+    Serial.print("Load_cell output val: ");
+    Serial.println(weight);
+
     String batterystatus = String(akku_round, 0);
     String message = "{\"battery\": \"" + batterystatus + "\"}";
     websocket.broadcastTXT(message.c_str());
+
+    String weight_str = String(weight, 0);
+    String weight_message = "{\"weight\": \"" + weight_str + "\"}";
+    websocket.broadcastTXT(weight_message.c_str());
   }
 }

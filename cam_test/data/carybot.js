@@ -116,6 +116,9 @@ function connectWebSocket_carybot() {
             if (data.battery) {
                 document.getElementById('Akkustand').innerText = "Akkustand: " + data.battery + "%";
             }
+            if (data.weight) {
+                document.getElementById('Gewicht').innerText = "Gewicht: " + data.weight + "%";
+            }
         } catch (e) {
             console.error("Error parsing JSON (Battery):", e);
         }
