@@ -4,8 +4,8 @@
 #include "WebSocketsServer.h"
 #include <HX711_ADC.h>
 
-const int HX711_dout = 4;
-const int HX711_sck = 5;
+const int HX711_dout = 21;
+const int HX711_sck = 22;
 HX711_ADC LoadCell(HX711_dout, HX711_sck);
 
 UltraSonicDistanceSensor distanceSensor(13, 12); // Initialize sensor that uses digital pins 13 and 12.
