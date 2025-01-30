@@ -18,7 +18,7 @@ body {
     margin: 50px auto;
     position: absolute;
     right: 100px;
-    top: 50%;
+    top: 45%;
     transform: translateY(-50%);
 }
 
@@ -32,6 +32,34 @@ body {
     gap: 30px;
     width: 120px;
 
+}
+
+.cam_slider {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 150px;
+    height: 10px;
+    background: #ddd;
+    outline: none;
+    border-radius: 5px;
+}
+
+.cam_slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: #333;
+    cursor: pointer;
+    border: 2px solid #444;
+}
+
+.cam_slider::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background: #333;
+    cursor: pointer;
+    border: 2px solid #444;
 }
 
 .button {
@@ -89,9 +117,6 @@ body {
     width: 80%;
     height: 220px;
     margin-top: 10px;
-}
-
-input[type=range] {
     writing-mode: vertical-lr;
     direction: rtl;
     vertical-align: middle;

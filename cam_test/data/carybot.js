@@ -137,6 +137,19 @@ function connectWebSocket_carybot() {
 
 connectWebSocket_carybot();
 
+
+function camera_change(input_position) {
+    const message = JSON.stringify({
+        camera_position: input_position
+    });
+
+    console.log("Camera Position: " + input_position);
+
+    if(websocket_carybot.readyState === WebSocket.OPEN){
+        websocket_carybot.send(message);
+    }
+}
+
 function send(direction) {
     if (currentdir_robot !== direction) {
         currentdir_robot = direction;
@@ -189,6 +202,3 @@ function stop() {
     }
 }
 
-function updateSliderValue(value) {
-    console.log("Slider Wert: " + value);
-}

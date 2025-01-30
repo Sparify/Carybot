@@ -19,7 +19,7 @@
     <span id="connectionStatus" class="status-box disconnected">Disconnected</span>
 
     <div id="main">
-        <img id="dynamicimage" alt="Video Stream"/>
+        <img id="dynamicimage" alt="Video Stream" />
         <div class="dpad-container">
             <div class="button up" data-direction="up">↑</div>
             <div class="button left" data-direction="left">←</div>
@@ -32,8 +32,8 @@
                 oninput="speed_change(this.value)">
         </div>
         <div class="camera-container">
-            <div class="button left" data-direction="cam_left">←</div>
-            <div class="button right" data-direction="cam_right">→</div>
+            <input type="range" min="0" max="180" value="90" class="cam_slider" id="cameraSlider"
+                oninput="camera_change(this.value)">
         </div>
     </div>
 </body>
