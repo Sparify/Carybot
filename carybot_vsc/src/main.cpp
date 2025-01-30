@@ -3,6 +3,7 @@
 #include "HCSR04.h"
 #include "WebSocketsServer.h"
 #include <HX711_ADC.h>
+#include <ESP32Servo.h>
 
 const int HX711_dout = 21;
 const int HX711_sck = 22;
@@ -18,7 +19,6 @@ int leftfrontwheel_pwm = 32;
 int leftfrontwheel_brake = 33;
 int leftfrontwheel = 25;
 
-/*------------------WIP*/
 int leftrearwheel_pwm = 19;
 int leftrearwheel_brake = 18;
 int leftrearwheel = 5;
@@ -27,7 +27,6 @@ int rightfrontwheel = 15;
 int rightfrontwheel_brake = 2;
 int rightfrontwheel_pwm = 4;
 
-/*-----------------WIP*/
 int rightrearwheel = 12;
 int rightrearwheel_brake = 14;
 int rightrearwheel_pwm = 27;
@@ -42,9 +41,15 @@ IPAddress local_IP(192, 168, 4, 3);
 IPAddress gateway(192, 168, 4, 1);
 IPAddress subnet(255, 255, 255, 0);
 
-//Gewicht ueber HX711
+// Gewicht ueber HX711
 float weight = 0.0;
 //-----------------------
+
+//Servo Motor
+int camera_pos = 0;
+Servo myservo;
+static const int servoPin = 32; //Pin umändern auf PWM Pin
+//-----------------
 
 // Spannung-Messung für Akkustand
 #define PIN_TEST 34        // Analoger Eingangspin
@@ -89,56 +94,62 @@ Direction stringToDirection(const String &str)
   {
     return RIGHT;
   }
-  else if (str == "cam_left")
-  {
-    return CAM_LEFT;
-  }
-  else if (str == "cam_right")
-  {
-    return CAM_RIGHT;
-  }
   else
   {
     return HALT;
   }
 }
 
-void handleWebSocketMessage(uint8_t num, uint8_t *payload, size_t length) {
+void handleWebSocketMessage(uint8_t num, uint8_t *payload, size_t length)
+{
   String message = String((char *)payload).substring(0, length);
   Serial.println("WebSocket-Nachricht empfangen: " + message);
 
   StaticJsonDocument<200> jsonDoc;
   DeserializationError error = deserializeJson(jsonDoc, message);
 
-  if (!error) {
-    if (jsonDoc.containsKey("robot_direction")) {
+  if (!error)
+  {
+    if (jsonDoc.containsKey("robot_direction"))
+    {
       const char *robot_direction = jsonDoc["robot_direction"];
-      if(robot_direction) {
+      if (robot_direction)
+      {
         dir = stringToDirection(robot_direction);
       }
       speed = jsonDoc["speed"].as<String>();
     }
+    else if (jsonDoc.containsKey("camera_position"))
+    {
+      const char *camera_position = jsonDoc["camera_position"];
+      if (camera_position)
+      {
+        camera_pos = stringToDirection(camera_position);
+      }
+    }
   }
 }
 
-void onWebSocketEvent(uint8_t num, WStype_t type, uint8_t *payload, size_t length) {
-  switch (type) {
-    case WStype_TEXT:
-      handleWebSocketMessage(num, payload, length);
-      break;
+void onWebSocketEvent(uint8_t num, WStype_t type, uint8_t *payload, size_t length)
+{
+  switch (type)
+  {
+  case WStype_TEXT:
+    handleWebSocketMessage(num, payload, length);
+    break;
 
-    case WStype_BIN:
-      Serial.println("Binärdaten empfangen (nicht unterstützt)");
-      break;
+  case WStype_BIN:
+    Serial.println("Binärdaten empfangen (nicht unterstützt)");
+    break;
 
-    case WStype_DISCONNECTED:
-      Serial.printf("[WS] Client %u disconnected.\n", num);
-      break;
+  case WStype_DISCONNECTED:
+    Serial.printf("[WS] Client %u disconnected.\n", num);
+    break;
 
-    case WStype_CONNECTED:
-      IPAddress ip = websocket.remoteIP(num);
-      Serial.printf("[WS] Client %u connected from %s.\n", num, ip.toString().c_str());
-      break;
+  case WStype_CONNECTED:
+    IPAddress ip = websocket.remoteIP(num);
+    Serial.printf("[WS] Client %u connected from %s.\n", num, ip.toString().c_str());
+    break;
   }
 }
 
@@ -190,19 +201,26 @@ void setup()
   startMillis = millis();
 
   LoadCell.begin();
-  float calibrationValue; // calibration value (see example file "Calibration.ino")
-  calibrationValue = 696.0; // uncomment this if you want to set the calibration value in the sketch
+  float calibrationValue;               // calibration value (see example file "Calibration.ino")
+  calibrationValue = 696.0;             // uncomment this if you want to set the calibration value in the sketch
   unsigned long stabilizingtime = 2000; // preciscion right after power-up can be improved by adding a few seconds of stabilizing time
-  boolean _tare = true; //set this to false if you don't want tare to be performed in the next step
+  boolean _tare = true;                 // set this to false if you don't want tare to be performed in the next step
   LoadCell.start(stabilizingtime, _tare);
-  if (LoadCell.getTareTimeoutFlag()) {
+  if (LoadCell.getTareTimeoutFlag())
+  {
     Serial.println("Timeout, check MCU>HX711 wiring and pin designations");
-    while (1);
+    while (1)
+      ;
   }
-  else {
+  else
+  {
     LoadCell.setCalFactor(calibrationValue); // set calibration value (float)
     Serial.println("Startup is complete");
   }
+
+  myservo.attach(servoPin);
+  myservo.write(camera_pos);
+
 }
 
 void moveForward()
@@ -250,24 +268,21 @@ void stop()
   Serial.println("Stop");
 }
 
-void cam_turnRight()
+void cam_turn()
 {
-  // #TODO
-  Serial.println("Cam_Rechts");
-  digitalWrite(leftfrontwheel_brake, HIGH);
-  digitalWrite(rightfrontwheel_brake, HIGH);
-  digitalWrite(leftrearwheel_brake, HIGH);
-  digitalWrite(rightrearwheel_brake, HIGH);
-}
-
-void cam_turnLeft()
-{
-  // #TODO
-  Serial.println("Cam_Links");
-  digitalWrite(leftfrontwheel_brake, HIGH);
-  digitalWrite(rightfrontwheel_brake, HIGH);
-  digitalWrite(leftrearwheel_brake, HIGH);
-  digitalWrite(rightrearwheel_brake, HIGH);
+  Serial.println("Cam_Turn");
+  if (camera_pos > 0)
+  {
+    camera_pos -= 5;
+    myservo.write(camera_pos);
+    Serial.println("Links: " + String(camera_pos));
+  }
+  if (camera_pos < 180)
+  {
+    camera_pos += 5;
+    myservo.write(camera_pos);
+    Serial.println("Rechts: " + String(camera_pos));
+  }
 }
 
 int speed_cb = 0;
@@ -309,15 +324,6 @@ void navigate()
     case HALT:
       stop();
       break;
-
-    case CAM_LEFT:
-      cam_turnLeft();
-      break;
-
-    case CAM_RIGHT:
-      cam_turnRight();
-      break;
-
     default:
       stop();
       break;
@@ -341,6 +347,7 @@ void loop()
 {
   websocket.loop();
   navigate();
+  cam_turn();
   // Spannungsmessung
   rawValue = analogRead(PIN_TEST);
   vout = (rawValue * REF_VOLTAGE) / PIN_STEPS;
