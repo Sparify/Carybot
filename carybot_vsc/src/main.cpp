@@ -45,10 +45,10 @@ IPAddress subnet(255, 255, 255, 0);
 float weight = 0.0;
 //-----------------------
 
-//Servo Motor
+// Servo Motor
 int camera_pos = 0;
 Servo myservo;
-static const int servoPin = 32; //Pin umändern auf PWM Pin
+static const int servoPin = 26; // Pin umändern auf PWM Pin
 //-----------------
 
 // Spannung-Messung für Akkustand
@@ -75,6 +75,8 @@ enum Direction
 
 String speed = "0";
 Direction dir = HALT;
+
+void cam_turn();
 
 Direction stringToDirection(const String &str)
 {
@@ -124,7 +126,8 @@ void handleWebSocketMessage(uint8_t num, uint8_t *payload, size_t length)
       const char *camera_position = jsonDoc["camera_position"];
       if (camera_position)
       {
-        camera_pos = stringToDirection(camera_position);
+        camera_pos = atoi(camera_position);
+        cam_turn();
       }
     }
   }
@@ -220,7 +223,6 @@ void setup()
 
   myservo.attach(servoPin);
   myservo.write(camera_pos);
-
 }
 
 void moveForward()
@@ -271,18 +273,8 @@ void stop()
 void cam_turn()
 {
   Serial.println("Cam_Turn");
-  if (camera_pos > 0)
-  {
-    camera_pos -= 5;
-    myservo.write(camera_pos);
-    Serial.println("Links: " + String(camera_pos));
-  }
-  if (camera_pos < 180)
-  {
-    camera_pos += 5;
-    myservo.write(camera_pos);
-    Serial.println("Rechts: " + String(camera_pos));
-  }
+  myservo.write(camera_pos);
+  Serial.println(String(camera_pos));
 }
 
 int speed_cb = 0;
@@ -347,7 +339,7 @@ void loop()
 {
   websocket.loop();
   navigate();
-  cam_turn();
+
   // Spannungsmessung
   rawValue = analogRead(PIN_TEST);
   vout = (rawValue * REF_VOLTAGE) / PIN_STEPS;
