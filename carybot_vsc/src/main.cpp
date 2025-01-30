@@ -365,11 +365,8 @@ void loop()
     Serial.println(weight);
 
     String batterystatus = String(akku_round, 0);
-    String message = "{\"battery\": \"" + batterystatus + "\"}";
+    String weightstatus = String(weight, 0);
+    String message = "{\"battery\": \"" + batterystatus + "\", \"weight\": \"" + weightstatus + "\"}";
     websocket.broadcastTXT(message.c_str());
-
-    String weight_str = String(weight, 0);
-    String weight_message = "{\"weight\": \"" + weight_str + "\"}";
-    websocket.broadcastTXT(weight_message.c_str());
   }
 }

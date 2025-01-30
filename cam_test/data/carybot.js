@@ -117,10 +117,10 @@ function connectWebSocket_carybot() {
                 document.getElementById('Akkustand').innerText = "Akkustand: " + data.battery + "%";
             }
             if (data.weight) {
-                document.getElementById('Gewicht').innerText = "Gewicht: " + data.weight + "%";
+                document.getElementById('Gewicht').innerText = "Gewicht: " + data.weight + "kg";
             }
         } catch (e) {
-            console.error("Error parsing JSON (Battery):", e);
+            console.error("Error parsing JSON:", e);
         }
 
     };
