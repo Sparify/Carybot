@@ -202,3 +202,18 @@ function stop() {
     }
 }
 
+var light = false;
+
+function togglelight() {
+    light = !light;
+    const message = JSON.stringify({
+        light_status: light
+    });
+
+    if(websocket_carybot.readyState === WebSocket.OPEN) {
+        websocket_carybot.send(message);
+    } else {
+        console.error("Senden fehlgeschlagen. WebSocket Carybot is not open");
+    }
+}
+

@@ -136,6 +136,11 @@ void setup() {
     request->send(200, "image/svg+xml", icon);
   });
 
+  server.on("/Fernlicht.svg", HTTP_GET, [](AsyncWebServerRequest *request) {
+    String fernlicht = readFile(SPIFFS, "/Fernlicht.svg");
+      request->send(200, "image/svg+xml", fernlicht);
+  });
+
   server.on("/mystyles.css", HTTP_GET, [](AsyncWebServerRequest *request) {
     String css = readFile(SPIFFS, "/mystyles.css");
     request->send(200, "text/css", css);
