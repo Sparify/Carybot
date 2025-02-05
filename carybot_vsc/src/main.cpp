@@ -6,9 +6,9 @@
 #include <ESP32Servo.h>
 #include <Adafruit_MCP23X17.h>
 
-const int HX711_dout = 21;
-const int HX711_sck = 22;
-HX711_ADC LoadCell(HX711_dout, HX711_sck);
+// const int HX711_dout = 21;
+// const int HX711_sck = 22;
+// HX711_ADC LoadCell(HX711_dout, HX711_sck);
 
 Adafruit_MCP23X17 mcp;
 const int light_pin = 0;
@@ -82,6 +82,8 @@ String speed = "0";
 Direction dir = HALT;
 
 void cam_turn();
+void lights_on();
+void lights_off();
 
 Direction stringToDirection(const String &str)
 {
@@ -137,13 +139,15 @@ void handleWebSocketMessage(uint8_t num, uint8_t *payload, size_t length)
     }
     else if (jsonDoc.containsKey("light_status"))
     {
-      const char *light_status = jsonDoc["light_status"];
-      light_st = atoi(light_status);
-      if (light_st)
+      bool light_status = jsonDoc["light_status"]; 
+      light_st = light_status ? 1 : 0;             
+
+      if (light_st == 1)
       {
         lights_on();
       }
-      else if(light_st == 0){
+      else
+      {
         lights_off();
       }
     }
@@ -220,11 +224,12 @@ void setup()
 
   startMillis = millis();
 
-  LoadCell.begin();
+  // LoadCell.begin();
   float calibrationValue;               // calibration value (see example file "Calibration.ino")
   calibrationValue = 696.0;             // uncomment this if you want to set the calibration value in the sketch
   unsigned long stabilizingtime = 2000; // preciscion right after power-up can be improved by adding a few seconds of stabilizing time
   boolean _tare = true;                 // set this to false if you don't want tare to be performed in the next step
+  /*
   LoadCell.start(stabilizingtime, _tare);
   if (LoadCell.getTareTimeoutFlag())
   {
@@ -237,17 +242,18 @@ void setup()
     LoadCell.setCalFactor(calibrationValue); // set calibration value (float)
     Serial.println("Startup is complete");
   }
-
+ */
   myservo.attach(servoPin);
   myservo.write(camera_pos);
 
-  if (!mcp.begin_I2C()) {
+  if (!mcp.begin_I2C())
+  {
     Serial.println("Error.");
-    while (1);
+    while (1)
+      ;
   }
 
   mcp.pinMode(light_pin, OUTPUT);
-
 }
 
 void moveForward()
@@ -302,12 +308,16 @@ void cam_turn()
   Serial.println(String(camera_pos));
 }
 
-//Licht einschalten und auschalten
-void lights_on(){
+// Licht einschalten und auschalten
+void lights_on()
+{
+  Serial.println("Licht an");
   mcp.digitalWrite(light_pin, HIGH);
 }
 
-void lights_off(){
+void lights_off()
+{
+  Serial.println("Licht aus");
   mcp.digitalWrite(light_pin, LOW);
 }
 //-------------------------------------------
@@ -394,9 +404,9 @@ void loop()
     Serial.println("Akkustand: " + String(akku_round, 0) + "%");
     Serial.println(distanceSensor.measureDistanceCm());
 
-    weight = LoadCell.getData();
-    Serial.print("Load_cell output val: ");
-    Serial.println(weight);
+    // weight = LoadCell.getData();
+    // Serial.print("Load_cell output val: ");
+    // Serial.println(weight);
 
     String batterystatus = String(akku_round, 0);
     String weightstatus = String(weight, 0);
