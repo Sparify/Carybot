@@ -4,10 +4,14 @@
 #include "WebSocketsServer.h"
 #include <HX711_ADC.h>
 #include <ESP32Servo.h>
+#include <Adafruit_MCP23X17.h>
 
 const int HX711_dout = 21;
 const int HX711_sck = 22;
 HX711_ADC LoadCell(HX711_dout, HX711_sck);
+
+Adafruit_MCP23X17 mcp;
+const int light_pin = 0;
 
 UltraSonicDistanceSensor distanceSensor(13, 12); // Initialize sensor that uses digital pins 13 and 12.
 
@@ -130,6 +134,17 @@ void handleWebSocketMessage(uint8_t num, uint8_t *payload, size_t length)
         cam_turn();
       }
     }
+    else if (jsonDoc.containsKey("light_status"))
+    {
+      const char *light_status = jsonDoc["light_status"];
+      if (light_status)
+      {
+        lights_on();
+      }
+      else if(light_status == 0){
+        lights_off();
+      }
+    }
   }
 }
 
@@ -223,6 +238,14 @@ void setup()
 
   myservo.attach(servoPin);
   myservo.write(camera_pos);
+
+  if (!mcp.begin_I2C()) {
+    Serial.println("Error.");
+    while (1);
+  }
+
+  mcp.pinMode(light_pin, OUTPUT);
+
 }
 
 void moveForward()
@@ -276,6 +299,16 @@ void cam_turn()
   myservo.write(camera_pos);
   Serial.println(String(camera_pos));
 }
+
+//Licht einschalten und auschalten
+void lights_on(){
+  mcp.digitalWrite(light_pin, HIGH);
+}
+
+void lights_off(){
+  mcp.digitalWrite(light_pin, LOW);
+}
+//-------------------------------------------
 
 int speed_cb = 0;
 
