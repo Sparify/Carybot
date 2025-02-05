@@ -12,6 +12,7 @@ HX711_ADC LoadCell(HX711_dout, HX711_sck);
 
 Adafruit_MCP23X17 mcp;
 const int light_pin = 0;
+int light_st = 0;
 
 UltraSonicDistanceSensor distanceSensor(13, 12); // Initialize sensor that uses digital pins 13 and 12.
 
@@ -137,11 +138,12 @@ void handleWebSocketMessage(uint8_t num, uint8_t *payload, size_t length)
     else if (jsonDoc.containsKey("light_status"))
     {
       const char *light_status = jsonDoc["light_status"];
-      if (light_status)
+      light_st = atoi(light_status);
+      if (light_st)
       {
         lights_on();
       }
-      else if(light_status == 0){
+      else if(light_st == 0){
         lights_off();
       }
     }
