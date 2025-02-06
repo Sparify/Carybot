@@ -14,7 +14,8 @@ Adafruit_MCP23X17 mcp;
 const int light_pin = 0;
 int light_st = 0;
 
-UltraSonicDistanceSensor distanceSensor(13, 12); // Initialize sensor that uses digital pins 13 and 12.
+UltraSonicDistanceSensor distanceSensor_rear(13, 12); // Pins umändern
+UltraSonicDistanceSensor distanceSensor_front(13, 12); // Pins umändern
 float distance_front = 0.0;
 float distance_rear = 0.0;
 
@@ -403,8 +404,8 @@ void loop()
     float batteryPercentage = ((vin - 9) / 4) * 100;    // Vin in mV gemessen
     float akku_round = round(batteryPercentage / 10) * 10;
     Serial.println("Akkustand: " + String(akku_round, 0) + "%");
-    Serial.println(distanceSensor.measureDistanceCm());
-
+    distance_front = distanceSensor_front.measureDistanceCm();
+    distance_rear = distanceSensor_rear.measureDistanceCm();
     // weight = LoadCell.getData();
     // Serial.print("Load_cell output val: ");
     // Serial.println(weight);
