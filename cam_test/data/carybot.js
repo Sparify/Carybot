@@ -1,3 +1,14 @@
+var light;
+
+document.addEventListener("DOMContentLoaded", function() {
+    const fernlichtIcon = document.getElementById("Fernlicht");
+
+    light = false;
+
+    fernlichtIcon.classList.add("grayscale");
+    fernlichtIcon.classList.remove("active-light");
+})
+
 
 function togglemenu() {
     const menu = document.getElementById("menu");
@@ -202,10 +213,18 @@ function stop() {
     }
 }
 
-var light = false;
-
 function togglelight() {
     light = !light;
+    const fernlichtIcon = document.getElementById("Fernlicht");
+
+    if(light) {
+        fernlichtIcon.classList.remove("grayscale");
+        fernlichtIcon.classList.add("active-light")
+    } else {
+        fernlichtIcon.classList.add("grayscale");
+        fernlichtIcon.classList.remove("active-light");
+    }
+
     const message = JSON.stringify({
         light_status: light
     });
