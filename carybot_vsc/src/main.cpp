@@ -399,7 +399,7 @@ void loop()
   if (currentMillis - startMillis >= period)
   {
     startMillis = currentMillis;
-    Serial.println("U = " + String(vin + 1, 1) + " V"); // Spannung mit 2 Dezimalstellen
+    Serial.println("U = " + String(vin + 2, 1) + " V"); // Spannung mit 2 Dezimalstellen
     float batteryPercentage = ((vin - 9) / 4) * 100;    // Vin in mV gemessen
     float akku_round = round(batteryPercentage / 10) * 10;
     Serial.println("Akkustand: " + String(akku_round, 0) + "%");
