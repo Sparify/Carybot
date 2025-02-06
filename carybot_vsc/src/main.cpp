@@ -23,20 +23,20 @@ unsigned long currentMillis;
 const unsigned long period = 1000;
 
 int leftfrontwheel_pwm = 32;
-int leftfrontwheel_brake = 1;
-int leftfrontwheel = 2;
+const int leftfrontwheel_brake = 1;
+const int leftfrontwheel = 2;
 
 int leftrearwheel_pwm = 19;
-int leftrearwheel_brake = 18;
-int leftrearwheel = 5;
+const int leftrearwheel_brake = 3;
+const int leftrearwheel = 4;
 
 int rightfrontwheel = 15;
-int rightfrontwheel_brake = 2;
-int rightfrontwheel_pwm = 4;
+const int rightfrontwheel_brake = 5;
+const int rightfrontwheel_pwm = 6;
 
 int rightrearwheel = 12;
-int rightrearwheel_brake = 14;
-int rightrearwheel_pwm = 27;
+const int rightrearwheel_brake = 7;
+const int rightrearwheel_pwm = 8;
 
 // Deine WLAN-Zugangsdaten
 const char *ssid = "Carybot";
@@ -189,6 +189,12 @@ void setup()
     return;
   }
 
+  if (!mcp.begin_I2C())
+  {
+    Serial.println("Error.");
+    while (1);
+  }
+
   WiFi.begin(ssid, password);
   while (WiFi.status() != WL_CONNECTED)
   {
@@ -207,20 +213,20 @@ void setup()
   mcp.pinMode(leftfrontwheel_brake, OUTPUT);
   mcp.digitalWrite(leftfrontwheel_brake, HIGH);
 
-  pinMode(rightfrontwheel, OUTPUT);
+  mcp.pinMode(rightfrontwheel, OUTPUT);
   pinMode(rightfrontwheel_pwm, OUTPUT);
-  pinMode(rightfrontwheel_brake, OUTPUT);
-  digitalWrite(rightfrontwheel_brake, HIGH);
+  mcp.pinMode(rightfrontwheel_brake, OUTPUT);
+  mcp.digitalWrite(rightfrontwheel_brake, HIGH);
 
-  pinMode(leftrearwheel, OUTPUT);
+  mcp.pinMode(leftrearwheel, OUTPUT);
   pinMode(leftrearwheel_pwm, OUTPUT);
-  pinMode(leftrearwheel_brake, OUTPUT);
-  digitalWrite(leftrearwheel_brake, HIGH);
+  mcp.pinMode(leftrearwheel_brake, OUTPUT);
+  mcp.digitalWrite(leftrearwheel_brake, HIGH);
 
-  pinMode(rightrearwheel, OUTPUT);
+  mcp.pinMode(rightrearwheel, OUTPUT);
   pinMode(rightrearwheel_pwm, OUTPUT);
-  pinMode(rightrearwheel_brake, OUTPUT);
-  digitalWrite(rightrearwheel_brake, HIGH);
+  mcp.pinMode(rightrearwheel_brake, OUTPUT);
+  mcp.digitalWrite(rightrearwheel_brake, HIGH);
 
   pinMode(PIN_TEST, INPUT);
 
@@ -248,58 +254,51 @@ void setup()
   myservo.attach(servoPin);
   myservo.write(camera_pos);
 
-  if (!mcp.begin_I2C())
-  {
-    Serial.println("Error.");
-    while (1)
-      ;
-  }
-
   mcp.pinMode(light_pin, OUTPUT);
 }
 
 void moveForward()
 {
   mcp.digitalWrite(leftfrontwheel, HIGH);
-  digitalWrite(rightfrontwheel, LOW);
-  digitalWrite(leftrearwheel, HIGH);
-  digitalWrite(rightrearwheel, LOW);
+  mcp.digitalWrite(rightfrontwheel, LOW);
+  mcp.digitalWrite(leftrearwheel, HIGH);
+  mcp.digitalWrite(rightrearwheel, LOW);
   Serial.println("Vorwärts");
 }
 
 void moveBackward()
 {
   mcp.digitalWrite(leftfrontwheel, LOW);
-  digitalWrite(rightfrontwheel, HIGH);
-  digitalWrite(leftrearwheel, LOW);
-  digitalWrite(rightrearwheel, HIGH);
+  mcp.digitalWrite(rightfrontwheel, HIGH);
+  mcp.digitalWrite(leftrearwheel, LOW);
+  mcp.digitalWrite(rightrearwheel, HIGH);
   Serial.println("Rückwärts");
 }
 
 void turnLeft()
 {
   mcp.digitalWrite(leftfrontwheel, LOW);
-  digitalWrite(rightfrontwheel, LOW);
-  digitalWrite(leftrearwheel, LOW);
-  digitalWrite(rightrearwheel, LOW);
+  mcp.digitalWrite(rightfrontwheel, LOW);
+  mcp.digitalWrite(leftrearwheel, LOW);
+  mcp.digitalWrite(rightrearwheel, LOW);
   Serial.println("Links");
 }
 
 void turnRight()
 {
   mcp.digitalWrite(leftfrontwheel, HIGH);
-  digitalWrite(rightfrontwheel, HIGH);
-  digitalWrite(leftrearwheel, HIGH);
-  digitalWrite(rightrearwheel, HIGH);
+  mcp.digitalWrite(rightfrontwheel, HIGH);
+  mcp.digitalWrite(leftrearwheel, HIGH);
+  mcp.digitalWrite(rightrearwheel, HIGH);
   Serial.println("Rechts");
 }
 
 void stop()
 {
   mcp.digitalWrite(leftfrontwheel_brake, HIGH);
-  digitalWrite(rightfrontwheel_brake, HIGH);
-  digitalWrite(leftrearwheel_brake, HIGH);
-  digitalWrite(rightrearwheel_brake, HIGH);
+  mcp.digitalWrite(rightfrontwheel_brake, HIGH);
+  mcp.digitalWrite(leftrearwheel_brake, HIGH);
+  mcp.digitalWrite(rightrearwheel_brake, HIGH);
   Serial.println("Stop");
 }
 
@@ -338,9 +337,9 @@ void navigate()
 
     // Motorbremsen deaktivieren
     mcp.digitalWrite(leftfrontwheel_brake, LOW);
-    digitalWrite(rightfrontwheel_brake, LOW);
-    digitalWrite(leftrearwheel_brake, LOW);
-    digitalWrite(rightrearwheel_brake, LOW);
+    mcp.digitalWrite(rightfrontwheel_brake, LOW);
+    mcp.digitalWrite(leftrearwheel_brake, LOW);
+    mcp.digitalWrite(rightrearwheel_brake, LOW);
 
     switch (dir)
     {
