@@ -15,14 +15,16 @@ const int light_pin = 0;
 int light_st = 0;
 
 UltraSonicDistanceSensor distanceSensor(13, 12); // Initialize sensor that uses digital pins 13 and 12.
+float distance_front = 0.0;
+float distance_rear = 0.0;
 
 unsigned long startMillis;
 unsigned long currentMillis;
 const unsigned long period = 1000;
 
 int leftfrontwheel_pwm = 32;
-int leftfrontwheel_brake = 33;
-int leftfrontwheel = 25;
+int leftfrontwheel_brake = 1;
+int leftfrontwheel = 2;
 
 int leftrearwheel_pwm = 19;
 int leftrearwheel_brake = 18;
@@ -200,10 +202,10 @@ void setup()
   websocket.begin();
   websocket.onEvent(onWebSocketEvent);
 
-  pinMode(leftfrontwheel, OUTPUT);
+  mcp.pinMode(leftfrontwheel, OUTPUT);
   pinMode(leftfrontwheel_pwm, OUTPUT);
-  pinMode(leftfrontwheel_brake, OUTPUT);
-  digitalWrite(leftfrontwheel_brake, HIGH);
+  mcp.pinMode(leftfrontwheel_brake, OUTPUT);
+  mcp.digitalWrite(leftfrontwheel_brake, HIGH);
 
   pinMode(rightfrontwheel, OUTPUT);
   pinMode(rightfrontwheel_pwm, OUTPUT);
@@ -258,7 +260,7 @@ void setup()
 
 void moveForward()
 {
-  digitalWrite(leftfrontwheel, HIGH);
+  mcp.digitalWrite(leftfrontwheel, HIGH);
   digitalWrite(rightfrontwheel, LOW);
   digitalWrite(leftrearwheel, HIGH);
   digitalWrite(rightrearwheel, LOW);
@@ -267,7 +269,7 @@ void moveForward()
 
 void moveBackward()
 {
-  digitalWrite(leftfrontwheel, LOW);
+  mcp.digitalWrite(leftfrontwheel, LOW);
   digitalWrite(rightfrontwheel, HIGH);
   digitalWrite(leftrearwheel, LOW);
   digitalWrite(rightrearwheel, HIGH);
@@ -276,7 +278,7 @@ void moveBackward()
 
 void turnLeft()
 {
-  digitalWrite(leftfrontwheel, LOW);
+  mcp.digitalWrite(leftfrontwheel, LOW);
   digitalWrite(rightfrontwheel, LOW);
   digitalWrite(leftrearwheel, LOW);
   digitalWrite(rightrearwheel, LOW);
@@ -285,7 +287,7 @@ void turnLeft()
 
 void turnRight()
 {
-  digitalWrite(leftfrontwheel, HIGH);
+  mcp.digitalWrite(leftfrontwheel, HIGH);
   digitalWrite(rightfrontwheel, HIGH);
   digitalWrite(leftrearwheel, HIGH);
   digitalWrite(rightrearwheel, HIGH);
@@ -294,7 +296,7 @@ void turnRight()
 
 void stop()
 {
-  digitalWrite(leftfrontwheel_brake, HIGH);
+  mcp.digitalWrite(leftfrontwheel_brake, HIGH);
   digitalWrite(rightfrontwheel_brake, HIGH);
   digitalWrite(leftrearwheel_brake, HIGH);
   digitalWrite(rightrearwheel_brake, HIGH);
@@ -335,7 +337,7 @@ void navigate()
     lastSpeed = speed_cb;
 
     // Motorbremsen deaktivieren
-    digitalWrite(leftfrontwheel_brake, LOW);
+    mcp.digitalWrite(leftfrontwheel_brake, LOW);
     digitalWrite(rightfrontwheel_brake, LOW);
     digitalWrite(leftrearwheel_brake, LOW);
     digitalWrite(rightrearwheel_brake, LOW);
