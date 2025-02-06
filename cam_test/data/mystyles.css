@@ -197,7 +197,17 @@ body {
     height: 50px;
     cursor: pointer;
     z-index: 2;
-    background-color: transparent
+    background-color: transparent;
+    transition: filter 0.3s ease;
+}
+
+.grayscale {
+    filter: grayscale(100%)
+}
+
+.active-light {
+    background-color: rgba(0, 255, 0, 0.3);
+    border-radius: 10px;
 }
 
 .daten {
