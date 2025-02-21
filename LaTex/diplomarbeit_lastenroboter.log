@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2025.2.21)  21 FEB 2025 14:16
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2025.2.21)  21 FEB 2025 14:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -8,8 +8,8 @@ LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
 (C:\Program Files\MiKTeX\tex/latex/base\article.cls
 Document Class: article 2024/06/29 v1.4n Standard LaTeX document class
-(C:\Program Files\MiKTeX\tex/latex/base\size10.clo
-File: size10.clo 2024/06/29 v1.4n Standard LaTeX file (size option)
+(C:\Program Files\MiKTeX\tex/latex/base\size12.clo
+File: size12.clo 2024/06/29 v1.4n Standard LaTeX file (size option)
 )
 \c@part=\count196
 \c@section=\count197
@@ -310,7 +310,24 @@ Package pdftex.def Info: Pictures/bulme_logo.png  used on input line 15.
 [1
 
 {C:/Users/danie/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./Pictures/b
-ulme_logo.png>] (diplomarbeit_lastenroboter.aux)
+ulme_logo.png>]
+Overfull \hbox (32.33856pt too wide) in paragraph at lines 30--35
+[] 
+ []
+
+
+Overfull \hbox (32.33856pt too wide) in paragraph at lines 38--43
+[] 
+ []
+
+
+Overfull \hbox (32.33856pt too wide) in paragraph at lines 45--50
+[] 
+ []
+
+
+
+[2] (diplomarbeit_lastenroboter.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
@@ -320,20 +337,20 @@ ged.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 10319 strings out of 473530
- 159711 string characters out of 5724861
- 560672 words of memory out of 5000000
- 33427 multiletter control sequences out of 15000+600000
- 569803 words of font info for 68 fonts, out of 8000000 for 9000
+ 10322 strings out of 473530
+ 159825 string characters out of 5724861
+ 560693 words of memory out of 5000000
+ 33431 multiletter control sequences out of 15000+600000
+ 570713 words of font info for 71 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 69i,6n,79p,269b,446s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 69i,8n,79p,348b,447s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\danie\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm
-1000.pk> <C:\Users\danie\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi60
-0\ecbx1000.pk> <C:\Users\danie\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec
+1200.pk> <C:\Users\danie\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi60
+0\ecbx1200.pk> <C:\Users\danie\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec
 /dpi600\ecbx2488.pk>
-Output written on diplomarbeit_lastenroboter.pdf (1 page, 37589 bytes).
+Output written on diplomarbeit_lastenroboter.pdf (2 pages, 49532 bytes).
 PDF statistics:
- 102 PDF objects out of 1000 (max. 8388607)
- 2 named destinations out of 1000 (max. 500000)
+ 130 PDF objects out of 1000 (max. 8388607)
+ 3 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
