@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2025.2.21)  21 FEB 2025 15:15
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2025.2.21)  21 FEB 2025 16:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -391,12 +391,15 @@ ulme_logo.png>]
 
 
 [4]
+Underfull \hbox (badness 10000) in paragraph at lines 64--68
+
+ []
+
+
 
 [5]
 
-[6]
-
-[7] (diplomarbeit_lastenroboter.aux)
+[6] (diplomarbeit_lastenroboter.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
@@ -406,21 +409,21 @@ ged.
 (rerunfilecheck)             Checksum: C46E81BD2171FA92CCCE718F1A0C8D32;470.
  ) 
 Here is how much of TeX's memory you used:
- 11138 strings out of 473530
- 171713 string characters out of 5724861
- 580257 words of memory out of 5000000
+ 11137 strings out of 473530
+ 171707 string characters out of 5724861
+ 582257 words of memory out of 5000000
  34219 multiletter control sequences out of 15000+600000
  571351 words of font info for 70 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 69i,8n,79p,348b,450s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 69i,8n,79p,528b,450s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\danie\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx
 1200.pk> <C:\Users\danie\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi60
 0\ecrm1000.pk> <C:\Users\danie\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec
 /dpi600\ecbx1000.pk> <C:\Users\danie\AppData\Local\MiKTeX\fonts/pk/ljfour/jknap
 pen/ec/dpi600\ecbx2488.pk>
-Output written on diplomarbeit_lastenroboter.pdf (7 pages, 70328 bytes).
+Output written on diplomarbeit_lastenroboter.pdf (6 pages, 72374 bytes).
 PDF statistics:
- 223 PDF objects out of 1000 (max. 8388607)
- 12 named destinations out of 1000 (max. 500000)
+ 220 PDF objects out of 1000 (max. 8388607)
+ 11 named destinations out of 1000 (max. 500000)
  38 words of extra memory for PDF output out of 10000 (max. 10000000)
 
