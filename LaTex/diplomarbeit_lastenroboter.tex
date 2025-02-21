@@ -1,12 +1,16 @@
 \documentclass[ngerman,14pt,a4paper]{article}
 \usepackage[T1]{fontenc}
 \usepackage{graphicx}
+\usepackage{fancyhdr}
 \usepackage{amssymb}
 \usepackage{nameref}
 \usepackage{babel}
 \usepackage{hyperref}
 \usepackage{titlesec}
 \usepackage[a4paper, left=3cm, right=3cm, top=3cm, bottom=3cm]{geometry}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[R]{\thepage}
 \titleformat{\section}{\Huge\bfseries}{\thesection}{1em}{}
 \title{\textbf{\Huge Diplomarbeit: \\ Lastenroboter}}
 \date{}
@@ -70,6 +74,9 @@
 	A key focus of the work is on the mechanical design of the robot, where a sturdy steel housing is built to ensure safety and stability. Furthermore, a custom circuit board is developed to control and connect the various hardware components, such as sensors and motors.\\[0.5 cm]
 	The robot is controlled via a website, which allows the user to operate the robot and access important data such as battery level and weight. A particular focus is also placed on transferring the camera feed to the web interface and integrating a swivel camera to ensure flexible viewing of the transport area. The ESP32 ensures that the user's commands are transmitted to the robot.\\[0.5 cm]
 	Additionally, onboard software is developed to read the sensors and control the motors and camera.
+	%Namen links unten als muster für später
+	\fancyfoot[L]{Daniel Schauer - nur als Muster}
+	\thispagestyle{fancy}
 	\newpage
 	\section{Projektmanagement}
 	 
