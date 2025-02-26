@@ -261,20 +261,24 @@ void setup()
 
 void moveForward()
 {
-  mcp.digitalWrite(leftfrontwheel, HIGH);
-  mcp.digitalWrite(rightfrontwheel, LOW);
-  mcp.digitalWrite(leftrearwheel, HIGH);
-  mcp.digitalWrite(rightrearwheel, LOW);
-  Serial.println("Vorwärts");
+  if(!(distance_front >= 5 && distance_front <= 20 && speed_cb >= 50)){
+    mcp.digitalWrite(leftfrontwheel, HIGH);
+    mcp.digitalWrite(rightfrontwheel, LOW);
+    mcp.digitalWrite(leftrearwheel, HIGH);
+    mcp.digitalWrite(rightrearwheel, LOW);
+    Serial.println("Vorwärts");
+  }
 }
 
 void moveBackward()
 {
-  mcp.digitalWrite(leftfrontwheel, LOW);
-  mcp.digitalWrite(rightfrontwheel, HIGH);
-  mcp.digitalWrite(leftrearwheel, LOW);
-  mcp.digitalWrite(rightrearwheel, HIGH);
-  Serial.println("Rückwärts");
+  if(!(distance_rear >= 5 && distance_rear <= 20 && speed_cb >= 50)){
+    mcp.digitalWrite(leftfrontwheel, LOW);
+    mcp.digitalWrite(rightfrontwheel, HIGH);
+    mcp.digitalWrite(leftrearwheel, LOW);
+    mcp.digitalWrite(rightrearwheel, HIGH);
+    Serial.println("Rückwärts");
+  }
 }
 
 void turnLeft()
@@ -405,8 +409,14 @@ void loop()
     float batteryPercentage = ((vin - 9) / 4) * 100;    // Vin in mV gemessen
     float akku_round = round(batteryPercentage / 10) * 10;
     Serial.println("Akkustand: " + String(akku_round, 0) + "%");
+<<<<<<< HEAD
    // distance_front = distanceSensor_front.measureDistanceCm();
    // distance_rear = distanceSensor_rear.measureDistanceCm();
+=======
+    distance_front = distanceSensor_front.measureDistanceCm();
+    distance_rear = distanceSensor_rear.measureDistanceCm();
+
+>>>>>>> a1b276b5e1eb863afd865cb7fe30cee8894998c4
     // weight = LoadCell.getData();
     // Serial.print("Load_cell output val: ");
     // Serial.println(weight);
