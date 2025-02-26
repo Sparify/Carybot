@@ -14,8 +14,8 @@ Adafruit_MCP23X17 mcp;
 const int light_pin = 0;
 int light_st = 0;
 
-UltraSonicDistanceSensor distanceSensor_rear(13, 12); // Pins umändern
-UltraSonicDistanceSensor distanceSensor_front(13, 12); // Pins umändern
+//UltraSonicDistanceSensor distanceSensor_rear(13, 12); // Pins umändern
+//UltraSonicDistanceSensor distanceSensor_front(13, 12); // Pins umändern
 float distance_front = 0.0;
 float distance_rear = 0.0;
 
@@ -31,13 +31,14 @@ int leftrearwheel_pwm = 19;
 const int leftrearwheel_brake = 3;
 const int leftrearwheel = 4;
 
-int rightfrontwheel = 15;
+int rightfrontwheel_pwm = 15;
 const int rightfrontwheel_brake = 5;
-const int rightfrontwheel_pwm = 6;
+int rightfrontwheel = 6;
 
-int rightrearwheel = 12;
+int rightrearwheel_pwm = 12;
 const int rightrearwheel_brake = 7;
-const int rightrearwheel_pwm = 8;
+const int rightrearwheel = 8;
+
 
 // Deine WLAN-Zugangsdaten
 const char *ssid = "Carybot";
@@ -192,7 +193,7 @@ void setup()
 
   if (!mcp.begin_I2C())
   {
-    Serial.println("Error.");
+    Serial.println("MCP Error.");
     while (1);
   }
 
@@ -404,8 +405,8 @@ void loop()
     float batteryPercentage = ((vin - 9) / 4) * 100;    // Vin in mV gemessen
     float akku_round = round(batteryPercentage / 10) * 10;
     Serial.println("Akkustand: " + String(akku_round, 0) + "%");
-    distance_front = distanceSensor_front.measureDistanceCm();
-    distance_rear = distanceSensor_rear.measureDistanceCm();
+   // distance_front = distanceSensor_front.measureDistanceCm();
+   // distance_rear = distanceSensor_rear.measureDistanceCm();
     // weight = LoadCell.getData();
     // Serial.print("Load_cell output val: ");
     // Serial.println(weight);
