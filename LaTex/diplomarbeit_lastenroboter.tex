@@ -1,4 +1,4 @@
-\documentclass[ngerman,14pt,a4paper]{article}
+\documentclass[ngerman,12pt,a4paper]{article}
 \usepackage[T1]{fontenc}
 \usepackage{graphicx}
 \usepackage{fancyhdr}
@@ -8,6 +8,9 @@
 \usepackage{hyperref}
 \usepackage{titlesec}
 \usepackage[a4paper, left=3cm, right=3cm, top=3cm, bottom=3cm]{geometry}
+\usepackage{setspace}
+\onehalfspacing
+\usepackage{mathptmx}
 \pagestyle{fancy}
 \fancyhf{}
 \fancyfoot[R]{\thepage}
@@ -101,14 +104,45 @@
 	\section{Webserver} %Spari
 	 
 		\subsection{Grundlegende Ziele}
-		 
+	In diesem Kapitel befassen wir uns mit der geplanten Website, die den Benutzern und Benutzerinnen die Steuerung des Lastenroboters ermöglichen soll. Zuallererst definieren wir die grundlegenden Funktionen, die die Website erfüllen soll. Sobald diese erfüllt sind, versuchen wir, das User Interface so einfach und benutzerfreundlich wie möglich zu gestalten. Ein weiterer Punkt ist die Darstellung der spezifischen Messwerte und Daten, damit diese am Webserver schnell und leicht zugänglich sind.\\[0.5cm]
+	Für die Entwicklung der Website verwenden wir HTML, CSS und JavaScript, um alle funktionalen und optischen Anforderungen zu erfüllen.  
+	
+			\subsubsection*{Videoübertragung} 	 
+	
+	Auf der Website soll eine Echtzeit Videoübertragung der ESP32-CAM angezeigt werden. Die Bildfrequenz und die Qualität der Videoübertragung sollte ausgeglichen sein, so dass in der Übertragung alle Objekte und ggf. Hindernisse frühzeitig erkennbar sind und noch Reaktionszeit zum Manövrieren besteht. 
+	
+			\subsubsection*{Steuerung}
+	
+	Auf der Website soll eine grafische Steuereinheit implementiert werden, mit der der Roboter gesteuert und navigiert werden kann. Diese soll dann die entsprechenden Steuerbefehle bzw. Richtungen an den ESP32 senden, wo sie dann in Steuerungsbefehle für die Motoren übersetzt werden.  
+	
+			\subsubsection*{Anzeigen von Daten}
+	
+	Auf der Website sollen bestimmte Messwerte und Daten, wie zum Beispiel Akkustand oder zurzeit aufliegende Last, die vom ESP32 durch Sensoren oder Messungen ausgewertet werden, übersichtlich und leicht zugänglich angezeigt werden.
+	
 		\subsection{Ideen und Entwürfe}
 		
 		\subsection{Webserver}
 		
 			\subsubsection{Webserver Setup}
 			
-			\subsubsection{SPIFFS Setup}	
+			\subsubsection{SPIFFS Setup}
+			
+	SPIFFS (SPI Flash File System) ist ein leichtgewichtiges Dateisystem für Mikrocontroller mit SPI-Flash-Speicher. Es ermöglicht das Speichern und Verwalten von Dateien direkt im Flash-Speicher des Mikrocontrollers. SPIFFS wird in unserem Projekt benötigt, um statische Dateien für unseren Webserver (HTML-, CSS-, JavaScript Anwendungen) bereitzustellen. \\[0.5cm] 
+	In unserem Code wird zuallererst einmal überprüft, ob SPIFFS beim Start der ESP32-CAM richtig initialisiert werden kann. Falls es fehlschlägt, wird eine Fehlermeldung in der seriellen Konsole ausgegeben und das Programm gestoppt. Ansonsten werden die Webserver-Endpunkte über HTTP-GET-Routen definiert, über die unsere statischen Dateien aus SPIFFS an Clients gesendet werden. \\[0.5cm] 
+	“/“ ist die Standardroute des Servers. Somit wird dpad.html als Startseite angezeigt, wenn ein Client sich verbindet. \\[0.5cm] 
+	“menu-icon.svg“ und “Fernlicht.svg“ werden als SVG-Bilder (Scalable Vector Graphics) an den Browser gesendet. Image/svg+xml sorgt dafür, dass der Browser die Dateien als SVG-Bilder erkennt. \\[0.5cm] 
+	“mystyles.css“ wird mit text/css als CSS-Datei gesendet und dient zur Formatierung der Website. \\[0.5cm] 
+	“carybot.js“ wird mit application/javascript als Javascript-Datei gesendet und verarbeitet die Eingaben von Clients auf der Website. \\[0.5cm] 
+	Wenn alle Dateien erfolgreich geladen sind, wird eine Nachricht in der seriellen Konsole ausgegeben. \\[0.5cm] 
+			
+	\begin{figure}
+		\centering
+		\includegraphics{Pictures/SPIFFS\_setup}
+		\caption{SPIFFS Initalisierung}
+		\label{fig:spiffs_init}
+		\par\small Quelle: eigene Abbildung
+	\end{figure}	
+	
 			
 		\subsection{WebSocket Kommunikation}
 		
@@ -123,7 +157,7 @@
 			\subsection{Videoübertragung}
 			
 		\subsection{Website}
-		
+
 			\subsubsection{Implementierung der Steuerung}
 			
 			\subsubsection{Echtzeit-Videoanzeige}
@@ -174,7 +208,7 @@
 	
 		\subsection{Code} %Daniel und %Simon
 		
-	
+\newpage
 	\section{Sensoren}
 	
 		\subsection{Abstandsensor} %Daniel
@@ -193,22 +227,51 @@
 	 \subsection{Autodesk Fushion}
 	 
 	 \subsection{Eagle}
-	 
-\newpage
-	 
+	 	 
 	 \subsection{VS-Code}
+	 
+	 Visual Studio Code (VS-Code) ist eine kostenlose IDE (integrated development environment) entwickelt von Microsoft. VS-Code funktioniert auch auf anderen Betriebssystemen wie zum Beispiel Windows, Linux oder macOS. VS-Code unterstützt einen Großteil der Programmiersprachen und kann durch Extentions mit vielen nützlichen Features und Sprachen immer wieder erweitert werden. 
 	 	
 	 	\subsubsection{Setup}
 	 	
+	 Um ein Projekt in VS-Code erstellen zu können, müssen einige Schritte befolgt werden. Zuallererst muss die IDE von https://code.visualstudio.com/ für das jeweilig passende Betriebssystem heruntergeladen und installiert werden. Um Mikrocontroller wie ESPs oder Arduinos in VS-Code programmieren zu können, wird die PlatformIO IDE Extension benötigt. Um die PlatformIO IDE Extension in VS-Code zu installieren, drückt man einfach auf das Extensions Symbol oder drückt die Tastenkombination Ctrl+Shift+X um das Extensions Menü zu öffnen. Danach gibt man in der Suchleiste “PlatformIO IDE“ ein und wählt die Extension mit der Ameise als Icon. Dann drückt man auf “Install“ und wartet, bis die Extension fertig heruntergeladen ist. Nach der Installation sollte das PlatformIO Icon (Ameisenkopf) auf der linken Seite unter dem Extension Menü erscheinen. \\[0.5cm]
+	 Um nun ein neues Projekt zu erstellen, klickt man auf das PlatformIO Icon und wählt “+ New Project“. \\[0.5cm]
+	 Im Project Wizard wählt man nun den gewünschten Namen, das Board, das Framework als auch den Speicherungsort des Projektes. Bei unserem Projekt wählten wir das Board “Espressif ESP32 Dev Module“ und als Framework “Arduino“, da wir einen EPS32 zum Programmieren verwendeten. \\[0.5cm]
+	 	
+	 	
 	 	\subsubsection{Bibliotheken}
+	 	
+	 Bibliotheken sind ein weiterer wichtiger Bestandteil für das Programmieren. Bibliotheken beinhalten bereits eine Sammlung von vorgefertigtem Code, der für bestimmte Aufgaben, wie zum Beispiel zum Auswerten eines Sensors, verwendet werden kann. Bibliotheken werden verwendet, um den Code zu minimieren und dadurch die Lesbarkeit sowie die Effizienz zu steigern. Um eine Bibliothek für PlatformIO in VS-Code zu installieren, muss das PIO Home Menü geöffnet werden. Darin befindet sich der Reiter „Libraries“. Wenn dieses geöffnet wird, erscheint eine Suchleiste, mit der die gewünschten Bibliotheken zum Projekt hinzugefügt werden können.
 	 
 		\subsubsection{verwendete Bibliotheken}
+		
+			\subsubsection*{ESPAsyncWebServer}
+			
+	Die ESPAsnycWebServer Bibliothek ermöglicht es, Webanwendungen effizient und mit hoher Performance auf ESP8266- und ESP32 Mikrocontroller zu hosten. Der Asynchrone Betrieb verhindert Blockierungen und sorgt für eine flüssige Verarbeitung mehrere Anfragen gleichzeitig. Außerdem unterstützt die Bibliothek WebSockets, welche für die Echtzeitkommunikation zwischen Client und Server benötigt wurden. Die Bibliothek ist eine leistungsfähigere Alternative zur klassischen WebServer-Bibliothek, da sie ressourcenschonender und nicht blockieren arbeitet.\footnote{https://github.com/lacamera/ESPAsyncWebServer}
+	
+			\subsubsection*{ArduinoJSON}
+			
+	Die ArduinoJson Bibliothek ermöglicht die Verarbeitung von JSON-String in Objekte und umgekehrt. Sie ist speziell für Geräte mit begrenztem Speicher und Rechenleistung optimiert. Die Bibliothek wird benötigt, um die erhaltenen Steuerbefehle am ESp32 zu konvertieren und um sie anschließend weiterzuverarbeiten.\footnote{https://arduinojson.org/}
+			
+			\subsubsection*{HCSR04}
+			
+			\subsubsection*{arduinoWebSockets}
+			
+	Die WebSockets Bibliothek ermöglicht eine Kommunikation über das WebSocket Protokoll für Arduino-Boards, ESP8266 und ESP32. Die Bibliothek wird für die Echtzeit-Kommunikation zwischen dem Webserver und den ESP32 benötigt. Außerdem werden die Bilder der ESp32-CAM über einen WebSocket an den Webserver gesendet. Die Bibliothek ist eine großartige Ergänzung zur ESPAsyncWebServer Bibliothek.\footnote{https://github.com/Links2004/arduinoWebSockets}
+			
+			\subsubsection*{ESp32Servo}
+			
+			\subsubsection*{Adafruit\_MCP23x17}
+			
+			\subsubsection*{HX711\_ADC}
 				
 	 \subsection{LaTex}
 	 
 	 \subsection{GitHub}
 	
 	\section{Abbildungsverzeichnis}
+	
+		\listoffigures
 	
 	\section{Literaturverzeichnis}
 	 
