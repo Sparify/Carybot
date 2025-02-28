@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.2.24)  27 FEB 2025 21:28
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.2.24)  28 FEB 2025 14:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -332,53 +332,157 @@ LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
 (Font)                  OT1/cmr/bx/it --> OT1/ptm/m/it on input line 35.
 LaTeX Info: Redefining \hbar on input line 50.
 )
-LaTeX Font Info:    Trying to load font information for T1+ptm on input line 20
-.
+(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/latex/tools\array.sty
+Package: array 2023/10/16 v2.5g Tabular extension package (FMi)
+\col@sep=\dimen161
+\ar@mcellbox=\box52
+\extrarowheight=\dimen162
+\NC@list=\toks22
+\extratabsurround=\skip67
+\backup@length=\skip68
+\ar@cellbox=\box53
+)
+(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/latex/booktabs\booktabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen163
+\lightrulewidth=\dimen164
+\cmidrulewidth=\dimen165
+\belowrulesep=\dimen166
+\belowbottomsep=\dimen167
+\aboverulesep=\dimen168
+\abovetopsep=\dimen169
+\cmidrulesep=\dimen170
+\cmidrulekern=\dimen171
+\defaultaddspace=\dimen172
+\@cmidla=\count278
+\@cmidlb=\count279
+\@aboverulesep=\dimen173
+\@belowrulesep=\dimen174
+\@thisruleclass=\count280
+\@lastruleclass=\count281
+\@thisrulewidth=\dimen175
+)
+(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/latex/adjustbox\adjustbox.st
+y
+Package: adjustbox 2022/10/17 v1.3a Adjusting TeX boxes (trim, clip, ...)
+ (C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/latex/xkeyval\xkeyval.sty
+Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
 
+(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkeyval.tex
+(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkvutils.tex
+\XKV@toks=\toks23
+\XKV@tempa@toks=\toks24
+)
+\XKV@depth=\count282
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/latex/adjustbox\adjcalc.sty
+Package: adjcalc 2012/05/16 v1.1 Provides advanced setlength with multiple back
+-ends (calc, etex, pgfmath)
+)
+(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/latex/adjustbox\trimclip.sty
+Package: trimclip 2020/08/19 v1.2 Trim and clip general TeX material
+
+(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/latex/collectbox\collectbox.
+sty
+Package: collectbox 2022/10/17 v0.4c Collect macro arguments as boxes
+\collectedbox=\box54
+)
+\tc@llx=\dimen176
+\tc@lly=\dimen177
+\tc@urx=\dimen178
+\tc@ury=\dimen179
+Package trimclip Info: Using driver 'tc-pdftex.def'.
+
+(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/latex/adjustbox\tc-pdftex.de
+f
+File: tc-pdftex.def 2019/01/04 v2.2 Clipping driver for pdftex
+))
+\adjbox@Width=\dimen180
+\adjbox@Height=\dimen181
+\adjbox@Depth=\dimen182
+\adjbox@Totalheight=\dimen183
+\adjbox@pwidth=\dimen184
+\adjbox@pheight=\dimen185
+\adjbox@pdepth=\dimen186
+\adjbox@ptotalheight=\dimen187
+
+(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/latex/ifoddpage\ifoddpage.st
+y
+Package: ifoddpage 2022/10/18 v1.2 Conditionals for odd/even page detection
+\c@checkoddpage=\count283
+)
+(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/latex/varwidth\varwidth.sty
+Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
+\@vwid@box=\box55
+\sift@deathcycles=\count284
+\@vwid@loff=\dimen188
+\@vwid@roff=\dimen189
+)) (C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/latex/tools\longtable.sty
+Package: longtable 2023-11-01 v4.19 Multi-page Table package (DPC)
+\LTleft=\skip69
+\LTright=\skip70
+\LTpre=\skip71
+\LTpost=\skip72
+\LTchunksize=\count285
+\LTcapwidth=\dimen190
+\LT@head=\box56
+\LT@firsthead=\box57
+\LT@foot=\box58
+\LT@lastfoot=\box59
+\LT@gbox=\box60
+\LT@cols=\count286
+\LT@rows=\count287
+\c@LT@tables=\count288
+\c@LT@chunks=\count289
+\LT@p@ftn=\toks25
+)
+LaTeX Font Info:    Trying to load font information for T1+ptm on input line 24
+.
 (C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\t1ptm.fd
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 )
 (C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pd
 ftex.def
 File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count278
-\l__pdf_internal_box=\box52
+\l__color_backend_stack_int=\count290
+\l__pdf_internal_box=\box61
 ) (diplomarbeit_lastenroboter.aux)
 \openout1 = `diplomarbeit_lastenroboter.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
 
 (C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.m
 kii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count279
-\scratchdimen=\dimen161
-\scratchbox=\box53
-\nofMPsegments=\count280
-\nofMParguments=\count281
-\everyMPshowfont=\toks22
-\MPscratchCnt=\count282
-\MPscratchDim=\dimen162
-\MPnumerator=\count283
-\makeMPintoPDFobject=\count284
-\everyMPtoPDFconversion=\toks23
+\scratchcounter=\count291
+\scratchdimen=\dimen191
+\scratchbox=\box62
+\nofMPsegments=\count292
+\nofMParguments=\count293
+\everyMPshowfont=\toks26
+\MPscratchCnt=\count294
+\MPscratchDim=\dimen192
+\MPnumerator=\count295
+\makeMPintoPDFobject=\count296
+\everyMPtoPDFconversion=\toks27
 )
 (C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-
 base.sty
@@ -390,7 +494,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-Package hyperref Info: Link coloring OFF on input line 20.
+Package hyperref Info: Link coloring OFF on input line 24.
  (diplomarbeit_lastenroboter.out) (diplomarbeit_lastenroboter.out)
 \@outlinefile=\write3
 \openout3 = `diplomarbeit_lastenroboter.out'.
@@ -430,42 +534,42 @@ Package hyperref Info: Link coloring OFF on input line 20.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\big@size=\dimen163
+\big@size=\dimen193
 LaTeX Font Info:    Trying to load font information for OT1+ztmcm on input line
- 22.
+ 26.
 (C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1ztmcm.fd
 File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
 )
 LaTeX Font Info:    Trying to load font information for OML+ztmcm on input line
- 22.
+ 26.
 
 (C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omlztmcm.fd
 File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
 )
 LaTeX Font Info:    Trying to load font information for OMS+ztmcm on input line
- 22.
+ 26.
 
 (C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omsztmcm.fd
 File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
 )
 LaTeX Font Info:    Trying to load font information for OMX+ztmcm on input line
- 22.
+ 26.
 
 (C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omxztmcm.fd
 File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
 )
 LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 2
-2.
+6.
 
 (C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 22.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 26.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 22.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 26.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 22.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 26.
 
 
 LaTeX Warning: No \author given.
@@ -473,14 +577,14 @@ LaTeX Warning: No \author given.
 <Pictures/bulme_logo.png, id=271, 501.875pt x 501.875pt>
 File: Pictures/bulme_logo.png Graphic file (type png)
 <use Pictures/bulme_logo.png>
-Package pdftex.def Info: Pictures/bulme_logo.png  used on input line 25.
+Package pdftex.def Info: Pictures/bulme_logo.png  used on input line 29.
 (pdftex.def)             Requested size: 250.93687pt x 250.93687pt.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 26.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 30.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 26.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 30.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 26.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 30.
 [1
 
 {C:/Users/Lenovo/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/Len
@@ -490,43 +594,100 @@ e_logo.png>] [2] [3] (diplomarbeit_lastenroboter.toc [4] [5])
 \openout4 = `diplomarbeit_lastenroboter.toc'.
 
  [6]
-Underfull \hbox (badness 10000) in paragraph at lines 71--75
+Underfull \hbox (badness 10000) in paragraph at lines 75--79
 
  []
 
 [7] [8] [9]
-Underfull \hbox (badness 10000) in paragraph at lines 130--137
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 132.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 132.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 132.
 
+Overfull \hbox (0.27312pt too wide) in paragraph at lines 132--134
+\T1/ptm/m/n/12 Der Webser-ver wird mit-hil-fe der Bi-blio-thek ES-PA-syn-cWebSe
+r-ver auf ei-nem ESP32-CAM
  []
 
-[10]
-<Pictures/SPIFFS_setup.png, id=384, 453.19313pt x 449.42906pt>
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 1
+36.
+(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1ptm.fd
+File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
+)
+[10] [11]
+<Pictures/SPIFFS_setup.png, id=390, 453.19313pt x 449.42906pt>
 File: Pictures/SPIFFS_setup.png Graphic file (type png)
 <use Pictures/SPIFFS_setup.png>
-Package pdftex.def Info: Pictures/SPIFFS_setup.png  used on input line 140.
+Package pdftex.def Info: Pictures/SPIFFS_setup.png  used on input line 159.
 (pdftex.def)             Requested size: 453.19202pt x 449.42795pt.
 
-Overfull \hbox (26.40067pt too wide) in paragraph at lines 140--141
+Overfull \hbox (26.40067pt too wide) in paragraph at lines 159--160
  [][] 
  []
 
-[11] [12 <./Pictures/SPIFFS_setup.png>] [13]
-Underfull \hbox (badness 10000) in paragraph at lines 237--240
+[12 <./Pictures/SPIFFS_setup.png>]
+Underfull \hbox (badness 2343) in paragraph at lines 199--199
+[]|\T1/ptm/m/n/12 Ein neu-er Cli-ent ver-bin-det
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 199--200
+[]|\T1/ptm/m/n/12 Ausgabe der Client-ID & IP-
+ []
+
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 2
+01.
+(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/latex/base\t1cmtt.fd
+File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
+)
+Underfull \hbox (badness 10000) in paragraph at lines 201--202
+[]|\T1/ptm/m/n/12 Übergabe an
+ []
+
+
+Underfull \hbox (badness 1281) in paragraph at lines 203--203
+[]|\T1/ptm/m/n/12 Binärdaten wer-den emp-fan-
+ []
+
+
+Underfull \hbox (badness 2538) in paragraph at lines 203--204
+[]|\T1/ptm/m/n/12 Nachricht in der Kon-so-le (wird
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Overfull \hbox (12.46703pt too wide) in paragraph at lines 213--218
+\T1/ptm/m/n/12 ist, wird die Funk-ti-on \T1/cmtt/m/n/12 lights_on(\T1/ptm/m/n/1
+2 ) auf-ge-ru-fen, an-sons-ten wird die Funk-ti-on \T1/cmtt/m/n/12 lights_off()
 
  []
 
-[14]
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 250.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 250.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 250.
- [15] (diplomarbeit_lastenroboter.lof)
+[13]
+Overfull \hbox (2.94443pt too wide) in paragraph at lines 223--227
+\T1/ptm/m/n/12 Um die Ka-me-ra pro-gram-mie-ren zu kön-nen, muss zu-nächst das 
+rich-ti-ge Board \T1/cmtt/m/n/12 AI Thinker
+ []
+
+
+Overfull \hbox (2.49939pt too wide) in paragraph at lines 223--227
+\T1/ptm/m/n/12 blio-thek \T1/cmtt/m/n/12 esp_camera.h \T1/ptm/m/n/12 in-klu-die
+rt wer-den. Dann muss das pas-sen-de ESP32-CAM-Modell
+ []
+
+[14] [15] [16]
+Underfull \hbox (badness 10000) in paragraph at lines 312--315
+
+ []
+
+[17] [18] (diplomarbeit_lastenroboter.lof)
 \tf@lof=\write5
 \openout5 = `diplomarbeit_lastenroboter.lof'.
 
- [16] (diplomarbeit_lastenroboter.aux)
+ [19] (diplomarbeit_lastenroboter.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
@@ -536,13 +697,21 @@ ged.
 (rerunfilecheck)             Checksum: D1908B374D72E87FAA4B9831DD250000;9320.
  ) 
 Here is how much of TeX's memory you used:
- 11789 strings out of 474486
- 186765 string characters out of 5743283
+ 13185 strings out of 474486
+ 211756 string characters out of 5743283
  1937542 words of memory out of 5000000
- 33826 multiletter control sequences out of 15000+600000
- 615840 words of font info for 130 fonts, out of 8000000 for 9000
+ 35165 multiletter control sequences out of 15000+600000
+ 616467 words of font info for 132 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  69i,12n,79p,934b,612s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+pdfTeX warning (dest): name{Hfootnote.5} has been referenced but does not exist
+, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{Hfootnote.4} has been referenced but does not exist
+, replaced by a fixed one
+
 
 pdfTeX warning (dest): name{Hfootnote.3} has been referenced but does not exist
 , replaced by a fixed one
@@ -555,12 +724,13 @@ pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exist
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist
 , replaced by a fixed one
 
-<C:/Users/Lenovo/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb
-><C:/Users/Lenovo/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pf
-b>
-Output written on diplomarbeit_lastenroboter.pdf (16 pages, 150212 bytes).
+ <C:\Users\Lenovo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1
+200.pk><C:/Users/Lenovo/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utm
+b8a.pfb><C:/Users/Lenovo/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/ut
+mr8a.pfb>
+Output written on diplomarbeit_lastenroboter.pdf (19 pages, 173952 bytes).
 PDF statistics:
- 452 PDF objects out of 1000 (max. 8388607)
- 88 named destinations out of 1000 (max. 500000)
+ 516 PDF objects out of 1000 (max. 8388607)
+ 94 named destinations out of 1000 (max. 500000)
  547 words of extra memory for PDF output out of 10000 (max. 10000000)
 

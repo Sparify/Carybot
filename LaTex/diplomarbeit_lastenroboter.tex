@@ -11,6 +11,10 @@
 \usepackage{setspace}
 \onehalfspacing
 \usepackage{mathptmx}
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{adjustbox}
+\usepackage{longtable}
 \pagestyle{fancy}
 \fancyhf{}
 \fancyfoot[R]{\thepage}
@@ -125,6 +129,20 @@
 		
 			\subsubsection{Webserver Setup}
 			
+	Der Webserver wird mithilfe der Bibliothek ESPAsyncWebServer auf einem ESP32-CAM Mikrocontroller eingerichtet. Diese Bibliothek ermöglicht einen nicht-blockierenden Betrieb, wodurch parallele Anfragen effizient verarbeitet werden können.\footnote{https://github.com/lacamera/ESPAsyncWebServer} \\[0.5cm]
+	Für die Netzwerkkonfiguration wurde ein eigener Access Point mit folgenden Parametern definiert:
+	
+	\begin{itemize}
+		\item SSID (Service Set Identifiert) : “Carybot” – dient zur Identifikation des drahtlosen Netwerkes
+		\item Passwort: “123456789“ – dient zum Schutz des Netwerkes
+		\item Lokale IP-Adresse: 192.168.4.1 – dient zum Zugriff auf die Webserver-Oberfläche
+		\item Gateway-Adresse: 192.168.4.1 - ESP32-CAM fungiert als Access Point
+		\item Subnetzmaske: 255.255.255.0 - ermöglicht die Kommunikation zwischen Geräten im Bereich 192.168.4.x
+	\end{itemize} 
+	Der Webserver wird auf Port 80 erstellt. Port 80 ist der Standardport für HTTP-Dienste. 
+	\\[0.5cm]
+	In der Setup Funktion wird danach überprüft, ob der Access Point erfolgreich konfiguriert worden ist und ob der Access Point erfolgreich gestartet werden kann. Falls ein Fehler auftreten sollte, wird der Setup unterbrochen und die jeweilige Fehlermeldung in der seriellen Konsole ausgegeben. Wenn alles erfolgreich konfiguriert ist und starten kann, wird im Seriellen Monitor die IP-Adresse in der seriellen Konsole ausgegeben. Anschließend wird der Webserver gestartet.
+			
 			\subsubsection{SPIFFS Setup}
 			
 	SPIFFS (SPI Flash File System) ist ein leichtgewichtiges Dateisystem für Mikrocontroller mit SPI-Flash-Speicher. Es ermöglicht das Speichern und Verwalten von Dateien direkt im Flash-Speicher des Mikrocontrollers. SPIFFS wird in unserem Projekt benötigt, um statische Dateien für unseren Webserver (HTML-, CSS-, JavaScript Anwendungen) bereitzustellen. \\[0.5cm] 
@@ -134,8 +152,9 @@
 	“mystyles.css“ wird mit text/css als CSS-Datei gesendet und dient zur Formatierung der Website. \\[0.5cm] 
 	“carybot.js“ wird mit application/javascript als Javascript-Datei gesendet und verarbeitet die Eingaben von Clients auf der Website. \\[0.5cm] 
 	Wenn alle Dateien erfolgreich geladen sind, wird eine Nachricht in der seriellen Konsole ausgegeben. \\[0.5cm] 
+	Die readFile() Funktion wird benötigt, um die jeweiligen Dateien aus SPIFFS lesen zu können. Die Funktion liest eine Datei aus dem SPIFFS-Speicher und gibt den Inhalt als String zurück.
 			
-	\begin{figure}
+	\begin{figure}[h]
 		\centering
 		\includegraphics{Pictures/SPIFFS\_setup}
 		\caption{SPIFFS Initalisierung}
@@ -148,13 +167,69 @@
 		
 			\subsubsection{Kommunikation Setup}	
 			
+	Für die Kommunikation zwischen dem Webserver und dem ESP32 wird die ArduinoJson und die ArduinoWebSockets Bibliothek benötigt. Die ArduinoJson Bibliothek wird für die Umwandlung der JSON-Steuerbefehle benötigt. Die ArduinoWebSockets Bibliothek wird für die Kommunikation über das WebSocket Protokoll benötigt. \\[0.5cm]
+	Für die Netzwerkkonfiguration als Client werden folgenden Parameter definiert:
+	\begin{itemize}
+		\item SSID: “Carybot“ – gleiche SSID wie ESP32-CAM
+		\item Passwort: “123456789“ – gleiches Passwort wie ESP32-CAM
+		\item Lokale IP-Adresse: 192.168.4.3 
+		\item Gateway-Adresse: 192.168.4.1 – Adresse des Access Points (ESP32-CAM)
+		\item Subnetzmaske: 255.255.255.0 – ermöglicht Kommunikation zwischen Geräten im Bereich 192.168.4.x
+	\end{itemize}
+	Für die WebSocket-Kommunkation wurde der Port 8080 gewählt. \\[0.5cm]
+	In der Setup Funktion des Programmes wird dann überprüft, ob die IP-Konfiguration erfolgreich abgeschlossen wurde. Ansonsten kommt es zu einer Fehlermeldung und das Setup wird abgebrochen. Danach wird versucht, sich mit dem WLAN-Netzwerk zu verbinden. Wenn sich der ESP32 erfolgreich mit dem WLAN verbunden hat, wird eine Nachricht und die IP-Adresse des ESP32 in der seriellen Konsole ausgegeben. Danach wird die WebSocket Konfiguration noch gestartet. Es wird definiert, dass die Funktion onWebSocketEvent aufgerufen wird, wenn Events über den WebSocket registriert werden. In der loop Funktion wird dann noch ständig überprüft, ob neue Events am WebSocket registriert werden.
+			
 			\subsubsection{Message Handling}
+			
+	In der Funktion onWebSocketEvent() werden die WebSocket-Ereignisse verarbeitet. Sie wird aufgerufen, wenn sich ein WebSocket-Client verbindent, eine Nachricht sendet oder die Verbindung sich trennt.
+	Der Parameter num steht für die ID des Clients, der das Event ausgelöst hat. Der Parameter type gibt die Art des WebSocket-Event an. Der Parameter payload sind die empfangenen Daten. Der Parameter length steht für die Größe des payload-Arrays. 
+	In der Funktion werden die Events mit einem switch-case verarbeitet\\[0.5cm]
+	Übersicht der WebSocket-Ereignisse:
+	
+	\begin{table}[h]
+		\centering
+		\renewcommand{\arraystretch}{1.2}
+		\setlength{\tabcolsep}{8pt}
+		\begin{adjustbox}{max width=\textwidth}
+    	\begin{tabular}{|l|p{5cm}|p{6cm}|}
+
+		\hline
+		\textbf{Ereignistyp} & \textbf{Beschreibung} & \textbf{Verarbeitung} \\
+		\hline
+		WStype\_CONNECTED & Ein neuer Client verbindet sich. & Ausgabe der Client-ID \& IP-Adresse in der Konsole \\
+		\hline
+		WStype\_TEXT & Eine Textnachricht wird empfangen. & Übergabe an \texttt{handleWebSocketMessage()} \\
+		\hline
+		WStype\_BIN & Binärdaten werden empfangen. & Nachricht in der Konsole (wird nicht verarbeitet) \\
+		\hline
+		WStype\_DISCONNECTED & Ein Client trennt die Verbindung. & Meldung mit der Client-ID in der Konsole. \\
+		\hline
+	
+		\end{tabular}
+		\end{adjustbox}
+		\caption{Übersicht der WebSocket-Ereignisse}
+		\label{tab:websocket-events}
+	\end{table} 
+	Die Funktion handleWebSocketMessage() verarbeitet die WebSocket-Nachricht, die als JSON-Objekte gesendet werden. Die Parameter sind wieder die Client-ID, die empfangenen Nachricht und die Länge der empfangenen Nachricht. \\[0.5cm]
+	Zuerst wird die empfangene Nachricht (payload) in einen String konvertiert. Diese wird dann in der seriellen Konsole ausgegeben. Danach wird ein JSON-Dokument mit max 200 Bytes erstellt. Die empfangene Nachricht wird dann mit deserialzeJson() geparst. Falls das Parsen erfolgreich war, wird die JSON-Nachricht verarbeitet. \\[0.5cm]
+	Wenn die JSON-Nachricht den Namen \texttt{robot\_direction} enthält, wird die Richtung mit der Funktion \texttt{stringToDirection()} in eine eigene Variable umgewandelt. Auch die mitgesendete Variable \texttt{speed} wird ebenfalls in eine eigene Variable gespeichert. \\[0.5cm]
+	Wenn die JSON-Nachricht den Namen \texttt{camera\_position} enthält, wird der Wert der Nachricht in die Variable \texttt{camera\_pos} gespeichert und die Funktion \texttt{cam\_turn()}  aufgerufen. \\[0.5cm]
+	Wenn die JSON-Nachricht den Namen \texttt{light\_status} enthält, wird der Wert der Nachricht in die boolesche Variable \texttt{light\_status}  gespeichert. Dieser Variable wird dann in die numerische Variable \texttt{light\_st} umgewandelt (1 = an, 0 = aus). Wenn \texttt{light\_st} eine 1 ist, wird die Funktion \texttt{lights\_on(}) aufgerufen, ansonsten wird die Funktion \texttt{lights\_off()} aufgerufen.
 			
 		\subsection{Kamera}
 		
 			\subsubsection{Kamera Setup}
 			
+	Um die Kamera programmieren zu können, muss zunächst das richtige Board \texttt{AI Thinker ESP32-CAM} ausgewählt werden. Danach müssen die ESP32-Kamera-Treiber mit der Bibliothek \texttt{esp\_camera.h} inkludiert werden. Dann muss das passende ESP32-CAM-Modell festgelegt werden. Da wir uns für das \texttt{Ai-Thinker} Modell entschieden haben, muss diese nun definiert werden. Falls ein anderes Modell genutzt wird, muss es entsprechend angepasst werden. \\[0.5cm]
+	Als nächstes werden die GPIO-Pins der ESP32-CAM für die Kamera OV2640 konfiguriert. Diese Zuordnung ist spezifisch für das Ai-Thinker-Modell und muss für jedes Modell individuell angepasst werden. \\[0.5cm]
+	Als nächstes muss die ESP32-CAM mit der ESP-IDF \texttt{esp\_camera} Bibliothek konfiguriert und initialisiert werden. Als erstes muss mit \texttt{camera\_config\_t} eine Struktur definiert werden, mit der verschiedene Parameter und Eigenschaften wie GPIO-Pins, Bildgröße und Qualität festlegt werden können. \\[0.5cm] 
+	LEDC-Kanal und Timer werden für das Taktsignal benötigt, um die Kamera zu betreiben.
+		
 			\subsection{Videoübertragung}
+			
+	In unserem Projekt werden die Live-Bilder per WebSocket an den Webserver gesendet. Um dies umzusetzen, wird zuerst eine Webserver-Route benötigt. Dazu wird eine http-GET-Anfrage für die Hauptseite (“/“) definiert. Im Code wird ein JavaScript Skript benutzt, um eine Websocket-Verbindung herzustellen. Die IP-Adresse wird automatisch durch \texttt{windows.location.hostname} erkannt. Port 81 wird für das WebSocket-Streaming verwendet. Wenn die ESP32-CAM ein neues Bild als WebSocket-Nachricht versendet, wird es als JPEG-Blob gespeichert. Danach wird ein temporär URL-Link erstellt. Das Bild wird schlussendlich in einem \texttt{<img>}-Tag mit der id \texttt{stream} angezeigt. \\[0.5cm]
+	Die WebSocket Verbindung wird die ganze Zeit überwacht. In der Konsole wird ausgegeben, wenn die Websocket-Verbindung aktiv ist. Falls die Verbindung abbrechen sollte, wird nach 5 Sekunden automatisch ein erneuter Verbindungsversuch gestartet. Zum Schluss wird der HTML-Code mit \texttt{HTTP-Status 200} (OK) an den Browser gesendet. 
+	
 			
 		\subsection{Website}
 
@@ -230,7 +305,7 @@
 	 	 
 	 \subsection{VS-Code}
 	 
-	 Visual Studio Code (VS-Code) ist eine kostenlose IDE (integrated development environment) entwickelt von Microsoft. VS-Code funktioniert auch auf anderen Betriebssystemen wie zum Beispiel Windows, Linux oder macOS. VS-Code unterstützt einen Großteil der Programmiersprachen und kann durch Extentions mit vielen nützlichen Features und Sprachen immer wieder erweitert werden. 
+	 Visual Studio Code (VS-Code) ist eine kostenlose IDE (integrated development environment) entwickelt von Microsoft. VS-Code funktioniert auch auf anderen Betriebssystemen wie zum Beispiel Windows, Linux oder macOS. VS-Code unterstützt einen Großteil der Programmiersprachen und kann durch Extentions mit vielen nützlichen Features und Sprachen immer wieder erweitert werden.\footnote{https://code.visualstudio.com/}
 	 	
 	 	\subsubsection{Setup}
 	 	
