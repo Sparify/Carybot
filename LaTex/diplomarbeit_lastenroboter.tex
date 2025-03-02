@@ -1,8 +1,11 @@
 \documentclass[ngerman,12pt,a4paper]{article}
 \usepackage[T1]{fontenc}
 \usepackage{graphicx}
+\usepackage{caption}
 \usepackage{fancyhdr}
 \usepackage{amssymb}
+\usepackage{tikz}
+\usepackage{pgfplots}
 \usepackage{nameref}
 \usepackage{babel}
 \usepackage{hyperref}
@@ -88,11 +91,87 @@
 	\section{Projektmanagement}
 	
 		\subsection{Projektteam} %Daniel
+		\begin{center}
+		\textbf{Betreuer: Prof. DI. Gernot Mörtl}\\[1cm]
+		%Daniel------------------------------
+			\begin{minipage}{0.3\textwidth}
+				\includegraphics[width=\linewidth]{Pictures/placeholder}
+				\captionof{figure}{Porträt \\Daniel Schauer}
+				\label{fig:daniel}
+			\end{minipage}
+			\hfill
+			\begin{minipage}{0.65\textwidth}
+				\vspace{-10pt}
+				\textbf{Daniel Schauer: Software-OnBoard}
+				\begin{itemize}
+					\item Projektleiter
+					\item Verbindung von Software und Hardware (ESP32 zu Sensoren)
+					\item Kamera-Übertragung zur Web-Oberfläche
+					\item Umsetzung einer schwenkbaren Kamera
+					\item Dokumentation
+				\end{itemize}
+			\end{minipage} \\[0.5 cm]
 		
+			%Simon---------------------------
+			\begin{minipage}{0.3\textwidth}
+				\includegraphics[width=\linewidth]{Pictures/placeholder}
+				\captionof{figure}{Porträt \\Simon Spari}
+				\label{fig:simon}
+			\end{minipage}
+			\hfill
+			\begin{minipage}{0.65\textwidth}
+				\vspace{-20pt}
+				\textbf{Simon Spari: Software-App}
+				\begin{itemize}
+					\item Benutzeroberfläche (Web-Oberfläche) für Steuerung
+					\item Übertragung der Steuerung/Befehle von Web-Oberfläche zu ESP32
+					\item Kamera-Übertragung zur Web-Oberfläche
+					\item Dokumentation
+				\end{itemize}
+			\end{minipage}
+			\newpage
+			%Felix---------------------------
+			\begin{minipage}{0.3\textwidth}
+				\includegraphics[width=\linewidth]{Pictures/placeholder}
+				\captionof{figure}{Porträt Felix Hochegger}
+				\label{fig:felix}
+			\end{minipage}
+			\hfill
+			\begin{minipage}{0.65\textwidth}
+				\vspace{-60pt}
+				\textbf{Felix Hochegger: Hardware-Design und Mechanik}
+				\begin{itemize}
+					\item Bau des Roboter Gehäuse
+					\item Ansteuerung und Verbindung von Hardware (Ansteuerung und Berechnung der Motoren)
+					\item Dokumentation
+				\end{itemize}
+			\end{minipage}
+			\end{center}
+			
 		\subsection{Projektstrukturplan} %Daniel
 		
 		\subsection{Meilensteine} %Daniel
-		
+		Um unseren Fortschritt und unsere Zeiteinteilung besser im Überblick zu behalten, haben wir uns bestimmte Meilensteine für unser Projekt gesetzt. Diese sind sehr hilfreich, um das Projekt strukturiert umzusetzen, angefangen von der Projektplanung bis hin zum fertigen Prototyp. \\[0.5cm]
+		Die folgenden Meilensteine haben wir uns bei der Projektplanung gesetzt:
+		\begin{longtable}{| l | l |}
+			\hline
+			\textbf{Meilenstein} & \textbf{Datum} \\
+			\hline
+			\endfirsthead
+			\hline
+			\textbf{Meilenstein} & \textbf{Datum} \\
+			\hline
+			\endhead
+			\hline
+			Grundlegendes Gehäuse & 07.11.2024 \\
+			\hline
+			Funktionsfähige Website & 19.12.2024 \\
+			\hline
+			Funktionsfähige steuerbare Motoren & 16.01.2025 \\
+			\hline
+			Funktionsfähiger Prototyp & 06.03.2025 \\
+			\hline
+		\end{longtable}
 		\subsection{Kostenaufstellung} %Daniel
 	
 	\section{Antrieb}
