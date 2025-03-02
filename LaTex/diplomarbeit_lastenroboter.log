@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.2.24)  28 FEB 2025 14:48
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.2.24)  2 MAR 2025 21:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -678,28 +678,78 @@ Overfull \hbox (2.49939pt too wide) in paragraph at lines 223--227
 rt wer-den. Dann muss das pas-sen-de ESP32-CAM-Modell
  []
 
-[14] [15] [16]
-Underfull \hbox (badness 10000) in paragraph at lines 312--315
+[14]
+Overfull \hbox (15.828pt too wide) in paragraph at lines 240--250
+\T1/ptm/m/n/12 mit der CSS-Klasse \T1/cmtt/m/n/12 button \T1/ptm/m/n/12 und der
+ je-wei-li-gen Zu-satz-klas-se \T1/cmtt/m/n/12 up/down/left/right/center
+ []
+
+
+Overfull \hbox (19.5976pt too wide) in paragraph at lines 240--250
+\T1/ptm/m/n/12 for-ma-tiert. Beim je-wei-li-gen Tas-ten-druck wird au-ÿer-dem i
+m-mer das At-tri-but \T1/cmtt/m/n/12 data-direction
+ []
+
+
+Overfull \hbox (3.05128pt too wide) in paragraph at lines 240--250
+\T1/ptm/m/n/12 ab-ge-run-de-te Ecken. Die Op-tio-nen \T1/cmtt/m/n/12 -webkit-ta
+p-highlight-color: transparent \T1/ptm/m/n/12 und
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 240--250
 
  []
 
-[17] [18] (diplomarbeit_lastenroboter.lof)
+[15] [16] [17]
+Underfull \hbox (badness 10000) in paragraph at lines 261--265
+
+ []
+
+
+Overfull \hbox (12.83487pt too wide) in paragraph at lines 268--275
+\T1/ptm/m/n/12 Im HTML-Code wird die Vi-deo-über-tra-gung als HTML \T1/cmtt/m/n
+/12 <img>\T1/ptm/m/n/12 -Tag mit der id \T1/cmtt/m/n/12 dynamicimage
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 268--275
+
+ []
+
+[18]
+Overfull \hbox (1.30785pt too wide) in paragraph at lines 282--291
+\T1/ptm/m/n/12 Die CSS-Klasse \T1/cmtt/m/n/12 daten \T1/ptm/m/n/12 for-ma-tiert
+ die ein-zel-nen Da-ten im Me-nü. Sie wer-den in der Schrift-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 282--291
+
+ []
+
+[19] [20] [21] [22]
+Underfull \hbox (badness 10000) in paragraph at lines 369--372
+
+ []
+
+[23] [24] (diplomarbeit_lastenroboter.lof)
 \tf@lof=\write5
 \openout5 = `diplomarbeit_lastenroboter.lof'.
 
- [19] (diplomarbeit_lastenroboter.aux)
+ [25] (diplomarbeit_lastenroboter.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
  ***********
 Package rerunfilecheck Info: File `diplomarbeit_lastenroboter.out' has not chan
 ged.
-(rerunfilecheck)             Checksum: D1908B374D72E87FAA4B9831DD250000;9320.
+(rerunfilecheck)             Checksum: D59188843870E309B956022D4BC1917B;9345.
  ) 
 Here is how much of TeX's memory you used:
- 13185 strings out of 474486
- 211756 string characters out of 5743283
- 1937542 words of memory out of 5000000
+ 13191 strings out of 474486
+ 211798 string characters out of 5743283
+ 1938542 words of memory out of 5000000
  35165 multiletter control sequences out of 15000+600000
  616467 words of font info for 132 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -728,9 +778,9 @@ pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist
 200.pk><C:/Users/Lenovo/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utm
 b8a.pfb><C:/Users/Lenovo/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/ut
 mr8a.pfb>
-Output written on diplomarbeit_lastenroboter.pdf (19 pages, 173952 bytes).
+Output written on diplomarbeit_lastenroboter.pdf (25 pages, 193595 bytes).
 PDF statistics:
- 516 PDF objects out of 1000 (max. 8388607)
- 94 named destinations out of 1000 (max. 500000)
+ 555 PDF objects out of 1000 (max. 8388607)
+ 100 named destinations out of 1000 (max. 500000)
  547 words of extra memory for PDF output out of 10000 (max. 10000000)
 
