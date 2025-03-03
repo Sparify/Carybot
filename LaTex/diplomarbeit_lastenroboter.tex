@@ -419,23 +419,68 @@
 			\begin{center}
 				\par\small Quelle: eigene Abbildung 
 			\end{center}
+		\end{minipage} 
+	\end{center}
+	\begin{center}
+		\begin{minipage}[t]{0.85\textwidth}
+			\includegraphics{Pictures/handlewebsocketmessage}
+			\captionof{figure}{\texttt{handleWebSocketMessage()}-Funktion}
+			\label{fig:handlewebsocketmessage}
+			\vspace{-10pt}
+			\begin{center}
+				\par\small Quelle: eigene Abbildung 
+			\end{center}
 		\end{minipage} \\[0.75cm]
 	\end{center}
+	\subsection{Kamera}
+	
 		\subsection{Kamera}
 		
 			\subsubsection{Kamera Setup}
 			
 	Um die Kamera programmieren zu können, muss zunächst das richtige Board \texttt{AI Thinker ESP32-CAM} ausgewählt werden. Danach müssen die ESP32-Kamera-Treiber mit der Bibliothek \texttt{esp\_camera.h} inkludiert werden. Dann muss das passende ESP32-CAM-Modell festgelegt werden. Da wir uns für das \texttt{Ai-Thinker} Modell entschieden haben, muss diese nun definiert werden. Falls ein anderes Modell genutzt wird, muss es entsprechend angepasst werden. \\[0.5cm]
 	Als nächstes werden die GPIO-Pins der ESP32-CAM für die Kamera OV2640 konfiguriert. Diese Zuordnung ist spezifisch für das Ai-Thinker-Modell und muss für jedes Modell individuell angepasst werden. \\[0.5cm]
+	\begin{center}
+		\begin{minipage}[t]{0.95\textwidth}
+			\includegraphics{Pictures/kamera-setup1}
+			\captionof{figure}{Kamera-GPIO Konfiguration}
+			\label{fig:Kamera-GPIO Konfiguration}
+			\vspace{-10pt}
+			\begin{center}
+				\par\small Quelle: eigene Abbildung 
+			\end{center}
+		\end{minipage} \\[0.75cm]
+	\end{center}
 	Als nächstes muss die ESP32-CAM mit der ESP-IDF \texttt{esp\_camera} Bibliothek konfiguriert und initialisiert werden. Als erstes muss mit \texttt{camera\_config\_t} eine Struktur definiert werden, mit der verschiedene Parameter und Eigenschaften wie GPIO-Pins, Bildgröße und Qualität festlegt werden können. \\[0.5cm] 
 	LEDC-Kanal und Timer werden für das Taktsignal benötigt, um die Kamera zu betreiben.
+	\begin{center}
+		\begin{minipage}[t]{1\textwidth}
+			\includegraphics{Pictures/kamera-setup2}
+			\captionof{figure}{Kamera-Initialisierung}
+			\label{fig:Kamera-Initialisierung}
+			\vspace{-10pt}
+			\begin{center}
+				\par\small Quelle: eigene Abbildung 
+			\end{center}
+		\end{minipage} \\[0.75cm]
+	\end{center}
 		
 			\subsection{Videoübertragung}
 			
 	In unserem Projekt werden die Live-Bilder per WebSocket an den Webserver gesendet. Um dies umzusetzen, wird zuerst eine Webserver-Route benötigt. Dazu wird eine http-GET-Anfrage für die Hauptseite (“/“) definiert. Im Code wird ein JavaScript Skript benutzt, um eine Websocket-Verbindung herzustellen. Die IP-Adresse wird automatisch durch \texttt{windows.location.hostname} erkannt. Port 81 wird für das WebSocket-Streaming verwendet. Wenn die ESP32-CAM ein neues Bild als WebSocket-Nachricht versendet, wird es als JPEG-Blob gespeichert. Danach wird ein temporär URL-Link erstellt. Das Bild wird schlussendlich in einem \texttt{<img>}-Tag mit der id \texttt{stream} angezeigt. \\[0.5cm]
 	Die WebSocket Verbindung wird die ganze Zeit überwacht. In der Konsole wird ausgegeben, wenn die Websocket-Verbindung aktiv ist. Falls die Verbindung abbrechen sollte, wird nach 5 Sekunden automatisch ein erneuter Verbindungsversuch gestartet. Zum Schluss wird der HTML-Code mit \texttt{HTTP-Status 200} (OK) an den Browser gesendet. 
+	\begin{center}
+		\begin{minipage}[t]{0.95\textwidth}
+			\includegraphics[scale=0.8]{Pictures/videoübertragung}
+			\captionof{figure}{Videoübertragung über WebSocket}
+			\label{fig:Videoübertragung}
+			\vspace{-10pt}
+			\begin{center}
+				\par\small Quelle: eigene Abbildung 
+			\end{center}
+		\end{minipage} \\[0.75cm]
+	\end{center}
 	
-			
 		\subsection{Website}
 
 			\subsubsection{Implementierung der Steuerung}
@@ -443,16 +488,103 @@
 				\subsubsection*{Steuerkreuz}
 				
 	Um den Roboter überhaupt steuern zu können, wird ein Steuerkreuz implementiert. Das Steuerkreuz befindet sich mittig am rechten Bildschirmrand. Das Steuerkreuz besteht aus fünf Tasten, nämlich: Vorwarts (\texttt{UP}), (\texttt{DOWN} ), links (\texttt{LEFT}), rechts (\texttt{RIGHT}) und in der Mitte Stop (\texttt{HALT}). \\[0.5cm]
-	Im HTML-Code wird das Steuerkreuz als HTML div tag im body Bereich definiert. Für die Formatierung wird die CSS-Klasse \texttt{dpad-container} verwendet. Die einzelnen Richtungstasten des Steuerkreuze werden auch als HTML div tags definiert. Jede Taste wird mit der CSS-Klasse \texttt{button} und der jeweiligen Zusatzklasse \texttt{up/down/left/right/center} formatiert. Beim jeweiligen Tastendruck wird außerdem immer das Attribut \texttt{data-direction} mit der jeweiligen Richtung belegt.\\[0.5cm]
+	\begin{center}
+		\begin{minipage}[t]{1\textwidth}
+			\includegraphics{Pictures/Steuerung-web}
+			\captionof{figure}{Steuerkreuz auf der Website}
+			\label{fig:Steuerkreuz-web}
+			\vspace{-10pt}
+			\begin{center}
+				\par\small Quelle: eigene Abbildung 
+			\end{center}
+		\end{minipage} \\[0.75cm]
+	\end{center}
+	Im HTML-Code wird das Steuerkreuz als HTML \texttt{<div>}-Tag im body Bereich definiert. Für die Formatierung wird die CSS-Klasse \texttt{dpad-container} verwendet. Die einzelnen Richtungstasten des Steuerkreuze werden auch als HTML \texttt{<div>}-Tags definiert. Jede Taste wird mit der CSS-Klasse \texttt{button} und der jeweiligen Zusatzklasse \texttt{up/down/left/right/center} formatiert. Beim jeweiligen Tastendruck wird außerdem immer das Attribut \texttt{data-direction} mit der jeweiligen Richtung belegt.\\
+	\begin{center}
+		\begin{minipage}[t]{0.85\textwidth}
+			\includegraphics{Pictures/Steuerung-html}
+			\captionof{figure}{Steuerkreuz HTML-Code}
+			\label{fig:Steuerkreuz-html}
+			\vspace{-10pt}
+			\begin{center}
+				\par\small Quelle: eigene Abbildung 
+			\end{center}
+		\end{minipage} \\[0.75cm]
+	\end{center}
 	Die CSS-Klasse \texttt{dpad-container } ist das übergeordnete Element, welches die Steuerkreuztasten enthalten. Es wird als CSS Grid mit einer 3x3 Struktur definiert. Es gibt Lücken (.) an den Ecken, damit das Layout wie ein Steuerkreuz aussieht. Der Abstand zwischen den Tasten wird mit 10px festgelegt. Der Container hat eine feste Breite von 120px und ist vertikal so wie horizontal zentriert. \\[0.5cm]
-	Die CSS-Klasse \texttt{button} sorgt für eine einheitliche Gestaltung der Tasten des Steuerkreuzes. Jede Taste hat eine Größe von 60x60px. Eine Flexbox wird verwendet, um die Tasten jeweils mittig in den einzelnen Positionen des Grids zu positionieren. Jede Taste hat einen dunkelgrauen Hintergrund, eine weiße Textfarbe, einen 2px dicken dunklen Rahmen und abgerundete Ecken. Die Optionen \texttt{-webkit-tap-highlight-color: transparent} und \texttt{user-select: none} sorgen dafür, dass auf mobilen Geräten der Text in den Tasten nicht blau markiert werden kann, damit die Steuerung nicht blockiert wird. \\[0.5cm]
+	Die CSS-Klasse \texttt{button} sorgt für eine einheitliche Gestaltung der Tasten des Steuerkreuzes. Jede Taste hat eine Größe von 60x60px. Eine Flexbox wird verwendet, um die Tasten jeweils mittig in den einzelnen Positionen des Grids zu positionieren. Jede Taste hat einen dunkelgrauen Hintergrund, eine weiße Textfarbe, einen 2px dicken dunklen Rahmen und abgerundete Ecken. Die Optionen \texttt{-webkit-tap-highlight-color: transparent} und \texttt{user-select: none} sorgen dafür, dass auf mobilen Geräten der Text in den Tasten nicht blau markiert werden kann, damit die Steuerung nicht blockiert wird. 
+	\begin{center}
+		\begin{minipage}[t]{0.6\textwidth}
+			\includegraphics{Pictures/Steuerung-css1}
+			\captionof{figure}{CSS-Klassen \texttt{.dpad-container} und \texttt{.button}}
+			\label{fig:Steuerkreuz-css1}
+			\vspace{-10pt}
+			\begin{center}
+				\par\small Quelle: eigene Abbildung 
+			\end{center}
+		\end{minipage} \\[0.75cm]
+	\end{center}
 	Die fünf Richtungsklassen sorgen dafür, dass die Tasten des Steuerkreuzes in den zuvor definierten Grid-Bereichen zugewiesen und richtig platziert werden. Die mittlere Taste bekommt außerdem eine leicht hellere Farbe zugewiesen, um ihn optisch von den anderen abzuheben. \\[0.5cm]
-	Außerdem bekommen alle Tasten einen Hover-Effekt, damit sie etwas heller werden, wenn eine Taste gedrückt wird. \\[0.5cm]
+	Außerdem bekommen alle Tasten einen Hover-Effekt, damit sie etwas heller werden, wenn eine Taste gedrückt wird. \\
+	\begin{center}
+		\begin{minipage}[t]{0.45\textwidth}
+			\includegraphics{Pictures/Steuerung-css2}
+			\captionof{figure}{CSS-Richtungsklassen}
+			\label{fig:Steuerkreuz-css2}
+			\vspace{-10pt}
+			\begin{center}
+				\par\small Quelle: eigene Abbildung 
+			\end{center}
+		\end{minipage} \\[0.75cm]
+	\end{center}
 	Im JavaScript-Code sorgen zwei EventListener dafür, dass die Elemente auf der Seite nicht ziehbar und verschiebbar sind und dass das Rechtsklick-Menü nicht geöffnet werden kann. Diese Maßnahmen verhindern unerwünschte Benutzerinteraktionen und sorgen für eine reibungslose Bedienung. \\[0.5cm]
-	Vier weitere EventListener kümmern sich um die Eingabe des Steuerkreuzes. Es wird zuerst jeder \texttt{mousedown} (Linksklick) bzw. ein \texttt{touchstart} (klick auf mobile Geräte) abgefangen. Danach wird überprüft, ob das geklickte Element innerhalb eines \texttt{.button} Elements (Steuerkreuztaste) liegt. Falls ja, wird die Richtung aus dem data-direction-Attribut gelesen und an die \texttt{send()} Funktion übergeben. Wenn ein \texttt{mouseup} (Maus loslassen) oder ein \texttt{touchend} (Finger loslassen) abgefangen wird, wird die Funktion \texttt{stop()} aufgerufen. \\[0.5cm]
-	Die JavaScript Funktion \texttt{send()} kümmert sich um das Senden der Steuerungsbefehle. Zuerst wird überprüft, ob die aktuelle Richtung nicht bereits die gewünschte Richtung ist. Falls ja, wird ein JSON-Objekt erstellt, welche die Richtung sowie die Geschwindigkeit enthält. Zu debug-Zwecken wird die Richtung sowie die Geschwindigkeit in der Webkonsole ausgegeben. Danach wird überprüft, ob die WebSocket-Verbindung zur ESP32-CAM offen ist. Wenn ja, wird die Nachricht auch für debug-Zwecken an die ESP32-CAM gesendet, ansonsten wird eine Fehlermeldung ausgegeben. Dasselbe geschieht für die WebSocket-Verbindung zum ESP32. Dort werden jedoch die Steuerbefehle weiterverarbeitet. \\[0.5cm]
+	\begin{center}
+		\begin{minipage}[t]{0.7\textwidth}
+			\includegraphics{Pictures/Steuerung-js1}
+			\captionof{figure}{<hier gute Bildbeschreibung einfügen>}
+			\label{fig:Steuerkreuz-js1}
+			\vspace{-10pt}
+			\begin{center}
+				\par\small Quelle: eigene Abbildung 
+			\end{center}
+		\end{minipage} \\[0.75cm]
+	\end{center}
+	Vier weitere EventListener kümmern sich um die Eingabe des Steuerkreuzes. Es wird zuerst jeder \texttt{mousedown} (Linksklick) bzw. ein \texttt{touchstart} (klick auf mobile Geräte) abgefangen. Danach wird überprüft, ob das geklickte Element innerhalb eines \texttt{.button} Elements (Steuerkreuztaste) liegt. Falls ja, wird die Richtung aus dem data-direction-Attribut gelesen und an die \texttt{send()} Funktion übergeben. Wenn ein \texttt{mouseup} (Maus loslassen) oder ein \texttt{touchend} (Finger loslassen) abgefangen wird, wird die Funktion \texttt{stop()} aufgerufen. 
+	\begin{center}
+		\begin{minipage}[t]{0.5\textwidth}
+			\includegraphics[scale=0.7]{Pictures/Steuerung-js2}
+			\captionof{figure}{<hier gute Bildbeschreibung einfügen>}
+			\label{fig:Steuerkreuz-js2}
+			\vspace{-10pt}
+			\begin{center}
+				\par\small Quelle: eigene Abbildung 
+			\end{center}
+		\end{minipage} \\[0.75cm]
+	\end{center}
+	Die JavaScript Funktion \texttt{send()} kümmert sich um das Senden der Steuerungsbefehle. Zuerst wird überprüft, ob die aktuelle Richtung nicht bereits die gewünschte Richtung ist. Falls ja, wird ein JSON-Objekt erstellt, welche die Richtung sowie die Geschwindigkeit enthält. Zu debug-Zwecken wird die Richtung sowie die Geschwindigkeit in der Webkonsole ausgegeben. Danach wird überprüft, ob die WebSocket-Verbindung zur ESP32-CAM offen ist. Wenn ja, wird die Nachricht auch für debug-Zwecken an die ESP32-CAM gesendet, ansonsten wird eine Fehlermeldung ausgegeben. Dasselbe geschieht für die WebSocket-Verbindung zum ESP32. Dort werden jedoch die Steuerbefehle weiterverarbeitet. \\
+	\begin{center}
+		\begin{minipage}[t]{0.75\textwidth}
+			\includegraphics[scale=0.7]{Pictures/Steuerung-js3}
+			\captionof{figure}{\texttt{send()}-Funktion}
+			\label{fig:Steuerkreuz-js3}
+			\vspace{-10pt}
+			\begin{center}
+				\par\small Quelle: eigene Abbildung 
+			\end{center}
+		\end{minipage} \\[0.75cm]
+	\end{center}
 	Die JavaScript Funktion \texttt{stop()} sorgt dafür, dass der Roboter anhält, wenn eine Taste des Steuerkreuzes losgelassen wird. Zuerst wird überprüft, ob die aktuelle Richtung nicht bereits \texttt{HALT} ist, ansonsten wird sie daraufgesetzt. Danach wird ein Stopp-Befehl als JSON-Nachricht vorbereitet. Zu debug-Zwecken wird wieder ein halt in der Webkonsole ausgegeben. Danach wird der Stopp-Befehl wieder an die WebSocket-Verbindung zur ESP32-CAM für debug-Zwecke gesendet. Danach wird sie auch an die WebSocket-Verbindung zum ESP32 gesendet, wo dieser weiterverarbeitet wird. \\[0.5cm]
-	
+	\begin{center}
+		\begin{minipage}[t]{0.75\textwidth}
+			\includegraphics[scale=0.7]{Pictures/Steuerung-js4}
+			\captionof{figure}{\texttt{stop()}-Funktion}
+			\label{fig:Steuerkreuz-js4}
+			\vspace{-10pt}
+			\begin{center}
+				\par\small Quelle: eigene Abbildung 
+			\end{center}
+		\end{minipage} \\[0.75cm]
+	\end{center}
 				
 				\subsubsection*{Geschwindigkeitseinstellung}
 			
@@ -483,11 +615,55 @@
 			
 	Die Videoübertragung dient dazu, den Roboter über größere Entfernungen autonom steuern zu können. Mit der Videoübertragung werden Objekte und Hindernisse erkennbar und kann diese somit ausweichen. \\[0.5cm]
 	Die Videoübertragung wird über der ganzen Website im Hintergrund angezeigt. \\[0.5cm]
+	\begin{center}
+		\begin{minipage}[t]{1\textwidth}
+			\includegraphics{Pictures/videoübertragung-web}
+			\captionof{figure}{Videoübertragung auf der Website}
+			\label{fig:videoübertragung-web}
+			\vspace{-10pt}
+			\begin{center}
+				\par\small Quelle: eigene Abbildung 
+			\end{center}
+		\end{minipage} \\[0.75cm]
+	\end{center}
 	Im HTML-Code wird die Videoübertragung als HTML \texttt{<img>}-Tag mit der id \texttt{dynamicimage} im Hauptbereich definiert. \\[0.5cm]
+	\begin{center}
+		\begin{minipage}[t]{0.75\textwidth}
+			\includegraphics{Pictures/videoübertragung-html}
+			\captionof{figure}{Videoübertragung HTML-Code}
+			\label{fig:videoübertragung-html}
+			\vspace{-10pt}
+			\begin{center}
+				\par\small Quelle: eigene Abbildung 
+			\end{center}
+		\end{minipage} \\[0.75cm]
+	\end{center}
 	Im CSS-Code wird nun das Element mit der id \texttt{dynamicimage} formatiert. Es wird definiert, dass die Größe 100\% der Breite sowie 100\% der Höhe einnimmt. Die Position wird dabei auf absolut gesetzt. \\[0.5cm]
+	\begin{center}
+		\begin{minipage}[t]{0.5\textwidth}
+			\includegraphics{Pictures/videoübertragung-css}
+			\captionof{figure}{CSS-Formatierung für \texttt{dynamicimage}}
+			\label{fig:videoübertragung-css}
+			\vspace{-10pt}
+			\begin{center}
+				\par\small Quelle: eigene Abbildung 
+			\end{center}
+		\end{minipage} \\[0.75cm]
+	\end{center}
 	Im JavaScript-Code wird die WebSocket-Verbindung zur ESP32-CAM gehandelt. In der Funktion \texttt{connectWebSocket\_cam()} wird zuerst ein WebSocket mit der eigenen IP-Adresse erstellt (da Webserver auf ESP32-CAM gehostet wird) und dem Port 81 erstellt. Wenn nun eine Nachricht auf der WebSockte-Verbindung ankommt (siehe Videoübertragung ESP32-CAM) wird diese extrahiert. Das mitgesendete BLOB wird in einem neuem BLOB als jpeg-Bild gespeichert. Danach wird eine URL (Adresse) erstellt, die zu diesem BLOB führt. Dann wird eine Variable für die Videoübertragung im HTML \texttt{<img>}-Tag erstellt. Die Source dieses Bildes wird dann mit dem neuen, erhaltenen Bild ersetzt. Da die ESP32-CAM die ganze Zeit neue Blobs sendet, wird das Bild die ganze Zeit ersetzt, was dazu führt, dass es aussieht, als wäre es ein Video. \\[0.5cm]
 	Wenn sich die ESP32-CAM verbindet, wird zu Debug-Zwecken eine Nachricht in der Webkonsole ausgegeben. \\[0.5cm]
 	Wenn die Verbindung zur ESP32-CAM verloren geht, wird wieder zu Debug-Zwecke eine Nachricht in der Webkonsole ausgegeben und ein neuer Verbindungsversuch wird nach 5 Sekunden gestartet. \\[0.5cm]
+	\begin{center}
+		\begin{minipage}[t]{\textwidth}
+			\includegraphics[scale=0.9]{Pictures/videoübertragung-js}
+			\captionof{figure}{Videoübertragung im JavaScript-Code}
+			\label{fig:videoübertragung-js}
+			\vspace{-10pt}
+			\begin{center}
+				\par\small Quelle: eigene Abbildung 
+			\end{center}
+		\end{minipage} \\[0.75cm]
+	\end{center}
 	
 	
 			
