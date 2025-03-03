@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.2.24)  3 MAR 2025 08:55
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.2.24)  3 MAR 2025 09:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1085,51 +1085,49 @@ Underfull \hbox (badness 10000) in paragraph at lines 78--82
 <Pictures/placeholder.png, id=379, 2007.5pt x 2677.00125pt>
 File: Pictures/placeholder.png Graphic file (type png)
 <use Pictures/placeholder.png>
-Package pdftex.def Info: Pictures/placeholder.png  used on input line 98.
-(pdftex.def)             Requested size: 128.0387pt x 170.70253pt.
+Package pdftex.def Info: Pictures/placeholder.png  used on input line 99.
+(pdftex.def)             Requested size: 85.35696pt x 113.80168pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 99.
+(caption)                particular \caption on input line 100.
 See the caption package documentation for explanation.
 
 LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 1
-07.
+08.
 (C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 )
 File: Pictures/placeholder.png Graphic file (type png)
 <use Pictures/placeholder.png>
-Package pdftex.def Info: Pictures/placeholder.png  used on input line 117.
-(pdftex.def)             Requested size: 128.0387pt x 170.70253pt.
+Package pdftex.def Info: Pictures/placeholder.png  used on input line 118.
+(pdftex.def)             Requested size: 85.35696pt x 113.80168pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 118.
+(caption)                particular \caption on input line 119.
 See the caption package documentation for explanation.
 
 
-Underfull \hbox (badness 2035) in paragraph at lines 126--127
+Underfull \hbox (badness 2035) in paragraph at lines 127--128
 []\T1/ptm/m/n/12 Benutzeroberfläche (Web-Oberfläche) für Steue-
  []
 
 
-Underfull \hbox (badness 5446) in paragraph at lines 127--128
+Underfull \hbox (badness 5446) in paragraph at lines 128--129
 []\T1/ptm/m/n/12 Übertragung der Steue-rung/Befehle von Web-
  []
 
-[9 <./Pictures/placeholder.png>]
 File: Pictures/placeholder.png Graphic file (type png)
 <use Pictures/placeholder.png>
 Package pdftex.def Info: Pictures/placeholder.png  used on input line 135.
-(pdftex.def)             Requested size: 128.0387pt x 170.70253pt.
-
+(pdftex.def)             Requested size: 85.35696pt x 113.80168pt.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 136.
 See the caption package documentation for explanation.
 
-[10]
+[9 <./Pictures/placeholder.png>] [10]
 Overfull \hbox (10.17952pt too wide) in alignment at lines 178--182
  [] [] [] [] 
  []
@@ -1336,7 +1334,7 @@ pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist
 200.pk><C:/Users/Lenovo/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utm
 b8a.pfb><C:/Users/Lenovo/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/ut
 mr8a.pfb>
-Output written on diplomarbeit_lastenroboter.pdf (29 pages, 233615 bytes).
+Output written on diplomarbeit_lastenroboter.pdf (29 pages, 233448 bytes).
 PDF statistics:
  587 PDF objects out of 1000 (max. 8388607)
  109 named destinations out of 1000 (max. 500000)
