@@ -2,28 +2,32 @@
 \contentsline {figure}{\numberline {1}{\ignorespaces Porträt Daniel Schauer}}{9}{figure.1}%
 \contentsline {figure}{\numberline {2}{\ignorespaces Porträt Simon Spari}}{9}{figure.2}%
 \contentsline {figure}{\numberline {3}{\ignorespaces Porträt Felix Hochegger}}{9}{figure.3}%
-\contentsline {figure}{\numberline {4}{\ignorespaces SPIFFS Initalisierung}}{15}{figure.4}%
-\contentsline {figure}{\numberline {5}{\ignorespaces \texttt {readfile()}-Funktion}}{16}{figure.5}%
-\contentsline {figure}{\numberline {6}{\ignorespaces Bibliotheken für die Kommunikation}}{16}{figure.6}%
-\contentsline {figure}{\numberline {7}{\ignorespaces Netzwerkkonfiguration Client}}{17}{figure.7}%
-\contentsline {figure}{\numberline {8}{\ignorespaces Setup ESP32}}{17}{figure.8}%
-\contentsline {figure}{\numberline {9}{\ignorespaces \texttt {onWebSocketEvent()}-Funktion}}{18}{figure.9}%
-\contentsline {figure}{\numberline {10}{\ignorespaces JSON-Beispiel für Steuerung}}{19}{figure.10}%
-\contentsline {figure}{\numberline {11}{\ignorespaces JSON-Beispiel für Kamerasteuerung}}{19}{figure.11}%
-\contentsline {figure}{\numberline {12}{\ignorespaces JSON-Beispiel für Lichtsteuerung}}{20}{figure.12}%
-\contentsline {figure}{\numberline {13}{\ignorespaces \texttt {handleWebSocketMessage()}-Funktion}}{20}{figure.13}%
-\contentsline {figure}{\numberline {14}{\ignorespaces Kamera-GPIO Konfiguration}}{21}{figure.14}%
-\contentsline {figure}{\numberline {15}{\ignorespaces Kamera-Initialisierung}}{22}{figure.15}%
-\contentsline {figure}{\numberline {16}{\ignorespaces Videoübertragung über WebSocket}}{24}{figure.16}%
-\contentsline {figure}{\numberline {17}{\ignorespaces Steuerkreuz auf der Website}}{25}{figure.17}%
-\contentsline {figure}{\numberline {18}{\ignorespaces Steuerkreuz HTML-Code}}{25}{figure.18}%
-\contentsline {figure}{\numberline {19}{\ignorespaces CSS-Klassen \texttt {.dpad-container} und \texttt {.button}}}{26}{figure.19}%
-\contentsline {figure}{\numberline {20}{\ignorespaces CSS-Richtungsklassen}}{27}{figure.20}%
-\contentsline {figure}{\numberline {21}{\ignorespaces <hier gute Bildbeschreibung einfügen>}}{28}{figure.21}%
-\contentsline {figure}{\numberline {22}{\ignorespaces <hier gute Bildbeschreibung einfügen>}}{28}{figure.22}%
-\contentsline {figure}{\numberline {23}{\ignorespaces \texttt {send()}-Funktion}}{29}{figure.23}%
-\contentsline {figure}{\numberline {24}{\ignorespaces \texttt {stop()}-Funktion}}{30}{figure.24}%
-\contentsline {figure}{\numberline {25}{\ignorespaces Videoübertragung auf der Website}}{33}{figure.25}%
-\contentsline {figure}{\numberline {26}{\ignorespaces Videoübertragung HTML-Code}}{33}{figure.26}%
-\contentsline {figure}{\numberline {27}{\ignorespaces CSS-Formatierung für \texttt {dynamicimage}}}{33}{figure.27}%
-\contentsline {figure}{\numberline {28}{\ignorespaces Videoübertragung im JavaScript-Code}}{34}{figure.28}%
+\contentsline {figure}{\numberline {4}{\ignorespaces Motoren}}{12}{figure.4}%
+\contentsline {figure}{\numberline {5}{\ignorespaces BLDC-Motor}}{13}{figure.5}%
+\contentsline {figure}{\numberline {6}{\ignorespaces Phasensteuerung}}{13}{figure.6}%
+\contentsline {figure}{\numberline {7}{\ignorespaces Motorteiber-ZS-X11H}}{14}{figure.7}%
+\contentsline {figure}{\numberline {8}{\ignorespaces SPIFFS Initalisierung}}{19}{figure.8}%
+\contentsline {figure}{\numberline {9}{\ignorespaces \texttt {readfile()}-Funktion}}{20}{figure.9}%
+\contentsline {figure}{\numberline {10}{\ignorespaces Bibliotheken für die Kommunikation}}{20}{figure.10}%
+\contentsline {figure}{\numberline {11}{\ignorespaces Netzwerkkonfiguration Client}}{21}{figure.11}%
+\contentsline {figure}{\numberline {12}{\ignorespaces Setup ESP32}}{21}{figure.12}%
+\contentsline {figure}{\numberline {13}{\ignorespaces \texttt {onWebSocketEvent()}-Funktion}}{22}{figure.13}%
+\contentsline {figure}{\numberline {14}{\ignorespaces JSON-Beispiel für Steuerung}}{23}{figure.14}%
+\contentsline {figure}{\numberline {15}{\ignorespaces JSON-Beispiel für Kamerasteuerung}}{23}{figure.15}%
+\contentsline {figure}{\numberline {16}{\ignorespaces JSON-Beispiel für Lichtsteuerung}}{24}{figure.16}%
+\contentsline {figure}{\numberline {17}{\ignorespaces \texttt {handleWebSocketMessage()}-Funktion}}{24}{figure.17}%
+\contentsline {figure}{\numberline {18}{\ignorespaces Kamera-GPIO Konfiguration}}{25}{figure.18}%
+\contentsline {figure}{\numberline {19}{\ignorespaces Kamera-Initialisierung}}{26}{figure.19}%
+\contentsline {figure}{\numberline {20}{\ignorespaces Videoübertragung über WebSocket}}{28}{figure.20}%
+\contentsline {figure}{\numberline {21}{\ignorespaces Steuerkreuz auf der Website}}{29}{figure.21}%
+\contentsline {figure}{\numberline {22}{\ignorespaces Steuerkreuz HTML-Code}}{29}{figure.22}%
+\contentsline {figure}{\numberline {23}{\ignorespaces CSS-Klassen \texttt {.dpad-container} und \texttt {.button}}}{30}{figure.23}%
+\contentsline {figure}{\numberline {24}{\ignorespaces CSS-Richtungsklassen}}{31}{figure.24}%
+\contentsline {figure}{\numberline {25}{\ignorespaces <hier gute Bildbeschreibung einfügen>}}{32}{figure.25}%
+\contentsline {figure}{\numberline {26}{\ignorespaces <hier gute Bildbeschreibung einfügen>}}{32}{figure.26}%
+\contentsline {figure}{\numberline {27}{\ignorespaces \texttt {send()}-Funktion}}{33}{figure.27}%
+\contentsline {figure}{\numberline {28}{\ignorespaces \texttt {stop()}-Funktion}}{34}{figure.28}%
+\contentsline {figure}{\numberline {29}{\ignorespaces Videoübertragung auf der Website}}{37}{figure.29}%
+\contentsline {figure}{\numberline {30}{\ignorespaces Videoübertragung HTML-Code}}{37}{figure.30}%
+\contentsline {figure}{\numberline {31}{\ignorespaces CSS-Formatierung für \texttt {dynamicimage}}}{37}{figure.31}%
+\contentsline {figure}{\numberline {32}{\ignorespaces Videoübertragung im JavaScript-Code}}{38}{figure.32}%
