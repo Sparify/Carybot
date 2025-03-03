@@ -1,7 +1,7 @@
 \documentclass[ngerman,12pt,a4paper]{article}
 \usepackage[T1]{fontenc}
 \usepackage{graphicx}
-\usepackage{caption}
+\usepackage[justification=centering, singlelinecheck=false]{caption}
 \usepackage{fancyhdr}
 \usepackage{amssymb}
 \usepackage{tikz}
@@ -262,16 +262,20 @@
 	“carybot.js“ wird mit application/javascript als Javascript-Datei gesendet und verarbeitet die Eingaben von Clients auf der Website. \\[0.5cm] 
 	Wenn alle Dateien erfolgreich geladen sind, wird eine Nachricht in der seriellen Konsole ausgegeben. \\[0.5cm] 
 	Die readFile() Funktion wird benötigt, um die jeweiligen Dateien aus SPIFFS lesen zu können. Die Funktion liest eine Datei aus dem SPIFFS-Speicher und gibt den Inhalt als String zurück.
-			
-	\begin{figure}[h]
-		\centering
-		\includegraphics{Pictures/SPIFFS\_setup}
-		\caption{SPIFFS Initalisierung}
-		\label{fig:spiffs_init}
-		\par\small Quelle: eigene Abbildung
-	\end{figure}	
 	
-			
+	\begin{center}
+		\begin{minipage}[t]{\textwidth}
+			\includegraphics{Pictures/SPIFFS\_setup}
+			\captionof{figure}{SPIFFS Initalisierung}
+			\label{fig:spiffs_init}
+			\vspace{-10pt}
+			\begin{center}
+				\par\small Quelle: eigene Abbildung
+			\end{center}
+		\end{minipage}
+	\end{center}
+
+	
 		\subsection{WebSocket Kommunikation}
 		
 			\subsubsection{Kommunikation Setup}	
@@ -372,6 +376,17 @@
 	In der CSS-Klasse \texttt{camera-container} wird ein Bereich erstellt, in dem der Slider angezeigt werden soll.  In \texttt{cam\_slider} wird die Slidespur mit einer Breite von 150 Pixel und einer Höhe von 10 Pixel definiert. Der Hintergrund ist hellgrau und die Ecken werden leicht abgerundet.  In \texttt{webkit-slider-thumb} wird der Sliderknopf mit 20x20 Pixel definiert. Der Hintergrund ist dunkelgrau mit einem 2px breiten, dunkleren Rand. \\[0.5cm]
 	Im JavaScript-Code wird die aktuelle Position des Sliders verarbeitet. Dazu wird die Position in eine JSON-Nachricht gespeichert. Zu debug-Zwecken wird die Position noch in der Website Konsole ausgegeben. Wenn der WebSocket Verbindung zum ESP32 offen ist, wird die aktuelle Position übermittelt. \\[0.5cm]
 			
+				\subsubsection*{Fernlicht}
+				
+	Die Funktion des Fernlichts dient bei unserem Roboter zur Beleuchtung bei schlechter Sicht bzw. Dunkelheit. Wenn eingeschalten, leuchtet auf der Vorder- sowie auf der Hinterseite des Roboters ein Scheinwerfer die Umgebung aus. \\[0.5cm]
+	Um das Fernlicht auf unserer Website ein- bzw. auszuschalten gibt es ein eigenes Fernlicht-Icon rechts über dem Steuerkreuz. Im ausgeschalteten Zustand ist das Icon ausgegraut. Im aktiven Zustand ist das Scheinwerfer Symbol im Icon blau und das Icon hat einen blassgrünen Hintergrund. \\[0.5cm]
+	Im HTML-Code wird das Icon als HTML \texttt{<img>}-Tag eingefügt. Als Quelle wird die im SPIFFS hochgeladene \texttt{Fernlicht.svg} Grafik verwendet. Für das Design wird die CSS-Klasse \texttt{fernlicht-icon} verwendet und beim \texttt{onclick} Event wird die JavaScript Funktion \texttt{togglelight()} aufgerufen. \\[0.5cm]
+	In der CSS-Klasse \texttt{fernlicht-icon} wird das Icon 20\% vom oberen Rand und 2\% von rechten Rand mit einer Größe von 50x50 Pixel positioniert. Es wird auf der 2 z-Ebene angezeigt und der nicht sichtbare Hintergrund wird transparent angezeigt. Beim Ändern der Farbe wird eine sanfte Animation über 0,3 Sekunden angezeigt. \\[0.5cm]
+	Die \texttt{grayscale} Klasse wandelt das Icon in die ausgegraute Darstellung um, um anzuzeigen, dass das Fernlicht deaktiviert ist.
+	Die \texttt{active-light} Klasse ändert die Hintergrundfarbe zu einem transparenten grünen Ton, um anzuzeigen, dass das Fernlicht aktiv ist. \\[0.5cm]
+	Im JavaScript Code wird bei jedem \texttt{onclick} Event die Variable \texttt{light} getoggled. Wenn die Variable \texttt{light} true ist, wird die CSS-Klasse \texttt{active-light} angewendet, ansonsten die CSS-Klasse \texttt{grayscale}. Anschließend wird eine JSON-Nachricht mit dem aktuellen Zustand der \texttt{light} Variable erstellt. Wenn die WebSocket Verbindung zum zum ESP32 offen ist, wird die JSON-Nachricht versendet, ansonsten wird eine Fehlermeldung ausgegeben. \\[0.5cm]
+	
+				
 			\subsubsection{Echtzeit-Videoanzeige}
 			
 	Die Videoübertragung dient dazu, den Roboter über größere Entfernungen autonom steuern zu können. Mit der Videoübertragung werden Objekte und Hindernisse erkennbar und kann diese somit ausweichen. \\[0.5cm]
