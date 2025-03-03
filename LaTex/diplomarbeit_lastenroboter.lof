@@ -3,3 +3,11 @@
 \contentsline {figure}{\numberline {2}{\ignorespaces Porträt Simon Spari}}{9}{figure.2}%
 \contentsline {figure}{\numberline {3}{\ignorespaces Porträt Felix Hochegger}}{9}{figure.3}%
 \contentsline {figure}{\numberline {4}{\ignorespaces SPIFFS Initalisierung}}{15}{figure.4}%
+\contentsline {figure}{\numberline {5}{\ignorespaces \texttt {readfile()}-Funktion}}{16}{figure.5}%
+\contentsline {figure}{\numberline {6}{\ignorespaces Bibliotheken für die Kommunikation}}{16}{figure.6}%
+\contentsline {figure}{\numberline {7}{\ignorespaces Netzwerkkonfiguration Client}}{17}{figure.7}%
+\contentsline {figure}{\numberline {8}{\ignorespaces Setup ESP32}}{17}{figure.8}%
+\contentsline {figure}{\numberline {9}{\ignorespaces \texttt {onWebSocketEvent()}-Funktion}}{18}{figure.9}%
+\contentsline {figure}{\numberline {10}{\ignorespaces JSON-Beispiel für Steuerung}}{19}{figure.10}%
+\contentsline {figure}{\numberline {11}{\ignorespaces JSON-Beispiel für Kamerasteuerung}}{19}{figure.11}%
+\contentsline {figure}{\numberline {12}{\ignorespaces JSON-Beispiel für Lichtsteuerung}}{20}{figure.12}%

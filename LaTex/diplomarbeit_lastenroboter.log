@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.2.24)  3 MAR 2025 09:12
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.2.24)  3 MAR 2025 16:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1155,145 +1155,267 @@ Overfull \hbox (0.27312pt too wide) in paragraph at lines 245--247
 r-ver auf ei-nem ESP32-CAM
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 261--268
+
+ []
+
 [13]
 <Pictures/SPIFFS_setup.png, id=409, 453.19313pt x 449.42906pt>
 File: Pictures/SPIFFS_setup.png Graphic file (type png)
 <use Pictures/SPIFFS_setup.png>
-Package pdftex.def Info: Pictures/SPIFFS_setup.png  used on input line 272.
+Package pdftex.def Info: Pictures/SPIFFS_setup.png  used on input line 271.
 (pdftex.def)             Requested size: 453.19202pt x 449.42795pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 273.
+(caption)                particular \caption on input line 272.
 See the caption package documentation for explanation.
 
 
-Overfull \hbox (26.40067pt too wide) in paragraph at lines 272--273
+Overfull \hbox (26.40067pt too wide) in paragraph at lines 271--272
 [][] 
  []
 
-[14] [15 <./Pictures/SPIFFS_setup.png>]
-Underfull \hbox (badness 2343) in paragraph at lines 316--316
+[14]
+<Pictures/spiffs_readfile.png, id=415, 331.99031pt x 191.9672pt>
+File: Pictures/spiffs_readfile.png Graphic file (type png)
+<use Pictures/spiffs_readfile.png>
+Package pdftex.def Info: Pictures/spiffs_readfile.png  used on input line 284.
+(pdftex.def)             Requested size: 331.98949pt x 191.96672pt.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 285.
+See the caption package documentation for explanation.
+
+
+Overfull \hbox (11.89598pt too wide) in paragraph at lines 284--285
+[][] 
+ []
+
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 2
+85.
+(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/latex/base\t1cmtt.fd
+File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
+)
+[15 <./Pictures/SPIFFS_setup.png>]
+<Pictures/kommunikation_libraries.png, id=422, 189.70876pt x 40.65187pt>
+File: Pictures/kommunikation_libraries.png Graphic file (type png)
+<use Pictures/kommunikation_libraries.png>
+Package pdftex.def Info: Pictures/kommunikation_libraries.png  used on input li
+ne 302.
+(pdftex.def)             Requested size: 189.70828pt x 40.65176pt.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 303.
+See the caption package documentation for explanation.
+
+[16 <./Pictures/spiffs_readfile.png> <./Pictures/kommunikation_libraries.png>]
+<Pictures/kommunikation_netzwerkconfig.png, id=432, 283.0575pt x 143.03438pt>
+File: Pictures/kommunikation_netzwerkconfig.png Graphic file (type png)
+<use Pictures/kommunikation_netzwerkconfig.png>
+Package pdftex.def Info: Pictures/kommunikation_netzwerkconfig.png  used on inp
+ut line 322.
+(pdftex.def)             Requested size: 283.0568pt x 143.03401pt.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 323.
+See the caption package documentation for explanation.
+
+
+Overfull \hbox (5.64503pt too wide) in paragraph at lines 322--323
+[][] 
+ []
+
+<Pictures/kommunikation_setup.png, id=433, 502.12593pt x 514.92375pt>
+File: Pictures/kommunikation_setup.png Graphic file (type png)
+<use Pictures/kommunikation_setup.png>
+Package pdftex.def Info: Pictures/kommunikation_setup.png  used on input line 3
+34.
+(pdftex.def)             Requested size: 251.06235pt x 257.46124pt.
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 335.
+See the caption package documentation for explanation.
+
+
+Overfull \hbox (16.3258pt too wide) in paragraph at lines 334--335
+[][] 
+ []
+
+[17 <./Pictures/kommunikation_netzwerkconfig.png> <./Pictures/kommunikation_set
+up.png>]
+Underfull \hbox (badness 2343) in paragraph at lines 361--361
 []|\T1/ptm/m/n/12 Ein neu-er Cli-ent ver-bin-det
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 316--317
+Underfull \hbox (badness 10000) in paragraph at lines 361--362
 []|\T1/ptm/m/n/12 Ausgabe der Client-ID & IP-
  []
 
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 3
-18.
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/latex/base\t1cmtt.fd
-File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
-)
-Underfull \hbox (badness 10000) in paragraph at lines 318--319
+
+Underfull \hbox (badness 10000) in paragraph at lines 363--364
 []|\T1/ptm/m/n/12 Übergabe an
  []
 
 
-Underfull \hbox (badness 1281) in paragraph at lines 320--320
+Underfull \hbox (badness 1281) in paragraph at lines 365--365
 []|\T1/ptm/m/n/12 Binärdaten wer-den emp-fan-
  []
 
 
-Underfull \hbox (badness 2538) in paragraph at lines 320--321
+Underfull \hbox (badness 2538) in paragraph at lines 365--366
 []|\T1/ptm/m/n/12 Nachricht in der Kon-so-le (wird
  []
 
+<Pictures/websocketevents.png, id=441, 469.00218pt x 281.55188pt>
+File: Pictures/websocketevents.png Graphic file (type png)
+<use Pictures/websocketevents.png>
+Package pdftex.def Info: Pictures/websocketevents.png  used on input line 377.
+(pdftex.def)             Requested size: 469.00104pt x 281.55118pt.
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 378.
+See the caption package documentation for explanation.
 
 
-Overfull \hbox (12.46703pt too wide) in paragraph at lines 330--335
+Overfull \hbox (42.20969pt too wide) in paragraph at lines 377--378
+[][] 
+ []
+
+[18 <./Pictures/websocketevents.png>]
+<Pictures/example-navigate.png, id=449, 176.91093pt x 60.97781pt>
+File: Pictures/example-navigate.png Graphic file (type png)
+<use Pictures/example-navigate.png>
+Package pdftex.def Info: Pictures/example-navigate.png  used on input line 391.
+
+(pdftex.def)             Requested size: 176.91049pt x 60.97765pt.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 392.
+See the caption package documentation for explanation.
+
+
+Overfull \hbox (6.19656pt too wide) in paragraph at lines 391--392
+[][] 
+ []
+
+<Pictures/example-camera.png, id=450, 162.6075pt x 54.9553pt>
+File: Pictures/example-camera.png Graphic file (type png)
+<use Pictures/example-camera.png>
+Package pdftex.def Info: Pictures/example-camera.png  used on input line 403.
+(pdftex.def)             Requested size: 162.6071pt x 54.95515pt.
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 404.
+See the caption package documentation for explanation.
+
+
+Overfull \hbox (12.46703pt too wide) in paragraph at lines 412--413
 \T1/ptm/m/n/12 ist, wird die Funk-ti-on \T1/cmtt/m/n/12 lights_on(\T1/ptm/m/n/1
 2 ) auf-ge-ru-fen, an-sons-ten wird die Funk-ti-on \T1/cmtt/m/n/12 lights_off()
 
  []
 
-[16]
-Overfull \hbox (2.94443pt too wide) in paragraph at lines 340--344
+<Pictures/example-light.png, id=451, 147.55125pt x 51.19125pt>
+File: Pictures/example-light.png Graphic file (type png)
+<use Pictures/example-light.png>
+Package pdftex.def Info: Pictures/example-light.png  used on input line 415.
+(pdftex.def)             Requested size: 147.55087pt x 51.19112pt.
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 416.
+See the caption package documentation for explanation.
+
+[19 <./Pictures/example-navigate.png> <./Pictures/example-camera.png>]
+Overfull \hbox (2.94443pt too wide) in paragraph at lines 428--432
 \T1/ptm/m/n/12 Um die Ka-me-ra pro-gram-mie-ren zu kön-nen, muss zu-nächst das 
 rich-ti-ge Board \T1/cmtt/m/n/12 AI Thinker
  []
 
 
-Overfull \hbox (2.49939pt too wide) in paragraph at lines 340--344
+Overfull \hbox (2.49939pt too wide) in paragraph at lines 428--432
 \T1/ptm/m/n/12 blio-thek \T1/cmtt/m/n/12 esp_camera.h \T1/ptm/m/n/12 in-klu-die
 rt wer-den. Dann muss das pas-sen-de ESP32-CAM-Modell
  []
 
-[17]
-Overfull \hbox (15.828pt too wide) in paragraph at lines 357--367
+[20 <./Pictures/example-light.png>]
+Overfull \hbox (15.828pt too wide) in paragraph at lines 445--455
 \T1/ptm/m/n/12 mit der CSS-Klasse \T1/cmtt/m/n/12 button \T1/ptm/m/n/12 und der
  je-wei-li-gen Zu-satz-klas-se \T1/cmtt/m/n/12 up/down/left/right/center
  []
 
 
-Overfull \hbox (19.5976pt too wide) in paragraph at lines 357--367
+Overfull \hbox (19.5976pt too wide) in paragraph at lines 445--455
 \T1/ptm/m/n/12 for-ma-tiert. Beim je-wei-li-gen Tas-ten-druck wird au-ÿer-dem i
 m-mer das At-tri-but \T1/cmtt/m/n/12 data-direction
  []
 
 
-Overfull \hbox (3.05128pt too wide) in paragraph at lines 357--367
+Overfull \hbox (3.05128pt too wide) in paragraph at lines 445--455
 \T1/ptm/m/n/12 ab-ge-run-de-te Ecken. Die Op-tio-nen \T1/cmtt/m/n/12 -webkit-ta
 p-highlight-color: transparent \T1/ptm/m/n/12 und
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 357--367
+Underfull \hbox (badness 10000) in paragraph at lines 445--455
 
  []
 
-[18] [19]
-Underfull \hbox (badness 10000) in paragraph at lines 378--382
+[21] [22]
+Underfull \hbox (badness 10000) in paragraph at lines 466--470
 
  []
 
-[20]
-Overfull \hbox (3.34413pt too wide) in paragraph at lines 385--392
+[23]
+Overfull \hbox (3.34413pt too wide) in paragraph at lines 473--480
 \T1/ptm/m/n/12 Um das Fern-licht auf un-se-rer Web-si-te ein- bzw. aus-zu-schal
 -ten gibt es ein ei-ge-nes Fernlicht-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 385--392
+Underfull \hbox (badness 10000) in paragraph at lines 473--480
 
  []
 
-[21]
-Overfull \hbox (12.83487pt too wide) in paragraph at lines 396--403
+[24]
+Overfull \hbox (12.83487pt too wide) in paragraph at lines 484--491
 \T1/ptm/m/n/12 Im HTML-Code wird die Vi-deo-über-tra-gung als HTML \T1/cmtt/m/n
 /12 <img>\T1/ptm/m/n/12 -Tag mit der id \T1/cmtt/m/n/12 dynamicimage
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 396--403
+Underfull \hbox (badness 10000) in paragraph at lines 484--491
 
  []
 
-[22]
-Overfull \hbox (1.30785pt too wide) in paragraph at lines 410--419
+
+Overfull \hbox (1.30785pt too wide) in paragraph at lines 498--507
 \T1/ptm/m/n/12 Die CSS-Klasse \T1/cmtt/m/n/12 daten \T1/ptm/m/n/12 for-ma-tiert
  die ein-zel-nen Da-ten im Me-nü. Sie wer-den in der Schrift-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 410--419
+Underfull \hbox (badness 10000) in paragraph at lines 498--507
 
  []
 
-[23] [24] [25] [26]
-Underfull \hbox (badness 10000) in paragraph at lines 497--500
+[25] [26] [27] [28]
+Underfull \hbox (badness 10000) in paragraph at lines 585--588
 
  []
 
-[27] [28] (diplomarbeit_lastenroboter.lof)
+[29] [30] (diplomarbeit_lastenroboter.lof)
 \tf@lof=\write6
 \openout6 = `diplomarbeit_lastenroboter.lof'.
 
- [29] (diplomarbeit_lastenroboter.aux)
+ [31] [32]
+(diplomarbeit_lastenroboter.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
@@ -1303,10 +1425,10 @@ ged.
 (rerunfilecheck)             Checksum: D59188843870E309B956022D4BC1917B;9345.
  ) 
 Here is how much of TeX's memory you used:
- 34947 strings out of 474486
- 805873 string characters out of 5743283
+ 35054 strings out of 474486
+ 809378 string characters out of 5743283
  1942542 words of memory out of 5000000
- 56555 multiletter control sequences out of 15000+600000
+ 56651 multiletter control sequences out of 15000+600000
  616778 words of font info for 133 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,12n,93p,934b,612s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1334,9 +1456,9 @@ pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist
 200.pk><C:/Users/Lenovo/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utm
 b8a.pfb><C:/Users/Lenovo/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/ut
 mr8a.pfb>
-Output written on diplomarbeit_lastenroboter.pdf (29 pages, 233440 bytes).
+Output written on diplomarbeit_lastenroboter.pdf (32 pages, 560870 bytes).
 PDF statistics:
- 587 PDF objects out of 1000 (max. 8388607)
- 109 named destinations out of 1000 (max. 500000)
- 564 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 632 PDF objects out of 1000 (max. 8388607)
+ 120 named destinations out of 1000 (max. 500000)
+ 604 words of extra memory for PDF output out of 10000 (max. 10000000)
 
