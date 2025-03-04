@@ -23,7 +23,31 @@
 \contentsline {figure}{\numberline {22}{\ignorespaces <hier gute Bildbeschreibung einfügen>}}{28}{figure.22}%
 \contentsline {figure}{\numberline {23}{\ignorespaces \texttt {send()}-Funktion}}{29}{figure.23}%
 \contentsline {figure}{\numberline {24}{\ignorespaces \texttt {stop()}-Funktion}}{30}{figure.24}%
-\contentsline {figure}{\numberline {25}{\ignorespaces Videoübertragung auf der Website}}{33}{figure.25}%
-\contentsline {figure}{\numberline {26}{\ignorespaces Videoübertragung HTML-Code}}{33}{figure.26}%
-\contentsline {figure}{\numberline {27}{\ignorespaces CSS-Formatierung für \texttt {dynamicimage}}}{33}{figure.27}%
-\contentsline {figure}{\numberline {28}{\ignorespaces Videoübertragung im JavaScript-Code}}{34}{figure.28}%
+\contentsline {figure}{\numberline {25}{\ignorespaces Geschwindigkeitssteuerung auf der Website}}{30}{figure.25}%
+\contentsline {figure}{\numberline {26}{\ignorespaces Geschwindigkeitssteuerung HTML-Code}}{31}{figure.26}%
+\contentsline {figure}{\numberline {27}{\ignorespaces CSS-Klassen für die Geschwindigkeitssteuerung}}{31}{figure.27}%
+\contentsline {figure}{\numberline {28}{\ignorespaces \texttt {speed-change()}-Funktion}}{32}{figure.28}%
+\contentsline {figure}{\numberline {29}{\ignorespaces Kamerasteuerung auf der Website}}{32}{figure.29}%
+\contentsline {figure}{\numberline {30}{\ignorespaces Kamerasteuerung HTML-Code}}{33}{figure.30}%
+\contentsline {figure}{\numberline {31}{\ignorespaces CSS-Klassen für die Kamerasteuerung}}{33}{figure.31}%
+\contentsline {figure}{\numberline {32}{\ignorespaces \texttt {camera-change()}-Funktion}}{34}{figure.32}%
+\contentsline {figure}{\numberline {33}{\ignorespaces Fernlicht-Icon auf der Website}}{35}{figure.33}%
+\contentsline {figure}{\numberline {34}{\ignorespaces HTML-Code für Fernlicht}}{35}{figure.34}%
+\contentsline {figure}{\numberline {35}{\ignorespaces CSS-Klassen für das Fernlicht}}{36}{figure.35}%
+\contentsline {figure}{\numberline {36}{\ignorespaces \texttt {togglelight()}-Funktion}}{37}{figure.36}%
+\contentsline {figure}{\numberline {37}{\ignorespaces Videoübertragung auf der Website}}{38}{figure.37}%
+\contentsline {figure}{\numberline {38}{\ignorespaces Videoübertragung HTML-Code}}{38}{figure.38}%
+\contentsline {figure}{\numberline {39}{\ignorespaces CSS-Formatierung für \texttt {dynamicimage}}}{38}{figure.39}%
+\contentsline {figure}{\numberline {40}{\ignorespaces Videoübertragung im JavaScript-Code}}{39}{figure.40}%
+\contentsline {figure}{\numberline {41}{\ignorespaces Menü-Icon auf der Website}}{40}{figure.41}%
+\contentsline {figure}{\numberline {42}{\ignorespaces Sidebar mit Sensordaten}}{40}{figure.42}%
+\contentsline {figure}{\numberline {43}{\ignorespaces Sensordaten HTML-Code}}{41}{figure.43}%
+\contentsline {figure}{\numberline {44}{\ignorespaces CSS-Klassen für das Menü}}{42}{figure.44}%
+\contentsline {figure}{\numberline {45}{\ignorespaces CSS-Klasse \texttt {.daten}}}{43}{figure.45}%
+\contentsline {figure}{\numberline {46}{\ignorespaces JavaScript-Verarbeitung der Sensordaten}}{43}{figure.46}%
+\contentsline {figure}{\numberline {47}{\ignorespaces Statusbox auf der Website}}{44}{figure.47}%
+\contentsline {figure}{\numberline {48}{\ignorespaces Statusbox: Verbunden}}{44}{figure.48}%
+\contentsline {figure}{\numberline {49}{\ignorespaces Statusbox: Verbindung getrennt}}{44}{figure.49}%
+\contentsline {figure}{\numberline {50}{\ignorespaces Statusbox HTML-Code}}{44}{figure.50}%
+\contentsline {figure}{\numberline {51}{\ignorespaces CSS-Klassen für die Statusbox}}{45}{figure.51}%
+\contentsline {figure}{\numberline {52}{\ignorespaces JavaScript Funktionen für den Verbindungsstatus}}{46}{figure.52}%

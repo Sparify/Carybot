@@ -589,27 +589,157 @@
 				\subsubsection*{Geschwindigkeitseinstellung}
 			
 	Um die Fortbewegungsgeschwindigkeit des Roboters kontrollieren zu können, gibt es auf der linken Seite neben dem Steuerkreuz einen vertikalen Geschwindigkeitsslider, mit der die Geschwindigkeit der Motoren gesteuert werden kann. Wenn der Slider nach oben gezogen wird, beschleunigt der Roboter, wenn der Slider nach unten gezogen wird, wird die Geschwindigkeit verlangsamt. \\[0.5cm]
-	Im HTML-Code wird mit der CSS-Klasse \texttt{slider-container} ein Bereich im Hauptbereich definiert. Der Slider wird als HTML \texttt{<input>}-Tag mit dem type \texttt{range} von 0 bis 100 definiert. Für das Design wird die CSS-Klasse \texttt{slider} verwendet und beim Verschieben des Sliders wird die JavaScript Funktion \texttt{speed\_change()} mit der aktuellen Position des Sliders aufgerufen. \\[0.5cm]
-	In der CSS-Klasse \texttt{slider-container} wird ein Bereich mit der Größe 50x220 Pixel definiert, in dem der Slider angezeigt werden soll. In \texttt{slider} wird definiert, dass der Slider vertikal und nicht horizontal angezeigt wird. Außerdem wird die Richtung auf \texttt{Right to Left} gesetzt, damit die aktuelle Position richtig erhöht bzw. vermindert bei Auf- und Niederschieben des Sliders wird. \\[0.5cm]
+	\begin{center}
+		\begin{minipage}[t]{1\textwidth}
+			\includegraphics[scale=0.9]{Pictures/speed-web}
+			\captionof{figure}{Geschwindigkeitssteuerung auf der Website}
+			\label{fig:speed-web}
+			\vspace{-10pt}
+			\begin{center}
+				\par\small Quelle: eigene Abbildung 
+			\end{center}
+		\end{minipage} \\[0.75cm]
+	\end{center}
+	Im HTML-Code wird mit der CSS-Klasse \texttt{slider-container} ein Bereich im Hauptbereich definiert. Der Slider wird als HTML \texttt{<input>}-Tag mit dem type \texttt{range} von 0 bis 100 definiert. Für das Design wird die CSS-Klasse \texttt{slider} verwendet und beim Verschieben des Sliders wird die JavaScript Funktion \texttt{speed\_change()} mit der aktuellen Position des Sliders aufgerufen. \\
+	\begin{center}
+		\begin{minipage}[t]{1\textwidth}
+			\includegraphics[scale=0.9]{Pictures/speed-html}
+			\captionof{figure}{Geschwindigkeitssteuerung HTML-Code}
+			\label{fig:speed-html}
+			\vspace{-10pt}
+			\begin{center}
+				\par\small Quelle: eigene Abbildung 
+			\end{center}
+		\end{minipage} \\[0.75cm]
+	\end{center}
+	In der CSS-Klasse \texttt{slider-container} wird ein Bereich mit der Größe 50x220 Pixel definiert, in dem der Slider angezeigt werden soll. In \texttt{slider} wird definiert, dass der Slider vertikal und nicht horizontal angezeigt wird. Außerdem wird die Richtung auf \texttt{Right to Left} gesetzt, damit die aktuelle Position richtig erhöht bzw. vermindert bei Auf- und Niederschieben des Sliders wird. \\
+	\begin{center}
+		\begin{minipage}[t]{0.45\textwidth}
+			\includegraphics{Pictures/speed-css}
+			\captionof{figure}{CSS-Klassen für die Geschwindigkeitssteuerung}
+			\label{fig:speed-css}
+			\vspace{-10pt}
+			\begin{center}
+				\par\small Quelle: eigene Abbildung 
+			\end{center}
+		\end{minipage} \\[0.75cm]
+	\end{center}
 	Im JavaScript-Code wird die aktuelle Position des Sliders in die eigene Variable \texttt{speed} gespeichert. Die Geschwindigkeit wird immer bei einem Steuerbefehl des Steuerkreuzes mitübertragen. (siehe Steuerung)
+	\begin{center}
+		\begin{minipage}[t]{0.55\textwidth}
+			\includegraphics{Pictures/speed-js}
+			\captionof{figure}{\texttt{speed-change()}-Funktion}
+			\label{fig:speed-js}
+			\vspace{-10pt}
+			\begin{center}
+				\par\small Quelle: eigene Abbildung 
+			\end{center}
+		\end{minipage} \\[0.75cm]
+	\end{center}
 				
 				\subsubsection*{Kamerasteuerung}
 				
 	Um mit der Videoübertragung besser Objekte und Hindernisse zu erkennen, ist die Kamera leicht schwenkbar. Um nun die Kamera auf unserer Website bewegen zu können, gibt es auf der linken Seite einen horizontalen Slider, mit der die Kamera ein Stück links und rechts geschwenkt werden kann. \\[0.5cm]
+	\begin{center}
+		\begin{minipage}[t]{1\textwidth}
+			\includegraphics[scale=0.9]{Pictures/kamera-web}
+			\captionof{figure}{Kamerasteuerung auf der Website}
+			\label{fig:kamera-web}
+			\vspace{-10pt}
+			\begin{center}
+				\par\small Quelle: eigene Abbildung 
+			\end{center}
+		\end{minipage} \\[0.75cm]
+	\end{center}
 	Im HTML-Code wird ein mit der CSS-Klasse \texttt{camera-container} ein Bereich im Hauptbereich definiert. Der Slider wird als HTML \texttt{<input>}-Tag mit dem type \texttt{range} von 0 bis 180 definiert. Für das Design wird die CSS-Klasse \texttt{cam\_slider} verwendet und beim Verschieben des Sliders wird die JavaScript Funktion \texttt{camera\_change()} mit der aktuellen Position des Sliders aufgerufen. \\[0.5cm]
-	In der CSS-Klasse \texttt{camera-container} wird ein Bereich erstellt, in dem der Slider angezeigt werden soll.  In \texttt{cam\_slider} wird die Slidespur mit einer Breite von 150 Pixel und einer Höhe von 10 Pixel definiert. Der Hintergrund ist hellgrau und die Ecken werden leicht abgerundet.  In \texttt{webkit-slider-thumb} wird der Sliderknopf mit 20x20 Pixel definiert. Der Hintergrund ist dunkelgrau mit einem 2px breiten, dunkleren Rand. \\[0.5cm]
+	\begin{center}
+		\begin{minipage}[t]{1\textwidth}
+			\includegraphics{Pictures/kamera-html}
+			\captionof{figure}{Kamerasteuerung HTML-Code}
+			\label{fig:kamera-html}
+			\vspace{-10pt}
+			\begin{center}
+				\par\small Quelle: eigene Abbildung 
+			\end{center}
+		\end{minipage} \\[0.75cm]
+	\end{center}
+	In der CSS-Klasse \texttt{camera-container} wird ein Bereich erstellt, in dem der Slider angezeigt werden soll.  In \texttt{cam\_slider} wird die Slidespur mit einer Breite von 150 Pixel und einer Höhe von 10 Pixel definiert. Der Hintergrund ist hellgrau und die Ecken werden leicht abgerundet.  In \texttt{webkit-slider-thumb} wird der Sliderknopf mit 20x20 Pixel definiert. Der Hintergrund ist dunkelgrau mit einem 2px breiten, dunkleren Rand. \\
+	\begin{center}
+		\begin{minipage}[t]{0.5\textwidth}
+			\includegraphics{Pictures/kamera-css}
+			\captionof{figure}{CSS-Klassen für die Kamerasteuerung}
+			\label{fig:kamera-css}
+			\vspace{-10pt}
+			\begin{center}
+				\par\small Quelle: eigene Abbildung 
+			\end{center}
+		\end{minipage} \\[0.75cm]
+	\end{center}
 	Im JavaScript-Code wird die aktuelle Position des Sliders verarbeitet. Dazu wird die Position in eine JSON-Nachricht gespeichert. Zu debug-Zwecken wird die Position noch in der Website Konsole ausgegeben. Wenn der WebSocket Verbindung zum ESP32 offen ist, wird die aktuelle Position übermittelt. \\[0.5cm]
-			
+	\begin{center}
+		\begin{minipage}[t]{0.75\textwidth}
+			\includegraphics{Pictures/kamera-js}
+			\captionof{figure}{\texttt{camera-change()}-Funktion}
+			\label{fig:kamera-js}
+			\vspace{-10pt}
+			\begin{center}
+				\par\small Quelle: eigene Abbildung 
+			\end{center}
+		\end{minipage} \\[0.75cm]
+	\end{center}	
 				\subsubsection*{Fernlicht}
 				
 	Die Funktion des Fernlichts dient bei unserem Roboter zur Beleuchtung bei schlechter Sicht bzw. Dunkelheit. Wenn eingeschalten, leuchtet auf der Vorder- sowie auf der Hinterseite des Roboters ein Scheinwerfer die Umgebung aus. \\[0.5cm]
 	Um das Fernlicht auf unserer Website ein- bzw. auszuschalten gibt es ein eigenes Fernlicht-Icon rechts über dem Steuerkreuz. Im ausgeschalteten Zustand ist das Icon ausgegraut. Im aktiven Zustand ist das Scheinwerfer Symbol im Icon blau und das Icon hat einen blassgrünen Hintergrund. \\[0.5cm]
-	Im HTML-Code wird das Icon als HTML \texttt{<img>}-Tag eingefügt. Als Quelle wird die im SPIFFS hochgeladene \texttt{Fernlicht.svg} Grafik verwendet. Für das Design wird die CSS-Klasse \texttt{fernlicht-icon} verwendet und beim \texttt{onclick} Event wird die JavaScript Funktion \texttt{togglelight()} aufgerufen. \\[0.5cm]
+	\begin{center}
+		\begin{minipage}[t]{1\textwidth}
+			\includegraphics[scale=0.9]{Pictures/fernlicht-web}
+			\captionof{figure}{Fernlicht-Icon auf der Website}
+			\label{fig:fernlicht-web}
+			\vspace{-10pt}
+			\begin{center}
+				\par\small Quelle: eigene Abbildung 
+			\end{center}
+		\end{minipage} \\[0.75cm]
+	\end{center}
+	Im HTML-Code wird das Icon als HTML \texttt{<img>}-Tag eingefügt. Als Quelle wird die im SPIFFS hochgeladene \texttt{Fernlicht.svg} Grafik verwendet. Für das Design wird die CSS-Klasse \texttt{fernlicht-icon} verwendet und beim \texttt{onclick} Event wird die JavaScript Funktion \texttt{togglelight()} aufgerufen. \\
+	\begin{center}
+		\begin{minipage}[t]{1\textwidth}
+			\includegraphics[scale=0.9]{Pictures/fernlicht-html}
+			\captionof{figure}{HTML-Code für Fernlicht}
+			\label{fig:fernlicht-html}
+			\vspace{-10pt}
+			\begin{center}
+				\par\small Quelle: eigene Abbildung 
+			\end{center}
+		\end{minipage} \\[0.75cm]
+	\end{center}
 	In der CSS-Klasse \texttt{fernlicht-icon} wird das Icon 20\% vom oberen Rand und 2\% von rechten Rand mit einer Größe von 50x50 Pixel positioniert. Es wird auf der 2 z-Ebene angezeigt und der nicht sichtbare Hintergrund wird transparent angezeigt. Beim Ändern der Farbe wird eine sanfte Animation über 0,3 Sekunden angezeigt. \\[0.5cm]
 	Die \texttt{grayscale} Klasse wandelt das Icon in die ausgegraute Darstellung um, um anzuzeigen, dass das Fernlicht deaktiviert ist.
 	Die \texttt{active-light} Klasse ändert die Hintergrundfarbe zu einem transparenten grünen Ton, um anzuzeigen, dass das Fernlicht aktiv ist. \\[0.5cm]
+	\begin{center}
+		\begin{minipage}[t]{0.65\textwidth}
+			\includegraphics{Pictures/fernlicht-css}
+			\captionof{figure}{CSS-Klassen für das Fernlicht}
+			\label{fig:fernlicht-css}
+			\vspace{-10pt}
+			\begin{center}
+				\par\small Quelle: eigene Abbildung 
+			\end{center}
+		\end{minipage} \\[0.75cm]
+	\end{center}
 	Im JavaScript Code wird bei jedem \texttt{onclick} Event die Variable \texttt{light} getoggled. Wenn die Variable \texttt{light} true ist, wird die CSS-Klasse \texttt{active-light} angewendet, ansonsten die CSS-Klasse \texttt{grayscale}. Anschließend wird eine JSON-Nachricht mit dem aktuellen Zustand der \texttt{light} Variable erstellt. Wenn die WebSocket Verbindung zum zum ESP32 offen ist, wird die JSON-Nachricht versendet, ansonsten wird eine Fehlermeldung ausgegeben. \\[0.5cm]
-	
+	\begin{center}
+		\begin{minipage}[t]{0.95\textwidth}
+			\includegraphics[scale=0.9]{Pictures/fernlicht-js}
+			\captionof{figure}{\texttt{togglelight()}-Funktion}
+			\label{fig:fernlicht-js}
+			\vspace{-10pt}
+			\begin{center}
+				\par\small Quelle: eigene Abbildung 
+			\end{center}
+		\end{minipage} \\[0.75cm]
+	\end{center}
 				
 			\subsubsection{Echtzeit-Videoanzeige}
 			
@@ -671,22 +801,150 @@
 			
 				\subsubsection*{Sensordaten}	
 			
-	In der linken oberen Ecke der Website befindet sich das Menü-icon. Ein Klick darauf ruft die Sidebar für die Daten auf. Die Sidebar klappt sich am linken Bildschirmrand auf. Darin kann ist der aktuelle Akkustand sowie das aktuelle aufliegende Gewicht auslesbar. Um das Menü wieder schließen zu können, ist ein erneuter Klick auf das Icon erforderlich und die Sidebar wird wieder zugeklappt. \\[0.5cm]		
+	In der linken oberen Ecke der Website befindet sich das Menü-icon. Ein Klick darauf ruft die Sidebar für die Daten auf. Die Sidebar klappt sich am linken Bildschirmrand auf. Darin kann ist der aktuelle Akkustand sowie das aktuelle aufliegende Gewicht auslesbar. Um das Menü wieder schließen zu können, ist ein erneuter Klick auf das Icon erforderlich und die Sidebar wird wieder zugeklappt. \\[0.5cm]	
+	\begin{center}
+		\begin{minipage}[t]{1\textwidth}
+			\includegraphics[scale=0.4]{Pictures/menu-web1}
+			\captionof{figure}{Menü-Icon auf der Website}
+			\label{fig:menu-web}
+			\vspace{-10pt}
+			\begin{center}
+				\par\small Quelle: eigene Abbildung 
+			\end{center}
+		\end{minipage} \\[0.75cm]
+	\end{center}
+	\begin{center}
+		\begin{minipage}[t]{1\textwidth}
+			\includegraphics[scale=0.9]{Pictures/sensordaten-web}
+			\captionof{figure}{Sidebar mit Sensordaten}
+			\label{fig:sidebar}
+			\vspace{-10pt}
+			\begin{center}
+				\par\small Quelle: eigene Abbildung 
+			\end{center}
+		\end{minipage} \\[0.75cm]
+	\end{center}
 	Im HTML-Code wird im Body-Bereich wird das Icon als HTML \texttt{<img>}-Tag eingefügt. Als Quelle wird die im SPIFFS hochgeladene Grafik \texttt{menu-icon.svg} Grafik verwendet. Für das Design wird die CSS-Klasse \texttt{menu-icon} verwendet und beim onclick Event wird die JavaScript Funktion \texttt{togglemenu()} aufgerufen. \\[0.5cm]
-	Im HTML \texttt{<div>}-Tag werden die einzelnen Daten festgelegt und mir der CSS-Klasse \texttt{mymenu} formatiert. Das Gewicht und der Akkustand werden als HTML \texttt{<p>}-Tag angezeigt und mit der CSS-Klasse \texttt{daten} formatiert. \\[0.5cm]
+	Im HTML \texttt{<div>}-Tag werden die einzelnen Daten festgelegt und mir der CSS-Klasse \texttt{mymenu} formatiert. Das Gewicht und der Akkustand werden als HTML \texttt{<p>}-Tag angezeigt und mit der CSS-Klasse \texttt{daten} formatiert. \\
+	\begin{center}
+		\begin{minipage}[t]{1\textwidth}
+			\includegraphics{Pictures/sensordaten-html}
+			\captionof{figure}{Sensordaten HTML-Code}
+			\label{fig:sensordaten-html}
+			\vspace{-10pt}
+			\begin{center}
+				\par\small Quelle: eigene Abbildung 
+			\end{center}
+		\end{minipage} \\[0.75cm]
+	\end{center}
 	In der CSS-Klasse \texttt{mymenu} wird die sidebar formatiert. Das Menü ist fixiert und nimmt 100\% der Höhe ein. Die Anfängliche ist 0, da es versteckt bzw. eingeklappt ist. Die Hintergrundfarbe ist schwarz und es befindet sich auf der z-Ebene 1 um den Hauptinhalt überdecken zu können. Beim Ein- und Ausblenden dauert 0.5 Sekunden, um einen sanften Übergang zu ermöglichen. \\[0.5cm]
 	Der Hautinhalt \texttt{\#main} hat eine Animation, damit er beim Öffnen des Menüs nach rechts verschoben werden kann. \\[0.5cm]
 	Falls der Bildschirm kleiner als 450px Höhe hat, werden die Abstände der angezeigten Daten verkleinert. Das dient dazu, um besonders auf Handys die Ansicht zu optimieren. \\[0.5cm]
 	Die CSS-Klasse \texttt{menu-icon} positioniert das Icon in der linken oberen Ecke mit einer 30x30px Format. \texttt{Cursor: pointer} sorgt dafür, dass das Icon anklickbar ist. \\[0.5cm]
+	\begin{center}
+		\begin{minipage}[t]{0.6\textwidth}
+			\includegraphics[scale=0.7]{Pictures/sensordaten-css}
+			\captionof{figure}{CSS-Klassen für das Menü}
+			\label{fig:sensordaten-css}
+			\vspace{-10pt}
+			\begin{center}
+				\par\small Quelle: eigene Abbildung 
+			\end{center}
+		\end{minipage} \\[0.75cm]
+	\end{center}
 	Die CSS-Klasse \texttt{daten} formatiert die einzelnen Daten im Menü. Sie werden in der Schriftart Arial, Helvetica oder sans-serif angezeigt und in der Farbe Weiß, mit der Schriftgröße 1.2em (20\% größer) mittig angezeigt. \\[0.5cm]
-	In der JavaScript Funktion \texttt{connectWebSocket\_carybot()} wird im \texttt{onmessage()}-event die übertragenen Daten verarbeitet. Für debug-Zwecken werden die angekommen Daten in der WebKonsole ausgegeben. Danach werden die JSON-Nachrichten extrahiert. Wenn die Nachricht den Akkustand beinhaltet, wird dieser im HTML \texttt{<p>}-Tag mit der id \texttt{Akkustand} im Menü angezeigt. Wenn die Nachricht das Gewicht beinhaltet, wird dieses im HTML \texttt{<p>}-Tag mit der id \texttt{Gewicht} im Menü angezeigt. Falls beim Umwandeln ein Fehler auftreten sollte, wird dieser in der Webkonsole ausgegeben. \\[0.5cm]
+	\begin{center}
+		\begin{minipage}[t]{0.85\textwidth}
+			\includegraphics[scale=0.9]{Pictures/daten-css}
+			\captionof{figure}{CSS-Klasse \texttt{.daten}}
+			\label{fig:sensordaten-daten}
+			\vspace{-10pt}
+			\begin{center}
+				\par\small Quelle: eigene Abbildung 
+			\end{center}
+		\end{minipage} \\[0.75cm]
+	\end{center}
+	In der JavaScript Funktion \texttt{connectWebSocket\_carybot()} wird im \texttt{onmessage()}-event die übertragenen Daten verarbeitet. Für debug-Zwecken werden die angekommen Daten in der WebKonsole ausgegeben. Danach werden die JSON-Nachrichten extrahiert. Wenn die Nachricht den Akkustand beinhaltet, wird dieser im HTML \texttt{<p>}-Tag mit der id \texttt{Akkustand} im Menü angezeigt. Wenn die Nachricht das Gewicht beinhaltet, wird dieses im HTML \texttt{<p>}-Tag mit der id \texttt{Gewicht} im Menü angezeigt. Falls beim Umwandeln ein Fehler auftreten sollte, wird dieser in der Webkonsole ausgegeben. \\
+	\begin{center}
+		\begin{minipage}[t]{1\textwidth}
+			\includegraphics[scale=0.8]{Pictures/sensordaten-js}
+			\captionof{figure}{JavaScript-Verarbeitung der Sensordaten}
+			\label{fig:sensordaten-js}
+			\vspace{-10pt}
+			\begin{center}
+				\par\small Quelle: eigene Abbildung 
+			\end{center}
+		\end{minipage} \\[0.75cm]
+	\end{center}
 	
 				\subsubsection*{Verbindungsstatus}
 	
 	In der WebSocket Status-Box wird der aktuelle Verbindungszustand zum ESP32 angezeigt. Wenn keine Verbindung vorhanden ist, ist die Box rot. Wenn die Verbindung erfolgt, wird die Box grün. \\[0.5cm]
-	Im HTML-Code wird die Status-Box als HTML \texttt{<span>}-Tag definiert. Für das Design wird die CSS-Klasse \texttt{status-box} kombiniert je nach Verbindungsstatus mit der Klasse \texttt{connected} oder \texttt{disconnected}. \\[0.5cm]
+	\begin{center}
+		\begin{minipage}[t]{1\textwidth}
+			\includegraphics{Pictures/status-web}
+			\captionof{figure}{Statusbox auf der Website}
+			\label{fig:status-web}
+			\vspace{-10pt}
+			\begin{center}
+				\par\small Quelle: eigene Abbildung 
+			\end{center}
+		\end{minipage} \\[0.75cm]
+	\end{center}
+	\begin{center}
+		\begin{minipage}[t]{1\textwidth}
+			\includegraphics{Pictures/status-green}
+			\captionof{figure}{Statusbox: Verbunden}
+			\label{fig:status-green}
+			\vspace{-10pt}
+			\begin{center}
+				\par\small Quelle: eigene Abbildung 
+			\end{center}
+			\includegraphics{Pictures/status-red}
+			\captionof{figure}{Statusbox: Verbindung getrennt}
+			\label{fig:status-red}
+			\vspace{-10pt}
+			\begin{center}
+				\par\small Quelle: eigene Abbildung 
+			\end{center}
+		\end{minipage} \\[0.75cm]
+	\end{center}
+	Im HTML-Code wird die Status-Box als HTML \texttt{<span>}-Tag definiert. Für das Design wird die CSS-Klasse \texttt{status-box} kombiniert je nach Verbindungsstatus mit der Klasse \texttt{connected} oder \texttt{disconnected}. \\
+	\begin{center}
+		\begin{minipage}[t]{1\textwidth}
+			\includegraphics{Pictures/status-html}
+			\captionof{figure}{Statusbox HTML-Code}
+			\label{fig:status-html}
+			\vspace{-10pt}
+			\begin{center}
+				\par\small Quelle: eigene Abbildung 
+			\end{center}
+		\end{minipage} \\[0.75cm]
+	\end{center}
 	In der CSS-Klasse \texttt{status-box} wird die grundlegende Box am linken oberen Bildschirmrand positioniert. Die Box liegt auf der zweiten z-Ebene. Die Schrift wird weiß definiert und wird fett dargestellt. Wenn eine Verbindung hergestellt wurde, wird der Hintergrund auf grün festgelegt (\texttt{status-box.connected}), ansonsten ist der Hintergrund rot (\texttt{status-box.disconnected}). \\[0.5cm]
+	\begin{center}
+		\begin{minipage}[t]{0.45\textwidth}
+			\includegraphics{Pictures/status-css}
+			\captionof{figure}{CSS-Klassen für die Statusbox}
+			\label{fig:status-css}
+			\vspace{-10pt}
+			\begin{center}
+				\par\small Quelle: eigene Abbildung 
+			\end{center}
+		\end{minipage} \\[0.75cm]
+	\end{center}
 	Im JavaScript-Code werden die \texttt{onopen()} und \texttt{onclose()} Events der WebSocket Verbindung gehandelt. Bei einem Verbindungsaufbau (\texttt{onopen()}) wird die Status-Box grün und der Text wechselt zu \texttt{Connected}. Außerdem wird eine Nachricht für Debug-Zwecke ausgegeben. Bei einem Verbindungsabbruch wird die Status-Box wieder rot und der Text wechselt zu \texttt{Disconnected}. Es wird automatisch alle 5 Sekunden ein neuer Versuch zur Verbindungsaufbau gestartet.
+	\begin{center}
+		\begin{minipage}[t]{0.95\textwidth}
+			\includegraphics[scale=0.9]{Pictures/status-js}
+			\captionof{figure}{JavaScript Funktionen für den Verbindungsstatus}
+			\label{fig:status-js}
+			\vspace{-10pt}
+			\begin{center}
+				\par\small Quelle: eigene Abbildung 
+			\end{center}
+		\end{minipage} \\[0.75cm]
+	\end{center}
 			
 		\subsection{Herausforderungen und Optimierungen}
 		
@@ -792,11 +1050,13 @@
 	 \subsection{LaTex}
 	 
 	 \subsection{GitHub}
+	 
+\newpage
 	
 	\section{Abbildungsverzeichnis}
 	
 		\listoffigures
-	
+\newpage
 	\section{Literaturverzeichnis}
 	 
 \end{document}
