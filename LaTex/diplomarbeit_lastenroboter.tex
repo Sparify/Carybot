@@ -262,7 +262,7 @@
 				\hline  
 				\textbf{Eigenschaft} & \textbf{Wert} \\   
 				\hline  
-				Spannung & 12V \\  
+				Spannung & 15V \\  
 				\hline  
 				Rotationsgeschwindigkeit der Antriebswelle & 3260 rpm \\  
 				\hline  
@@ -294,6 +294,17 @@
 			\item Mit den Daten der Hallsensoren schaltet der Treiber die Phasen damit sich der Rotor mit der gewünschten Geschwindigkeit dreht.
 		\end{itemize}
 		
+		\begin{center}
+			\begin{minipage}{\textwidth}
+				\centering
+				\includegraphics[scale=1]{Pictures/Motorphasen}
+				\captionof{figure}{Motorphasen Verbindung}
+				\label{fig:spiffs_init}
+				\vspace{-2pt}
+				\small Quelle: mad-ee.com/easy-inexpensive-hoverboard-motor-controller/g
+			\end{minipage}
+		\end{center}
+		
 		\subsubsection*{PWM-Steuerung}
 		\begin{itemize}
 			\item Die PWM steuert die Geschwindigkeit, indem sie die Leistung moduliert, die den Motorwicklungen zugeführt wird..
@@ -302,12 +313,34 @@
 			\item Die Platine ist ausgestattet mit einer externen und internen PWM-Steuerung.
 		\end{itemize}
 		
+		\begin{center}
+			\begin{minipage}{\textwidth}
+				\centering
+				\includegraphics[scale=1]{Pictures/PWM-Treiber}
+				\captionof{figure}{Pins für die PWM}
+				\label{fig:spiffs_init}
+				\vspace{-2pt}
+				\small Quelle: mad-ee.com/easy-inexpensive-hoverboard-motor-controller/g
+			\end{minipage}
+		\end{center}
+		\newpage
 		\subsubsection*{Richtungswechsel und Bremse}
 		\begin{itemize}
 			\item Die Platine verfügt über zwei Steuereingänge für Richtungswechsel (DIR) und eine Bremsfunktion (BREAKE).
 			\item Der Richtungswechsel erfolgt, indem das Signal bei dem Eingang von LOW auf HIGH oder umgekehrt wechselt. Das Umschalten der Richtung wechselt die Reihenfolge der Phasenströme, wodurch sich dann der Motor in die andere Richtung dreht.
 			\item Die Bremse reagiert auf ein HIGH-Signal. Das heißt wenn am Eingang ein HIGH-Signal angelegt wird, stoppt der Motor, indem die Wicklungen kurzgeschlossen werden.
 		\end{itemize}
+		
+		\begin{center}
+			\begin{minipage}{\textwidth}
+				\centering
+				\includegraphics[scale=1]{Pictures/Bremse-Richtungswechsel}
+				\captionof{figure}{Pin für die Bremse und den Richtungswechsel}
+				\label{fig:spiffs_init}
+				\vspace{-2pt}
+				\small Quelle: mad-ee.com/easy-inexpensive-hoverboard-motor-controller/g
+			\end{minipage}
+		\end{center}
 		
 		\subsubsection*{Spannungs- und Stromversorgung}
 		\begin{itemize}
@@ -316,12 +349,36 @@
 			\item Der Treiber ist für Motoren bis zu 500 Watt geeignet und kann damit leistungsstarke Motoren betreiben
 		\end{itemize}
 		
+		\begin{center}
+			\begin{minipage}{\textwidth}
+				\centering
+				\includegraphics[scale=1]{Pictures/Versorgung}
+				\captionof{figure}{Versorgungs-Pins}
+				\label{fig:spiffs_init}
+				\vspace{-2pt}
+				\small Quelle: mad-ee.com/easy-inexpensive-hoverboard-motor-controller/g
+			\end{minipage}
+		\end{center}
+		
+		\newpage
+		
+		\begin{minipage}{\textwidth}
 		\subsubsection*{Hall-Sensoren}
 		\begin{itemize}
 			\item Der Treiber verwendet drei Hall-Sensor-Eingänge. (Ha, Hb, Hc)
 			\item Mit diesen Hall-Sensoren wird die Rotorposition ermittelt damit die Phasen des Motors richtig geschaltet werden.
 			\item Die Sensoren ermöglichen eine effiziente und stabile Steuerung.
 		\end{itemize}
+		\end{minipage}
+		
+		\begin{minipage}{\textwidth}
+			\centering
+			\includegraphics[scale=1]{Pictures/Hall-sensoren Eingänge}
+			\captionof{figure}{Hall-sensoren Eingänge}
+			\label{fig:spiffs_init}
+			\vspace{-2pt}
+			\small Quelle: mad-ee.com/easy-inexpensive-hoverboard-motor-controller/g
+		\end{minipage}
 		
 		\subsubsection*{Sicherheit und Schutzfunktionen}
 		\begin{itemize}
