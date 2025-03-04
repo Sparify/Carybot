@@ -31,30 +31,131 @@
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.4}Kostenaufstellung}{11}{subsection.2.4}\protected@file@percent }
 \@writefile{toc}{\contentsline {section}{\numberline {3}Antrieb}{12}{section.3}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Motoren}{12}{subsection.3.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Motorentreiber}{12}{subsection.3.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Schaltungsaufbau}{12}{subsection.3.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.4}Code}{12}{subsection.3.4}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {4}Webserver}{12}{section.4}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Grundlegende Ziele}{12}{subsection.4.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Ideen und Entwürfe}{13}{subsection.4.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}Webserver}{13}{subsection.4.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.3.1}Webserver Setup}{13}{subsubsection.4.3.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.3.2}SPIFFS Setup}{14}{subsubsection.4.3.2}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces SPIFFS Initalisierung}}{15}{figure.4}\protected@file@percent }
-\newlabel{fig:spiffs_init}{{4}{15}{SPIFFS Initalisierung}{figure.4}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces \texttt  {readfile()}-Funktion}}{16}{figure.5}\protected@file@percent }
-\newlabel{fig:spiffs_readfile}{{5}{16}{\texttt {readfile()}-Funktion}{figure.5}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.4}WebSocket Kommunikation}{16}{subsection.4.4}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.4.1}Kommunikation Setup}{16}{subsubsection.4.4.1}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Bibliotheken für die Kommunikation}}{16}{figure.6}\protected@file@percent }
-\newlabel{fig:kommunikation_libraries}{{6}{16}{Bibliotheken für die Kommunikation}{figure.6}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Netzwerkkonfiguration Client}}{17}{figure.7}\protected@file@percent }
-\newlabel{fig:kommunikation_netwerkconfig}{{7}{17}{Netzwerkkonfiguration Client}{figure.7}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Setup ESP32}}{17}{figure.8}\protected@file@percent }
-\newlabel{fig:kommunikation_setup}{{8}{17}{Setup ESP32}{figure.8}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.4.2}Message Handling}{18}{subsubsection.4.4.2}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces Übersicht der WebSocket-Ereignisse}}{18}{table.caption.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.1.1}Übersicht}{12}{subsubsection.3.1.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Motoren}}{12}{figure.4}\protected@file@percent }
+\newlabel{fig:spiffs_init}{{4}{12}{Motoren}{figure.4}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.1.2}Funktionsweise}{12}{subsubsection.3.1.2}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces BLDC-Motor}}{13}{figure.5}\protected@file@percent }
+\newlabel{fig:spiffs_init}{{5}{13}{BLDC-Motor}{figure.5}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Phasensteuerung}}{13}{figure.6}\protected@file@percent }
+\newlabel{fig:spiffs_init}{{6}{13}{Phasensteuerung}{figure.6}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.1.3}Technische Daten}{14}{subsubsection.3.1.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Motorentreiber}{14}{subsection.3.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.2.1}Überblick}{14}{subsubsection.3.2.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.2.2}Aufbau und Funktionen}{14}{subsubsection.3.2.2}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Motorteiber-ZS-X11H}}{14}{figure.7}\protected@file@percent }
+\newlabel{fig:spiffs_init}{{7}{14}{Motorteiber-ZS-X11H}{figure.7}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Schaltungsaufbau}{16}{subsection.3.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4}Code}{16}{subsection.3.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {4}Webserver}{16}{section.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Grundlegende Ziele}{16}{subsection.4.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Ideen und Entwürfe}{17}{subsection.4.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}Webserver}{17}{subsection.4.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.3.1}Webserver Setup}{17}{subsubsection.4.3.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.3.2}SPIFFS Setup}{18}{subsubsection.4.3.2}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces SPIFFS Initalisierung}}{19}{figure.8}\protected@file@percent }
+\newlabel{fig:spiffs_init}{{8}{19}{SPIFFS Initalisierung}{figure.8}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces \texttt  {readfile()}-Funktion}}{20}{figure.9}\protected@file@percent }
+\newlabel{fig:spiffs_readfile}{{9}{20}{\texttt {readfile()}-Funktion}{figure.9}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.4}WebSocket Kommunikation}{20}{subsection.4.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.4.1}Kommunikation Setup}{20}{subsubsection.4.4.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces Bibliotheken für die Kommunikation}}{20}{figure.10}\protected@file@percent }
+\newlabel{fig:kommunikation_libraries}{{10}{20}{Bibliotheken für die Kommunikation}{figure.10}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces Netzwerkkonfiguration Client}}{21}{figure.11}\protected@file@percent }
+\newlabel{fig:kommunikation_netwerkconfig}{{11}{21}{Netzwerkkonfiguration Client}{figure.11}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {12}{\ignorespaces Setup ESP32}}{21}{figure.12}\protected@file@percent }
+\newlabel{fig:kommunikation_setup}{{12}{21}{Setup ESP32}{figure.12}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.4.2}Message Handling}{22}{subsubsection.4.4.2}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces Übersicht der WebSocket-Ereignisse}}{22}{table.caption.1}\protected@file@percent }
 \providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
+\newlabel{tab:websocket-events}{{3}{22}{Übersicht der WebSocket-Ereignisse}{table.caption.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {13}{\ignorespaces \texttt  {onWebSocketEvent()}-Funktion}}{22}{figure.13}\protected@file@percent }
+\newlabel{fig:onwebsocketevent}{{13}{22}{\texttt {onWebSocketEvent()}-Funktion}{figure.13}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {14}{\ignorespaces JSON-Beispiel für Steuerung}}{23}{figure.14}\protected@file@percent }
+\newlabel{fig:example-speed}{{14}{23}{JSON-Beispiel für Steuerung}{figure.14}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {15}{\ignorespaces JSON-Beispiel für Kamerasteuerung}}{23}{figure.15}\protected@file@percent }
+\newlabel{fig:example-camera}{{15}{23}{JSON-Beispiel für Kamerasteuerung}{figure.15}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {16}{\ignorespaces JSON-Beispiel für Lichtsteuerung}}{24}{figure.16}\protected@file@percent }
+\newlabel{fig:example-light}{{16}{24}{JSON-Beispiel für Lichtsteuerung}{figure.16}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {17}{\ignorespaces \texttt  {handleWebSocketMessage()}-Funktion}}{24}{figure.17}\protected@file@percent }
+\newlabel{fig:handlewebsocketmessage}{{17}{24}{\texttt {handleWebSocketMessage()}-Funktion}{figure.17}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.5}Kamera}{25}{subsection.4.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.6}Kamera}{25}{subsection.4.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.6.1}Kamera Setup}{25}{subsubsection.4.6.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {18}{\ignorespaces Kamera-GPIO Konfiguration}}{25}{figure.18}\protected@file@percent }
+\newlabel{fig:Kamera-GPIO Konfiguration}{{18}{25}{Kamera-GPIO Konfiguration}{figure.18}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {19}{\ignorespaces Kamera-Initialisierung}}{26}{figure.19}\protected@file@percent }
+\newlabel{fig:Kamera-Initialisierung}{{19}{26}{Kamera-Initialisierung}{figure.19}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.7}Videoübertragung}{26}{subsection.4.7}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {20}{\ignorespaces Videoübertragung über WebSocket}}{28}{figure.20}\protected@file@percent }
+\newlabel{fig:Videoübertragung}{{20}{28}{Videoübertragung über WebSocket}{figure.20}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.8}Website}{28}{subsection.4.8}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.8.1}Implementierung der Steuerung}{28}{subsubsection.4.8.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {21}{\ignorespaces Steuerkreuz auf der Website}}{29}{figure.21}\protected@file@percent }
+\newlabel{fig:Steuerkreuz-web}{{21}{29}{Steuerkreuz auf der Website}{figure.21}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {22}{\ignorespaces Steuerkreuz HTML-Code}}{29}{figure.22}\protected@file@percent }
+\newlabel{fig:Steuerkreuz-html}{{22}{29}{Steuerkreuz HTML-Code}{figure.22}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {23}{\ignorespaces CSS-Klassen \texttt  {.dpad-container} und \texttt  {.button}}}{30}{figure.23}\protected@file@percent }
+\newlabel{fig:Steuerkreuz-css1}{{23}{30}{CSS-Klassen \texttt {.dpad-container} und \texttt {.button}}{figure.23}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {24}{\ignorespaces CSS-Richtungsklassen}}{31}{figure.24}\protected@file@percent }
+\newlabel{fig:Steuerkreuz-css2}{{24}{31}{CSS-Richtungsklassen}{figure.24}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {25}{\ignorespaces <hier gute Bildbeschreibung einfügen>}}{32}{figure.25}\protected@file@percent }
+\newlabel{fig:Steuerkreuz-js1}{{25}{32}{<hier gute Bildbeschreibung einfügen>}{figure.25}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {26}{\ignorespaces <hier gute Bildbeschreibung einfügen>}}{32}{figure.26}\protected@file@percent }
+\newlabel{fig:Steuerkreuz-js2}{{26}{32}{<hier gute Bildbeschreibung einfügen>}{figure.26}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {27}{\ignorespaces \texttt  {send()}-Funktion}}{33}{figure.27}\protected@file@percent }
+\newlabel{fig:Steuerkreuz-js3}{{27}{33}{\texttt {send()}-Funktion}{figure.27}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {28}{\ignorespaces \texttt  {stop()}-Funktion}}{34}{figure.28}\protected@file@percent }
+\newlabel{fig:Steuerkreuz-js4}{{28}{34}{\texttt {stop()}-Funktion}{figure.28}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.8.2}Echtzeit-Videoanzeige}{36}{subsubsection.4.8.2}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {29}{\ignorespaces Videoübertragung auf der Website}}{37}{figure.29}\protected@file@percent }
+\newlabel{fig:videoübertragung-web}{{29}{37}{Videoübertragung auf der Website}{figure.29}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {30}{\ignorespaces Videoübertragung HTML-Code}}{37}{figure.30}\protected@file@percent }
+\newlabel{fig:videoübertragung-html}{{30}{37}{Videoübertragung HTML-Code}{figure.30}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {31}{\ignorespaces CSS-Formatierung für \texttt  {dynamicimage}}}{37}{figure.31}\protected@file@percent }
+\newlabel{fig:videoübertragung-css}{{31}{37}{CSS-Formatierung für \texttt {dynamicimage}}{figure.31}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {32}{\ignorespaces Videoübertragung im JavaScript-Code}}{38}{figure.32}\protected@file@percent }
+\newlabel{fig:videoübertragung-js}{{32}{38}{Videoübertragung im JavaScript-Code}{figure.32}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.8.3}Anzeige von Sensordaten und Verbindungsstatus}{39}{subsubsection.4.8.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.9}Herausforderungen und Optimierungen}{40}{subsection.4.9}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.9.1}Probleme bei der WebSocket Kommunikation}{40}{subsubsection.4.9.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.9.2}Latenz- und Performance Optimierungen}{40}{subsubsection.4.9.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.9.3}(Speicher- und Rechenleistungseinschränkungen des ESP32)}{40}{subsubsection.4.9.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.10}(Fazit und Ausblick)}{41}{subsection.4.10}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.10.1}(Mögliche Erweiterungen und Verbesserungen)}{41}{subsubsection.4.10.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {5}Gehäuse}{41}{section.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}Planung und Design}{41}{subsection.5.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}Realisierung}{41}{subsection.5.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3}Materialliste}{41}{subsection.5.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {6}Platine}{41}{section.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.1}Grundschaltung}{41}{subsection.6.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.2}Circuit Board}{41}{subsection.6.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.3}Fertiger Prototyp}{41}{subsection.6.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {7}Kamera}{41}{section.7}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.1}Kamera im Überblick}{41}{subsection.7.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.2}Videoübertragung}{41}{subsection.7.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.3}Kameraschwenkung}{41}{subsection.7.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.3.1}Gehäuse}{41}{subsubsection.7.3.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.3.2}Servomotor}{41}{subsubsection.7.3.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.4}Code}{41}{subsection.7.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {8}Sensoren}{42}{section.8}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.1}Abstandsensor}{42}{subsection.8.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.2}Gewichtsmessung}{42}{subsection.8.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {8.2.1}Grundprinzip}{42}{subsubsection.8.2.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {8.2.2}Schaltungsaufbau}{42}{subsubsection.8.2.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {8.2.3}Code}{42}{subsubsection.8.2.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {9}Entwicklungstools}{42}{section.9}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {9.1}Autodesk Fushion}{42}{subsection.9.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {9.2}Eagle}{42}{subsection.9.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {9.3}VS-Code}{42}{subsection.9.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {9.3.1}Setup}{42}{subsubsection.9.3.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {9.3.2}Bibliotheken}{43}{subsubsection.9.3.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {9.3.3}verwendete Bibliotheken}{43}{subsubsection.9.3.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {9.4}LaTex}{44}{subsection.9.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {9.5}GitHub}{44}{subsection.9.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {10}Abbildungsverzeichnis}{44}{section.10}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {11}Literaturverzeichnis}{45}{section.11}\protected@file@percent }
+\gdef \@abspage@last{45}
 \newlabel{tab:websocket-events}{{3}{18}{Übersicht der WebSocket-Ereignisse}{table.caption.1}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces \texttt  {onWebSocketEvent()}-Funktion}}{18}{figure.9}\protected@file@percent }
 \newlabel{fig:onwebsocketevent}{{9}{18}{\texttt {onWebSocketEvent()}-Funktion}{figure.9}{}}

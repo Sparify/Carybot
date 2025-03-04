@@ -212,7 +212,122 @@
 	
 		\subsection{Motoren} %Felix
 		
+			\subsubsection{Übersicht}
+			Für den Antrieb des Lastenroboters werden BLDC-Motoren eingesetzt. Verwendet werden die BLDC-Motoren von Dunkermotoren (Typ BG 40X25). Ein BLDC-Motor auch bürstenloser Gleichstrommoter gennant wird über drei Phasen betrieben. Der BLDC-Motor wird oft in der Industrie eingesetzt weil er eine hohe Leistung bietet.
+			
+			\begin{center}
+				\begin{minipage}{\textwidth}
+					\centering
+					\includegraphics[scale=0.5]{Pictures/Motoren}
+					\captionof{figure}{Motoren}
+					\label{fig:spiffs_init}
+					\vspace{-2pt}
+					{\small Quelle: eigene Abbildung}
+				\end{minipage}
+			\end{center}
+			
+			\subsubsection{Funktionsweise}
+			Die Funktionsweise eines bürstenlosen Gleichstrommotors basiert auf die Wechselwirkung zwischen dem Magnetfeld des Stators und dem Magnetfeld des Rotors.\\[0.5cm]
+			\textbf{Stator:} Der Stator besteht aus mehreren Spulen, die üblicherweise drei Phasen umfasst. Die drei Phasen werden mit Wechselstrom angesteuert die dann ein rotierendes Magnetfeld erzeugen.\\[0.5cm]
+			\textbf{Rotor:} Der Rotor besteht aus einem Permanentmagneten. Dadurch das die Spulen ein rotierendes Magnetfeld erzeugen dreht sich der Rotor synchron mit diesem Magnetfeld mit.
+			
+			\begin{center}
+				\begin{minipage}{\textwidth}
+					\centering
+					\includegraphics[scale=0.3]{Pictures/BLDC_Motor}
+					\captionof{figure}{BLDC-Motor}
+					\label{fig:spiffs_init}
+					\vspace{-2pt}
+					\small Quelle: www.elektrikrehberiniz.com
+				\end{minipage}
+			\end{center}
+			Damit die Phasen richtig geschalten werden muss man wissen, wo sich der Rotor befindet. Die genaue Position des Rotors wird durch Hallsensoren erfasst. Die Hallsensoren geben diese Informationen an die Steuerelektronik weiter. Mit diesen Daten kann die optimale Beschaltung der Phasen berechnet werden.\\[0.5cm]
+			Zur Steuerung der Drehzahl wird ein PWM-Signal verwendet. Durch die PWM wird die Stromzufuhr zu den Phasen des Motors gesteuert. Wenn man die PWM erhöht, werden die Phasen schneller angesteuert und der Rotor dreht sich schneller. Das heißt durch das PWM-Signal wird die Versorgungsspannung an den Phasen schnell ein- und ausgeschalten.\\[0.5cm]
+			Auf diese Weise kann der Motor effizient mit variabler Geschwindigkeit betrieben werden.
+			
+			\begin{center}
+				\begin{minipage}{\textwidth}
+					\centering
+					\includegraphics[scale=0.6]{Pictures/Phasen_steuerung}
+					\captionof{figure}{Phasensteuerung}
+					\label{fig:spiffs_init}
+					\vspace{-2pt}
+					\small Quelle: davincii.de/arduino-projekte/brushless-motor-ansteuerung
+				\end{minipage}
+			\end{center}
+			
+			\subsubsection{Technische Daten}
+			
+			\begin{tabular}{| l | l |}  
+				\hline  
+				\textbf{Eigenschaft} & \textbf{Wert} \\   
+				\hline  
+				Spannung & 12V \\  
+				\hline  
+				Rotationsgeschwindigkeit der Antriebswelle & 3260 rpm \\  
+				\hline  
+				Max. Strom & 2A \\  
+				\hline  
+			\end{tabular}
+			
 		\subsection{Motorentreiber} %Felix
+		
+			\subsubsection{Überblick}
+		Für die Ansteuerung der BLDC-Motoren wird der Motortreiber ZX-X11H verwendet. Dieser Motortreiber übernimmt die elektronische Kommutierung, das heißt dieser Treiber schaltet die Phasen des Motors damit sich der Rotor dreht. Die Rotorposition wird über Hallsensoren erfasst. Mit diesen Daten werden die Phasen richtig angesteuert damit sich der Rotor dreht. Dies ermöglichten einen gleichmäßigen Betrieb sowie eine exakte Regelung von Drehzahl und Drehmoment. Durch die integrierte PWM-Steuerung kann die Geschwindigkeit präzise eingestellt werden. Zusätzlich verfügt der ZS-X11H über eine Richtungssteuerung und Bremse.
+		
+			\subsubsection{Aufbau und Funktionen}
+			
+		\begin{center}
+			\begin{minipage}{\textwidth}
+				\centering
+				\includegraphics[scale=0.15]{Pictures/ZS-X11H}
+				\captionof{figure}{Motorteiber-ZS-X11H}
+				\label{fig:spiffs_init}
+				\vspace{-2pt}
+				\small Quelle: mad-ee.com/easy-inexpensive-hoverboard-motor-controller/g
+			\end{minipage}
+		\end{center}
+		\newpage
+		\subsubsection*{Steuerung der Phasenströme:}
+		\begin{itemize}
+			\item Der Treiber steuert die drei Motorphasen (MA, MB, MC) mithilfe eines integrierten MOSFET-Brückenschaltkreises.
+			\item Mit den Daten der Hallsensoren schaltet der Treiber die Phasen damit sich der Rotor mit der gewünschten Geschwindigkeit dreht.
+		\end{itemize}
+		
+		\subsubsection*{PWM-Steuerung}
+		\begin{itemize}
+			\item Die PWM steuert die Geschwindigkeit, indem sie die Leistung moduliert, die den Motorwicklungen zugeführt wird..
+			\item Die Amplitude des PWM-Signals muss zwischen 2,5-5 V liegen.
+			\item Die PWM-Frequenz muss zwischen 50-20 kHz liegen.
+			\item Die Platine ist ausgestattet mit einer externen und internen PWM-Steuerung.
+		\end{itemize}
+		
+		\subsubsection*{Richtungswechsel und Bremse}
+		\begin{itemize}
+			\item Die Platine verfügt über zwei Steuereingänge für Richtungswechsel (DIR) und eine Bremsfunktion (BREAKE).
+			\item Der Richtungswechsel erfolgt, indem das Signal bei dem Eingang von LOW auf HIGH oder umgekehrt wechselt. Das Umschalten der Richtung wechselt die Reihenfolge der Phasenströme, wodurch sich dann der Motor in die andere Richtung dreht.
+			\item Die Bremse reagiert auf ein HIGH-Signal. Das heißt wenn am Eingang ein HIGH-Signal angelegt wird, stoppt der Motor, indem die Wicklungen kurzgeschlossen werden.
+		\end{itemize}
+		
+		\subsubsection*{Spannungs- und Stromversorgung}
+		\begin{itemize}
+			\item Der Treiber kann mit einer Versorgungsspannung von 12V-60V betrieben werden, wodurch er für eine Vielzahl von BLDC-Motoren geeignet ist.
+			\item Die maximale Stromaufnahme des Treibers liegt bei zirka 15A.
+			\item Der Treiber ist für Motoren bis zu 500 Watt geeignet und kann damit leistungsstarke Motoren betreiben
+		\end{itemize}
+		
+		\subsubsection*{Hall-Sensoren}
+		\begin{itemize}
+			\item Der Treiber verwendet drei Hall-Sensor-Eingänge. (Ha, Hb, Hc)
+			\item Mit diesen Hall-Sensoren wird die Rotorposition ermittelt damit die Phasen des Motors richtig geschaltet werden.
+			\item Die Sensoren ermöglichen eine effiziente und stabile Steuerung.
+		\end{itemize}
+		
+		\subsubsection*{Sicherheit und Schutzfunktionen}
+		\begin{itemize}
+			\item Der Treiber verfügt über einen Überstromschutz und Überspannungsschutz damit der Motor und die Elektronik Geschütz ist.
+			\item Ein thermischer Schutz verhindert Schäden durch Überhitzung.
+		\end{itemize}
 		
 		\subsection{Schaltungsaufbau} %Felix
 		
