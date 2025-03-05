@@ -212,7 +212,179 @@
 	
 		\subsection{Motoren} %Felix
 		
+			\subsubsection{Übersicht}
+			Für den Antrieb des Lastenroboters werden BLDC-Motoren eingesetzt. Verwendet werden die BLDC-Motoren von Dunkermotoren (Typ BG 40X25). Ein BLDC-Motor auch bürstenloser Gleichstrommoter gennant wird über drei Phasen betrieben. Der BLDC-Motor wird oft in der Industrie eingesetzt weil er eine hohe Leistung bietet.
+			
+			\begin{center}
+				\begin{minipage}{\textwidth}
+					\centering
+					\includegraphics[scale=0.5]{Pictures/Motoren}
+					\captionof{figure}{Motoren}
+					\label{fig:spiffs_init}
+					\vspace{-2pt}
+					{\small Quelle: eigene Abbildung}
+				\end{minipage}
+			\end{center}
+			
+			\subsubsection{Funktionsweise}
+			Die Funktionsweise eines bürstenlosen Gleichstrommotors basiert auf die Wechselwirkung zwischen dem Magnetfeld des Stators und dem Magnetfeld des Rotors.\\[0.5cm]
+			\textbf{Stator:} Der Stator besteht aus mehreren Spulen, die üblicherweise drei Phasen umfasst. Die drei Phasen werden mit Wechselstrom angesteuert die dann ein rotierendes Magnetfeld erzeugen.\\[0.5cm]
+			\textbf{Rotor:} Der Rotor besteht aus einem Permanentmagneten. Dadurch das die Spulen ein rotierendes Magnetfeld erzeugen dreht sich der Rotor synchron mit diesem Magnetfeld mit.
+			
+			\begin{center}
+				\begin{minipage}{\textwidth}
+					\centering
+					\includegraphics[scale=0.3]{Pictures/BLDC_Motor}
+					\captionof{figure}{BLDC-Motor}
+					\label{fig:spiffs_init}
+					\vspace{-2pt}
+					\small Quelle: www.elektrikrehberiniz.com
+				\end{minipage}
+			\end{center}
+			Damit die Phasen richtig geschalten werden muss man wissen, wo sich der Rotor befindet. Die genaue Position des Rotors wird durch Hallsensoren erfasst. Die Hallsensoren geben diese Informationen an die Steuerelektronik weiter. Mit diesen Daten kann die optimale Beschaltung der Phasen berechnet werden.\\[0.5cm]
+			Zur Steuerung der Drehzahl wird ein PWM-Signal verwendet. Durch die PWM wird die Stromzufuhr zu den Phasen des Motors gesteuert. Wenn man die PWM erhöht, werden die Phasen schneller angesteuert und der Rotor dreht sich schneller. Das heißt durch das PWM-Signal wird die Versorgungsspannung an den Phasen schnell ein- und ausgeschalten.\\[0.5cm]
+			Auf diese Weise kann der Motor effizient mit variabler Geschwindigkeit betrieben werden.
+			
+			\begin{center}
+				\begin{minipage}{\textwidth}
+					\centering
+					\includegraphics[scale=0.6]{Pictures/Phasen_steuerung}
+					\captionof{figure}{Phasensteuerung}
+					\label{fig:spiffs_init}
+					\vspace{-2pt}
+					\small Quelle: davincii.de/arduino-projekte/brushless-motor-ansteuerung
+				\end{minipage}
+			\end{center}
+			
+			\subsubsection{Technische Daten}
+			
+			\begin{tabular}{| l | l |}  
+				\hline  
+				\textbf{Eigenschaft} & \textbf{Wert} \\   
+				\hline  
+				Spannung & 15V \\  
+				\hline  
+				Rotationsgeschwindigkeit der Antriebswelle & 3260 rpm \\  
+				\hline  
+				Max. Strom & 2A \\  
+				\hline  
+			\end{tabular}
+			
 		\subsection{Motorentreiber} %Felix
+		
+			\subsubsection{Überblick}
+		Für die Ansteuerung der BLDC-Motoren wird der Motortreiber ZX-X11H verwendet. Dieser Motortreiber übernimmt die elektronische Kommutierung, das heißt dieser Treiber schaltet die Phasen des Motors damit sich der Rotor dreht. Die Rotorposition wird über Hallsensoren erfasst. Mit diesen Daten werden die Phasen richtig angesteuert damit sich der Rotor dreht. Dies ermöglichten einen gleichmäßigen Betrieb sowie eine exakte Regelung von Drehzahl und Drehmoment. Durch die integrierte PWM-Steuerung kann die Geschwindigkeit präzise eingestellt werden. Zusätzlich verfügt der ZS-X11H über eine Richtungssteuerung und Bremse.
+		
+			\subsubsection{Aufbau und Funktionen}
+			
+		\begin{center}
+			\begin{minipage}{\textwidth}
+				\centering
+				\includegraphics[scale=0.15]{Pictures/ZS-X11H}
+				\captionof{figure}{Motorteiber-ZS-X11H}
+				\label{fig:spiffs_init}
+				\vspace{-2pt}
+				\small Quelle: mad-ee.com/easy-inexpensive-hoverboard-motor-controller/g
+			\end{minipage}
+		\end{center}
+		\newpage
+		\subsubsection*{Steuerung der Phasenströme:}
+		\begin{itemize}
+			\item Der Treiber steuert die drei Motorphasen (MA, MB, MC) mithilfe eines integrierten MOSFET-Brückenschaltkreises.
+			\item Mit den Daten der Hallsensoren schaltet der Treiber die Phasen damit sich der Rotor mit der gewünschten Geschwindigkeit dreht.
+		\end{itemize}
+		
+		\begin{center}
+			\begin{minipage}{\textwidth}
+				\centering
+				\includegraphics[scale=1]{Pictures/Motorphasen}
+				\captionof{figure}{Motorphasen Verbindung}
+				\label{fig:spiffs_init}
+				\vspace{-2pt}
+				\small Quelle: mad-ee.com/easy-inexpensive-hoverboard-motor-controller/g
+			\end{minipage}
+		\end{center}
+		
+		\subsubsection*{PWM-Steuerung}
+		\begin{itemize}
+			\item Die PWM steuert die Geschwindigkeit, indem sie die Leistung moduliert, die den Motorwicklungen zugeführt wird..
+			\item Die Amplitude des PWM-Signals muss zwischen 2,5-5 V liegen.
+			\item Die PWM-Frequenz muss zwischen 50-20 kHz liegen.
+			\item Die Platine ist ausgestattet mit einer externen und internen PWM-Steuerung.
+		\end{itemize}
+		
+		\begin{center}
+			\begin{minipage}{\textwidth}
+				\centering
+				\includegraphics[scale=1]{Pictures/PWM-Treiber}
+				\captionof{figure}{Pins für die PWM}
+				\label{fig:spiffs_init}
+				\vspace{-2pt}
+				\small Quelle: mad-ee.com/easy-inexpensive-hoverboard-motor-controller/g
+			\end{minipage}
+		\end{center}
+		\newpage
+		\subsubsection*{Richtungswechsel und Bremse}
+		\begin{itemize}
+			\item Die Platine verfügt über zwei Steuereingänge für Richtungswechsel (DIR) und eine Bremsfunktion (BREAKE).
+			\item Der Richtungswechsel erfolgt, indem das Signal bei dem Eingang von LOW auf HIGH oder umgekehrt wechselt. Das Umschalten der Richtung wechselt die Reihenfolge der Phasenströme, wodurch sich dann der Motor in die andere Richtung dreht.
+			\item Die Bremse reagiert auf ein HIGH-Signal. Das heißt wenn am Eingang ein HIGH-Signal angelegt wird, stoppt der Motor, indem die Wicklungen kurzgeschlossen werden.
+		\end{itemize}
+		
+		\begin{center}
+			\begin{minipage}{\textwidth}
+				\centering
+				\includegraphics[scale=1]{Pictures/Bremse-Richtungswechsel}
+				\captionof{figure}{Pin für die Bremse und den Richtungswechsel}
+				\label{fig:spiffs_init}
+				\vspace{-2pt}
+				\small Quelle: mad-ee.com/easy-inexpensive-hoverboard-motor-controller/g
+			\end{minipage}
+		\end{center}
+		
+		\subsubsection*{Spannungs- und Stromversorgung}
+		\begin{itemize}
+			\item Der Treiber kann mit einer Versorgungsspannung von 12V-60V betrieben werden, wodurch er für eine Vielzahl von BLDC-Motoren geeignet ist.
+			\item Die maximale Stromaufnahme des Treibers liegt bei zirka 15A.
+			\item Der Treiber ist für Motoren bis zu 500 Watt geeignet und kann damit leistungsstarke Motoren betreiben
+		\end{itemize}
+		
+		\begin{center}
+			\begin{minipage}{\textwidth}
+				\centering
+				\includegraphics[scale=1]{Pictures/Versorgung}
+				\captionof{figure}{Versorgungs-Pins}
+				\label{fig:spiffs_init}
+				\vspace{-2pt}
+				\small Quelle: mad-ee.com/easy-inexpensive-hoverboard-motor-controller/g
+			\end{minipage}
+		\end{center}
+		
+		\newpage
+		
+		\begin{minipage}{\textwidth}
+		\subsubsection*{Hall-Sensoren}
+		\begin{itemize}
+			\item Der Treiber verwendet drei Hall-Sensor-Eingänge. (Ha, Hb, Hc)
+			\item Mit diesen Hall-Sensoren wird die Rotorposition ermittelt damit die Phasen des Motors richtig geschaltet werden.
+			\item Die Sensoren ermöglichen eine effiziente und stabile Steuerung.
+		\end{itemize}
+		\end{minipage}
+		
+		\begin{minipage}{\textwidth}
+			\centering
+			\includegraphics[scale=1]{Pictures/Hall-sensoren Eingänge}
+			\captionof{figure}{Hall-sensoren Eingänge}
+			\label{fig:spiffs_init}
+			\vspace{-2pt}
+			\small Quelle: mad-ee.com/easy-inexpensive-hoverboard-motor-controller/g
+		\end{minipage}
+		
+		\subsubsection*{Sicherheit und Schutzfunktionen}
+		\begin{itemize}
+			\item Der Treiber verfügt über einen Überstromschutz und Überspannungsschutz damit der Motor und die Elektronik Geschütz ist.
+			\item Ein thermischer Schutz verhindert Schäden durch Überhitzung.
+		\end{itemize}
 		
 		\subsection{Schaltungsaufbau} %Felix
 		
@@ -419,23 +591,68 @@
 			\begin{center}
 				\par\small Quelle: eigene Abbildung 
 			\end{center}
+		\end{minipage} 
+	\end{center}
+	\begin{center}
+		\begin{minipage}[t]{0.85\textwidth}
+			\includegraphics{Pictures/handlewebsocketmessage}
+			\captionof{figure}{\texttt{handleWebSocketMessage()}-Funktion}
+			\label{fig:handlewebsocketmessage}
+			\vspace{-10pt}
+			\begin{center}
+				\par\small Quelle: eigene Abbildung 
+			\end{center}
 		\end{minipage} \\[0.75cm]
 	\end{center}
+	\subsection{Kamera}
+	
 		\subsection{Kamera}
 		
 			\subsubsection{Kamera Setup}
 			
 	Um die Kamera programmieren zu können, muss zunächst das richtige Board \texttt{AI Thinker ESP32-CAM} ausgewählt werden. Danach müssen die ESP32-Kamera-Treiber mit der Bibliothek \texttt{esp\_camera.h} inkludiert werden. Dann muss das passende ESP32-CAM-Modell festgelegt werden. Da wir uns für das \texttt{Ai-Thinker} Modell entschieden haben, muss diese nun definiert werden. Falls ein anderes Modell genutzt wird, muss es entsprechend angepasst werden. \\[0.5cm]
 	Als nächstes werden die GPIO-Pins der ESP32-CAM für die Kamera OV2640 konfiguriert. Diese Zuordnung ist spezifisch für das Ai-Thinker-Modell und muss für jedes Modell individuell angepasst werden. \\[0.5cm]
+	\begin{center}
+		\begin{minipage}[t]{0.95\textwidth}
+			\includegraphics{Pictures/kamera-setup1}
+			\captionof{figure}{Kamera-GPIO Konfiguration}
+			\label{fig:Kamera-GPIO Konfiguration}
+			\vspace{-10pt}
+			\begin{center}
+				\par\small Quelle: eigene Abbildung 
+			\end{center}
+		\end{minipage} \\[0.75cm]
+	\end{center}
 	Als nächstes muss die ESP32-CAM mit der ESP-IDF \texttt{esp\_camera} Bibliothek konfiguriert und initialisiert werden. Als erstes muss mit \texttt{camera\_config\_t} eine Struktur definiert werden, mit der verschiedene Parameter und Eigenschaften wie GPIO-Pins, Bildgröße und Qualität festlegt werden können. \\[0.5cm] 
 	LEDC-Kanal und Timer werden für das Taktsignal benötigt, um die Kamera zu betreiben.
+	\begin{center}
+		\begin{minipage}[t]{1\textwidth}
+			\includegraphics{Pictures/kamera-setup2}
+			\captionof{figure}{Kamera-Initialisierung}
+			\label{fig:Kamera-Initialisierung}
+			\vspace{-10pt}
+			\begin{center}
+				\par\small Quelle: eigene Abbildung 
+			\end{center}
+		\end{minipage} \\[0.75cm]
+	\end{center}
 		
 			\subsection{Videoübertragung}
 			
 	In unserem Projekt werden die Live-Bilder per WebSocket an den Webserver gesendet. Um dies umzusetzen, wird zuerst eine Webserver-Route benötigt. Dazu wird eine http-GET-Anfrage für die Hauptseite (“/“) definiert. Im Code wird ein JavaScript Skript benutzt, um eine Websocket-Verbindung herzustellen. Die IP-Adresse wird automatisch durch \texttt{windows.location.hostname} erkannt. Port 81 wird für das WebSocket-Streaming verwendet. Wenn die ESP32-CAM ein neues Bild als WebSocket-Nachricht versendet, wird es als JPEG-Blob gespeichert. Danach wird ein temporär URL-Link erstellt. Das Bild wird schlussendlich in einem \texttt{<img>}-Tag mit der id \texttt{stream} angezeigt. \\[0.5cm]
 	Die WebSocket Verbindung wird die ganze Zeit überwacht. In der Konsole wird ausgegeben, wenn die Websocket-Verbindung aktiv ist. Falls die Verbindung abbrechen sollte, wird nach 5 Sekunden automatisch ein erneuter Verbindungsversuch gestartet. Zum Schluss wird der HTML-Code mit \texttt{HTTP-Status 200} (OK) an den Browser gesendet. 
+	\begin{center}
+		\begin{minipage}[t]{0.95\textwidth}
+			\includegraphics[scale=0.8]{Pictures/videoübertragung}
+			\captionof{figure}{Videoübertragung über WebSocket}
+			\label{fig:Videoübertragung}
+			\vspace{-10pt}
+			\begin{center}
+				\par\small Quelle: eigene Abbildung 
+			\end{center}
+		\end{minipage} \\[0.75cm]
+	\end{center}
 	
-			
 		\subsection{Website}
 
 			\subsubsection{Implementierung der Steuerung}
@@ -443,51 +660,312 @@
 				\subsubsection*{Steuerkreuz}
 				
 	Um den Roboter überhaupt steuern zu können, wird ein Steuerkreuz implementiert. Das Steuerkreuz befindet sich mittig am rechten Bildschirmrand. Das Steuerkreuz besteht aus fünf Tasten, nämlich: Vorwarts (\texttt{UP}), (\texttt{DOWN} ), links (\texttt{LEFT}), rechts (\texttt{RIGHT}) und in der Mitte Stop (\texttt{HALT}). \\[0.5cm]
-	Im HTML-Code wird das Steuerkreuz als HTML div tag im body Bereich definiert. Für die Formatierung wird die CSS-Klasse \texttt{dpad-container} verwendet. Die einzelnen Richtungstasten des Steuerkreuze werden auch als HTML div tags definiert. Jede Taste wird mit der CSS-Klasse \texttt{button} und der jeweiligen Zusatzklasse \texttt{up/down/left/right/center} formatiert. Beim jeweiligen Tastendruck wird außerdem immer das Attribut \texttt{data-direction} mit der jeweiligen Richtung belegt.\\[0.5cm]
+	\begin{center}
+		\begin{minipage}[t]{1\textwidth}
+			\includegraphics{Pictures/Steuerung-web}
+			\captionof{figure}{Steuerkreuz auf der Website}
+			\label{fig:Steuerkreuz-web}
+			\vspace{-10pt}
+			\begin{center}
+				\par\small Quelle: eigene Abbildung 
+			\end{center}
+		\end{minipage} \\[0.75cm]
+	\end{center}
+	Im HTML-Code wird das Steuerkreuz als HTML \texttt{<div>}-Tag im body Bereich definiert. Für die Formatierung wird die CSS-Klasse \texttt{dpad-container} verwendet. Die einzelnen Richtungstasten des Steuerkreuze werden auch als HTML \texttt{<div>}-Tags definiert. Jede Taste wird mit der CSS-Klasse \texttt{button} und der jeweiligen Zusatzklasse \texttt{up/down/left/right/center} formatiert. Beim jeweiligen Tastendruck wird außerdem immer das Attribut \texttt{data-direction} mit der jeweiligen Richtung belegt.\\
+	\begin{center}
+		\begin{minipage}[t]{0.85\textwidth}
+			\includegraphics{Pictures/Steuerung-html}
+			\captionof{figure}{Steuerkreuz HTML-Code}
+			\label{fig:Steuerkreuz-html}
+			\vspace{-10pt}
+			\begin{center}
+				\par\small Quelle: eigene Abbildung 
+			\end{center}
+		\end{minipage} \\[0.75cm]
+	\end{center}
 	Die CSS-Klasse \texttt{dpad-container } ist das übergeordnete Element, welches die Steuerkreuztasten enthalten. Es wird als CSS Grid mit einer 3x3 Struktur definiert. Es gibt Lücken (.) an den Ecken, damit das Layout wie ein Steuerkreuz aussieht. Der Abstand zwischen den Tasten wird mit 10px festgelegt. Der Container hat eine feste Breite von 120px und ist vertikal so wie horizontal zentriert. \\[0.5cm]
-	Die CSS-Klasse \texttt{button} sorgt für eine einheitliche Gestaltung der Tasten des Steuerkreuzes. Jede Taste hat eine Größe von 60x60px. Eine Flexbox wird verwendet, um die Tasten jeweils mittig in den einzelnen Positionen des Grids zu positionieren. Jede Taste hat einen dunkelgrauen Hintergrund, eine weiße Textfarbe, einen 2px dicken dunklen Rahmen und abgerundete Ecken. Die Optionen \texttt{-webkit-tap-highlight-color: transparent} und \texttt{user-select: none} sorgen dafür, dass auf mobilen Geräten der Text in den Tasten nicht blau markiert werden kann, damit die Steuerung nicht blockiert wird. \\[0.5cm]
+	Die CSS-Klasse \texttt{button} sorgt für eine einheitliche Gestaltung der Tasten des Steuerkreuzes. Jede Taste hat eine Größe von 60x60px. Eine Flexbox wird verwendet, um die Tasten jeweils mittig in den einzelnen Positionen des Grids zu positionieren. Jede Taste hat einen dunkelgrauen Hintergrund, eine weiße Textfarbe, einen 2px dicken dunklen Rahmen und abgerundete Ecken. Die Optionen \texttt{-webkit-tap-highlight-color: transparent} und \texttt{user-select: none} sorgen dafür, dass auf mobilen Geräten der Text in den Tasten nicht blau markiert werden kann, damit die Steuerung nicht blockiert wird. 
+	\begin{center}
+		\begin{minipage}[t]{0.6\textwidth}
+			\includegraphics{Pictures/Steuerung-css1}
+			\captionof{figure}{CSS-Klassen \texttt{.dpad-container} und \texttt{.button}}
+			\label{fig:Steuerkreuz-css1}
+			\vspace{-10pt}
+			\begin{center}
+				\par\small Quelle: eigene Abbildung 
+			\end{center}
+		\end{minipage} \\[0.75cm]
+	\end{center}
 	Die fünf Richtungsklassen sorgen dafür, dass die Tasten des Steuerkreuzes in den zuvor definierten Grid-Bereichen zugewiesen und richtig platziert werden. Die mittlere Taste bekommt außerdem eine leicht hellere Farbe zugewiesen, um ihn optisch von den anderen abzuheben. \\[0.5cm]
-	Außerdem bekommen alle Tasten einen Hover-Effekt, damit sie etwas heller werden, wenn eine Taste gedrückt wird. \\[0.5cm]
+	Außerdem bekommen alle Tasten einen Hover-Effekt, damit sie etwas heller werden, wenn eine Taste gedrückt wird. \\
+	\begin{center}
+		\begin{minipage}[t]{0.45\textwidth}
+			\includegraphics{Pictures/Steuerung-css2}
+			\captionof{figure}{CSS-Richtungsklassen}
+			\label{fig:Steuerkreuz-css2}
+			\vspace{-10pt}
+			\begin{center}
+				\par\small Quelle: eigene Abbildung 
+			\end{center}
+		\end{minipage} \\[0.75cm]
+	\end{center}
 	Im JavaScript-Code sorgen zwei EventListener dafür, dass die Elemente auf der Seite nicht ziehbar und verschiebbar sind und dass das Rechtsklick-Menü nicht geöffnet werden kann. Diese Maßnahmen verhindern unerwünschte Benutzerinteraktionen und sorgen für eine reibungslose Bedienung. \\[0.5cm]
-	Vier weitere EventListener kümmern sich um die Eingabe des Steuerkreuzes. Es wird zuerst jeder \texttt{mousedown} (Linksklick) bzw. ein \texttt{touchstart} (klick auf mobile Geräte) abgefangen. Danach wird überprüft, ob das geklickte Element innerhalb eines \texttt{.button} Elements (Steuerkreuztaste) liegt. Falls ja, wird die Richtung aus dem data-direction-Attribut gelesen und an die \texttt{send()} Funktion übergeben. Wenn ein \texttt{mouseup} (Maus loslassen) oder ein \texttt{touchend} (Finger loslassen) abgefangen wird, wird die Funktion \texttt{stop()} aufgerufen. \\[0.5cm]
-	Die JavaScript Funktion \texttt{send()} kümmert sich um das Senden der Steuerungsbefehle. Zuerst wird überprüft, ob die aktuelle Richtung nicht bereits die gewünschte Richtung ist. Falls ja, wird ein JSON-Objekt erstellt, welche die Richtung sowie die Geschwindigkeit enthält. Zu debug-Zwecken wird die Richtung sowie die Geschwindigkeit in der Webkonsole ausgegeben. Danach wird überprüft, ob die WebSocket-Verbindung zur ESP32-CAM offen ist. Wenn ja, wird die Nachricht auch für debug-Zwecken an die ESP32-CAM gesendet, ansonsten wird eine Fehlermeldung ausgegeben. Dasselbe geschieht für die WebSocket-Verbindung zum ESP32. Dort werden jedoch die Steuerbefehle weiterverarbeitet. \\[0.5cm]
+	\begin{center}
+		\begin{minipage}[t]{0.7\textwidth}
+			\includegraphics{Pictures/Steuerung-js1}
+			\captionof{figure}{<hier gute Bildbeschreibung einfügen>}
+			\label{fig:Steuerkreuz-js1}
+			\vspace{-10pt}
+			\begin{center}
+				\par\small Quelle: eigene Abbildung 
+			\end{center}
+		\end{minipage} \\[0.75cm]
+	\end{center}
+	Vier weitere EventListener kümmern sich um die Eingabe des Steuerkreuzes. Es wird zuerst jeder \texttt{mousedown} (Linksklick) bzw. ein \texttt{touchstart} (klick auf mobile Geräte) abgefangen. Danach wird überprüft, ob das geklickte Element innerhalb eines \texttt{.button} Elements (Steuerkreuztaste) liegt. Falls ja, wird die Richtung aus dem data-direction-Attribut gelesen und an die \texttt{send()} Funktion übergeben. Wenn ein \texttt{mouseup} (Maus loslassen) oder ein \texttt{touchend} (Finger loslassen) abgefangen wird, wird die Funktion \texttt{stop()} aufgerufen. 
+	\begin{center}
+		\begin{minipage}[t]{0.5\textwidth}
+			\includegraphics[scale=0.7]{Pictures/Steuerung-js2}
+			\captionof{figure}{<hier gute Bildbeschreibung einfügen>}
+			\label{fig:Steuerkreuz-js2}
+			\vspace{-10pt}
+			\begin{center}
+				\par\small Quelle: eigene Abbildung 
+			\end{center}
+		\end{minipage} \\[0.75cm]
+	\end{center}
+	Die JavaScript Funktion \texttt{send()} kümmert sich um das Senden der Steuerungsbefehle. Zuerst wird überprüft, ob die aktuelle Richtung nicht bereits die gewünschte Richtung ist. Falls ja, wird ein JSON-Objekt erstellt, welche die Richtung sowie die Geschwindigkeit enthält. Zu debug-Zwecken wird die Richtung sowie die Geschwindigkeit in der Webkonsole ausgegeben. Danach wird überprüft, ob die WebSocket-Verbindung zur ESP32-CAM offen ist. Wenn ja, wird die Nachricht auch für debug-Zwecken an die ESP32-CAM gesendet, ansonsten wird eine Fehlermeldung ausgegeben. Dasselbe geschieht für die WebSocket-Verbindung zum ESP32. Dort werden jedoch die Steuerbefehle weiterverarbeitet. \\
+	\begin{center}
+		\begin{minipage}[t]{0.75\textwidth}
+			\includegraphics[scale=0.7]{Pictures/Steuerung-js3}
+			\captionof{figure}{\texttt{send()}-Funktion}
+			\label{fig:Steuerkreuz-js3}
+			\vspace{-10pt}
+			\begin{center}
+				\par\small Quelle: eigene Abbildung 
+			\end{center}
+		\end{minipage} \\[0.75cm]
+	\end{center}
 	Die JavaScript Funktion \texttt{stop()} sorgt dafür, dass der Roboter anhält, wenn eine Taste des Steuerkreuzes losgelassen wird. Zuerst wird überprüft, ob die aktuelle Richtung nicht bereits \texttt{HALT} ist, ansonsten wird sie daraufgesetzt. Danach wird ein Stopp-Befehl als JSON-Nachricht vorbereitet. Zu debug-Zwecken wird wieder ein halt in der Webkonsole ausgegeben. Danach wird der Stopp-Befehl wieder an die WebSocket-Verbindung zur ESP32-CAM für debug-Zwecke gesendet. Danach wird sie auch an die WebSocket-Verbindung zum ESP32 gesendet, wo dieser weiterverarbeitet wird. \\[0.5cm]
-	
+	\begin{center}
+		\begin{minipage}[t]{0.75\textwidth}
+			\includegraphics[scale=0.7]{Pictures/Steuerung-js4}
+			\captionof{figure}{\texttt{stop()}-Funktion}
+			\label{fig:Steuerkreuz-js4}
+			\vspace{-10pt}
+			\begin{center}
+				\par\small Quelle: eigene Abbildung 
+			\end{center}
+		\end{minipage} \\[0.75cm]
+	\end{center}
 				
 				\subsubsection*{Geschwindigkeitseinstellung}
 			
 	Um die Fortbewegungsgeschwindigkeit des Roboters kontrollieren zu können, gibt es auf der linken Seite neben dem Steuerkreuz einen vertikalen Geschwindigkeitsslider, mit der die Geschwindigkeit der Motoren gesteuert werden kann. Wenn der Slider nach oben gezogen wird, beschleunigt der Roboter, wenn der Slider nach unten gezogen wird, wird die Geschwindigkeit verlangsamt. \\[0.5cm]
-	Im HTML-Code wird mit der CSS-Klasse \texttt{slider-container} ein Bereich im Hauptbereich definiert. Der Slider wird als HTML \texttt{<input>}-Tag mit dem type \texttt{range} von 0 bis 100 definiert. Für das Design wird die CSS-Klasse \texttt{slider} verwendet und beim Verschieben des Sliders wird die JavaScript Funktion \texttt{speed\_change()} mit der aktuellen Position des Sliders aufgerufen. \\[0.5cm]
-	In der CSS-Klasse \texttt{slider-container} wird ein Bereich mit der Größe 50x220 Pixel definiert, in dem der Slider angezeigt werden soll. In \texttt{slider} wird definiert, dass der Slider vertikal und nicht horizontal angezeigt wird. Außerdem wird die Richtung auf \texttt{Right to Left} gesetzt, damit die aktuelle Position richtig erhöht bzw. vermindert bei Auf- und Niederschieben des Sliders wird. \\[0.5cm]
+	\begin{center}
+		\begin{minipage}[t]{1\textwidth}
+			\includegraphics[scale=0.9]{Pictures/speed-web}
+			\captionof{figure}{Geschwindigkeitssteuerung auf der Website}
+			\label{fig:speed-web}
+			\vspace{-10pt}
+			\begin{center}
+				\par\small Quelle: eigene Abbildung 
+			\end{center}
+		\end{minipage} \\[0.75cm]
+	\end{center}
+	Im HTML-Code wird mit der CSS-Klasse \texttt{slider-container} ein Bereich im Hauptbereich definiert. Der Slider wird als HTML \texttt{<input>}-Tag mit dem type \texttt{range} von 0 bis 100 definiert. Für das Design wird die CSS-Klasse \texttt{slider} verwendet und beim Verschieben des Sliders wird die JavaScript Funktion \texttt{speed\_change()} mit der aktuellen Position des Sliders aufgerufen. \\
+	\begin{center}
+		\begin{minipage}[t]{1\textwidth}
+			\includegraphics[scale=0.9]{Pictures/speed-html}
+			\captionof{figure}{Geschwindigkeitssteuerung HTML-Code}
+			\label{fig:speed-html}
+			\vspace{-10pt}
+			\begin{center}
+				\par\small Quelle: eigene Abbildung 
+			\end{center}
+		\end{minipage} \\[0.75cm]
+	\end{center}
+	In der CSS-Klasse \texttt{slider-container} wird ein Bereich mit der Größe 50x220 Pixel definiert, in dem der Slider angezeigt werden soll. In \texttt{slider} wird definiert, dass der Slider vertikal und nicht horizontal angezeigt wird. Außerdem wird die Richtung auf \texttt{Right to Left} gesetzt, damit die aktuelle Position richtig erhöht bzw. vermindert bei Auf- und Niederschieben des Sliders wird. \\
+	\begin{center}
+		\begin{minipage}[t]{0.45\textwidth}
+			\includegraphics{Pictures/speed-css}
+			\captionof{figure}{CSS-Klassen für die Geschwindigkeitssteuerung}
+			\label{fig:speed-css}
+			\vspace{-10pt}
+			\begin{center}
+				\par\small Quelle: eigene Abbildung 
+			\end{center}
+		\end{minipage} \\[0.75cm]
+	\end{center}
 	Im JavaScript-Code wird die aktuelle Position des Sliders in die eigene Variable \texttt{speed} gespeichert. Die Geschwindigkeit wird immer bei einem Steuerbefehl des Steuerkreuzes mitübertragen. (siehe Steuerung)
+	\begin{center}
+		\begin{minipage}[t]{0.55\textwidth}
+			\includegraphics{Pictures/speed-js}
+			\captionof{figure}{\texttt{speed-change()}-Funktion}
+			\label{fig:speed-js}
+			\vspace{-10pt}
+			\begin{center}
+				\par\small Quelle: eigene Abbildung 
+			\end{center}
+		\end{minipage} \\[0.75cm]
+	\end{center}
 				
 				\subsubsection*{Kamerasteuerung}
 				
 	Um mit der Videoübertragung besser Objekte und Hindernisse zu erkennen, ist die Kamera leicht schwenkbar. Um nun die Kamera auf unserer Website bewegen zu können, gibt es auf der linken Seite einen horizontalen Slider, mit der die Kamera ein Stück links und rechts geschwenkt werden kann. \\[0.5cm]
+	\begin{center}
+		\begin{minipage}[t]{1\textwidth}
+			\includegraphics[scale=0.9]{Pictures/kamera-web}
+			\captionof{figure}{Kamerasteuerung auf der Website}
+			\label{fig:kamera-web}
+			\vspace{-10pt}
+			\begin{center}
+				\par\small Quelle: eigene Abbildung 
+			\end{center}
+		\end{minipage} \\[0.75cm]
+	\end{center}
 	Im HTML-Code wird ein mit der CSS-Klasse \texttt{camera-container} ein Bereich im Hauptbereich definiert. Der Slider wird als HTML \texttt{<input>}-Tag mit dem type \texttt{range} von 0 bis 180 definiert. Für das Design wird die CSS-Klasse \texttt{cam\_slider} verwendet und beim Verschieben des Sliders wird die JavaScript Funktion \texttt{camera\_change()} mit der aktuellen Position des Sliders aufgerufen. \\[0.5cm]
-	In der CSS-Klasse \texttt{camera-container} wird ein Bereich erstellt, in dem der Slider angezeigt werden soll.  In \texttt{cam\_slider} wird die Slidespur mit einer Breite von 150 Pixel und einer Höhe von 10 Pixel definiert. Der Hintergrund ist hellgrau und die Ecken werden leicht abgerundet.  In \texttt{webkit-slider-thumb} wird der Sliderknopf mit 20x20 Pixel definiert. Der Hintergrund ist dunkelgrau mit einem 2px breiten, dunkleren Rand. \\[0.5cm]
+	\begin{center}
+		\begin{minipage}[t]{1\textwidth}
+			\includegraphics{Pictures/kamera-html}
+			\captionof{figure}{Kamerasteuerung HTML-Code}
+			\label{fig:kamera-html}
+			\vspace{-10pt}
+			\begin{center}
+				\par\small Quelle: eigene Abbildung 
+			\end{center}
+		\end{minipage} \\[0.75cm]
+	\end{center}
+	In der CSS-Klasse \texttt{camera-container} wird ein Bereich erstellt, in dem der Slider angezeigt werden soll.  In \texttt{cam\_slider} wird die Slidespur mit einer Breite von 150 Pixel und einer Höhe von 10 Pixel definiert. Der Hintergrund ist hellgrau und die Ecken werden leicht abgerundet.  In \texttt{webkit-slider-thumb} wird der Sliderknopf mit 20x20 Pixel definiert. Der Hintergrund ist dunkelgrau mit einem 2px breiten, dunkleren Rand. \\
+	\begin{center}
+		\begin{minipage}[t]{0.5\textwidth}
+			\includegraphics{Pictures/kamera-css}
+			\captionof{figure}{CSS-Klassen für die Kamerasteuerung}
+			\label{fig:kamera-css}
+			\vspace{-10pt}
+			\begin{center}
+				\par\small Quelle: eigene Abbildung 
+			\end{center}
+		\end{minipage} \\[0.75cm]
+	\end{center}
 	Im JavaScript-Code wird die aktuelle Position des Sliders verarbeitet. Dazu wird die Position in eine JSON-Nachricht gespeichert. Zu debug-Zwecken wird die Position noch in der Website Konsole ausgegeben. Wenn der WebSocket Verbindung zum ESP32 offen ist, wird die aktuelle Position übermittelt. \\[0.5cm]
-			
+	\begin{center}
+		\begin{minipage}[t]{0.75\textwidth}
+			\includegraphics{Pictures/kamera-js}
+			\captionof{figure}{\texttt{camera-change()}-Funktion}
+			\label{fig:kamera-js}
+			\vspace{-10pt}
+			\begin{center}
+				\par\small Quelle: eigene Abbildung 
+			\end{center}
+		\end{minipage} \\[0.75cm]
+	\end{center}	
 				\subsubsection*{Fernlicht}
 				
 	Die Funktion des Fernlichts dient bei unserem Roboter zur Beleuchtung bei schlechter Sicht bzw. Dunkelheit. Wenn eingeschalten, leuchtet auf der Vorder- sowie auf der Hinterseite des Roboters ein Scheinwerfer die Umgebung aus. \\[0.5cm]
 	Um das Fernlicht auf unserer Website ein- bzw. auszuschalten gibt es ein eigenes Fernlicht-Icon rechts über dem Steuerkreuz. Im ausgeschalteten Zustand ist das Icon ausgegraut. Im aktiven Zustand ist das Scheinwerfer Symbol im Icon blau und das Icon hat einen blassgrünen Hintergrund. \\[0.5cm]
-	Im HTML-Code wird das Icon als HTML \texttt{<img>}-Tag eingefügt. Als Quelle wird die im SPIFFS hochgeladene \texttt{Fernlicht.svg} Grafik verwendet. Für das Design wird die CSS-Klasse \texttt{fernlicht-icon} verwendet und beim \texttt{onclick} Event wird die JavaScript Funktion \texttt{togglelight()} aufgerufen. \\[0.5cm]
+	\begin{center}
+		\begin{minipage}[t]{1\textwidth}
+			\includegraphics[scale=0.9]{Pictures/fernlicht-web}
+			\captionof{figure}{Fernlicht-Icon auf der Website}
+			\label{fig:fernlicht-web}
+			\vspace{-10pt}
+			\begin{center}
+				\par\small Quelle: eigene Abbildung 
+			\end{center}
+		\end{minipage} \\[0.75cm]
+	\end{center}
+	Im HTML-Code wird das Icon als HTML \texttt{<img>}-Tag eingefügt. Als Quelle wird die im SPIFFS hochgeladene \texttt{Fernlicht.svg} Grafik verwendet. Für das Design wird die CSS-Klasse \texttt{fernlicht-icon} verwendet und beim \texttt{onclick} Event wird die JavaScript Funktion \texttt{togglelight()} aufgerufen. \\
+	\begin{center}
+		\begin{minipage}[t]{1\textwidth}
+			\includegraphics[scale=0.9]{Pictures/fernlicht-html}
+			\captionof{figure}{HTML-Code für Fernlicht}
+			\label{fig:fernlicht-html}
+			\vspace{-10pt}
+			\begin{center}
+				\par\small Quelle: eigene Abbildung 
+			\end{center}
+		\end{minipage} \\[0.75cm]
+	\end{center}
 	In der CSS-Klasse \texttt{fernlicht-icon} wird das Icon 20\% vom oberen Rand und 2\% von rechten Rand mit einer Größe von 50x50 Pixel positioniert. Es wird auf der 2 z-Ebene angezeigt und der nicht sichtbare Hintergrund wird transparent angezeigt. Beim Ändern der Farbe wird eine sanfte Animation über 0,3 Sekunden angezeigt. \\[0.5cm]
 	Die \texttt{grayscale} Klasse wandelt das Icon in die ausgegraute Darstellung um, um anzuzeigen, dass das Fernlicht deaktiviert ist.
 	Die \texttt{active-light} Klasse ändert die Hintergrundfarbe zu einem transparenten grünen Ton, um anzuzeigen, dass das Fernlicht aktiv ist. \\[0.5cm]
+	\begin{center}
+		\begin{minipage}[t]{0.65\textwidth}
+			\includegraphics{Pictures/fernlicht-css}
+			\captionof{figure}{CSS-Klassen für das Fernlicht}
+			\label{fig:fernlicht-css}
+			\vspace{-10pt}
+			\begin{center}
+				\par\small Quelle: eigene Abbildung 
+			\end{center}
+		\end{minipage} \\[0.75cm]
+	\end{center}
 	Im JavaScript Code wird bei jedem \texttt{onclick} Event die Variable \texttt{light} getoggled. Wenn die Variable \texttt{light} true ist, wird die CSS-Klasse \texttt{active-light} angewendet, ansonsten die CSS-Klasse \texttt{grayscale}. Anschließend wird eine JSON-Nachricht mit dem aktuellen Zustand der \texttt{light} Variable erstellt. Wenn die WebSocket Verbindung zum zum ESP32 offen ist, wird die JSON-Nachricht versendet, ansonsten wird eine Fehlermeldung ausgegeben. \\[0.5cm]
-	
+	\begin{center}
+		\begin{minipage}[t]{0.95\textwidth}
+			\includegraphics[scale=0.9]{Pictures/fernlicht-js}
+			\captionof{figure}{\texttt{togglelight()}-Funktion}
+			\label{fig:fernlicht-js}
+			\vspace{-10pt}
+			\begin{center}
+				\par\small Quelle: eigene Abbildung 
+			\end{center}
+		\end{minipage} \\[0.75cm]
+	\end{center}
 				
 			\subsubsection{Echtzeit-Videoanzeige}
 			
 	Die Videoübertragung dient dazu, den Roboter über größere Entfernungen autonom steuern zu können. Mit der Videoübertragung werden Objekte und Hindernisse erkennbar und kann diese somit ausweichen. \\[0.5cm]
 	Die Videoübertragung wird über der ganzen Website im Hintergrund angezeigt. \\[0.5cm]
+	\begin{center}
+		\begin{minipage}[t]{1\textwidth}
+			\includegraphics{Pictures/videoübertragung-web}
+			\captionof{figure}{Videoübertragung auf der Website}
+			\label{fig:videoübertragung-web}
+			\vspace{-10pt}
+			\begin{center}
+				\par\small Quelle: eigene Abbildung 
+			\end{center}
+		\end{minipage} \\[0.75cm]
+	\end{center}
 	Im HTML-Code wird die Videoübertragung als HTML \texttt{<img>}-Tag mit der id \texttt{dynamicimage} im Hauptbereich definiert. \\[0.5cm]
+	\begin{center}
+		\begin{minipage}[t]{0.75\textwidth}
+			\includegraphics{Pictures/videoübertragung-html}
+			\captionof{figure}{Videoübertragung HTML-Code}
+			\label{fig:videoübertragung-html}
+			\vspace{-10pt}
+			\begin{center}
+				\par\small Quelle: eigene Abbildung 
+			\end{center}
+		\end{minipage} \\[0.75cm]
+	\end{center}
 	Im CSS-Code wird nun das Element mit der id \texttt{dynamicimage} formatiert. Es wird definiert, dass die Größe 100\% der Breite sowie 100\% der Höhe einnimmt. Die Position wird dabei auf absolut gesetzt. \\[0.5cm]
+	\begin{center}
+		\begin{minipage}[t]{0.5\textwidth}
+			\includegraphics{Pictures/videoübertragung-css}
+			\captionof{figure}{CSS-Formatierung für \texttt{dynamicimage}}
+			\label{fig:videoübertragung-css}
+			\vspace{-10pt}
+			\begin{center}
+				\par\small Quelle: eigene Abbildung 
+			\end{center}
+		\end{minipage} \\[0.75cm]
+	\end{center}
 	Im JavaScript-Code wird die WebSocket-Verbindung zur ESP32-CAM gehandelt. In der Funktion \texttt{connectWebSocket\_cam()} wird zuerst ein WebSocket mit der eigenen IP-Adresse erstellt (da Webserver auf ESP32-CAM gehostet wird) und dem Port 81 erstellt. Wenn nun eine Nachricht auf der WebSockte-Verbindung ankommt (siehe Videoübertragung ESP32-CAM) wird diese extrahiert. Das mitgesendete BLOB wird in einem neuem BLOB als jpeg-Bild gespeichert. Danach wird eine URL (Adresse) erstellt, die zu diesem BLOB führt. Dann wird eine Variable für die Videoübertragung im HTML \texttt{<img>}-Tag erstellt. Die Source dieses Bildes wird dann mit dem neuen, erhaltenen Bild ersetzt. Da die ESP32-CAM die ganze Zeit neue Blobs sendet, wird das Bild die ganze Zeit ersetzt, was dazu führt, dass es aussieht, als wäre es ein Video. \\[0.5cm]
 	Wenn sich die ESP32-CAM verbindet, wird zu Debug-Zwecken eine Nachricht in der Webkonsole ausgegeben. \\[0.5cm]
 	Wenn die Verbindung zur ESP32-CAM verloren geht, wird wieder zu Debug-Zwecke eine Nachricht in der Webkonsole ausgegeben und ein neuer Verbindungsversuch wird nach 5 Sekunden gestartet. \\[0.5cm]
+	\begin{center}
+		\begin{minipage}[t]{\textwidth}
+			\includegraphics[scale=0.9]{Pictures/videoübertragung-js}
+			\captionof{figure}{Videoübertragung im JavaScript-Code}
+			\label{fig:videoübertragung-js}
+			\vspace{-10pt}
+			\begin{center}
+				\par\small Quelle: eigene Abbildung 
+			\end{center}
+		\end{minipage} \\[0.75cm]
+	\end{center}
 	
 	
 			
@@ -495,22 +973,150 @@
 			
 				\subsubsection*{Sensordaten}	
 			
-	In der linken oberen Ecke der Website befindet sich das Menü-icon. Ein Klick darauf ruft die Sidebar für die Daten auf. Die Sidebar klappt sich am linken Bildschirmrand auf. Darin kann ist der aktuelle Akkustand sowie das aktuelle aufliegende Gewicht auslesbar. Um das Menü wieder schließen zu können, ist ein erneuter Klick auf das Icon erforderlich und die Sidebar wird wieder zugeklappt. \\[0.5cm]		
+	In der linken oberen Ecke der Website befindet sich das Menü-icon. Ein Klick darauf ruft die Sidebar für die Daten auf. Die Sidebar klappt sich am linken Bildschirmrand auf. Darin kann ist der aktuelle Akkustand sowie das aktuelle aufliegende Gewicht auslesbar. Um das Menü wieder schließen zu können, ist ein erneuter Klick auf das Icon erforderlich und die Sidebar wird wieder zugeklappt. \\[0.5cm]	
+	\begin{center}
+		\begin{minipage}[t]{1\textwidth}
+			\includegraphics[scale=0.4]{Pictures/menu-web1}
+			\captionof{figure}{Menü-Icon auf der Website}
+			\label{fig:menu-web}
+			\vspace{-10pt}
+			\begin{center}
+				\par\small Quelle: eigene Abbildung 
+			\end{center}
+		\end{minipage} \\[0.75cm]
+	\end{center}
+	\begin{center}
+		\begin{minipage}[t]{1\textwidth}
+			\includegraphics[scale=0.9]{Pictures/sensordaten-web}
+			\captionof{figure}{Sidebar mit Sensordaten}
+			\label{fig:sidebar}
+			\vspace{-10pt}
+			\begin{center}
+				\par\small Quelle: eigene Abbildung 
+			\end{center}
+		\end{minipage} \\[0.75cm]
+	\end{center}
 	Im HTML-Code wird im Body-Bereich wird das Icon als HTML \texttt{<img>}-Tag eingefügt. Als Quelle wird die im SPIFFS hochgeladene Grafik \texttt{menu-icon.svg} Grafik verwendet. Für das Design wird die CSS-Klasse \texttt{menu-icon} verwendet und beim onclick Event wird die JavaScript Funktion \texttt{togglemenu()} aufgerufen. \\[0.5cm]
-	Im HTML \texttt{<div>}-Tag werden die einzelnen Daten festgelegt und mir der CSS-Klasse \texttt{mymenu} formatiert. Das Gewicht und der Akkustand werden als HTML \texttt{<p>}-Tag angezeigt und mit der CSS-Klasse \texttt{daten} formatiert. \\[0.5cm]
+	Im HTML \texttt{<div>}-Tag werden die einzelnen Daten festgelegt und mir der CSS-Klasse \texttt{mymenu} formatiert. Das Gewicht und der Akkustand werden als HTML \texttt{<p>}-Tag angezeigt und mit der CSS-Klasse \texttt{daten} formatiert. \\
+	\begin{center}
+		\begin{minipage}[t]{1\textwidth}
+			\includegraphics{Pictures/sensordaten-html}
+			\captionof{figure}{Sensordaten HTML-Code}
+			\label{fig:sensordaten-html}
+			\vspace{-10pt}
+			\begin{center}
+				\par\small Quelle: eigene Abbildung 
+			\end{center}
+		\end{minipage} \\[0.75cm]
+	\end{center}
 	In der CSS-Klasse \texttt{mymenu} wird die sidebar formatiert. Das Menü ist fixiert und nimmt 100\% der Höhe ein. Die Anfängliche ist 0, da es versteckt bzw. eingeklappt ist. Die Hintergrundfarbe ist schwarz und es befindet sich auf der z-Ebene 1 um den Hauptinhalt überdecken zu können. Beim Ein- und Ausblenden dauert 0.5 Sekunden, um einen sanften Übergang zu ermöglichen. \\[0.5cm]
 	Der Hautinhalt \texttt{\#main} hat eine Animation, damit er beim Öffnen des Menüs nach rechts verschoben werden kann. \\[0.5cm]
 	Falls der Bildschirm kleiner als 450px Höhe hat, werden die Abstände der angezeigten Daten verkleinert. Das dient dazu, um besonders auf Handys die Ansicht zu optimieren. \\[0.5cm]
 	Die CSS-Klasse \texttt{menu-icon} positioniert das Icon in der linken oberen Ecke mit einer 30x30px Format. \texttt{Cursor: pointer} sorgt dafür, dass das Icon anklickbar ist. \\[0.5cm]
+	\begin{center}
+		\begin{minipage}[t]{0.6\textwidth}
+			\includegraphics[scale=0.7]{Pictures/sensordaten-css}
+			\captionof{figure}{CSS-Klassen für das Menü}
+			\label{fig:sensordaten-css}
+			\vspace{-10pt}
+			\begin{center}
+				\par\small Quelle: eigene Abbildung 
+			\end{center}
+		\end{minipage} \\[0.75cm]
+	\end{center}
 	Die CSS-Klasse \texttt{daten} formatiert die einzelnen Daten im Menü. Sie werden in der Schriftart Arial, Helvetica oder sans-serif angezeigt und in der Farbe Weiß, mit der Schriftgröße 1.2em (20\% größer) mittig angezeigt. \\[0.5cm]
-	In der JavaScript Funktion \texttt{connectWebSocket\_carybot()} wird im \texttt{onmessage()}-event die übertragenen Daten verarbeitet. Für debug-Zwecken werden die angekommen Daten in der WebKonsole ausgegeben. Danach werden die JSON-Nachrichten extrahiert. Wenn die Nachricht den Akkustand beinhaltet, wird dieser im HTML \texttt{<p>}-Tag mit der id \texttt{Akkustand} im Menü angezeigt. Wenn die Nachricht das Gewicht beinhaltet, wird dieses im HTML \texttt{<p>}-Tag mit der id \texttt{Gewicht} im Menü angezeigt. Falls beim Umwandeln ein Fehler auftreten sollte, wird dieser in der Webkonsole ausgegeben. \\[0.5cm]
+	\begin{center}
+		\begin{minipage}[t]{0.85\textwidth}
+			\includegraphics[scale=0.9]{Pictures/daten-css}
+			\captionof{figure}{CSS-Klasse \texttt{.daten}}
+			\label{fig:sensordaten-daten}
+			\vspace{-10pt}
+			\begin{center}
+				\par\small Quelle: eigene Abbildung 
+			\end{center}
+		\end{minipage} \\[0.75cm]
+	\end{center}
+	In der JavaScript Funktion \texttt{connectWebSocket\_carybot()} wird im \texttt{onmessage()}-event die übertragenen Daten verarbeitet. Für debug-Zwecken werden die angekommen Daten in der WebKonsole ausgegeben. Danach werden die JSON-Nachrichten extrahiert. Wenn die Nachricht den Akkustand beinhaltet, wird dieser im HTML \texttt{<p>}-Tag mit der id \texttt{Akkustand} im Menü angezeigt. Wenn die Nachricht das Gewicht beinhaltet, wird dieses im HTML \texttt{<p>}-Tag mit der id \texttt{Gewicht} im Menü angezeigt. Falls beim Umwandeln ein Fehler auftreten sollte, wird dieser in der Webkonsole ausgegeben. \\
+	\begin{center}
+		\begin{minipage}[t]{1\textwidth}
+			\includegraphics[scale=0.8]{Pictures/sensordaten-js}
+			\captionof{figure}{JavaScript-Verarbeitung der Sensordaten}
+			\label{fig:sensordaten-js}
+			\vspace{-10pt}
+			\begin{center}
+				\par\small Quelle: eigene Abbildung 
+			\end{center}
+		\end{minipage} \\[0.75cm]
+	\end{center}
 	
 				\subsubsection*{Verbindungsstatus}
 	
 	In der WebSocket Status-Box wird der aktuelle Verbindungszustand zum ESP32 angezeigt. Wenn keine Verbindung vorhanden ist, ist die Box rot. Wenn die Verbindung erfolgt, wird die Box grün. \\[0.5cm]
-	Im HTML-Code wird die Status-Box als HTML \texttt{<span>}-Tag definiert. Für das Design wird die CSS-Klasse \texttt{status-box} kombiniert je nach Verbindungsstatus mit der Klasse \texttt{connected} oder \texttt{disconnected}. \\[0.5cm]
+	\begin{center}
+		\begin{minipage}[t]{1\textwidth}
+			\includegraphics{Pictures/status-web}
+			\captionof{figure}{Statusbox auf der Website}
+			\label{fig:status-web}
+			\vspace{-10pt}
+			\begin{center}
+				\par\small Quelle: eigene Abbildung 
+			\end{center}
+		\end{minipage} \\[0.75cm]
+	\end{center}
+	\begin{center}
+		\begin{minipage}[t]{1\textwidth}
+			\includegraphics{Pictures/status-green}
+			\captionof{figure}{Statusbox: Verbunden}
+			\label{fig:status-green}
+			\vspace{-10pt}
+			\begin{center}
+				\par\small Quelle: eigene Abbildung 
+			\end{center}
+			\includegraphics{Pictures/status-red}
+			\captionof{figure}{Statusbox: Verbindung getrennt}
+			\label{fig:status-red}
+			\vspace{-10pt}
+			\begin{center}
+				\par\small Quelle: eigene Abbildung 
+			\end{center}
+		\end{minipage} \\[0.75cm]
+	\end{center}
+	Im HTML-Code wird die Status-Box als HTML \texttt{<span>}-Tag definiert. Für das Design wird die CSS-Klasse \texttt{status-box} kombiniert je nach Verbindungsstatus mit der Klasse \texttt{connected} oder \texttt{disconnected}. \\
+	\begin{center}
+		\begin{minipage}[t]{1\textwidth}
+			\includegraphics{Pictures/status-html}
+			\captionof{figure}{Statusbox HTML-Code}
+			\label{fig:status-html}
+			\vspace{-10pt}
+			\begin{center}
+				\par\small Quelle: eigene Abbildung 
+			\end{center}
+		\end{minipage} \\[0.75cm]
+	\end{center}
 	In der CSS-Klasse \texttt{status-box} wird die grundlegende Box am linken oberen Bildschirmrand positioniert. Die Box liegt auf der zweiten z-Ebene. Die Schrift wird weiß definiert und wird fett dargestellt. Wenn eine Verbindung hergestellt wurde, wird der Hintergrund auf grün festgelegt (\texttt{status-box.connected}), ansonsten ist der Hintergrund rot (\texttt{status-box.disconnected}). \\[0.5cm]
+	\begin{center}
+		\begin{minipage}[t]{0.45\textwidth}
+			\includegraphics{Pictures/status-css}
+			\captionof{figure}{CSS-Klassen für die Statusbox}
+			\label{fig:status-css}
+			\vspace{-10pt}
+			\begin{center}
+				\par\small Quelle: eigene Abbildung 
+			\end{center}
+		\end{minipage} \\[0.75cm]
+	\end{center}
 	Im JavaScript-Code werden die \texttt{onopen()} und \texttt{onclose()} Events der WebSocket Verbindung gehandelt. Bei einem Verbindungsaufbau (\texttt{onopen()}) wird die Status-Box grün und der Text wechselt zu \texttt{Connected}. Außerdem wird eine Nachricht für Debug-Zwecke ausgegeben. Bei einem Verbindungsabbruch wird die Status-Box wieder rot und der Text wechselt zu \texttt{Disconnected}. Es wird automatisch alle 5 Sekunden ein neuer Versuch zur Verbindungsaufbau gestartet.
+	\begin{center}
+		\begin{minipage}[t]{0.95\textwidth}
+			\includegraphics[scale=0.9]{Pictures/status-js}
+			\captionof{figure}{JavaScript Funktionen für den Verbindungsstatus}
+			\label{fig:status-js}
+			\vspace{-10pt}
+			\begin{center}
+				\par\small Quelle: eigene Abbildung 
+			\end{center}
+		\end{minipage} \\[0.75cm]
+	\end{center}
 			
 		\subsection{Herausforderungen und Optimierungen}
 		
@@ -616,11 +1222,13 @@
 	 \subsection{LaTex}
 	 
 	 \subsection{GitHub}
+	 
+\newpage
 	
 	\section{Abbildungsverzeichnis}
 	
 		\listoffigures
-	
+\newpage
 	\section{Literaturverzeichnis}
 	 
 \end{document}
