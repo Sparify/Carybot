@@ -460,20 +460,20 @@
 	“menu-icon.svg“ und “Fernlicht.svg“ werden als SVG-Bilder (Scalable Vector Graphics) an den Browser gesendet. Image/svg+xml sorgt dafür, dass der Browser die Dateien als SVG-Bilder erkennt. \\[0.5cm] 
 	“mystyles.css“ wird mit text/css als CSS-Datei gesendet und dient zur Formatierung der Website. \\[0.5cm] 
 	“carybot.js“ wird mit application/javascript als Javascript-Datei gesendet und verarbeitet die Eingaben von Clients auf der Website. \\[0.5cm] 
-	Wenn alle Dateien erfolgreich geladen sind, wird eine Nachricht in der seriellen Konsole ausgegeben. \\[0.5cm] 
+	Wenn alle Dateien erfolgreich geladen sind, wird eine Nachricht in der seriellen Konsole ausgegeben. \\
 	
 	\begin{center}
-		\begin{minipage}[t]{\textwidth}
-			\includegraphics{Pictures/SPIFFS\_setup}
+		\begin{minipage}[t]{0.75\textwidth}
+			\includegraphics[scale=0.7]{Pictures/SPIFFS\_setup}
 			\captionof{figure}{SPIFFS Initalisierung}
 			\label{fig:spiffs_init}
 			\vspace{-10pt}
 			\begin{center}
 				\par\small Quelle: eigene Abbildung
 			\end{center}
-		\end{minipage}
+		\end{minipage} \\[0.75cm]
 	\end{center}
-	Die readFile() Funktion wird benötigt, um die jeweiligen Dateien aus SPIFFS lesen zu können. Die Funktion liest eine Datei aus dem SPIFFS-Speicher und gibt den Inhalt als String zurück.
+	Die readFile() Funktion wird benötigt, um die jeweiligen Dateien aus SPIFFS lesen zu können. Die Funktion liest eine Datei aus dem SPIFFS-Speicher und gibt den Inhalt als String zurück.\\
 	
 	\begin{center}
 		\begin{minipage}[t]{0.75\textwidth}
@@ -484,7 +484,7 @@
 			\begin{center}
 				\par\small Quelle: eigene Abbildung
 			\end{center}
-		\end{minipage}
+		\end{minipage} \\[0.75cm]
 	\end{center}
 
 	
@@ -492,7 +492,7 @@
 		
 			\subsubsection{Kommunikation Setup}	
 			
-	Für die Kommunikation zwischen dem Webserver und dem ESP32 wird die ArduinoJson und die ArduinoWebSockets Bibliothek benötigt. Die ArduinoJson Bibliothek wird für die Umwandlung der JSON-Steuerbefehle benötigt. Die ArduinoWebSockets Bibliothek wird für die Kommunikation über das WebSocket Protokoll benötigt. 
+	Für die Kommunikation zwischen dem Webserver und dem ESP32 wird die ArduinoJson und die ArduinoWebSockets Bibliothek benötigt. Die ArduinoJson Bibliothek wird für die Umwandlung der JSON-Steuerbefehle benötigt. Die ArduinoWebSockets Bibliothek wird für die Kommunikation über das WebSocket Protokoll benötigt. \\
 	\begin{center}
 		\begin{minipage}[t]{0.45\textwidth}
 			\includegraphics{Pictures/kommunikation\_libraries}
@@ -504,6 +504,7 @@
 			\end{center}
 		\end{minipage} \\[0.75cm]
 	\end{center}
+	\newpage
 	Für die Netzwerkkonfiguration als Client werden folgenden Parameter definiert:
 	\begin{itemize}
 		\item SSID: “Carybot“ – gleiche SSID wie ESP32-CAM
@@ -522,7 +523,7 @@
 			\begin{center}
 				\par\small Quelle: eigene Abbildung 
 			\end{center}
-		\end{minipage} 
+		\end{minipage} \\[1cm]
 	\end{center}
 	In der Setup Funktion des Programmes wird dann überprüft, ob die IP-Konfiguration erfolgreich abgeschlossen wurde. Ansonsten kommt es zu einer Fehlermeldung und das Setup wird abgebrochen. Danach wird versucht, sich mit dem WLAN-Netzwerk zu verbinden. Wenn sich der ESP32 erfolgreich mit dem WLAN verbunden hat, wird eine Nachricht und die IP-Adresse des ESP32 in der seriellen Konsole ausgegeben. Danach wird die WebSocket Konfiguration noch gestartet. Es wird definiert, dass die Funktion onWebSocketEvent aufgerufen wird, wenn Events über den WebSocket registriert werden. In der loop Funktion wird dann noch ständig überprüft, ob neue Events am WebSocket registriert werden.
 	\begin{center}

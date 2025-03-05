@@ -14,15 +14,15 @@
 \contentsline {figure}{\numberline {13}{\ignorespaces \texttt {ESPAsyncWebServer.h}-Bibliothek}}{19}{figure.13}%
 \contentsline {figure}{\numberline {14}{\ignorespaces WebServer Netzwerkkonfiguration}}{19}{figure.14}%
 \contentsline {figure}{\numberline {15}{\ignorespaces Webserver Setup}}{20}{figure.15}%
-\contentsline {figure}{\numberline {16}{\ignorespaces SPIFFS Initalisierung}}{22}{figure.16}%
-\contentsline {figure}{\numberline {17}{\ignorespaces \texttt {readfile()}-Funktion}}{23}{figure.17}%
-\contentsline {figure}{\numberline {18}{\ignorespaces Bibliotheken für die Kommunikation}}{23}{figure.18}%
-\contentsline {figure}{\numberline {19}{\ignorespaces Netzwerkkonfiguration Client}}{24}{figure.19}%
+\contentsline {figure}{\numberline {16}{\ignorespaces SPIFFS Initalisierung}}{21}{figure.16}%
+\contentsline {figure}{\numberline {17}{\ignorespaces \texttt {readfile()}-Funktion}}{22}{figure.17}%
+\contentsline {figure}{\numberline {18}{\ignorespaces Bibliotheken für die Kommunikation}}{22}{figure.18}%
+\contentsline {figure}{\numberline {19}{\ignorespaces Netzwerkkonfiguration Client}}{23}{figure.19}%
 \contentsline {figure}{\numberline {20}{\ignorespaces Setup ESP32}}{24}{figure.20}%
 \contentsline {figure}{\numberline {21}{\ignorespaces \texttt {onWebSocketEvent()}-Funktion}}{25}{figure.21}%
-\contentsline {figure}{\numberline {22}{\ignorespaces JSON-Beispiel für Steuerung}}{26}{figure.22}%
+\contentsline {figure}{\numberline {22}{\ignorespaces JSON-Beispiel für Steuerung}}{25}{figure.22}%
 \contentsline {figure}{\numberline {23}{\ignorespaces JSON-Beispiel für Kamerasteuerung}}{26}{figure.23}%
-\contentsline {figure}{\numberline {24}{\ignorespaces JSON-Beispiel für Lichtsteuerung}}{27}{figure.24}%
+\contentsline {figure}{\numberline {24}{\ignorespaces JSON-Beispiel für Lichtsteuerung}}{26}{figure.24}%
 \contentsline {figure}{\numberline {25}{\ignorespaces \texttt {handleWebSocketMessage()}-Funktion}}{27}{figure.25}%
 \contentsline {figure}{\numberline {26}{\ignorespaces Kamera-GPIO Konfiguration}}{28}{figure.26}%
 \contentsline {figure}{\numberline {27}{\ignorespaces Kamera-Initialisierung}}{29}{figure.27}%

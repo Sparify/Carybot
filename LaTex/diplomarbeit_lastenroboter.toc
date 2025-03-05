@@ -23,9 +23,9 @@
 \contentsline {subsection}{\numberline {4.3}Webserver}{19}{subsection.4.3}%
 \contentsline {subsubsection}{\numberline {4.3.1}Webserver Setup}{19}{subsubsection.4.3.1}%
 \contentsline {subsubsection}{\numberline {4.3.2}SPIFFS Setup}{20}{subsubsection.4.3.2}%
-\contentsline {subsection}{\numberline {4.4}WebSocket Kommunikation}{23}{subsection.4.4}%
-\contentsline {subsubsection}{\numberline {4.4.1}Kommunikation Setup}{23}{subsubsection.4.4.1}%
-\contentsline {subsubsection}{\numberline {4.4.2}Message Handling}{25}{subsubsection.4.4.2}%
+\contentsline {subsection}{\numberline {4.4}WebSocket Kommunikation}{22}{subsection.4.4}%
+\contentsline {subsubsection}{\numberline {4.4.1}Kommunikation Setup}{22}{subsubsection.4.4.1}%
+\contentsline {subsubsection}{\numberline {4.4.2}Message Handling}{24}{subsubsection.4.4.2}%
 \contentsline {subsection}{\numberline {4.5}Kamera}{28}{subsection.4.5}%
 \contentsline {subsection}{\numberline {4.6}Kamera}{28}{subsection.4.6}%
 \contentsline {subsubsection}{\numberline {4.6.1}Kamera Setup}{28}{subsubsection.4.6.1}%
