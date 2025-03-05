@@ -14,8 +14,8 @@ Adafruit_MCP23X17 mcp;
 const int light_pin = 0;
 int light_st = 0;
 
-//UltraSonicDistanceSensor distanceSensor_rear(13, 12); // Pins umändern
-//UltraSonicDistanceSensor distanceSensor_front(13, 12); // Pins umändern
+UltraSonicDistanceSensor distanceSensor_rear(23, 19);
+UltraSonicDistanceSensor distanceSensor_front(13,12);
 float distance_front = 0.0;
 float distance_rear = 0.0;
 
@@ -27,15 +27,15 @@ int leftfrontwheel_pwm = 32;
 const int leftfrontwheel_brake = 1;
 const int leftfrontwheel = 2;
 
-int leftrearwheel_pwm = 19;
+int leftrearwheel_pwm = 18;
 const int leftrearwheel_brake = 3;
 const int leftrearwheel = 4;
 
-int rightfrontwheel_pwm = 15;
+int rightfrontwheel_pwm = 27;
 const int rightfrontwheel_brake = 5;
 int rightfrontwheel = 6;
 
-int rightrearwheel_pwm = 12;
+int rightrearwheel_pwm = 25;
 const int rightrearwheel_brake = 7;
 const int rightrearwheel = 8;
 
@@ -59,6 +59,8 @@ int camera_pos = 0;
 Servo myservo;
 static const int servoPin = 26; // Pin umändern auf PWM Pin
 //-----------------
+
+int speed_cb = 0;
 
 // Spannung-Messung für Akkustand
 #define PIN_TEST 34        // Analoger Eingangspin
@@ -261,24 +263,22 @@ void setup()
 
 void moveForward()
 {
-  if(!(distance_front >= 5 && distance_front <= 20 && speed_cb >= 50)){
     mcp.digitalWrite(leftfrontwheel, HIGH);
     mcp.digitalWrite(rightfrontwheel, LOW);
     mcp.digitalWrite(leftrearwheel, HIGH);
     mcp.digitalWrite(rightrearwheel, LOW);
     Serial.println("Vorwärts");
-  }
 }
 
 void moveBackward()
 {
-  if(!(distance_rear >= 5 && distance_rear <= 20 && speed_cb >= 50)){
+  //if(!(distance_rear >= 5 && distance_rear <= 20 && speed_cb >= 50)){
     mcp.digitalWrite(leftfrontwheel, LOW);
     mcp.digitalWrite(rightfrontwheel, HIGH);
     mcp.digitalWrite(leftrearwheel, LOW);
     mcp.digitalWrite(rightrearwheel, HIGH);
     Serial.println("Rückwärts");
-  }
+  //}
 }
 
 void turnLeft()
@@ -301,11 +301,11 @@ void turnRight()
 
 void stop()
 {
-  mcp.digitalWrite(leftfrontwheel_brake, HIGH);
-  mcp.digitalWrite(rightfrontwheel_brake, HIGH);
-  mcp.digitalWrite(leftrearwheel_brake, HIGH);
-  mcp.digitalWrite(rightrearwheel_brake, HIGH);
-  Serial.println("Stop");
+    mcp.digitalWrite(leftfrontwheel_brake, HIGH);
+    mcp.digitalWrite(rightfrontwheel_brake, HIGH);
+    mcp.digitalWrite(leftrearwheel_brake, HIGH);
+    mcp.digitalWrite(rightrearwheel_brake, HIGH);
+    Serial.println("Stop");
 }
 
 void cam_turn()
@@ -329,7 +329,6 @@ void lights_off()
 }
 //-------------------------------------------
 
-int speed_cb = 0;
 
 void navigate()
 {
@@ -409,17 +408,16 @@ void loop()
     float batteryPercentage = ((vin - 9) / 4) * 100;    // Vin in mV gemessen
     float akku_round = round(batteryPercentage / 10) * 10;
     Serial.println("Akkustand: " + String(akku_round, 0) + "%");
-<<<<<<< HEAD
-   // distance_front = distanceSensor_front.measureDistanceCm();
-   // distance_rear = distanceSensor_rear.measureDistanceCm();
-=======
     distance_front = distanceSensor_front.measureDistanceCm();
     distance_rear = distanceSensor_rear.measureDistanceCm();
-
->>>>>>> a1b276b5e1eb863afd865cb7fe30cee8894998c4
+    Serial.println(distance_front);
     // weight = LoadCell.getData();
     // Serial.print("Load_cell output val: ");
     // Serial.println(weight);
+
+    if(((distance_front >= 5 && distance_front <= 20) && speed_cb >= 50) || ((distance_rear >= 5 && distance_rear <= 20) && speed_cb >= 50)){
+      stop();
+    }
 
     String batterystatus = String(akku_round, 0);
     String weightstatus = String(weight, 0);
