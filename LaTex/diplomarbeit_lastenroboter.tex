@@ -389,7 +389,7 @@
 		\subsection{Schaltungsaufbau} %Felix
 		
 		\subsection{Code} %Daniel
-	
+\newpage
 	\section{Webserver} %Spari
 	 
 		\subsection{Grundlegende Ziele}
@@ -415,6 +415,14 @@
 			\subsubsection{Webserver Setup}
 			
 	Der Webserver wird mithilfe der Bibliothek ESPAsyncWebServer auf einem ESP32-CAM Mikrocontroller eingerichtet. Diese Bibliothek ermöglicht einen nicht-blockierenden Betrieb, wodurch parallele Anfragen effizient verarbeitet werden können.\footnote{https://github.com/lacamera/ESPAsyncWebServer} \\[0.5cm]
+	\begin{minipage}{\textwidth}
+		\centering
+		\includegraphics[scale=1]{Pictures/espasyncwebserver}
+		\captionof{figure}{\texttt{ESPAsyncWebServer.h}-Bibliothek}
+		\label{fig:espasyncwebserver}
+		\vspace{-2pt}
+		\small Quelle: eigene Abbildung
+	\end{minipage} \\[0.75cm]
 	Für die Netzwerkkonfiguration wurde ein eigener Access Point mit folgenden Parametern definiert:
 	
 	\begin{itemize}
@@ -426,7 +434,23 @@
 	\end{itemize} 
 	Der Webserver wird auf Port 80 erstellt. Port 80 ist der Standardport für HTTP-Dienste. 
 	\\[0.5cm]
-	In der Setup Funktion wird danach überprüft, ob der Access Point erfolgreich konfiguriert worden ist und ob der Access Point erfolgreich gestartet werden kann. Falls ein Fehler auftreten sollte, wird der Setup unterbrochen und die jeweilige Fehlermeldung in der seriellen Konsole ausgegeben. Wenn alles erfolgreich konfiguriert ist und starten kann, wird im Seriellen Monitor die IP-Adresse in der seriellen Konsole ausgegeben. Anschließend wird der Webserver gestartet.
+	\begin{minipage}{\textwidth}
+		\centering
+		\includegraphics[scale=1]{Pictures/server-config}
+		\captionof{figure}{WebServer Netzwerkkonfiguration}
+		\label{fig:server-config}
+		\vspace{-2pt}
+		\small Quelle: eigene Abbildung
+	\end{minipage} \\[0.75cm]
+	In der Setup Funktion wird danach überprüft, ob der Access Point erfolgreich konfiguriert worden ist und ob der Access Point erfolgreich gestartet werden kann. Falls ein Fehler auftreten sollte, wird der Setup unterbrochen und die jeweilige Fehlermeldung in der seriellen Konsole ausgegeben. Wenn alles erfolgreich konfiguriert ist und starten kann, wird im Seriellen Monitor die IP-Adresse in der seriellen Konsole ausgegeben. Anschließend wird der Webserver gestartet. \\[0.5cm]
+	\begin{minipage}{\textwidth}
+		\centering
+		\includegraphics[scale=0.7]{Pictures/server-setup}
+		\captionof{figure}{Webserver Setup}
+		\label{fig:server-setup}
+		\vspace{-2pt}
+		\small Quelle: eigene Abbildung
+	\end{minipage} \\[0.75cm]
 			
 			\subsubsection{SPIFFS Setup}
 			
@@ -1124,13 +1148,19 @@
 			
 			\subsubsection{Latenz- und Performance Optimierungen}
 			
+							\subsubsection*{Kameraoptimierungen}
+	Als Bildformat wird JPEG verwendet, um Speicherplatz zu sparen. Alternativ wäre RGB565 oder YUV422 möglich, aber diese benötigen mehr Speicher da sie nicht komprimiert sind und sind somit langsamer zum Übertragen. \\[0.5cm]
+	Für die Bildauflösung wird QVGA (320x240 Pixel) definiert. Alternativ wären noch VGA (640x480), SVGA (800x600) oder UXGA (1600x1200) möglich, jedoch brauchen diese mehr Speicher und mehr Bandbreite und sind somit langsamer zum Übertragen.\\[0.5cm]
+	Den Wert für die Bildqualität kann von 0 (= beste Qualität) bis 63 (= schlechteste Qualität) definiert werden. Wir definierten die Bildqualität mit 12, was ein guter Kompromiss zwischen Qualität und Speicherverbrauch ist.\\[0.5cm]
+	Wir wählten für die Anzahl der Framebuffer 3. Die Anzahl sagt aus, wie viele Bilder gleichzeitig gespeichert werden können. Mehr Framebuffer erhöhen die Bildrate, benötigen jedoch mehr RAM.\\[0.5cm]
+	Zum Schluss wird die Kamera mit den konfigurierten Einstellungen initialisiert. Falls bei der Initialisierung ein Fehler auftreten soll, wird dieser in der seriellen Konsole ausgegeben und das Setup abgebrochen.\\[0.5cm]
+	
 			\subsubsection{(Speicher- und Rechenleistungseinschränkungen des ESP32)}
-		\newpage
 					
 		\subsection{(Fazit und Ausblick)}
 		
 			\subsubsection{(Mögliche Erweiterungen und Verbesserungen)}
-	
+	\newpage
 	\section{Gehäuse}
 	
 		\subsection{Planung und Design} %Felix
@@ -1138,7 +1168,7 @@
 		\subsection{Realisierung} %Felix
 	
 		\subsection{Materialliste} %Felix
-	
+	\newpage
 	\section{Platine}
 	
 		\subsection{Grundschaltung} %Felix
@@ -1147,7 +1177,7 @@
 		
 		\subsection{Fertiger Prototyp} %Felix
 	
-	
+	\newpage
 	\section{Kamera}
 	
 		\subsection{Kamera im Überblick} %Daniel
@@ -1162,7 +1192,7 @@
 	
 		\subsection{Code} %Daniel und %Simon
 		
-\newpage
+	\newpage
 	\section{Sensoren}
 	
 		\subsection{Abstandsensor} %Daniel
@@ -1175,7 +1205,7 @@
 		
 			\subsubsection{Code} %Daniel
 	
-	
+	\newpage
 	\section{Entwicklungstools}
 	
 	 \subsection{Autodesk Fushion}
