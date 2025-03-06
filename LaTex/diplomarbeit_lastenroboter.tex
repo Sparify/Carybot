@@ -649,7 +649,8 @@
 		\end{minipage} \\[0.75cm]
 	\end{center}
 	Als nächstes muss die ESP32-CAM mit der ESP-IDF \texttt{esp\_camera} Bibliothek konfiguriert und initialisiert werden. Als erstes muss mit \texttt{camera\_config\_t} eine Struktur definiert werden, mit der verschiedene Parameter und Eigenschaften wie GPIO-Pins, Bildgröße und Qualität festlegt werden können. \\[0.5cm] 
-	LEDC-Kanal und Timer werden für das Taktsignal benötigt, um die Kamera zu betreiben.
+	LEDC-Kanal und Timer werden für das Taktsignal benötigt, um die Kamera zu betreiben. \\[0.5cm]
+	Zum Schluss wird die Kamera mit den konfigurierten Einstellungen initialisiert. Falls bei der Initialisierung ein Fehler auftreten soll, wird dieser in der seriellen Konsole ausgegeben und das Setup abgebrochen.
 	\begin{center}
 		\begin{minipage}[t]{1\textwidth}
 			\includegraphics{Pictures/kamera-setup2}
@@ -663,12 +664,13 @@
 	\end{center}
 		
 			\subsection{Videoübertragung}
+		    \label{subsec:Videoübertragung}
 			
 	In unserem Projekt werden die Live-Bilder per WebSocket an den Webserver gesendet. Um dies umzusetzen, wird zuerst eine Webserver-Route benötigt. Dazu wird eine http-GET-Anfrage für die Hauptseite (“/“) definiert. Im Code wird ein JavaScript Skript benutzt, um eine Websocket-Verbindung herzustellen. Die IP-Adresse wird automatisch durch \texttt{windows.location.hostname} erkannt. Port 81 wird für das WebSocket-Streaming verwendet. Wenn die ESP32-CAM ein neues Bild als WebSocket-Nachricht versendet, wird es als JPEG-Blob gespeichert. Danach wird ein temporär URL-Link erstellt. Das Bild wird schlussendlich in einem \texttt{<img>}-Tag mit der id \texttt{stream} angezeigt. \\[0.5cm]
 	Die WebSocket Verbindung wird die ganze Zeit überwacht. In der Konsole wird ausgegeben, wenn die Websocket-Verbindung aktiv ist. Falls die Verbindung abbrechen sollte, wird nach 5 Sekunden automatisch ein erneuter Verbindungsversuch gestartet. Zum Schluss wird der HTML-Code mit \texttt{HTTP-Status 200} (OK) an den Browser gesendet. 
 	\begin{center}
-		\begin{minipage}[t]{0.95\textwidth}
-			\includegraphics[scale=0.8]{Pictures/videoübertragung}
+		\begin{minipage}[t]{0.75\textwidth}
+			\includegraphics[scale=0.6]{Pictures/videoübertragung}
 			\captionof{figure}{Videoübertragung über WebSocket}
 			\label{fig:Videoübertragung}
 			\vspace{-10pt}
@@ -687,7 +689,7 @@
 	Um den Roboter überhaupt steuern zu können, wird ein Steuerkreuz implementiert. Das Steuerkreuz befindet sich mittig am rechten Bildschirmrand. Das Steuerkreuz besteht aus fünf Tasten, nämlich: Vorwarts (\texttt{UP}), (\texttt{DOWN} ), links (\texttt{LEFT}), rechts (\texttt{RIGHT}) und in der Mitte Stop (\texttt{HALT}). \\[0.5cm]
 	\begin{center}
 		\begin{minipage}[t]{1\textwidth}
-			\includegraphics{Pictures/Steuerung-web}
+			\includegraphics[scale=0.4]{Pictures/Steuerung-web}
 			\captionof{figure}{Steuerkreuz auf der Website}
 			\label{fig:Steuerkreuz-web}
 			\vspace{-10pt}
@@ -696,10 +698,10 @@
 			\end{center}
 		\end{minipage} \\[0.75cm]
 	\end{center}
-	Im HTML-Code wird das Steuerkreuz als HTML \texttt{<div>}-Tag im body Bereich definiert. Für die Formatierung wird die CSS-Klasse \texttt{dpad-container} verwendet. Die einzelnen Richtungstasten des Steuerkreuze werden auch als HTML \texttt{<div>}-Tags definiert. Jede Taste wird mit der CSS-Klasse \texttt{button} und der jeweiligen Zusatzklasse \texttt{up/down/left/right/center} formatiert. Beim jeweiligen Tastendruck wird außerdem immer das Attribut \texttt{data-direction} mit der jeweiligen Richtung belegt.\\
+	Im HTML-Code wird das Steuerkreuz als HTML \texttt{<div>}-Tag im body Bereich definiert. Für die Formatierung wird die CSS-Klasse \texttt{dpad-container} verwendet. Die einzelnen Richtungstasten des Steuerkreuze werden auch als HTML \texttt{<div>}-Tags definiert. Jede Taste wird mit der CSS-Klasse \texttt{button} und der jeweiligen Zusatzklasse \texttt{up/down/left/right/center} formatiert. Beim jeweiligen Tastendruck wird außerdem immer das Attribut \texttt{data-direction} mit der jeweiligen Richtung belegt.
 	\begin{center}
-		\begin{minipage}[t]{0.85\textwidth}
-			\includegraphics{Pictures/Steuerung-html}
+		\begin{minipage}[t]{0.65\textwidth}
+			\includegraphics[scale=0.8]{Pictures/Steuerung-html}
 			\captionof{figure}{Steuerkreuz HTML-Code}
 			\label{fig:Steuerkreuz-html}
 			\vspace{-10pt}
@@ -711,8 +713,8 @@
 	Die CSS-Klasse \texttt{dpad-container } ist das übergeordnete Element, welches die Steuerkreuztasten enthalten. Es wird als CSS Grid mit einer 3x3 Struktur definiert. Es gibt Lücken (.) an den Ecken, damit das Layout wie ein Steuerkreuz aussieht. Der Abstand zwischen den Tasten wird mit 10px festgelegt. Der Container hat eine feste Breite von 120px und ist vertikal so wie horizontal zentriert. \\[0.5cm]
 	Die CSS-Klasse \texttt{button} sorgt für eine einheitliche Gestaltung der Tasten des Steuerkreuzes. Jede Taste hat eine Größe von 60x60px. Eine Flexbox wird verwendet, um die Tasten jeweils mittig in den einzelnen Positionen des Grids zu positionieren. Jede Taste hat einen dunkelgrauen Hintergrund, eine weiße Textfarbe, einen 2px dicken dunklen Rahmen und abgerundete Ecken. Die Optionen \texttt{-webkit-tap-highlight-color: transparent} und \texttt{user-select: none} sorgen dafür, dass auf mobilen Geräten der Text in den Tasten nicht blau markiert werden kann, damit die Steuerung nicht blockiert wird. 
 	\begin{center}
-		\begin{minipage}[t]{0.6\textwidth}
-			\includegraphics{Pictures/Steuerung-css1}
+		\begin{minipage}[t]{0.55\textwidth}
+			\includegraphics[scale=0.9]{Pictures/Steuerung-css1}
 			\captionof{figure}{CSS-Klassen \texttt{.dpad-container} und \texttt{.button}}
 			\label{fig:Steuerkreuz-css1}
 			\vspace{-10pt}
@@ -819,9 +821,9 @@
 			\begin{center}
 				\par\small Quelle: eigene Abbildung 
 			\end{center}
-		\end{minipage} \\[0.75cm]
+		\end{minipage} \\[1.5cm]
 	\end{center}
-	Im JavaScript-Code wird die aktuelle Position des Sliders in die eigene Variable \texttt{speed} gespeichert. Die Geschwindigkeit wird immer bei einem Steuerbefehl des Steuerkreuzes mitübertragen. (siehe Steuerung)
+	Im JavaScript-Code wird die aktuelle Position des Sliders in die eigene Variable \texttt{speed} gespeichert. Die Geschwindigkeit wird immer bei einem Steuerbefehl des Steuerkreuzes mitübertragen. (siehe Steuerkreuz  \ref{fig:Steuerkreuz-js4})
 	\begin{center}
 		\begin{minipage}[t]{0.55\textwidth}
 			\includegraphics{Pictures/speed-js}
@@ -870,9 +872,9 @@
 			\begin{center}
 				\par\small Quelle: eigene Abbildung 
 			\end{center}
-		\end{minipage} \\[0.75cm]
+		\end{minipage} \\[2cm]
 	\end{center}
-	Im JavaScript-Code wird die aktuelle Position des Sliders verarbeitet. Dazu wird die Position in eine JSON-Nachricht gespeichert. Zu debug-Zwecken wird die Position noch in der Website Konsole ausgegeben. Wenn der WebSocket Verbindung zum ESP32 offen ist, wird die aktuelle Position übermittelt. \\[0.5cm]
+	Im JavaScript-Code wird die aktuelle Position des Sliders verarbeitet. Dazu wird die Position in eine JSON-Nachricht gespeichert. Zu debug-Zwecken wird die Position noch in der Website Konsole ausgegeben. Wenn der WebSocket Verbindung zum ESP32 offen ist, wird die aktuelle Position übermittelt. \\
 	\begin{center}
 		\begin{minipage}[t]{0.75\textwidth}
 			\includegraphics{Pictures/kamera-js}
@@ -882,15 +884,15 @@
 			\begin{center}
 				\par\small Quelle: eigene Abbildung 
 			\end{center}
-		\end{minipage} \\[0.75cm]
+		\end{minipage} \\[0.5cm]
 	\end{center}	
 				\subsubsection*{Fernlicht}
 				
 	Die Funktion des Fernlichts dient bei unserem Roboter zur Beleuchtung bei schlechter Sicht bzw. Dunkelheit. Wenn eingeschalten, leuchtet auf der Vorder- sowie auf der Hinterseite des Roboters ein Scheinwerfer die Umgebung aus. \\[0.5cm]
 	Um das Fernlicht auf unserer Website ein- bzw. auszuschalten gibt es ein eigenes Fernlicht-Icon rechts über dem Steuerkreuz. Im ausgeschalteten Zustand ist das Icon ausgegraut. Im aktiven Zustand ist das Scheinwerfer Symbol im Icon blau und das Icon hat einen blassgrünen Hintergrund. \\[0.5cm]
 	\begin{center}
-		\begin{minipage}[t]{1\textwidth}
-			\includegraphics[scale=0.9]{Pictures/fernlicht-web}
+		\begin{minipage}[t]{0.65\textwidth}
+			\includegraphics[scale=0.6]{Pictures/fernlicht-web}
 			\captionof{figure}{Fernlicht-Icon auf der Website}
 			\label{fig:fernlicht-web}
 			\vspace{-10pt}
@@ -937,11 +939,11 @@
 			\end{center}
 		\end{minipage} \\[0.75cm]
 	\end{center}
-				
+
 			\subsubsection{Echtzeit-Videoanzeige}
 			
 	Die Videoübertragung dient dazu, den Roboter über größere Entfernungen autonom steuern zu können. Mit der Videoübertragung werden Objekte und Hindernisse erkennbar und kann diese somit ausweichen. \\[0.5cm]
-	Die Videoübertragung wird über der ganzen Website im Hintergrund angezeigt. \\[0.5cm]
+	Die Videoübertragung wird über der ganzen Website im Hintergrund angezeigt. \\
 	\begin{center}
 		\begin{minipage}[t]{1\textwidth}
 			\includegraphics{Pictures/videoübertragung-web}
@@ -953,7 +955,7 @@
 			\end{center}
 		\end{minipage} \\[0.75cm]
 	\end{center}
-	Im HTML-Code wird die Videoübertragung als HTML \texttt{<img>}-Tag mit der id \texttt{dynamicimage} im Hauptbereich definiert. \\[0.5cm]
+	Im HTML-Code wird die Videoübertragung als HTML \texttt{<img>}-Tag mit der id \texttt{dynamicimage} im Hauptbereich definiert. \\
 	\begin{center}
 		\begin{minipage}[t]{0.75\textwidth}
 			\includegraphics{Pictures/videoübertragung-html}
@@ -965,7 +967,7 @@
 			\end{center}
 		\end{minipage} \\[0.75cm]
 	\end{center}
-	Im CSS-Code wird nun das Element mit der id \texttt{dynamicimage} formatiert. Es wird definiert, dass die Größe 100\% der Breite sowie 100\% der Höhe einnimmt. Die Position wird dabei auf absolut gesetzt. \\[0.5cm]
+	Im CSS-Code wird nun das Element mit der id \texttt{dynamicimage} formatiert. Es wird definiert, dass die Größe 100\% der Breite sowie 100\% der Höhe einnimmt. Die Position wird dabei auf absolut gesetzt. \\
 	\begin{center}
 		\begin{minipage}[t]{0.5\textwidth}
 			\includegraphics{Pictures/videoübertragung-css}
@@ -977,7 +979,7 @@
 			\end{center}
 		\end{minipage} \\[0.75cm]
 	\end{center}
-	Im JavaScript-Code wird die WebSocket-Verbindung zur ESP32-CAM gehandelt. In der Funktion \texttt{connectWebSocket\_cam()} wird zuerst ein WebSocket mit der eigenen IP-Adresse erstellt (da Webserver auf ESP32-CAM gehostet wird) und dem Port 81 erstellt. Wenn nun eine Nachricht auf der WebSockte-Verbindung ankommt (siehe Videoübertragung ESP32-CAM) wird diese extrahiert. Das mitgesendete BLOB wird in einem neuem BLOB als jpeg-Bild gespeichert. Danach wird eine URL (Adresse) erstellt, die zu diesem BLOB führt. Dann wird eine Variable für die Videoübertragung im HTML \texttt{<img>}-Tag erstellt. Die Source dieses Bildes wird dann mit dem neuen, erhaltenen Bild ersetzt. Da die ESP32-CAM die ganze Zeit neue Blobs sendet, wird das Bild die ganze Zeit ersetzt, was dazu führt, dass es aussieht, als wäre es ein Video. \\[0.5cm]
+	Im JavaScript-Code wird die WebSocket-Verbindung zur ESP32-CAM gehandelt. In der Funktion \texttt{connectWebSocket\_cam()} wird zuerst ein WebSocket mit der eigenen IP-Adresse erstellt (da Webserver auf ESP32-CAM gehostet wird) und dem Port 81 erstellt. Wenn nun eine Nachricht auf der WebSockte-Verbindung ankommt (siehe Videoübertragung \ref{subsec:Videoübertragung}) wird diese extrahiert. Das mitgesendete BLOB wird in einem neuem BLOB als jpeg-Bild gespeichert. Danach wird eine URL (Adresse) erstellt, die zu diesem BLOB führt. Dann wird eine Variable für die Videoübertragung im HTML \texttt{<img>}-Tag erstellt. Die Source dieses Bildes wird dann mit dem neuen, erhaltenen Bild ersetzt. Da die ESP32-CAM die ganze Zeit neue Blobs sendet, wird das Bild die ganze Zeit ersetzt, was dazu führt, dass es aussieht, als wäre es ein Video. \\[0.5cm]
 	Wenn sich die ESP32-CAM verbindet, wird zu Debug-Zwecken eine Nachricht in der Webkonsole ausgegeben. \\[0.5cm]
 	Wenn die Verbindung zur ESP32-CAM verloren geht, wird wieder zu Debug-Zwecke eine Nachricht in der Webkonsole ausgegeben und ein neuer Verbindungsversuch wird nach 5 Sekunden gestartet. \\[0.5cm]
 	\begin{center}
@@ -1076,37 +1078,33 @@
 	
 				\subsubsection*{Verbindungsstatus}
 	
-	In der WebSocket Status-Box wird der aktuelle Verbindungszustand zum ESP32 angezeigt. Wenn keine Verbindung vorhanden ist, ist die Box rot. Wenn die Verbindung erfolgt, wird die Box grün. \\[0.5cm]
-	\begin{center}
-		\begin{minipage}[t]{1\textwidth}
-			\includegraphics{Pictures/status-web}
-			\captionof{figure}{Statusbox auf der Website}
-			\label{fig:status-web}
-			\vspace{-10pt}
-			\begin{center}
-				\par\small Quelle: eigene Abbildung 
-			\end{center}
-		\end{minipage} \\[0.75cm]
-	\end{center}
-	\begin{center}
-		\begin{minipage}[t]{1\textwidth}
-			\includegraphics{Pictures/status-green}
-			\captionof{figure}{Statusbox: Verbunden}
-			\label{fig:status-green}
-			\vspace{-10pt}
-			\begin{center}
-				\par\small Quelle: eigene Abbildung 
-			\end{center}
-			\includegraphics{Pictures/status-red}
-			\captionof{figure}{Statusbox: Verbindung getrennt}
-			\label{fig:status-red}
-			\vspace{-10pt}
-			\begin{center}
-				\par\small Quelle: eigene Abbildung 
-			\end{center}
-		\end{minipage} \\[0.75cm]
-	\end{center}
-	Im HTML-Code wird die Status-Box als HTML \texttt{<span>}-Tag definiert. Für das Design wird die CSS-Klasse \texttt{status-box} kombiniert je nach Verbindungsstatus mit der Klasse \texttt{connected} oder \texttt{disconnected}. \\
+	In der WebSocket Status-Box wird der aktuelle Verbindungszustand zum ESP32 angezeigt. Wenn keine Verbindung vorhanden ist, ist die Box rot. Wenn die Verbindung erfolgt, wird die Box grün. 
+\begin{figure}
+	\begin{minipage}{1\textwidth}
+		\centering
+		\includegraphics[scale=0.4]{Pictures/status-web}
+		\caption{Statusbox auf der Website}
+		\label{fig:status-web}
+		{\small Quelle: eigene Abbildung}
+	\end{minipage}
+	
+	\vspace{1.5cm} % Abstand zwischen den Bildern
+	
+	\begin{minipage}{0.3\linewidth}
+		\centering
+		\includegraphics{Pictures/status-green}
+		\caption{Statusbox: Verbunden}
+		\label{fig:status-green}
+	\end{minipage}
+	\hspace{0.1\linewidth}
+	\begin{minipage}{0.3\linewidth}
+		\centering
+		\includegraphics{Pictures/status-red}
+		\caption{Statusbox: Verbindung getrennt}
+		\label{fig:status-red}
+	\end{minipage}
+\end{figure} \newpage 
+Im HTML-Code wird die Status-Box als HTML \texttt{<span>}-Tag definiert. Für das Design wird die CSS-Klasse \texttt{status-box} kombiniert je nach Verbindungsstatus mit der Klasse \texttt{connected} oder \texttt{disconnected}. 
 	\begin{center}
 		\begin{minipage}[t]{1\textwidth}
 			\includegraphics{Pictures/status-html}
@@ -1153,8 +1151,7 @@
 	Als Bildformat wird JPEG verwendet, um Speicherplatz zu sparen. Alternativ wäre RGB565 oder YUV422 möglich, aber diese benötigen mehr Speicher da sie nicht komprimiert sind und sind somit langsamer zum Übertragen. \\[0.5cm]
 	Für die Bildauflösung wird QVGA (320x240 Pixel) definiert. Alternativ wären noch VGA (640x480), SVGA (800x600) oder UXGA (1600x1200) möglich, jedoch brauchen diese mehr Speicher und mehr Bandbreite und sind somit langsamer zum Übertragen.\\[0.5cm]
 	Den Wert für die Bildqualität kann von 0 (= beste Qualität) bis 63 (= schlechteste Qualität) definiert werden. Wir definierten die Bildqualität mit 12, was ein guter Kompromiss zwischen Qualität und Speicherverbrauch ist.\\[0.5cm]
-	Wir wählten für die Anzahl der Framebuffer 3. Die Anzahl sagt aus, wie viele Bilder gleichzeitig gespeichert werden können. Mehr Framebuffer erhöhen die Bildrate, benötigen jedoch mehr RAM.\\[0.5cm]
-	Zum Schluss wird die Kamera mit den konfigurierten Einstellungen initialisiert. Falls bei der Initialisierung ein Fehler auftreten soll, wird dieser in der seriellen Konsole ausgegeben und das Setup abgebrochen.\\[0.5cm]
+	Wir wählten für die Anzahl der Framebuffer 3. Die Anzahl sagt aus, wie viele Bilder gleichzeitig gespeichert werden können. Mehr Framebuffer erhöhen die Bildrate, benötigen jedoch mehr RAM. (siehe Kamera-Initialisierung) \ref{fig:Kamera-Initialisierung}\\[0.5cm]
 	
 			\subsubsection{(Speicher- und Rechenleistungseinschränkungen des ESP32)}
 					
