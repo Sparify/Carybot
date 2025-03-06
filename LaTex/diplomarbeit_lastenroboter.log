@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.2.24)  6 MAR 2025 09:16
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.2.24)  6 MAR 2025 09:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1284,6 +1284,11 @@ Overfull \hbox (17.62482pt too wide) in paragraph at lines 383--391
  []
 
 [17 <./Pictures/Hall-sensoren EingÃ¤nge.jpg>]
+Overfull \hbox (3.35641pt too wide) in paragraph at lines 410--411
+\T1/ptm/m/n/12 Die Web-si-te er-mög-licht die Echtzeit-Videoübertragung des Ka-
+me-ra-bilds der ESP32-CAM.
+ []
+
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 426.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
@@ -1296,7 +1301,6 @@ File: Pictures/espasyncwebserver.png Graphic file (type png)
 Package pdftex.def Info: Pictures/espasyncwebserver.png  used on input line 429
 .
 (pdftex.def)             Requested size: 212.2926pt x 15.809pt.
-
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 430.
@@ -2305,7 +2309,7 @@ pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist
 200.pk><C:/Users/Lenovo/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utm
 b8a.pfb><C:/Users/Lenovo/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/ut
 mr8a.pfb>
-Output written on diplomarbeit_lastenroboter.pdf (61 pages, 4007205 bytes).
+Output written on diplomarbeit_lastenroboter.pdf (61 pages, 4007109 bytes).
 PDF statistics:
  1000 PDF objects out of 1000 (max. 8388607)
  205 named destinations out of 1000 (max. 500000)
