@@ -75,9 +75,9 @@
 	\newpage
 	\section{Einleitung}
 	\subsection{Kurzzusammenfassung}
-	In dieser Diplomarbeit wird ein Lastenroboter entwickelt, der bis zu 25 Kilogramm transportieren kann. Der Roboter wird über eine Website gesteuert, die als Steuerungsplattform dient. Zusätzlich ist eine Kamera eingebaut, die den Transportbereich zeigt, sowie eine Waage, die das Gewicht der transportierten Last misst.\\[0.5 cm]
-	Ein Schwerpunkt der Arbeit lieg auf der mechanischen Konstruktion des Roboters, bei der ein stabiles Gehäuse aus Stahl gebaut wird, um Sicherheit und Stabilität zu gewährleisten. Außerdem wird eine eigene Platine entwickelt, die die verschiedenen Hardware-Komponenten, wie die Sensoren und die Motoren, steuert und miteinander verbindet.\\[0.5 cm]
-	Die Steuerung des Roboters erfolgt über eine Website, die es dem Benutzer ermöglicht, den Roboter zu bedienen und wichtige Daten wie Akkustand und Gewicht abzurufen. Ein besonderer Fokus liegt auch dabei auf der Übertragung des Kamerabildes auf die Web-Oberfläche sowie der Integration einer schwenkbaren Kamera, um eine flexible Sicht auf den Transportbereich zu gewährleisten. Der ESP32 sorgt dafür, dass die Befehle des Benutzers an den Roboter übermittelt werden.\\[0.5 cm]
+	In dieser Diplomarbeit wird ein Lastenroboter entwickelt, der bis zu 25 Kilogramm transportieren kann. Der Roboter wird über eine Website gesteuert, die als Steuerungsplattform dient. Zusätzlich ist eine Kamera eingebaut, die zur visuellen Überwachung des Transportbereichs dient, sowie eine Waage, die das Gewicht der transportierten Last misst.\\[0.5 cm]
+	Ein Schwerpunkt der Arbeit liegt auf der mechanischen Konstruktion des Roboters, bei der ein stabiles Gehäuse aus Stahl gebaut wird, um Sicherheit und Stabilität zu gewährleisten. Außerdem wird eine eigene Platine entwickelt, die die verschiedenen Hardware-Komponenten, wie die Sensoren und die Motoren, steuert und miteinander verbindet.\\[0.5 cm]
+	Die Steuerung des Roboters erfolgt über eine Website, welche die Bedienung sowie die Anzeige relevanter Daten wie Akkustand und Gewicht ermöglichen. Ein besonderer Fokus liegt auch dabei auf der Übertragung des Kamerabildes auf die Web-Oberfläche sowie der Integration einer schwenkbaren Kamera, um eine flexible Sicht auf den Transportbereich zu gewährleisten. Der ESP32 sorgt dafür, dass die Befehle des Benutzers an den Roboter übermittelt werden.\\[0.5 cm]
 	Zusätzlich wird eine OnBoard-Software entwickelt, die es ermöglicht, die Sensoren auszulesen und die Motoren als auch die Kamera anzusteuern.\\[0.5 cm]
 	
 	\newpage
@@ -206,7 +206,7 @@
 					IRM-30-15ST & 17.04 € & 1 & 17.04 € \\ \hline
 					SOLSUM 0808 & 25.17 € & 1 & 25.17 € \\ \hline
 					Platinen & 37.14 € & 1 & 37.14 € \\ \hline
-					ESP32 CAM & 13.70 € & 1 & 13.70 € \\ \hline
+					ESP32-CAM & 13.70 € & 1 & 13.70 € \\ \hline
 					12 Stück Halbbrücken Wägezelle & 11.09 € & 1 & 11.09 € \\ \hline
 					ESP32 & 11.09 € & 1 & 11.09 € \\ \hline
 					Dunkermotoren & 65.00 € & 2 & 130.00 € \\ \hline
@@ -407,7 +407,7 @@
 	
 			\subsubsection*{Videoübertragung} 	 
 	
-	Auf der Website soll eine Echtzeit Videoübertragung der ESP32-CAM angezeigt werden. Die Bildfrequenz und die Qualität der Videoübertragung sollte ausgeglichen sein, so dass in der Übertragung alle Objekte und ggf. Hindernisse frühzeitig erkennbar sind und noch Reaktionszeit zum Manövrieren besteht. 
+	Die Website ermöglicht die Echtzeit-Videoübertragung des Kamerabilds der ESP32-CAM. Die Bildfrequenz und die Qualität der Videoübertragung sollte ausgeglichen sein, so dass in der Übertragung alle Objekte und ggf. Hindernisse frühzeitig erkennbar sind und noch Reaktionszeit zum Manövrieren besteht. 
 	
 			\subsubsection*{Steuerung}
 	
@@ -1248,7 +1248,7 @@ Im HTML-Code wird die Status-Box als HTML \texttt{<span>}-Tag definiert. Für da
 			
 			\subsubsection*{arduinoWebSockets}
 			
-	Die WebSockets Bibliothek ermöglicht eine Kommunikation über das WebSocket Protokoll für Arduino-Boards, ESP8266 und ESP32. Die Bibliothek wird für die Echtzeit-Kommunikation zwischen dem Webserver und den ESP32 benötigt. Außerdem werden die Bilder der ESp32-CAM über einen WebSocket an den Webserver gesendet. Die Bibliothek ist eine großartige Ergänzung zur ESPAsyncWebServer Bibliothek.\footnote{https://github.com/Links2004/arduinoWebSockets}
+	Die WebSockets Bibliothek ermöglicht eine Kommunikation über das WebSocket Protokoll für Arduino-Boards, ESP8266 und ESP32. Die Bibliothek wird für die Echtzeit-Kommunikation zwischen dem Webserver und den ESP32 benötigt. Außerdem werden die Bilder der ESP32-CAM über einen WebSocket an den Webserver gesendet. Die Bibliothek ist eine großartige Ergänzung zur ESPAsyncWebServer Bibliothek.\footnote{https://github.com/Links2004/arduinoWebSockets}
 			
 			\subsubsection*{ESp32Servo}
 			
