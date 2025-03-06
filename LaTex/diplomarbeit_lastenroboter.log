@@ -1,3 +1,4 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.3.6)  6 MAR 2025 08:50
 This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.2.24)  6 MAR 2025 09:11
 entering extended mode
  restricted \write18 enabled.
@@ -6,9 +7,9 @@ entering extended mode
 (diplomarbeit_lastenroboter.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
 Document Class: article 2023/05/17 v1.4n Standard LaTeX document class
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/latex/base\size12.clo
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/latex/base\size12.clo
 File: size12.clo 2023/05/17 v1.4n Standard LaTeX file (size option)
 )
 \c@part=\count187
@@ -23,39 +24,36 @@ File: size12.clo 2023/05/17 v1.4n Standard LaTeX file (size option)
 \belowcaptionskip=\skip49
 \bibindent=\dimen140
 )
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
 Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
 )
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
 Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
 
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
 Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
 \KV@toks@=\toks17
 )
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
 Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
 
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
 Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
 )
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.
-cfg
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.c
+fg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 107.
 
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.de
-f
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
 File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen141
 \Gin@req@width=\dimen142
-)
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption.sty
+) (C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption.sty
 Package: caption 2023/08/05 v3.6o Customizing captions (AR)
-
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption3.sty
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption3.sty
 Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
 \caption@tempdima=\dimen143
 \captionmargin=\dimen144
@@ -69,8 +67,8 @@ Package caption Info: Standard document class detected.
 )
 \c@caption@flags=\count195
 \c@continuedfloat=\count196
-) (C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/latex/fancyhdr\fancyhdr.st
-y
+)
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/latex/fancyhdr\fancyhdr.sty
 Package: fancyhdr 2025/02/07 v5.2 Extensive control of page headers and footers
 
 \f@nch@headwidth=\skip50
@@ -88,9 +86,11 @@ Package: fancyhdr 2025/02/07 v5.2 Extensive control of page headers and footers
 \f@nch@widthC=\skip62
 \f@nch@widthR=\skip63
 \@temptokenb=\toks18
-) (C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amssymb.sty
+)
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfonts.sty
+
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \@emptytoks=\toks19
 \symAMSa=\mathgroup4
@@ -99,45 +99,43 @@ LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ))
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/latex/pgf/frontendlayer\tikz
-.sty
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgf.sty
-
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfrcs.s
-ty
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfuti
-l-common.tex
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/latex/pgf/frontendlayer\tikz.
+sty
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgf.sty
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfrcs.st
+y
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil
+-common.tex
 \pgfutil@everybye=\toks20
 \pgfutil@tempdima=\dimen151
 \pgfutil@tempdimb=\dimen152
 )
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfuti
-l-latex.def
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil
+-latex.def
 \pgfutil@abb=\box51
 )
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfrcs
-.code.tex
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/generic/pgf\pgf.revision.tex
-)
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfrcs.
+code.tex
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/generic/pgf\pgf.revision.tex)
 Package: pgfrcs 2023-01-15 v3.1.10 (3.1.10)
 ))
 Package: pgf 2023-01-15 v3.1.10 (3.1.10)
 
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgfcore
-.sty
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/latex/pgf/systemlayer\pgfsys
-.sty
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfs
-ys.code.tex
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgfcore.
+sty
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/latex/pgf/systemlayer\pgfsys.
+sty
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
+s.code.tex
 Package: pgfsys 2023-01-15 v3.1.10 (3.1.10)
 
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkey
-s.code.tex
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys
+.code.tex
 \pgfkeys@pathtoks=\toks21
 \pgfkeys@temptoks=\toks22
 
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkey
-slibraryfiltered.code.tex
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys
+libraryfiltered.code.tex
 \pgfkeys@tmptoks=\toks23
 ))
 \pgf@x=\dimen153
@@ -161,40 +159,38 @@ slibraryfiltered.code.tex
 \t@pgf@tokc=\toks26
 \pgf@sys@id@count=\count267
 
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgf.
-cfg
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgf.c
+fg
 File: pgf.cfg 2023-01-15 v3.1.10 (3.1.10)
 )
 Driver file for pgf: pgfsys-pdftex.def
 
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfs
-ys-pdftex.def
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
+s-pdftex.def
 File: pgfsys-pdftex.def 2023-01-15 v3.1.10 (3.1.10)
 
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfs
-ys-common-pdf.def
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
+s-common-pdf.def
 File: pgfsys-common-pdf.def 2023-01-15 v3.1.10 (3.1.10)
 )))
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfs
-yssoftpath.code.tex
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
+ssoftpath.code.tex
 File: pgfsyssoftpath.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgfsyssoftpath@smallbuffer@items=\count268
 \pgfsyssoftpath@bigbuffer@items=\count269
 )
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfs
-ysprotocol.code.tex
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
+sprotocol.code.tex
 File: pgfsysprotocol.code.tex 2023-01-15 v3.1.10 (3.1.10)
 ))
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
 Package: xcolor 2023/11/15 v3.01 LaTeX color extensions (UK)
 
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: pdftex.def on input line 274.
-
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor.ltx
-)
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor.ltx)
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1350.
 Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1354.
 Package xcolor Info: Model `RGB' extended on input line 1366.
@@ -205,16 +201,16 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1371.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1372.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1373.
 )
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfco
-re.code.tex
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+e.code.tex
 Package: pgfcore 2023-01-15 v3.1.10 (3.1.10)
 
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.cod
-e.tex
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathutil
-.code.tex)
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathpars
-er.code.tex
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.code
+.tex
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathutil.
+code.tex)
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathparse
+r.code.tex
 \pgfmath@dimen=\dimen163
 \pgfmath@count=\count270
 \pgfmath@box=\box52
@@ -222,34 +218,34 @@ er.code.tex
 \pgfmath@stack@operand=\toks28
 \pgfmath@stack@operation=\toks29
 )
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunc
-tions.code.tex)
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunc
-tions.basic.code.tex)
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunc
-tions.trigonometric.code.tex)
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunc
-tions.random.code.tex)
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunc
-tions.comparison.code.tex)
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunc
-tions.base.code.tex)
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunc
-tions.round.code.tex)
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunc
-tions.misc.code.tex)
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunc
-tions.integerarithmetics.code.tex)
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathcalc
-.code.tex)
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfloa
-t.code.tex
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.code.tex)
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.basic.code.tex)
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.trigonometric.code.tex)
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.random.code.tex)
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.comparison.code.tex)
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.base.code.tex)
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.round.code.tex)
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.misc.code.tex)
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.integerarithmetics.code.tex)
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathcalc.
+code.tex)
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfloat
+.code.tex
 \c@pgfmathroundto@lastzeros=\count271
 ))
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfint.code
-.tex)
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfco
-repoints.code.tex
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfint.code.
+tex)
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+epoints.code.tex
 File: pgfcorepoints.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgf@picminx=\dimen164
 \pgf@picmaxx=\dimen165
@@ -266,129 +262,129 @@ File: pgfcorepoints.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgf@zx=\dimen176
 \pgf@zy=\dimen177
 )
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfco
-repathconstruct.code.tex
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+epathconstruct.code.tex
 File: pgfcorepathconstruct.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgf@path@lastx=\dimen178
 \pgf@path@lasty=\dimen179
 )
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfco
-repathusage.code.tex
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+epathusage.code.tex
 File: pgfcorepathusage.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgf@shorten@end@additional=\dimen180
 \pgf@shorten@start@additional=\dimen181
 )
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfco
-rescopes.code.tex
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+escopes.code.tex
 File: pgfcorescopes.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgfpic=\box53
 \pgf@hbox=\box54
 \pgf@layerbox@main=\box55
 \pgf@picture@serial@count=\count272
 )
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfco
-regraphicstate.code.tex
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+egraphicstate.code.tex
 File: pgfcoregraphicstate.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgflinewidth=\dimen182
 )
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfco
-retransformations.code.tex
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+etransformations.code.tex
 File: pgfcoretransformations.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgf@pt@x=\dimen183
 \pgf@pt@y=\dimen184
 \pgf@pt@temp=\dimen185
 )
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfco
-requick.code.tex
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+equick.code.tex
 File: pgfcorequick.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfco
-reobjects.code.tex
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+eobjects.code.tex
 File: pgfcoreobjects.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfco
-repathprocessing.code.tex
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+epathprocessing.code.tex
 File: pgfcorepathprocessing.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfco
-rearrows.code.tex
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+earrows.code.tex
 File: pgfcorearrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgfarrowsep=\dimen186
 )
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfco
-reshade.code.tex
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+eshade.code.tex
 File: pgfcoreshade.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgf@max=\dimen187
 \pgf@sys@shading@range@num=\count273
 \pgf@shadingcount=\count274
 )
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfco
-reimage.code.tex
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+eimage.code.tex
 File: pgfcoreimage.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfco
-reexternal.code.tex
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+eexternal.code.tex
 File: pgfcoreexternal.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgfexternal@startupbox=\box56
 )
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfco
-relayers.code.tex
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+elayers.code.tex
 File: pgfcorelayers.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfco
-retransparency.code.tex
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+etransparency.code.tex
 File: pgfcoretransparency.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfco
-repatterns.code.tex
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+epatterns.code.tex
 File: pgfcorepatterns.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfco
-rerdf.code.tex
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+erdf.code.tex
 File: pgfcorerdf.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )))
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodul
-eshapes.code.tex
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodule
+shapes.code.tex
 File: pgfmoduleshapes.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgfnodeparttextbox=\box57
 )
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodul
-eplot.code.tex
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodule
+plot.code.tex
 File: pgfmoduleplot.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfc
-omp-version-0-65.sty
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfco
+mp-version-0-65.sty
 Package: pgfcomp-version-0-65 2023-01-15 v3.1.10 (3.1.10)
 \pgf@nodesepstart=\dimen188
 \pgf@nodesepend=\dimen189
 )
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfc
-omp-version-1-18.sty
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfco
+mp-version-1-18.sty
 Package: pgfcomp-version-1-18 2023-01-15 v3.1.10 (3.1.10)
 ))
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgffor.s
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgffor.st
+y
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfkeys.s
 ty
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfkeys.
-sty
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkey
-s.code.tex))
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/latex/pgf/math\pgfmath.sty
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.cod
-e.tex))
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgffor
-.code.tex
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys
+.code.tex))
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/latex/pgf/math\pgfmath.sty
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.code
+.tex))
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgffor.
+code.tex
 Package: pgffor 2023-01-15 v3.1.10 (3.1.10)
 \pgffor@iter=\dimen190
 \pgffor@skip=\dimen191
 \pgffor@stack=\toks30
 \pgffor@toks=\toks31
 ))
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/ti
-kz\tikz.code.tex
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
+z\tikz.code.tex
 Package: tikz 2023-01-15 v3.1.10 (3.1.10)
 
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflib
-raryplothandlers.code.tex
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibr
+aryplothandlers.code.tex
 File: pgflibraryplothandlers.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgf@plot@mark@count=\count275
 \pgfplotmarksize=\dimen192
@@ -410,8 +406,8 @@ File: pgflibraryplothandlers.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \tikznumberofcurrentchild=\count278
 \tikz@fig@count=\count279
 
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodul
-ematrix.code.tex
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodule
+matrix.code.tex
 File: pgfmodulematrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgfmatrixcurrentrow=\count280
 \pgfmatrixcurrentcolumn=\count281
@@ -419,19 +415,19 @@ File: pgfmodulematrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )
 \tikz@expandcount=\count283
 
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/ti
-kz/libraries\tikzlibrarytopaths.code.tex
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
+z/libraries\tikzlibrarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )))
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/latex/pgfplots\pgfplots.sty
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplots.re
-vision.tex)
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/latex/pgfplots\pgfplots.sty
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplots.rev
+ision.tex)
 Package: pgfplots 2021/05/15 v1.18.1 Data Visualization (1.18.1)
 
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplots.co
-de.tex
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplotscor
-e.code.tex
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplots.cod
+e.tex
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplotscore
+.code.tex
 \t@pgfplots@toka=\toks32
 \t@pgfplots@tokb=\toks33
 \t@pgfplots@tokc=\toks34
@@ -439,80 +435,80 @@ e.code.tex
 \c@pgfplots@coordindex=\count284
 \c@pgfplots@scanlineindex=\count285
 
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/sys\pgfplot
-ssysgeneric.code.tex))
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/libs\pgfplo
-tslibrary.code.tex)
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/oldpgfcompa
-tib\pgfplotsoldpgfsupp_loader.code.tex
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflib
-raryfpu.code.tex)
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/sys\pgfplots
+sysgeneric.code.tex))
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/libs\pgfplot
+slibrary.code.tex)
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/oldpgfcompat
+ib\pgfplotsoldpgfsupp_loader.code.tex
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibr
+aryfpu.code.tex)
 Package pgfplots: loading complementary utilities for your pgf version...
 \t@pgf@toka=\toks35
 \t@pgf@tokb=\toks36
 \t@pgf@tokc=\toks37
 
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/oldpgfcompa
-tib\pgfplotsoldpgfsupp_pgfutil-common-lists.tex))
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/util\pgfplo
-tsutil.code.tex
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/liststructu
-re\pgfplotsliststructure.code.tex)
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/liststructu
-re\pgfplotsliststructureext.code.tex)
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/liststructu
-re\pgfplotsarray.code.tex
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/oldpgfcompat
+ib\pgfplotsoldpgfsupp_pgfutil-common-lists.tex))
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/util\pgfplot
+sutil.code.tex
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/liststructur
+e\pgfplotsliststructure.code.tex)
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/liststructur
+e\pgfplotsliststructureext.code.tex)
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/liststructur
+e\pgfplotsarray.code.tex
 \c@pgfplotsarray@tmp=\count286
 )
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/liststructu
-re\pgfplotsmatrix.code.tex)
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/numtable\pg
-fplotstableshared.code.tex
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/liststructur
+e\pgfplotsmatrix.code.tex)
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/numtable\pgf
+plotstableshared.code.tex
 \c@pgfplotstable@counta=\count287
 \t@pgfplotstable@a=\toks38
 )
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/liststructu
-re\pgfplotsdeque.code.tex)
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/util\pgfplo
-tsbinary.code.tex
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/util\pgfplo
-tsbinary.data.code.tex))
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/util\pgfplo
-tsutil.verb.code.tex)
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/libs\pgflib
-rarypgfplots.surfshading.code.tex
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/liststructur
+e\pgfplotsdeque.code.tex)
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/util\pgfplot
+sbinary.code.tex
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/util\pgfplot
+sbinary.data.code.tex))
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/util\pgfplot
+sutil.verb.code.tex)
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/libs\pgflibr
+arypgfplots.surfshading.code.tex
 \c@pgfplotslibrarysurf@no=\count288
 
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/sys\pgflibr
-arypgfplots.surfshading.pgfsys-pdftex.def)))
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/util\pgfplo
-tscolormap.code.tex
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/util\pgfplo
-tscolor.code.tex))
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplotssta
-ckedplots.code.tex)
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplotsplo
-thandlers.code.tex
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplotsmes
-hplothandler.code.tex
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplotsmes
-hplotimage.code.tex)))
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplots.sc
-aling.code.tex)
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplotscoo
-rdprocessing.code.tex)
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplots.er
-rorbars.code.tex)
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplots.ma
-rkers.code.tex)
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplotstic
-ks.code.tex)
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplots.pa
-ths.code.tex)
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/ti
-kz/libraries\tikzlibrarydecorations.code.tex
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodul
-edecorations.code.tex
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/sys\pgflibra
+rypgfplots.surfshading.pgfsys-pdftex.def)))
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/util\pgfplot
+scolormap.code.tex
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/util\pgfplot
+scolor.code.tex))
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplotsstac
+kedplots.code.tex)
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplotsplot
+handlers.code.tex
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplotsmesh
+plothandler.code.tex
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplotsmesh
+plotimage.code.tex)))
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplots.sca
+ling.code.tex)
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplotscoor
+dprocessing.code.tex)
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplots.err
+orbars.code.tex)
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplots.mar
+kers.code.tex)
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplotstick
+s.code.tex)
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplots.pat
+hs.code.tex)
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
+z/libraries\tikzlibrarydecorations.code.tex
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodule
+decorations.code.tex
 \pgfdecoratedcompleteddistance=\dimen258
 \pgfdecoratedremainingdistance=\dimen259
 \pgfdecoratedinputsegmentcompleteddistance=\dimen260
@@ -524,16 +520,16 @@ edecorations.code.tex
 )
 \tikz@lib@dec@box=\box62
 )
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/ti
-kz/libraries\tikzlibrarydecorations.pathmorphing.code.tex
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/decora
-tions\pgflibrarydecorations.pathmorphing.code.tex))
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/ti
-kz/libraries\tikzlibrarydecorations.pathreplacing.code.tex
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/decora
-tions\pgflibrarydecorations.pathreplacing.code.tex))
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/libs\tikzli
-brarypgfplots.contourlua.code.tex)
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
+z/libraries\tikzlibrarydecorations.pathmorphing.code.tex
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/decorat
+ions\pgflibrarydecorations.pathmorphing.code.tex))
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
+z/libraries\tikzlibrarydecorations.pathreplacing.code.tex
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/decorat
+ions\pgflibrarydecorations.pathreplacing.code.tex))
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/libs\tikzlib
+rarypgfplots.contourlua.code.tex)
 \pgfplots@numplots=\count290
 \pgfplots@xmin@reg=\dimen265
 \pgfplots@xmax@reg=\dimen266
@@ -542,123 +538,122 @@ brarypgfplots.contourlua.code.tex)
 \pgfplots@zmin@reg=\dimen269
 \pgfplots@zmax@reg=\dimen270
 )
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/ti
-kz/libraries\tikzlibraryplotmarks.code.tex
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
+z/libraries\tikzlibraryplotmarks.code.tex
 File: tikzlibraryplotmarks.code.tex 2023-01-15 v3.1.10 (3.1.10)
 
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflib
-raryplotmarks.code.tex
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibr
+aryplotmarks.code.tex
 File: pgflibraryplotmarks.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )))
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
 Package: nameref 2023-11-26 v2.56 Cross-referencing by name of section
 
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/latex/refcount\refcount.sty
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/latex/refcount\refcount.sty
 Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
 Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
 )
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\infwarerr.
-sty
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\infwarerr.s
+ty
 Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
 ))
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/generic/gettitlestring\getti
-tlestring.sty
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/generic/gettitlestring\gettit
+lestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoptions.st
-y
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoptions.sty
 Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
 
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/latex/kvsetkeys\kvsetkeys.st
-y
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/latex/kvsetkeys\kvsetkeys.sty
 Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
 )))
 \c@section@level=\count291
-)
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.sty
+) (C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.sty
 Package: babel 2024/01/07 v24.1 The Babel package
 \babel@savecnt=\count292
 \U@D=\dimen271
 \l@unhyphenated=\language79
 
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/generic/babel\txtbabel.def)
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/generic/babel\txtbabel.def)
 \bbl@readstream=\read3
 \bbl@dirlevel=\count293
 
 *************************************
 * Local config file bblopts.cfg used
 *
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/latex/arabi\bblopts.cfg
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/latex/arabi\bblopts.cfg
 File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
  babel
 )
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/latex/babel-german\ngerman.l
-df
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/latex/babel-german\ngerman.ld
+f
 Language: ngerman 2024/12/10 v2.15 German support for babel (post-1996 orthogra
 phy)
 
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/latex/babel-german\ngermanb.
-ldf
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/latex/babel-german\ngermanb.l
+df
 Language: ngermanb 2024/12/10 v2.15 German support for babel (post-1996 orthogr
 aphy)
 Package babel Info: Making " an active character on input line 122.
 )))
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/generic/babel/locale/de\babe
-l-ngerman.tex
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/generic/babel/locale/de\babel
+-ngerman.tex
 Package babel Info: Importing font and identification data for ngerman
 (babel)             from babel-de.ini. Reported on input line 11.
 )
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref.sty
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref.sty
 Package: hyperref 2023-11-26 v7.01g Hypertext links for LaTeX
 
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
 Package: iftex 2022/02/03 v1.0f TeX engine tests
 )
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/generic/kvdefinekeys\kvdefin
-ekeys.sty
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/generic/kvdefinekeys\kvdefine
+keys.sty
 Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
 )
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/generic/pdfescape\pdfescape.
-sty
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/generic/pdfescape\pdfescape.s
+ty
 Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
 
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/generic/pdftexcmds\pdftexcmd
-s.sty
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/generic/pdftexcmds\pdftexcmds
+.sty
 Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
 )
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
 ))
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/latex/hycolor\hycolor.sty
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/latex/hycolor\hycolor.sty
 Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
 )
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/latex/letltxmacro\letltxmacr
-o.sty
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/latex/letltxmacro\letltxmacro
+.sty
 Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
 )
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/latex/auxhook\auxhook.sty
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/latex/auxhook\auxhook.sty
 Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
 )
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.sty
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.sty
 Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count294
 )
 \@linkdim=\dimen272
 \Hy@linkcounter=\count295
 \Hy@pagecounter=\count296
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\pd1enc.def
+
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\pd1enc.def
 File: pd1enc.def 2023-11-26 v7.01g Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/generic/intcalc\intcalc.sty
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/generic/intcalc\intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
 \Hy@SavedSpaceFactor=\count297
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\puenc.def
+
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\puenc.def
 File: puenc.def 2023-11-26 v7.01g Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
 ... no UTF-8 mapping file for font encoding PU
@@ -672,18 +667,18 @@ Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4448.
 \c@Hy@tempcnt=\count298
 
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
 \Urlmuskip=\muskip16
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 4786.
 \XeTeXLinkMargin=\dimen273
 
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/generic/bitset\bitset.sty
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/generic/bitset\bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/generic/bigintcalc\bigintcal
-c.sty
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/generic/bigintcalc\bigintcalc
+.sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
@@ -698,7 +693,7 @@ Package hyperref Info: Link coloring OFF on input line 6085.
 Package hyperref Info: Link coloring with OCG OFF on input line 6090.
 Package hyperref Info: PDF/A mode OFF on input line 6095.
 
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/latex/base\atbegshi-ltx.sty
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/latex/base\atbegshi-ltx.sty
 Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
 package with kernel methods
 )
@@ -707,10 +702,10 @@ package with kernel methods
 \c@Hfootnote=\count302
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
- (C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hpdftex.def
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hpdftex.def
 File: hpdftex.def 2023-11-26 v7.01g Hyperref driver for pdfTeX
 
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/latex/base\atveryend-ltx.sty
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/latex/base\atveryend-ltx.sty
 Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend pac
 kage
 with kernel methods
@@ -718,12 +713,12 @@ with kernel methods
 \Fld@listcount=\count303
 \c@bookmark@seq@number=\count304
 
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/latex/rerunfilecheck\rerunfi
-lecheck.sty
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/latex/rerunfilecheck\rerunfil
+echeck.sty
 Package: rerunfilecheck 2022-07-10 v1.10 Rerun checks for auxiliary files (HO)
 
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/generic/uniquecounter\unique
-counter.sty
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/generic/uniquecounter\uniquec
+ounter.sty
 Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 )
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
@@ -731,7 +726,7 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip64
 )
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/latex/titlesec\titlesec.sty
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/latex/titlesec\titlesec.sty
 Package: titlesec 2025/01/04 v2.17 Sectioning titles
 \ttl@box=\box63
 \beforetitleunit=\skip65
@@ -742,10 +737,11 @@ Package: titlesec 2025/01/04 v2.17 Sectioning titles
 \titlewidth=\dimen278
 \titlewidthlast=\dimen279
 \titlewidthfirst=\dimen280
-) (C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.st
-y
+)
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.sty
+
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 )
 \Gm@cnth=\count305
@@ -761,11 +757,11 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 \Gm@layoutvoffset=\dimen288
 \Gm@dimlist=\toks40
 
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg)
-)
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/latex/setspace\setspace.sty
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg))
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/latex/setspace\setspace.sty
 Package: setspace 2022/12/04 v6.7b set line spacing
-) (C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\mathptmx.sty
+)
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\mathptmx.sty
 Package: mathptmx 2020/03/25 PSNFSS-v9.3 Times w/ Math, improved (SPQR, WaS) 
 LaTeX Font Info:    Redeclaring symbol font `operators' on input line 28.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
@@ -801,7 +797,7 @@ LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
 (Font)                  OT1/cmr/bx/it --> OT1/ptm/m/it on input line 35.
 LaTeX Info: Redefining \hbar on input line 50.
 )
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/latex/tools\array.sty
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/latex/tools\array.sty
 Package: array 2023/10/16 v2.5g Tabular extension package (FMi)
 \col@sep=\dimen289
 \ar@mcellbox=\box64
@@ -811,7 +807,7 @@ Package: array 2023/10/16 v2.5g Tabular extension package (FMi)
 \backup@length=\skip68
 \ar@cellbox=\box65
 )
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/latex/booktabs\booktabs.sty
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/latex/booktabs\booktabs.sty
 Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \heavyrulewidth=\dimen291
 \lightrulewidth=\dimen292
@@ -831,29 +827,28 @@ Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \@lastruleclass=\count311
 \@thisrulewidth=\dimen303
 )
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/latex/adjustbox\adjustbox.st
-y
-Package: adjustbox 2022/10/17 v1.3a Adjusting TeX boxes (trim, clip, ...)
- (C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/latex/xkeyval\xkeyval.sty
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/latex/adjustbox\adjustbox.sty
+Package: adjustbox 2025/02/26 v1.3c Adjusting TeX boxes (trim, clip, ...)
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/latex/xkeyval\xkeyval.sty
 Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
 
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkeyval.tex
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkvutils.tex
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkeyval.tex
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkvutils.tex
 \XKV@toks=\toks42
 \XKV@tempa@toks=\toks43
 )
 \XKV@depth=\count312
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/latex/adjustbox\adjcalc.sty
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/latex/adjustbox\adjcalc.sty
 Package: adjcalc 2012/05/16 v1.1 Provides advanced setlength with multiple back
 -ends (calc, etex, pgfmath)
 )
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/latex/adjustbox\trimclip.sty
-Package: trimclip 2020/08/19 v1.2 Trim and clip general TeX material
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/latex/adjustbox\trimclip.sty
+Package: trimclip 2025/02/21 v1.2a Trim and clip general TeX material
 
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/latex/collectbox\collectbox.
-sty
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/latex/collectbox\collectbox.s
+ty
 Package: collectbox 2022/10/17 v0.4c Collect macro arguments as boxes
 \collectedbox=\box66
 )
@@ -863,9 +858,8 @@ Package: collectbox 2022/10/17 v0.4c Collect macro arguments as boxes
 \tc@ury=\dimen307
 Package trimclip Info: Using driver 'tc-pdftex.def'.
 
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/latex/adjustbox\tc-pdftex.de
-f
-File: tc-pdftex.def 2019/01/04 v2.2 Clipping driver for pdftex
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/latex/adjustbox\tc-pdftex.def
+File: tc-pdftex.def 2025/02/26 v2.3 Clipping driver for pdftex
 ))
 \adjbox@Width=\dimen308
 \adjbox@Height=\dimen309
@@ -876,18 +870,16 @@ File: tc-pdftex.def 2019/01/04 v2.2 Clipping driver for pdftex
 \adjbox@pdepth=\dimen314
 \adjbox@ptotalheight=\dimen315
 
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/latex/ifoddpage\ifoddpage.st
-y
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/latex/ifoddpage\ifoddpage.sty
 Package: ifoddpage 2022/10/18 v1.2 Conditionals for odd/even page detection
 \c@checkoddpage=\count313
-)
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/latex/varwidth\varwidth.sty
+) (C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/latex/varwidth\varwidth.sty
 Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
 \@vwid@box=\box67
 \sift@deathcycles=\count314
 \@vwid@loff=\dimen316
 \@vwid@roff=\dimen317
-)) (C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/latex/tools\longtable.sty
+)) (C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/latex/tools\longtable.sty
 Package: longtable 2023-11-01 v4.19 Multi-page Table package (DPC)
 \LTleft=\skip69
 \LTright=\skip70
@@ -908,11 +900,11 @@ Package: longtable 2023-11-01 v4.19 Multi-page Table package (DPC)
 )
 LaTeX Font Info:    Trying to load font information for T1+ptm on input line 27
 .
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\t1ptm.fd
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\t1ptm.fd
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 )
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pd
-ftex.def
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
+tex.def
 File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count320
 \l__pdf_internal_box=\box73
@@ -966,8 +958,8 @@ LaTeX Font Info:    ... okay on input line 27.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 27.
 LaTeX Font Info:    ... okay on input line 27.
 
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.m
-kii
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
+ii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count321
 \scratchdimen=\dimen319
@@ -981,24 +973,25 @@ kii
 \makeMPintoPDFobject=\count326
 \everyMPtoPDFconversion=\toks46
 )
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-
-base.sty
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-b
+ase.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 85.
 
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.
-cfg
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.c
+fg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: longtable package is loaded.
 
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/latex/caption\ltcaption.sty
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/latex/caption\ltcaption.sty
 Package: ltcaption 2021/01/08 v1.4c longtable captions (AR)
 )
 Package caption Info: End \AtBeginDocument code.
+
 
 Package pgfplots Warning: running in backwards compatibility mode (unsuitable t
 ick labels; missing features). Consider writing \pgfplotsset{compat=1.18} into 
@@ -1048,31 +1041,31 @@ Package hyperref Info: Link coloring OFF on input line 27.
 \big@size=\dimen321
 LaTeX Font Info:    Trying to load font information for OT1+ztmcm on input line
  29.
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1ztmcm.fd
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1ztmcm.fd
 File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
 )
 LaTeX Font Info:    Trying to load font information for OML+ztmcm on input line
  29.
 
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omlztmcm.fd
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omlztmcm.fd
 File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
 )
 LaTeX Font Info:    Trying to load font information for OMS+ztmcm on input line
  29.
 
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omsztmcm.fd
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omsztmcm.fd
 File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
 )
 LaTeX Font Info:    Trying to load font information for OMX+ztmcm on input line
  29.
 
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omxztmcm.fd
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omxztmcm.fd
 File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
 )
 LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 2
 9.
 
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1ptm.fd
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
@@ -1098,9 +1091,9 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 33.
 [1
 
-{C:/Users/Lenovo/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/Len
-ovo/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc} <./Pictures/bulm
-e_logo.png>] [2] [3] (diplomarbeit_lastenroboter.toc [4] [5])
+{C:/Users/danie/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/dani
+e/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc} <./Pictures/bulme_
+logo.png>] [2] [3] (diplomarbeit_lastenroboter.toc [4] [5])
 \tf@toc=\write5
 \openout5 = `diplomarbeit_lastenroboter.toc'.
 
@@ -1123,7 +1116,7 @@ See the caption package documentation for explanation.
 
 LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 1
 12.
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1ptm.fd
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 )
 File: Pictures/placeholder.png Graphic file (type png)
@@ -1138,12 +1131,12 @@ See the caption package documentation for explanation.
 
 
 Underfull \hbox (badness 2035) in paragraph at lines 131--132
-[]\T1/ptm/m/n/12 Benutzeroberfläche (Web-Oberfläche) für Steue-
+[]\T1/ptm/m/n/12 Benutzeroberflï¿½che (Web-Oberflï¿½che) fï¿½r Steue-
  []
 
 
 Underfull \hbox (badness 5446) in paragraph at lines 132--133
-[]\T1/ptm/m/n/12 Übertragung der Steue-rung/Befehle von Web-
+[]\T1/ptm/m/n/12 ï¿½bertragung der Steue-rung/Befehle von Web-
  []
 
 File: Pictures/placeholder.png Graphic file (type png)
@@ -1156,17 +1149,17 @@ Package caption Warning: The option `hypcap=true' will be ignored for this
 See the caption package documentation for explanation.
 
 [9 <./Pictures/placeholder.png>] [10]
-Overfull \hbox (10.17952pt too wide) in alignment at lines 182--186
+Overfull \hbox (10.17952pt too wide) in alignment at lines 191--195
  [] [] [] [] 
  []
 
 
-Overfull \hbox (10.17952pt too wide) in alignment at lines 186--190
+Overfull \hbox (10.17952pt too wide) in alignment at lines 195--199
  [] [] [] [] 
  []
 
 
-Overfull \hbox (10.17952pt too wide) in alignment at lines 190--208
+Overfull \hbox (10.17952pt too wide) in alignment at lines 199--217
  [] [] [] [] 
  []
 
@@ -1174,69 +1167,69 @@ Overfull \hbox (10.17952pt too wide) in alignment at lines 190--208
 <Pictures/Motoren.png, id=428, 368.87813pt x 302.63063pt>
 File: Pictures/Motoren.png Graphic file (type png)
 <use Pictures/Motoren.png>
-Package pdftex.def Info: Pictures/Motoren.png  used on input line 221.
+Package pdftex.def Info: Pictures/Motoren.png  used on input line 230.
 (pdftex.def)             Requested size: 184.4386pt x 151.31494pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 222.
+(caption)                particular \caption on input line 231.
 See the caption package documentation for explanation.
 
 <Pictures/BLDC_Motor.png, id=430, 368.87813pt x 310.91156pt>
 File: Pictures/BLDC_Motor.png Graphic file (type png)
 <use Pictures/BLDC_Motor.png>
-Package pdftex.def Info: Pictures/BLDC_Motor.png  used on input line 237.
+Package pdftex.def Info: Pictures/BLDC_Motor.png  used on input line 246.
 (pdftex.def)             Requested size: 110.66428pt x 93.27417pt.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 238.
+(caption)                particular \caption on input line 247.
 See the caption package documentation for explanation.
 
 [12 <./Pictures/Motoren.png>]
 <Pictures/Phasen_steuerung.png, id=437, 641.39626pt x 352.31625pt>
 File: Pictures/Phasen_steuerung.png Graphic file (type png)
 <use Pictures/Phasen_steuerung.png>
-Package pdftex.def Info: Pictures/Phasen_steuerung.png  used on input line 251.
+Package pdftex.def Info: Pictures/Phasen_steuerung.png  used on input line 260.
 
 (pdftex.def)             Requested size: 384.84071pt x 211.39137pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 252.
+(caption)                particular \caption on input line 261.
 See the caption package documentation for explanation.
 
 [13 <./Pictures/BLDC_Motor.png> <./Pictures/Phasen_steuerung.png>]
 <Pictures/ZS-X11H.jpg, id=447, 2605.79155pt x 1667.29944pt>
 File: Pictures/ZS-X11H.jpg Graphic file (type jpg)
 <use Pictures/ZS-X11H.jpg>
-Package pdftex.def Info: Pictures/ZS-X11H.jpg  used on input line 283.
+Package pdftex.def Info: Pictures/ZS-X11H.jpg  used on input line 292.
 (pdftex.def)             Requested size: 390.85187pt x 250.08412pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 284.
+(caption)                particular \caption on input line 293.
 See the caption package documentation for explanation.
 
 [14 <./Pictures/ZS-X11H.jpg>]
 <Pictures/Motorphasen.jpg, id=453, 207.77625pt x 70.76437pt>
 File: Pictures/Motorphasen.jpg Graphic file (type jpg)
 <use Pictures/Motorphasen.jpg>
-Package pdftex.def Info: Pictures/Motorphasen.jpg  used on input line 300.
+Package pdftex.def Info: Pictures/Motorphasen.jpg  used on input line 309.
 (pdftex.def)             Requested size: 207.77573pt x 70.76419pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 301.
+(caption)                particular \caption on input line 310.
 See the caption package documentation for explanation.
 
 <Pictures/PWM-Treiber.jpg, id=454, 173.14688pt x 120.45pt>
 File: Pictures/PWM-Treiber.jpg Graphic file (type jpg)
 <use Pictures/PWM-Treiber.jpg>
-Package pdftex.def Info: Pictures/PWM-Treiber.jpg  used on input line 319.
+Package pdftex.def Info: Pictures/PWM-Treiber.jpg  used on input line 328.
 (pdftex.def)             Requested size: 173.14645pt x 120.44969pt.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 320.
+(caption)                particular \caption on input line 329.
 See the caption package documentation for explanation.
 
 [15 <./Pictures/Motorphasen.jpg> <./Pictures/PWM-Treiber.jpg>]
@@ -1244,26 +1237,26 @@ See the caption package documentation for explanation.
 File: Pictures/Bremse-Richtungswechsel.jpg Graphic file (type jpg)
 <use Pictures/Bremse-Richtungswechsel.jpg>
 Package pdftex.def Info: Pictures/Bremse-Richtungswechsel.jpg  used on input li
-ne 337.
+ne 346.
 (pdftex.def)             Requested size: 268.7534pt x 54.20236pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 338.
+(caption)                particular \caption on input line 347.
 See the caption package documentation for explanation.
 
 <Pictures/Versorgung.jpg, id=462, 271.0125pt x 54.2025pt>
 File: Pictures/Versorgung.jpg Graphic file (type jpg)
 <use Pictures/Versorgung.jpg>
-Package pdftex.def Info: Pictures/Versorgung.jpg  used on input line 355.
+Package pdftex.def Info: Pictures/Versorgung.jpg  used on input line 364.
 (pdftex.def)             Requested size: 271.01183pt x 54.20236pt.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 356.
+(caption)                particular \caption on input line 365.
 See the caption package documentation for explanation.
 
 [16 <./Pictures/Bremse-Richtungswechsel.jpg> <./Pictures/Versorgung.jpg>]
-Overfull \hbox (17.62482pt too wide) in paragraph at lines 365--373
+Overfull \hbox (17.62482pt too wide) in paragraph at lines 374--382
 []$[]$ 
  []
 
@@ -1271,43 +1264,43 @@ Overfull \hbox (17.62482pt too wide) in paragraph at lines 365--373
 File: Pictures/Hall-sensoren EingÃ¤nge.jpg Graphic file (type jpg)
 <use Pictures/Hall-sensoren EingÃ¤nge.jpg>
 Package pdftex.def Info: Pictures/Hall-sensoren EingÃ¤nge.jpg  used on input li
-ne 376.
+ne 385.
 (pdftex.def)             Requested size: 61.73045pt x 106.8991pt.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 377.
+(caption)                particular \caption on input line 386.
 See the caption package documentation for explanation.
 
 
-Overfull \hbox (17.62482pt too wide) in paragraph at lines 374--382
+Overfull \hbox (17.62482pt too wide) in paragraph at lines 383--391
 []$[]$ 
  []
 
 [17 <./Pictures/Hall-sensoren EingÃ¤nge.jpg>]
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 417.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 426.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 417.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 426.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 417.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 426.
 <Pictures/espasyncwebserver.png, id=476, 212.29312pt x 15.80907pt>
 File: Pictures/espasyncwebserver.png Graphic file (type png)
 <use Pictures/espasyncwebserver.png>
-Package pdftex.def Info: Pictures/espasyncwebserver.png  used on input line 420
+Package pdftex.def Info: Pictures/espasyncwebserver.png  used on input line 429
 .
 (pdftex.def)             Requested size: 212.2926pt x 15.809pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 421.
+(caption)                particular \caption on input line 430.
 See the caption package documentation for explanation.
 
 LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 4
-21.
-(C:\Users\Lenovo\AppData\Local\Programs\MiKTeX\tex/latex/base\t1cmtt.fd
+30.
+(C:\Users\danie\AppData\Local\Programs\MiKTeX\tex/latex/base\t1cmtt.fd
 File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )
-Overfull \hbox (0.27312pt too wide) in paragraph at lines 417--427
+Overfull \hbox (0.27312pt too wide) in paragraph at lines 426--436
 \T1/ptm/m/n/12 Der Webser-ver wird mit-hil-fe der Bi-blio-thek ES-PA-syn-cWebSe
 r-ver auf ei-nem ESP32-CAM
  []
@@ -1316,31 +1309,31 @@ r-ver auf ei-nem ESP32-CAM
 <Pictures/server-config.png, id=481, 270.25969pt x 130.98938pt>
 File: Pictures/server-config.png Graphic file (type png)
 <use Pictures/server-config.png>
-Package pdftex.def Info: Pictures/server-config.png  used on input line 439.
+Package pdftex.def Info: Pictures/server-config.png  used on input line 448.
 (pdftex.def)             Requested size: 270.25902pt x 130.98904pt.
 
-
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 440.
-See the caption package documentation for explanation.
-
-<Pictures/server-setup.png, id=482, 593.96906pt x 373.395pt>
-File: Pictures/server-setup.png Graphic file (type png)
-<use Pictures/server-setup.png>
-Package pdftex.def Info: Pictures/server-setup.png  used on input line 448.
-(pdftex.def)             Requested size: 415.7755pt x 261.37471pt.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 449.
 See the caption package documentation for explanation.
 
+<Pictures/server-setup.png, id=482, 593.96906pt x 373.395pt>
+File: Pictures/server-setup.png Graphic file (type png)
+<use Pictures/server-setup.png>
+Package pdftex.def Info: Pictures/server-setup.png  used on input line 457.
+(pdftex.def)             Requested size: 415.7755pt x 261.37471pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 435--454
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 458.
+See the caption package documentation for explanation.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 444--463
 
  []
 
 [19 <./Pictures/espasyncwebserver.png> <./Pictures/server-config.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 457--464
+Underfull \hbox (badness 10000) in paragraph at lines 466--473
 
  []
 
@@ -1348,16 +1341,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 457--464
 <Pictures/SPIFFS_setup.png, id=498, 453.19313pt x 449.42906pt>
 File: Pictures/SPIFFS_setup.png Graphic file (type png)
 <use Pictures/SPIFFS_setup.png>
-Package pdftex.def Info: Pictures/SPIFFS_setup.png  used on input line 467.
+Package pdftex.def Info: Pictures/SPIFFS_setup.png  used on input line 476.
 (pdftex.def)             Requested size: 317.23302pt x 314.59819pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 468.
+(caption)                particular \caption on input line 477.
 See the caption package documentation for explanation.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 476--477
+Underfull \hbox (badness 10000) in paragraph at lines 485--486
 
  []
 
@@ -1365,21 +1358,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 476--477
 <Pictures/spiffs_readfile.png, id=505, 331.99031pt x 191.9672pt>
 File: Pictures/spiffs_readfile.png Graphic file (type png)
 <use Pictures/spiffs_readfile.png>
-Package pdftex.def Info: Pictures/spiffs_readfile.png  used on input line 480.
+Package pdftex.def Info: Pictures/spiffs_readfile.png  used on input line 489.
 (pdftex.def)             Requested size: 331.98949pt x 191.96672pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 481.
+(caption)                particular \caption on input line 490.
 See the caption package documentation for explanation.
 
 
-Overfull \hbox (11.89598pt too wide) in paragraph at lines 480--481
+Overfull \hbox (11.89598pt too wide) in paragraph at lines 489--490
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 495--496
+Underfull \hbox (badness 10000) in paragraph at lines 504--505
 
  []
 
@@ -1387,11 +1380,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 495--496
 File: Pictures/kommunikation_libraries.png Graphic file (type png)
 <use Pictures/kommunikation_libraries.png>
 Package pdftex.def Info: Pictures/kommunikation_libraries.png  used on input li
-ne 498.
+ne 507.
 (pdftex.def)             Requested size: 189.70828pt x 40.65176pt.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 499.
+(caption)                particular \caption on input line 508.
 See the caption package documentation for explanation.
 
 [22 <./Pictures/spiffs_readfile.png> <./Pictures/kommunikation_libraries.png>]
@@ -1399,16 +1392,16 @@ See the caption package documentation for explanation.
 File: Pictures/kommunikation_netzwerkconfig.png Graphic file (type png)
 <use Pictures/kommunikation_netzwerkconfig.png>
 Package pdftex.def Info: Pictures/kommunikation_netzwerkconfig.png  used on inp
-ut line 519.
+ut line 528.
 (pdftex.def)             Requested size: 283.0568pt x 143.03401pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 520.
+(caption)                particular \caption on input line 529.
 See the caption package documentation for explanation.
 
 
-Overfull \hbox (5.64503pt too wide) in paragraph at lines 519--520
+Overfull \hbox (5.64503pt too wide) in paragraph at lines 528--529
 [][] 
  []
 
@@ -1416,55 +1409,55 @@ Overfull \hbox (5.64503pt too wide) in paragraph at lines 519--520
 File: Pictures/kommunikation_setup.png Graphic file (type png)
 <use Pictures/kommunikation_setup.png>
 Package pdftex.def Info: Pictures/kommunikation_setup.png  used on input line 5
-31.
+40.
 (pdftex.def)             Requested size: 251.06235pt x 257.46124pt.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 532.
+(caption)                particular \caption on input line 541.
 See the caption package documentation for explanation.
 
 
-Overfull \hbox (16.3258pt too wide) in paragraph at lines 531--532
+Overfull \hbox (16.3258pt too wide) in paragraph at lines 540--541
 [][] 
  []
 
 [23 <./Pictures/kommunikation_netzwerkconfig.png>]
-Underfull \hbox (badness 2343) in paragraph at lines 558--558
+Underfull \hbox (badness 2343) in paragraph at lines 567--567
 []|\T1/ptm/m/n/12 Ein neu-er Cli-ent ver-bin-det
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 558--559
+Underfull \hbox (badness 10000) in paragraph at lines 567--568
 []|\T1/ptm/m/n/12 Ausgabe der Client-ID & IP-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 560--561
-[]|\T1/ptm/m/n/12 Übergabe an
+Underfull \hbox (badness 10000) in paragraph at lines 569--570
+[]|\T1/ptm/m/n/12 ï¿½bergabe an
  []
 
 
-Underfull \hbox (badness 1281) in paragraph at lines 562--562
-[]|\T1/ptm/m/n/12 Binärdaten wer-den emp-fan-
+Underfull \hbox (badness 1281) in paragraph at lines 571--571
+[]|\T1/ptm/m/n/12 Binï¿½rdaten wer-den emp-fan-
  []
 
 
-Underfull \hbox (badness 2538) in paragraph at lines 562--563
+Underfull \hbox (badness 2538) in paragraph at lines 571--572
 []|\T1/ptm/m/n/12 Nachricht in der Kon-so-le (wird
  []
 
 <Pictures/websocketevents.png, id=523, 469.00218pt x 281.55188pt>
 File: Pictures/websocketevents.png Graphic file (type png)
 <use Pictures/websocketevents.png>
-Package pdftex.def Info: Pictures/websocketevents.png  used on input line 574.
+Package pdftex.def Info: Pictures/websocketevents.png  used on input line 583.
 (pdftex.def)             Requested size: 469.00104pt x 281.55118pt.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 575.
+(caption)                particular \caption on input line 584.
 See the caption package documentation for explanation.
 
 
-Overfull \hbox (42.20969pt too wide) in paragraph at lines 574--575
+Overfull \hbox (42.20969pt too wide) in paragraph at lines 583--584
 [][] 
  []
 
@@ -1472,17 +1465,17 @@ Overfull \hbox (42.20969pt too wide) in paragraph at lines 574--575
 <Pictures/example-navigate.png, id=530, 176.91093pt x 60.97781pt>
 File: Pictures/example-navigate.png Graphic file (type png)
 <use Pictures/example-navigate.png>
-Package pdftex.def Info: Pictures/example-navigate.png  used on input line 588.
+Package pdftex.def Info: Pictures/example-navigate.png  used on input line 597.
 
 (pdftex.def)             Requested size: 176.91049pt x 60.97765pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 589.
+(caption)                particular \caption on input line 598.
 See the caption package documentation for explanation.
 
 
-Overfull \hbox (6.19656pt too wide) in paragraph at lines 588--589
+Overfull \hbox (6.19656pt too wide) in paragraph at lines 597--598
 [][] 
  []
 
@@ -1490,16 +1483,16 @@ Overfull \hbox (6.19656pt too wide) in paragraph at lines 588--589
 <Pictures/example-camera.png, id=540, 162.6075pt x 54.9553pt>
 File: Pictures/example-camera.png Graphic file (type png)
 <use Pictures/example-camera.png>
-Package pdftex.def Info: Pictures/example-camera.png  used on input line 600.
+Package pdftex.def Info: Pictures/example-camera.png  used on input line 609.
 (pdftex.def)             Requested size: 162.6071pt x 54.95515pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 601.
+(caption)                particular \caption on input line 610.
 See the caption package documentation for explanation.
 
 
-Overfull \hbox (12.46703pt too wide) in paragraph at lines 609--610
+Overfull \hbox (12.46703pt too wide) in paragraph at lines 618--619
 \T1/ptm/m/n/12 ist, wird die Funk-ti-on \T1/cmtt/m/n/12 lights_on(\T1/ptm/m/n/1
 2 ) auf-ge-ru-fen, an-sons-ten wird die Funk-ti-on \T1/cmtt/m/n/12 lights_off()
 
@@ -1508,38 +1501,38 @@ Overfull \hbox (12.46703pt too wide) in paragraph at lines 609--610
 <Pictures/example-light.png, id=541, 147.55125pt x 51.19125pt>
 File: Pictures/example-light.png Graphic file (type png)
 <use Pictures/example-light.png>
-Package pdftex.def Info: Pictures/example-light.png  used on input line 612.
+Package pdftex.def Info: Pictures/example-light.png  used on input line 621.
 (pdftex.def)             Requested size: 147.55087pt x 51.19112pt.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 613.
+(caption)                particular \caption on input line 622.
 See the caption package documentation for explanation.
 
 <Pictures/handlewebsocketmessage.png, id=542, 356.83313pt x 508.90125pt>
 File: Pictures/handlewebsocketmessage.png Graphic file (type png)
 <use Pictures/handlewebsocketmessage.png>
 Package pdftex.def Info: Pictures/handlewebsocketmessage.png  used on input lin
-e 623.
+e 632.
 (pdftex.def)             Requested size: 356.83224pt x 508.90001pt.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 624.
+(caption)                particular \caption on input line 633.
 See the caption package documentation for explanation.
 
 [26 <./Pictures/example-camera.png> <./Pictures/example-light.png>]
-Overfull \hbox (2.94443pt too wide) in paragraph at lines 638--640
-\T1/ptm/m/n/12 Um die Ka-me-ra pro-gram-mie-ren zu kön-nen, muss zu-nächst das 
+Overfull \hbox (2.94443pt too wide) in paragraph at lines 647--649
+\T1/ptm/m/n/12 Um die Ka-me-ra pro-gram-mie-ren zu kï¿½n-nen, muss zu-nï¿½chst das 
 rich-ti-ge Board \T1/cmtt/m/n/12 AI Thinker
  []
 
 
-Overfull \hbox (2.49939pt too wide) in paragraph at lines 638--640
+Overfull \hbox (2.49939pt too wide) in paragraph at lines 647--649
 \T1/ptm/m/n/12 blio-thek \T1/cmtt/m/n/12 esp_camera.h \T1/ptm/m/n/12 in-klu-die
 rt wer-den. Dann muss das pas-sen-de ESP32-CAM-Modell
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 638--640
+Underfull \hbox (badness 10000) in paragraph at lines 647--649
 
  []
 
@@ -1547,23 +1540,25 @@ Underfull \hbox (badness 10000) in paragraph at lines 638--640
 <Pictures/kamera-setup1.png, id=556, 402.75468pt x 338.76563pt>
 File: Pictures/kamera-setup1.png Graphic file (type png)
 <use Pictures/kamera-setup1.png>
-Package pdftex.def Info: Pictures/kamera-setup1.png  used on input line 642.
+Package pdftex.def Info: Pictures/kamera-setup1.png  used on input line 651.
 (pdftex.def)             Requested size: 402.7537pt x 338.76479pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 643.
+(caption)                particular \caption on input line 652.
 See the caption package documentation for explanation.
 
 [28 <./Pictures/kamera-setup1.png>]
 <Pictures/kamera-setup2.png, id=563, 415.5525pt x 428.35031pt>
 File: Pictures/kamera-setup2.png Graphic file (type png)
 <use Pictures/kamera-setup2.png>
+Package pdftex.def Info: Pictures/kamera-setup2.png  used on input line 664.
 Package pdftex.def Info: Pictures/kamera-setup2.png  used on input line 656.
 (pdftex.def)             Requested size: 415.55148pt x 428.34926pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 665.
 (caption)                particular \caption on input line 657.
 See the caption package documentation for explanation.
 
@@ -1571,15 +1566,19 @@ See the caption package documentation for explanation.
 <Pictures/videoÃ¼bertragung.png, id=570, 506.6428pt x 558.58687pt>
 File: Pictures/videoÃ¼bertragung.png Graphic file (type png)
 <use Pictures/videoÃ¼bertragung.png>
+Package pdftex.def Info: Pictures/videoÃ¼bertragung.png  used on input line 680
 Package pdftex.def Info: Pictures/videoÃ¼bertragung.png  used on input line 673
 .
 (pdftex.def)             Requested size: 303.98802pt x 335.15471pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 681.
 (caption)                particular \caption on input line 674.
 See the caption package documentation for explanation.
 
+[30]
+Underfull \hbox (badness 10000) in paragraph at lines 696--697
 
 Underfull \hbox (badness 10000) in paragraph at lines 689--690
 
@@ -1589,15 +1588,24 @@ Underfull \hbox (badness 10000) in paragraph at lines 689--690
 <Pictures/Steuerung-web.png, id=577, 1043.39813pt x 473.51906pt>
 File: Pictures/Steuerung-web.png Graphic file (type png)
 <use Pictures/Steuerung-web.png>
+Package pdftex.def Info: Pictures/Steuerung-web.png  used on input line 699.
+(pdftex.def)             Requested size: 455.29988pt x 251.30188pt.
 Package pdftex.def Info: Pictures/Steuerung-web.png  used on input line 692.
 (pdftex.def)             Requested size: 417.35185pt x 189.40425pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 700.
 (caption)                particular \caption on input line 693.
 See the caption package documentation for explanation.
 
 
+Overfull \hbox (28.50853pt too wide) in paragraph at lines 699--700
+[][] 
+ []
+
+
+Overfull \hbox (51.04765pt too wide) in paragraph at lines 708--709
 Overfull \hbox (51.04765pt too wide) in paragraph at lines 701--702
 \T1/ptm/m/n/12 te wird mit der CSS-Klasse \T1/cmtt/m/n/12 button \T1/ptm/m/n/12
  und der je-wei-li-gen Zu-satz-klas-se \T1/cmtt/m/n/12 up/down/left/right/cente
@@ -1605,27 +1613,39 @@ r
  []
 
 
+Overfull \hbox (19.5976pt too wide) in paragraph at lines 708--709
 Overfull \hbox (19.5976pt too wide) in paragraph at lines 701--702
-\T1/ptm/m/n/12 for-ma-tiert. Beim je-wei-li-gen Tas-ten-druck wird au-ÿer-dem i
+\T1/ptm/m/n/12 for-ma-tiert. Beim je-wei-li-gen Tas-ten-druck wird au-ï¿½er-dem i
 m-mer das At-tri-but \T1/cmtt/m/n/12 data-direction
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 708--709
+
+ []
+
+<Pictures/Steuerung-html.png, id=583, 368.87813pt x 104.64093pt>
 <Pictures/Steuerung-html.png, id=578, 368.87813pt x 104.64093pt>
 File: Pictures/Steuerung-html.png Graphic file (type png)
 <use Pictures/Steuerung-html.png>
+Package pdftex.def Info: Pictures/Steuerung-html.png  used on input line 711.
+(pdftex.def)             Requested size: 368.87721pt x 104.64066pt.
 Package pdftex.def Info: Pictures/Steuerung-html.png  used on input line 704.
 (pdftex.def)             Requested size: 295.10289pt x 83.71283pt.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 712.
 (caption)                particular \caption on input line 705.
 See the caption package documentation for explanation.
 
 
+Overfull \hbox (6.10196pt too wide) in paragraph at lines 711--712
 Overfull \hbox (17.69113pt too wide) in paragraph at lines 704--705
 [][] 
  []
 
 
+Overfull \hbox (3.05128pt too wide) in paragraph at lines 720--722
 Overfull \hbox (3.05128pt too wide) in paragraph at lines 713--715
 \T1/ptm/m/n/12 ab-ge-run-de-te Ecken. Die Op-tio-nen \T1/cmtt/m/n/12 -webkit-ta
 p-highlight-color: transparent \T1/ptm/m/n/12 und
@@ -1635,20 +1655,25 @@ p-highlight-color: transparent \T1/ptm/m/n/12 und
 <Pictures/Steuerung-css1.png, id=588, 264.99pt x 430.60875pt>
 File: Pictures/Steuerung-css1.png Graphic file (type png)
 <use Pictures/Steuerung-css1.png>
+Package pdftex.def Info: Pictures/Steuerung-css1.png  used on input line 724.
+(pdftex.def)             Requested size: 264.98935pt x 430.60768pt.
 Package pdftex.def Info: Pictures/Steuerung-css1.png  used on input line 717.
 (pdftex.def)             Requested size: 238.48878pt x 387.54428pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 725.
 (caption)                particular \caption on input line 718.
 See the caption package documentation for explanation.
 
 
+Overfull \hbox (8.91194pt too wide) in paragraph at lines 724--725
 Overfull \hbox (3.75224pt too wide) in paragraph at lines 717--718
 [][] 
  []
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 733--735
 Underfull \hbox (badness 10000) in paragraph at lines 726--728
 
  []
@@ -1657,20 +1682,24 @@ Underfull \hbox (badness 10000) in paragraph at lines 726--728
 <Pictures/Steuerung-css2.png, id=595, 193.47281pt x 347.79938pt>
 File: Pictures/Steuerung-css2.png Graphic file (type png)
 <use Pictures/Steuerung-css2.png>
+Package pdftex.def Info: Pictures/Steuerung-css2.png  used on input line 737.
 Package pdftex.def Info: Pictures/Steuerung-css2.png  used on input line 730.
 (pdftex.def)             Requested size: 193.47234pt x 347.79852pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 738.
 (caption)                particular \caption on input line 731.
 See the caption package documentation for explanation.
 
 
+Overfull \hbox (1.41754pt too wide) in paragraph at lines 737--738
 Overfull \hbox (1.41754pt too wide) in paragraph at lines 730--731
 [][] 
  []
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 746--747
 Underfull \hbox (badness 10000) in paragraph at lines 739--740
 
  []
@@ -1678,14 +1707,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 739--740
 <Pictures/Steuerung-js1.png, id=596, 313.17pt x 106.89937pt>
 File: Pictures/Steuerung-js1.png Graphic file (type png)
 <use Pictures/Steuerung-js1.png>
+Package pdftex.def Info: Pictures/Steuerung-js1.png  used on input line 749.
 Package pdftex.def Info: Pictures/Steuerung-js1.png  used on input line 742.
 (pdftex.def)             Requested size: 313.16922pt x 106.8991pt.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 750.
 (caption)                particular \caption on input line 743.
 See the caption package documentation for explanation.
 
 
+Overfull \hbox (14.41658pt too wide) in paragraph at lines 749--750
 Overfull \hbox (14.41658pt too wide) in paragraph at lines 742--743
 [][] 
  []
@@ -1694,20 +1726,24 @@ Overfull \hbox (14.41658pt too wide) in paragraph at lines 742--743
 <Pictures/Steuerung-js2.png, id=603, 335.75438pt x 473.51906pt>
 File: Pictures/Steuerung-js2.png Graphic file (type png)
 <use Pictures/Steuerung-js2.png>
+Package pdftex.def Info: Pictures/Steuerung-js2.png  used on input line 761.
 Package pdftex.def Info: Pictures/Steuerung-js2.png  used on input line 754.
 (pdftex.def)             Requested size: 235.02646pt x 331.46106pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 762.
 (caption)                particular \caption on input line 755.
 See the caption package documentation for explanation.
 
 
+Overfull \hbox (21.63078pt too wide) in paragraph at lines 761--762
 Overfull \hbox (21.63078pt too wide) in paragraph at lines 754--755
 [][] 
  []
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 770--771
 Underfull \hbox (badness 10000) in paragraph at lines 763--764
 
  []
@@ -1716,15 +1752,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 763--764
 <Pictures/Steuerung-js3.png, id=612, 455.45157pt x 376.40625pt>
 File: Pictures/Steuerung-js3.png Graphic file (type png)
 <use Pictures/Steuerung-js3.png>
+Package pdftex.def Info: Pictures/Steuerung-js3.png  used on input line 773.
 Package pdftex.def Info: Pictures/Steuerung-js3.png  used on input line 766.
 (pdftex.def)             Requested size: 318.81392pt x 263.48257pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 774.
 (caption)                particular \caption on input line 767.
 See the caption package documentation for explanation.
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 782--783
 Underfull \hbox (badness 10000) in paragraph at lines 775--776
 
  []
@@ -1732,13 +1771,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 775--776
 <Pictures/Steuerung-js4.png, id=613, 455.45157pt x 323.70938pt>
 File: Pictures/Steuerung-js4.png Graphic file (type png)
 <use Pictures/Steuerung-js4.png>
+Package pdftex.def Info: Pictures/Steuerung-js4.png  used on input line 785.
 Package pdftex.def Info: Pictures/Steuerung-js4.png  used on input line 778.
 (pdftex.def)             Requested size: 318.81392pt x 226.59502pt.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 786.
 (caption)                particular \caption on input line 779.
 See the caption package documentation for explanation.
 
+[36 <./Pictures/Steuerung-js3.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 797--798
 [35 <./Pictures/Steuerung-js3.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 790--791
 
@@ -1747,14 +1790,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 790--791
 <Pictures/speed-web.png, id=620, 455.45157pt x 207.77625pt>
 File: Pictures/speed-web.png Graphic file (type png)
 <use Pictures/speed-web.png>
+Package pdftex.def Info: Pictures/speed-web.png  used on input line 800.
 Package pdftex.def Info: Pictures/speed-web.png  used on input line 793.
 (pdftex.def)             Requested size: 409.90262pt x 186.99687pt.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 801.
 (caption)                particular \caption on input line 794.
 See the caption package documentation for explanation.
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 809--810
 Underfull \hbox (badness 10000) in paragraph at lines 802--803
 
  []
@@ -1763,15 +1809,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 802--803
 <Pictures/speed-html.png, id=629, 455.45157pt x 51.19125pt>
 File: Pictures/speed-html.png Graphic file (type png)
 <use Pictures/speed-html.png>
+Package pdftex.def Info: Pictures/speed-html.png  used on input line 812.
 Package pdftex.def Info: Pictures/speed-html.png  used on input line 805.
 (pdftex.def)             Requested size: 409.90262pt x 46.07169pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 813.
 (caption)                particular \caption on input line 806.
 See the caption package documentation for explanation.
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 821--822
 Underfull \hbox (badness 10000) in paragraph at lines 814--815
 
  []
@@ -1779,14 +1828,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 814--815
 <Pictures/speed-css.png, id=630, 192.72pt x 246.9225pt>
 File: Pictures/speed-css.png Graphic file (type png)
 <use Pictures/speed-css.png>
+Package pdftex.def Info: Pictures/speed-css.png  used on input line 824.
 Package pdftex.def Info: Pictures/speed-css.png  used on input line 817.
 (pdftex.def)             Requested size: 192.71951pt x 246.92188pt.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 825.
 (caption)                particular \caption on input line 818.
 See the caption package documentation for explanation.
 
 
+Overfull \hbox (0.66472pt too wide) in paragraph at lines 824--825
 Overfull \hbox (0.66472pt too wide) in paragraph at lines 817--818
 [][] 
  []
@@ -1795,15 +1847,18 @@ Overfull \hbox (0.66472pt too wide) in paragraph at lines 817--818
 <Pictures/speed-js.png, id=641, 227.34938pt x 79.04532pt>
 File: Pictures/speed-js.png Graphic file (type png)
 <use Pictures/speed-js.png>
+Package pdftex.def Info: Pictures/speed-js.png  used on input line 836.
 Package pdftex.def Info: Pictures/speed-js.png  used on input line 829.
 (pdftex.def)             Requested size: 227.34882pt x 79.0451pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 837.
 (caption)                particular \caption on input line 830.
 See the caption package documentation for explanation.
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 848--849
 Underfull \hbox (badness 10000) in paragraph at lines 841--842
 
  []
@@ -1811,14 +1866,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 841--842
 <Pictures/kamera-web.png, id=642, 455.45157pt x 207.77625pt>
 File: Pictures/kamera-web.png Graphic file (type png)
 <use Pictures/kamera-web.png>
+Package pdftex.def Info: Pictures/kamera-web.png  used on input line 851.
 Package pdftex.def Info: Pictures/kamera-web.png  used on input line 844.
 (pdftex.def)             Requested size: 409.90262pt x 186.99687pt.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 852.
 (caption)                particular \caption on input line 845.
 See the caption package documentation for explanation.
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 860--861
 Underfull \hbox (badness 10000) in paragraph at lines 853--854
 
  []
@@ -1827,20 +1885,24 @@ Underfull \hbox (badness 10000) in paragraph at lines 853--854
 <Pictures/kamera-html.png, id=651, 455.45157pt x 48.18pt>
 File: Pictures/kamera-html.png Graphic file (type png)
 <use Pictures/kamera-html.png>
+Package pdftex.def Info: Pictures/kamera-html.png  used on input line 863.
 Package pdftex.def Info: Pictures/kamera-html.png  used on input line 856.
 (pdftex.def)             Requested size: 455.45045pt x 48.17986pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 864.
 (caption)                particular \caption on input line 857.
 See the caption package documentation for explanation.
 
 
+Overfull \hbox (28.6591pt too wide) in paragraph at lines 863--864
 Overfull \hbox (28.6591pt too wide) in paragraph at lines 856--857
 [][] 
  []
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 872--873
 Underfull \hbox (badness 10000) in paragraph at lines 865--866
 
  []
@@ -1848,14 +1910,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 865--866
 <Pictures/kamera-css.png, id=652, 199.49532pt x 331.99031pt>
 File: Pictures/kamera-css.png Graphic file (type png)
 <use Pictures/kamera-css.png>
+Package pdftex.def Info: Pictures/kamera-css.png  used on input line 875.
 Package pdftex.def Info: Pictures/kamera-css.png  used on input line 868.
 (pdftex.def)             Requested size: 199.49481pt x 331.98949pt.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 876.
 (caption)                particular \caption on input line 869.
 See the caption package documentation for explanation.
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 884--885
 Underfull \hbox (badness 10000) in paragraph at lines 877--878
 
  []
@@ -1864,26 +1929,31 @@ Underfull \hbox (badness 10000) in paragraph at lines 877--878
 <Pictures/kamera-js.png, id=661, 335.75438pt x 161.10187pt>
 File: Pictures/kamera-js.png Graphic file (type png)
 <use Pictures/kamera-js.png>
+Package pdftex.def Info: Pictures/kamera-js.png  used on input line 887.
 Package pdftex.def Info: Pictures/kamera-js.png  used on input line 880.
 (pdftex.def)             Requested size: 335.75356pt x 161.10147pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 888.
 (caption)                particular \caption on input line 881.
 See the caption package documentation for explanation.
 
 
+Overfull \hbox (15.66005pt too wide) in paragraph at lines 887--888
 Overfull \hbox (15.66005pt too wide) in paragraph at lines 880--881
 [][] 
  []
 
 
+Overfull \hbox (3.34413pt too wide) in paragraph at lines 898--900
 Overfull \hbox (3.34413pt too wide) in paragraph at lines 891--893
 \T1/ptm/m/n/12 Um das Fern-licht auf un-se-rer Web-si-te ein- bzw. aus-zu-schal
 -ten gibt es ein ei-ge-nes Fernlicht-
  []
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 898--900
 Underfull \hbox (badness 10000) in paragraph at lines 891--893
 
  []
@@ -1891,13 +1961,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 891--893
 <Pictures/fernlicht-web.png, id=662, 455.45157pt x 207.77625pt>
 File: Pictures/fernlicht-web.png Graphic file (type png)
 <use Pictures/fernlicht-web.png>
+Package pdftex.def Info: Pictures/fernlicht-web.png  used on input line 902.
+(pdftex.def)             Requested size: 409.90262pt x 186.99687pt.
 Package pdftex.def Info: Pictures/fernlicht-web.png  used on input line 895.
 (pdftex.def)             Requested size: 273.27304pt x 124.6667pt.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 903.
 (caption)                particular \caption on input line 896.
 See the caption package documentation for explanation.
 
+[41 <./Pictures/kamera-js.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 911--912
 
 Underfull \hbox (badness 10000) in paragraph at lines 904--905
 
@@ -1907,20 +1982,24 @@ Underfull \hbox (badness 10000) in paragraph at lines 904--905
 <Pictures/fernlicht-html.png, id=671, 551.81157pt x 14.30344pt>
 File: Pictures/fernlicht-html.png Graphic file (type png)
 <use Pictures/fernlicht-html.png>
+Package pdftex.def Info: Pictures/fernlicht-html.png  used on input line 914.
 Package pdftex.def Info: Pictures/fernlicht-html.png  used on input line 907.
 (pdftex.def)             Requested size: 496.62582pt x 12.87296pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 915.
 (caption)                particular \caption on input line 908.
 See the caption package documentation for explanation.
 
 
+Overfull \hbox (69.83447pt too wide) in paragraph at lines 914--915
 Overfull \hbox (69.83447pt too wide) in paragraph at lines 907--908
 [][] 
  []
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 923--926
 Underfull \hbox (badness 10000) in paragraph at lines 916--919
 
  []
@@ -1928,18 +2007,23 @@ Underfull \hbox (badness 10000) in paragraph at lines 916--919
 <Pictures/fernlicht-css.png, id=672, 292.84406pt x 291.33844pt>
 File: Pictures/fernlicht-css.png Graphic file (type png)
 <use Pictures/fernlicht-css.png>
+Package pdftex.def Info: Pictures/fernlicht-css.png  used on input line 928.
 Package pdftex.def Info: Pictures/fernlicht-css.png  used on input line 921.
 (pdftex.def)             Requested size: 292.84334pt x 291.33772pt.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 929.
 (caption)                particular \caption on input line 922.
 See the caption package documentation for explanation.
 
 
+Overfull \hbox (15.43158pt too wide) in paragraph at lines 928--929
 Overfull \hbox (15.43158pt too wide) in paragraph at lines 921--922
 [][] 
  []
 
+[42 <./Pictures/fernlicht-web.png> <./Pictures/fernlicht-html.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 937--938
 
 Underfull \hbox (badness 10000) in paragraph at lines 930--931
 
@@ -1949,19 +2033,24 @@ Underfull \hbox (badness 10000) in paragraph at lines 930--931
 <Pictures/fernlicht-js.png, id=681, 455.45157pt x 340.27126pt>
 File: Pictures/fernlicht-js.png Graphic file (type png)
 <use Pictures/fernlicht-js.png>
+Package pdftex.def Info: Pictures/fernlicht-js.png  used on input line 940.
 Package pdftex.def Info: Pictures/fernlicht-js.png  used on input line 933.
 (pdftex.def)             Requested size: 409.90262pt x 306.24129pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 941.
 (caption)                particular \caption on input line 934.
 See the caption package documentation for explanation.
 
 
+Overfull \hbox (4.45215pt too wide) in paragraph at lines 940--941
 Overfull \hbox (4.45215pt too wide) in paragraph at lines 933--934
 [][] 
  []
 
+[43 <./Pictures/fernlicht-css.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 952--954
 
 Underfull \hbox (badness 10000) in paragraph at lines 945--947
 
@@ -1971,25 +2060,31 @@ Underfull \hbox (badness 10000) in paragraph at lines 945--947
 File: Pictures/videoÃ¼bertragung-web.png Graphic file (type png)
 <use Pictures/videoÃ¼bertragung-web.png>
 Package pdftex.def Info: Pictures/videoÃ¼bertragung-web.png  used on input line
+ 956.
  949.
 (pdftex.def)             Requested size: 455.29988pt x 214.40047pt.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 957.
 (caption)                particular \caption on input line 950.
 See the caption package documentation for explanation.
 
 
+Overfull \hbox (28.50853pt too wide) in paragraph at lines 956--957
 Overfull \hbox (28.50853pt too wide) in paragraph at lines 949--950
 [][] 
  []
 
+[44 <./Pictures/fernlicht-js.png>]
+Overfull \hbox (12.83487pt too wide) in paragraph at lines 965--966
 [42 <./Pictures/fernlicht-js.png>]
 Overfull \hbox (12.83487pt too wide) in paragraph at lines 958--959
-\T1/ptm/m/n/12 Im HTML-Code wird die Vi-deo-über-tra-gung als HTML \T1/cmtt/m/n
+\T1/ptm/m/n/12 Im HTML-Code wird die Vi-deo-ï¿½ber-tra-gung als HTML \T1/cmtt/m/n
 /12 <img>\T1/ptm/m/n/12 -Tag mit der id \T1/cmtt/m/n/12 dynamicimage
  []
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 965--966
 Underfull \hbox (badness 10000) in paragraph at lines 958--959
 
  []
@@ -1998,19 +2093,23 @@ Underfull \hbox (badness 10000) in paragraph at lines 958--959
 File: Pictures/videoÃ¼bertragung-html.png Graphic file (type png)
 <use Pictures/videoÃ¼bertragung-html.png>
 Package pdftex.def Info: Pictures/videoÃ¼bertragung-html.png  used on input lin
+e 968.
 e 961.
 (pdftex.def)             Requested size: 331.98949pt x 21.8315pt.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 969.
 (caption)                particular \caption on input line 962.
 See the caption package documentation for explanation.
 
 
+Overfull \hbox (11.89598pt too wide) in paragraph at lines 968--969
 Overfull \hbox (11.89598pt too wide) in paragraph at lines 961--962
 [][] 
  []
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 977--978
 Underfull \hbox (badness 10000) in paragraph at lines 970--971
 
  []
@@ -2019,19 +2118,23 @@ Underfull \hbox (badness 10000) in paragraph at lines 970--971
 File: Pictures/videoÃ¼bertragung-css.png Graphic file (type png)
 <use Pictures/videoÃ¼bertragung-css.png>
 Package pdftex.def Info: Pictures/videoÃ¼bertragung-css.png  used on input line
+ 980.
  973.
 (pdftex.def)             Requested size: 228.85443pt x 106.8991pt.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 981.
 (caption)                particular \caption on input line 974.
 See the caption package documentation for explanation.
 
 
+Overfull \hbox (15.45876pt too wide) in paragraph at lines 980--981
 Overfull \hbox (15.45876pt too wide) in paragraph at lines 973--974
 [][] 
  []
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 989--992
 Underfull \hbox (badness 10000) in paragraph at lines 982--985
 
  []
@@ -2042,20 +2145,24 @@ ng> <./Pictures/videoÃ¼bertragung-css.png>]
 File: Pictures/videoÃ¼bertragung-js.png Graphic file (type png)
 <use Pictures/videoÃ¼bertragung-js.png>
 Package pdftex.def Info: Pictures/videoÃ¼bertragung-js.png  used on input line 
+994.
 987.
 (pdftex.def)             Requested size: 493.23819pt x 237.81125pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 995.
 (caption)                particular \caption on input line 988.
 See the caption package documentation for explanation.
 
 
+Overfull \hbox (66.44684pt too wide) in paragraph at lines 994--995
 Overfull \hbox (66.44684pt too wide) in paragraph at lines 987--988
 [][] 
  []
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 1010--1011
 Underfull \hbox (badness 10000) in paragraph at lines 1003--1004
 
  []
@@ -2064,15 +2171,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 1003--1004
 <Pictures/menu-web1.png, id=710, 1135.99406pt x 427.5975pt>
 File: Pictures/menu-web1.png Graphic file (type png)
 <use Pictures/menu-web1.png>
+Package pdftex.def Info: Pictures/menu-web1.png  used on input line 1013.
 Package pdftex.def Info: Pictures/menu-web1.png  used on input line 1006.
 (pdftex.def)             Requested size: 454.38959pt x 171.03596pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 1014.
 (caption)                particular \caption on input line 1007.
 See the caption package documentation for explanation.
 
 
+Overfull \hbox (27.59824pt too wide) in paragraph at lines 1013--1014
 Overfull \hbox (27.59824pt too wide) in paragraph at lines 1006--1007
 [][] 
  []
@@ -2080,20 +2190,24 @@ Overfull \hbox (27.59824pt too wide) in paragraph at lines 1006--1007
 <Pictures/sensordaten-web.png, id=711, 499.977pt x 235.5345pt>
 File: Pictures/sensordaten-web.png Graphic file (type png)
 <use Pictures/sensordaten-web.png>
+Package pdftex.def Info: Pictures/sensordaten-web.png  used on input line 1024.
 Package pdftex.def Info: Pictures/sensordaten-web.png  used on input line 1017.
 
 (pdftex.def)             Requested size: 449.97513pt x 211.97908pt.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 1025.
 (caption)                particular \caption on input line 1018.
 See the caption package documentation for explanation.
 
 
+Overfull \hbox (23.18378pt too wide) in paragraph at lines 1024--1025
 Overfull \hbox (23.18378pt too wide) in paragraph at lines 1017--1018
 [][] 
  []
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 1033--1035
 Underfull \hbox (badness 10000) in paragraph at lines 1026--1028
 
  []
@@ -2102,21 +2216,25 @@ Underfull \hbox (badness 10000) in paragraph at lines 1026--1028
 <Pictures/sensordaten-html.png, id=720, 455.45157pt x 74.52844pt>
 File: Pictures/sensordaten-html.png Graphic file (type png)
 <use Pictures/sensordaten-html.png>
+Package pdftex.def Info: Pictures/sensordaten-html.png  used on input line 1037
 Package pdftex.def Info: Pictures/sensordaten-html.png  used on input line 1030
 .
 (pdftex.def)             Requested size: 455.45045pt x 74.52824pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 1038.
 (caption)                particular \caption on input line 1031.
 See the caption package documentation for explanation.
 
 
+Overfull \hbox (28.6591pt too wide) in paragraph at lines 1037--1038
 Overfull \hbox (28.6591pt too wide) in paragraph at lines 1030--1031
 [][] 
  []
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 1046--1050
 Underfull \hbox (badness 10000) in paragraph at lines 1039--1043
 
  []
@@ -2124,21 +2242,26 @@ Underfull \hbox (badness 10000) in paragraph at lines 1039--1043
 <Pictures/sensordaten-css.png, id=721, 349.305pt x 646.66594pt>
 File: Pictures/sensordaten-css.png Graphic file (type png)
 <use Pictures/sensordaten-css.png>
+Package pdftex.def Info: Pictures/sensordaten-css.png  used on input line 1052.
 Package pdftex.def Info: Pictures/sensordaten-css.png  used on input line 1045.
 
 (pdftex.def)             Requested size: 244.51183pt x 452.66307pt.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 1053.
 (caption)                particular \caption on input line 1046.
 See the caption package documentation for explanation.
 
+[48 <./Pictures/sensordaten-html.png>]
+Overfull \hbox (1.30785pt too wide) in paragraph at lines 1061--1062
 [46 <./Pictures/sensordaten-html.png>]
 Overfull \hbox (1.30785pt too wide) in paragraph at lines 1054--1055
 \T1/ptm/m/n/12 Die CSS-Klasse \T1/cmtt/m/n/12 daten \T1/ptm/m/n/12 for-ma-tiert
- die ein-zel-nen Da-ten im Me-nü. Sie wer-den in der Schrift-
+ die ein-zel-nen Da-ten im Me-nï¿½. Sie wer-den in der Schrift-
  []
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 1061--1062
 Underfull \hbox (badness 10000) in paragraph at lines 1054--1055
 
  []
@@ -2146,13 +2269,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 1054--1055
 <Pictures/daten-css.png, id=728, 395.22656pt x 118.19156pt>
 File: Pictures/daten-css.png Graphic file (type png)
 <use Pictures/daten-css.png>
+Package pdftex.def Info: Pictures/daten-css.png  used on input line 1064.
 Package pdftex.def Info: Pictures/daten-css.png  used on input line 1057.
 (pdftex.def)             Requested size: 355.7006pt x 106.37141pt.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 1065.
 (caption)                particular \caption on input line 1058.
 See the caption package documentation for explanation.
 
+[49 <./Pictures/sensordaten-css.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 1073--1074
 [47 <./Pictures/sensordaten-css.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 1066--1067
 
@@ -2161,51 +2288,93 @@ Underfull \hbox (badness 10000) in paragraph at lines 1066--1067
 <Pictures/sensordaten-js.png, id=735, 554.07pt x 214.55156pt>
 File: Pictures/sensordaten-js.png Graphic file (type png)
 <use Pictures/sensordaten-js.png>
+Package pdftex.def Info: Pictures/sensordaten-js.png  used on input line 1076.
 Package pdftex.def Info: Pictures/sensordaten-js.png  used on input line 1069.
 (pdftex.def)             Requested size: 443.2566pt x 171.64146pt.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 1077.
 (caption)                particular \caption on input line 1070.
 See the caption package documentation for explanation.
 
 
+Overfull \hbox (16.46526pt too wide) in paragraph at lines 1076--1077
 Overfull \hbox (16.46526pt too wide) in paragraph at lines 1069--1070
 [][] 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 1088--1089
+
+ []
+
+<Pictures/status-web.png, id=743, 413.253pt x 228.3075pt>
 <Pictures/status-web.png, id=736, 947.03813pt x 349.305pt>
 File: Pictures/status-web.png Graphic file (type png)
 <use Pictures/status-web.png>
+Package pdftex.def Info: Pictures/status-web.png  used on input line 1091.
+(pdftex.def)             Requested size: 413.252pt x 228.30693pt.
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 1092.
+See the caption package documentation for explanation.
+
+[50 <./Pictures/daten-css.png> <./Pictures/sensordaten-js.png>]
+<Pictures/status-green.png, id=752, 73.77562pt x 24.09pt>
 Package pdftex.def Info: Pictures/status-web.png  used on input line 1085.
 (pdftex.def)             Requested size: 378.80853pt x 139.71951pt.
 <Pictures/status-green.png, id=737, 73.77562pt x 24.09pt>
 File: Pictures/status-green.png Graphic file (type png)
 <use Pictures/status-green.png>
+Package pdftex.def Info: Pictures/status-green.png  used on input line 1102.
 Package pdftex.def Info: Pictures/status-green.png  used on input line 1095.
 (pdftex.def)             Requested size: 73.77542pt x 24.08992pt.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 1103.
+See the caption package documentation for explanation.
+
+<Pictures/status-red.png, id=753, 90.3375pt x 24.09pt>
 <Pictures/status-red.png, id=738, 90.3375pt x 24.09pt>
 File: Pictures/status-red.png Graphic file (type png)
 <use Pictures/status-red.png>
+Package pdftex.def Info: Pictures/status-red.png  used on input line 1109.
 Package pdftex.def Info: Pictures/status-red.png  used on input line 1102.
 (pdftex.def)             Requested size: 90.33727pt x 24.08992pt.
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 1110.
+See the caption package documentation for explanation.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1118--1119
+
+ []
+
+<Pictures/status-html.png, id=754, 455.45157pt x 16.56187pt>
 [48 <./Pictures/daten-css.png> <./Pictures/sensordaten-js.png>]
 <Pictures/status-html.png, id=747, 455.45157pt x 16.56187pt>
 File: Pictures/status-html.png Graphic file (type png)
 <use Pictures/status-html.png>
+Package pdftex.def Info: Pictures/status-html.png  used on input line 1121.
 Package pdftex.def Info: Pictures/status-html.png  used on input line 1110.
 (pdftex.def)             Requested size: 455.45045pt x 16.56183pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 1122.
 (caption)                particular \caption on input line 1111.
 See the caption package documentation for explanation.
 
 
+Overfull \hbox (28.6591pt too wide) in paragraph at lines 1121--1122
 Overfull \hbox (28.6591pt too wide) in paragraph at lines 1110--1111
 [][] 
  []
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 1130--1131
 Underfull \hbox (badness 10000) in paragraph at lines 1119--1120
 
  []
@@ -2213,10 +2382,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 1119--1120
 <Pictures/status-css.png, id=748, 190.46156pt x 278.54062pt>
 File: Pictures/status-css.png Graphic file (type png)
 <use Pictures/status-css.png>
+Package pdftex.def Info: Pictures/status-css.png  used on input line 1133.
 Package pdftex.def Info: Pictures/status-css.png  used on input line 1122.
 (pdftex.def)             Requested size: 190.46107pt x 278.53993pt.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 1134.
 (caption)                particular \caption on input line 1123.
 See the caption package documentation for explanation.
 
@@ -2225,30 +2396,38 @@ s-red.png> <./Pictures/status-html.png>]
 <Pictures/status-js.png, id=758, 455.45157pt x 149.05687pt>
 File: Pictures/status-js.png Graphic file (type png)
 <use Pictures/status-js.png>
+Package pdftex.def Info: Pictures/status-js.png  used on input line 1145.
 Package pdftex.def Info: Pictures/status-js.png  used on input line 1134.
 (pdftex.def)             Requested size: 409.90262pt x 134.14993pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 1146.
 (caption)                particular \caption on input line 1135.
 See the caption package documentation for explanation.
 
 
+Overfull \hbox (4.45215pt too wide) in paragraph at lines 1145--1146
 Overfull \hbox (4.45215pt too wide) in paragraph at lines 1134--1135
 [][] 
  []
 
+[52 <./Pictures/status-css.png>]
+Overfull \hbox (10.39986pt too wide) in paragraph at lines 1162--1167
 
 Overfull \hbox (10.39986pt too wide) in paragraph at lines 1151--1155
 \T1/ptm/m/n/12 Als Bild-for-mat wird JPEG ver-wen-det, um Spei-cher-platz zu sp
-a-ren. Al-ter-na-tiv wä-re RGB565
+a-ren. Al-ter-na-tiv wï¿½-re RGB565
  []
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 1162--1167
 Underfull \hbox (badness 10000) in paragraph at lines 1151--1155
 
  []
 
+[53 <./Pictures/status-js.png>] [54] [55] [56] [57] [58]
+Underfull \hbox (badness 10000) in paragraph at lines 1231--1234
 [50 <./Pictures/status-css.png> <./Pictures/status-js.png>] [51] [52] [53]
 [54] [55]
 Underfull \hbox (badness 10000) in paragraph at lines 1219--1222
@@ -2274,9 +2453,12 @@ ged.
 (rerunfilecheck)             Checksum: 50BF66340D4C92D0B7A65A169BC6BEC5;10136.
  ) 
 Here is how much of TeX's memory you used:
+ 35780 strings out of 474485
+ 829437 string characters out of 5743735
  35775 strings out of 474486
  829900 string characters out of 5743283
  1942542 words of memory out of 5000000
+ 57288 multiletter control sequences out of 15000+600000
  57287 multiletter control sequences out of 15000+600000
  616778 words of font info for 133 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -2301,6 +2483,11 @@ pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exist
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist
 , replaced by a fixed one
 
+ <C:\Users\danie\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt12
+00.pk><C:/Users/danie/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8
+a.pfb><C:/Users/danie/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8
+a.pfb>
+Output written on diplomarbeit_lastenroboter.pdf (64 pages, 4011415 bytes).
  <C:\Users\Lenovo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1
 200.pk><C:/Users/Lenovo/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utm
 b8a.pfb><C:/Users/Lenovo/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/ut
