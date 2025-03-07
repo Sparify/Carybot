@@ -404,9 +404,50 @@
 			\item Der Treiber verfügt über einen Überstromschutz und Überspannungsschutz damit der Motor und die Elektronik Geschütz ist.
 			\item Ein thermischer Schutz verhindert Schäden durch Überhitzung.
 		\end{itemize}
+		\newpage
+		\subsection{Schaltungsaufbau mit einem Motor} %Felix
 		
-		\subsection{Schaltungsaufbau} %Felix
-		
+			\subsubsection{Komponenten}
+			\begin{itemize}
+				\item BLDC-Motor
+				\item Motortreiber (ZS-X11H)
+				\item Mikrocontroller (ESP32)
+				\item Expander Modul (MCP23017)
+			\end{itemize}
+			
+			\subsubsection{Schaltungsaufbau und Verbindungen}
+			\begin{minipage}{\textwidth}
+				\centering
+				\includegraphics[scale=1.5]{Pictures/Schaltungsaufbau-1Motor}
+				\captionof{figure}{Schaltungsaufbau mit einem Motor}
+				\label{fig:spiffs_init}
+				\vspace{-2pt}
+				\small Quelle: eigene Abbildung
+			\end{minipage}
+			\newpage
+			\subsubsection*{Phasenanschlüsse des Motors (blau):}
+			
+			Die Phasen des Motors werden mit der Treiberplatine verbunden. Diese werden abwechselnd mit Spannung versorgt, um eine Drehbewegung zu erzeugen. Die weiße Phase des Motors wird mit MA verbunden. Die blaue Phase des Motors wird mit MB verbunden. Die orange Phase des Motors wird mit MC verbunden. \\[0.5cm]
+			
+			\begin{minipage}{0.48\textwidth} % Erste Minipage für das erste Bild
+				\raggedright
+				\includegraphics[scale=0.5]{Pictures/Phasen-motor}
+				\captionof{figure}{\raggedright Motor Phasen}
+				\label{fig:phasen_motor}
+				\vspace{-2pt}
+				\small Quelle: eigene Abbildung
+			\end{minipage}
+			\hfill % Fügt Abstand zwischen den Bildern ein
+			\begin{minipage}{0.48\textwidth} % Zweite Minipage für das zweite Bild
+				\raggedright
+				\includegraphics[scale=0.5]{Pictures/Phasen-treiber}
+				\captionof{figure}{\raggedright Treiber Phasen}
+				\label{fig:phasen_treiber}
+				\vspace{-2pt}
+				\small Quelle: eigene Abbildung
+			\end{minipage}
+			
+			
 		\subsection{Code} %Daniel
 \newpage
 	\section{Webserver} %Spari

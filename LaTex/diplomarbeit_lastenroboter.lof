@@ -12,55 +12,58 @@
 \contentsline {figure}{\numberline {11}{\ignorespaces Pin für die Bremse und den Richtungswechsel}}{16}{figure.11}%
 \contentsline {figure}{\numberline {12}{\ignorespaces Versorgungs-Pins}}{16}{figure.12}%
 \contentsline {figure}{\numberline {13}{\ignorespaces Hall-sensoren Eingänge}}{17}{figure.13}%
-\contentsline {figure}{\numberline {14}{\ignorespaces \texttt {ESPAsyncWebServer.h}-Bibliothek}}{19}{figure.14}%
-\contentsline {figure}{\numberline {15}{\ignorespaces WebServer Netzwerkkonfiguration}}{19}{figure.15}%
-\contentsline {figure}{\numberline {16}{\ignorespaces Webserver Setup}}{20}{figure.16}%
-\contentsline {figure}{\numberline {17}{\ignorespaces SPIFFS Initalisierung}}{21}{figure.17}%
-\contentsline {figure}{\numberline {18}{\ignorespaces \texttt {readfile()}-Funktion}}{22}{figure.18}%
-\contentsline {figure}{\numberline {19}{\ignorespaces Bibliotheken für die Kommunikation}}{22}{figure.19}%
-\contentsline {figure}{\numberline {20}{\ignorespaces Netzwerkkonfiguration Client}}{23}{figure.20}%
-\contentsline {figure}{\numberline {21}{\ignorespaces Setup ESP32}}{24}{figure.21}%
-\contentsline {figure}{\numberline {22}{\ignorespaces \texttt {onWebSocketEvent()}-Funktion}}{25}{figure.22}%
-\contentsline {figure}{\numberline {23}{\ignorespaces JSON-Beispiel für Steuerung}}{25}{figure.23}%
-\contentsline {figure}{\numberline {24}{\ignorespaces JSON-Beispiel für Kamerasteuerung}}{26}{figure.24}%
-\contentsline {figure}{\numberline {25}{\ignorespaces JSON-Beispiel für Lichtsteuerung}}{26}{figure.25}%
-\contentsline {figure}{\numberline {26}{\ignorespaces \texttt {handleWebSocketMessage()}-Funktion}}{27}{figure.26}%
-\contentsline {figure}{\numberline {27}{\ignorespaces Kamera-GPIO Konfiguration}}{28}{figure.27}%
-\contentsline {figure}{\numberline {28}{\ignorespaces Kamera-Initialisierung}}{29}{figure.28}%
-\contentsline {figure}{\numberline {29}{\ignorespaces Videoübertragung über WebSocket}}{30}{figure.29}%
-\contentsline {figure}{\numberline {30}{\ignorespaces Steuerkreuz auf der Website}}{31}{figure.30}%
-\contentsline {figure}{\numberline {31}{\ignorespaces Steuerkreuz HTML-Code}}{31}{figure.31}%
-\contentsline {figure}{\numberline {32}{\ignorespaces CSS-Klassen \texttt {.dpad-container} und \texttt {.button}}}{32}{figure.32}%
-\contentsline {figure}{\numberline {33}{\ignorespaces CSS-Richtungsklassen}}{33}{figure.33}%
-\contentsline {figure}{\numberline {34}{\ignorespaces EventListener für ungewünschte Aktionen}}{34}{figure.34}%
-\contentsline {figure}{\numberline {35}{\ignorespaces EventListener für Eingabe}}{34}{figure.35}%
-\contentsline {figure}{\numberline {36}{\ignorespaces \texttt {send()}-Funktion}}{35}{figure.36}%
-\contentsline {figure}{\numberline {37}{\ignorespaces \texttt {stop()}-Funktion}}{36}{figure.37}%
-\contentsline {figure}{\numberline {38}{\ignorespaces Geschwindigkeitssteuerung auf der Website}}{36}{figure.38}%
-\contentsline {figure}{\numberline {39}{\ignorespaces Geschwindigkeitssteuerung HTML-Code}}{37}{figure.39}%
-\contentsline {figure}{\numberline {40}{\ignorespaces CSS-Klassen für die Geschwindigkeitssteuerung}}{37}{figure.40}%
-\contentsline {figure}{\numberline {41}{\ignorespaces \texttt {speed-change()}-Funktion}}{38}{figure.41}%
-\contentsline {figure}{\numberline {42}{\ignorespaces Kamerasteuerung auf der Website}}{38}{figure.42}%
-\contentsline {figure}{\numberline {43}{\ignorespaces Kamerasteuerung HTML-Code}}{39}{figure.43}%
-\contentsline {figure}{\numberline {44}{\ignorespaces CSS-Klassen für die Kamerasteuerung}}{39}{figure.44}%
-\contentsline {figure}{\numberline {45}{\ignorespaces \texttt {camera-change()}-Funktion}}{40}{figure.45}%
-\contentsline {figure}{\numberline {46}{\ignorespaces Fernlicht-Icon auf der Website}}{40}{figure.46}%
-\contentsline {figure}{\numberline {47}{\ignorespaces HTML-Code für Fernlicht}}{41}{figure.47}%
-\contentsline {figure}{\numberline {48}{\ignorespaces CSS-Klassen für das Fernlicht}}{41}{figure.48}%
-\contentsline {figure}{\numberline {49}{\ignorespaces \texttt {togglelight()}-Funktion}}{42}{figure.49}%
-\contentsline {figure}{\numberline {50}{\ignorespaces Videoübertragung auf der Website}}{43}{figure.50}%
-\contentsline {figure}{\numberline {51}{\ignorespaces Videoübertragung HTML-Code}}{43}{figure.51}%
-\contentsline {figure}{\numberline {52}{\ignorespaces CSS-Formatierung für \texttt {dynamicimage}}}{43}{figure.52}%
-\contentsline {figure}{\numberline {53}{\ignorespaces Videoübertragung im JavaScript-Code}}{44}{figure.53}%
-\contentsline {figure}{\numberline {54}{\ignorespaces Menü-Icon auf der Website}}{45}{figure.54}%
-\contentsline {figure}{\numberline {55}{\ignorespaces Sidebar mit Sensordaten}}{45}{figure.55}%
-\contentsline {figure}{\numberline {56}{\ignorespaces Sensordaten HTML-Code}}{46}{figure.56}%
-\contentsline {figure}{\numberline {57}{\ignorespaces CSS-Klassen für das Menü}}{47}{figure.57}%
-\contentsline {figure}{\numberline {58}{\ignorespaces CSS-Klasse \texttt {.daten}}}{48}{figure.58}%
-\contentsline {figure}{\numberline {59}{\ignorespaces JavaScript-Verarbeitung der Sensordaten}}{48}{figure.59}%
-\contentsline {figure}{\numberline {60}{\ignorespaces Statusbox auf der Website}}{49}{figure.caption.2}%
-\contentsline {figure}{\numberline {61}{\ignorespaces Statusbox: Verbunden}}{49}{figure.caption.2}%
-\contentsline {figure}{\numberline {62}{\ignorespaces Statusbox: Verbindung getrennt}}{49}{figure.caption.2}%
-\contentsline {figure}{\numberline {63}{\ignorespaces Statusbox HTML-Code}}{49}{figure.63}%
-\contentsline {figure}{\numberline {64}{\ignorespaces CSS-Klassen für die Statusbox}}{50}{figure.64}%
-\contentsline {figure}{\numberline {65}{\ignorespaces JavaScript Funktionen für den Verbindungsstatus}}{50}{figure.65}%
+\contentsline {figure}{\numberline {14}{\ignorespaces Schaltungsaufbau mit einem Motor}}{18}{figure.14}%
+\contentsline {figure}{\numberline {15}{\ignorespaces \raggedright Motor Phasen}}{19}{figure.15}%
+\contentsline {figure}{\numberline {16}{\ignorespaces \raggedright Treiber Phasen}}{19}{figure.16}%
+\contentsline {figure}{\numberline {17}{\ignorespaces \texttt {ESPAsyncWebServer.h}-Bibliothek}}{21}{figure.17}%
+\contentsline {figure}{\numberline {18}{\ignorespaces WebServer Netzwerkkonfiguration}}{21}{figure.18}%
+\contentsline {figure}{\numberline {19}{\ignorespaces Webserver Setup}}{22}{figure.19}%
+\contentsline {figure}{\numberline {20}{\ignorespaces SPIFFS Initalisierung}}{23}{figure.20}%
+\contentsline {figure}{\numberline {21}{\ignorespaces \texttt {readfile()}-Funktion}}{24}{figure.21}%
+\contentsline {figure}{\numberline {22}{\ignorespaces Bibliotheken für die Kommunikation}}{24}{figure.22}%
+\contentsline {figure}{\numberline {23}{\ignorespaces Netzwerkkonfiguration Client}}{25}{figure.23}%
+\contentsline {figure}{\numberline {24}{\ignorespaces Setup ESP32}}{26}{figure.24}%
+\contentsline {figure}{\numberline {25}{\ignorespaces \texttt {onWebSocketEvent()}-Funktion}}{27}{figure.25}%
+\contentsline {figure}{\numberline {26}{\ignorespaces JSON-Beispiel für Steuerung}}{27}{figure.26}%
+\contentsline {figure}{\numberline {27}{\ignorespaces JSON-Beispiel für Kamerasteuerung}}{28}{figure.27}%
+\contentsline {figure}{\numberline {28}{\ignorespaces JSON-Beispiel für Lichtsteuerung}}{28}{figure.28}%
+\contentsline {figure}{\numberline {29}{\ignorespaces \texttt {handleWebSocketMessage()}-Funktion}}{29}{figure.29}%
+\contentsline {figure}{\numberline {30}{\ignorespaces Kamera-GPIO Konfiguration}}{30}{figure.30}%
+\contentsline {figure}{\numberline {31}{\ignorespaces Kamera-Initialisierung}}{31}{figure.31}%
+\contentsline {figure}{\numberline {32}{\ignorespaces Videoübertragung über WebSocket}}{32}{figure.32}%
+\contentsline {figure}{\numberline {33}{\ignorespaces Steuerkreuz auf der Website}}{33}{figure.33}%
+\contentsline {figure}{\numberline {34}{\ignorespaces Steuerkreuz HTML-Code}}{33}{figure.34}%
+\contentsline {figure}{\numberline {35}{\ignorespaces CSS-Klassen \texttt {.dpad-container} und \texttt {.button}}}{34}{figure.35}%
+\contentsline {figure}{\numberline {36}{\ignorespaces CSS-Richtungsklassen}}{35}{figure.36}%
+\contentsline {figure}{\numberline {37}{\ignorespaces EventListener für ungewünschte Aktionen}}{36}{figure.37}%
+\contentsline {figure}{\numberline {38}{\ignorespaces EventListener für Eingabe}}{36}{figure.38}%
+\contentsline {figure}{\numberline {39}{\ignorespaces \texttt {send()}-Funktion}}{37}{figure.39}%
+\contentsline {figure}{\numberline {40}{\ignorespaces \texttt {stop()}-Funktion}}{38}{figure.40}%
+\contentsline {figure}{\numberline {41}{\ignorespaces Geschwindigkeitssteuerung auf der Website}}{38}{figure.41}%
+\contentsline {figure}{\numberline {42}{\ignorespaces Geschwindigkeitssteuerung HTML-Code}}{39}{figure.42}%
+\contentsline {figure}{\numberline {43}{\ignorespaces CSS-Klassen für die Geschwindigkeitssteuerung}}{39}{figure.43}%
+\contentsline {figure}{\numberline {44}{\ignorespaces \texttt {speed-change()}-Funktion}}{40}{figure.44}%
+\contentsline {figure}{\numberline {45}{\ignorespaces Kamerasteuerung auf der Website}}{40}{figure.45}%
+\contentsline {figure}{\numberline {46}{\ignorespaces Kamerasteuerung HTML-Code}}{41}{figure.46}%
+\contentsline {figure}{\numberline {47}{\ignorespaces CSS-Klassen für die Kamerasteuerung}}{41}{figure.47}%
+\contentsline {figure}{\numberline {48}{\ignorespaces \texttt {camera-change()}-Funktion}}{42}{figure.48}%
+\contentsline {figure}{\numberline {49}{\ignorespaces Fernlicht-Icon auf der Website}}{42}{figure.49}%
+\contentsline {figure}{\numberline {50}{\ignorespaces HTML-Code für Fernlicht}}{43}{figure.50}%
+\contentsline {figure}{\numberline {51}{\ignorespaces CSS-Klassen für das Fernlicht}}{43}{figure.51}%
+\contentsline {figure}{\numberline {52}{\ignorespaces \texttt {togglelight()}-Funktion}}{44}{figure.52}%
+\contentsline {figure}{\numberline {53}{\ignorespaces Videoübertragung auf der Website}}{45}{figure.53}%
+\contentsline {figure}{\numberline {54}{\ignorespaces Videoübertragung HTML-Code}}{45}{figure.54}%
+\contentsline {figure}{\numberline {55}{\ignorespaces CSS-Formatierung für \texttt {dynamicimage}}}{45}{figure.55}%
+\contentsline {figure}{\numberline {56}{\ignorespaces Videoübertragung im JavaScript-Code}}{46}{figure.56}%
+\contentsline {figure}{\numberline {57}{\ignorespaces Menü-Icon auf der Website}}{47}{figure.57}%
+\contentsline {figure}{\numberline {58}{\ignorespaces Sidebar mit Sensordaten}}{47}{figure.58}%
+\contentsline {figure}{\numberline {59}{\ignorespaces Sensordaten HTML-Code}}{48}{figure.59}%
+\contentsline {figure}{\numberline {60}{\ignorespaces CSS-Klassen für das Menü}}{49}{figure.60}%
+\contentsline {figure}{\numberline {61}{\ignorespaces CSS-Klasse \texttt {.daten}}}{50}{figure.61}%
+\contentsline {figure}{\numberline {62}{\ignorespaces JavaScript-Verarbeitung der Sensordaten}}{50}{figure.62}%
+\contentsline {figure}{\numberline {63}{\ignorespaces Statusbox auf der Website}}{51}{figure.caption.2}%
+\contentsline {figure}{\numberline {64}{\ignorespaces Statusbox: Verbunden}}{51}{figure.caption.2}%
+\contentsline {figure}{\numberline {65}{\ignorespaces Statusbox: Verbindung getrennt}}{51}{figure.caption.2}%
+\contentsline {figure}{\numberline {66}{\ignorespaces Statusbox HTML-Code}}{51}{figure.66}%
+\contentsline {figure}{\numberline {67}{\ignorespaces CSS-Klassen für die Statusbox}}{52}{figure.67}%
+\contentsline {figure}{\numberline {68}{\ignorespaces JavaScript Funktionen für den Verbindungsstatus}}{52}{figure.68}%
