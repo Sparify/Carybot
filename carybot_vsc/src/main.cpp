@@ -272,13 +272,11 @@ void moveForward()
 
 void moveBackward()
 {
-  //if(!(distance_rear >= 5 && distance_rear <= 20 && speed_cb >= 50)){
     mcp.digitalWrite(leftfrontwheel, LOW);
     mcp.digitalWrite(rightfrontwheel, HIGH);
     mcp.digitalWrite(leftrearwheel, LOW);
     mcp.digitalWrite(rightrearwheel, HIGH);
     Serial.println("Rückwärts");
-  //}
 }
 
 void turnLeft()
