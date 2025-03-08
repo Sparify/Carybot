@@ -432,6 +432,28 @@
 			\begin{minipage}{0.48\textwidth} % Erste Minipage für das erste Bild
 				\raggedright
 				\includegraphics[scale=0.5]{Pictures/Phasen-motor}
+				\captionof{figure}{\raggedright Hall-Sensoren Eingänge}
+				\label{fig:phasen_motor}
+				\vspace{-2pt}
+				\small Quelle: easy-inexpensive-hoverboard-motor-controller
+			\end{minipage}
+			\hfill % Fügt Abstand zwischen den Bildern ein
+			\begin{minipage}{0.48\textwidth} % Zweite Minipage für das zweite Bild
+				\raggedright
+				\includegraphics[scale=0.5]{Pictures/Hall-Sensoren-Motor}
+				\captionof{figure}{\raggedright Hall-Sensoren-Motor}
+				\label{fig:phasen_treiber}
+				\vspace{-2pt}
+				\small Quelle: eigene Abbildung
+			\end{minipage}
+			
+			\subsubsection*{Hall-Sensoren Verbindungen (orange)}
+			
+			Die Hall-Sensoren des Motors werden mit der Treiberplatine verbunden und erfassen die aktuelle Rotorposition. Diese Informationen werden an die Steuerelektronik übermittelt, die daraufhin die Motorphasen entsprechend schaltet, um die gewünschte Drehbewegung zu erzeugen. Dabei wird der gelbe Hall-Sensor mit HA, der grüne mit HB und der braune mit HC auf dem Treiber verbunden. \\[0.5cm]
+			
+			\begin{minipage}{0.48\textwidth} % Erste Minipage für das erste Bild
+				\raggedright
+				\includegraphics[scale=0.5]{Pictures/Hall-sensoren Eingänge}
 				\captionof{figure}{\raggedright Motor Phasen}
 				\label{fig:phasen_motor}
 				\vspace{-2pt}
@@ -446,6 +468,50 @@
 				\vspace{-2pt}
 				\small Quelle: eigene Abbildung
 			\end{minipage}
+			
+			\subsubsection*{Versorgung (rot und schwarz)}
+			\begin{itemize}
+				\item Der Treiber wird mit 12 Volt von der Batterie versorgt.
+				\item Mit diesen 12 Volt steuert der Treiber den Motorstrom an den Phasen.
+			\end{itemize}
+			
+			\begin{minipage}{\textwidth}
+				\centering
+				\includegraphics[scale=0.5]{Pictures/Versorgung-motor}
+				\captionof{figure}{Versorgung der Motoren und Treiberplatine}
+				\label{fig:spiffs_init}
+				\vspace{-2pt}
+				\small Quelle: eigene Abbildung
+			\end{minipage}
+			
+			\subsubsection*{Steuerverbindung (grün und grau)}
+			
+			 Der ESP32 ist mit dem Motortreiber verbunden, um Geschwindigkeit zu regeln. Das funktioniert über ein PWM-Signal. \\[0.5cm]
+			 Das Expander Modul steuert die Richtung und die Bremsfunktion. Der Richtungswechsel erfolgt, indem das Expander Modul den entsprechenden Eingang auf LOW oder HIGH schaltet. Die Bremse reagiert auf eine HIGH Signal. Das heißt, wenn das Expander Modul den Eingang auf der Steuerplatine HIGH schaltet, wird der Motor gebremst.
+			 \\[0.5cm]
+			
+			\begin{minipage}{\textwidth}
+				\centering
+				\includegraphics[scale=1]{Pictures/Steuerverbindung}
+				\captionof{figure}{Ansteuerung der Treiberplatine}
+				\label{fig:spiffs_init}
+				\vspace{-2pt}
+				\small Quelle: eigene Abbildung
+			\end{minipage}
+			
+		\subsection{Schaltungsaufbau mit vier Motor} %Felix
+			
+			\subsubsection{Komponenten}
+			\begin{itemize}
+				\item 4 BLDC-Motor
+				\item 4 Motortreiber (ZS-X11H)
+				\item Mikrocontroller (ESP32)
+				\item Expander Modul (MCP23017)
+			\end{itemize}
+			\newpage
+			
+			\subsubsection{Schaltungserweiterung für vier Motoren:}
+			Der Lastenroboter wird von vier BLDC-Motoren angetrieben, die jeweils über einen eigenen Motortreiber gesteuert werden. Jeder Motortreiber wird über einen PWM-Pin des Esp32 verbunden, um die Geschwindigkeit zu regulieren. Zusätzlich wird jeder Motortreiber über das Expander-Modul angesteuert, um die Richtung zu ändern und die Bremse zu aktivieren. Alle Treiber werden mit 12 Volt von der Batterie versorgt. \\[0.5cm]
 			
 			
 		\subsection{Code} %Daniel
