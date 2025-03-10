@@ -512,10 +512,49 @@
 			
 			\subsubsection{Schaltungserweiterung für vier Motoren:}
 			Der Lastenroboter wird von vier BLDC-Motoren angetrieben, die jeweils über einen eigenen Motortreiber gesteuert werden. Jeder Motortreiber wird über einen PWM-Pin des Esp32 verbunden, um die Geschwindigkeit zu regulieren. Zusätzlich wird jeder Motortreiber über das Expander-Modul angesteuert, um die Richtung zu ändern und die Bremse zu aktivieren. Alle Treiber werden mit 12 Volt von der Batterie versorgt. \\[0.5cm]
+			\begin{minipage}{\textwidth}
+				\centering
+				\includegraphics[scale=1.05]{Pictures/code_pins_motoren}
+				\captionof{figure}{Motoren-GPIO Konfiguration}
+				\label{fig:code_pins_motoren}
+				\vspace{-2pt}
+				\small Quelle: eigene Abbildung
+			\end{minipage}
 			
-			
-		\subsection{Code} %Daniel
-\newpage
+		\subsection{Code} 
+		\subsubsection{Initialisierung}
+		Um die Motoren beziehungsweise die Treiberplatinen anzusteuern, gibt es pro Motor drei Pins. Einer dieser Pins wird mit einem PWM-fähigen Pin am ESP32 verbunden. Die anderen beiden werden mit dem Expander Modul verbunden. Da das Expander Modul nur Digitale Ein-/Ausgänge besitzt, ist es nicht möglich die PWM-Signale auch über dieses Modul zu realisieren. Der Hauptgrund für diese Aufteilung auf den Expander ist, der das wir Analoge Pins am ESP32 einsparen müssen, um diese für andere Sensoren oder Aktoren einzusetzen. \\[0.5cm]
+		\begin{minipage}{\textwidth}
+			\centering
+			\includegraphics[scale=1.05]{Pictures/code_pins_motoren}
+			\captionof{figure}{Motoren-GPIO Konfiguration}
+			\label{fig:code_pins_motoren}
+			\vspace{-2pt}
+			\small Quelle: eigene Abbildung
+			\vspace{10pt}
+		\end{minipage}
+		Um das Expander-Board zu nutzen, wird die Bibliothek Adafruit MCP23X17 verwendet. Diese Bibliothek ermöglicht eine einfachere Initialisierung und Ansteuerung der MCP-Pins, sodass die GPIOs ähnlich wie die des ESP32 genutzt werden können. Außerdem wird ein Objekt der Klasse Adafruit MCP23X17 erstellt, über das man später auf den Expander zugreifen kann. \\[0.5cm]
+		\begin{minipage}{\textwidth}
+			\centering
+			\includegraphics[scale=1.05]{Pictures/code_libary_motoren}
+			\captionof{figure}{\texttt{Adafruit MCP23X17.h}-Bibliothek}
+			\label{fig:code_libary_motoren}
+			\vspace{-2pt}
+			\small Quelle: eigene Abbildung
+		\end{minipage}	
+		\subsubsection{Setup-Code}
+		Am Anfang des Setup-Codes wird überprüft, ob ein Expander Modul über die I2C Schnittstelle verbunden ist und dieses auch funktionstüchtig ist. Falls das nicht der Fall ist, wird ein Error über die Serielle Schnittstelle ausgegeben und das Setup wird unterbrochen. \\[0.5cm]
+		\begin{minipage}{\textwidth}
+			\centering
+			\includegraphics[scale=1.05]{Pictures/code_mcp_if_motoren}
+			\captionof{figure}{MCP-Setup}
+			\label{fig:code_mcp_if_motoren}
+			\vspace{-2pt}
+			\small Quelle: eigene Abbildung
+			\vspace{10pt}
+		\end{minipage}	
+		Danach werden die Pins des ESP32 sowie die des Expander-Moduls als Ausgänge initialisiert. Die Pins des Expander-Ports müssen mit dem Befehl mcp. vor pinMode initialisiert werden. Zudem wird die Motorbremse direkt über den MCP mit digitalWrite aktiviert, sodass sich beim Starten kein Motor ungewollt dreht.
+	\newpage
 	\section{Webserver} %Spari
 	 
 		\subsection{Grundlegende Ziele}

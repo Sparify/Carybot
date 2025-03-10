@@ -1,5 +1,5 @@
 \relax 
-\providecommand\babel@aux[2]{}
+\providecommand \babel@aux [2]{\global \let \babel@toc \@gobbletwo }
 \@nameuse{bbl@beforestart}
 \catcode `"\active 
 \providecommand\hyper@newdestlabel[2]{}
@@ -77,168 +77,178 @@
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.4}Schaltungsaufbau mit vier Motor}{20}{subsection.3.4}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {3.4.1}Komponenten}{20}{subsubsection.3.4.1}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {3.4.2}Schaltungserweiterung für vier Motoren:}{21}{subsubsection.3.4.2}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {21}{\ignorespaces Motoren-GPIO Konfiguration}}{21}{figure.21}\protected@file@percent }
+\newlabel{fig:code_pins_motoren}{{21}{21}{Motoren-GPIO Konfiguration}{figure.21}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.5}Code}{21}{subsection.3.5}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {4}Webserver}{22}{section.4}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Grundlegende Ziele}{22}{subsection.4.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Ideen und Entwürfe}{23}{subsection.4.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}Webserver}{23}{subsection.4.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.3.1}Webserver Setup}{23}{subsubsection.4.3.1}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {21}{\ignorespaces \texttt  {ESPAsyncWebServer.h}-Bibliothek}}{23}{figure.21}\protected@file@percent }
-\newlabel{fig:espasyncwebserver}{{21}{23}{\texttt {ESPAsyncWebServer.h}-Bibliothek}{figure.21}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {22}{\ignorespaces WebServer Netzwerkkonfiguration}}{23}{figure.22}\protected@file@percent }
-\newlabel{fig:server-config}{{22}{23}{WebServer Netzwerkkonfiguration}{figure.22}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {23}{\ignorespaces Webserver Setup}}{24}{figure.23}\protected@file@percent }
-\newlabel{fig:server-setup}{{23}{24}{Webserver Setup}{figure.23}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.3.2}SPIFFS Setup}{24}{subsubsection.4.3.2}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {24}{\ignorespaces SPIFFS Initalisierung}}{25}{figure.24}\protected@file@percent }
-\newlabel{fig:spiffs_init}{{24}{25}{SPIFFS Initalisierung}{figure.24}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {25}{\ignorespaces \texttt  {readfile()}-Funktion}}{26}{figure.25}\protected@file@percent }
-\newlabel{fig:spiffs_readfile}{{25}{26}{\texttt {readfile()}-Funktion}{figure.25}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.4}WebSocket Kommunikation}{26}{subsection.4.4}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.4.1}Kommunikation Setup}{26}{subsubsection.4.4.1}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {26}{\ignorespaces Bibliotheken für die Kommunikation}}{26}{figure.26}\protected@file@percent }
-\newlabel{fig:kommunikation_libraries}{{26}{26}{Bibliotheken für die Kommunikation}{figure.26}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {27}{\ignorespaces Netzwerkkonfiguration Client}}{27}{figure.27}\protected@file@percent }
-\newlabel{fig:kommunikation_netwerkconfig}{{27}{27}{Netzwerkkonfiguration Client}{figure.27}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {28}{\ignorespaces Setup ESP32}}{28}{figure.28}\protected@file@percent }
-\newlabel{fig:kommunikation_setup}{{28}{28}{Setup ESP32}{figure.28}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.4.2}Message Handling}{28}{subsubsection.4.4.2}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces Übersicht der WebSocket-Ereignisse}}{28}{table.caption.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.5.1}Initialisierung}{21}{subsubsection.3.5.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {22}{\ignorespaces Motoren-GPIO Konfiguration}}{22}{figure.22}\protected@file@percent }
+\newlabel{fig:code_pins_motoren}{{22}{22}{Motoren-GPIO Konfiguration}{figure.22}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {23}{\ignorespaces \texttt  {Adafruit MCP23X17.h}-Bibliothek}}{22}{figure.23}\protected@file@percent }
+\newlabel{fig:code_libary_motoren}{{23}{22}{\texttt {Adafruit MCP23X17.h}-Bibliothek}{figure.23}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.5.2}Setup-Code}{22}{subsubsection.3.5.2}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {24}{\ignorespaces MCP-Setup}}{23}{figure.24}\protected@file@percent }
+\newlabel{fig:code_mcp_if_motoren}{{24}{23}{MCP-Setup}{figure.24}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4}Webserver}{24}{section.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Grundlegende Ziele}{24}{subsection.4.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Ideen und Entwürfe}{25}{subsection.4.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}Webserver}{25}{subsection.4.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.3.1}Webserver Setup}{25}{subsubsection.4.3.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {25}{\ignorespaces \texttt  {ESPAsyncWebServer.h}-Bibliothek}}{25}{figure.25}\protected@file@percent }
+\newlabel{fig:espasyncwebserver}{{25}{25}{\texttt {ESPAsyncWebServer.h}-Bibliothek}{figure.25}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {26}{\ignorespaces WebServer Netzwerkkonfiguration}}{25}{figure.26}\protected@file@percent }
+\newlabel{fig:server-config}{{26}{25}{WebServer Netzwerkkonfiguration}{figure.26}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {27}{\ignorespaces Webserver Setup}}{26}{figure.27}\protected@file@percent }
+\newlabel{fig:server-setup}{{27}{26}{Webserver Setup}{figure.27}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.3.2}SPIFFS Setup}{26}{subsubsection.4.3.2}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {28}{\ignorespaces SPIFFS Initalisierung}}{27}{figure.28}\protected@file@percent }
+\newlabel{fig:spiffs_init}{{28}{27}{SPIFFS Initalisierung}{figure.28}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {29}{\ignorespaces \texttt  {readfile()}-Funktion}}{28}{figure.29}\protected@file@percent }
+\newlabel{fig:spiffs_readfile}{{29}{28}{\texttt {readfile()}-Funktion}{figure.29}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.4}WebSocket Kommunikation}{28}{subsection.4.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.4.1}Kommunikation Setup}{28}{subsubsection.4.4.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {30}{\ignorespaces Bibliotheken für die Kommunikation}}{28}{figure.30}\protected@file@percent }
+\newlabel{fig:kommunikation_libraries}{{30}{28}{Bibliotheken für die Kommunikation}{figure.30}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {31}{\ignorespaces Netzwerkkonfiguration Client}}{29}{figure.31}\protected@file@percent }
+\newlabel{fig:kommunikation_netwerkconfig}{{31}{29}{Netzwerkkonfiguration Client}{figure.31}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {32}{\ignorespaces Setup ESP32}}{30}{figure.32}\protected@file@percent }
+\newlabel{fig:kommunikation_setup}{{32}{30}{Setup ESP32}{figure.32}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.4.2}Message Handling}{30}{subsubsection.4.4.2}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces Übersicht der WebSocket-Ereignisse}}{30}{table.caption.1}\protected@file@percent }
 \providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
-\newlabel{tab:websocket-events}{{3}{28}{Übersicht der WebSocket-Ereignisse}{table.caption.1}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {29}{\ignorespaces \texttt  {onWebSocketEvent()}-Funktion}}{29}{figure.29}\protected@file@percent }
-\newlabel{fig:onwebsocketevent}{{29}{29}{\texttt {onWebSocketEvent()}-Funktion}{figure.29}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {30}{\ignorespaces JSON-Beispiel für Steuerung}}{29}{figure.30}\protected@file@percent }
-\newlabel{fig:example-speed}{{30}{29}{JSON-Beispiel für Steuerung}{figure.30}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {31}{\ignorespaces JSON-Beispiel für Kamerasteuerung}}{30}{figure.31}\protected@file@percent }
-\newlabel{fig:example-camera}{{31}{30}{JSON-Beispiel für Kamerasteuerung}{figure.31}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {32}{\ignorespaces JSON-Beispiel für Lichtsteuerung}}{30}{figure.32}\protected@file@percent }
-\newlabel{fig:example-light}{{32}{30}{JSON-Beispiel für Lichtsteuerung}{figure.32}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {33}{\ignorespaces \texttt  {handleWebSocketMessage()}-Funktion}}{31}{figure.33}\protected@file@percent }
-\newlabel{fig:handlewebsocketmessage}{{33}{31}{\texttt {handleWebSocketMessage()}-Funktion}{figure.33}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.5}Kamera}{32}{subsection.4.5}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.6}Kamera}{32}{subsection.4.6}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.6.1}Kamera Setup}{32}{subsubsection.4.6.1}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {34}{\ignorespaces Kamera-GPIO Konfiguration}}{32}{figure.34}\protected@file@percent }
-\newlabel{fig:Kamera-GPIO Konfiguration}{{34}{32}{Kamera-GPIO Konfiguration}{figure.34}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {35}{\ignorespaces Kamera-Initialisierung}}{33}{figure.35}\protected@file@percent }
-\newlabel{fig:Kamera-Initialisierung}{{35}{33}{Kamera-Initialisierung}{figure.35}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.7}Videoübertragung}{34}{subsection.4.7}\protected@file@percent }
-\newlabel{subsec:Videoübertragung}{{4.7}{34}{Videoübertragung}{subsection.4.7}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {36}{\ignorespaces Videoübertragung über WebSocket}}{34}{figure.36}\protected@file@percent }
-\newlabel{fig:Videoübertragung}{{36}{34}{Videoübertragung über WebSocket}{figure.36}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.8}Website}{35}{subsection.4.8}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.8.1}Implementierung der Steuerung}{35}{subsubsection.4.8.1}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {37}{\ignorespaces Steuerkreuz auf der Website}}{35}{figure.37}\protected@file@percent }
-\newlabel{fig:Steuerkreuz-web}{{37}{35}{Steuerkreuz auf der Website}{figure.37}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {38}{\ignorespaces Steuerkreuz HTML-Code}}{35}{figure.38}\protected@file@percent }
-\newlabel{fig:Steuerkreuz-html}{{38}{35}{Steuerkreuz HTML-Code}{figure.38}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {39}{\ignorespaces CSS-Klassen \texttt  {.dpad-container} und \texttt  {.button}}}{36}{figure.39}\protected@file@percent }
-\newlabel{fig:Steuerkreuz-css1}{{39}{36}{CSS-Klassen \texttt {.dpad-container} und \texttt {.button}}{figure.39}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {40}{\ignorespaces CSS-Richtungsklassen}}{37}{figure.40}\protected@file@percent }
-\newlabel{fig:Steuerkreuz-css2}{{40}{37}{CSS-Richtungsklassen}{figure.40}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {41}{\ignorespaces EventListener für ungewünschte Aktionen}}{38}{figure.41}\protected@file@percent }
-\newlabel{fig:Steuerkreuz-js1}{{41}{38}{EventListener für ungewünschte Aktionen}{figure.41}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {42}{\ignorespaces EventListener für Eingabe}}{38}{figure.42}\protected@file@percent }
-\newlabel{fig:Steuerkreuz-js2}{{42}{38}{EventListener für Eingabe}{figure.42}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {43}{\ignorespaces \texttt  {send()}-Funktion}}{39}{figure.43}\protected@file@percent }
-\newlabel{fig:Steuerkreuz-js3}{{43}{39}{\texttt {send()}-Funktion}{figure.43}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {44}{\ignorespaces \texttt  {stop()}-Funktion}}{40}{figure.44}\protected@file@percent }
-\newlabel{fig:Steuerkreuz-js4}{{44}{40}{\texttt {stop()}-Funktion}{figure.44}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {45}{\ignorespaces Geschwindigkeitssteuerung auf der Website}}{40}{figure.45}\protected@file@percent }
-\newlabel{fig:speed-web}{{45}{40}{Geschwindigkeitssteuerung auf der Website}{figure.45}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {46}{\ignorespaces Geschwindigkeitssteuerung HTML-Code}}{41}{figure.46}\protected@file@percent }
-\newlabel{fig:speed-html}{{46}{41}{Geschwindigkeitssteuerung HTML-Code}{figure.46}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {47}{\ignorespaces CSS-Klassen für die Geschwindigkeitssteuerung}}{41}{figure.47}\protected@file@percent }
-\newlabel{fig:speed-css}{{47}{41}{CSS-Klassen für die Geschwindigkeitssteuerung}{figure.47}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {48}{\ignorespaces \texttt  {speed-change()}-Funktion}}{42}{figure.48}\protected@file@percent }
-\newlabel{fig:speed-js}{{48}{42}{\texttt {speed-change()}-Funktion}{figure.48}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {49}{\ignorespaces Kamerasteuerung auf der Website}}{42}{figure.49}\protected@file@percent }
-\newlabel{fig:kamera-web}{{49}{42}{Kamerasteuerung auf der Website}{figure.49}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {50}{\ignorespaces Kamerasteuerung HTML-Code}}{43}{figure.50}\protected@file@percent }
-\newlabel{fig:kamera-html}{{50}{43}{Kamerasteuerung HTML-Code}{figure.50}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {51}{\ignorespaces CSS-Klassen für die Kamerasteuerung}}{43}{figure.51}\protected@file@percent }
-\newlabel{fig:kamera-css}{{51}{43}{CSS-Klassen für die Kamerasteuerung}{figure.51}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {52}{\ignorespaces \texttt  {camera-change()}-Funktion}}{44}{figure.52}\protected@file@percent }
-\newlabel{fig:kamera-js}{{52}{44}{\texttt {camera-change()}-Funktion}{figure.52}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {53}{\ignorespaces Fernlicht-Icon auf der Website}}{44}{figure.53}\protected@file@percent }
-\newlabel{fig:fernlicht-web}{{53}{44}{Fernlicht-Icon auf der Website}{figure.53}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {54}{\ignorespaces HTML-Code für Fernlicht}}{45}{figure.54}\protected@file@percent }
-\newlabel{fig:fernlicht-html}{{54}{45}{HTML-Code für Fernlicht}{figure.54}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {55}{\ignorespaces CSS-Klassen für das Fernlicht}}{45}{figure.55}\protected@file@percent }
-\newlabel{fig:fernlicht-css}{{55}{45}{CSS-Klassen für das Fernlicht}{figure.55}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {56}{\ignorespaces \texttt  {togglelight()}-Funktion}}{46}{figure.56}\protected@file@percent }
-\newlabel{fig:fernlicht-js}{{56}{46}{\texttt {togglelight()}-Funktion}{figure.56}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.8.2}Echtzeit-Videoanzeige}{46}{subsubsection.4.8.2}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {57}{\ignorespaces Videoübertragung auf der Website}}{47}{figure.57}\protected@file@percent }
-\newlabel{fig:videoübertragung-web}{{57}{47}{Videoübertragung auf der Website}{figure.57}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {58}{\ignorespaces Videoübertragung HTML-Code}}{47}{figure.58}\protected@file@percent }
-\newlabel{fig:videoübertragung-html}{{58}{47}{Videoübertragung HTML-Code}{figure.58}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {59}{\ignorespaces CSS-Formatierung für \texttt  {dynamicimage}}}{47}{figure.59}\protected@file@percent }
-\newlabel{fig:videoübertragung-css}{{59}{47}{CSS-Formatierung für \texttt {dynamicimage}}{figure.59}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {60}{\ignorespaces Videoübertragung im JavaScript-Code}}{48}{figure.60}\protected@file@percent }
-\newlabel{fig:videoübertragung-js}{{60}{48}{Videoübertragung im JavaScript-Code}{figure.60}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.8.3}Anzeige von Sensordaten und Verbindungsstatus}{49}{subsubsection.4.8.3}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {61}{\ignorespaces Menü-Icon auf der Website}}{49}{figure.61}\protected@file@percent }
-\newlabel{fig:menu-web}{{61}{49}{Menü-Icon auf der Website}{figure.61}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {62}{\ignorespaces Sidebar mit Sensordaten}}{49}{figure.62}\protected@file@percent }
-\newlabel{fig:sidebar}{{62}{49}{Sidebar mit Sensordaten}{figure.62}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {63}{\ignorespaces Sensordaten HTML-Code}}{50}{figure.63}\protected@file@percent }
-\newlabel{fig:sensordaten-html}{{63}{50}{Sensordaten HTML-Code}{figure.63}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {64}{\ignorespaces CSS-Klassen für das Menü}}{51}{figure.64}\protected@file@percent }
-\newlabel{fig:sensordaten-css}{{64}{51}{CSS-Klassen für das Menü}{figure.64}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {65}{\ignorespaces CSS-Klasse \texttt  {.daten}}}{52}{figure.65}\protected@file@percent }
-\newlabel{fig:sensordaten-daten}{{65}{52}{CSS-Klasse \texttt {.daten}}{figure.65}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {66}{\ignorespaces JavaScript-Verarbeitung der Sensordaten}}{52}{figure.66}\protected@file@percent }
-\newlabel{fig:sensordaten-js}{{66}{52}{JavaScript-Verarbeitung der Sensordaten}{figure.66}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {67}{\ignorespaces Statusbox auf der Website}}{53}{figure.caption.2}\protected@file@percent }
-\newlabel{fig:status-web}{{67}{53}{Statusbox auf der Website}{figure.caption.2}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {68}{\ignorespaces Statusbox: Verbunden}}{53}{figure.caption.2}\protected@file@percent }
-\newlabel{fig:status-green}{{68}{53}{Statusbox: Verbunden}{figure.caption.2}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {69}{\ignorespaces Statusbox: Verbindung getrennt}}{53}{figure.caption.2}\protected@file@percent }
-\newlabel{fig:status-red}{{69}{53}{Statusbox: Verbindung getrennt}{figure.caption.2}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {70}{\ignorespaces Statusbox HTML-Code}}{53}{figure.70}\protected@file@percent }
-\newlabel{fig:status-html}{{70}{53}{Statusbox HTML-Code}{figure.70}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {71}{\ignorespaces CSS-Klassen für die Statusbox}}{54}{figure.71}\protected@file@percent }
-\newlabel{fig:status-css}{{71}{54}{CSS-Klassen für die Statusbox}{figure.71}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {72}{\ignorespaces JavaScript Funktionen für den Verbindungsstatus}}{54}{figure.72}\protected@file@percent }
-\newlabel{fig:status-js}{{72}{54}{JavaScript Funktionen für den Verbindungsstatus}{figure.72}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.9}Herausforderungen und Optimierungen}{55}{subsection.4.9}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.9.1}Probleme bei der WebSocket Kommunikation}{55}{subsubsection.4.9.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.9.2}Latenz- und Performance Optimierungen}{55}{subsubsection.4.9.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.9.3}(Speicher- und Rechenleistungseinschränkungen des ESP32)}{55}{subsubsection.4.9.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.10}(Fazit und Ausblick)}{55}{subsection.4.10}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.10.1}(Mögliche Erweiterungen und Verbesserungen)}{55}{subsubsection.4.10.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {5}Gehäuse}{56}{section.5}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}Planung und Design}{56}{subsection.5.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}Realisierung}{56}{subsection.5.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.3}Materialliste}{56}{subsection.5.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {6}Platine}{57}{section.6}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.1}Grundschaltung}{57}{subsection.6.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.2}Circuit Board}{57}{subsection.6.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.3}Fertiger Prototyp}{57}{subsection.6.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {7}Kamera}{58}{section.7}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {7.1}Kamera im Überblick}{58}{subsection.7.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {7.2}Videoübertragung}{58}{subsection.7.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {7.3}Kameraschwenkung}{58}{subsection.7.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.3.1}Gehäuse}{58}{subsubsection.7.3.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.3.2}Servomotor}{58}{subsubsection.7.3.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {7.4}Code}{58}{subsection.7.4}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {8}Sensoren}{59}{section.8}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {8.1}Abstandsensor}{59}{subsection.8.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {8.2}Gewichtsmessung}{59}{subsection.8.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {8.2.1}Grundprinzip}{59}{subsubsection.8.2.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {8.2.2}Schaltungsaufbau}{59}{subsubsection.8.2.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {8.2.3}Code}{59}{subsubsection.8.2.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {9}Entwicklungstools}{60}{section.9}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {9.1}Autodesk Fushion}{60}{subsection.9.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {9.2}Eagle}{60}{subsection.9.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {9.3}VS-Code}{60}{subsection.9.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {9.3.1}Setup}{60}{subsubsection.9.3.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {9.3.2}Bibliotheken}{61}{subsubsection.9.3.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {9.3.3}verwendete Bibliotheken}{61}{subsubsection.9.3.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {9.4}LaTex}{62}{subsection.9.4}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {9.5}GitHub}{62}{subsection.9.5}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {10}Abbildungsverzeichnis}{63}{section.10}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {11}Literaturverzeichnis}{66}{section.11}\protected@file@percent }
-\gdef \@abspage@last{66}
+\newlabel{tab:websocket-events}{{3}{30}{Übersicht der WebSocket-Ereignisse}{table.caption.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {33}{\ignorespaces \texttt  {onWebSocketEvent()}-Funktion}}{31}{figure.33}\protected@file@percent }
+\newlabel{fig:onwebsocketevent}{{33}{31}{\texttt {onWebSocketEvent()}-Funktion}{figure.33}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {34}{\ignorespaces JSON-Beispiel für Steuerung}}{31}{figure.34}\protected@file@percent }
+\newlabel{fig:example-speed}{{34}{31}{JSON-Beispiel für Steuerung}{figure.34}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {35}{\ignorespaces JSON-Beispiel für Kamerasteuerung}}{32}{figure.35}\protected@file@percent }
+\newlabel{fig:example-camera}{{35}{32}{JSON-Beispiel für Kamerasteuerung}{figure.35}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {36}{\ignorespaces JSON-Beispiel für Lichtsteuerung}}{32}{figure.36}\protected@file@percent }
+\newlabel{fig:example-light}{{36}{32}{JSON-Beispiel für Lichtsteuerung}{figure.36}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {37}{\ignorespaces \texttt  {handleWebSocketMessage()}-Funktion}}{33}{figure.37}\protected@file@percent }
+\newlabel{fig:handlewebsocketmessage}{{37}{33}{\texttt {handleWebSocketMessage()}-Funktion}{figure.37}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.5}Kamera}{34}{subsection.4.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.6}Kamera}{34}{subsection.4.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.6.1}Kamera Setup}{34}{subsubsection.4.6.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {38}{\ignorespaces Kamera-GPIO Konfiguration}}{34}{figure.38}\protected@file@percent }
+\newlabel{fig:Kamera-GPIO Konfiguration}{{38}{34}{Kamera-GPIO Konfiguration}{figure.38}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {39}{\ignorespaces Kamera-Initialisierung}}{35}{figure.39}\protected@file@percent }
+\newlabel{fig:Kamera-Initialisierung}{{39}{35}{Kamera-Initialisierung}{figure.39}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.7}Videoübertragung}{36}{subsection.4.7}\protected@file@percent }
+\newlabel{subsec:Videoübertragung}{{4.7}{36}{Videoübertragung}{subsection.4.7}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {40}{\ignorespaces Videoübertragung über WebSocket}}{36}{figure.40}\protected@file@percent }
+\newlabel{fig:Videoübertragung}{{40}{36}{Videoübertragung über WebSocket}{figure.40}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.8}Website}{37}{subsection.4.8}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.8.1}Implementierung der Steuerung}{37}{subsubsection.4.8.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {41}{\ignorespaces Steuerkreuz auf der Website}}{37}{figure.41}\protected@file@percent }
+\newlabel{fig:Steuerkreuz-web}{{41}{37}{Steuerkreuz auf der Website}{figure.41}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {42}{\ignorespaces Steuerkreuz HTML-Code}}{37}{figure.42}\protected@file@percent }
+\newlabel{fig:Steuerkreuz-html}{{42}{37}{Steuerkreuz HTML-Code}{figure.42}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {43}{\ignorespaces CSS-Klassen \texttt  {.dpad-container} und \texttt  {.button}}}{38}{figure.43}\protected@file@percent }
+\newlabel{fig:Steuerkreuz-css1}{{43}{38}{CSS-Klassen \texttt {.dpad-container} und \texttt {.button}}{figure.43}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {44}{\ignorespaces CSS-Richtungsklassen}}{39}{figure.44}\protected@file@percent }
+\newlabel{fig:Steuerkreuz-css2}{{44}{39}{CSS-Richtungsklassen}{figure.44}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {45}{\ignorespaces EventListener für ungewünschte Aktionen}}{40}{figure.45}\protected@file@percent }
+\newlabel{fig:Steuerkreuz-js1}{{45}{40}{EventListener für ungewünschte Aktionen}{figure.45}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {46}{\ignorespaces EventListener für Eingabe}}{40}{figure.46}\protected@file@percent }
+\newlabel{fig:Steuerkreuz-js2}{{46}{40}{EventListener für Eingabe}{figure.46}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {47}{\ignorespaces \texttt  {send()}-Funktion}}{41}{figure.47}\protected@file@percent }
+\newlabel{fig:Steuerkreuz-js3}{{47}{41}{\texttt {send()}-Funktion}{figure.47}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {48}{\ignorespaces \texttt  {stop()}-Funktion}}{42}{figure.48}\protected@file@percent }
+\newlabel{fig:Steuerkreuz-js4}{{48}{42}{\texttt {stop()}-Funktion}{figure.48}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {49}{\ignorespaces Geschwindigkeitssteuerung auf der Website}}{42}{figure.49}\protected@file@percent }
+\newlabel{fig:speed-web}{{49}{42}{Geschwindigkeitssteuerung auf der Website}{figure.49}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {50}{\ignorespaces Geschwindigkeitssteuerung HTML-Code}}{43}{figure.50}\protected@file@percent }
+\newlabel{fig:speed-html}{{50}{43}{Geschwindigkeitssteuerung HTML-Code}{figure.50}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {51}{\ignorespaces CSS-Klassen für die Geschwindigkeitssteuerung}}{43}{figure.51}\protected@file@percent }
+\newlabel{fig:speed-css}{{51}{43}{CSS-Klassen für die Geschwindigkeitssteuerung}{figure.51}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {52}{\ignorespaces \texttt  {speed-change()}-Funktion}}{44}{figure.52}\protected@file@percent }
+\newlabel{fig:speed-js}{{52}{44}{\texttt {speed-change()}-Funktion}{figure.52}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {53}{\ignorespaces Kamerasteuerung auf der Website}}{44}{figure.53}\protected@file@percent }
+\newlabel{fig:kamera-web}{{53}{44}{Kamerasteuerung auf der Website}{figure.53}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {54}{\ignorespaces Kamerasteuerung HTML-Code}}{45}{figure.54}\protected@file@percent }
+\newlabel{fig:kamera-html}{{54}{45}{Kamerasteuerung HTML-Code}{figure.54}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {55}{\ignorespaces CSS-Klassen für die Kamerasteuerung}}{45}{figure.55}\protected@file@percent }
+\newlabel{fig:kamera-css}{{55}{45}{CSS-Klassen für die Kamerasteuerung}{figure.55}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {56}{\ignorespaces \texttt  {camera-change()}-Funktion}}{46}{figure.56}\protected@file@percent }
+\newlabel{fig:kamera-js}{{56}{46}{\texttt {camera-change()}-Funktion}{figure.56}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {57}{\ignorespaces Fernlicht-Icon auf der Website}}{46}{figure.57}\protected@file@percent }
+\newlabel{fig:fernlicht-web}{{57}{46}{Fernlicht-Icon auf der Website}{figure.57}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {58}{\ignorespaces HTML-Code für Fernlicht}}{47}{figure.58}\protected@file@percent }
+\newlabel{fig:fernlicht-html}{{58}{47}{HTML-Code für Fernlicht}{figure.58}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {59}{\ignorespaces CSS-Klassen für das Fernlicht}}{47}{figure.59}\protected@file@percent }
+\newlabel{fig:fernlicht-css}{{59}{47}{CSS-Klassen für das Fernlicht}{figure.59}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {60}{\ignorespaces \texttt  {togglelight()}-Funktion}}{48}{figure.60}\protected@file@percent }
+\newlabel{fig:fernlicht-js}{{60}{48}{\texttt {togglelight()}-Funktion}{figure.60}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.8.2}Echtzeit-Videoanzeige}{48}{subsubsection.4.8.2}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {61}{\ignorespaces Videoübertragung auf der Website}}{49}{figure.61}\protected@file@percent }
+\newlabel{fig:videoübertragung-web}{{61}{49}{Videoübertragung auf der Website}{figure.61}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {62}{\ignorespaces Videoübertragung HTML-Code}}{49}{figure.62}\protected@file@percent }
+\newlabel{fig:videoübertragung-html}{{62}{49}{Videoübertragung HTML-Code}{figure.62}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {63}{\ignorespaces CSS-Formatierung für \texttt  {dynamicimage}}}{49}{figure.63}\protected@file@percent }
+\newlabel{fig:videoübertragung-css}{{63}{49}{CSS-Formatierung für \texttt {dynamicimage}}{figure.63}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {64}{\ignorespaces Videoübertragung im JavaScript-Code}}{50}{figure.64}\protected@file@percent }
+\newlabel{fig:videoübertragung-js}{{64}{50}{Videoübertragung im JavaScript-Code}{figure.64}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.8.3}Anzeige von Sensordaten und Verbindungsstatus}{51}{subsubsection.4.8.3}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {65}{\ignorespaces Menü-Icon auf der Website}}{51}{figure.65}\protected@file@percent }
+\newlabel{fig:menu-web}{{65}{51}{Menü-Icon auf der Website}{figure.65}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {66}{\ignorespaces Sidebar mit Sensordaten}}{51}{figure.66}\protected@file@percent }
+\newlabel{fig:sidebar}{{66}{51}{Sidebar mit Sensordaten}{figure.66}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {67}{\ignorespaces Sensordaten HTML-Code}}{52}{figure.67}\protected@file@percent }
+\newlabel{fig:sensordaten-html}{{67}{52}{Sensordaten HTML-Code}{figure.67}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {68}{\ignorespaces CSS-Klassen für das Menü}}{53}{figure.68}\protected@file@percent }
+\newlabel{fig:sensordaten-css}{{68}{53}{CSS-Klassen für das Menü}{figure.68}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {69}{\ignorespaces CSS-Klasse \texttt  {.daten}}}{54}{figure.69}\protected@file@percent }
+\newlabel{fig:sensordaten-daten}{{69}{54}{CSS-Klasse \texttt {.daten}}{figure.69}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {70}{\ignorespaces JavaScript-Verarbeitung der Sensordaten}}{54}{figure.70}\protected@file@percent }
+\newlabel{fig:sensordaten-js}{{70}{54}{JavaScript-Verarbeitung der Sensordaten}{figure.70}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {71}{\ignorespaces Statusbox auf der Website}}{55}{figure.caption.2}\protected@file@percent }
+\newlabel{fig:status-web}{{71}{55}{Statusbox auf der Website}{figure.caption.2}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {72}{\ignorespaces Statusbox: Verbunden}}{55}{figure.caption.2}\protected@file@percent }
+\newlabel{fig:status-green}{{72}{55}{Statusbox: Verbunden}{figure.caption.2}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {73}{\ignorespaces Statusbox: Verbindung getrennt}}{55}{figure.caption.2}\protected@file@percent }
+\newlabel{fig:status-red}{{73}{55}{Statusbox: Verbindung getrennt}{figure.caption.2}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {74}{\ignorespaces Statusbox HTML-Code}}{55}{figure.74}\protected@file@percent }
+\newlabel{fig:status-html}{{74}{55}{Statusbox HTML-Code}{figure.74}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {75}{\ignorespaces CSS-Klassen für die Statusbox}}{56}{figure.75}\protected@file@percent }
+\newlabel{fig:status-css}{{75}{56}{CSS-Klassen für die Statusbox}{figure.75}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {76}{\ignorespaces JavaScript Funktionen für den Verbindungsstatus}}{56}{figure.76}\protected@file@percent }
+\newlabel{fig:status-js}{{76}{56}{JavaScript Funktionen für den Verbindungsstatus}{figure.76}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.9}Herausforderungen und Optimierungen}{57}{subsection.4.9}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.9.1}Probleme bei der WebSocket Kommunikation}{57}{subsubsection.4.9.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.9.2}Latenz- und Performance Optimierungen}{57}{subsubsection.4.9.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.9.3}(Speicher- und Rechenleistungseinschränkungen des ESP32)}{57}{subsubsection.4.9.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.10}(Fazit und Ausblick)}{57}{subsection.4.10}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.10.1}(Mögliche Erweiterungen und Verbesserungen)}{57}{subsubsection.4.10.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {5}Gehäuse}{58}{section.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}Planung und Design}{58}{subsection.5.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}Realisierung}{58}{subsection.5.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3}Materialliste}{58}{subsection.5.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {6}Platine}{59}{section.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.1}Grundschaltung}{59}{subsection.6.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.2}Circuit Board}{59}{subsection.6.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.3}Fertiger Prototyp}{59}{subsection.6.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {7}Kamera}{60}{section.7}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.1}Kamera im Überblick}{60}{subsection.7.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.2}Videoübertragung}{60}{subsection.7.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.3}Kameraschwenkung}{60}{subsection.7.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.3.1}Gehäuse}{60}{subsubsection.7.3.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.3.2}Servomotor}{60}{subsubsection.7.3.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.4}Code}{60}{subsection.7.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {8}Sensoren}{61}{section.8}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.1}Abstandsensor}{61}{subsection.8.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.2}Gewichtsmessung}{61}{subsection.8.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {8.2.1}Grundprinzip}{61}{subsubsection.8.2.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {8.2.2}Schaltungsaufbau}{61}{subsubsection.8.2.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {8.2.3}Code}{61}{subsubsection.8.2.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {9}Entwicklungstools}{62}{section.9}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {9.1}Autodesk Fushion}{62}{subsection.9.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {9.2}Eagle}{62}{subsection.9.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {9.3}VS-Code}{62}{subsection.9.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {9.3.1}Setup}{62}{subsubsection.9.3.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {9.3.2}Bibliotheken}{63}{subsubsection.9.3.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {9.3.3}verwendete Bibliotheken}{63}{subsubsection.9.3.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {9.4}LaTex}{64}{subsection.9.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {9.5}GitHub}{64}{subsection.9.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {10}Abbildungsverzeichnis}{65}{section.10}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {11}Literaturverzeichnis}{68}{section.11}\protected@file@percent }
+\gdef \@abspage@last{68}
