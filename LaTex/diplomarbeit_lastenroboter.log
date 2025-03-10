@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2025.2.21)  10 MAR 2025 16:12
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2025.2.21)  10 MAR 2025 17:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -703,35 +703,47 @@ LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
 (Font)                  OT1/cmr/bx/it --> OT1/ptm/m/it on input line 35.
 LaTeX Info: Redefining \hbar on input line 50.
 )
+(C:\Program Files\MiKTeX\tex/latex/ulem\ulem.sty
+\UL@box=\box65
+\UL@hyphenbox=\box66
+\UL@skip=\skip68
+\UL@hook=\toks41
+\UL@height=\dimen290
+\UL@pe=\count317
+\UL@pixel=\dimen291
+\ULC@box=\box67
+Package: ulem 2019/11/18
+\ULdepth=\dimen292
+)
 (C:\Program Files\MiKTeX\tex/latex/tools\array.sty
 Package: array 2024/10/17 v2.6g Tabular extension package (FMi)
-\col@sep=\dimen290
-\ar@mcellbox=\box65
-\extrarowheight=\dimen291
-\NC@list=\toks41
-\extratabsurround=\skip68
-\backup@length=\skip69
-\ar@cellbox=\box66
+\col@sep=\dimen293
+\ar@mcellbox=\box68
+\extrarowheight=\dimen294
+\NC@list=\toks42
+\extratabsurround=\skip69
+\backup@length=\skip70
+\ar@cellbox=\box69
 )
 (C:\Program Files\MiKTeX\tex/latex/booktabs\booktabs.sty
 Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
-\heavyrulewidth=\dimen292
-\lightrulewidth=\dimen293
-\cmidrulewidth=\dimen294
-\belowrulesep=\dimen295
-\belowbottomsep=\dimen296
-\aboverulesep=\dimen297
-\abovetopsep=\dimen298
-\cmidrulesep=\dimen299
-\cmidrulekern=\dimen300
-\defaultaddspace=\dimen301
-\@cmidla=\count317
-\@cmidlb=\count318
-\@aboverulesep=\dimen302
-\@belowrulesep=\dimen303
-\@thisruleclass=\count319
-\@lastruleclass=\count320
-\@thisrulewidth=\dimen304
+\heavyrulewidth=\dimen295
+\lightrulewidth=\dimen296
+\cmidrulewidth=\dimen297
+\belowrulesep=\dimen298
+\belowbottomsep=\dimen299
+\aboverulesep=\dimen300
+\abovetopsep=\dimen301
+\cmidrulesep=\dimen302
+\cmidrulekern=\dimen303
+\defaultaddspace=\dimen304
+\@cmidla=\count318
+\@cmidlb=\count319
+\@aboverulesep=\dimen305
+\@belowrulesep=\dimen306
+\@thisruleclass=\count320
+\@lastruleclass=\count321
+\@thisrulewidth=\dimen307
 )
 (C:\Program Files\MiKTeX\tex/latex/adjustbox\adjustbox.sty
 Package: adjustbox 2022/10/17 v1.3a Adjusting TeX boxes (trim, clip, ...)
@@ -741,10 +753,10 @@ Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
 
 (C:\Program Files\MiKTeX\tex/generic/xkeyval\xkeyval.tex
 (C:\Program Files\MiKTeX\tex/generic/xkeyval\xkvutils.tex
-\XKV@toks=\toks42
-\XKV@tempa@toks=\toks43
+\XKV@toks=\toks43
+\XKV@tempa@toks=\toks44
 )
-\XKV@depth=\count321
+\XKV@depth=\count322
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
 (C:\Program Files\MiKTeX\tex/latex/adjustbox\adjcalc.sty
@@ -756,57 +768,57 @@ Package: trimclip 2020/08/19 v1.2 Trim and clip general TeX material
 
 (C:\Program Files\MiKTeX\tex/latex/collectbox\collectbox.sty
 Package: collectbox 2022/10/17 v0.4c Collect macro arguments as boxes
-\collectedbox=\box67
+\collectedbox=\box70
 )
-\tc@llx=\dimen305
-\tc@lly=\dimen306
-\tc@urx=\dimen307
-\tc@ury=\dimen308
+\tc@llx=\dimen308
+\tc@lly=\dimen309
+\tc@urx=\dimen310
+\tc@ury=\dimen311
 Package trimclip Info: Using driver 'tc-pdftex.def'.
 
 (C:\Program Files\MiKTeX\tex/latex/adjustbox\tc-pdftex.def
 File: tc-pdftex.def 2019/01/04 v2.2 Clipping driver for pdftex
 ))
-\adjbox@Width=\dimen309
-\adjbox@Height=\dimen310
-\adjbox@Depth=\dimen311
-\adjbox@Totalheight=\dimen312
-\adjbox@pwidth=\dimen313
-\adjbox@pheight=\dimen314
-\adjbox@pdepth=\dimen315
-\adjbox@ptotalheight=\dimen316
+\adjbox@Width=\dimen312
+\adjbox@Height=\dimen313
+\adjbox@Depth=\dimen314
+\adjbox@Totalheight=\dimen315
+\adjbox@pwidth=\dimen316
+\adjbox@pheight=\dimen317
+\adjbox@pdepth=\dimen318
+\adjbox@ptotalheight=\dimen319
 
 (C:\Program Files\MiKTeX\tex/latex/ifoddpage\ifoddpage.sty
 Package: ifoddpage 2022/10/18 v1.2 Conditionals for odd/even page detection
-\c@checkoddpage=\count322
+\c@checkoddpage=\count323
 )
 (C:\Program Files\MiKTeX\tex/latex/varwidth\varwidth.sty
 Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
-\@vwid@box=\box68
-\sift@deathcycles=\count323
-\@vwid@loff=\dimen317
-\@vwid@roff=\dimen318
+\@vwid@box=\box71
+\sift@deathcycles=\count324
+\@vwid@loff=\dimen320
+\@vwid@roff=\dimen321
 ))
 (C:\Program Files\MiKTeX\tex/latex/tools\longtable.sty
 Package: longtable 2024-10-27 v4.22 Multi-page Table package (DPC)
-\LTleft=\skip70
-\LTright=\skip71
-\LTpre=\skip72
-\LTpost=\skip73
-\LTchunksize=\count324
-\LTcapwidth=\dimen319
-\LT@head=\box69
-\LT@firsthead=\box70
-\LT@foot=\box71
-\LT@lastfoot=\box72
-\LT@gbox=\box73
-\LT@cols=\count325
-\LT@rows=\count326
-\c@LT@tables=\count327
-\c@LT@chunks=\count328
-\LT@p@ftn=\toks44
+\LTleft=\skip71
+\LTright=\skip72
+\LTpre=\skip73
+\LTpost=\skip74
+\LTchunksize=\count325
+\LTcapwidth=\dimen322
+\LT@head=\box72
+\LT@firsthead=\box73
+\LT@foot=\box74
+\LT@lastfoot=\box75
+\LT@gbox=\box76
+\LT@cols=\count326
+\LT@rows=\count327
+\c@LT@tables=\count328
+\c@LT@chunks=\count329
+\LT@p@ftn=\toks45
 )
-LaTeX Font Info:    Trying to load font information for T1+ptm on input line 27
+LaTeX Font Info:    Trying to load font information for T1+ptm on input line 28
 .
 
 (C:\Program Files\MiKTeX\tex/latex/psnfss\t1ptm.fd
@@ -814,8 +826,8 @@ File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 )
 (C:\Program Files\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
 File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count329
-\l__pdf_internal_box=\box74
+\l__color_backend_stack_int=\count330
+\l__pdf_internal_box=\box77
 )
 (diplomarbeit_lastenroboter.aux
 
@@ -866,37 +878,37 @@ LaTeX Warning: Label `fig:spiffs_init' multiply defined.
 )
 \openout1 = `diplomarbeit_lastenroboter.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
  (C:\Program Files\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count330
-\scratchdimen=\dimen320
-\scratchbox=\box75
-\nofMPsegments=\count331
-\nofMParguments=\count332
-\everyMPshowfont=\toks45
-\MPscratchCnt=\count333
-\MPscratchDim=\dimen321
-\MPnumerator=\count334
-\makeMPintoPDFobject=\count335
-\everyMPtoPDFconversion=\toks46
+\scratchcounter=\count331
+\scratchdimen=\dimen323
+\scratchbox=\box78
+\nofMPsegments=\count332
+\nofMParguments=\count333
+\everyMPshowfont=\toks46
+\MPscratchCnt=\count334
+\MPscratchDim=\dimen324
+\MPnumerator=\count335
+\makeMPintoPDFobject=\count336
+\everyMPtoPDFconversion=\toks47
 ) (C:\Program Files\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -918,9 +930,9 @@ Package caption Info: End \AtBeginDocument code.
 Package pgfplots Warning: running in backwards compatibility mode (unsuitable t
 ick labels; missing features). Consider writing \pgfplotsset{compat=1.18} into 
 your preamble.
- on input line 27.
+ on input line 28.
 
-Package hyperref Info: Link coloring OFF on input line 27.
+Package hyperref Info: Link coloring OFF on input line 28.
 (diplomarbeit_lastenroboter.out) (diplomarbeit_lastenroboter.out)
 \@outlinefile=\write4
 \openout4 = `diplomarbeit_lastenroboter.out'.
@@ -960,57 +972,57 @@ Package hyperref Info: Link coloring OFF on input line 27.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\big@size=\dimen322
+\big@size=\dimen325
 LaTeX Font Info:    Trying to load font information for OT1+ztmcm on input line
- 29.
+ 30.
 (C:\Program Files\MiKTeX\tex/latex/psnfss\ot1ztmcm.fd
 File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
 )
 LaTeX Font Info:    Trying to load font information for OML+ztmcm on input line
- 29.
+ 30.
 
 (C:\Program Files\MiKTeX\tex/latex/psnfss\omlztmcm.fd
 File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
 )
 LaTeX Font Info:    Trying to load font information for OMS+ztmcm on input line
- 29.
+ 30.
 
 (C:\Program Files\MiKTeX\tex/latex/psnfss\omsztmcm.fd
 File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
 )
 LaTeX Font Info:    Trying to load font information for OMX+ztmcm on input line
- 29.
+ 30.
 
 (C:\Program Files\MiKTeX\tex/latex/psnfss\omxztmcm.fd
 File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
 )
-LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 2
-9.
+LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 3
+0.
 
 (C:\Program Files\MiKTeX\tex/latex/psnfss\ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 29.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 30.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 29.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 30.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 29.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 30.
 
 
 LaTeX Warning: No \author given.
 
-<Pictures/bulme_logo.png, id=326, 501.875pt x 501.875pt>
+<Pictures/bulme_logo.png, id=334, 501.875pt x 501.875pt>
 File: Pictures/bulme_logo.png Graphic file (type png)
 <use Pictures/bulme_logo.png>
-Package pdftex.def Info: Pictures/bulme_logo.png  used on input line 32.
+Package pdftex.def Info: Pictures/bulme_logo.png  used on input line 33.
 (pdftex.def)             Requested size: 250.93687pt x 250.93687pt.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 33.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 34.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 33.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 34.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 33.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 34.
 
 
 [1
@@ -1031,7 +1043,7 @@ les/MiKTeX/fonts/enc/dvips/base/8r.enc} <./Pictures/bulme_logo.png>]
 
 
 [6]
-Underfull \hbox (badness 10000) in paragraph at lines 78--82
+Underfull \hbox (badness 10000) in paragraph at lines 79--83
 
  []
 
@@ -1040,309 +1052,309 @@ Underfull \hbox (badness 10000) in paragraph at lines 78--82
 [7]
 
 [8]
-<Pictures/placeholder.png, id=444, 2007.5pt x 2677.00125pt>
+<Pictures/placeholder.png, id=454, 2007.5pt x 2677.00125pt>
 File: Pictures/placeholder.png Graphic file (type png)
 <use Pictures/placeholder.png>
-Package pdftex.def Info: Pictures/placeholder.png  used on input line 103.
+Package pdftex.def Info: Pictures/placeholder.png  used on input line 104.
 (pdftex.def)             Requested size: 85.35696pt x 113.80168pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 104.
+(caption)                particular \caption on input line 105.
 See the caption package documentation for explanation.
 
 LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 1
-12.
+13.
 (C:\Program Files\MiKTeX\tex/latex/psnfss\ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 )
 File: Pictures/placeholder.png Graphic file (type png)
 <use Pictures/placeholder.png>
-Package pdftex.def Info: Pictures/placeholder.png  used on input line 122.
+Package pdftex.def Info: Pictures/placeholder.png  used on input line 123.
 (pdftex.def)             Requested size: 85.35696pt x 113.80168pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 123.
+(caption)                particular \caption on input line 124.
 See the caption package documentation for explanation.
 
 
-Underfull \hbox (badness 2035) in paragraph at lines 131--132
+Underfull \hbox (badness 2035) in paragraph at lines 132--133
 []\T1/ptm/m/n/12 Benutzeroberfl�che (Web-Oberfl�che) f�r Steue-
  []
 
 
-Underfull \hbox (badness 5446) in paragraph at lines 132--133
+Underfull \hbox (badness 5446) in paragraph at lines 133--134
 []\T1/ptm/m/n/12 �bertragung der Steue-rung/Befehle von Web-
  []
 
 File: Pictures/placeholder.png Graphic file (type png)
 <use Pictures/placeholder.png>
-Package pdftex.def Info: Pictures/placeholder.png  used on input line 139.
+Package pdftex.def Info: Pictures/placeholder.png  used on input line 140.
 (pdftex.def)             Requested size: 85.35696pt x 113.80168pt.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 140.
+(caption)                particular \caption on input line 141.
 See the caption package documentation for explanation.
 
 
 
 [9 <./Pictures/placeholder.png>]
-<Pictures/Projekt-Grobplan.jpg, id=453, 1098.35344pt x 477.28313pt>
+<Pictures/Projekt-Grobplan.jpg, id=463, 1098.35344pt x 477.28313pt>
 File: Pictures/Projekt-Grobplan.jpg Graphic file (type jpg)
 <use Pictures/Projekt-Grobplan.jpg>
-Package pdftex.def Info: Pictures/Projekt-Grobplan.jpg  used on input line 169.
+Package pdftex.def Info: Pictures/Projekt-Grobplan.jpg  used on input line 170.
 
 (pdftex.def)             Requested size: 461.3053pt x 200.45753pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 170.
+(caption)                particular \caption on input line 171.
 See the caption package documentation for explanation.
 
 
-Overfull \hbox (34.51395pt too wide) in paragraph at lines 169--170
+Overfull \hbox (34.51395pt too wide) in paragraph at lines 170--171
  [][] 
  []
 
 
 
 [10 <./Pictures/Projekt-Grobplan.jpg>]
-Overfull \hbox (10.17952pt too wide) in alignment at lines 201--205
+Overfull \hbox (10.17952pt too wide) in alignment at lines 202--206
  [] [] [] [] 
  []
 
 
-Overfull \hbox (10.17952pt too wide) in alignment at lines 205--209
+Overfull \hbox (10.17952pt too wide) in alignment at lines 206--210
  [] [] [] [] 
  []
 
 
-Overfull \hbox (10.17952pt too wide) in alignment at lines 209--227
+Overfull \hbox (10.17952pt too wide) in alignment at lines 210--228
  [] [] [] [] 
  []
 
 
 
 [11]
-<Pictures/Motoren.png, id=465, 368.87813pt x 302.63063pt>
+<Pictures/Motoren.png, id=475, 368.87813pt x 302.63063pt>
 File: Pictures/Motoren.png Graphic file (type png)
 <use Pictures/Motoren.png>
-Package pdftex.def Info: Pictures/Motoren.png  used on input line 240.
+Package pdftex.def Info: Pictures/Motoren.png  used on input line 241.
 (pdftex.def)             Requested size: 184.4386pt x 151.31494pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 241.
+(caption)                particular \caption on input line 242.
 See the caption package documentation for explanation.
 
-<Pictures/BLDC_Motor.png, id=467, 368.87813pt x 310.91156pt>
+<Pictures/BLDC_Motor.png, id=477, 368.87813pt x 310.91156pt>
 File: Pictures/BLDC_Motor.png Graphic file (type png)
 <use Pictures/BLDC_Motor.png>
-Package pdftex.def Info: Pictures/BLDC_Motor.png  used on input line 256.
+Package pdftex.def Info: Pictures/BLDC_Motor.png  used on input line 257.
 (pdftex.def)             Requested size: 110.66428pt x 93.27417pt.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 257.
+(caption)                particular \caption on input line 258.
 See the caption package documentation for explanation.
 
 
 
 [12 <./Pictures/Motoren.png>]
-<Pictures/Phasen_steuerung.png, id=474, 641.39626pt x 352.31625pt>
+<Pictures/Phasen_steuerung.png, id=484, 641.39626pt x 352.31625pt>
 File: Pictures/Phasen_steuerung.png Graphic file (type png)
 <use Pictures/Phasen_steuerung.png>
-Package pdftex.def Info: Pictures/Phasen_steuerung.png  used on input line 270.
+Package pdftex.def Info: Pictures/Phasen_steuerung.png  used on input line 271.
 
 (pdftex.def)             Requested size: 384.84071pt x 211.39137pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 271.
+(caption)                particular \caption on input line 272.
 See the caption package documentation for explanation.
 
 
 
 [13 <./Pictures/BLDC_Motor.png> <./Pictures/Phasen_steuerung.png>]
-<Pictures/ZS-X11H.jpg, id=484, 2605.79155pt x 1667.29944pt>
+<Pictures/ZS-X11H.jpg, id=494, 2605.79155pt x 1667.29944pt>
 File: Pictures/ZS-X11H.jpg Graphic file (type jpg)
 <use Pictures/ZS-X11H.jpg>
-Package pdftex.def Info: Pictures/ZS-X11H.jpg  used on input line 302.
+Package pdftex.def Info: Pictures/ZS-X11H.jpg  used on input line 303.
 (pdftex.def)             Requested size: 390.85187pt x 250.08412pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 303.
+(caption)                particular \caption on input line 304.
 See the caption package documentation for explanation.
 
 
 
 [14 <./Pictures/ZS-X11H.jpg>]
-<Pictures/Motorphasen.jpg, id=490, 207.77625pt x 70.76437pt>
+<Pictures/Motorphasen.jpg, id=500, 207.77625pt x 70.76437pt>
 File: Pictures/Motorphasen.jpg Graphic file (type jpg)
 <use Pictures/Motorphasen.jpg>
-Package pdftex.def Info: Pictures/Motorphasen.jpg  used on input line 319.
+Package pdftex.def Info: Pictures/Motorphasen.jpg  used on input line 320.
 (pdftex.def)             Requested size: 207.77573pt x 70.76419pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 320.
+(caption)                particular \caption on input line 321.
 See the caption package documentation for explanation.
 
-<Pictures/PWM-Treiber.jpg, id=491, 173.14688pt x 120.45pt>
+<Pictures/PWM-Treiber.jpg, id=501, 173.14688pt x 120.45pt>
 File: Pictures/PWM-Treiber.jpg Graphic file (type jpg)
 <use Pictures/PWM-Treiber.jpg>
-Package pdftex.def Info: Pictures/PWM-Treiber.jpg  used on input line 338.
+Package pdftex.def Info: Pictures/PWM-Treiber.jpg  used on input line 339.
 (pdftex.def)             Requested size: 173.14645pt x 120.44969pt.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 339.
+(caption)                particular \caption on input line 340.
 See the caption package documentation for explanation.
 
 
 
 [15 <./Pictures/Motorphasen.jpg> <./Pictures/PWM-Treiber.jpg>]
-<Pictures/Bremse-Richtungswechsel.jpg, id=498, 268.75406pt x 54.2025pt>
+<Pictures/Bremse-Richtungswechsel.jpg, id=508, 268.75406pt x 54.2025pt>
 File: Pictures/Bremse-Richtungswechsel.jpg Graphic file (type jpg)
 <use Pictures/Bremse-Richtungswechsel.jpg>
 Package pdftex.def Info: Pictures/Bremse-Richtungswechsel.jpg  used on input li
-ne 356.
+ne 357.
 (pdftex.def)             Requested size: 268.7534pt x 54.20236pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 357.
+(caption)                particular \caption on input line 358.
 See the caption package documentation for explanation.
 
-<Pictures/Versorgung.jpg, id=499, 271.0125pt x 54.2025pt>
+<Pictures/Versorgung.jpg, id=509, 271.0125pt x 54.2025pt>
 File: Pictures/Versorgung.jpg Graphic file (type jpg)
 <use Pictures/Versorgung.jpg>
-Package pdftex.def Info: Pictures/Versorgung.jpg  used on input line 374.
+Package pdftex.def Info: Pictures/Versorgung.jpg  used on input line 375.
 (pdftex.def)             Requested size: 271.01183pt x 54.20236pt.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 375.
+(caption)                particular \caption on input line 376.
 See the caption package documentation for explanation.
 
 
 
 [16 <./Pictures/Bremse-Richtungswechsel.jpg> <./Pictures/Versorgung.jpg>]
-Overfull \hbox (17.62482pt too wide) in paragraph at lines 384--392
+Overfull \hbox (17.62482pt too wide) in paragraph at lines 385--393
 []$[]$ 
  []
 
-<Pictures/Hall-sensoren Eingänge.jpg, id=506, 61.73062pt x 106.89937pt>
+<Pictures/Hall-sensoren Eingänge.jpg, id=516, 61.73062pt x 106.89937pt>
 File: Pictures/Hall-sensoren Eingänge.jpg Graphic file (type jpg)
 <use Pictures/Hall-sensoren Eingänge.jpg>
 Package pdftex.def Info: Pictures/Hall-sensoren Eingänge.jpg  used on input li
-ne 395.
+ne 396.
 (pdftex.def)             Requested size: 61.73045pt x 106.8991pt.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 396.
+(caption)                particular \caption on input line 397.
 See the caption package documentation for explanation.
 
 
-Overfull \hbox (17.62482pt too wide) in paragraph at lines 393--401
+Overfull \hbox (17.62482pt too wide) in paragraph at lines 394--402
 []$[]$ 
  []
 
 
 
 [17 <./Pictures/Hall-sensoren Eingänge.jpg>]
-<Pictures/Schaltungsaufbau-1Motor.png, id=512, 274.626pt x 199.728pt>
+<Pictures/Schaltungsaufbau-1Motor.png, id=522, 274.626pt x 199.728pt>
 File: Pictures/Schaltungsaufbau-1Motor.png Graphic file (type png)
 <use Pictures/Schaltungsaufbau-1Motor.png>
 Package pdftex.def Info: Pictures/Schaltungsaufbau-1Motor.png  used on input li
-ne 421.
+ne 422.
 (pdftex.def)             Requested size: 411.93797pt x 299.59123pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 422.
+(caption)                particular \caption on input line 423.
 See the caption package documentation for explanation.
 
 
 
 [18 <./Pictures/Schaltungsaufbau-1Motor.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 430--431
+Underfull \hbox (badness 10000) in paragraph at lines 431--432
 
  []
 
-<Pictures/Phasen-motor.png, id=519, 234.8775pt x 64.74188pt>
+<Pictures/Phasen-motor.png, id=529, 234.8775pt x 64.74188pt>
 File: Pictures/Phasen-motor.png Graphic file (type png)
 <use Pictures/Phasen-motor.png>
-Package pdftex.def Info: Pictures/Phasen-motor.png  used on input line 434.
+Package pdftex.def Info: Pictures/Phasen-motor.png  used on input line 435.
 (pdftex.def)             Requested size: 117.43846pt x 32.37085pt.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 435.
+(caption)                particular \caption on input line 436.
 See the caption package documentation for explanation.
 
-<Pictures/Hall-Sensoren-Motor.png, id=520, 175.40532pt x 50.43843pt>
+<Pictures/Hall-Sensoren-Motor.png, id=530, 175.40532pt x 50.43843pt>
 File: Pictures/Hall-Sensoren-Motor.png Graphic file (type png)
 <use Pictures/Hall-Sensoren-Motor.png>
 Package pdftex.def Info: Pictures/Hall-Sensoren-Motor.png  used on input line 4
-43.
+44.
 (pdftex.def)             Requested size: 87.70244pt x 25.21915pt.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 444.
+(caption)                particular \caption on input line 445.
 See the caption package documentation for explanation.
 
 
-Overfull \hbox (2.82953pt too wide) in paragraph at lines 432--449
+Overfull \hbox (2.82953pt too wide) in paragraph at lines 433--450
 []$[]$  $[]$ 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 452--453
+Underfull \hbox (badness 10000) in paragraph at lines 453--454
 
  []
 
 File: Pictures/Hall-sensoren Eingänge.jpg Graphic file (type jpg)
 <use Pictures/Hall-sensoren Eingänge.jpg>
 Package pdftex.def Info: Pictures/Hall-sensoren Eingänge.jpg  used on input li
-ne 456.
+ne 457.
 (pdftex.def)             Requested size: 30.86522pt x 53.44954pt.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 457.
+(caption)                particular \caption on input line 458.
 See the caption package documentation for explanation.
 
-<Pictures/Phasen-treiber.png, id=521, 207.77625pt x 70.76437pt>
+<Pictures/Phasen-treiber.png, id=531, 207.77625pt x 70.76437pt>
 File: Pictures/Phasen-treiber.png Graphic file (type png)
 <use Pictures/Phasen-treiber.png>
-Package pdftex.def Info: Pictures/Phasen-treiber.png  used on input line 465.
+Package pdftex.def Info: Pictures/Phasen-treiber.png  used on input line 466.
 (pdftex.def)             Requested size: 103.88786pt x 35.3821pt.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 466.
+(caption)                particular \caption on input line 467.
 See the caption package documentation for explanation.
 
 
-Overfull \hbox (2.82953pt too wide) in paragraph at lines 454--471
+Overfull \hbox (2.82953pt too wide) in paragraph at lines 455--472
 []$[]$  $[]$ 
  []
 
-<Pictures/Versorgung-motor.jpg, id=522, 318.645pt x 157.023pt>
+<Pictures/Versorgung-motor.jpg, id=532, 318.645pt x 157.023pt>
 File: Pictures/Versorgung-motor.jpg Graphic file (type jpg)
 <use Pictures/Versorgung-motor.jpg>
-Package pdftex.def Info: Pictures/Versorgung-motor.jpg  used on input line 480.
+Package pdftex.def Info: Pictures/Versorgung-motor.jpg  used on input line 481.
 
 (pdftex.def)             Requested size: 159.3221pt x 78.51129pt.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 481.
+(caption)                particular \caption on input line 482.
 See the caption package documentation for explanation.
 
 
-Overfull \hbox (17.62482pt too wide) in paragraph at lines 478--486
+Overfull \hbox (17.62482pt too wide) in paragraph at lines 479--487
 []$[]$ 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 489--492
+Underfull \hbox (badness 10000) in paragraph at lines 490--493
 
  []
 
@@ -1350,418 +1362,431 @@ Underfull \hbox (badness 10000) in paragraph at lines 489--492
 
 [19 <./Pictures/Phasen-motor.png> <./Pictures/Hall-Sensoren-Motor.png> <./Pictu
 res/Phasen-treiber.png> <./Pictures/Versorgung-motor.jpg>]
-<Pictures/Steuerverbindung.jpg, id=536, 157.023pt x 162.936pt>
+<Pictures/Steuerverbindung.jpg, id=546, 157.023pt x 162.936pt>
 File: Pictures/Steuerverbindung.jpg Graphic file (type jpg)
 <use Pictures/Steuerverbindung.jpg>
-Package pdftex.def Info: Pictures/Steuerverbindung.jpg  used on input line 495.
+Package pdftex.def Info: Pictures/Steuerverbindung.jpg  used on input line 496.
 
 (pdftex.def)             Requested size: 157.0226pt x 162.9356pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 496.
+(caption)                particular \caption on input line 497.
 See the caption package documentation for explanation.
 
 
-Overfull \hbox (17.62482pt too wide) in paragraph at lines 493--501
+Overfull \hbox (17.62482pt too wide) in paragraph at lines 494--502
 []$[]$ 
  []
 
 
 
 [20 <./Pictures/Steuerverbindung.jpg>]
-<Pictures/code_pins_motoren.jpg, id=542, 304.88907pt x 265.74281pt>
+<Pictures/code_pins_motoren.jpg, id=552, 304.88907pt x 265.74281pt>
 File: Pictures/code_pins_motoren.jpg Graphic file (type jpg)
 <use Pictures/code_pins_motoren.jpg>
-Package pdftex.def Info: Pictures/code_pins_motoren.jpg  used on input line 517
+Package pdftex.def Info: Pictures/code_pins_motoren.jpg  used on input line 518
 .
 (pdftex.def)             Requested size: 320.13367pt x 279.03008pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 518.
+(caption)                particular \caption on input line 519.
 See the caption package documentation for explanation.
 
 File: Pictures/code_pins_motoren.jpg Graphic file (type jpg)
 <use Pictures/code_pins_motoren.jpg>
-Package pdftex.def Info: Pictures/code_pins_motoren.jpg  used on input line 529
+Package pdftex.def Info: Pictures/code_pins_motoren.jpg  used on input line 530
 .
 (pdftex.def)             Requested size: 320.13367pt x 279.03008pt.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 530.
+(caption)                particular \caption on input line 531.
 See the caption package documentation for explanation.
 
-<Pictures/code_libary_motoren.jpg, id=543, 188.95593pt x 33.12375pt>
+<Pictures/code_libary_motoren.jpg, id=553, 188.95593pt x 33.12375pt>
 File: Pictures/code_libary_motoren.jpg Graphic file (type jpg)
 <use Pictures/code_libary_motoren.jpg>
 Package pdftex.def Info: Pictures/code_libary_motoren.jpg  used on input line 5
-39.
-(pdftex.def)             Requested size: 198.40381pt x 34.77994pt.
+40.
+(pdftex.def)             Requested size: 245.64267pt x 43.06085pt.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 540.
+(caption)                particular \caption on input line 541.
 See the caption package documentation for explanation.
 
 
 
 [21 <./Pictures/code_pins_motoren.jpg>]
-<Pictures/code_mcp_if_motoren.png, id=549, 245.41687pt x 88.83188pt>
+
+[22 <./Pictures/code_libary_motoren.jpg>]
+<Pictures/code_mcp_if_motoren.png, id=566, 245.41687pt x 88.83188pt>
 File: Pictures/code_mcp_if_motoren.png Graphic file (type png)
 <use Pictures/code_mcp_if_motoren.png>
 Package pdftex.def Info: Pictures/code_mcp_if_motoren.png  used on input line 5
-49.
+51.
 (pdftex.def)             Requested size: 257.68782pt x 93.2735pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 550.
+(caption)                particular \caption on input line 552.
+See the caption package documentation for explanation.
+
+<Pictures/code_intialisierung_motoren.png, id=567, 283.0575pt x 276.28218pt>
+File: Pictures/code_intialisierung_motoren.png Graphic file (type png)
+<use Pictures/code_intialisierung_motoren.png>
+Package pdftex.def Info: Pictures/code_intialisierung_motoren.png  used on inpu
+t line 561.
+(pdftex.def)             Requested size: 297.2105pt x 290.0964pt.
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 562.
 See the caption package documentation for explanation.
 
 
-Overfull \hbox (0.333pt too wide) in paragraph at lines 546--557
+Overfull \hbox (0.333pt too wide) in paragraph at lines 548--568
 \T1/ptm/m/n/12 Am An-fang des Setup-Codes wird �ber-pr�ft, ob ein Ex-pan-der Mo
 -dul �ber die I2C Schnitt-
  []
 
+<Pictures/code_enum_motoren.png, id=568, 194.22563pt x 207.77625pt>
+File: Pictures/code_enum_motoren.png Graphic file (type png)
+<use Pictures/code_enum_motoren.png>
+Package pdftex.def Info: Pictures/code_enum_motoren.png  used on input line 572
+.
+(pdftex.def)             Requested size: 203.93698pt x 218.16515pt.
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 573.
+See the caption package documentation for explanation.
 
 
-[22 <./Pictures/code_libary_motoren.jpg>]
 
-[23 <./Pictures/code_mcp_if_motoren.png>]
-Overfull \hbox (3.35641pt too wide) in paragraph at lines 566--567
+[23 <./Pictures/code_mcp_if_motoren.png> <./Pictures/code_intialisierung_motore
+n.png>]
+
+[24 <./Pictures/code_enum_motoren.png>]
+<Pictures/code_stringtoenum_motoren.png, id=583, 281.55188pt x 336.50719pt>
+File: Pictures/code_stringtoenum_motoren.png Graphic file (type png)
+<use Pictures/code_stringtoenum_motoren.png>
+Package pdftex.def Info: Pictures/code_stringtoenum_motoren.png  used on input 
+line 591.
+(pdftex.def)             Requested size: 281.55118pt x 336.50635pt.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 592.
+See the caption package documentation for explanation.
+
+<Pictures/code_loop_motoren.png, id=584, 188.20313pt x 99.37125pt>
+File: Pictures/code_loop_motoren.png Graphic file (type png)
+<use Pictures/code_loop_motoren.png>
+Package pdftex.def Info: Pictures/code_loop_motoren.png  used on input line 601
+.
+(pdftex.def)             Requested size: 169.38123pt x 89.43329pt.
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 602.
+See the caption package documentation for explanation.
+
+<Pictures/code_navigate_speed_umwandeln_motoren.png, id=585, 310.15875pt x 134.
+75343pt>
+File: Pictures/code_navigate_speed_umwandeln_motoren.png Graphic file (type png
+)
+<use Pictures/code_navigate_speed_umwandeln_motoren.png>
+Package pdftex.def Info: Pictures/code_navigate_speed_umwandeln_motoren.png  us
+ed on input line 610.
+(pdftex.def)             Requested size: 372.18863pt x 161.7033pt.
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 611.
+See the caption package documentation for explanation.
+
+<Pictures/code_motorbremse_motoren.png, id=586, 307.90031pt x 67.75313pt>
+File: Pictures/code_motorbremse_motoren.png Graphic file (type png)
+<use Pictures/code_motorbremse_motoren.png>
+Package pdftex.def Info: Pictures/code_motorbremse_motoren.png  used on input l
+ine 620.
+(pdftex.def)             Requested size: 369.47852pt x 81.30331pt.
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 621.
+See the caption package documentation for explanation.
+
+<Pictures/code_switch_case_motoren.png, id=587, 356.83313pt x 368.87813pt>
+File: Pictures/code_switch_case_motoren.png Graphic file (type png)
+<use Pictures/code_switch_case_motoren.png>
+Package pdftex.def Info: Pictures/code_switch_case_motoren.png  used on input l
+ine 630.
+(pdftex.def)             Requested size: 428.1976pt x 442.65152pt.
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 631.
+See the caption package documentation for explanation.
+
+
+Overfull \hbox (1.40625pt too wide) in paragraph at lines 630--631
+ [][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 598--638
+
+ []
+
+
+
+[25 <./Pictures/code_stringtoenum_motoren.png> <./Pictures/code_loop_motoren.pn
+g>]
+
+[26 <./Pictures/code_navigate_speed_umwandeln_motoren.png> <./Pictures/code_mot
+orbremse_motoren.png>]
+
+[27 <./Pictures/code_switch_case_motoren.png>]
+<Pictures/code_analogWrite_pwm_motoren.png, id=611, 362.85562pt x 220.57407pt>
+File: Pictures/code_analogWrite_pwm_motoren.png Graphic file (type png)
+<use Pictures/code_analogWrite_pwm_motoren.png>
+Package pdftex.def Info: Pictures/code_analogWrite_pwm_motoren.png  used on inp
+ut line 642.
+(pdftex.def)             Requested size: 435.42458pt x 264.68755pt.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 643.
+See the caption package documentation for explanation.
+
+
+Overfull \hbox (8.63322pt too wide) in paragraph at lines 642--643
+ [][] 
+ []
+
+
+
+[28 <./Pictures/code_analogWrite_pwm_motoren.png>]
+Overfull \hbox (3.35641pt too wide) in paragraph at lines 658--659
 \T1/ptm/m/n/12 Die Web-si-te er-m�g-licht die Echtzeit-Video�bertragung des Ka-
 me-ra-bilds der ESP32-CAM.
  []
 
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 582.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 674.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 582.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 674.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 582.
-<Pictures/espasyncwebserver.png, id=564, 212.29312pt x 15.80907pt>
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 674.
+<Pictures/espasyncwebserver.png, id=619, 212.29312pt x 15.80907pt>
 File: Pictures/espasyncwebserver.png Graphic file (type png)
 <use Pictures/espasyncwebserver.png>
-Package pdftex.def Info: Pictures/espasyncwebserver.png  used on input line 585
+Package pdftex.def Info: Pictures/espasyncwebserver.png  used on input line 677
 .
 (pdftex.def)             Requested size: 212.2926pt x 15.809pt.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 586.
+(caption)                particular \caption on input line 678.
 See the caption package documentation for explanation.
 
 
-Overfull \hbox (0.27312pt too wide) in paragraph at lines 582--592
+Overfull \hbox (0.27312pt too wide) in paragraph at lines 674--684
 \T1/ptm/m/n/12 Der Webser-ver wird mit-hil-fe der Bi-blio-thek ES-PA-syn-cWebSe
 r-ver auf ei-nem ESP32-CAM
  []
 
 
 
-[24]
-<Pictures/server-config.png, id=569, 270.25969pt x 130.98938pt>
+[29]
+<Pictures/server-config.png, id=624, 270.25969pt x 130.98938pt>
 File: Pictures/server-config.png Graphic file (type png)
 <use Pictures/server-config.png>
-Package pdftex.def Info: Pictures/server-config.png  used on input line 604.
+Package pdftex.def Info: Pictures/server-config.png  used on input line 696.
 (pdftex.def)             Requested size: 270.25902pt x 130.98904pt.
 
-
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 605.
-See the caption package documentation for explanation.
-
-<Pictures/server-setup.png, id=570, 593.96906pt x 373.395pt>
-File: Pictures/server-setup.png Graphic file (type png)
-<use Pictures/server-setup.png>
-Package pdftex.def Info: Pictures/server-setup.png  used on input line 613.
-(pdftex.def)             Requested size: 415.7755pt x 261.37471pt.
-
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 614.
-See the caption package documentation for explanation.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 600--619
-
- []
-
-
-
-[25 <./Pictures/espasyncwebserver.png> <./Pictures/server-config.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 622--629
-
- []
-
-
-
-[26 <./Pictures/server-setup.png>]
-<Pictures/SPIFFS_setup.png, id=585, 453.19313pt x 449.42906pt>
-File: Pictures/SPIFFS_setup.png Graphic file (type png)
-<use Pictures/SPIFFS_setup.png>
-Package pdftex.def Info: Pictures/SPIFFS_setup.png  used on input line 632.
-(pdftex.def)             Requested size: 317.23302pt x 314.59819pt.
-
-
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 633.
-See the caption package documentation for explanation.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 641--642
-
- []
-
-
-
-[27 <./Pictures/SPIFFS_setup.png>]
-<Pictures/spiffs_readfile.png, id=592, 331.99031pt x 191.9672pt>
-File: Pictures/spiffs_readfile.png Graphic file (type png)
-<use Pictures/spiffs_readfile.png>
-Package pdftex.def Info: Pictures/spiffs_readfile.png  used on input line 645.
-(pdftex.def)             Requested size: 331.98949pt x 191.96672pt.
-
-
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 646.
-See the caption package documentation for explanation.
-
-
-Overfull \hbox (11.89598pt too wide) in paragraph at lines 645--646
-[][] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 660--661
-
- []
-
-<Pictures/kommunikation_libraries.png, id=593, 189.70876pt x 40.65187pt>
-File: Pictures/kommunikation_libraries.png Graphic file (type png)
-<use Pictures/kommunikation_libraries.png>
-Package pdftex.def Info: Pictures/kommunikation_libraries.png  used on input li
-ne 663.
-(pdftex.def)             Requested size: 189.70828pt x 40.65176pt.
-
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 664.
-See the caption package documentation for explanation.
-
-
-
-[28 <./Pictures/spiffs_readfile.png> <./Pictures/kommunikation_libraries.png>]
-<Pictures/kommunikation_netzwerkconfig.png, id=602, 283.0575pt x 143.03438pt>
-File: Pictures/kommunikation_netzwerkconfig.png Graphic file (type png)
-<use Pictures/kommunikation_netzwerkconfig.png>
-Package pdftex.def Info: Pictures/kommunikation_netzwerkconfig.png  used on inp
-ut line 684.
-(pdftex.def)             Requested size: 283.0568pt x 143.03401pt.
-
-
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 685.
-See the caption package documentation for explanation.
-
-
-Overfull \hbox (5.64503pt too wide) in paragraph at lines 684--685
-[][] 
- []
-
-<Pictures/kommunikation_setup.png, id=603, 502.12593pt x 514.92375pt>
-File: Pictures/kommunikation_setup.png Graphic file (type png)
-<use Pictures/kommunikation_setup.png>
-Package pdftex.def Info: Pictures/kommunikation_setup.png  used on input line 6
-96.
-(pdftex.def)             Requested size: 251.06235pt x 257.46124pt.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 697.
 See the caption package documentation for explanation.
 
+<Pictures/server-setup.png, id=625, 593.96906pt x 373.395pt>
+File: Pictures/server-setup.png Graphic file (type png)
+<use Pictures/server-setup.png>
+Package pdftex.def Info: Pictures/server-setup.png  used on input line 705.
+(pdftex.def)             Requested size: 415.7755pt x 261.37471pt.
 
-Overfull \hbox (16.3258pt too wide) in paragraph at lines 696--697
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 706.
+See the caption package documentation for explanation.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 692--711
+
+ []
+
+
+
+[30 <./Pictures/espasyncwebserver.png> <./Pictures/server-config.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 714--721
+
+ []
+
+
+
+[31 <./Pictures/server-setup.png>]
+<Pictures/SPIFFS_setup.png, id=640, 453.19313pt x 449.42906pt>
+File: Pictures/SPIFFS_setup.png Graphic file (type png)
+<use Pictures/SPIFFS_setup.png>
+Package pdftex.def Info: Pictures/SPIFFS_setup.png  used on input line 724.
+(pdftex.def)             Requested size: 317.23302pt x 314.59819pt.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 725.
+See the caption package documentation for explanation.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 733--734
+
+ []
+
+
+
+[32 <./Pictures/SPIFFS_setup.png>]
+<Pictures/spiffs_readfile.png, id=647, 331.99031pt x 191.9672pt>
+File: Pictures/spiffs_readfile.png Graphic file (type png)
+<use Pictures/spiffs_readfile.png>
+Package pdftex.def Info: Pictures/spiffs_readfile.png  used on input line 737.
+(pdftex.def)             Requested size: 331.98949pt x 191.96672pt.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 738.
+See the caption package documentation for explanation.
+
+
+Overfull \hbox (11.89598pt too wide) in paragraph at lines 737--738
 [][] 
  []
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 752--753
 
-[29 <./Pictures/kommunikation_netzwerkconfig.png>]
-Underfull \hbox (badness 2343) in paragraph at lines 723--723
-[]|\T1/ptm/m/n/12 Ein neu-er Cli-ent ver-bin-det
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 723--724
-[]|\T1/ptm/m/n/12 Ausgabe der Client-ID & IP-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 725--726
-[]|\T1/ptm/m/n/12 �bergabe an
- []
-
-
-Underfull \hbox (badness 1281) in paragraph at lines 727--727
-[]|\T1/ptm/m/n/12 Bin�rdaten wer-den emp-fan-
- []
-
-
-Underfull \hbox (badness 2538) in paragraph at lines 727--728
-[]|\T1/ptm/m/n/12 Nachricht in der Kon-so-le (wird
- []
-
-<Pictures/websocketevents.png, id=610, 469.00218pt x 281.55188pt>
-File: Pictures/websocketevents.png Graphic file (type png)
-<use Pictures/websocketevents.png>
-Package pdftex.def Info: Pictures/websocketevents.png  used on input line 739.
-(pdftex.def)             Requested size: 469.00104pt x 281.55118pt.
+<Pictures/kommunikation_libraries.png, id=648, 189.70876pt x 40.65187pt>
+File: Pictures/kommunikation_libraries.png Graphic file (type png)
+<use Pictures/kommunikation_libraries.png>
+Package pdftex.def Info: Pictures/kommunikation_libraries.png  used on input li
+ne 755.
+(pdftex.def)             Requested size: 189.70828pt x 40.65176pt.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 740.
+(caption)                particular \caption on input line 756.
 See the caption package documentation for explanation.
 
 
-Overfull \hbox (42.20969pt too wide) in paragraph at lines 739--740
+
+[33 <./Pictures/spiffs_readfile.png> <./Pictures/kommunikation_libraries.png>]
+<Pictures/kommunikation_netzwerkconfig.png, id=657, 283.0575pt x 143.03438pt>
+File: Pictures/kommunikation_netzwerkconfig.png Graphic file (type png)
+<use Pictures/kommunikation_netzwerkconfig.png>
+Package pdftex.def Info: Pictures/kommunikation_netzwerkconfig.png  used on inp
+ut line 776.
+(pdftex.def)             Requested size: 283.0568pt x 143.03401pt.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 777.
+See the caption package documentation for explanation.
+
+
+Overfull \hbox (5.64503pt too wide) in paragraph at lines 776--777
 [][] 
  []
 
-
-
-[30 <./Pictures/kommunikation_setup.png>]
-<Pictures/example-navigate.png, id=617, 176.91093pt x 60.97781pt>
-File: Pictures/example-navigate.png Graphic file (type png)
-<use Pictures/example-navigate.png>
-Package pdftex.def Info: Pictures/example-navigate.png  used on input line 753.
-
-(pdftex.def)             Requested size: 176.91049pt x 60.97765pt.
-
-
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 754.
-See the caption package documentation for explanation.
-
-
-Overfull \hbox (6.19656pt too wide) in paragraph at lines 753--754
-[][] 
- []
-
-
-
-[31 <./Pictures/websocketevents.png> <./Pictures/example-navigate.png>]
-<Pictures/example-camera.png, id=627, 162.6075pt x 54.9553pt>
-File: Pictures/example-camera.png Graphic file (type png)
-<use Pictures/example-camera.png>
-Package pdftex.def Info: Pictures/example-camera.png  used on input line 765.
-(pdftex.def)             Requested size: 162.6071pt x 54.95515pt.
-
-
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 766.
-See the caption package documentation for explanation.
-
-
-Overfull \hbox (12.46703pt too wide) in paragraph at lines 774--775
-\T1/ptm/m/n/12 ist, wird die Funk-ti-on \T1/cmtt/m/n/12 lights_on(\T1/ptm/m/n/1
-2 ) auf-ge-ru-fen, an-sons-ten wird die Funk-ti-on \T1/cmtt/m/n/12 lights_off()
-
- []
-
-<Pictures/example-light.png, id=628, 147.55125pt x 51.19125pt>
-File: Pictures/example-light.png Graphic file (type png)
-<use Pictures/example-light.png>
-Package pdftex.def Info: Pictures/example-light.png  used on input line 777.
-(pdftex.def)             Requested size: 147.55087pt x 51.19112pt.
-
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 778.
-See the caption package documentation for explanation.
-
-<Pictures/handlewebsocketmessage.png, id=629, 356.83313pt x 508.90125pt>
-File: Pictures/handlewebsocketmessage.png Graphic file (type png)
-<use Pictures/handlewebsocketmessage.png>
-Package pdftex.def Info: Pictures/handlewebsocketmessage.png  used on input lin
-e 788.
-(pdftex.def)             Requested size: 356.83224pt x 508.90001pt.
+<Pictures/kommunikation_setup.png, id=658, 502.12593pt x 514.92375pt>
+File: Pictures/kommunikation_setup.png Graphic file (type png)
+<use Pictures/kommunikation_setup.png>
+Package pdftex.def Info: Pictures/kommunikation_setup.png  used on input line 7
+88.
+(pdftex.def)             Requested size: 251.06235pt x 257.46124pt.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 789.
 See the caption package documentation for explanation.
 
 
-
-[32 <./Pictures/example-camera.png> <./Pictures/example-light.png>]
-Overfull \hbox (2.94443pt too wide) in paragraph at lines 803--805
-\T1/ptm/m/n/12 Um die Ka-me-ra pro-gram-mie-ren zu k�n-nen, muss zu-n�chst das 
-rich-ti-ge Board \T1/cmtt/m/n/12 AI Thinker
- []
-
-
-Overfull \hbox (2.49939pt too wide) in paragraph at lines 803--805
-\T1/ptm/m/n/12 blio-thek \T1/cmtt/m/n/12 esp_camera.h \T1/ptm/m/n/12 in-klu-die
-rt wer-den. Dann muss das pas-sen-de ESP32-CAM-Modell
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 803--805
-
+Overfull \hbox (16.3258pt too wide) in paragraph at lines 788--789
+[][] 
  []
 
 
 
-[33 <./Pictures/handlewebsocketmessage.png>]
-<Pictures/kamera-setup1.png, id=643, 402.75468pt x 338.76563pt>
-File: Pictures/kamera-setup1.png Graphic file (type png)
-<use Pictures/kamera-setup1.png>
-Package pdftex.def Info: Pictures/kamera-setup1.png  used on input line 807.
-(pdftex.def)             Requested size: 402.7537pt x 338.76479pt.
+[34 <./Pictures/kommunikation_netzwerkconfig.png>]
+Underfull \hbox (badness 2343) in paragraph at lines 815--815
+[]|\T1/ptm/m/n/12 Ein neu-er Cli-ent ver-bin-det
+ []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 815--816
+[]|\T1/ptm/m/n/12 Ausgabe der Client-ID & IP-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 817--818
+[]|\T1/ptm/m/n/12 �bergabe an
+ []
+
+
+Underfull \hbox (badness 1281) in paragraph at lines 819--819
+[]|\T1/ptm/m/n/12 Bin�rdaten wer-den emp-fan-
+ []
+
+
+Underfull \hbox (badness 2538) in paragraph at lines 819--820
+[]|\T1/ptm/m/n/12 Nachricht in der Kon-so-le (wird
+ []
+
+<Pictures/websocketevents.png, id=665, 469.00218pt x 281.55188pt>
+File: Pictures/websocketevents.png Graphic file (type png)
+<use Pictures/websocketevents.png>
+Package pdftex.def Info: Pictures/websocketevents.png  used on input line 831.
+(pdftex.def)             Requested size: 469.00104pt x 281.55118pt.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 808.
+(caption)                particular \caption on input line 832.
 See the caption package documentation for explanation.
 
 
-
-[34 <./Pictures/kamera-setup1.png>]
-<Pictures/kamera-setup2.png, id=650, 415.5525pt x 428.35031pt>
-File: Pictures/kamera-setup2.png Graphic file (type png)
-<use Pictures/kamera-setup2.png>
-Package pdftex.def Info: Pictures/kamera-setup2.png  used on input line 821.
-(pdftex.def)             Requested size: 415.55148pt x 428.34926pt.
-
-
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 822.
-See the caption package documentation for explanation.
-
-
-
-[35 <./Pictures/kamera-setup2.png>]
-<Pictures/videoübertragung.png, id=657, 506.6428pt x 558.58687pt>
-File: Pictures/videoübertragung.png Graphic file (type png)
-<use Pictures/videoübertragung.png>
-Package pdftex.def Info: Pictures/videoübertragung.png  used on input line 838
-.
-(pdftex.def)             Requested size: 303.98802pt x 335.15471pt.
-
-
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 839.
-See the caption package documentation for explanation.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 854--855
-
+Overfull \hbox (42.20969pt too wide) in paragraph at lines 831--832
+[][] 
  []
 
 
 
-[36 <./Pictures/videoübertragung.png>]
-<Pictures/Steuerung-web.png, id=664, 1043.39813pt x 473.51906pt>
-File: Pictures/Steuerung-web.png Graphic file (type png)
-<use Pictures/Steuerung-web.png>
-Package pdftex.def Info: Pictures/Steuerung-web.png  used on input line 857.
-(pdftex.def)             Requested size: 417.35185pt x 189.40425pt.
+[35 <./Pictures/kommunikation_setup.png>]
+<Pictures/example-navigate.png, id=672, 176.91093pt x 60.97781pt>
+File: Pictures/example-navigate.png Graphic file (type png)
+<use Pictures/example-navigate.png>
+Package pdftex.def Info: Pictures/example-navigate.png  used on input line 845.
+
+(pdftex.def)             Requested size: 176.91049pt x 60.97765pt.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 846.
+See the caption package documentation for explanation.
+
+
+Overfull \hbox (6.19656pt too wide) in paragraph at lines 845--846
+[][] 
+ []
+
+
+
+[36 <./Pictures/websocketevents.png> <./Pictures/example-navigate.png>]
+<Pictures/example-camera.png, id=681, 162.6075pt x 54.9553pt>
+File: Pictures/example-camera.png Graphic file (type png)
+<use Pictures/example-camera.png>
+Package pdftex.def Info: Pictures/example-camera.png  used on input line 857.
+(pdftex.def)             Requested size: 162.6071pt x 54.95515pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
@@ -1769,731 +1794,852 @@ Package caption Warning: The option `hypcap=true' will be ignored for this
 See the caption package documentation for explanation.
 
 
-Overfull \hbox (51.04765pt too wide) in paragraph at lines 866--867
+Overfull \hbox (12.46703pt too wide) in paragraph at lines 866--867
+\T1/ptm/m/n/12 ist, wird die Funk-ti-on \T1/cmtt/m/n/12 lights_on(\T1/ptm/m/n/1
+2 ) auf-ge-ru-fen, an-sons-ten wird die Funk-ti-on \T1/cmtt/m/n/12 lights_off()
+
+ []
+
+<Pictures/example-light.png, id=682, 147.55125pt x 51.19125pt>
+File: Pictures/example-light.png Graphic file (type png)
+<use Pictures/example-light.png>
+Package pdftex.def Info: Pictures/example-light.png  used on input line 869.
+(pdftex.def)             Requested size: 147.55087pt x 51.19112pt.
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 870.
+See the caption package documentation for explanation.
+
+<Pictures/handlewebsocketmessage.png, id=683, 356.83313pt x 508.90125pt>
+File: Pictures/handlewebsocketmessage.png Graphic file (type png)
+<use Pictures/handlewebsocketmessage.png>
+Package pdftex.def Info: Pictures/handlewebsocketmessage.png  used on input lin
+e 880.
+(pdftex.def)             Requested size: 356.83224pt x 508.90001pt.
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 881.
+See the caption package documentation for explanation.
+
+
+
+[37 <./Pictures/example-camera.png> <./Pictures/example-light.png>]
+Overfull \hbox (2.94443pt too wide) in paragraph at lines 895--897
+\T1/ptm/m/n/12 Um die Ka-me-ra pro-gram-mie-ren zu k�n-nen, muss zu-n�chst das 
+rich-ti-ge Board \T1/cmtt/m/n/12 AI Thinker
+ []
+
+
+Overfull \hbox (2.49939pt too wide) in paragraph at lines 895--897
+\T1/ptm/m/n/12 blio-thek \T1/cmtt/m/n/12 esp_camera.h \T1/ptm/m/n/12 in-klu-die
+rt wer-den. Dann muss das pas-sen-de ESP32-CAM-Modell
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 895--897
+
+ []
+
+
+
+[38 <./Pictures/handlewebsocketmessage.png>]
+<Pictures/kamera-setup1.png, id=698, 402.75468pt x 338.76563pt>
+File: Pictures/kamera-setup1.png Graphic file (type png)
+<use Pictures/kamera-setup1.png>
+Package pdftex.def Info: Pictures/kamera-setup1.png  used on input line 899.
+(pdftex.def)             Requested size: 402.7537pt x 338.76479pt.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 900.
+See the caption package documentation for explanation.
+
+
+
+[39 <./Pictures/kamera-setup1.png>]
+<Pictures/kamera-setup2.png, id=705, 415.5525pt x 428.35031pt>
+File: Pictures/kamera-setup2.png Graphic file (type png)
+<use Pictures/kamera-setup2.png>
+Package pdftex.def Info: Pictures/kamera-setup2.png  used on input line 913.
+(pdftex.def)             Requested size: 415.55148pt x 428.34926pt.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 914.
+See the caption package documentation for explanation.
+
+
+
+[40 <./Pictures/kamera-setup2.png>]
+<Pictures/videoübertragung.png, id=712, 506.6428pt x 558.58687pt>
+File: Pictures/videoübertragung.png Graphic file (type png)
+<use Pictures/videoübertragung.png>
+Package pdftex.def Info: Pictures/videoübertragung.png  used on input line 930
+.
+(pdftex.def)             Requested size: 303.98802pt x 335.15471pt.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 931.
+See the caption package documentation for explanation.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 946--947
+
+ []
+
+
+
+[41 <./Pictures/videoübertragung.png>]
+<Pictures/Steuerung-web.png, id=719, 1043.39813pt x 473.51906pt>
+File: Pictures/Steuerung-web.png Graphic file (type png)
+<use Pictures/Steuerung-web.png>
+Package pdftex.def Info: Pictures/Steuerung-web.png  used on input line 949.
+(pdftex.def)             Requested size: 417.35185pt x 189.40425pt.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 950.
+See the caption package documentation for explanation.
+
+
+Overfull \hbox (51.04765pt too wide) in paragraph at lines 958--959
 \T1/ptm/m/n/12 te wird mit der CSS-Klasse \T1/cmtt/m/n/12 button \T1/ptm/m/n/12
  und der je-wei-li-gen Zu-satz-klas-se \T1/cmtt/m/n/12 up/down/left/right/cente
 r
  []
 
 
-Overfull \hbox (19.5976pt too wide) in paragraph at lines 866--867
+Overfull \hbox (19.5976pt too wide) in paragraph at lines 958--959
 \T1/ptm/m/n/12 for-ma-tiert. Beim je-wei-li-gen Tas-ten-druck wird au-�er-dem i
 m-mer das At-tri-but \T1/cmtt/m/n/12 data-direction
  []
 
-<Pictures/Steuerung-html.png, id=665, 368.87813pt x 104.64093pt>
+<Pictures/Steuerung-html.png, id=720, 368.87813pt x 104.64093pt>
 File: Pictures/Steuerung-html.png Graphic file (type png)
 <use Pictures/Steuerung-html.png>
-Package pdftex.def Info: Pictures/Steuerung-html.png  used on input line 869.
+Package pdftex.def Info: Pictures/Steuerung-html.png  used on input line 961.
 (pdftex.def)             Requested size: 295.10289pt x 83.71283pt.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 870.
+(caption)                particular \caption on input line 962.
 See the caption package documentation for explanation.
 
 
-Overfull \hbox (17.69113pt too wide) in paragraph at lines 869--870
+Overfull \hbox (17.69113pt too wide) in paragraph at lines 961--962
 [][] 
  []
 
 
-Overfull \hbox (3.05128pt too wide) in paragraph at lines 878--880
+Overfull \hbox (3.05128pt too wide) in paragraph at lines 970--972
 \T1/ptm/m/n/12 ab-ge-run-de-te Ecken. Die Op-tio-nen \T1/cmtt/m/n/12 -webkit-ta
 p-highlight-color: transparent \T1/ptm/m/n/12 und
  []
 
 
 
-[37 <./Pictures/Steuerung-web.png> <./Pictures/Steuerung-html.png>]
-<Pictures/Steuerung-css1.png, id=675, 264.99pt x 430.60875pt>
+[42 <./Pictures/Steuerung-web.png> <./Pictures/Steuerung-html.png>]
+<Pictures/Steuerung-css1.png, id=729, 264.99pt x 430.60875pt>
 File: Pictures/Steuerung-css1.png Graphic file (type png)
 <use Pictures/Steuerung-css1.png>
-Package pdftex.def Info: Pictures/Steuerung-css1.png  used on input line 882.
+Package pdftex.def Info: Pictures/Steuerung-css1.png  used on input line 974.
 (pdftex.def)             Requested size: 238.48878pt x 387.54428pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 883.
+(caption)                particular \caption on input line 975.
 See the caption package documentation for explanation.
 
 
-Overfull \hbox (3.75224pt too wide) in paragraph at lines 882--883
+Overfull \hbox (3.75224pt too wide) in paragraph at lines 974--975
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 891--893
+Underfull \hbox (badness 10000) in paragraph at lines 983--985
 
  []
 
 
 
-[38 <./Pictures/Steuerung-css1.png>]
-<Pictures/Steuerung-css2.png, id=682, 193.47281pt x 347.79938pt>
+[43 <./Pictures/Steuerung-css1.png>]
+<Pictures/Steuerung-css2.png, id=737, 193.47281pt x 347.79938pt>
 File: Pictures/Steuerung-css2.png Graphic file (type png)
 <use Pictures/Steuerung-css2.png>
-Package pdftex.def Info: Pictures/Steuerung-css2.png  used on input line 895.
+Package pdftex.def Info: Pictures/Steuerung-css2.png  used on input line 987.
 (pdftex.def)             Requested size: 193.47234pt x 347.79852pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 896.
+(caption)                particular \caption on input line 988.
 See the caption package documentation for explanation.
 
 
-Overfull \hbox (1.41754pt too wide) in paragraph at lines 895--896
+Overfull \hbox (1.41754pt too wide) in paragraph at lines 987--988
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 904--905
+Underfull \hbox (badness 10000) in paragraph at lines 996--997
 
  []
 
-<Pictures/Steuerung-js1.png, id=683, 313.17pt x 106.89937pt>
+<Pictures/Steuerung-js1.png, id=738, 313.17pt x 106.89937pt>
 File: Pictures/Steuerung-js1.png Graphic file (type png)
 <use Pictures/Steuerung-js1.png>
-Package pdftex.def Info: Pictures/Steuerung-js1.png  used on input line 907.
+Package pdftex.def Info: Pictures/Steuerung-js1.png  used on input line 999.
 (pdftex.def)             Requested size: 313.16922pt x 106.8991pt.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 908.
+(caption)                particular \caption on input line 1000.
 See the caption package documentation for explanation.
 
 
-Overfull \hbox (14.41658pt too wide) in paragraph at lines 907--908
+Overfull \hbox (14.41658pt too wide) in paragraph at lines 999--1000
 [][] 
  []
 
 
 
-[39 <./Pictures/Steuerung-css2.png>]
-<Pictures/Steuerung-js2.png, id=690, 335.75438pt x 473.51906pt>
+[44 <./Pictures/Steuerung-css2.png>]
+<Pictures/Steuerung-js2.png, id=745, 335.75438pt x 473.51906pt>
 File: Pictures/Steuerung-js2.png Graphic file (type png)
 <use Pictures/Steuerung-js2.png>
-Package pdftex.def Info: Pictures/Steuerung-js2.png  used on input line 919.
+Package pdftex.def Info: Pictures/Steuerung-js2.png  used on input line 1011.
 (pdftex.def)             Requested size: 235.02646pt x 331.46106pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 920.
+(caption)                particular \caption on input line 1012.
 See the caption package documentation for explanation.
 
 
-Overfull \hbox (21.63078pt too wide) in paragraph at lines 919--920
+Overfull \hbox (21.63078pt too wide) in paragraph at lines 1011--1012
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 928--929
+Underfull \hbox (badness 10000) in paragraph at lines 1020--1021
 
  []
 
 
 
-[40 <./Pictures/Steuerung-js1.png> <./Pictures/Steuerung-js2.png>]
-<Pictures/Steuerung-js3.png, id=699, 455.45157pt x 376.40625pt>
+[45 <./Pictures/Steuerung-js1.png> <./Pictures/Steuerung-js2.png>]
+<Pictures/Steuerung-js3.png, id=754, 455.45157pt x 376.40625pt>
 File: Pictures/Steuerung-js3.png Graphic file (type png)
 <use Pictures/Steuerung-js3.png>
-Package pdftex.def Info: Pictures/Steuerung-js3.png  used on input line 931.
+Package pdftex.def Info: Pictures/Steuerung-js3.png  used on input line 1023.
 (pdftex.def)             Requested size: 318.81392pt x 263.48257pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 932.
+(caption)                particular \caption on input line 1024.
 See the caption package documentation for explanation.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 940--941
+Underfull \hbox (badness 10000) in paragraph at lines 1032--1033
 
  []
 
-<Pictures/Steuerung-js4.png, id=700, 455.45157pt x 323.70938pt>
+<Pictures/Steuerung-js4.png, id=755, 455.45157pt x 323.70938pt>
 File: Pictures/Steuerung-js4.png Graphic file (type png)
 <use Pictures/Steuerung-js4.png>
-Package pdftex.def Info: Pictures/Steuerung-js4.png  used on input line 943.
+Package pdftex.def Info: Pictures/Steuerung-js4.png  used on input line 1035.
 (pdftex.def)             Requested size: 318.81392pt x 226.59502pt.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 944.
+(caption)                particular \caption on input line 1036.
 See the caption package documentation for explanation.
 
 
 
-[41 <./Pictures/Steuerung-js3.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 955--956
+[46 <./Pictures/Steuerung-js3.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 1047--1048
 
  []
 
-<Pictures/speed-web.png, id=707, 455.45157pt x 207.77625pt>
+<Pictures/speed-web.png, id=762, 455.45157pt x 207.77625pt>
 File: Pictures/speed-web.png Graphic file (type png)
 <use Pictures/speed-web.png>
-Package pdftex.def Info: Pictures/speed-web.png  used on input line 958.
+Package pdftex.def Info: Pictures/speed-web.png  used on input line 1050.
 (pdftex.def)             Requested size: 409.90262pt x 186.99687pt.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 959.
+(caption)                particular \caption on input line 1051.
 See the caption package documentation for explanation.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 967--968
+Underfull \hbox (badness 10000) in paragraph at lines 1059--1060
 
  []
 
 
 
-[42 <./Pictures/Steuerung-js4.png> <./Pictures/speed-web.png>]
-<Pictures/speed-html.png, id=716, 455.45157pt x 51.19125pt>
+[47 <./Pictures/Steuerung-js4.png> <./Pictures/speed-web.png>]
+<Pictures/speed-html.png, id=771, 455.45157pt x 51.19125pt>
 File: Pictures/speed-html.png Graphic file (type png)
 <use Pictures/speed-html.png>
-Package pdftex.def Info: Pictures/speed-html.png  used on input line 970.
+Package pdftex.def Info: Pictures/speed-html.png  used on input line 1062.
 (pdftex.def)             Requested size: 409.90262pt x 46.07169pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 971.
+(caption)                particular \caption on input line 1063.
 See the caption package documentation for explanation.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 979--980
+Underfull \hbox (badness 10000) in paragraph at lines 1071--1072
 
  []
 
-<Pictures/speed-css.png, id=717, 192.72pt x 246.9225pt>
+<Pictures/speed-css.png, id=772, 192.72pt x 246.9225pt>
 File: Pictures/speed-css.png Graphic file (type png)
 <use Pictures/speed-css.png>
-Package pdftex.def Info: Pictures/speed-css.png  used on input line 982.
+Package pdftex.def Info: Pictures/speed-css.png  used on input line 1074.
 (pdftex.def)             Requested size: 192.71951pt x 246.92188pt.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 983.
+(caption)                particular \caption on input line 1075.
 See the caption package documentation for explanation.
 
 
-Overfull \hbox (0.66472pt too wide) in paragraph at lines 982--983
+Overfull \hbox (0.66472pt too wide) in paragraph at lines 1074--1075
 [][] 
  []
 
 
 
-[43 <./Pictures/speed-html.png> <./Pictures/speed-css.png>]
-<Pictures/speed-js.png, id=728, 227.34938pt x 79.04532pt>
+[48 <./Pictures/speed-html.png> <./Pictures/speed-css.png>]
+<Pictures/speed-js.png, id=782, 227.34938pt x 79.04532pt>
 File: Pictures/speed-js.png Graphic file (type png)
 <use Pictures/speed-js.png>
-Package pdftex.def Info: Pictures/speed-js.png  used on input line 994.
+Package pdftex.def Info: Pictures/speed-js.png  used on input line 1086.
 (pdftex.def)             Requested size: 227.34882pt x 79.0451pt.
 
-
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 995.
-See the caption package documentation for explanation.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1006--1007
-
- []
-
-<Pictures/kamera-web.png, id=729, 455.45157pt x 207.77625pt>
-File: Pictures/kamera-web.png Graphic file (type png)
-<use Pictures/kamera-web.png>
-Package pdftex.def Info: Pictures/kamera-web.png  used on input line 1009.
-(pdftex.def)             Requested size: 409.90262pt x 186.99687pt.
-
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 1010.
-See the caption package documentation for explanation.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1018--1019
-
- []
-
-
-
-[44 <./Pictures/speed-js.png> <./Pictures/kamera-web.png>]
-<Pictures/kamera-html.png, id=738, 455.45157pt x 48.18pt>
-File: Pictures/kamera-html.png Graphic file (type png)
-<use Pictures/kamera-html.png>
-Package pdftex.def Info: Pictures/kamera-html.png  used on input line 1021.
-(pdftex.def)             Requested size: 455.45045pt x 48.17986pt.
-
-
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 1022.
-See the caption package documentation for explanation.
-
-
-Overfull \hbox (28.6591pt too wide) in paragraph at lines 1021--1022
-[][] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1030--1031
-
- []
-
-<Pictures/kamera-css.png, id=739, 199.49532pt x 331.99031pt>
-File: Pictures/kamera-css.png Graphic file (type png)
-<use Pictures/kamera-css.png>
-Package pdftex.def Info: Pictures/kamera-css.png  used on input line 1033.
-(pdftex.def)             Requested size: 199.49481pt x 331.98949pt.
-
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 1034.
-See the caption package documentation for explanation.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1042--1043
-
- []
-
-
-
-[45 <./Pictures/kamera-html.png> <./Pictures/kamera-css.png>]
-<Pictures/kamera-js.png, id=748, 335.75438pt x 161.10187pt>
-File: Pictures/kamera-js.png Graphic file (type png)
-<use Pictures/kamera-js.png>
-Package pdftex.def Info: Pictures/kamera-js.png  used on input line 1045.
-(pdftex.def)             Requested size: 335.75356pt x 161.10147pt.
-
-
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 1046.
-See the caption package documentation for explanation.
-
-
-Overfull \hbox (15.66005pt too wide) in paragraph at lines 1045--1046
-[][] 
- []
-
-
-Overfull \hbox (3.34413pt too wide) in paragraph at lines 1056--1058
-\T1/ptm/m/n/12 Um das Fern-licht auf un-se-rer Web-si-te ein- bzw. aus-zu-schal
--ten gibt es ein ei-ge-nes Fernlicht-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1056--1058
-
- []
-
-<Pictures/fernlicht-web.png, id=749, 455.45157pt x 207.77625pt>
-File: Pictures/fernlicht-web.png Graphic file (type png)
-<use Pictures/fernlicht-web.png>
-Package pdftex.def Info: Pictures/fernlicht-web.png  used on input line 1060.
-(pdftex.def)             Requested size: 273.27304pt x 124.6667pt.
-
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 1061.
-See the caption package documentation for explanation.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1069--1070
-
- []
-
-
-
-[46 <./Pictures/kamera-js.png> <./Pictures/fernlicht-web.png>]
-<Pictures/fernlicht-html.png, id=758, 551.81157pt x 14.30344pt>
-File: Pictures/fernlicht-html.png Graphic file (type png)
-<use Pictures/fernlicht-html.png>
-Package pdftex.def Info: Pictures/fernlicht-html.png  used on input line 1072.
-(pdftex.def)             Requested size: 496.62582pt x 12.87296pt.
-
-
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 1073.
-See the caption package documentation for explanation.
-
-
-Overfull \hbox (69.83447pt too wide) in paragraph at lines 1072--1073
-[][] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1081--1084
-
- []
-
-<Pictures/fernlicht-css.png, id=759, 292.84406pt x 291.33844pt>
-File: Pictures/fernlicht-css.png Graphic file (type png)
-<use Pictures/fernlicht-css.png>
-Package pdftex.def Info: Pictures/fernlicht-css.png  used on input line 1086.
-(pdftex.def)             Requested size: 292.84334pt x 291.33772pt.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 1087.
 See the caption package documentation for explanation.
 
 
-Overfull \hbox (15.43158pt too wide) in paragraph at lines 1086--1087
-[][] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1095--1096
+Underfull \hbox (badness 10000) in paragraph at lines 1098--1099
 
  []
 
-
-
-[47 <./Pictures/fernlicht-html.png> <./Pictures/fernlicht-css.png>]
-<Pictures/fernlicht-js.png, id=768, 455.45157pt x 340.27126pt>
-File: Pictures/fernlicht-js.png Graphic file (type png)
-<use Pictures/fernlicht-js.png>
-Package pdftex.def Info: Pictures/fernlicht-js.png  used on input line 1098.
-(pdftex.def)             Requested size: 409.90262pt x 306.24129pt.
-
+<Pictures/kamera-web.png, id=783, 455.45157pt x 207.77625pt>
+File: Pictures/kamera-web.png Graphic file (type png)
+<use Pictures/kamera-web.png>
+Package pdftex.def Info: Pictures/kamera-web.png  used on input line 1101.
+(pdftex.def)             Requested size: 409.90262pt x 186.99687pt.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 1099.
+(caption)                particular \caption on input line 1102.
 See the caption package documentation for explanation.
 
 
-Overfull \hbox (4.45215pt too wide) in paragraph at lines 1098--1099
-[][] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1110--1112
+Underfull \hbox (badness 10000) in paragraph at lines 1110--1111
 
  []
 
-<Pictures/videoübertragung-web.png, id=769, 455.301pt x 214.401pt>
-File: Pictures/videoübertragung-web.png Graphic file (type png)
-<use Pictures/videoübertragung-web.png>
-Package pdftex.def Info: Pictures/videoübertragung-web.png  used on input line
- 1114.
-(pdftex.def)             Requested size: 455.29988pt x 214.40047pt.
+
+
+[49 <./Pictures/speed-js.png> <./Pictures/kamera-web.png>]
+<Pictures/kamera-html.png, id=793, 455.45157pt x 48.18pt>
+File: Pictures/kamera-html.png Graphic file (type png)
+<use Pictures/kamera-html.png>
+Package pdftex.def Info: Pictures/kamera-html.png  used on input line 1113.
+(pdftex.def)             Requested size: 455.45045pt x 48.17986pt.
+
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 1115.
+(caption)                particular \caption on input line 1114.
 See the caption package documentation for explanation.
 
 
-Overfull \hbox (28.50853pt too wide) in paragraph at lines 1114--1115
+Overfull \hbox (28.6591pt too wide) in paragraph at lines 1113--1114
 [][] 
  []
 
 
-
-[48 <./Pictures/fernlicht-js.png>]
-Overfull \hbox (12.83487pt too wide) in paragraph at lines 1123--1124
-\T1/ptm/m/n/12 Im HTML-Code wird die Vi-deo-�ber-tra-gung als HTML \T1/cmtt/m/n
-/12 <img>\T1/ptm/m/n/12 -Tag mit der id \T1/cmtt/m/n/12 dynamicimage
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1123--1124
+Underfull \hbox (badness 10000) in paragraph at lines 1122--1123
 
  []
 
-<Pictures/videoübertragung-html.png, id=776, 331.99031pt x 21.83156pt>
-File: Pictures/videoübertragung-html.png Graphic file (type png)
-<use Pictures/videoübertragung-html.png>
-Package pdftex.def Info: Pictures/videoübertragung-html.png  used on input lin
-e 1126.
-(pdftex.def)             Requested size: 331.98949pt x 21.8315pt.
+<Pictures/kamera-css.png, id=794, 199.49532pt x 331.99031pt>
+File: Pictures/kamera-css.png Graphic file (type png)
+<use Pictures/kamera-css.png>
+Package pdftex.def Info: Pictures/kamera-css.png  used on input line 1125.
+(pdftex.def)             Requested size: 199.49481pt x 331.98949pt.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 1127.
+(caption)                particular \caption on input line 1126.
 See the caption package documentation for explanation.
 
 
-Overfull \hbox (11.89598pt too wide) in paragraph at lines 1126--1127
-[][] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1135--1136
+Underfull \hbox (badness 10000) in paragraph at lines 1134--1135
 
  []
 
-<Pictures/videoübertragung-css.png, id=777, 228.855pt x 106.89937pt>
-File: Pictures/videoübertragung-css.png Graphic file (type png)
-<use Pictures/videoübertragung-css.png>
-Package pdftex.def Info: Pictures/videoübertragung-css.png  used on input line
- 1138.
-(pdftex.def)             Requested size: 228.85443pt x 106.8991pt.
+
+
+[50 <./Pictures/kamera-html.png> <./Pictures/kamera-css.png>]
+<Pictures/kamera-js.png, id=803, 335.75438pt x 161.10187pt>
+File: Pictures/kamera-js.png Graphic file (type png)
+<use Pictures/kamera-js.png>
+Package pdftex.def Info: Pictures/kamera-js.png  used on input line 1137.
+(pdftex.def)             Requested size: 335.75356pt x 161.10147pt.
+
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 1139.
+(caption)                particular \caption on input line 1138.
 See the caption package documentation for explanation.
 
 
-Overfull \hbox (15.45876pt too wide) in paragraph at lines 1138--1139
+Overfull \hbox (15.66005pt too wide) in paragraph at lines 1137--1138
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1147--1150
-
+Overfull \hbox (3.34413pt too wide) in paragraph at lines 1148--1150
+\T1/ptm/m/n/12 Um das Fern-licht auf un-se-rer Web-si-te ein- bzw. aus-zu-schal
+-ten gibt es ein ei-ge-nes Fernlicht-
  []
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 1148--1150
 
-[49 <./Pictures/videoübertragung-web.png> <./Pictures/videoübertragung-html.p
-ng> <./Pictures/videoübertragung-css.png>]
-<Pictures/videoübertragung-js.png, id=790, 548.0475pt x 264.23718pt>
-File: Pictures/videoübertragung-js.png Graphic file (type png)
-<use Pictures/videoübertragung-js.png>
-Package pdftex.def Info: Pictures/videoübertragung-js.png  used on input line 
-1152.
-(pdftex.def)             Requested size: 493.23819pt x 237.81125pt.
+ []
 
+<Pictures/fernlicht-web.png, id=804, 455.45157pt x 207.77625pt>
+File: Pictures/fernlicht-web.png Graphic file (type png)
+<use Pictures/fernlicht-web.png>
+Package pdftex.def Info: Pictures/fernlicht-web.png  used on input line 1152.
+(pdftex.def)             Requested size: 273.27304pt x 124.6667pt.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 1153.
 See the caption package documentation for explanation.
 
 
-Overfull \hbox (66.44684pt too wide) in paragraph at lines 1152--1153
+Underfull \hbox (badness 10000) in paragraph at lines 1161--1162
+
+ []
+
+
+
+[51 <./Pictures/kamera-js.png> <./Pictures/fernlicht-web.png>]
+<Pictures/fernlicht-html.png, id=813, 551.81157pt x 14.30344pt>
+File: Pictures/fernlicht-html.png Graphic file (type png)
+<use Pictures/fernlicht-html.png>
+Package pdftex.def Info: Pictures/fernlicht-html.png  used on input line 1164.
+(pdftex.def)             Requested size: 496.62582pt x 12.87296pt.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 1165.
+See the caption package documentation for explanation.
+
+
+Overfull \hbox (69.83447pt too wide) in paragraph at lines 1164--1165
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1168--1169
+Underfull \hbox (badness 10000) in paragraph at lines 1173--1176
+
+ []
+
+<Pictures/fernlicht-css.png, id=814, 292.84406pt x 291.33844pt>
+File: Pictures/fernlicht-css.png Graphic file (type png)
+<use Pictures/fernlicht-css.png>
+Package pdftex.def Info: Pictures/fernlicht-css.png  used on input line 1178.
+(pdftex.def)             Requested size: 292.84334pt x 291.33772pt.
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 1179.
+See the caption package documentation for explanation.
+
+
+Overfull \hbox (15.43158pt too wide) in paragraph at lines 1178--1179
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1187--1188
 
  []
 
 
 
-[50 <./Pictures/videoübertragung-js.png>]
-<Pictures/menu-web1.png, id=797, 1135.99406pt x 427.5975pt>
+[52 <./Pictures/fernlicht-html.png> <./Pictures/fernlicht-css.png>]
+<Pictures/fernlicht-js.png, id=823, 455.45157pt x 340.27126pt>
+File: Pictures/fernlicht-js.png Graphic file (type png)
+<use Pictures/fernlicht-js.png>
+Package pdftex.def Info: Pictures/fernlicht-js.png  used on input line 1190.
+(pdftex.def)             Requested size: 409.90262pt x 306.24129pt.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 1191.
+See the caption package documentation for explanation.
+
+
+Overfull \hbox (4.45215pt too wide) in paragraph at lines 1190--1191
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1202--1204
+
+ []
+
+<Pictures/videoübertragung-web.png, id=824, 455.301pt x 214.401pt>
+File: Pictures/videoübertragung-web.png Graphic file (type png)
+<use Pictures/videoübertragung-web.png>
+Package pdftex.def Info: Pictures/videoübertragung-web.png  used on input line
+ 1206.
+(pdftex.def)             Requested size: 455.29988pt x 214.40047pt.
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 1207.
+See the caption package documentation for explanation.
+
+
+Overfull \hbox (28.50853pt too wide) in paragraph at lines 1206--1207
+[][] 
+ []
+
+
+
+[53 <./Pictures/fernlicht-js.png>]
+Overfull \hbox (12.83487pt too wide) in paragraph at lines 1215--1216
+\T1/ptm/m/n/12 Im HTML-Code wird die Vi-deo-�ber-tra-gung als HTML \T1/cmtt/m/n
+/12 <img>\T1/ptm/m/n/12 -Tag mit der id \T1/cmtt/m/n/12 dynamicimage
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1215--1216
+
+ []
+
+<Pictures/videoübertragung-html.png, id=831, 331.99031pt x 21.83156pt>
+File: Pictures/videoübertragung-html.png Graphic file (type png)
+<use Pictures/videoübertragung-html.png>
+Package pdftex.def Info: Pictures/videoübertragung-html.png  used on input lin
+e 1218.
+(pdftex.def)             Requested size: 331.98949pt x 21.8315pt.
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 1219.
+See the caption package documentation for explanation.
+
+
+Overfull \hbox (11.89598pt too wide) in paragraph at lines 1218--1219
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1227--1228
+
+ []
+
+<Pictures/videoübertragung-css.png, id=832, 228.855pt x 106.89937pt>
+File: Pictures/videoübertragung-css.png Graphic file (type png)
+<use Pictures/videoübertragung-css.png>
+Package pdftex.def Info: Pictures/videoübertragung-css.png  used on input line
+ 1230.
+(pdftex.def)             Requested size: 228.85443pt x 106.8991pt.
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 1231.
+See the caption package documentation for explanation.
+
+
+Overfull \hbox (15.45876pt too wide) in paragraph at lines 1230--1231
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1239--1242
+
+ []
+
+
+
+[54 <./Pictures/videoübertragung-web.png> <./Pictures/videoübertragung-html.p
+ng> <./Pictures/videoübertragung-css.png>]
+<Pictures/videoübertragung-js.png, id=844, 548.0475pt x 264.23718pt>
+File: Pictures/videoübertragung-js.png Graphic file (type png)
+<use Pictures/videoübertragung-js.png>
+Package pdftex.def Info: Pictures/videoübertragung-js.png  used on input line 
+1244.
+(pdftex.def)             Requested size: 493.23819pt x 237.81125pt.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 1245.
+See the caption package documentation for explanation.
+
+
+Overfull \hbox (66.44684pt too wide) in paragraph at lines 1244--1245
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1260--1261
+
+ []
+
+
+
+[55 <./Pictures/videoübertragung-js.png>]
+<Pictures/menu-web1.png, id=852, 1135.99406pt x 427.5975pt>
 File: Pictures/menu-web1.png Graphic file (type png)
 <use Pictures/menu-web1.png>
-Package pdftex.def Info: Pictures/menu-web1.png  used on input line 1171.
+Package pdftex.def Info: Pictures/menu-web1.png  used on input line 1263.
 (pdftex.def)             Requested size: 454.38959pt x 171.03596pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 1172.
+(caption)                particular \caption on input line 1264.
 See the caption package documentation for explanation.
 
 
-Overfull \hbox (27.59824pt too wide) in paragraph at lines 1171--1172
+Overfull \hbox (27.59824pt too wide) in paragraph at lines 1263--1264
 [][] 
  []
 
-<Pictures/sensordaten-web.png, id=798, 499.977pt x 235.5345pt>
+<Pictures/sensordaten-web.png, id=853, 499.977pt x 235.5345pt>
 File: Pictures/sensordaten-web.png Graphic file (type png)
 <use Pictures/sensordaten-web.png>
-Package pdftex.def Info: Pictures/sensordaten-web.png  used on input line 1182.
+Package pdftex.def Info: Pictures/sensordaten-web.png  used on input line 1274.
 
 (pdftex.def)             Requested size: 449.97513pt x 211.97908pt.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 1183.
+(caption)                particular \caption on input line 1275.
 See the caption package documentation for explanation.
 
 
-Overfull \hbox (23.18378pt too wide) in paragraph at lines 1182--1183
+Overfull \hbox (23.18378pt too wide) in paragraph at lines 1274--1275
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1191--1193
+Underfull \hbox (badness 10000) in paragraph at lines 1283--1285
 
  []
 
 
 
-[51 <./Pictures/menu-web1.png> <./Pictures/sensordaten-web.png>]
-<Pictures/sensordaten-html.png, id=807, 455.45157pt x 74.52844pt>
+[56 <./Pictures/menu-web1.png> <./Pictures/sensordaten-web.png>]
+<Pictures/sensordaten-html.png, id=862, 455.45157pt x 74.52844pt>
 File: Pictures/sensordaten-html.png Graphic file (type png)
 <use Pictures/sensordaten-html.png>
-Package pdftex.def Info: Pictures/sensordaten-html.png  used on input line 1195
+Package pdftex.def Info: Pictures/sensordaten-html.png  used on input line 1287
 .
 (pdftex.def)             Requested size: 455.45045pt x 74.52824pt.
 
-
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 1196.
-See the caption package documentation for explanation.
-
-
-Overfull \hbox (28.6591pt too wide) in paragraph at lines 1195--1196
-[][] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1204--1208
-
- []
-
-<Pictures/sensordaten-css.png, id=808, 349.305pt x 646.66594pt>
-File: Pictures/sensordaten-css.png Graphic file (type png)
-<use Pictures/sensordaten-css.png>
-Package pdftex.def Info: Pictures/sensordaten-css.png  used on input line 1210.
-
-(pdftex.def)             Requested size: 244.51183pt x 452.66307pt.
-
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 1211.
-See the caption package documentation for explanation.
-
-
-
-[52 <./Pictures/sensordaten-html.png>]
-Overfull \hbox (1.30785pt too wide) in paragraph at lines 1219--1220
-\T1/ptm/m/n/12 Die CSS-Klasse \T1/cmtt/m/n/12 daten \T1/ptm/m/n/12 for-ma-tiert
- die ein-zel-nen Da-ten im Me-n�. Sie wer-den in der Schrift-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1219--1220
-
- []
-
-<Pictures/daten-css.png, id=815, 395.22656pt x 118.19156pt>
-File: Pictures/daten-css.png Graphic file (type png)
-<use Pictures/daten-css.png>
-Package pdftex.def Info: Pictures/daten-css.png  used on input line 1222.
-(pdftex.def)             Requested size: 355.7006pt x 106.37141pt.
-
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 1223.
-See the caption package documentation for explanation.
-
-
-
-[53 <./Pictures/sensordaten-css.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 1231--1232
-
- []
-
-<Pictures/sensordaten-js.png, id=822, 554.07pt x 214.55156pt>
-File: Pictures/sensordaten-js.png Graphic file (type png)
-<use Pictures/sensordaten-js.png>
-Package pdftex.def Info: Pictures/sensordaten-js.png  used on input line 1234.
-(pdftex.def)             Requested size: 443.2566pt x 171.64146pt.
-
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 1235.
-See the caption package documentation for explanation.
-
-
-Overfull \hbox (16.46526pt too wide) in paragraph at lines 1234--1235
-[][] 
- []
-
-<Pictures/status-web.png, id=823, 947.03813pt x 349.305pt>
-File: Pictures/status-web.png Graphic file (type png)
-<use Pictures/status-web.png>
-Package pdftex.def Info: Pictures/status-web.png  used on input line 1250.
-(pdftex.def)             Requested size: 378.80853pt x 139.71951pt.
-<Pictures/status-green.png, id=824, 73.77562pt x 24.09pt>
-File: Pictures/status-green.png Graphic file (type png)
-<use Pictures/status-green.png>
-Package pdftex.def Info: Pictures/status-green.png  used on input line 1260.
-(pdftex.def)             Requested size: 73.77542pt x 24.08992pt.
-<Pictures/status-red.png, id=825, 90.3375pt x 24.09pt>
-File: Pictures/status-red.png Graphic file (type png)
-<use Pictures/status-red.png>
-Package pdftex.def Info: Pictures/status-red.png  used on input line 1267.
-(pdftex.def)             Requested size: 90.33727pt x 24.08992pt.
-
-
-[54 <./Pictures/daten-css.png> <./Pictures/sensordaten-js.png>]
-<Pictures/status-html.png, id=834, 455.45157pt x 16.56187pt>
-File: Pictures/status-html.png Graphic file (type png)
-<use Pictures/status-html.png>
-Package pdftex.def Info: Pictures/status-html.png  used on input line 1275.
-(pdftex.def)             Requested size: 455.45045pt x 16.56183pt.
-
-
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 1276.
-See the caption package documentation for explanation.
-
-
-Overfull \hbox (28.6591pt too wide) in paragraph at lines 1275--1276
-[][] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1284--1285
-
- []
-
-<Pictures/status-css.png, id=835, 190.46156pt x 278.54062pt>
-File: Pictures/status-css.png Graphic file (type png)
-<use Pictures/status-css.png>
-Package pdftex.def Info: Pictures/status-css.png  used on input line 1287.
-(pdftex.def)             Requested size: 190.46107pt x 278.53993pt.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 1288.
 See the caption package documentation for explanation.
 
 
-
-[55 <./Pictures/status-web.png> <./Pictures/status-green.png> <./Pictures/statu
-s-red.png> <./Pictures/status-html.png>]
-<Pictures/status-js.png, id=845, 455.45157pt x 149.05687pt>
-File: Pictures/status-js.png Graphic file (type png)
-<use Pictures/status-js.png>
-Package pdftex.def Info: Pictures/status-js.png  used on input line 1299.
-(pdftex.def)             Requested size: 409.90262pt x 134.14993pt.
-
-
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 1300.
-See the caption package documentation for explanation.
-
-
-Overfull \hbox (4.45215pt too wide) in paragraph at lines 1299--1300
+Overfull \hbox (28.6591pt too wide) in paragraph at lines 1287--1288
 [][] 
  []
 
 
-Overfull \hbox (10.39986pt too wide) in paragraph at lines 1316--1320
+Underfull \hbox (badness 10000) in paragraph at lines 1296--1300
+
+ []
+
+<Pictures/sensordaten-css.png, id=863, 349.305pt x 646.66594pt>
+File: Pictures/sensordaten-css.png Graphic file (type png)
+<use Pictures/sensordaten-css.png>
+Package pdftex.def Info: Pictures/sensordaten-css.png  used on input line 1302.
+
+(pdftex.def)             Requested size: 244.51183pt x 452.66307pt.
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 1303.
+See the caption package documentation for explanation.
+
+
+
+[57 <./Pictures/sensordaten-html.png>]
+Overfull \hbox (1.30785pt too wide) in paragraph at lines 1311--1312
+\T1/ptm/m/n/12 Die CSS-Klasse \T1/cmtt/m/n/12 daten \T1/ptm/m/n/12 for-ma-tiert
+ die ein-zel-nen Da-ten im Me-n�. Sie wer-den in der Schrift-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1311--1312
+
+ []
+
+<Pictures/daten-css.png, id=870, 395.22656pt x 118.19156pt>
+File: Pictures/daten-css.png Graphic file (type png)
+<use Pictures/daten-css.png>
+Package pdftex.def Info: Pictures/daten-css.png  used on input line 1314.
+(pdftex.def)             Requested size: 355.7006pt x 106.37141pt.
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 1315.
+See the caption package documentation for explanation.
+
+
+
+[58 <./Pictures/sensordaten-css.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 1323--1324
+
+ []
+
+<Pictures/sensordaten-js.png, id=877, 554.07pt x 214.55156pt>
+File: Pictures/sensordaten-js.png Graphic file (type png)
+<use Pictures/sensordaten-js.png>
+Package pdftex.def Info: Pictures/sensordaten-js.png  used on input line 1326.
+(pdftex.def)             Requested size: 443.2566pt x 171.64146pt.
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 1327.
+See the caption package documentation for explanation.
+
+
+Overfull \hbox (16.46526pt too wide) in paragraph at lines 1326--1327
+[][] 
+ []
+
+<Pictures/status-web.png, id=878, 947.03813pt x 349.305pt>
+File: Pictures/status-web.png Graphic file (type png)
+<use Pictures/status-web.png>
+Package pdftex.def Info: Pictures/status-web.png  used on input line 1342.
+(pdftex.def)             Requested size: 378.80853pt x 139.71951pt.
+<Pictures/status-green.png, id=879, 73.77562pt x 24.09pt>
+File: Pictures/status-green.png Graphic file (type png)
+<use Pictures/status-green.png>
+Package pdftex.def Info: Pictures/status-green.png  used on input line 1352.
+(pdftex.def)             Requested size: 73.77542pt x 24.08992pt.
+<Pictures/status-red.png, id=880, 90.3375pt x 24.09pt>
+File: Pictures/status-red.png Graphic file (type png)
+<use Pictures/status-red.png>
+Package pdftex.def Info: Pictures/status-red.png  used on input line 1359.
+(pdftex.def)             Requested size: 90.33727pt x 24.08992pt.
+
+
+[59 <./Pictures/daten-css.png> <./Pictures/sensordaten-js.png>]
+<Pictures/status-html.png, id=889, 455.45157pt x 16.56187pt>
+File: Pictures/status-html.png Graphic file (type png)
+<use Pictures/status-html.png>
+Package pdftex.def Info: Pictures/status-html.png  used on input line 1367.
+(pdftex.def)             Requested size: 455.45045pt x 16.56183pt.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 1368.
+See the caption package documentation for explanation.
+
+
+Overfull \hbox (28.6591pt too wide) in paragraph at lines 1367--1368
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1376--1377
+
+ []
+
+<Pictures/status-css.png, id=890, 190.46156pt x 278.54062pt>
+File: Pictures/status-css.png Graphic file (type png)
+<use Pictures/status-css.png>
+Package pdftex.def Info: Pictures/status-css.png  used on input line 1379.
+(pdftex.def)             Requested size: 190.46107pt x 278.53993pt.
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 1380.
+See the caption package documentation for explanation.
+
+
+
+[60 <./Pictures/status-web.png> <./Pictures/status-green.png> <./Pictures/statu
+s-red.png> <./Pictures/status-html.png>]
+<Pictures/status-js.png, id=899, 455.45157pt x 149.05687pt>
+File: Pictures/status-js.png Graphic file (type png)
+<use Pictures/status-js.png>
+Package pdftex.def Info: Pictures/status-js.png  used on input line 1391.
+(pdftex.def)             Requested size: 409.90262pt x 134.14993pt.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 1392.
+See the caption package documentation for explanation.
+
+
+Overfull \hbox (4.45215pt too wide) in paragraph at lines 1391--1392
+[][] 
+ []
+
+
+Overfull \hbox (10.39986pt too wide) in paragraph at lines 1408--1412
 \T1/ptm/m/n/12 Als Bild-for-mat wird JPEG ver-wen-det, um Spei-cher-platz zu sp
 a-ren. Al-ter-na-tiv w�-re RGB565
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1316--1320
+Underfull \hbox (badness 10000) in paragraph at lines 1408--1412
 
  []
 
 
 
-[56 <./Pictures/status-css.png> <./Pictures/status-js.png>]
-
-[57]
-
-[58]
-
-[59]
-
-[60]
-
-[61]
-Underfull \hbox (badness 10000) in paragraph at lines 1384--1387
-
- []
-
-
+[61 <./Pictures/status-css.png> <./Pictures/status-js.png>]
 
 [62]
 
 [63]
 
-[64] (diplomarbeit_lastenroboter.lof
+[64]
 
 [65]
 
-[66])
-\tf@lof=\write6
-\openout6 = `diplomarbeit_lastenroboter.lof'.
+[66]
+Underfull \hbox (badness 10000) in paragraph at lines 1476--1479
+
+ []
 
 
 
 [67]
 
-[68] (diplomarbeit_lastenroboter.aux)
+[68]
+
+[69] (diplomarbeit_lastenroboter.lof
+Overfull \hbox (16.6262pt too wide) in paragraph at lines 30--30
+ [][] [][]\T1/ptm/m/n/12 �berpr�fung auf �n-de-rung und Speed in In-te-ger um-w
+an-deln in \T1/cmtt/m/n/12 navigate()\T1/ptm/m/n/12 - 
+ []
+
+
+Overfull \hbox (18.62782pt too wide) in paragraph at lines 33--33
+ [][] [][]\T1/ptm/m/n/12 PWM mit ana-log-Wri-te �ber-tra-gen und letz-te Wer-te
+ spei-chern in \T1/cmtt/m/n/12 navigate()\T1/ptm/m/n/12 - 
+ []
+
+
+
+[70]
+
+[71])
+\tf@lof=\write6
+\openout6 = `diplomarbeit_lastenroboter.lof'.
+
+
+
+[72]
+
+[73] (diplomarbeit_lastenroboter.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
@@ -2504,14 +2650,14 @@ LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `diplomarbeit_lastenroboter.out' has not chan
 ged.
-(rerunfilecheck)             Checksum: D360D9841AF1B88C71DA6E6864F58A10;11468.
+(rerunfilecheck)             Checksum: 7443C114D7F849648DEBAE61F805C210;11906.
  ) 
 Here is how much of TeX's memory you used:
- 35988 strings out of 473530
- 825416 string characters out of 5724861
- 1281408 words of memory out of 5000000
- 58421 multiletter control sequences out of 15000+600000
- 617546 words of font info for 133 fonts, out of 8000000 for 9000
+ 36191 strings out of 473530
+ 830768 string characters out of 5724861
+ 1284144 words of memory out of 5000000
+ 58604 multiletter control sequences out of 15000+600000
+ 617652 words of font info for 134 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,12n,91p,934b,614s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
@@ -2537,9 +2683,9 @@ pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist
  <C:\Users\danie\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt12
 00.pk><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Program Fil
 es/MiKTeX/fonts/type1/urw/times/utmr8a.pfb>
-Output written on diplomarbeit_lastenroboter.pdf (68 pages, 4645241 bytes).
+Output written on diplomarbeit_lastenroboter.pdf (73 pages, 5017452 bytes).
 PDF statistics:
- 1113 PDF objects out of 1200 (max. 8388607)
- 231 named destinations out of 1000 (max. 500000)
- 1018 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1181 PDF objects out of 1200 (max. 8388607)
+ 246 named destinations out of 1000 (max. 500000)
+ 1074 words of extra memory for PDF output out of 10000 (max. 10000000)
 

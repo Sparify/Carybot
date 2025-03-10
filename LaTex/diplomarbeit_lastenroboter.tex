@@ -14,6 +14,7 @@
 \usepackage{setspace}
 \onehalfspacing
 \usepackage{mathptmx}
+\usepackage{ulem}
 \usepackage{array}
 \usepackage{booktabs}
 \usepackage{adjustbox}
@@ -531,17 +532,18 @@
 			\label{fig:code_pins_motoren}
 			\vspace{-2pt}
 			\small Quelle: eigene Abbildung
-			\vspace{10pt}
+			\vspace{20pt}
 		\end{minipage}
-		Um das Expander-Board zu nutzen, wird die Bibliothek Adafruit MCP23X17 verwendet. Diese Bibliothek ermöglicht eine einfachere Initialisierung und Ansteuerung der MCP-Pins, sodass die GPIOs ähnlich wie die des ESP32 genutzt werden können. Außerdem wird ein Objekt der Klasse Adafruit MCP23X17 erstellt, über das man später auf den Expander zugreifen kann. \\[0.5cm]
+		Um das Expander-Board zu nutzen, wird die Bibliothek Adafruit\_MCP23X17 verwendet. Diese Bibliothek ermöglicht eine einfachere Initialisierung und Ansteuerung der MCP-Pins, sodass die GPIOs ähnlich wie die des ESP32 genutzt werden können. Außerdem wird ein Objekt der Klasse Adafruit MCP23X17 erstellt, über das man später auf den Expander zugreifen kann. \\[0.5cm]
 		\begin{minipage}{\textwidth}
 			\centering
-			\includegraphics[scale=1.05]{Pictures/code_libary_motoren}
-			\captionof{figure}{\texttt{Adafruit MCP23X17.h}-Bibliothek}
+			\includegraphics[scale=1.3]{Pictures/code_libary_motoren}
+			\captionof{figure}{\texttt{Adafruit\_MCP23X17.h}-Bibliothek}
 			\label{fig:code_libary_motoren}
 			\vspace{-2pt}
 			\small Quelle: eigene Abbildung
 		\end{minipage}	
+		\newpage
 		\subsubsection{Setup-Code}
 		Am Anfang des Setup-Codes wird überprüft, ob ein Expander Modul über die I2C Schnittstelle verbunden ist und dieses auch funktionstüchtig ist. Falls das nicht der Fall ist, wird ein Error über die Serielle Schnittstelle ausgegeben und das Setup wird unterbrochen. \\[0.5cm]
 		\begin{minipage}{\textwidth}
@@ -553,7 +555,97 @@
 			\small Quelle: eigene Abbildung
 			\vspace{10pt}
 		\end{minipage}	
-		Danach werden die Pins des ESP32 sowie die des Expander-Moduls als Ausgänge initialisiert. Die Pins des Expander-Ports müssen mit dem Befehl mcp. vor pinMode initialisiert werden. Zudem wird die Motorbremse direkt über den MCP mit digitalWrite aktiviert, sodass sich beim Starten kein Motor ungewollt dreht.
+		Danach werden die Pins des ESP32 sowie die des Expander-Moduls als Ausgänge initialisiert. Die Pins des Expander-Ports müssen mit dem Befehl mcp. vor pinMode initialisiert werden. Zudem wird die Motorbremse direkt über den MCP mit digitalWrite aktiviert, sodass sich beim Starten kein Motor ungewollt dreht.  \\[0.5cm]
+		\begin{minipage}{\textwidth}
+			\centering
+			\includegraphics[scale=1.05]{Pictures/code_intialisierung_motoren}
+			\captionof{figure}{Initialisierung Motoren}
+			\label{fig:code_intialisierung_motoren}
+			\vspace{-2pt}
+			\small Quelle: eigene Abbildung
+			\vspace{10pt}
+		\end{minipage}	
+	\subsubsection{Handling der Steuerbefehle}
+	Um den Roboter zu steuern, werden die verschiedenen Steuerbefehle von der Webseite durch spezifische Funktionen bearbeitet. Die Richtungsbefehle zur Steuerung des Roboters werden mit einer Art State-Maschine beziehungsweise mit einer switch-case Struktur realisiert. Dafür wird zunächst ein enum (Enumeration) erstellt, dass die möglichen Bewegungsrichtungen des Roboters definiert und die Direction wird sofort auf „HALT“ gesetzt. Außerdem wird die Variable speed\_cb für die Geschwindigkeit initialisiert. \\[0.5cm]
+	\begin{minipage}{\textwidth}
+		\centering
+		\includegraphics[scale=1.05]{Pictures/code_enum_motoren}
+		\captionof{figure}{Enumeration von Bewegungsrichtungen}
+		\label{fig:code_enum_motoren}
+		\vspace{-2pt}
+		\small Quelle: eigene Abbildung
+		\vspace{10pt}
+	\end{minipage}	
+	\subsubsection*{Befehle zum Steuern:}
+	\begin{itemize}
+		\item HALT: Der Roboter bremst.
+		\item UP: Bewegt den Roboter vorwärts.
+		\item DOWN: Bewegt den Roboter rückwärts.
+		\item LEFT: Lässt den Roboter nach links drehen.
+		\item RIGHT: Lässt den Roboter nach rechts drehen.
+	\end{itemize}\newpage
+	\noindent
+	Um die Befehle von der Webseite für die Steuerung zu benutzen, werden zunächst die erhaltenen Strings, mit einer Funktion in die vorhin definierte Richtungsvariable umgewandelt. \\[0.5cm]
+	\begin{minipage}{\textwidth}
+		\centering
+		\includegraphics[scale=1.0]{Pictures/code_stringtoenum_motoren}
+		\captionof{figure}{Strings zu Enum Variable umwandeln}
+		\label{fig:code_stringtoenum_motoren}
+		\vspace{-2pt}
+		\small Quelle: eigene Abbildung
+	\end{minipage}
+	\subsubsection{Ansteuerung der Treiberplatinen:}
+	Die Geschwindigkeit und die Richtung des Roboters werden schlussendlich in der Funktion „void navigate()“ bearbeitet. Diese Funktion wird in der „void loop()“ die ganze Zeit ausgeführt. \\[0.5cm]
+	\begin{minipage}{\textwidth}
+		\centering
+		\includegraphics[scale=0.9]{Pictures/code_loop_motoren}
+		\captionof{figure}{\texttt{navigate() in loop()}}
+		\label{fig:code_loop_motoren}
+		\vspace{-2pt}
+		\small Quelle: eigene Abbildung
+	\end{minipage}
+	Zu Beginn werden zwei statische Variablen definiert, die dazu dienen, die zuletzt empfangene Fahrtrichtung (lastDir) und Geschwindigkeit (lastSpeed) zu speichern. Anschließend wird überprüft, ob sich entweder die Richtung oder die Geschwindigkeit im Vergleich zum vorherigen Wert geändert hat. Falls sich die Geschwindigkeit im Vergleich zum vorherigen Wert geändert hat, wird der empfangene String von der Webseite in einen Integer umgewandelt. Der Wert von „speed“ liegt im Bereich von 0–100 \% und wird in einen Wert von 0–255 skaliert, der später für die PWM-Signale verwendet wird. \\[0.5cm]
+	\begin{minipage}{\textwidth}
+		\centering
+		\includegraphics[scale=1.2]{Pictures/code_navigate_speed_umwandeln_motoren}
+		\captionof{figure}{Überprüfung auf Änderung und Speed \\in Integer umwandeln in \texttt{navigate()}-Funktion}
+		\label{fig:code_navigate_speed_umwandeln_motoren}
+		\vspace{-2pt}
+		\small Quelle: eigene Abbildung
+		\vspace{10pt}
+	\end{minipage}
+	Außerdem wird die Motorbremse deaktiviert, sodass sich der Roboter überhaupt bewegt und sich steuern lässt. \\[0.5cm]
+	\begin{minipage}{\textwidth}
+		\centering
+		\includegraphics[scale=1.2]{Pictures/code_motorbremse_motoren}
+		\captionof{figure}{Motorbremse deaktivieren in \texttt{navigate()}-Funktion}
+		\label{fig:code_motorbremse_motoren}
+		\vspace{-2pt}
+		\small Quelle: eigene Abbildung
+		\vspace{10pt}
+	\end{minipage}
+	Die Steuerung der Richtung des Roboters erfolgt durch eine switch-case-Struktur, die anhand der aktuellen Fahrtrichtung (dir) die entsprechende Bewegungsfunktion aufruft. Diese Steuerlogik basiert auf dem zuvor definierten enum Direction, der die verschiedenen Zustände wie UP, DOWN, LEFT, RIGHT und HALT enthält. Diese Struktur funktioniert so ähnlich wie eine Gangschaltung, sie legt nämlich nur fest in welche Richtung sich der Motor drehen soll. \\[0.5cm]
+	\begin{minipage}{\textwidth}
+		\centering
+		\includegraphics[scale=1.2]{Pictures/code_switch_case_motoren}
+		\captionof{figure}{switch-case Struktur in \texttt{navigate()}-Funktion}
+		\label{fig:code_switch_case_motoren}
+		\vspace{-2pt}
+		\small Quelle: eigene Abbildung
+		\vspace{10pt}
+	\end{minipage}
+	Die Steuerung der Geschwindigkeit, wird mithilfe von PWM-Signalen umgesetzt. Zunächst wird eine statische Variable „lastPWM“ definiert, die später den zuletzt verwendeten PWM-Wert speichert. Bevor die Treiber-Platinen mit einem PWM-Signal angesteuert werden, wird überprüft, ob sich die Geschwindigkeit tatsächlich geändert hat. Falls sich „speed\_cb“ vom vorherigen Wert abweicht, werden die neuen PWM-Werte mit analogWrite() an die Motorsteuerungsplatinen gesendet, um die Geschwindigkeit der Motoren entsprechend anzupassen. \\
+	\newpage 	\noindent
+	Danach wird der Wert von „lastPWM“ aktualisiert, um sicherzustellen, dass die gleiche Geschwindigkeit nicht unnötig erneut gesetzt wird. Zusätzlich wird die Variable „lastDir“ aktualisiert, um die letzte Richtung zu speichern. \\[0.5cm]
+	\begin{minipage}{\textwidth}
+		\centering
+		\includegraphics[scale=1.2]{Pictures/code_analogWrite_pwm_motoren}
+		\captionof{figure}{PWM mit analogWrite übertragen und \\ letzte Werte speichern in \texttt{navigate()}-Funktion}
+		\label{fig:code_analogWrite_pwm_motoren}
+		\vspace{-2pt}
+		\small Quelle: eigene Abbildung
+		\vspace{10pt}
+	\end{minipage}
 	\newpage
 	\section{Webserver} %Spari
 	 

@@ -23,59 +23,61 @@
 \contentsline {subsubsection}{\numberline {3.4.2}Schaltungserweiterung für vier Motoren:}{21}{subsubsection.3.4.2}%
 \contentsline {subsection}{\numberline {3.5}Code}{21}{subsection.3.5}%
 \contentsline {subsubsection}{\numberline {3.5.1}Initialisierung}{21}{subsubsection.3.5.1}%
-\contentsline {subsubsection}{\numberline {3.5.2}Setup-Code}{22}{subsubsection.3.5.2}%
-\contentsline {section}{\numberline {4}Webserver}{24}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Grundlegende Ziele}{24}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}Ideen und Entwürfe}{25}{subsection.4.2}%
-\contentsline {subsection}{\numberline {4.3}Webserver}{25}{subsection.4.3}%
-\contentsline {subsubsection}{\numberline {4.3.1}Webserver Setup}{25}{subsubsection.4.3.1}%
-\contentsline {subsubsection}{\numberline {4.3.2}SPIFFS Setup}{26}{subsubsection.4.3.2}%
-\contentsline {subsection}{\numberline {4.4}WebSocket Kommunikation}{28}{subsection.4.4}%
-\contentsline {subsubsection}{\numberline {4.4.1}Kommunikation Setup}{28}{subsubsection.4.4.1}%
-\contentsline {subsubsection}{\numberline {4.4.2}Message Handling}{30}{subsubsection.4.4.2}%
-\contentsline {subsection}{\numberline {4.5}Kamera}{34}{subsection.4.5}%
-\contentsline {subsection}{\numberline {4.6}Kamera}{34}{subsection.4.6}%
-\contentsline {subsubsection}{\numberline {4.6.1}Kamera Setup}{34}{subsubsection.4.6.1}%
-\contentsline {subsection}{\numberline {4.7}Videoübertragung}{36}{subsection.4.7}%
-\contentsline {subsection}{\numberline {4.8}Website}{37}{subsection.4.8}%
-\contentsline {subsubsection}{\numberline {4.8.1}Implementierung der Steuerung}{37}{subsubsection.4.8.1}%
-\contentsline {subsubsection}{\numberline {4.8.2}Echtzeit-Videoanzeige}{48}{subsubsection.4.8.2}%
-\contentsline {subsubsection}{\numberline {4.8.3}Anzeige von Sensordaten und Verbindungsstatus}{51}{subsubsection.4.8.3}%
-\contentsline {subsection}{\numberline {4.9}Herausforderungen und Optimierungen}{57}{subsection.4.9}%
-\contentsline {subsubsection}{\numberline {4.9.1}Probleme bei der WebSocket Kommunikation}{57}{subsubsection.4.9.1}%
-\contentsline {subsubsection}{\numberline {4.9.2}Latenz- und Performance Optimierungen}{57}{subsubsection.4.9.2}%
-\contentsline {subsubsection}{\numberline {4.9.3}(Speicher- und Rechenleistungseinschränkungen des ESP32)}{57}{subsubsection.4.9.3}%
-\contentsline {subsection}{\numberline {4.10}(Fazit und Ausblick)}{57}{subsection.4.10}%
-\contentsline {subsubsection}{\numberline {4.10.1}(Mögliche Erweiterungen und Verbesserungen)}{57}{subsubsection.4.10.1}%
-\contentsline {section}{\numberline {5}Gehäuse}{58}{section.5}%
-\contentsline {subsection}{\numberline {5.1}Planung und Design}{58}{subsection.5.1}%
-\contentsline {subsection}{\numberline {5.2}Realisierung}{58}{subsection.5.2}%
-\contentsline {subsection}{\numberline {5.3}Materialliste}{58}{subsection.5.3}%
-\contentsline {section}{\numberline {6}Platine}{59}{section.6}%
-\contentsline {subsection}{\numberline {6.1}Grundschaltung}{59}{subsection.6.1}%
-\contentsline {subsection}{\numberline {6.2}Circuit Board}{59}{subsection.6.2}%
-\contentsline {subsection}{\numberline {6.3}Fertiger Prototyp}{59}{subsection.6.3}%
-\contentsline {section}{\numberline {7}Kamera}{60}{section.7}%
-\contentsline {subsection}{\numberline {7.1}Kamera im Überblick}{60}{subsection.7.1}%
-\contentsline {subsection}{\numberline {7.2}Videoübertragung}{60}{subsection.7.2}%
-\contentsline {subsection}{\numberline {7.3}Kameraschwenkung}{60}{subsection.7.3}%
-\contentsline {subsubsection}{\numberline {7.3.1}Gehäuse}{60}{subsubsection.7.3.1}%
-\contentsline {subsubsection}{\numberline {7.3.2}Servomotor}{60}{subsubsection.7.3.2}%
-\contentsline {subsection}{\numberline {7.4}Code}{60}{subsection.7.4}%
-\contentsline {section}{\numberline {8}Sensoren}{61}{section.8}%
-\contentsline {subsection}{\numberline {8.1}Abstandsensor}{61}{subsection.8.1}%
-\contentsline {subsection}{\numberline {8.2}Gewichtsmessung}{61}{subsection.8.2}%
-\contentsline {subsubsection}{\numberline {8.2.1}Grundprinzip}{61}{subsubsection.8.2.1}%
-\contentsline {subsubsection}{\numberline {8.2.2}Schaltungsaufbau}{61}{subsubsection.8.2.2}%
-\contentsline {subsubsection}{\numberline {8.2.3}Code}{61}{subsubsection.8.2.3}%
-\contentsline {section}{\numberline {9}Entwicklungstools}{62}{section.9}%
-\contentsline {subsection}{\numberline {9.1}Autodesk Fushion}{62}{subsection.9.1}%
-\contentsline {subsection}{\numberline {9.2}Eagle}{62}{subsection.9.2}%
-\contentsline {subsection}{\numberline {9.3}VS-Code}{62}{subsection.9.3}%
-\contentsline {subsubsection}{\numberline {9.3.1}Setup}{62}{subsubsection.9.3.1}%
-\contentsline {subsubsection}{\numberline {9.3.2}Bibliotheken}{63}{subsubsection.9.3.2}%
-\contentsline {subsubsection}{\numberline {9.3.3}verwendete Bibliotheken}{63}{subsubsection.9.3.3}%
-\contentsline {subsection}{\numberline {9.4}LaTex}{64}{subsection.9.4}%
-\contentsline {subsection}{\numberline {9.5}GitHub}{64}{subsection.9.5}%
-\contentsline {section}{\numberline {10}Abbildungsverzeichnis}{65}{section.10}%
-\contentsline {section}{\numberline {11}Literaturverzeichnis}{68}{section.11}%
+\contentsline {subsubsection}{\numberline {3.5.2}Setup-Code}{23}{subsubsection.3.5.2}%
+\contentsline {subsubsection}{\numberline {3.5.3}Handling der Steuerbefehle}{24}{subsubsection.3.5.3}%
+\contentsline {subsubsection}{\numberline {3.5.4}Ansteuerung der Treiberplatinen:}{25}{subsubsection.3.5.4}%
+\contentsline {section}{\numberline {4}Webserver}{29}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Grundlegende Ziele}{29}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Ideen und Entwürfe}{30}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Webserver}{30}{subsection.4.3}%
+\contentsline {subsubsection}{\numberline {4.3.1}Webserver Setup}{30}{subsubsection.4.3.1}%
+\contentsline {subsubsection}{\numberline {4.3.2}SPIFFS Setup}{31}{subsubsection.4.3.2}%
+\contentsline {subsection}{\numberline {4.4}WebSocket Kommunikation}{33}{subsection.4.4}%
+\contentsline {subsubsection}{\numberline {4.4.1}Kommunikation Setup}{33}{subsubsection.4.4.1}%
+\contentsline {subsubsection}{\numberline {4.4.2}Message Handling}{35}{subsubsection.4.4.2}%
+\contentsline {subsection}{\numberline {4.5}Kamera}{39}{subsection.4.5}%
+\contentsline {subsection}{\numberline {4.6}Kamera}{39}{subsection.4.6}%
+\contentsline {subsubsection}{\numberline {4.6.1}Kamera Setup}{39}{subsubsection.4.6.1}%
+\contentsline {subsection}{\numberline {4.7}Videoübertragung}{41}{subsection.4.7}%
+\contentsline {subsection}{\numberline {4.8}Website}{42}{subsection.4.8}%
+\contentsline {subsubsection}{\numberline {4.8.1}Implementierung der Steuerung}{42}{subsubsection.4.8.1}%
+\contentsline {subsubsection}{\numberline {4.8.2}Echtzeit-Videoanzeige}{53}{subsubsection.4.8.2}%
+\contentsline {subsubsection}{\numberline {4.8.3}Anzeige von Sensordaten und Verbindungsstatus}{56}{subsubsection.4.8.3}%
+\contentsline {subsection}{\numberline {4.9}Herausforderungen und Optimierungen}{62}{subsection.4.9}%
+\contentsline {subsubsection}{\numberline {4.9.1}Probleme bei der WebSocket Kommunikation}{62}{subsubsection.4.9.1}%
+\contentsline {subsubsection}{\numberline {4.9.2}Latenz- und Performance Optimierungen}{62}{subsubsection.4.9.2}%
+\contentsline {subsubsection}{\numberline {4.9.3}(Speicher- und Rechenleistungseinschränkungen des ESP32)}{62}{subsubsection.4.9.3}%
+\contentsline {subsection}{\numberline {4.10}(Fazit und Ausblick)}{62}{subsection.4.10}%
+\contentsline {subsubsection}{\numberline {4.10.1}(Mögliche Erweiterungen und Verbesserungen)}{62}{subsubsection.4.10.1}%
+\contentsline {section}{\numberline {5}Gehäuse}{63}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Planung und Design}{63}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Realisierung}{63}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}Materialliste}{63}{subsection.5.3}%
+\contentsline {section}{\numberline {6}Platine}{64}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Grundschaltung}{64}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Circuit Board}{64}{subsection.6.2}%
+\contentsline {subsection}{\numberline {6.3}Fertiger Prototyp}{64}{subsection.6.3}%
+\contentsline {section}{\numberline {7}Kamera}{65}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Kamera im Überblick}{65}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}Videoübertragung}{65}{subsection.7.2}%
+\contentsline {subsection}{\numberline {7.3}Kameraschwenkung}{65}{subsection.7.3}%
+\contentsline {subsubsection}{\numberline {7.3.1}Gehäuse}{65}{subsubsection.7.3.1}%
+\contentsline {subsubsection}{\numberline {7.3.2}Servomotor}{65}{subsubsection.7.3.2}%
+\contentsline {subsection}{\numberline {7.4}Code}{65}{subsection.7.4}%
+\contentsline {section}{\numberline {8}Sensoren}{66}{section.8}%
+\contentsline {subsection}{\numberline {8.1}Abstandsensor}{66}{subsection.8.1}%
+\contentsline {subsection}{\numberline {8.2}Gewichtsmessung}{66}{subsection.8.2}%
+\contentsline {subsubsection}{\numberline {8.2.1}Grundprinzip}{66}{subsubsection.8.2.1}%
+\contentsline {subsubsection}{\numberline {8.2.2}Schaltungsaufbau}{66}{subsubsection.8.2.2}%
+\contentsline {subsubsection}{\numberline {8.2.3}Code}{66}{subsubsection.8.2.3}%
+\contentsline {section}{\numberline {9}Entwicklungstools}{67}{section.9}%
+\contentsline {subsection}{\numberline {9.1}Autodesk Fushion}{67}{subsection.9.1}%
+\contentsline {subsection}{\numberline {9.2}Eagle}{67}{subsection.9.2}%
+\contentsline {subsection}{\numberline {9.3}VS-Code}{67}{subsection.9.3}%
+\contentsline {subsubsection}{\numberline {9.3.1}Setup}{67}{subsubsection.9.3.1}%
+\contentsline {subsubsection}{\numberline {9.3.2}Bibliotheken}{68}{subsubsection.9.3.2}%
+\contentsline {subsubsection}{\numberline {9.3.3}verwendete Bibliotheken}{68}{subsubsection.9.3.3}%
+\contentsline {subsection}{\numberline {9.4}LaTex}{69}{subsection.9.4}%
+\contentsline {subsection}{\numberline {9.5}GitHub}{69}{subsection.9.5}%
+\contentsline {section}{\numberline {10}Abbildungsverzeichnis}{70}{section.10}%
+\contentsline {section}{\numberline {11}Literaturverzeichnis}{73}{section.11}%
