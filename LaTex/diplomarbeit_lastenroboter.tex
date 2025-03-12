@@ -1430,6 +1430,153 @@ Im HTML-Code wird die Status-Box als HTML \texttt{<span>}-Tag definiert. Für da
 	
 		\subsection{Planung und Design} %Felix
 		
+		Das Gehäuse des Lastenroboters wurde entwickelt, um die Sicherheit und Stabilität beim Transport von schweren Lasten zu gewährleisten. Dabei lag der Fokus auf einer stabilen Bauweise, damit der Lastenroboter ein Gewicht von zirka 25 Kilo aushaltet. 
+		
+			\subsubsection*{Wichtigsten Aspekte bei der Planung: }
+		
+		\begin{enumerate}
+			\item Stabilität: Das Gehäuse muss das Eigengewicht des Roboters aber auch das Gewicht der Last aushalten.
+			\item Größe: Bei der Größe ist es wichtig darauf zu achten das alle Komponenten sich sehr gut im Gehäuse ausgehen.
+			\item Fahrverhalten: Durch die Verwendung von vier Räder, die jeweils über einen Motor angetrieben werden, soll eine gute Manövrierfähigkeit erreicht werden.
+			\item Integration der Elektronik: Alle Komponenten müssen sicher im Gehäuse untergebracht werden.
+			\item Gewichtsmessung: Die Wägezelle muss in das Gehäuse integriert werden, um eine präzise Messung zu ermöglichen.
+			\item Wartungsfreundlichkeit: Bauteile sollten leicht zugänglich sein, um Reparaturen oder Anpassungen durchführen zu können.			
+		\end{enumerate}
+		
+			\subsubsection*{Mechanische Konstruktion}
+			
+		Nach der Planung der wichtigsten Aspekte wurden zwei 3D-Modelle des Lastenroboters in Fusion 360 entworfen.
+		
+		\newpage
+		
+			\subsubsection*{Erstes Modell} 
+			
+			\vspace{20pt}
+			
+			\begin{center} 
+				\begin{minipage}[t]{0.7\textwidth}
+					\includegraphics{Pictures/modell-1}
+					\captionof{figure}{Erstes Modell}
+					\label{fig:Modell-1}
+					\vspace{-10pt}
+					\begin{center}
+						\par\small Quelle: eigene Abbildung 
+					\end{center}
+				\end{minipage} \\[1cm]
+			\end{center}
+		Das erste Modell des Lastenroboters diente hauptsächlich als Prototyp. Es wurden keine genauen Maße beachtet, sondern dient als grobe Vorstellung wie der Lastenroboter aussehen könnte. Wichtig dabei war es die grundlegenden Komponenten wie Motoren, Räder und Wägezelle zu skizieren, um die allgemeine Funktionalität sicherzustellen. \\[0.5cm]
+		In diesem frühen Entwicklungsstadium lag der Fokus auf der Mechanik und der Stabilität des Designs. Das erste Modell war sehr wichtig, um Schwachstellen und Optimierungsmöglichkeiten zu identifizieren und half dabei, das zweite Modell präzise und durchdacht zu planen.
+		
+		\newpage
+		
+		\subsubsection*{Zweites Modell}	
+		
+		\begin{center} 
+			\begin{minipage}[t]{0.7\textwidth}
+				\includegraphics{Pictures/modell-2}
+				\captionof{figure}{Zweites Modell}
+				\label{fig:Modell-2}
+				\vspace{-10pt}
+				\begin{center}
+					\par\small Quelle: eigene Abbildung 
+				\end{center}
+			\end{minipage} \\[0.75cm]
+		\end{center}
+		Anhand der Erkenntnisse aus dem ersten Modell wurde das zweite Modell entwickelt, das als fertiges Modell für den Bau des Lastenroboters dient. In dieser Version wurden exakte Maße festgelegt und die genaue Position der Komponenten wie Räder, Motoren, Kamera und Wägezelle festgelegt. \\[0.5cm]
+		Das Wichtigste beim Entwickeln ist die Größe des Gehäuses. Das Gehäuse basiert auf einem rechteckigen Stahlrahmen. Dieser Rahmen ist wichtig, weil er die Grundstruktur und Stabilität gewährleistet. Der rechteckige Rahmen des Lastenroboters hat eine Höhe von 220mm, eine breite von 400mm und eine Länge von 560mm. Die Vierkantstahlrohre haben eine Größe von 30mm mal 40mm.
+		\begin{center} 
+			\begin{minipage}[t]{0.7\textwidth}
+				\includegraphics[scale=0.7]{Pictures/Rahmen}
+				\captionof{figure}{Rahmen}
+				\label{fig:Rahmen}
+				\vspace{-10pt}
+				\begin{center}
+					\par\small Quelle: eigene Abbildung 
+				\end{center}
+			\end{minipage} \\[0.75cm]
+		\end{center}
+		Im nächsten Schritt wurde Halterung für die Elektronik Komponenten entwickelt. Dabei handelt es sich um eine Platte, die auf der Unterseite mit zwei Querstreben verstärkt wird. Die Größe der Platte beträgt 34mm mal 50mm und hat eine Materialstärke von 5mm. Die Querstreben haben eine Länge von 50mm, sind 25mm hoch und 25mm breit. \\
+		\begin{figure}[h]
+			\begin{minipage}{0.3\linewidth}
+				\centering
+				\includegraphics{Pictures/Halterung-1}
+				\caption{Halterung 1}
+				\label{fig:Halterung-1}
+			\end{minipage}
+			\hspace{0.25\linewidth}
+			\begin{minipage}{0.3\linewidth}
+				\centering
+				\includegraphics{Pictures/Halterung-2}
+				\caption{Halterung 2}
+				\label{fig:Halterung-2}
+			\end{minipage}
+		\end{figure} \\
+		Danach wurde die Halterung für die Motoren entwickelt. Dabei ist zu beachten, dass sich die Motoren während des Betriebs weder verdrehen noch verrutschen. Dies ist entscheidend, da die Motoren ein hohes Drehmoment erzeugen, das ohne eine stabile Befestigung zu Instabilitäten führen könnte. Die Motoren sind auf einer Querstange befestigt damit sie sich nicht mehr verdrehen können. Die Querstangen haben eine Länge von 50mm und sind 15mm hoch und 20mm breit. Zusätzlich sind die Motoren auch mit einer Schelle am Boden fixiert, um ungewolltes verrutschen zu vermeiden. \\
+		\begin{center} 
+			\begin{minipage}[t]{0.7\textwidth}
+				\includegraphics{Pictures/Halterung-Motoren}
+				\captionof{figure}{Motorenhalterung}
+				\label{fig:Motorenhalterung}
+				\vspace{-10pt}
+				\begin{center}
+					\par\small Quelle: eigene Abbildung 
+				\end{center}
+			\end{minipage} \\[2cm]
+		\end{center}
+		Nach dem die Halterung für die Motoren entwickelt wurde, erfolgt die Auswahl und Befestigung der Reifen. Die reifen spielen eine entscheidende Rolle für das Fahrverhalten. \\[0.5cm]
+		Die Räder bestehen aus Gummi für einen gute Bodenhaftung. Jedes der vier Reifen ist direkt an der Motorachse befestigt. Die Motorachse hat einen Durchmesser von 16mm. Die Motorachse verfügt über ein M8-Gewinde, das für die Befestigung der Räder verwendet wird. Die Räder werden mit einer M8-Schraube in die Motorachse geschraubt.\\[0.5cm]
+		Wichtig bei der Entwicklung war die Radgröße damit das Gehäuse genug Bodenabstand hat. Es wurden Reifen gewählt mit einem Durchmesser von 260mm und einer Breite von 85mm.\\
+		\begin{center} 
+			\begin{minipage}[t]{0.7\textwidth}
+				\includegraphics{Pictures/Räder}
+				\captionof{figure}{Räder}
+				\label{fig:Räder}
+				\vspace{-10pt}
+				\begin{center}
+					\par\small Quelle: eigene Abbildung 
+				\end{center}
+			\end{minipage} \\[0.75cm]
+		\end{center}
+		Ein weiterer großer Punkt bei der Planung war die Gewichtsmessung. Die Gewichtsmessung erfolgt über vier Wägezellen die in einem Rechteck auf einer Platte angeordnet sind. Auf die Wägezellen wird eine Platte montiert, auf die die Last gestellt wird.
+		\begin{center} 
+			\begin{minipage}[t]{0.4\textwidth}
+				\includegraphics{Pictures/Wägezellen}
+				\captionof{figure}{Wägezellen}
+				\label{fig:Wägezellen}
+				\vspace{-10pt}
+				\begin{center}
+					\par\small Quelle: eigene Abbildung 
+				\end{center}
+			\end{minipage} \\[0.75cm]
+		\end{center}
+		Damit die Wägezellen sicher fixiert sind und nicht verrutschen, werden sie in einer 3D-gedruckten Halterung befestigt. Die Halterung hat eine Einkerbung, die genau für die Wägezelle abgestimmt ist, damit die Wägezelle nicht mehr verrutschen kann. Es gibt zusätzlich eine Einkerbung für die Leitungen, damit diese nicht beschädigt werden. Am Rand der Halterung sind zwei Löcher damit die Halterung auf der Platte angeschraubt werden kann. 
+		\begin{center} 
+			\begin{minipage}[t]{0.6\textwidth}
+				\includegraphics{Pictures/Halterung-wägezellen}
+				\captionof{figure}{Wägezellenhalterung}
+				\label{fig:Wägezellenhalterung}
+				\vspace{-10pt}
+				\begin{center}
+					\par\small Quelle: eigene Abbildung 
+				\end{center}
+			\end{minipage} \\[0.75cm]
+		\end{center}
+		Im letzten Schritt des Designs wurden zwei Platten an der Vorderseite und Rückseite des Lastenroboters angebracht. Die hintere Platte dient für die Befestigung des An/Aus Schalters und des Ladeanschlusses für den Lastenroboter. Auf der vorderen Platte soll die Kamera montiert werden.
+		\begin{center} 
+			\begin{minipage}[t]{0.6\textwidth}
+				\includegraphics{Pictures/modell-fertig}
+				\captionof{figure}{modell-fertig}
+				\label{fig:modell-fertig}
+				\vspace{-10pt}
+				\begin{center}
+					\par\small Quelle: eigene Abbildung 
+				\end{center}
+			\end{minipage} \\[0.75cm]
+		\end{center} 
+	
+		\subsubsection*{Materialwahl für das Gehäuse}
+		Für das Gehäuse wurde Stahl als Hauptmaterial gewählt, weil es sehr robust und widerstandsfähig gegenüber äußeren Einflüssen ist. Ein weiter Grund, warum Stahl als Hauptmaterial verwendet wurde, ist die einfache Verarbeitung. Stahl kann man gut Schweißen aber auch verschrauben.
+		
 		\subsection{Realisierung} %Felix
 	
 		\subsection{Materialliste} %Felix
@@ -1446,6 +1593,10 @@ Im HTML-Code wird die Status-Box als HTML \texttt{<span>}-Tag definiert. Für da
 	\section{Kamera}
 	
 		\subsection{Kamera im Überblick} %Daniel
+		
+
+		
+		
 		
 		\subsection{Videoübertragung} %Simon
 		
