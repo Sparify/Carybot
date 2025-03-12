@@ -1502,17 +1502,20 @@ Im HTML-Code wird die Status-Box als HTML \texttt{<span>}-Tag definiert. Für da
 	Die ArduinoJson Bibliothek ermöglicht die Verarbeitung von JSON-String in Objekte und umgekehrt. Sie ist speziell für Geräte mit begrenztem Speicher und Rechenleistung optimiert. Die Bibliothek wird benötigt, um die erhaltenen Steuerbefehle am ESp32 zu konvertieren und um sie anschließend weiterzuverarbeiten.\footnote{https://arduinojson.org/}
 			
 			\subsubsection*{HCSR04}
-			
+	Die HCSR04.h-Bibliothek ermöglicht es mit einem ESP32, das HC-SR04 Ultraschallmodul zur Entfernungsmessung zu nutzen. Sie erlaubt die Verwendung mehrerer Sensoren gleichzeitig, um die aktuelle Distanz in cm zu erfassen. \footnote{https://docs.arduino.cc/libraries/hcsr04-ultrasonic-sensor/}
 			\subsubsection*{arduinoWebSockets}
 			
 	Die WebSockets Bibliothek ermöglicht eine Kommunikation über das WebSocket Protokoll für Arduino-Boards, ESP8266 und ESP32. Die Bibliothek wird für die Echtzeit-Kommunikation zwischen dem Webserver und den ESP32 benötigt. Außerdem werden die Bilder der ESP32-CAM über einen WebSocket an den Webserver gesendet. Die Bibliothek ist eine großartige Ergänzung zur ESPAsyncWebServer Bibliothek.\footnote{https://github.com/Links2004/arduinoWebSockets}
 			
 			\subsubsection*{ESp32Servo}
+	Die ESP32Servo-Bibliothek ermöglicht es, Servomotoren mit einem ESP32 einfach zu steuern. Sie unterstützt viele Servotypen und funktioniert ähnlich wie die Arduino Servo-Bibliothek \footnote{https://docs.arduino.cc/libraries/servo/}. Zusätzlich bietet sie zwei Funktionen zur Anpassung der PWM-Timerbreite des ESP32 für genauere Steuerung. \footnote{https://github.com/madhephaestus/ESP32Servos}
 			
 			\subsubsection*{Adafruit\_MCP23x17}
+	Die Adafruit MCP23017 Arduino Library ermöglicht die Nutzung des MCP23017 I/O-Expanders mit Arduino und ESP32. Dadurch lassen sich 16 zusätzliche digitale Ein- und Ausgänge über I2C oder SPI steuern. Die Bibliothek bietet einfache Funktionen für Input, Output, Pull-ups und Interrupts. So können Projekte mit mehr Ein- und Ausgängen erweitert werden, ohne zusätzliche Pins am Mikrocontroller zu belegen. \footnote{https://github.com/adafruit/Adafruit-MCP23017-Arduino-Library}
 			
 			\subsubsection*{HX711\_ADC}
-				
+	Die HX711\_ADC-Bibliothek ermöglicht die Nutzung des HX711 ADC-Moduls mit Arduino und ESP32 zur präzisen Messung von Gewichtssensoren (Wägezellen). Sie bietet eine verbesserte Signalverarbeitung, Tare-Funktion und Kalibrierungsfunktionen. Die Bibliothek erleichtert das Auslesen der Sensordaten und sorgt für eine stabile Gewichtsmessung, ohne komplexe Signalverarbeitung manuell durchführen zu müssen. \footnote{https://github.com/olkal/HX711\_ADC}
+	
 	 \subsection{LaTex}
 	 
 	 \subsection{GitHub}
