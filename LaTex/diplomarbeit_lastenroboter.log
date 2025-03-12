@@ -1,5 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2025.2.21)  12 MAR 2025 14:06
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.2.24)  12 MAR 2025 14:14
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.2.24)  12 MAR 2025 14:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1221,12 +1220,12 @@ See the caption package documentation for explanation.
 
 
 Underfull \hbox (badness 2035) in paragraph at lines 141--142
-[]\T1/ptm/m/n/12 Benutzeroberflï¿½che (Web-Oberflï¿½che) fï¿½r Steue-
+[]\T1/ptm/m/n/12 Benutzeroberfläche (Web-Oberfläche) für Steue-
  []
 
 
 Underfull \hbox (badness 5446) in paragraph at lines 142--143
-[]\T1/ptm/m/n/12 ï¿½bertragung der Steue-rung/Befehle von Web-
+[]\T1/ptm/m/n/12 Übertragung der Steue-rung/Befehle von Web-
  []
 
 File: Pictures/placeholder.png Graphic file (type png)
@@ -1564,8 +1563,8 @@ See the caption package documentation for explanation.
 
 
 Overfull \hbox (0.333pt too wide) in paragraph at lines 557--577
-\T1/ptm/m/n/12 Am An-fang des Setup-Codes wird ï¿½ber-prï¿½ft, ob ein Ex-pan-der Mo
--dul ï¿½ber die I2C Schnitt-
+\T1/ptm/m/n/12 Am An-fang des Setup-Codes wird über-prüft, ob ein Ex-pan-der Mo
+-dul über die I2C Schnitt-
  []
 
 <Pictures/code_enum_motoren.png, id=568, 194.22563pt x 207.77625pt>
@@ -1671,7 +1670,7 @@ Overfull \hbox (8.63322pt too wide) in paragraph at lines 651--652
 
 [28 <./Pictures/code_analogWrite_pwm_motoren.png>]
 Overfull \hbox (3.35641pt too wide) in paragraph at lines 667--668
-\T1/ptm/m/n/12 Die Web-si-te er-mï¿½g-licht die Echtzeit-Videoï¿½bertragung des Ka-
+\T1/ptm/m/n/12 Die Web-si-te er-mög-licht die Echtzeit-Videoübertragung des Ka-
 me-ra-bilds der ESP32-CAM.
  []
 
@@ -1826,12 +1825,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 824--825
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 826--827
-[]|\T1/ptm/m/n/12 ï¿½bergabe an
+[]|\T1/ptm/m/n/12 Übergabe an
  []
 
 
 Underfull \hbox (badness 1281) in paragraph at lines 828--828
-[]|\T1/ptm/m/n/12 Binï¿½rdaten wer-den emp-fan-
+[]|\T1/ptm/m/n/12 Binärdaten wer-den emp-fan-
  []
 
 
@@ -1914,7 +1913,7 @@ See the caption package documentation for explanation.
 
 [37 <./Pictures/example-camera.png> <./Pictures/example-light.png>]
 Overfull \hbox (2.94443pt too wide) in paragraph at lines 904--906
-\T1/ptm/m/n/12 Um die Ka-me-ra pro-gram-mie-ren zu kï¿½n-nen, muss zu-nï¿½chst das 
+\T1/ptm/m/n/12 Um die Ka-me-ra pro-gram-mie-ren zu kön-nen, muss zu-nächst das 
 rich-ti-ge Board \T1/cmtt/m/n/12 AI Thinker
  []
 
@@ -1992,7 +1991,7 @@ r
 
 
 Overfull \hbox (19.5976pt too wide) in paragraph at lines 967--968
-\T1/ptm/m/n/12 for-ma-tiert. Beim je-wei-li-gen Tas-ten-druck wird au-ï¿½er-dem i
+\T1/ptm/m/n/12 for-ma-tiert. Beim je-wei-li-gen Tas-ten-druck wird au-ÿer-dem i
 m-mer das At-tri-but \T1/cmtt/m/n/12 data-direction
  []
 
@@ -2371,7 +2370,7 @@ Overfull \hbox (28.50853pt too wide) in paragraph at lines 1215--1216
 
 [53 <./Pictures/fernlicht-js.png>]
 Overfull \hbox (12.83487pt too wide) in paragraph at lines 1224--1225
-\T1/ptm/m/n/12 Im HTML-Code wird die Vi-deo-ï¿½ber-tra-gung als HTML \T1/cmtt/m/n
+\T1/ptm/m/n/12 Im HTML-Code wird die Vi-deo-über-tra-gung als HTML \T1/cmtt/m/n
 /12 <img>\T1/ptm/m/n/12 -Tag mit der id \T1/cmtt/m/n/12 dynamicimage
  []
 
@@ -2521,7 +2520,7 @@ See the caption package documentation for explanation.
 [57 <./Pictures/sensordaten-html.png>]
 Overfull \hbox (1.30785pt too wide) in paragraph at lines 1320--1321
 \T1/ptm/m/n/12 Die CSS-Klasse \T1/cmtt/m/n/12 daten \T1/ptm/m/n/12 for-ma-tiert
- die ein-zel-nen Da-ten im Me-nï¿½. Sie wer-den in der Schrift-
+ die ein-zel-nen Da-ten im Me-nü. Sie wer-den in der Schrift-
  []
 
 
@@ -2627,7 +2626,7 @@ Overfull \hbox (4.45215pt too wide) in paragraph at lines 1400--1401
 
 Overfull \hbox (10.39986pt too wide) in paragraph at lines 1417--1421
 \T1/ptm/m/n/12 Als Bild-for-mat wird JPEG ver-wen-det, um Spei-cher-platz zu sp
-a-ren. Al-ter-na-tiv wï¿½-re RGB565
+a-ren. Al-ter-na-tiv wä-re RGB565
  []
 
 
@@ -2643,13 +2642,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 1485--1488
 
 [67] [68] [69] (diplomarbeit_lastenroboter.lof
 Overfull \hbox (15.6653pt too wide) in paragraph at lines 30--30
- [][] [][]\T1/ptm/m/n/12 ï¿½berprï¿½fung auf ï¿½n-de-rung und Speed in In-te-ger um-w
+ [][] [][]\T1/ptm/m/n/12 Überprüfung auf Än-de-rung und Speed in In-te-ger um-w
 an-deln in \T1/cmtt/m/n/12 navigate()\T1/ptm/m/n/12 - 
  []
 
 
 Overfull \hbox (17.66692pt too wide) in paragraph at lines 33--33
- [][] [][]\T1/ptm/m/n/12 PWM mit ana-log-Wri-te ï¿½ber-tra-gen und letz-te Wer-te
+ [][] [][]\T1/ptm/m/n/12 PWM mit ana-log-Wri-te über-tra-gen und letz-te Wer-te
  spei-chern in \T1/cmtt/m/n/12 navigate()\T1/ptm/m/n/12 - 
  []
 
@@ -2676,13 +2675,8 @@ ged.
 (rerunfilecheck)             Checksum: 7443C114D7F849648DEBAE61F805C210;11906.
  ) 
 Here is how much of TeX's memory you used:
- 36196 strings out of 473530
- 830824 string characters out of 5724861
- 1284146 words of memory out of 5000000
- 58604 multiletter control sequences out of 15000+600000
- 617652 words of font info for 134 fonts, out of 8000000 for 9000
- 36461 strings out of 474486
- 845371 string characters out of 5743283
+ 36471 strings out of 474486
+ 845483 string characters out of 5743283
  1947542 words of memory out of 5000000
  57914 multiletter control sequences out of 15000+600000
  621331 words of font info for 137 fonts, out of 8000000 for 9000
@@ -2728,19 +2722,13 @@ pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exist
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist
 , replaced by a fixed one
 
- <C:\Users\danie\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt12
-00.pk><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Program Fil
-es/MiKTeX/fonts/type1/urw/times/utmr8a.pfb>
-Output written on diplomarbeit_lastenroboter.pdf (73 pages, 5020272 bytes).
  <C:\Users\Lenovo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1
 200.pk><C:/Users/Lenovo/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utm
 b8a.pfb><C:/Users/Lenovo/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/ut
 mr8a.pfb>
-Output written on diplomarbeit_lastenroboter.pdf (73 pages, 5019340 bytes).
+Output written on diplomarbeit_lastenroboter.pdf (73 pages, 5023960 bytes).
 PDF statistics:
- 1192 PDF objects out of 1200 (max. 8388607)
- 251 named destinations out of 1000 (max. 500000)
- 1192 PDF objects out of 1200 (max. 8388607)
- 251 named destinations out of 1000 (max. 500000)
+ 1215 PDF objects out of 1440 (max. 8388607)
+ 261 named destinations out of 1000 (max. 500000)
  1074 words of extra memory for PDF output out of 10000 (max. 10000000)
 
