@@ -66,18 +66,19 @@
 \contentsline {subsection}{\numberline {7.4}Code}{71}{subsection.7.4}%
 \contentsline {section}{\numberline {8}Sensoren}{72}{section.8}%
 \contentsline {subsection}{\numberline {8.1}Abstandsensor}{72}{subsection.8.1}%
-\contentsline {subsection}{\numberline {8.2}Gewichtsmessung}{72}{subsection.8.2}%
-\contentsline {subsubsection}{\numberline {8.2.1}Grundprinzip}{72}{subsubsection.8.2.1}%
-\contentsline {subsubsection}{\numberline {8.2.2}Schaltungsaufbau}{72}{subsubsection.8.2.2}%
-\contentsline {subsubsection}{\numberline {8.2.3}Code}{72}{subsubsection.8.2.3}%
-\contentsline {section}{\numberline {9}Entwicklungstools}{73}{section.9}%
-\contentsline {subsection}{\numberline {9.1}Autodesk Fushion}{73}{subsection.9.1}%
-\contentsline {subsection}{\numberline {9.2}Eagle}{73}{subsection.9.2}%
-\contentsline {subsection}{\numberline {9.3}VS-Code}{73}{subsection.9.3}%
-\contentsline {subsubsection}{\numberline {9.3.1}Setup}{73}{subsubsection.9.3.1}%
-\contentsline {subsubsection}{\numberline {9.3.2}Bibliotheken}{74}{subsubsection.9.3.2}%
-\contentsline {subsubsection}{\numberline {9.3.3}verwendete Bibliotheken}{74}{subsubsection.9.3.3}%
-\contentsline {subsection}{\numberline {9.4}LaTex}{75}{subsection.9.4}%
-\contentsline {subsection}{\numberline {9.5}GitHub}{75}{subsection.9.5}%
-\contentsline {section}{\numberline {10}Abbildungsverzeichnis}{76}{section.10}%
-\contentsline {section}{\numberline {11}Literaturverzeichnis}{79}{section.11}%
+\contentsline {subsubsection}{\numberline {8.1.1}Grundprinzip}{72}{subsubsection.8.1.1}%
+\contentsline {subsubsection}{\numberline {8.1.2}Schaltungaufbau}{74}{subsubsection.8.1.2}%
+\contentsline {subsubsection}{\numberline {8.1.3}Nutzung}{75}{subsubsection.8.1.3}%
+\contentsline {subsubsection}{\numberline {8.1.4}Code}{76}{subsubsection.8.1.4}%
+\contentsline {subsection}{\numberline {8.2}Gewichtsmessung}{77}{subsection.8.2}%
+\contentsline {section}{\numberline {9}Entwicklungstools}{78}{section.9}%
+\contentsline {subsection}{\numberline {9.1}Autodesk Fushion}{78}{subsection.9.1}%
+\contentsline {subsection}{\numberline {9.2}Eagle}{78}{subsection.9.2}%
+\contentsline {subsection}{\numberline {9.3}VS-Code}{78}{subsection.9.3}%
+\contentsline {subsubsection}{\numberline {9.3.1}Setup}{78}{subsubsection.9.3.1}%
+\contentsline {subsubsection}{\numberline {9.3.2}Bibliotheken}{79}{subsubsection.9.3.2}%
+\contentsline {subsubsection}{\numberline {9.3.3}verwendete Bibliotheken}{79}{subsubsection.9.3.3}%
+\contentsline {subsection}{\numberline {9.4}LaTex}{80}{subsection.9.4}%
+\contentsline {subsection}{\numberline {9.5}GitHub}{80}{subsection.9.5}%
+\contentsline {section}{\numberline {10}Abbildungsverzeichnis}{81}{section.10}%
+\contentsline {section}{\numberline {11}Literaturverzeichnis}{84}{section.11}%

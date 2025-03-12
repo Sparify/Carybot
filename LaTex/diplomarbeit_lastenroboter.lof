@@ -93,3 +93,11 @@
 \contentsline {figure}{\numberline {92}{\ignorespaces Wägezellen}}{67}{figure.92}%
 \contentsline {figure}{\numberline {93}{\ignorespaces Wägezellenhalterung}}{68}{figure.93}%
 \contentsline {figure}{\numberline {94}{\ignorespaces modell-fertig}}{68}{figure.94}%
+\contentsline {figure}{\numberline {95}{\ignorespaces HC-SR04 Timing Diagram}}{73}{figure.95}%
+\contentsline {figure}{\numberline {96}{\ignorespaces Beispiel für Messung}}{73}{figure.96}%
+\contentsline {figure}{\numberline {97}{\ignorespaces HC-SR04 Pinbelegung}}{74}{figure.97}%
+\contentsline {figure}{\numberline {98}{\ignorespaces HC-SR04 Schaltungs Beispiel}}{75}{figure.98}%
+\contentsline {figure}{\numberline {99}{\ignorespaces \texttt {HC-SR04.h} Bibliothek}}{76}{figure.99}%
+\contentsline {figure}{\numberline {100}{\ignorespaces Erstellung von Objekten der Klasse UltraSonicDistanceSensor}}{76}{figure.100}%
+\contentsline {figure}{\numberline {101}{\ignorespaces Messung der Entfernung in der \texttt {loop()}-Funktion}}{76}{figure.101}%
+\contentsline {figure}{\numberline {102}{\ignorespaces if-Abfrage für Mindestabstand und Geschwindigkeit}}{77}{figure.102}%

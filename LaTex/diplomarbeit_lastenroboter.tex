@@ -1614,15 +1614,139 @@ Im HTML-Code wird die Status-Box als HTML \texttt{<span>}-Tag definiert. Für da
 	\section{Sensoren}
 	
 		\subsection{Abstandsensor} %Daniel
+		\subsubsection{Grundprinzip}
+		Der HC-SR04 ist ein Ultraschallsensor, der mithilfe von Schallwellen Entfernungen messen kann. Sein Funktionsprinzip basiert auf der Laufzeitmessung von Schallwellen. Dabei sendet der Sensor hochfrequente Ultraschallwellen aus, die von Objekten in der Umgebung reflektiert und anschließend wieder vom Sensor empfangen werden. Durch die Messung der Zeit, die der Schall für den Hin- und Rückweg benötigt, kann die Entfernung zum Objekt bestimmt werden. \\[0.3cm]
+		\begin{enumerate}
+		\item \textbf{Senden eines Ultraschallimpulses} \\
+		Der Ultraschallsensor verfügt über zwei Hauptkomponenten, der Trigger und das Echo. 
+		Zu Beginn des Messvorgangs sendet der Trigger einen kurzen Ultraschallimpuls aus. 
+		Dieser Impuls besteht aus acht Schallwellen mit einer Frequenz von 40 kHz, die sich mit Schallgeschwindigkeit in der Luft ausbreiten.
+		
+		\item \textbf{Reflexion des Signals} \\
+		Die ausgesendeten Ultraschallwellen bewegen sich durch die Luft, bis sie auf ein Hindernis treffen. Sobald dies geschieht, werden die Wellen reflektiert und in Richtung des Sensors zurückgesendet. Je nach Entfernung des Hindernisses dauert diese Reflexion unterschiedlich lange.
+		
+		\item \textbf{Empfangen des Echos} \\
+		Der Echo-Sensor registriert das reflektierte Signal und misst die Zeitspanne zwischen dem Aussenden und dem Empfang des Ultraschallimpulses. Diese Laufzeit des Schalls ist direkt proportional zur Entfernung des Hindernisses. Je weiter das Objekt entfernt ist, desto länger dauert es, bis das Echo zurückkehrt.\\
+		
+		\begin{center}
+			\begin{minipage}{0.7\textwidth}
+				\centering
+				\includegraphics[width=\textwidth]{Pictures/hcsr04_timing}
+				\captionof{figure}{HC-SR04 Timing Diagram}
+				\label{fig:hcsr04_timing}
+				\vspace{5pt}
+				{\small Quelle: {https://wiki.hshl.de/wiki/index.php/Ultraschallsensor\_HC-SR04}}
+			\end{minipage}
+		\end{center}
+		
+		\item \textbf{Berechnung der Entfernung} \\
+		Die Entfernung zum Hindernis kann mit der folgenden Formel berechnet werden:
+		\[{Distanz} = \frac{{Schallgeschwindigkeit} \times {Laufzeit}}{2}\]
+		Da sich der Ultraschall mit einer Geschwindigkeit von ca. 343 m/s (bei 20°C) in der Luft ausbreitet und das Signal hin und zurück läuft, wird die Laufzeit durch zwei geteilt. Diese Berechnung ermöglicht eine präzise Abstandsmessung mit einem Ultraschallsensor. 
+		\begin{center}
+			\begin{minipage}{0.5\textwidth}
+				\centering
+				\includegraphics[width=\textwidth]{Pictures/hcsr04_formel_beispiel}
+				\captionof{figure}{Beispiel für Messung}
+				\label{fig:hcsr04_formel_beispiel}
+				\vspace{5pt}
+				{\small Quelle: {https://www.tinkercad.com/}}
+			\end{minipage}
+		\end{center}
+		\end{enumerate}
+		
+		\subsubsection{Schaltungaufbau}
+		Der Aufbau der Schaltung ist relativ einfach, da der Sensor nur vier Pins hat.\\
+		Der Sensor verfügt über folgende Anschlüsse:
+		\begin{itemize}
+			\item \textbf{VCC} → Versorgungsspannung (5V)
+			\item \textbf{GND} → Masse
+			\item \textbf{Trigger (TRIG)} → Eingangssignal zum Starten der Messung
+			\item \textbf{Echo (ECHO)} → Ausgangssignal für die Messzeit\\
+		\end{itemize}
+		
+		\begin{center}
+			\begin{minipage}{0.9\textwidth}
+				\centering
+				\includegraphics[width=\textwidth]{Pictures/ultraschall_sensor}
+				\captionof{figure}{HC-SR04 Pinbelegung}
+				\label{fig:ultraschall_sensor}
+				\vspace{5pt}
+				{\small Quelle: {https://at.rs-online.com/web/p/bbc-micro-bit-add-ons/2153181}}
+			\end{minipage}
+		\end{center}
+		\newpage\noindent
+		Der HC-SR04 Ultraschallsensor kann an beliebige digitale GPIO-Pins des ESP32 angeschlossen werden, solange man diese als Eingang (für Echo) und Ausgang (für Trigger) benutzen kann.
+		\begin{center}
+			\begin{minipage}{0.9\textwidth}
+				\centering
+				\includegraphics[width=\textwidth]{Pictures/hcsr04_schaltung_bsp}
+				\captionof{figure}{HC-SR04 Schaltungs Beispiel}
+				\label{fig:hcsr04_schaltung_bsp}
+				\vspace{5pt}
+				{\small Quelle: {https://randomnerdtutorials.com/esp32-hc-sr04-ultrasonic-arduino/}}
+			\end{minipage}
+		\end{center}
+		\vspace{3pt}
+		\subsubsection{Nutzung}
+		Unser Lastenroboter hat zwei HC-SR04 Ultraschallsensoren verbaut, diese messen den Abstand vorne und hinten am Roboter. Diese Messungen sind wichtig für eine Sicherheitsfunktion, die verhindert, dass der Roboter unkontrolliert gegen ein Hindernis fährt. \\[0.4cm]
+		Bei zu hoher Geschwindigkeit bremst der Roboter automatisch, um eine Kollision zu vermeiden. Fährt er jedoch langsam auf ein Objekt zu, bleibt die Bremse deaktiviert.\\[0.4cm]
+		Dieses Verhalten ist ähnlich wie bei einem Auto, dass präzise Heranfahren an ein Hindernis ist bei langsamer Geschwindigkeit möglich, beispielsweise beim Einparken oder Positionieren. Bei hoher Geschwindigkeit kann es aber passieren das der Roboter jedoch nicht rechtzeitig stoppt, weshalb die automatische Bremse greift. Dadurch wird verhindert, dass der Roboter mit voller Wucht gegen ein Hindernis, wie etwa eine Mauer, fährt.\\
+		\subsubsection{Code}
+		Um die Ultraschallsensoren leicht zu verwenden, wird die HCSR04-Bibliothek eingebunden. Diese Bibliothek vereinfacht die Steuerung der HC-SR04-Sensoren, indem sie die Entfernungsmessung automatisch berechnet. 
+		\begin{center}
+			\begin{minipage}{0.5\textwidth}
+				\centering
+				\includegraphics[width=\textwidth]{Pictures/code_hcsr04_libary}
+				\captionof{figure}{\texttt{HC-SR04.h} Bibliothek}
+				\label{fig:code_hcsr04_libary}
+				\vspace{5pt}
+				{\small Quelle: {eigene Abbildung}}
+			\end{minipage}
+		\end{center}
+		\vspace{8pt}
+		Nach dem Einbinden der Bibliothek, werden Objekte der Klasse UltraSonicDistanceSensor erstellt, mit dem später auf die Ultraschallsensoren zugegriffen und Entfernungen gemessen werden können.\\[0.3cm] \texttt{distanceSensor\_rear(23, 19);} ist der Sensor für die hintere Messung\\ \texttt{distanceSensor\_front(13, 12);} ist der Sensor für die vordere Messung.
+		\begin{center}
+			\begin{minipage}{1\textwidth}
+				\centering
+				\includegraphics[width=\textwidth]{Pictures/code_hcsr04_objekte}
+				\captionof{figure}{Erstellung von Objekten der Klasse UltraSonicDistanceSensor}
+				\label{fig:code_hcsr04_objekte}
+				\vspace{5pt}
+				{\small Quelle: {eigene Abbildung}}
+			\end{minipage}
+		\end{center}
+		\vspace{8pt}
+		Danach wird die ganze Zeit in der \texttt{loop()} die aktuelle Entfernung für den vorderen, als auch für den hinteren Ultraschallsensor ermittelt. Dazu wird die Methode „measureDistanceCm()“ der jeweiligen Sensorobjekte aufgerufen, um die Entfernung in cm zu messen. Die Messergebnisse werden in die dementsprechende float-Variable gespeichert.
+		\begin{center}
+			\begin{minipage}{1\textwidth}
+				\centering
+				\includegraphics[width=\textwidth]{Pictures/code_hcsr04_messen}
+				\captionof{figure}{Messung der Entfernung in der \texttt{loop()}-Funktion}
+				\label{fig:code_hcsr04_messen}
+				\vspace{5pt}
+				{\small Quelle: {eigene Abbildung}}
+			\end{minipage}
+		\end{center}
+		\vspace{8pt}
+		Mit einer if-Abfrage prüft der Code, ob der Roboter zu nah an ein Hindernis kommt und dabei zu schnell ist. Wenn die gemessene Entfernung vorne oder hinten zwischen fünf und zwanzig Zentimetern liegt und die Geschwindigkeit mindestens fünfzig beträgt, wird die Funktion \texttt{stop()} ausgeführt. Dadurch stoppt der Roboter automatisch, um eine Kollision zu vermeiden.
+		\newpage\noindent
+		Der Bereich von fünf bis zwanzig cm wurde gewählt, weil der Sensor bei sehr großen Entfernungen, ungenaue oder falsche Signale liefern kann. Dadurch das nur Messwerte innerhalb dieses Bereichs berücksichtigt werden, wird sichergestellt, dass der Roboter nur dann stoppt, wenn tatsächlich ein Hindernis erkannt wird.
+		\begin{center}
+			\begin{minipage}{1\textwidth}
+				\centering
+				\includegraphics[width=\textwidth]{Pictures/code_hcsr04_abfrage}
+				\captionof{figure}{if-Abfrage für Mindestabstand und Geschwindigkeit}
+				\label{fig:code_hcsr04_abfrage}
+				\vspace{5pt}
+				{\small Quelle: {eigene Abbildung}}
+			\end{minipage}
+		\end{center}
+		
 		
 		\subsection{Gewichtsmessung}
 		
-			\subsubsection{Grundprinzip} %Daniel
-		
-			\subsubsection{Schaltungsaufbau} %Daniel
-		
-			\subsubsection{Code} %Daniel
-	
+
 	\newpage
 	\section{Entwicklungstools}
 	
