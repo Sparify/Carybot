@@ -19,6 +19,16 @@
 \usepackage{booktabs}
 \usepackage{adjustbox}
 \usepackage{longtable}
+\usepackage{tocloft}
+\newcommand{\listfootnotesname}{Literaturverzeichnis}% 'List of Footnotes' title 
+\newlistof[chapter]{footnotes}{fnt}{\listfootnotesname}% New 'List of...' for footnotes 
+\let\oldfootnote\footnote % Save the old \footnote{...} command 
+\renewcommand\footnote[1]{% Redefine the new footnote to also add 'List of Footnote' entries. 
+	\refstepcounter{footnotes}% Add and step a reference to the footnote/counter. 
+	\oldfootnote{#1}% Make a regular footnote. 
+	\addcontentsline{fnt}{footnotes}{\protect 
+		\numberline{\thefootnotes}#1}% Add the 'List of...' entry.
+	}
 \pagestyle{fancy}
 \fancyhf{}
 \fancyfoot[R]{\thepage}
@@ -44,7 +54,6 @@
 	\end{flushleft}
 	Wir erklären an Eides statt, dass wir die vorliegende Diplomarbeit selbstständig und ohne fremde Hilfe verfasst, keine anderen als die angegebenen Quellen und Hilfsmittel benutzt und die den benutzten Quellen wörtlich und inhaltlich entnommenen Stellen als solche erkenntlich gemacht haben. 
 	\vspace{2cm}
-	
 	\noindent
 	\begin{tabular}{p{7cm} p{7cm}}
 		\hrulefill & \hrulefill \\
@@ -1515,5 +1524,7 @@ Im HTML-Code wird die Status-Box als HTML \texttt{<span>}-Tag definiert. Für da
 		\listoffigures
 \newpage
 	\section{Literaturverzeichnis}
+		\listoffootnotes
+ 
 	 
 \end{document}
