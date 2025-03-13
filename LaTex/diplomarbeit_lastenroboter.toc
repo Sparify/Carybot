@@ -35,20 +35,19 @@
 \contentsline {subsection}{\numberline {4.4}WebSocket Kommunikation}{33}{subsection.4.4}%
 \contentsline {subsubsection}{\numberline {4.4.1}Kommunikation Setup}{33}{subsubsection.4.4.1}%
 \contentsline {subsubsection}{\numberline {4.4.2}Message Handling}{35}{subsubsection.4.4.2}%
-\contentsline {subsection}{\numberline {4.5}Kamera}{39}{subsection.4.5}%
-\contentsline {subsection}{\numberline {4.6}Kamera}{39}{subsection.4.6}%
-\contentsline {subsubsection}{\numberline {4.6.1}Kamera Setup}{39}{subsubsection.4.6.1}%
-\contentsline {subsection}{\numberline {4.7}Videoübertragung}{41}{subsection.4.7}%
-\contentsline {subsection}{\numberline {4.8}Website}{42}{subsection.4.8}%
-\contentsline {subsubsection}{\numberline {4.8.1}Implementierung der Steuerung}{42}{subsubsection.4.8.1}%
-\contentsline {subsubsection}{\numberline {4.8.2}Echtzeit-Videoanzeige}{53}{subsubsection.4.8.2}%
-\contentsline {subsubsection}{\numberline {4.8.3}Anzeige von Sensordaten und Verbindungsstatus}{56}{subsubsection.4.8.3}%
-\contentsline {subsection}{\numberline {4.9}Herausforderungen und Optimierungen}{62}{subsection.4.9}%
-\contentsline {subsubsection}{\numberline {4.9.1}Probleme bei der WebSocket Kommunikation}{62}{subsubsection.4.9.1}%
-\contentsline {subsubsection}{\numberline {4.9.2}Latenz- und Performance Optimierungen}{62}{subsubsection.4.9.2}%
-\contentsline {subsubsection}{\numberline {4.9.3}(Speicher- und Rechenleistungseinschränkungen des ESP32)}{62}{subsubsection.4.9.3}%
-\contentsline {subsection}{\numberline {4.10}(Fazit und Ausblick)}{62}{subsection.4.10}%
-\contentsline {subsubsection}{\numberline {4.10.1}(Mögliche Erweiterungen und Verbesserungen)}{62}{subsubsection.4.10.1}%
+\contentsline {subsection}{\numberline {4.5}Kamera}{38}{subsection.4.5}%
+\contentsline {subsubsection}{\numberline {4.5.1}Kamera Setup}{38}{subsubsection.4.5.1}%
+\contentsline {subsection}{\numberline {4.6}Videoübertragung}{40}{subsection.4.6}%
+\contentsline {subsection}{\numberline {4.7}Website}{41}{subsection.4.7}%
+\contentsline {subsubsection}{\numberline {4.7.1}Implementierung der Steuerung}{41}{subsubsection.4.7.1}%
+\contentsline {subsubsection}{\numberline {4.7.2}Echtzeit-Videoanzeige}{53}{subsubsection.4.7.2}%
+\contentsline {subsubsection}{\numberline {4.7.3}Anzeige von Sensordaten und Verbindungsstatus}{56}{subsubsection.4.7.3}%
+\contentsline {subsection}{\numberline {4.8}Herausforderungen und Optimierungen}{62}{subsection.4.8}%
+\contentsline {subsubsection}{\numberline {4.8.1}Probleme bei der WebSocket Kommunikation}{62}{subsubsection.4.8.1}%
+\contentsline {subsubsection}{\numberline {4.8.2}Latenz- und Performance Optimierungen}{62}{subsubsection.4.8.2}%
+\contentsline {subsubsection}{\numberline {4.8.3}(Speicher- und Rechenleistungseinschränkungen des ESP32)}{62}{subsubsection.4.8.3}%
+\contentsline {subsection}{\numberline {4.9}(Fazit und Ausblick)}{62}{subsection.4.9}%
+\contentsline {subsubsection}{\numberline {4.9.1}(Mögliche Erweiterungen und Verbesserungen)}{62}{subsubsection.4.9.1}%
 \contentsline {section}{\numberline {5}Gehäuse}{63}{section.5}%
 \contentsline {subsection}{\numberline {5.1}Planung und Design}{63}{subsection.5.1}%
 \contentsline {subsection}{\numberline {5.2}Realisierung}{69}{subsection.5.2}%

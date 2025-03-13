@@ -87,17 +87,17 @@
 	\section{Einleitung}
 	\subsection{Kurzzusammenfassung}
 	In dieser Diplomarbeit wird ein Lastenroboter entwickelt, der bis zu 25 Kilogramm transportieren kann. Der Roboter wird über eine Website gesteuert, die als Steuerungsplattform dient. Zusätzlich ist eine Kamera eingebaut, die zur visuellen Überwachung des Transportbereichs dient, sowie eine Waage, die das Gewicht der transportierten Last misst.\\[0.5 cm]
-	Ein Schwerpunkt der Arbeit liegt auf der mechanischen Konstruktion des Roboters, bei der ein stabiles Gehäuse aus Stahl gebaut wird, um Sicherheit und Stabilität zu gewährleisten. Außerdem wird eine eigene Platine entwickelt, die die verschiedenen Hardware-Komponenten, wie die Sensoren und die Motoren, steuert und miteinander verbindet.\\[0.5 cm]
-	Die Steuerung des Roboters erfolgt über eine Website, welche die Bedienung sowie die Anzeige relevanter Daten wie Akkustand und Gewicht ermöglichen. Ein besonderer Fokus liegt auch dabei auf der Übertragung des Kamerabildes auf die Web-Oberfläche sowie der Integration einer schwenkbaren Kamera, um eine flexible Sicht auf den Transportbereich zu gewährleisten. Der ESP32 sorgt dafür, dass die Befehle des Benutzers an den Roboter übermittelt werden.\\[0.5 cm]
+	Ein Schwerpunkt der Arbeit liegt auf der mechanischen Konstruktion des Roboters, bei der ein stabiles Gehäuse aus Stahl gebaut wird, um Sicherheit und Stabilität zu gewährleisten. Außerdem wird eine eigene Platine entwickelt, die die verschiedenen Hardware-Komponenten, wie die Sensoren und die Motoren miteinander verbindet.\\[0.5 cm]
+	Die Steuerung des Roboters erfolgt über eine Website, welche die Bedienung sowie die Anzeige relevanter Daten wie Akkustand und Gewicht ermöglicht. Ein besonderer Fokus liegt dabei auf der Übertragung des Kamerabildes auf die Web-Oberfläche sowie der Integration einer schwenkbaren Kamera, um eine flexible Sicht auf den Transportbereich zu gewährleisten. Der ESP32-Mikrocontroller sorgt dafür, dass die Befehle des Benutzers an den Roboter übermittelt werden.\\[0.5 cm]
 	Zusätzlich wird eine OnBoard-Software entwickelt, die es ermöglicht, die Sensoren auszulesen und die Motoren als auch die Kamera anzusteuern.\\[0.5 cm]
 	
 	\newpage
 	
 	\subsection{Abstract}
 	
-	This thesis develops a load robot that can carry up to 25 kilograms. The robot is controlled via a website, which serves as the control platform. Additionally, a camera is integrated to display the transport area, as well as a scale to measure the weight of the carried load.\\[0.5 cm]
+	This thesis is about the development of a load robot that can carry up to 25 kilograms. The robot is controlled via a website, which serves as the control platform. Additionally, a camera is integrated to display the transport area, as well as a scale to measure the weight of the carried load.\\[0.5 cm]
 	A key focus of the work is on the mechanical design of the robot, where a sturdy steel housing is built to ensure safety and stability. Furthermore, a custom circuit board is developed to control and connect the various hardware components, such as sensors and motors.\\[0.5 cm]
-	The robot is controlled via a website, which allows the user to operate the robot and access important data such as battery level and weight. A particular focus is also placed on transferring the camera feed to the web interface and integrating a swivel camera to ensure flexible viewing of the transport area. The ESP32 ensures that the user's commands are transmitted to the robot.\\[0.5 cm]
+	The robot is controlled via a website, which allows the user to operate the robot and access important data such as battery level and weight. A particular focus is also placed on transferring the camera feed to the web interface and integrating a swivel camera to ensure flexible viewing of the transport area. The ESP32-microcontroller ensures that the user's commands are transmitted to the robot.\\[0.5 cm]
 	Additionally, onboard software is developed to read the sensors and control the motors and camera.
 	%Namen links unten als muster für später
 	\fancyfoot[L]{Daniel Schauer - nur als Muster}
@@ -118,7 +118,7 @@
 			\hfill
 			\begin{minipage}{0.65\textwidth}
 				\vspace{-40pt}
-				\textbf{Daniel Schauer: Software-OnBoard}
+				\textbf{Daniel Schauer: OnBoard-Software}
 				\begin{itemize}
 					\item Projektleiter \vspace{-10pt}
 					\item Verbindung von Software und Hardware (ESP32 zu Sensoren) \vspace{-10pt}
@@ -141,7 +141,7 @@
 				\begin{itemize}
 					\item Benutzeroberfläche (Web-Oberfläche) für Steuerung \vspace{-10pt}
 					\item Übertragung der Steuerung/Befehle von Web-Oberfläche zu ESP32 \vspace{-10pt}
-					\item Kamera-Übertragung zur Web-Oberfläche
+					\item Kamera Visualisierung auf der Website
 					\item Dokumentation \vspace{-10pt}
 				\end{itemize}
 			\end{minipage} \\[1cm]
@@ -156,7 +156,7 @@
 				\vspace{-60pt}
 				\textbf{Felix Hochegger: Hardware-Design und Mechanik}
 				\begin{itemize}
-					\item Bau des Roboter Gehäuse \vspace{-10pt}
+					\item Bau des Roboter Gehäuses \vspace{-10pt}
 					\item Ansteuerung und Verbindung von Hardware (Ansteuerung und Berechnung der Motoren) \vspace{-10pt}
 					\item Dokumentation \vspace{-10pt}
 				\end{itemize}
@@ -164,7 +164,7 @@
 			\end{center}
 			\newpage
 		\subsection{Projektstrukturplan} %Daniel
-		Unsere Diplomarbeit beschäftigt sich mit der Entwicklung eines Lastenroboters. Der Lastenroboter soll etwa ein Gewicht von 25 Kilogramm tragen können. Die Steuerung erfolgt über eine Handy-App, und zusätzlich soll eine Kamera eingebaut werden. Im Lastenroboter wird auch eine Waage eingebaut, damit man sehen kann, wie schwer die transportierte Last ist. \\ Das Ziel dieser Diplomarbeit ist also, ein betriebsbereiter Prototyp eines Lastenroboters mit Kamerasystem und Waage zu entwickeln und zu realisieren. \\[0.4cm]
+		Unsere Diplomarbeit beschäftigt sich mit der Entwicklung eines Lastenroboters. Der Lastenroboter soll etwa ein Gewicht von 25 Kilogramm tragen können. Die Steuerung erfolgt über eine Website, und zusätzlich soll eine Kamera eingebaut werden. Im Lastenroboter wird auch eine Waage eingebaut, damit man sehen kann, wie schwer die transportierte Last ist. \\ Das Ziel dieser Diplomarbeit ist also, ein betriebsbereiter Prototyp eines Lastenroboters mit Kamerasystem und Waage zu entwickeln und zu realisieren. \\[0.4cm]
 		\textbf{Geplantes Ergebnis der individuellen Themenstellungen:} \\
 		\textbf{Felix Hochegger:}
 		Bau des Roboter-Gehäuses und Integration der Komponenten, Verbindung der Hardware im besonderen Ansteuerung der Motoren \\
@@ -186,8 +186,8 @@
 		\end{center}
 		\newpage
 		\subsection{Meilensteine} %Daniel
-		Um unseren Fortschritt und unsere Zeiteinteilung besser im Überblick zu behalten, haben wir uns bestimmte Meilensteine für unser Projekt gesetzt. Diese sind sehr hilfreich, um das Projekt strukturiert umzusetzen, angefangen von der Projektplanung bis hin zum fertigen Prototyp. \\[0.5cm]
-		Die folgenden Meilensteine haben wir uns bei der Projektplanung gesetzt:
+		Um unseren Fortschritt und unsere Zeiteinteilung besser im Überblick zu behalten, wurden bestimmte Meilensteine für das Projekt definiert. Diese sind sehr hilfreich, um das Projekt strukturiert umzusetzen, angefangen von der Projektplanung bis hin zum fertigen Prototyp. \\[0.5cm]
+		Die folgenden Meilensteine wurden bei der Projektplanung definiert:
 		\begin{longtable}{| l | l |}
 			\hline
 			\textbf{Meilenstein} & \textbf{Datum} \\
@@ -220,12 +220,12 @@
 					\endhead
 					\hline
 					Aufblasbares Rad 10'' 260x85  & 16.70 € & 4 & 66.80 € \\ \hline
-					MCP23017 & 4.54 € & 2 & 9.08 € \\ \hline
+					MCP23017 GPIO Expander-Board & 4.54 € & 2 & 9.08 € \\ \hline
 					PICAA LED Arbeitsscheinwerfer & 6.55 € & 2 & 13.10 € \\ \hline
 					2 Stück PWM Motor Steuerung Treiber Platinen & 35.78 € & 2 & 71.56 € \\ \hline
-					Micro Servo Motor & 6.04 € & 1 & 6.04 € \\ \hline
-					IRM-30-15ST & 17.04 € & 1 & 17.04 € \\ \hline
-					SOLSUM 0808 & 25.17 € & 1 & 25.17 € \\ \hline
+					Micro Servo Motor SG90 & 6.04 € & 1 & 6.04 € \\ \hline
+					IRM-30-15ST AC/DC-Leistungsmodul & 17.04 € & 1 & 17.04 € \\ \hline
+					SOLSUM 0808 Solarladeregler & 25.17 € & 1 & 25.17 € \\ \hline
 					Platinen & 37.14 € & 1 & 37.14 € \\ \hline
 					ESP32-CAM & 13.70 € & 1 & 13.70 € \\ \hline
 					12 Stück Halbbrücken Wägezelle & 11.09 € & 1 & 11.09 € \\ \hline
@@ -900,8 +900,6 @@
 		\end{minipage} \\[0.75cm]
 	\end{center}
 	\subsection{Kamera}
-	
-		\subsection{Kamera}
 		
 			\subsubsection{Kamera Setup}
 			
