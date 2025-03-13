@@ -40,7 +40,7 @@
 \contentsline {figure}{\numberline {39}{\ignorespaces Netzwerkkonfiguration Client}}{34}{figure.39}%
 \contentsline {figure}{\numberline {40}{\ignorespaces Setup ESP32}}{35}{figure.40}%
 \contentsline {figure}{\numberline {41}{\ignorespaces \texttt {onWebSocketEvent()}-Funktion}}{36}{figure.41}%
-\contentsline {figure}{\numberline {42}{\ignorespaces JSON-Beispiel für Steuerung}}{36}{figure.42}%
+\contentsline {figure}{\numberline {42}{\ignorespaces JSON-Beispiel für Steuerung}}{37}{figure.42}%
 \contentsline {figure}{\numberline {43}{\ignorespaces JSON-Beispiel für Kamerasteuerung}}{37}{figure.43}%
 \contentsline {figure}{\numberline {44}{\ignorespaces JSON-Beispiel für Lichtsteuerung}}{37}{figure.44}%
 \contentsline {figure}{\numberline {45}{\ignorespaces \texttt {handleWebSocketMessage()}-Funktion}}{38}{figure.45}%

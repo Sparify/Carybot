@@ -660,7 +660,7 @@
 	\section{Webserver} %Spari
 	 
 		\subsection{Grundlegende Ziele}
-	In diesem Kapitel wird die geplante Website thematisiert, die den Benutzerinnen und Benutzern die Steuerung des Lastenroboters ermöglichen soll. Zunächst werden die grundlegenden Funktionen definiert, die die Website erfüllen muss. Sobald diese Anforderungen umgesetzt sind, liegt der Fokus auf einer möglichst einfachen und benutzerfreundlichen Gestaltung des User Interfaces. Ein weiterer zentraler Aspekt ist die Darstellung spezifischer Messwerte und Daten, sodass diese über den Webserver schnell und unkompliziert zugänglich sind. \\[0.5cm]
+	In diesem Kapitel wird die geplante Website thematisiert, die die Steuerung des Lastenroboters ermöglichen soll. Zunächst werden die grundlegenden Funktionen definiert, die die Website erfüllen muss. Sobald diese Anforderungen umgesetzt sind, liegt der Fokus auf einer möglichst einfachen und benutzerfreundlichen Gestaltung des User Interfaces. Ein weiterer zentraler Aspekt ist die Darstellung spezifischer Messwerte und Daten, sodass diese über den Webserver schnell und unkompliziert zugänglich sind. \\[0.5cm]
 	Für die Entwicklung der Website kommen HTML, CSS und JavaScript zum Einsatz, um sowohl die funktionalen als auch die optischen Anforderungen zu erfüllen. 
 	
 			\subsubsection*{Videoübertragung} 	 
@@ -709,7 +709,7 @@
 		\vspace{-2pt}
 		\small Quelle: eigene Abbildung
 	\end{minipage} \\[0.75cm]
-	In der Setup Funktion wird danach überprüft, ob der Access Point erfolgreich konfiguriert worden ist und ob der Access Point erfolgreich gestartet werden kann. Falls ein Fehler auftreten sollte, wird der Setup unterbrochen und die jeweilige Fehlermeldung in der seriellen Konsole ausgegeben. Wenn alles erfolgreich konfiguriert ist und starten kann, wird im Seriellen Monitor die IP-Adresse in der seriellen Konsole ausgegeben. Anschließend wird der Webserver gestartet. \\[0.5cm]
+	In der Setup Funktion wird danach überprüft, ob der Access Point erfolgreich konfiguriert worden ist und ob er erfolgreich gestartet werden kann. Falls ein Fehler auftreten sollte, wird der Setup unterbrochen und die jeweilige Fehlermeldung in der seriellen Konsole ausgegeben. Wenn alles erfolgreich konfiguriert ist und starten kann, wird im Seriellen Monitor die IP-Adresse in der seriellen Konsole ausgegeben. Anschließend wird der Webserver gestartet. \\[0.5cm]
 	\begin{minipage}{\textwidth}
 		\centering
 		\includegraphics[scale=0.7]{Pictures/server-setup}
@@ -723,7 +723,7 @@
 			
 	SPIFFS (SPI Flash File System) ist ein leichtgewichtiges Dateisystem für Mikrocontroller mit SPI-Flash-Speicher. Es ermöglicht das Speichern und Verwalten von Dateien direkt im Flash-Speicher des Mikrocontrollers. SPIFFS wird in unserem Projekt benötigt, um statische Dateien für unseren Webserver (HTML-, CSS-, JavaScript Anwendungen) bereitzustellen. \\[0.5cm] 
 	In unserem Code wird zuallererst einmal überprüft, ob SPIFFS beim Start der ESP32-CAM richtig initialisiert werden kann. Falls es fehlschlägt, wird eine Fehlermeldung in der seriellen Konsole ausgegeben und das Programm gestoppt. Ansonsten werden die Webserver-Endpunkte über HTTP-GET-Routen definiert, über die unsere statischen Dateien aus SPIFFS an Clients gesendet werden. \\[0.5cm] 
-	“/“ ist die Standardroute des Servers. Somit wird dpad.html als Startseite angezeigt, wenn ein Client sich verbindet. \\[0.5cm] 
+	“/“ ist die Default-Route des Servers. Somit wird dpad.html als Startseite angezeigt, wenn ein Client sich verbindet. \\[0.5cm] 
 	“menu-icon.svg“ und “Fernlicht.svg“ werden als SVG-Bilder (Scalable Vector Graphics) an den Browser gesendet. Image/svg+xml sorgt dafür, dass der Browser die Dateien als SVG-Bilder erkennt. \\[0.5cm] 
 	“mystyles.css“ wird mit text/css als CSS-Datei gesendet und dient zur Formatierung der Website. \\[0.5cm] 
 	“carybot.js“ wird mit application/javascript als Javascript-Datei gesendet und verarbeitet die Eingaben von Clients auf der Website. \\[0.5cm] 
@@ -792,7 +792,7 @@
 			\end{center}
 		\end{minipage} \\[1cm]
 	\end{center}
-	In der Setup Funktion des Programmes wird dann überprüft, ob die IP-Konfiguration erfolgreich abgeschlossen wurde. Ansonsten kommt es zu einer Fehlermeldung und das Setup wird abgebrochen. Danach wird versucht, sich mit dem WLAN-Netzwerk zu verbinden. Wenn sich der ESP32 erfolgreich mit dem WLAN verbunden hat, wird eine Nachricht und die IP-Adresse des ESP32 in der seriellen Konsole ausgegeben. Danach wird die WebSocket Konfiguration noch gestartet. Es wird definiert, dass die Funktion onWebSocketEvent aufgerufen wird, wenn Events über den WebSocket registriert werden. In der loop Funktion wird dann noch ständig überprüft, ob neue Events am WebSocket registriert werden.
+	In der Setup Funktion des Programmes wird überprüft, ob die IP-Konfiguration erfolgreich abgeschlossen wurde. Ansonsten kommt es zu einer Fehlermeldung und das Setup wird abgebrochen. Danach wird versucht, sich mit dem WLAN-Netzwerk zu verbinden. Wenn sich der ESP32 erfolgreich mit dem WLAN verbunden hat, wird eine Nachricht und die IP-Adresse des ESP32 in der seriellen Konsole ausgegeben. Danach wird die WebSocket Konfiguration gestartet. Es wird definiert, dass die Funktion onWebSocketEvent aufgerufen wird, wenn Events über den WebSocket registriert werden. In der loop Funktion wird ständig überprüft, ob neue Events am WebSocket registriert werden.
 	\begin{center}
 		\begin{minipage}[t]{0.55\textwidth}
 			\includegraphics[scale=0.5]{Pictures/kommunikation\_setup}
@@ -808,7 +808,7 @@
 			\subsubsection{Message Handling}
 			
 	In der Funktion onWebSocketEvent() werden die WebSocket-Ereignisse verarbeitet. Sie wird aufgerufen, wenn sich ein WebSocket-Client verbindent, eine Nachricht sendet oder die Verbindung sich trennt.
-	Der Parameter num steht für die ID des Clients, der das Event ausgelöst hat. Der Parameter type gibt die Art des WebSocket-Event an. Der Parameter payload sind die empfangenen Daten. Der Parameter length steht für die Größe des payload-Arrays. 
+	Der Parameter num steht für die ID des Clients, der das Event ausgelöst hat. Der Parameter type gibt die Art des WebSocket-Event an. Der Parameter payload sind die empfangenen Daten. Der Parameter length steht für die Größe des payload-Buffers. 
 	In der Funktion werden die Events mit einem switch-case verarbeitet\\[0.5cm]
 	Übersicht der WebSocket-Ereignisse:
 	
@@ -847,9 +847,14 @@
 			\end{center}
 		\end{minipage} \\[0.75cm]
 	\end{center}
-	Die Funktion handleWebSocketMessage() verarbeitet die WebSocket-Nachricht, die als JSON-Objekte gesendet werden. Die Parameter sind wieder die Client-ID, die empfangenen Nachricht und die Länge der empfangenen Nachricht. \\[0.5cm]
-	Zuerst wird die empfangene Nachricht (payload) in einen String konvertiert. Diese wird dann in der seriellen Konsole ausgegeben. Danach wird ein JSON-Dokument mit max 200 Bytes erstellt. Die empfangene Nachricht wird dann mit deserialzeJson() geparst. Falls das Parsen erfolgreich war, wird die JSON-Nachricht verarbeitet. \\[0.5cm]
-	Wenn die JSON-Nachricht den Namen \texttt{robot\_direction} enthält, wird die Richtung mit der Funktion \texttt{stringToDirection()} in eine eigene Variable umgewandelt. Auch die mitgesendete Variable \texttt{speed} wird ebenfalls in eine eigene Variable gespeichert. 
+	Die Funktion handleWebSocketMessage() verarbeitet eingehende WebSocket-Nachrichten, die als JSON-Objekte gesendet wird. Sie nimmt drei Parameter entgegen:
+	\begin{enumerate}
+		\item \texttt{num} - Client-ID der Websocket Verbindung
+		\item \texttt{payload} - die empfangene Nachricht als Byte-Array
+		\item \texttt{length} - die Länge der empfangenen Nachricht
+	\end{enumerate}
+	Zuerst wird das \texttt{payload}-Byte-Array in einen String konvertiert und anschließend zu Debugging-Zwecken auf der seriellen Konsole ausgegeben. Danach wird ein \texttt{StaticJsonDocument} mit einer maximalen Größe von 200 Bytes erstellt, um die empfangenen JSON-Daten zu speichern. Anschließend wird die Nachricht mit \texttt{deserializeJson()} geparst. Falls das Parsen fehlschlägt, wird die Verarbeitung abgebrochen. Je nachdem, welche Schlüssel in der JSON-Nachricht enthalten sind, werden unterschiedliche Funktionen ausgeführt. \\[4cm]
+	Falls die JSON-Nachricht den Schlüssel \texttt{robot\_direction} enthält, wird der zugehörige Wert ausgelesen und mithilfe der Funktion \texttt{stringToDirection()} in eine interne Richtungsvariable (\texttt{dir}) umgewandelt. Zusätzlich wird der Wert für \texttt{"speed"} aus der Nachricht extrahiert und als String gespeichert. 
 	\begin{center}
 		\begin{minipage}[t]{0.4\textwidth}
 			\includegraphics{Pictures/example-navigate}
@@ -861,7 +866,7 @@
 			\end{center}
 		\end{minipage} \\[0.75cm]
 	\end{center}
-	Wenn die JSON-Nachricht den Namen \texttt{camera\_position} enthält, wird der Wert der Nachricht in die Variable \texttt{camera\_pos} gespeichert und die Funktion \texttt{cam\_turn()}  aufgerufen. 
+	Falls die JSON-Nachricht den Schlüssel \texttt{camera\_position} enthält, wird der Wert als Ganzzahl in die Variable \texttt{camera\_pos} gespeichert. Anschließend wird die Funktion \texttt{cam\_turn()}  aufgerufen, um die Kamera entsprechend zu bewegen. 
 	\begin{center}
 		\begin{minipage}[t]{0.4\textwidth}
 			\includegraphics{Pictures/example-camera}
@@ -873,7 +878,7 @@
 			\end{center}
 		\end{minipage} \\[0.75cm]
 	\end{center}
-	Wenn die JSON-Nachricht den Namen \texttt{light\_status} enthält, wird der Wert der Nachricht in die boolesche Variable \texttt{light\_status}  gespeichert. Dieser Variable wird dann in die numerische Variable \texttt{light\_st} umgewandelt (1 = an, 0 = aus). Wenn \texttt{light\_st} eine 1 ist, wird die Funktion \texttt{lights\_on(}) aufgerufen, ansonsten wird die Funktion \texttt{lights\_off()} aufgerufen.
+	Falls die JSON-Nachricht den Schlüssel \texttt{light\_status} enthält, wird der Wert der Nachricht in die boolesche Variable \texttt{light\_status}  gespeichert. Dieser Variable wird dann in die numerische Variable \texttt{light\_st} umgewandelt (1 = an, 0 = aus). Wenn \texttt{light\_st} \texttt{True} ist, wird die Funktion \texttt{lights\_on(}) aufgerufen, ansonsten wird die Funktion \texttt{lights\_off()} aufgerufen.
 	\begin{center}
 		\begin{minipage}[t]{0.35\textwidth}
 			\includegraphics{Pictures/example-light}
@@ -977,7 +982,7 @@
 			\end{center}
 		\end{minipage} \\[0.75cm]
 	\end{center}
-	Die CSS-Klasse \texttt{dpad-container } ist das übergeordnete Element, welches die Steuerkreuztasten enthalten. Es wird als CSS Grid mit einer 3x3 Struktur definiert. Es gibt Lücken (.) an den Ecken, damit das Layout wie ein Steuerkreuz aussieht. Der Abstand zwischen den Tasten wird mit 10px festgelegt. Der Container hat eine feste Breite von 120px und ist vertikal so wie horizontal zentriert. \\[0.5cm]
+	Die CSS-Klasse \texttt{dpad-container } ist das übergeordnete Element, welches die Steuerkreuztasten enthalten. Es wird als CSS Grid mit einer 3x3 Struktur definiert. Es gibt Lücken (.) an den Ecken, damit man die Form eines Steuerkreuzes erhält. Der Abstand zwischen den Tasten wird mit 10px festgelegt. Der Container hat eine feste Breite von 120px und ist vertikal so wie horizontal zentriert. \\[0.5cm]
 	Die CSS-Klasse \texttt{button} sorgt für eine einheitliche Gestaltung der Tasten des Steuerkreuzes. Jede Taste hat eine Größe von 60x60px. Eine Flexbox wird verwendet, um die Tasten jeweils mittig in den einzelnen Positionen des Grids zu positionieren. Jede Taste hat einen dunkelgrauen Hintergrund, eine weiße Textfarbe, einen 2px dicken dunklen Rahmen und abgerundete Ecken. Die Optionen \texttt{-webkit-tap-highlight-color: transparent} und \texttt{user-select: none} sorgen dafür, dass auf mobilen Geräten der Text in den Tasten nicht blau markiert werden kann, damit die Steuerung nicht blockiert wird. 
 	\begin{center}
 		\begin{minipage}[t]{0.55\textwidth}
@@ -1039,7 +1044,7 @@
 			\end{center}
 		\end{minipage} \\[0.75cm]
 	\end{center}
-	Die JavaScript Funktion \texttt{stop()} sorgt dafür, dass der Roboter anhält, wenn eine Taste des Steuerkreuzes losgelassen wird. Zuerst wird überprüft, ob die aktuelle Richtung nicht bereits \texttt{HALT} ist, ansonsten wird sie daraufgesetzt. Danach wird ein Stopp-Befehl als JSON-Nachricht vorbereitet. Zu debug-Zwecken wird wieder ein halt in der Webkonsole ausgegeben. Danach wird der Stopp-Befehl wieder an die WebSocket-Verbindung zur ESP32-CAM für debug-Zwecke gesendet. Danach wird sie auch an die WebSocket-Verbindung zum ESP32 gesendet, wo dieser weiterverarbeitet wird. \\[0.5cm]
+	Die JavaScript Funktion \texttt{stop()} sorgt dafür, dass der Roboter anhält, wenn eine Taste des Steuerkreuzes losgelassen wird. Zuerst wird überprüft, ob die aktuelle Richtung nicht bereits \texttt{HALT} ist, ansonsten wird sie überschrieben. Danach wird ein Stopp-Befehl als JSON-Nachricht vorbereitet. Zu debug-Zwecken wird wieder ein halt in der Webkonsole ausgegeben. Danach wird der Stopp-Befehl wieder an die WebSocket-Verbindung zur ESP32-CAM für debug-Zwecke gesendet. Danach wird sie auch an die WebSocket-Verbindung zum ESP32 gesendet, wo dieser weiterverarbeitet wird. \\[0.5cm]
 	\begin{center}
 		\begin{minipage}[t]{0.75\textwidth}
 			\includegraphics[scale=0.7]{Pictures/Steuerung-js4}
@@ -1078,7 +1083,7 @@
 			\end{center}
 		\end{minipage} \\[0.75cm]
 	\end{center}
-	In der CSS-Klasse \texttt{slider-container} wird ein Bereich mit der Größe 50x220 Pixel definiert, in dem der Slider angezeigt werden soll. In \texttt{slider} wird definiert, dass der Slider vertikal und nicht horizontal angezeigt wird. Außerdem wird die Richtung auf \texttt{Right to Left} gesetzt, damit die aktuelle Position richtig erhöht bzw. vermindert bei Auf- und Niederschieben des Sliders wird. \\
+	In der CSS-Klasse \texttt{slider-container} wird ein Bereich mit der Größe 50x220 Pixel definiert, in dem der Slider angezeigt werden soll. In \texttt{slider} wird definiert, dass der Slider vertikal und nicht horizontal angezeigt wird. Außerdem wird die Richtung auf \texttt{Right to Left} gesetzt, damit beim Hochschieben des Sliders die aktuelle Position erhöht und beim Runterschieben vermindert wird. \\
 	\begin{center}
 		\begin{minipage}[t]{0.45\textwidth}
 			\includegraphics{Pictures/speed-css}
@@ -1246,7 +1251,7 @@
 			\end{center}
 		\end{minipage} \\[0.75cm]
 	\end{center}
-	Im JavaScript-Code wird die WebSocket-Verbindung zur ESP32-CAM gehandelt. In der Funktion \texttt{connectWebSocket\_cam()} wird zuerst ein WebSocket mit der eigenen IP-Adresse erstellt (da Webserver auf ESP32-CAM gehostet wird) und dem Port 81 erstellt. Wenn nun eine Nachricht auf der WebSockte-Verbindung ankommt (siehe Videoübertragung \ref{subsec:Videoübertragung}) wird diese extrahiert. Das mitgesendete BLOB wird in einem neuem BLOB als jpeg-Bild gespeichert. Danach wird eine URL (Adresse) erstellt, die zu diesem BLOB führt. Dann wird eine Variable für die Videoübertragung im HTML \texttt{<img>}-Tag erstellt. Die Source dieses Bildes wird dann mit dem neuen, erhaltenen Bild ersetzt. Da die ESP32-CAM die ganze Zeit neue Blobs sendet, wird das Bild die ganze Zeit ersetzt, was dazu führt, dass es aussieht, als wäre es ein Video. \\[0.5cm]
+	Im JavaScript-Code wird die WebSocket-Verbindung zur ESP32-CAM gehandelt. In der Funktion \texttt{connectWebSocket\_cam()} wird zuerst ein WebSocket mit der eigenen IP-Adresse (da Webserver auf ESP32-CAM gehostet wird) und dem Port 81 geöffnet. Wenn nun eine Nachricht auf der WebSockte-Verbindung ankommt (siehe Videoübertragung \ref{subsec:Videoübertragung}) wird diese extrahiert. Das mitgesendete BLOB wird in einem neuem BLOB als jpeg-Bild gespeichert. Danach wird eine URL (Adresse) erstellt, die zu diesem BLOB führt. Dann wird eine Variable für die Videoübertragung im HTML \texttt{<img>}-Tag erstellt. Die Quelle dieses Bildes wird dann mit dem neuen, erhaltenen Bild ersetzt. Da die ESP32-CAM die ganze Zeit neue Blobs sendet, wird das Bild die ganze Zeit ersetzt, was dazu führt, dass es aussieht, als wäre es ein Video. \\[0.5cm]
 	Wenn sich die ESP32-CAM verbindet, wird zu Debug-Zwecken eine Nachricht in der Webkonsole ausgegeben. \\[0.5cm]
 	Wenn die Verbindung zur ESP32-CAM verloren geht, wird wieder zu Debug-Zwecke eine Nachricht in der Webkonsole ausgegeben und ein neuer Verbindungsversuch wird nach 5 Sekunden gestartet. \\[0.5cm]
 	\begin{center}
@@ -1303,8 +1308,8 @@
 			\end{center}
 		\end{minipage} \\[0.75cm]
 	\end{center}
-	In der CSS-Klasse \texttt{mymenu} wird die sidebar formatiert. Das Menü ist fixiert und nimmt 100\% der Höhe ein. Die Anfängliche ist 0, da es versteckt bzw. eingeklappt ist. Die Hintergrundfarbe ist schwarz und es befindet sich auf der z-Ebene 1 um den Hauptinhalt überdecken zu können. Beim Ein- und Ausblenden dauert 0.5 Sekunden, um einen sanften Übergang zu ermöglichen. \\[0.5cm]
-	Der Hautinhalt \texttt{\#main} hat eine Animation, damit er beim Öffnen des Menüs nach rechts verschoben werden kann. \\[0.5cm]
+	In der CSS-Klasse \texttt{mymenu} wird die sidebar formatiert. Das Menü ist fixiert und nimmt 100\% der Höhe ein. Die Anfängliche Höhe ist 0, da es versteckt bzw. eingeklappt ist. Die Hintergrundfarbe ist schwarz und es befindet sich auf der z-Ebene 1 um den Hauptinhalt überdecken zu können. Beim Ein- und Ausblenden dauert 0.5 Sekunden, um einen sanften Übergang zu ermöglichen. \\[0.5cm]
+	Der Hauptinhalt \texttt{\#main} hat eine Animation, damit er beim Öffnen des Menüs nach rechts verschoben werden kann. \\[0.5cm]
 	Falls der Bildschirm kleiner als 450px Höhe hat, werden die Abstände der angezeigten Daten verkleinert. Das dient dazu, um besonders auf Handys die Ansicht zu optimieren. \\[0.5cm]
 	Die CSS-Klasse \texttt{menu-icon} positioniert das Icon in der linken oberen Ecke mit einer 30x30px Format. \texttt{Cursor: pointer} sorgt dafür, dass das Icon anklickbar ist. \\[0.5cm]
 	\begin{center}
@@ -1415,8 +1420,8 @@ Im HTML-Code wird die Status-Box als HTML \texttt{<span>}-Tag definiert. Für da
 			\subsubsection{Latenz- und Performance Optimierungen}
 			
 							\subsubsection*{Kameraoptimierungen}
-	Als Bildformat wird JPEG verwendet, um Speicherplatz zu sparen. Alternativ wäre RGB565 oder YUV422 möglich, aber diese benötigen mehr Speicher da sie nicht komprimiert sind und sind somit langsamer zum Übertragen. \\[0.5cm]
-	Für die Bildauflösung wird QVGA (320x240 Pixel) definiert. Alternativ wären noch VGA (640x480), SVGA (800x600) oder UXGA (1600x1200) möglich, jedoch brauchen diese mehr Speicher und mehr Bandbreite und sind somit langsamer zum Übertragen.\\[0.5cm]
+	Als Bildformat wird JPEG verwendet, um Speicherplatz zu sparen. Alternativ wäre RGB565 oder YUV422 möglich, jedoch benötigen diese aufgrund fehlender Kompression mehr Speicher und verlängern die Übertragungsdauer. \\[0.5cm]
+	Für die Bildauflösung wird QVGA (320x240 Pixel) definiert. Alternativ wären noch VGA (640x480), SVGA (800x600) oder UXGA (1600x1200) möglich, jedoch benötigen diese mehr Speicher und mehr Bandbreite und verlängern dadurch die Übertragungsdauer.\\[0.5cm]
 	Den Wert für die Bildqualität kann von 0 (= beste Qualität) bis 63 (= schlechteste Qualität) definiert werden. Wir definierten die Bildqualität mit 12, was ein guter Kompromiss zwischen Qualität und Speicherverbrauch ist.\\[0.5cm]
 	Wir wählten für die Anzahl der Framebuffer 3. Die Anzahl sagt aus, wie viele Bilder gleichzeitig gespeichert werden können. Mehr Framebuffer erhöhen die Bildrate, benötigen jedoch mehr RAM. (siehe Kamera-Initialisierung) \ref{fig:Kamera-Initialisierung}\\[0.5cm]
 	
