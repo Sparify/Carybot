@@ -1744,9 +1744,182 @@ Im HTML-Code wird die Status-Box als HTML \texttt{<span>}-Tag definiert. Für da
 			\end{minipage}
 		\end{center}
 		
-		
+		\vspace{-10pt}
 		\subsection{Gewichtsmessung}
+		\vspace{-3pt}
+		\subsubsection{Grundprinzip}
+		Um das Gewicht, das sich auf dem Roboter befinden zu wiegen, werden Wägezellen benutzt. Wägezellen sind Widerstände, die sich unter Krafteinfluss verändern. Diese Veränderung des Widerstandes kann man dann benutzen, um das darauf drückende Gewicht zu messen. Wägezellen bestehen meistens aus einem Federkörper und einem Dehnmessstreifen. Der Federkörper ist ein biegsames Metallstück, das sich Verbiegt, wenn Gewicht darauf einwirkt. Diese Dehnung wird dann mit dem Dehnmessstreifen gemessen. \\ [0.2cm]
+		Wägezellen gibt es in unterschiedlichen Größen, von kleinen Modellen für geringe Lasten bis hin zu größeren Varianten für hohe Gewichte. Beim Lastenroboter kommen „Halbbrücken-Wägezellen“ zum Einsatz. 
+		\begin{center}
+			\begin{minipage}{0.5\textwidth}
+				\centering
+				\includegraphics[width=\textwidth]{Pictures/halb_waegezellen}
+				\captionof{figure}{Halbbrücken-Wägezelle}
+				\label{fig:halb_waegezellen}
+				\vspace{-3pt}
+				{\small Quelle: {https://bienenwaage.shop/auswahl-der-waegezelle}}
+			\end{minipage}
+		\end{center}
+		Zum Auslesen der Wägezellen wird ein HX711 verwendet. Der HX711 ist ein präziser 24-Bit-Analog-Digital-Wandler, der speziell für Wägezellen entwickelt wurde. Er verstärkt und digitalisiert die schwachen Signale der Sensoren, sodass sie von Mikrocontrollern verarbeitet werden können. Die Daten des HX711 werden anschließend über eine serielle Datenverbindung an den ESP32 übertragen. Der Mikrocontroller empfängt die digitalen Signale und verarbeitet sie weiter, um das Gewicht präzise zu berechnen.
+		\begin{center}
+			\begin{minipage}{0.7\textwidth}
+				\centering
+				\includegraphics[width=\textwidth]{Pictures/hx711}
+				\captionof{figure}{HX711 24-bit A/D-Wandler}
+				\label{fig:hx711}
+				\vspace{-3pt}
+				{\small Quelle: {https://www.berrybase.at/hx711-24-bit-a-d-gewichtssensor}}
+			\end{minipage}
+		\end{center}
 		
+		\begin{enumerate}
+			\item \textbf{Kraftaufnahme durch die Wägezellen} \\
+			Wird eine Last auf das System aufgebracht, verformen sich die Halbbrücken-Wägezellen minimal. Diese Verformung führt zu einer Änderung des elektrischen Widerstands der Dehnungsmessstreifen in der Wägezelle.
+			\begin{center}
+				\begin{minipage}{0.4\textwidth}
+					\centering
+					\includegraphics[width=\textwidth]{Pictures/waegezelle_prinzip}
+					\captionof{figure}{Prinzip einer Wägezelle }
+					\label{fig:waegezelle_prinzip}
+					\vspace{-3pt}
+					{\small Quelle: {https://circuitjournal.com/50kg-load-cells-with-HX711}}
+				\end{minipage}
+			\end{center}
+			\newpage
+			\item \textbf{Widerstandsänderung und Signalbildung} \\
+			Die Halbbrücken-Wägezellen sind Teil einer Wheatstone-Brückenschaltung. Durch die Widerstandsänderung entsteht eine kleine Spannungsdifferenz, die proportional zur aufgebrachten Last ist. 
+			\begin{center}
+				\begin{minipage}{0.9\textwidth}
+					\centering
+					\includegraphics[width=\textwidth]{Pictures/wheatstone}
+					\captionof{figure}{Wheatstone-Brückenschaltung}
+					\label{fig:wheatstone}
+					\vspace{-3pt}
+					{\small Quelle: {https://wolles-elektronikkiste.de/dehnungsmessstreifen}}
+				\end{minipage}
+			\end{center}
+			\vspace{5pt}
+			
+			\item \textbf{Signalverstärkung durch den HX711} \\
+			Der HX711 nimmt diese schwache Differenzspannung auf und verstärkt sie mit einem internen Verstärker. Die Verstärkung kann auf 32x, 64x oder 128x eingestellt werden, um auch sehr kleine Laständerungen messbar zu machen.
+			
+			\item \textbf{Analog-Digital-Wandlung durch den HX711} \\
+			Die verstärkte Spannung wird im HX711 in ein digitales 24-Bit-Signal umgewandelt. Dadurch kann das Gewicht mit hoher Genauigkeit erfasst werden.
+			
+			\item \textbf{Analog-Digital-Wandlung durch den HX711} \\
+			Der ESP32 empfängt die digitalen Werte über eine serielle Datenverbindung. Dann werden die Rohdaten interpretiert und in eine Gewichtseinheit (z. B. Kilogramm) umgerechnet. Eine vorherige Kalibrierung stellt sicher, dass die Messung korrekt erfolgt.
+		\end{enumerate}
+		\newpage
+		\subsubsection{Schaltungaufbau}
+		Die vier Wägezellen sind in einer Wheatstone-Vollbrücke verbunden, dadurch kann die Gewichtsmessung präziser erfolgen und die Belastung auf die Plattform gleichmäßig erfasst werden, unabhängig von der Position der Last. Die vier Wägezellen sind so verbunden, dass ihre Signale zusammengeführt und an die differenziellen Eingänge des HX711 weitergegeben werden. \\[0.5cm]
+		Für den Anschluss werden die folgenden Pins des HX711 genutzt:
+		\begin{itemize}
+			\item \textbf{E+ (Excitation +)} – Versorgungsspannung für die Wägezellen
+			\item \textbf{E- (Excitation -)} – Masse der Wägezellen
+			\item \textbf{A+ (Signal +)} – Positives Ausgangssignal der Brückenschaltung
+			\item \textbf{A- (Signal -)} – Negatives Ausgangssignal der Brückenschaltung
+		\end{itemize}
+		
+		\begin{center}
+			\begin{minipage}{0.6\textwidth}
+				\centering
+				\includegraphics[width=\textwidth]{Pictures/beschaltung_waegezelle}
+				\captionof{figure}{Beschaltung der Wägezellen}
+				\label{fig:beschaltung_waegezelle}
+				\vspace{-3pt}
+				{\small Quelle:\\ {https://beelogger.de/stockwaage/aufbauanleitung\_mit\_halbbrueckensensoren}}
+			\end{minipage}
+		\end{center}
+		\newpage
+		\noindent
+		Der HX711 überträgt die digitalisierten Messwerte an den ESP32 über eine serielle Datenverbindung.:
+		\begin{itemize}
+			\item \textbf{DT (Data)} – Dieser Pin überträgt die digitalen Messwerte vom HX711 und wird mit dem I2C\_SDA-Pin (GPIO 21) des ESP32 verbunden.
+			\item \textbf{SCK (Clock)} – Dieser Pin steuert die Taktung der Datenübertragung und wird mit dem I2C\_SCL-Pin (GPIO 22) des ESP32 verbunden.
+		\end{itemize}
+		Obwohl der HX711 kein echtes I2C-Protokoll verwendet, wird er oft ähnlich angeschlossen und mit einer einfachen seriellen Bit-Kommunikation ausgelesen. Der ESP32 sendet dabei regelmäßig ein Signal über den SCK-Pin, um die Datenübertragung zu starten, und liest anschließend über den DT-Pin die Gewichtswerte aus. \\[0.5cm]
+		
+		\begin{center}
+			\begin{minipage}{0.4\textwidth}
+				\centering
+				\includegraphics[width=\textwidth]{Pictures/placeholder}
+				\captionof{figure}{Verkabelung der Wägezellen mit HX711}
+				\label{fig:placeholder}
+				\vspace{-3pt}
+				{\small Quelle: {eigene Abbildung}}
+			\end{minipage}
+		\end{center}
+		
+		\subsubsection{Nutzung}
+		Die Wägezellen dienen dazu, das Gewicht auf dem Lastenroboter präzise zu messen. Der Mikrocontroller verarbeitet die vom HX711 empfangenen Daten und sendet sie in Echtzeit an die Website, auf der das aktuelle Gewicht des Roboters in einem Untermenü angezeigt wird. \\
+		Dadurch kann jederzeit überprüft werden, wie viel Last sich auf dem Roboter befindet. Diese Funktion trägt zur Überwachung des Gewichts bei und hilft Überlastungen bei den Transportprozessen zu vermeiden.
+		\begin{center}
+			\begin{minipage}{0.8\textwidth}
+				\centering
+				\includegraphics[width=\textwidth]{Pictures/testaufbau_waegezellen}
+				\captionof{figure}{Testaufbau der Wägezellen}
+				\label{fig:testaufbau_waegezellen}
+				\vspace{-3pt}
+				{\small Quelle: {eigene Abbildung}}
+			\end{minipage}
+		\end{center}
+		
+		\subsubsection{Code}
+		Um die Wägezellen mit dem HX711 einfach auszulesen, wird die HX711\_ADC- Bibliothek verwendet. Diese Bibliothek vereinfacht durch ihre vielen fertigen Funktionen das Auslesen und das Umrechnen der Daten. Nach Einbinden der Bibliothek, werden die GPIOs für das Auslesen festgelegt. Mit diesen wird dann ein Objekt der Klasse HX711\_ADC erstellt, um auf den HX711 zuzugreifen. Außerdem wird eine Float-Variable für das Gewicht deklariert.\\
+		\begin{center}
+			\begin{minipage}{0.8\textwidth}
+				\centering
+				\includegraphics[width=\textwidth]{Pictures/code_hx711_libary}
+				\captionof{figure}{Einbinden der \texttt{HX711\_ADC}-Bibliothek}
+				\label{fig:code_hx711_libary}
+				\vspace{-3pt}
+				{\small Quelle: {eigene Abbildung}}
+			\end{minipage}
+		\end{center}
+		\newpage \noindent
+		Dannach wird mit \texttt{LoadCell.begin();} der HX711-Sensor in der \texttt{Setup()}-Funktion gestartet. Anschließend wird die Variable calibrationValue als float definiert und auf 696.0 gesetzt. Dieser Wert dient zur Kalibrierung der Messung und muss an die spezifische Wägezelle angepasst werden. \\ [0.3cm]
+		Die Variable stabilizingtime vom Typ unsigned long wird auf 2000 Millisekunden gesetzt. Diese gibt an, wie lange der Sensor Zeit bekommt, um sich nach dem Start zu stabilisieren. \\ [0.3cm]
+		Die Variable \_tare ist ein Boolean und wird auf true gesetzt. Das bedeutet, dass der Sensor beim Start automatisch „tarieren“ soll, also das aktuelle Gewicht als Nullpunkt speichert. \\ [0.3cm]
+		Schließlich wird mit \texttt{LoadCell.start(stabilizingtime, \_tare);} der Messvorgang gestartet, wobei die angegebene Stabilisierungszeit und die automatische Tara-Funktion berücksichtigt werden. \\ [0.3cm]
+		\begin{center}
+			\begin{minipage}{1\textwidth}
+				\centering
+				\includegraphics[width=\textwidth]{Pictures/code_hx711_setup}
+				\captionof{figure}{\texttt{Setup();} - Code für den HX711}
+				\label{fig:code_hx711_setup}
+				\vspace{-3pt}
+				{\small Quelle: {eigene Abbildung}}
+			\end{minipage}
+		\end{center}
+		\vspace{8pt}
+		Dann wird noch überprüft, ob die Tara-Funktion des HX711 erfolgreich abgeschlossen wurde oder ob ein Timeout-Fehler aufgetreten ist. \\ [0.3cm]
+		Zuerst wird geprüft, ob die Tara-Funktion zu lange gedauert hat und fehlgeschlagen ist. Falls dies der Fall ist, wird eine Fehlermeldung über die serielle Schnittstelle ausgegeben. Anschließend wird eine Endlosschleife gestartet, die das Programm anhält. \\ [0.3cm]
+		Falls kein Timeout auftritt, wird die Kalibrierung durchgeführt. Danach wird über die serielle Schnittstelle eine Bestätigung ausgegeben, dass die Initialisierung erfolgreich abgeschlossen wurde.
+		\newpage
+		\noindent
+		\begin{center}
+			\begin{minipage}{1\textwidth}
+				\centering
+				\includegraphics[width=\textwidth]{Pictures/code_hx711_timeout}
+				\captionof{figure}{Timeout Abfrage in der \texttt{Setup();}-Funktion}
+				\label{fig:code_hx711_timeout}
+				\vspace{-3pt}
+				{\small Quelle: {eigene Abbildung}}
+			\end{minipage}
+		\end{center}
+		\vspace{8pt}
+		In der \texttt{loop()} -Funktion wird kontinuierlich das Gewicht gemessen. Die \texttt{getData()} -Funktion ruft dabei den aktuellen Messwert vom HX711 A/D-Wandler ab und speichert ihn in der Variablen „weight“. \\ [0.3cm]
+		Dieser Wert stellt das aktuell gemessene Gewicht dar, das mithilfe der Kalibrierung in eine gewichtsspezifische Einheit umgerechnet wird. Dieser Wert kann dann auf die Website übertragen werden.
+		\begin{center}
+			\begin{minipage}{1\textwidth}
+				\centering
+				\includegraphics[width=\textwidth]{Pictures/code_hx711_messung}
+				\captionof{figure}{Gewichtsmessung in der \texttt{loop();}-Funktion}
+				\label{fig:code_hx711_messung}
+				\vspace{-3pt}
+				{\small Quelle: {eigene Abbildung}}
+			\end{minipage}
+		\end{center}
 
 	\newpage
 	\section{Entwicklungstools}
