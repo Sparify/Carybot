@@ -1557,7 +1557,69 @@ Im HTML-Code wird die Status-Box als HTML \texttt{<span>}-Tag definiert. Für da
 		Für das Gehäuse wurde Stahl als Hauptmaterial gewählt, weil es sehr robust und widerstandsfähig gegenüber äußeren Einflüssen ist. Ein weiter Grund, warum Stahl als Hauptmaterial verwendet wurde, ist die einfache Verarbeitung. Stahl kann man gut Schweißen aber auch verschrauben.
 		
 		\subsection{Realisierung} %Felix
+		Nach der abgeschlossenen Planungsphase begann die schrittweise Umsetzung des Baus des Lastenroboters. Dabei wurde besonders darauf geachtet, dass alle Komponenten präzise gefertigt und montiert wurden, um die gewünschte Stabilität, Funktionalität und Sicherheit zu gewährleisten. Der Bau des Gehäuses erfolgte in mehreren aufeinanderfolgenden Arbeitsschritten.
+		
+		\subsubsection*{Schritt 1: Zuschnitt der Stahlprofile}
+		
+		Im ersten Schritt werden die Vierkantrohre anhand der geplanten Maße zugeschnitten. Bevor die Vierkantrohre zugeschnitten werden, müssen sie sorgfältig vermessen und an den Schnittstellen präzise markiert werden. Nachdem die Vierkantroher markiert wurden, wurden sie in einen Schraubstock eingespannt und mit einer Flex an den Markierungen zugeschnitten. Die einzelnen Rohre mussten genau zugeschnitten werden, um eine stabile Konstruktion zu erhalten.
+		\begin{center} 
+			\begin{minipage}[t]{\textwidth}
+				\includegraphics{Pictures/Stahlprofil}
+				\captionof{figure}{Stahlprofile}
+				\label{fig:Stahlprofil}
+				\vspace{-10pt}
+				\begin{center}
+					\par\small Quelle: eigene Abbildung 
+				\end{center}
+			\end{minipage} \\[0.75cm]
+		\end{center} 
+		Nachdem alle Vierkantrohre zugeschnitten waren, wurden die einzelnen Stücke erneut vermessen, um zu überprüfen, ob alle Maße stimmen und die Teile passgenau zueinanderpassen, bevor sie endgültig befestigt wurden.
+		
+		\subsubsection*{Schritt 1: Aufbau des Rahmens}
+		
+		Nachdem alle Stahlteile zugeschnitten waren, wurde das Gehäuse verschweißt. Zuerst wurde der rechteckige Stahlrahmen ausgerichtet, um sicherzustellen, dass alle Teile korrekt positioniert sind. Um den Zugang zur Elektronik im Inneren des Lastenroboters zu erleichtern, wurden am oberen Rahmen zwei kurze Stangen angebracht, sodass der obere Teil leicht abgenommen werden kann.
+		
+		\begin{center} 
+			\begin{minipage}[t]{0.6\textwidth}
+				\includegraphics{Pictures/modell-fertig}
+				\captionof{figure}{<Platzhalter>}
+				\label{fig:modell-fertig}
+				\vspace{-10pt}
+				\begin{center}
+					\par\small Quelle: eigene Abbildung 
+				\end{center}
+			\end{minipage} \\[0.75cm]
+		\end{center} 
+	Für das Verschweißen wurde das Elektrodenschweißverfahren (Lichtbogenhandschweißen) verwendet.
 	
+	\subsubsection*{Funktionsweise des Elektrodenschweißens:}
+	
+	Beim Elektrodenschweißen wird ein elektrischer Lichtbogen zwischen der Stabelektrode und Material erzeugt. Durch die Hohe Temperatur des Lichtbogens schmilzt die Elektrode aber auch das Material. Die Elektrode besteht aus einem Metallkern und einer Umhüllung und liefert somit den Zusatzwerkstoff gleich mit.\\[0.5cm]
+	Zum Schweißen wird die Stabelektrode in den Elektrodenhalter eingespannt und vom Schweißer an der Nahtstelle entlanggeführt. Die Umhüllung schmilzt während des Schweißens ab und schützt durch freiwerdende Gase und Schlacke das Schmelzbad und den Lichtbogen vor der Außenluft.\footnote{https://www.lorch.eu/de/produkte/manuelles-schweissen/elektroden-schweissen}
+	
+	
+	\subsection{Vor- und Nachteile von Elektrodenschweißen}
+	
+	 \subsubsection*{Vorteile}
+	
+	 \begin{itemize}
+	 		\item Einfache Handhabung
+	 		\item Unabhängig von Stromnetz und Wetter
+	 		\item Relativ robust gegen Verunreinigungen wie Rost
+	 		\item Schweißen von nahezu allen Werkstoffen
+	 		\item Geringe Lärmbelastung der Schweißer
+	 \end{itemize}
+	 
+	 \subsubsection*{Nachteile}
+	 
+	 \begin{itemize}
+	 		\item Mechanisierung nicht möglich
+	 		\item Hohe Rauchentwicklung
+	 		\item Geringe Geschwindigkeit und hohe Rüstzeiten möglich
+	 		\item Elektrodendurchmesser wird von Blechdicke und Schweißposition bestimmt
+	  		\item Endkrater und Ansatzstellen können zu Fehlerquellen werden
+	 \end{itemize}
+	 
 		\subsection{Materialliste} %Felix
 	\newpage
 	\section{Platine}
