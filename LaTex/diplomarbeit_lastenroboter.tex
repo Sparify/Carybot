@@ -671,9 +671,7 @@
 	
 			\subsubsection*{Anzeigen von Daten}
 	
-	Auf der Website sollen bestimmte Messwerte und Daten, wie zum Beispiel Akkustand oder zurzeit aufliegende Last, die vom ESP32 durch Sensoren oder Messungen ausgewertet werden, übersichtlich und leicht zugänglich angezeigt werden.
-	
-		\subsection{Ideen und Entwürfe}
+	Auf der Website sollen bestimmte Messwerte und Daten, wie zum Beispiel Akkustand oder zurzeit aufliegende Last, die vom ESP32 durch Sensoren oder Messungen ausgewertet werden, übersichtlich und leicht zugänglich angezeigt werden. \newpage
 		
 		\subsection{Webserver}
 		
@@ -1399,9 +1397,7 @@ Im HTML-Code wird die Status-Box als HTML \texttt{<span>}-Tag definiert. Für da
 	Als Bildformat wird JPEG verwendet, um Speicherplatz zu sparen. Alternativ wäre RGB565 oder YUV422 möglich, jedoch benötigen diese aufgrund fehlender Kompression mehr Speicher und verlängern die Übertragungsdauer. \\[0.5cm]
 	Für die Bildauflösung wird QVGA (320x240 Pixel) definiert. Alternativ wären noch VGA (640x480), SVGA (800x600) oder UXGA (1600x1200) möglich, jedoch benötigen diese mehr Speicher und mehr Bandbreite und verlängern dadurch die Übertragungsdauer.\\[0.5cm]
 	Den Wert für die Bildqualität kann von 0 (= beste Qualität) bis 63 (= schlechteste Qualität) definiert werden. Wir definierten die Bildqualität mit 12, was ein guter Kompromiss zwischen Qualität und Speicherverbrauch ist.\\[0.5cm]
-	Wir wählten für die Anzahl der Framebuffer 3. Die Anzahl sagt aus, wie viele Bilder gleichzeitig gespeichert werden können. Mehr Framebuffer erhöhen die Bildrate, benötigen jedoch mehr RAM. (siehe Kamera-Initialisierung) \ref{fig:Kamera-Initialisierung}\\[0.5cm]
-	
-			\subsubsection{(Speicher- und Rechenleistungseinschränkungen des ESP32)}
+	Wir wählten für die Anzahl der Framebuffer 3. Die Anzahl sagt aus, wie viele Bilder gleichzeitig gespeichert werden können. Mehr Framebuffer erhöhen die Bildrate, benötigen jedoch mehr RAM. (siehe Kamera-Initialisierung \ref{fig:Kamera-Initialisierung})\\[0.5cm]
 					
 		\subsection{(Fazit und Ausblick)}
 		
