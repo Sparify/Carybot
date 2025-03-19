@@ -878,60 +878,12 @@
 			\end{center}
 		\end{minipage} \\[0.75cm]
 	\end{center} \newpage
-	\subsection{Kamera}
-		
-			\subsubsection{Kamera Setup}
-			
-	Um die Kamera programmieren zu können, muss zunächst das richtige Board \texttt{AI Thinker ESP32-CAM} ausgewählt werden. Danach müssen die ESP32-Kamera-Treiber mit der Bibliothek \texttt{esp\_camera.h} inkludiert werden. Dann muss das passende ESP32-CAM-Modell festgelegt werden. Da wir uns für das \texttt{Ai-Thinker} Modell entschieden haben, muss diese nun definiert werden. Falls ein anderes Modell genutzt wird, muss es entsprechend angepasst werden. \\[0.5cm]
-	Als nächstes werden die GPIO-Pins der ESP32-CAM für die Kamera OV2640 konfiguriert. Diese Zuordnung ist spezifisch für das Ai-Thinker-Modell und muss für jedes Modell individuell angepasst werden. \\[0.5cm]
-	\begin{center}
-		\begin{minipage}[t]{0.95\textwidth}
-			\includegraphics{Pictures/kamera-setup1}
-			\captionof{figure}{Kamera-GPIO Konfiguration}
-			\label{fig:Kamera-GPIO Konfiguration}
-			\vspace{-10pt}
-			\begin{center}
-				\par\small Quelle: eigene Abbildung 
-			\end{center}
-		\end{minipage} \\[0.75cm]
-	\end{center}
-	Als nächstes muss die ESP32-CAM mit der ESP-IDF \texttt{esp\_camera} Bibliothek konfiguriert und initialisiert werden. Als erstes muss mit \texttt{camera\_config\_t} eine Struktur definiert werden, mit der verschiedene Parameter und Eigenschaften wie GPIO-Pins, Bildgröße und Qualität festlegt werden können. \\[0.5cm] 
-	LEDC-Kanal und Timer werden für das Taktsignal benötigt, um die Kamera zu betreiben. \\[0.5cm]
-	Zum Schluss wird die Kamera mit den konfigurierten Einstellungen initialisiert. Falls bei der Initialisierung ein Fehler auftreten soll, wird dieser in der seriellen Konsole ausgegeben und das Setup abgebrochen.
-	\begin{center}
-		\begin{minipage}[t]{1\textwidth}
-			\includegraphics{Pictures/kamera-setup2}
-			\captionof{figure}{Kamera-Initialisierung}
-			\label{fig:Kamera-Initialisierung}
-			\vspace{-10pt}
-			\begin{center}
-				\par\small Quelle: eigene Abbildung 
-			\end{center}
-		\end{minipage} \\[0.75cm]
-	\end{center}
-		
-			\subsection{Videoübertragung}
-		    \label{subsec:Videoübertragung}
-			
-	In unserem Projekt werden die Live-Bilder per WebSocket an den Webserver gesendet. Um dies umzusetzen, wird zuerst eine Webserver-Route benötigt. Dazu wird eine http-GET-Anfrage für die Hauptseite (“/“) definiert. Im Code wird ein JavaScript Skript benutzt, um eine Websocket-Verbindung herzustellen. Die IP-Adresse wird automatisch durch \texttt{windows.location.hostname} erkannt. Port 81 wird für das WebSocket-Streaming verwendet. Wenn die ESP32-CAM ein neues Bild als WebSocket-Nachricht versendet, wird es als JPEG-Blob gespeichert. Danach wird ein temporär URL-Link erstellt. Das Bild wird schlussendlich in einem \texttt{<img>}-Tag mit der id \texttt{stream} angezeigt. \\[0.5cm]
-	Die WebSocket Verbindung wird die ganze Zeit überwacht. In der Konsole wird ausgegeben, wenn die Websocket-Verbindung aktiv ist. Falls die Verbindung abbrechen sollte, wird nach 5 Sekunden automatisch ein erneuter Verbindungsversuch gestartet. Zum Schluss wird der HTML-Code mit \texttt{HTTP-Status 200} (OK) an den Browser gesendet. 
-	\begin{center}
-		\begin{minipage}[t]{0.75\textwidth}
-			\includegraphics[scale=0.6]{Pictures/videoübertragung}
-			\captionof{figure}{Videoübertragung über WebSocket}
-			\label{fig:Videoübertragung}
-			\vspace{-10pt}
-			\begin{center}
-				\par\small Quelle: eigene Abbildung 
-			\end{center}
-		\end{minipage} \\[0.75cm]
-	\end{center}
-	
-		\subsection{Website}
 
-			\subsubsection{Implementierung der Steuerung}
+	\subsection{Website}
+
+		\subsubsection{Implementierung der Steuerung}
 			
-				\subsubsection*{Steuerkreuz}
+			\subsubsection*{Steuerkreuz}
 				
 	Um den Roboter überhaupt steuern zu können, wird ein Steuerkreuz implementiert. Das Steuerkreuz befindet sich mittig am rechten Bildschirmrand. Das Steuerkreuz besteht aus fünf Tasten, nämlich: Vorwarts (\texttt{UP}), (\texttt{DOWN} ), links (\texttt{LEFT}), rechts (\texttt{RIGHT}) und in der Mitte Stop (\texttt{HALT}). \\[0.5cm]
 	\begin{center}
@@ -1186,62 +1138,6 @@
 			\end{center}
 		\end{minipage} \\[0.75cm]
 	\end{center}
-
-			\subsubsection{Echtzeit-Videoanzeige}
-			
-	Die Videoübertragung dient dazu, den Roboter über größere Entfernungen autonom steuern zu können. Mit der Videoübertragung werden Objekte und Hindernisse erkennbar und kann diese somit ausweichen. \\[0.5cm]
-	Die Videoübertragung wird über der ganzen Website im Hintergrund angezeigt. \\
-	\begin{center}
-		\begin{minipage}[t]{1\textwidth}
-			\includegraphics{Pictures/videoübertragung-web}
-			\captionof{figure}{Videoübertragung auf der Website}
-			\label{fig:videoübertragung-web}
-			\vspace{-10pt}
-			\begin{center}
-				\par\small Quelle: eigene Abbildung 
-			\end{center}
-		\end{minipage} \\[0.75cm]
-	\end{center}
-	Im HTML-Code wird die Videoübertragung als HTML \texttt{<img>}-Tag mit der id \texttt{dynamicimage} im Hauptbereich definiert. \\
-	\begin{center}
-		\begin{minipage}[t]{0.75\textwidth}
-			\includegraphics{Pictures/videoübertragung-html}
-			\captionof{figure}{Videoübertragung HTML-Code}
-			\label{fig:videoübertragung-html}
-			\vspace{-10pt}
-			\begin{center}
-				\par\small Quelle: eigene Abbildung 
-			\end{center}
-		\end{minipage} \\[0.75cm]
-	\end{center}
-	Im CSS-Code wird nun das Element mit der id \texttt{dynamicimage} formatiert. Es wird definiert, dass die Größe 100\% der Breite sowie 100\% der Höhe einnimmt. Die Position wird dabei auf absolut gesetzt. \\
-	\begin{center}
-		\begin{minipage}[t]{0.5\textwidth}
-			\includegraphics{Pictures/videoübertragung-css}
-			\captionof{figure}{CSS-Formatierung für \texttt{dynamicimage}}
-			\label{fig:videoübertragung-css}
-			\vspace{-10pt}
-			\begin{center}
-				\par\small Quelle: eigene Abbildung 
-			\end{center}
-		\end{minipage} \\[0.75cm]
-	\end{center}
-	Im JavaScript-Code wird die WebSocket-Verbindung zur ESP32-CAM gehandelt. In der Funktion \texttt{connectWebSocket\_cam()} wird zuerst ein WebSocket mit der eigenen IP-Adresse (da Webserver auf ESP32-CAM gehostet wird) und dem Port 81 geöffnet. Wenn nun eine Nachricht auf der WebSockte-Verbindung ankommt (siehe Videoübertragung \ref{subsec:Videoübertragung}) wird diese extrahiert. Das mitgesendete BLOB wird in einem neuem BLOB als jpeg-Bild gespeichert. Danach wird eine URL (Adresse) erstellt, die zu diesem BLOB führt. Dann wird eine Variable für die Videoübertragung im HTML \texttt{<img>}-Tag erstellt. Die Quelle dieses Bildes wird dann mit dem neuen, erhaltenen Bild ersetzt. Da die ESP32-CAM die ganze Zeit neue Blobs sendet, wird das Bild die ganze Zeit ersetzt, was dazu führt, dass es aussieht, als wäre es ein Video. \\[0.5cm]
-	Wenn sich die ESP32-CAM verbindet, wird zu Debug-Zwecken eine Nachricht in der Webkonsole ausgegeben. \\[0.5cm]
-	Wenn die Verbindung zur ESP32-CAM verloren geht, wird wieder zu Debug-Zwecke eine Nachricht in der Webkonsole ausgegeben und ein neuer Verbindungsversuch wird nach 5 Sekunden gestartet. \\[0.5cm]
-	\begin{center}
-		\begin{minipage}[t]{\textwidth}
-			\includegraphics[scale=0.9]{Pictures/videoübertragung-js}
-			\captionof{figure}{Videoübertragung im JavaScript-Code}
-			\label{fig:videoübertragung-js}
-			\vspace{-10pt}
-			\begin{center}
-				\par\small Quelle: eigene Abbildung 
-			\end{center}
-		\end{minipage} \\[0.75cm]
-	\end{center}
-	
-	
 			
 			\subsubsection{Anzeige von Sensordaten und Verbindungsstatus}
 			
@@ -1806,21 +1702,161 @@ Im HTML-Code wird die Status-Box als HTML \texttt{<span>}-Tag definiert. Für da
 	\section{Kamera}
 	
 		\subsection{Kamera im Überblick} %Daniel
+		Die ESP32-CAM ist ein kompaktes Kameramodul, das auf dem ESP32-Mikrocontroller basiert. Dieses Modul kombiniert WLAN- und Bluetooth-Funktionen, wodurch die Kamera Bilder und Videos drahtlos übertragen kann. Das Grundprinzip der ESP32-Kamera besteht darin, dass der ESP32-Chip Bilddaten vom Kamerasensor verarbeitet und über eine drahtlose Verbindung an ein Endgerät, in diesem Fall ein Webserver, sendet. \\[0.5cm]
+		Bei der ESP32-CAM wird häufig die OV2640-Kamera verwendet, die eine Auflösung von bis zu 1600 × 1200 Pixeln bietet. Das Modul verfügt zudem über einen microSD-Kartenslot zur Speicherung von Aufnahmen.\\[0.5cm]
+		Das Modul kann so programmiert werden, dass es als eigenständiger Webserver agiert, der einen Videostream bereitstellt. Über eine IP-Adresse kann auf den Stream zugegriffen werden, wodurch eine Echtzeitübertragung entsteht. 
+		\begin{center}
+			\begin{minipage}{0.9\textwidth}
+				\centering
+				\includegraphics[width=\textwidth]{Pictures/esp32_cam}
+				\captionof{figure}{ESP32-CAM Modul}
+				\label{fig:esp32_cam}
+				\vspace{5pt}
+				{\small Quelle: {https://joy-it.net/de/products/SBC-ESP32-Cam}}
+			\end{minipage}
+		\end{center}
+		\newpage \noindent
+		\subsubsection{Technische Daten}
+		In der folgenden Tabelle sind die wichtigsten technischen Daten der ESP32-Kamera aufgeführt.
+		\begin{longtable}{| l | l |}
+			\hline
+			\textbf{Eigenschaft} & \textbf{Details} \\
+			\hline
+			Kamera & 2MP OV2640 \\
+			\hline
+			Bildformate & JPEG, BMP, Grayscale \\
+			\hline
+			Prozessor & Dual Core-ESP32 160 MHz \\
+			\hline
+			Special Features & Helle Blitz-LED, integrierte Antenne \\
+			\hline
+			Schnittstellen & UART, SPI, I2C, PWM, Wi-Fi, BT-Funkverbindung \\
+			\hline
+			SD-Kartenslot & Bis zu 4 GB \\
+			\hline
+			SPI Flash & 32 Mbit \\
+			\hline
+			RAM & 52KB SRAM + 4MB PSRAM \\
+			\hline
+			Versorgungsspannung & 5 V \\
+			\hline
+			Betriebstemperatur & -20°C ~ 85°C \\
+			\hline
+			UART Standard Baudrate & 115200 bps \\
+			\hline
+			Stromverbrauch & 6mA im Tiefschlaf; 310 mA mit Blitz auf max. Helligkeit \\
+			\hline
+			Verschlüsselung & WPA, WPA2, WPA2-Enterprise, WPS \\
+			\hline
+		\end{longtable}
+		\vspace{-10pt}
+		\noindent 
+		\small Quelle: {https://joy-it.net/de/products/SBC-ESP32-Cam}
+		\subsubsection{Nutzung}
+		Der ESP32 wird als Webserver verwendet, auf dem der Kamerastream gehostet wird. Über eine zugewiesene IP-Adresse kann direkt auf den Webserver zugegriffen werden, wo der Livestream angezeigt wird. \\[0.5cm]
+		Die Videoübertragung dient dazu, den Roboter über größere Entfernungen autonom steuern zu können. Mit der Videoübertragung werden Objekte und Hindernisse erkennbar und kann diese somit ausweichen. \\[0.5cm]
+		Die Videoübertragung wird über der ganzen Website im Hintergrund angezeigt. \\
+		\begin{center}
+			\begin{minipage}[t]{1\textwidth}
+				\includegraphics{Pictures/videoübertragung-web}
+				\captionof{figure}{Videoübertragung auf der Website}
+				\label{fig:videoübertragung-web}
+				\vspace{-10pt}
+				\begin{center}
+					\par\small Quelle: eigene Abbildung 
+				\end{center}
+			\end{minipage} \\[0.75cm]
+		\end{center}
 		
-
-		
-		
-		
-		\subsection{Videoübertragung} %Simon
-		
-		\subsection{Kameraschwenkung} %Felix
-		
-			\subsubsection{Gehäuse} %Felix
-			
-			\subsubsection{Servomotor} %Daniel
-	
+		\newpage \noindent
 		\subsection{Code} %Daniel und %Simon
-		
+			\subsubsection{Kamera Setup}
+			Um die Kamera programmieren zu können, muss zunächst das richtige Board \texttt{AI Thinker ESP32-CAM} ausgewählt werden. Danach müssen die ESP32-Kamera-Treiber mit der Bibliothek \texttt{esp\_camera.h} inkludiert werden. Dann muss das passende ESP32-CAM-Modell festgelegt werden. Da wir uns für das \texttt{Ai-Thinker} Modell entschieden haben, muss diese nun definiert werden. Falls ein anderes Modell genutzt wird, muss es entsprechend angepasst werden. \\[0.2cm]
+			Als nächstes werden die GPIO-Pins der ESP32-CAM für die Kamera OV2640 konfiguriert. Diese Zuordnung ist spezifisch für das Ai-Thinker-Modell und muss für jedes Modell individuell angepasst werden. \\
+			\begin{center}
+				\begin{minipage}[t]{0.90\textwidth}
+					\includegraphics{Pictures/kamera-setup1}
+					\captionof{figure}{Kamera-GPIO Konfiguration}
+					\label{fig:Kamera-GPIO Konfiguration}
+					\vspace{-10pt}
+					\begin{center}
+						\par\small Quelle: eigene Abbildung 
+					\end{center}
+				\end{minipage} \\[0.70cm]
+			\end{center}
+			Als nächstes muss die ESP32-CAM mit der ESP-IDF \texttt{esp\_camera} Bibliothek konfiguriert und initialisiert werden. Als erstes muss mit \texttt{camera\_config\_t} eine Struktur definiert werden, mit der verschiedene Parameter und Eigenschaften wie GPIO-Pins, Bildgröße und Qualität festlegt werden können. \\[0.5cm] 
+			LEDC-Kanal und Timer werden für das Taktsignal benötigt, um die Kamera zu betreiben. \\[0.5cm]
+			Zum Schluss wird die Kamera mit den konfigurierten Einstellungen initialisiert. Falls bei der Initialisierung ein Fehler auftreten soll, wird dieser in der seriellen Konsole ausgegeben und das Setup abgebrochen.
+			\begin{center}
+				\begin{minipage}[t]{1\textwidth}
+					\includegraphics{Pictures/kamera-setup2}
+					\captionof{figure}{Kamera-Initialisierung}
+					\label{fig:Kamera-Initialisierung}
+					\vspace{-10pt}
+					\begin{center}
+						\par\small Quelle: eigene Abbildung 
+					\end{center}
+				\end{minipage} \\[0.75cm]
+			\end{center}
+			
+			\subsubsection{Videoübertragung}
+			In unserem Projekt werden die Live-Bilder per WebSocket an den Webserver gesendet. Um dies umzusetzen, wird zuerst eine Webserver-Route benötigt. Dazu wird eine http-GET-Anfrage für die Hauptseite (“/“) definiert. Im Code wird ein JavaScript Skript benutzt, um eine Websocket-Verbindung herzustellen. Die IP-Adresse wird automatisch durch \texttt{windows.location.hostname} erkannt. Port 81 wird für das WebSocket-Streaming verwendet. Wenn die ESP32-CAM ein neues Bild als WebSocket-Nachricht versendet, wird es als JPEG-Blob gespeichert. Danach wird ein temporär URL-Link erstellt. Das Bild wird schlussendlich in einem \texttt{<img>}-Tag mit der id \texttt{stream} angezeigt. \\
+			Die WebSocket Verbindung wird die ganze Zeit überwacht. In der Konsole wird ausgegeben, wenn die Websocket-Verbindung aktiv ist. Falls die Verbindung abbrechen sollte, wird nach 5 Sekunden automatisch ein erneuter Verbindungsversuch gestartet. Zum Schluss wird der HTML-Code mit \texttt{HTTP-Status 200} (OK) an den Browser gesendet.
+			\begin{center}
+				\begin{minipage}[t]{0.75\textwidth}
+					\includegraphics[scale=0.6]{Pictures/videoübertragung}
+					\captionof{figure}{Videoübertragung über WebSocket}
+					\label{fig:Videoübertragung}
+					\vspace{-10pt}
+					\begin{center}
+						\par\small Quelle: eigene Abbildung 
+					\end{center}
+				\end{minipage}
+			\end{center}
+			\noindent
+			Im HTML-Code wird die Videoübertragung als HTML \texttt{<img>}-Tag mit der id \texttt{dynamicimage} im Hauptbereich definiert.
+			\begin{center}
+				\begin{minipage}[t]{0.75\textwidth}
+					\includegraphics{Pictures/videoübertragung-html}
+					\captionof{figure}{Videoübertragung HTML-Code}
+					\label{fig:videoübertragung-html}
+					\vspace{-10pt}
+					\begin{center}
+						\par\small Quelle: eigene Abbildung 
+					\end{center}
+				\end{minipage} \\[0.70cm]
+			\end{center}
+			Im CSS-Code wird das Element mit der id \texttt{dynamicimage} formatiert. Es wird definiert, dass die Größe 100\% der Breite sowie 100\% der Höhe einnimmt. Die Position wird auf absolut gesetzt. 
+			\noindent
+			\begin{center}
+				\begin{minipage}[t]{0.43\textwidth}
+					\includegraphics{Pictures/videoübertragung-css}
+					\captionof{figure}{CSS-Formatierung für \texttt{dynamicimage}}
+					\label{fig:videoübertragung-css}
+					\vspace{-10pt}
+					\begin{center}
+						\par\small Quelle: eigene Abbildung 
+					\end{center}
+				\end{minipage} \\[0.2cm]
+			\end{center}
+			Im JavaScript-Code wird die WebSocket-Verbindung zur ESP32-CAM gehandelt. In der Funktion \texttt{connectWebSocket\_cam()} wird zuerst ein WebSocket mit der eigenen IP-Adresse (da Webserver auf ESP32-CAM gehostet wird) und dem Port 81 geöffnet. Wenn nun eine Nachricht auf der WebSockte-Verbindung ankommt (siehe Videoübertragung \ref{subsec:Videoübertragung}) wird diese extrahiert. Das mitgesendete BLOB wird in einem neuem BLOB als jpeg-Bild gespeichert. Danach wird eine URL (Adresse) erstellt, die zu diesem BLOB führt. Dann wird eine Variable für die Videoübertragung im HTML \texttt{<img>}-Tag erstellt. Die Quelle dieses Bildes wird dann mit dem neuen, erhaltenen Bild ersetzt. Da die ESP32-CAM die ganze Zeit neue Blobs sendet, wird das Bild die ganze Zeit ersetzt, was dazu führt, dass es aussieht, als wäre es ein Video. \\[0.1cm]
+			Wenn sich die ESP32-CAM verbindet, wird zu Debug-Zwecken eine Nachricht in der Webkonsole ausgegeben. Wenn die Verbindung zur ESP32-CAM verloren geht, wird wieder zu Debug-Zwecke eine Nachricht in der Webkonsole ausgegeben und ein neuer Verbindungsversuch wird nach 5 Sekunden gestartet.
+			\begin{center}
+				\begin{minipage}[t]{\textwidth}
+					\includegraphics[scale=0.8]{Pictures/videoübertragung-js}
+					\captionof{figure}{Videoübertragung im JavaScript-Code}
+					\label{fig:videoübertragung-js}
+					\vspace{-10pt}
+					\begin{center}
+						\par\small Quelle: eigene Abbildung 
+					\end{center}
+				\end{minipage} \\[0.75cm]
+			\end{center}
+		\subsection{Servomotor}
+				\subsubsection{Grundprinzip}
+				\subsubsection{Verbindung und Steuerung des Servomotors}
+				\subsubsection{Gehäuse der Kameraschwenkung}
+				\subsubsection{Nutzung}
 	\newpage
 	\section{Sensoren}
 	
