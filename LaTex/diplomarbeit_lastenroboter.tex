@@ -1852,11 +1852,36 @@ Im HTML-Code wird die Status-Box als HTML \texttt{<span>}-Tag definiert. Für da
 					\end{center}
 				\end{minipage} \\[0.75cm]
 			\end{center}
-		\subsection{Servomotor}
-				\subsubsection{Grundprinzip}
-				\subsubsection{Verbindung und Steuerung des Servomotors}
-				\subsubsection{Gehäuse der Kameraschwenkung}
-				\subsubsection{Nutzung}
+		\subsection{Schwenkmechanismus der Kamera}
+				\subsubsection{Servomotor} %Daniel
+				Der SG90 ist ein kompakter Servomotor, der häufig in Modellbauprojekten eingesetzt wird. Aufgrund seiner geringen Größe und seines leichten Gewichts ist der Servomotor ideal für Anwendungen geeignet, die präzise Bewegungen erfordern.\\
+				Seine definierte Winkelsteuerung ermöglicht eine exakte Positionierung. Über den ESP32 kann der Motor so programmiert werden, dass er die Kamera auf eine gewünschte Position ausrichtet. \\
+				Der SG90 ist ein per PWM-Signal gesteuerter Servomotor, dessen Position durch einen Winkel zwischen 0° und 180° festgelegt wird. Zusätzlich gibt es Servomotoren mit einem Drehbereich von 360°, die in der Richtung, und auch in der Drehgeschwindigkeit gesteuert werden können.
+				\subsubsection*{Die Anschlussbelegung des SG90-Servomotors ist wie folgt:}
+				\begin{itemize}
+					\item \textbf{Rot}: VCC (ca. 5 Volt)
+					\item \textbf{Orange}: PWM-Signal
+					\item \textbf{Braun}: GND (0 Volt)
+				\end{itemize}
+				Die Betriebsspannung des SG90 liegt zwischen 4,8 und 6,0 Volt. Der Stromverbrauch variiert je nach Belastung zwischen 0,5 und 2,0 Ampere.  
+				\begin{center}
+					\begin{minipage}{0.9\textwidth}
+						\centering
+						\includegraphics[width=\textwidth]{Pictures/sg90}
+						\captionof{figure}{SG90-Servomotor}
+						\label{fig:sg90}
+						\vspace{5pt}
+						{\small Quelle: {https://www.elektronik-kompendium.de/sites/praxis/bauteil\_sg90.htm}}
+					\end{minipage}
+				\end{center}
+				\newpage \noindent
+				
+				\subsubsection{Nutzung} %Daniel
+				Der SG90-Servomotor wird genutzt, um die Kamera an der Front des Roboters zu steuern und horizontal von links nach rechts zu schwenken. Dadurch wird das Sichtfeld vergrößert, was eine bessere Übersicht über die Umgebung ermöglicht. \\
+				Diese Funktion ist besonders hilfreich, da der Roboter dadurch präziser gesteuert und manövriert werden kann, ohne direkten Sichtkontakt zu haben.\\
+				Außerdem lassen sich durch das erweiterte Blickfeld, Hindernisse besser erkennen und Ausweichmanöver gezielt durchführen.
+				\subsubsection{Verbindung und Steuerung des Servomotors} %Daniel
+				\subsubsection{Gehäuse der Kameraschwenkung} %Felix
 	\newpage
 	\section{Sensoren}
 	
