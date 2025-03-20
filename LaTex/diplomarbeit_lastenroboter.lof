@@ -107,46 +107,46 @@
 \contentsline {figure}{\numberline {106}{\ignorespaces Schaltplan Spannungsversorgung}}{78}{figure.caption.6}%
 \contentsline {figure}{\numberline {107}{\ignorespaces Schaltplan ESP32}}{78}{figure.107}%
 \contentsline {figure}{\numberline {108}{\ignorespaces ESP32-Anschlüsse}}{79}{figure.108}%
-\contentsline {figure}{\numberline {109}{\ignorespaces MCP23017}}{80}{figure.109}%
-\contentsline {figure}{\numberline {110}{\ignorespaces expander-Anschlüsse}}{81}{figure.110}%
+\contentsline {figure}{\numberline {109}{\ignorespaces MCP23017}}{79}{figure.109}%
+\contentsline {figure}{\numberline {110}{\ignorespaces expander-Anschlüsse}}{80}{figure.110}%
 \contentsline {figure}{\numberline {111}{\ignorespaces Lichtsteuerung}}{81}{figure.111}%
 \contentsline {figure}{\numberline {112}{\ignorespaces Batteriemessung}}{82}{figure.112}%
-\contentsline {figure}{\numberline {113}{\ignorespaces einschalt-led}}{83}{figure.113}%
+\contentsline {figure}{\numberline {113}{\ignorespaces Power-LED}}{82}{figure.113}%
 \contentsline {figure}{\numberline {114}{\ignorespaces pullup-widerstände}}{83}{figure.114}%
-\contentsline {figure}{\numberline {115}{\ignorespaces schaltplan-wägezellen}}{84}{figure.115}%
+\contentsline {figure}{\numberline {115}{\ignorespaces schaltplan-wägezellen}}{83}{figure.115}%
 \contentsline {figure}{\numberline {116}{\ignorespaces i2c-anschlüsse}}{84}{figure.116}%
-\contentsline {figure}{\numberline {117}{\ignorespaces RXTX}}{85}{figure.117}%
-\contentsline {figure}{\numberline {118}{\ignorespaces ESP32-CAM Modul}}{86}{figure.118}%
-\contentsline {figure}{\numberline {119}{\ignorespaces Videoübertragung auf der Website}}{88}{figure.119}%
-\contentsline {figure}{\numberline {120}{\ignorespaces Kamera-GPIO Konfiguration}}{89}{figure.120}%
-\contentsline {figure}{\numberline {121}{\ignorespaces Kamera-Initialisierung}}{90}{figure.121}%
-\contentsline {figure}{\numberline {122}{\ignorespaces Videoübertragung über WebSocket}}{91}{figure.122}%
-\contentsline {figure}{\numberline {123}{\ignorespaces Videoübertragung HTML-Code}}{91}{figure.123}%
-\contentsline {figure}{\numberline {124}{\ignorespaces CSS-Formatierung für \texttt {dynamicimage}}}{92}{figure.124}%
-\contentsline {figure}{\numberline {125}{\ignorespaces Videoübertragung im JavaScript-Code}}{92}{figure.125}%
-\contentsline {figure}{\numberline {126}{\ignorespaces SG90-Servomotor}}{93}{figure.126}%
-\contentsline {figure}{\numberline {127}{\ignorespaces servo verkabelung}}{94}{figure.127}%
-\contentsline {figure}{\numberline {128}{\ignorespaces esp32servo Bibliothek}}{94}{figure.128}%
-\contentsline {figure}{\numberline {129}{\ignorespaces servopins}}{95}{figure.129}%
-\contentsline {figure}{\numberline {130}{\ignorespaces servofunktionen}}{95}{figure.130}%
-\contentsline {figure}{\numberline {131}{\ignorespaces camerapos}}{96}{figure.131}%
-\contentsline {figure}{\numberline {132}{\ignorespaces camturn}}{96}{figure.132}%
-\contentsline {figure}{\numberline {133}{\ignorespaces HC-SR04 Timing Diagram}}{98}{figure.133}%
-\contentsline {figure}{\numberline {134}{\ignorespaces Beispiel für Messung}}{98}{figure.134}%
-\contentsline {figure}{\numberline {135}{\ignorespaces HC-SR04 Pinbelegung}}{99}{figure.135}%
-\contentsline {figure}{\numberline {136}{\ignorespaces HC-SR04 Schaltungs Beispiel}}{100}{figure.136}%
-\contentsline {figure}{\numberline {137}{\ignorespaces \texttt {HC-SR04.h} Bibliothek}}{101}{figure.137}%
-\contentsline {figure}{\numberline {138}{\ignorespaces Erstellung von Objekten der Klasse UltraSonicDistanceSensor}}{101}{figure.138}%
-\contentsline {figure}{\numberline {139}{\ignorespaces Messung der Entfernung in der \texttt {loop()}-Funktion}}{101}{figure.139}%
-\contentsline {figure}{\numberline {140}{\ignorespaces if-Abfrage für Mindestabstand und Geschwindigkeit}}{102}{figure.140}%
-\contentsline {figure}{\numberline {141}{\ignorespaces Halbbrücken-Wägezelle}}{102}{figure.141}%
-\contentsline {figure}{\numberline {142}{\ignorespaces HX711 24-bit A/D-Wandler}}{103}{figure.142}%
-\contentsline {figure}{\numberline {143}{\ignorespaces Prinzip einer Wägezelle }}{103}{figure.143}%
-\contentsline {figure}{\numberline {144}{\ignorespaces Wheatstone-Brückenschaltung}}{104}{figure.144}%
-\contentsline {figure}{\numberline {145}{\ignorespaces Beschaltung der Wägezellen}}{105}{figure.145}%
-\contentsline {figure}{\numberline {146}{\ignorespaces Verkabelung der Wägezellen mit HX711}}{106}{figure.146}%
-\contentsline {figure}{\numberline {147}{\ignorespaces Testaufbau der Wägezellen}}{107}{figure.147}%
-\contentsline {figure}{\numberline {148}{\ignorespaces Einbinden der \texttt {HX711\_ADC}-Bibliothek}}{107}{figure.148}%
-\contentsline {figure}{\numberline {149}{\ignorespaces \texttt {Setup();} - Code für den HX711}}{108}{figure.149}%
-\contentsline {figure}{\numberline {150}{\ignorespaces Timeout Abfrage in der \texttt {Setup();}-Funktion}}{109}{figure.150}%
-\contentsline {figure}{\numberline {151}{\ignorespaces Gewichtsmessung in der \texttt {loop();}-Funktion}}{109}{figure.151}%
+\contentsline {figure}{\numberline {117}{\ignorespaces RX/TX}}{84}{figure.117}%
+\contentsline {figure}{\numberline {118}{\ignorespaces ESP32-CAM Modul}}{85}{figure.118}%
+\contentsline {figure}{\numberline {119}{\ignorespaces Videoübertragung auf der Website}}{87}{figure.119}%
+\contentsline {figure}{\numberline {120}{\ignorespaces Kamera-GPIO Konfiguration}}{88}{figure.120}%
+\contentsline {figure}{\numberline {121}{\ignorespaces Kamera-Initialisierung}}{89}{figure.121}%
+\contentsline {figure}{\numberline {122}{\ignorespaces Videoübertragung über WebSocket}}{90}{figure.122}%
+\contentsline {figure}{\numberline {123}{\ignorespaces Videoübertragung HTML-Code}}{90}{figure.123}%
+\contentsline {figure}{\numberline {124}{\ignorespaces CSS-Formatierung für \texttt {dynamicimage}}}{91}{figure.124}%
+\contentsline {figure}{\numberline {125}{\ignorespaces Videoübertragung im JavaScript-Code}}{91}{figure.125}%
+\contentsline {figure}{\numberline {126}{\ignorespaces SG90-Servomotor}}{92}{figure.126}%
+\contentsline {figure}{\numberline {127}{\ignorespaces servo verkabelung}}{93}{figure.127}%
+\contentsline {figure}{\numberline {128}{\ignorespaces esp32servo Bibliothek}}{93}{figure.128}%
+\contentsline {figure}{\numberline {129}{\ignorespaces servopins}}{94}{figure.129}%
+\contentsline {figure}{\numberline {130}{\ignorespaces servofunktionen}}{94}{figure.130}%
+\contentsline {figure}{\numberline {131}{\ignorespaces camerapos}}{95}{figure.131}%
+\contentsline {figure}{\numberline {132}{\ignorespaces camturn}}{95}{figure.132}%
+\contentsline {figure}{\numberline {133}{\ignorespaces HC-SR04 Timing Diagram}}{97}{figure.133}%
+\contentsline {figure}{\numberline {134}{\ignorespaces Beispiel für Messung}}{97}{figure.134}%
+\contentsline {figure}{\numberline {135}{\ignorespaces HC-SR04 Pinbelegung}}{98}{figure.135}%
+\contentsline {figure}{\numberline {136}{\ignorespaces HC-SR04 Schaltungs Beispiel}}{99}{figure.136}%
+\contentsline {figure}{\numberline {137}{\ignorespaces \texttt {HC-SR04.h} Bibliothek}}{100}{figure.137}%
+\contentsline {figure}{\numberline {138}{\ignorespaces Erstellung von Objekten der Klasse UltraSonicDistanceSensor}}{100}{figure.138}%
+\contentsline {figure}{\numberline {139}{\ignorespaces Messung der Entfernung in der \texttt {loop()}-Funktion}}{100}{figure.139}%
+\contentsline {figure}{\numberline {140}{\ignorespaces if-Abfrage für Mindestabstand und Geschwindigkeit}}{101}{figure.140}%
+\contentsline {figure}{\numberline {141}{\ignorespaces Halbbrücken-Wägezelle}}{101}{figure.141}%
+\contentsline {figure}{\numberline {142}{\ignorespaces HX711 24-bit A/D-Wandler}}{102}{figure.142}%
+\contentsline {figure}{\numberline {143}{\ignorespaces Prinzip einer Wägezelle }}{102}{figure.143}%
+\contentsline {figure}{\numberline {144}{\ignorespaces Wheatstone-Brückenschaltung}}{103}{figure.144}%
+\contentsline {figure}{\numberline {145}{\ignorespaces Beschaltung der Wägezellen}}{104}{figure.145}%
+\contentsline {figure}{\numberline {146}{\ignorespaces Verkabelung der Wägezellen mit HX711}}{105}{figure.146}%
+\contentsline {figure}{\numberline {147}{\ignorespaces Testaufbau der Wägezellen}}{106}{figure.147}%
+\contentsline {figure}{\numberline {148}{\ignorespaces Einbinden der \texttt {HX711\_ADC}-Bibliothek}}{106}{figure.148}%
+\contentsline {figure}{\numberline {149}{\ignorespaces \texttt {Setup();} - Code für den HX711}}{107}{figure.149}%
+\contentsline {figure}{\numberline {150}{\ignorespaces Timeout Abfrage in der \texttt {Setup();}-Funktion}}{108}{figure.150}%
+\contentsline {figure}{\numberline {151}{\ignorespaces Gewichtsmessung in der \texttt {loop();}-Funktion}}{108}{figure.151}%
