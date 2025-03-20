@@ -2280,6 +2280,87 @@ Im HTML-Code wird die Status-Box als HTML \texttt{<span>}-Tag definiert. Für da
 				Diese Funktion ist besonders hilfreich, da der Roboter dadurch präziser gesteuert und manövriert werden kann, ohne direkten Sichtkontakt zu haben.\\
 				Außerdem lassen sich durch das erweiterte Blickfeld, Hindernisse besser erkennen und Ausweichmanöver gezielt durchführen.
 				\subsubsection{Verbindung und Steuerung des Servomotors} %Daniel
+				
+				Der Servomotor wurde mit dem ESP32 folgend verbunden:
+				
+				\begin{center}
+					\begin{minipage}[t]{\textwidth}
+						\includegraphics[scale=0.6]{Pictures/servo_verkabelung}
+						\captionof{figure}{servo verkabelung}
+						\label{fig:servo_verkabelung}
+						\vspace{-10pt}
+						\begin{center}
+							\par\small Quelle: eigene Abbildung 
+						\end{center}
+					\end{minipage} \\[0.70cm]
+				\end{center}
+				
+				
+				Um den Servomotor einfach anzusteuern, wird die ESP32Servo.h Bibliothek eingebunden. Durch diese Bibliothek kann man Servomotoren per ESP32 ähnlich wie mit einem Arduino ansteuern.
+				
+				\begin{center}
+					\begin{minipage}[t]{0.4\textwidth}
+						\includegraphics{Pictures/esp32servo}
+						\captionof{figure}{esp32servo Bibliothek}
+						\label{fig:esp32-servo}
+						\vspace{-10pt}
+						\begin{center}
+							\par\small Quelle: eigene Abbildung 
+						\end{center}
+					\end{minipage} \\[0.70cm]
+				\end{center}
+				Danach wird die Variable camera\_pos definiert, die die aktuelle Position des Servomotors speichert. Dann wird ein Objekt der Klasse Servo namens myservo erstellt, darüber kann man den Servomotor später ansteuern. Der Pin, an den der Servo angeschlossen ist, wird als servoPin mit dem Wert 26 festgelegt. Durch die Verwendung von static const bleibt dieser Wert konstant und kann während der Laufzeit nicht geändert werden.
+				
+				\begin{center}
+					\begin{minipage}[t]{0.45\textwidth}
+						\includegraphics{Pictures/servopins}
+						\captionof{figure}{servopins}
+						\label{fig:servopins}
+						\vspace{-10pt}
+						\begin{center}
+							\par\small Quelle: eigene Abbildung 
+						\end{center}
+					\end{minipage} \\[0.70cm]
+				\end{center}
+				In der Setup()-Funktion wird das Servo-Objekt myservo mit dem zuvor definierten GPIO-Pin servoPin verbunden, dass ermöglicht die Steuerung des Servomotors über diesen Pin. Danach wird mit myservo.write(camera\_pos); der Servo in die Position bewegt, die in der Variable camera\_pos gespeichert ist. Diese Position wird in Grad angegeben, wobei die Werte zwischen 0° und 180° liegen. Am Anfang wird der Servomotor auf 90° gedreht, sodass er sich mittig im Bewegungsradius befindet.
+				
+				\begin{center}
+					\begin{minipage}[t]{0.6\textwidth}
+						\includegraphics{Pictures/servofunktionen}
+						\captionof{figure}{servofunktionen}
+						\label{fig:servofunktionen}
+						\vspace{-10pt}
+						\begin{center}
+							\par\small Quelle: eigene Abbildung 
+						\end{center}
+					\end{minipage} \\[0.70cm]
+				\end{center}
+				Wenn der Slider auf der Website bewegt wird, sendet die Anwendung eine Nachricht in Form eines JSON-Objekts an den ESP32, dass die neue Position des Sliders enthält. Sobald der ESP32 eine solche Nachricht empfängt, wird die Funktion handleWebSocketMessage() aufgerufen. Innerhalb dieser Funktion wird überprüft, ob das JSON-Objekt jsonDoc den Schlüssel "camera\_position" enthält. Ist dies der Fall, wird der zugehörige Wert als Zeichenkette (const char *camera\_position) extrahiert. Danach erfolgt eine Prüfung auf Gültigkeit des Wertes, bevor der Wert mit atoi() in eine Ganzzahl umgewandelt und in der Variable camera\_pos gespeichert wird. Am Ende wird die Funktion cam\_turn(); aufgerufen, um die Kamera entsprechend der neuen Position zu bewegen. 
+				
+				\begin{center}
+					\begin{minipage}[t]{\textwidth}
+						\includegraphics{Pictures/camerapos}
+						\captionof{figure}{camerapos}
+						\label{fig:camerapos}
+						\vspace{-10pt}
+						\begin{center}
+							\par\small Quelle: eigene Abbildung 
+						\end{center}
+					\end{minipage} \\[0.70cm]
+				\end{center}
+				In der Funktion cam\_turn() wird die Kamera entsprechend der neuen Position ausgerichtet. Zunächst gibt Serial.println("Cam\_Turn"); eine Nachricht im seriellen Monitor aus, um anzuzeigen, dass die Funktion ausgeführt wurde. Danach wird mit myservo.write(camera\_pos); der Servomotor in die gewünschte Position bewegt, wobei camera\_pos die zuvor gespeicherte Position enthält. Abschließend wird der Wert von camera\_pos mit Serial.println(String(camera\_pos)); im seriellen Monitor ausgegeben, um die aktuelle Position des Servos zur Überprüfung anzuzeigen.
+				
+				\begin{center}
+					\begin{minipage}[t]{0.7\textwidth}
+						\includegraphics{Pictures/camturn}
+						\captionof{figure}{camturn}
+						\label{fig:camturn}
+						\vspace{-10pt}
+						\begin{center}
+							\par\small Quelle: eigene Abbildung 
+						\end{center}
+					\end{minipage} \\[0.70cm]
+				\end{center}
 				\subsubsection{Gehäuse der Kameraschwenkung} %Felix
 	\newpage
 	\section{Sensoren}

@@ -125,22 +125,28 @@
 \contentsline {figure}{\numberline {124}{\ignorespaces CSS-Formatierung für \texttt {dynamicimage}}}{92}{figure.124}%
 \contentsline {figure}{\numberline {125}{\ignorespaces Videoübertragung im JavaScript-Code}}{92}{figure.125}%
 \contentsline {figure}{\numberline {126}{\ignorespaces SG90-Servomotor}}{93}{figure.126}%
-\contentsline {figure}{\numberline {127}{\ignorespaces HC-SR04 Timing Diagram}}{96}{figure.127}%
-\contentsline {figure}{\numberline {128}{\ignorespaces Beispiel für Messung}}{96}{figure.128}%
-\contentsline {figure}{\numberline {129}{\ignorespaces HC-SR04 Pinbelegung}}{97}{figure.129}%
-\contentsline {figure}{\numberline {130}{\ignorespaces HC-SR04 Schaltungs Beispiel}}{98}{figure.130}%
-\contentsline {figure}{\numberline {131}{\ignorespaces \texttt {HC-SR04.h} Bibliothek}}{99}{figure.131}%
-\contentsline {figure}{\numberline {132}{\ignorespaces Erstellung von Objekten der Klasse UltraSonicDistanceSensor}}{99}{figure.132}%
-\contentsline {figure}{\numberline {133}{\ignorespaces Messung der Entfernung in der \texttt {loop()}-Funktion}}{99}{figure.133}%
-\contentsline {figure}{\numberline {134}{\ignorespaces if-Abfrage für Mindestabstand und Geschwindigkeit}}{100}{figure.134}%
-\contentsline {figure}{\numberline {135}{\ignorespaces Halbbrücken-Wägezelle}}{100}{figure.135}%
-\contentsline {figure}{\numberline {136}{\ignorespaces HX711 24-bit A/D-Wandler}}{101}{figure.136}%
-\contentsline {figure}{\numberline {137}{\ignorespaces Prinzip einer Wägezelle }}{101}{figure.137}%
-\contentsline {figure}{\numberline {138}{\ignorespaces Wheatstone-Brückenschaltung}}{102}{figure.138}%
-\contentsline {figure}{\numberline {139}{\ignorespaces Beschaltung der Wägezellen}}{103}{figure.139}%
-\contentsline {figure}{\numberline {140}{\ignorespaces Verkabelung der Wägezellen mit HX711}}{104}{figure.140}%
-\contentsline {figure}{\numberline {141}{\ignorespaces Testaufbau der Wägezellen}}{105}{figure.141}%
-\contentsline {figure}{\numberline {142}{\ignorespaces Einbinden der \texttt {HX711\_ADC}-Bibliothek}}{105}{figure.142}%
-\contentsline {figure}{\numberline {143}{\ignorespaces \texttt {Setup();} - Code für den HX711}}{106}{figure.143}%
-\contentsline {figure}{\numberline {144}{\ignorespaces Timeout Abfrage in der \texttt {Setup();}-Funktion}}{107}{figure.144}%
-\contentsline {figure}{\numberline {145}{\ignorespaces Gewichtsmessung in der \texttt {loop();}-Funktion}}{107}{figure.145}%
+\contentsline {figure}{\numberline {127}{\ignorespaces servo verkabelung}}{94}{figure.127}%
+\contentsline {figure}{\numberline {128}{\ignorespaces esp32servo Bibliothek}}{94}{figure.128}%
+\contentsline {figure}{\numberline {129}{\ignorespaces servopins}}{95}{figure.129}%
+\contentsline {figure}{\numberline {130}{\ignorespaces servofunktionen}}{95}{figure.130}%
+\contentsline {figure}{\numberline {131}{\ignorespaces camerapos}}{96}{figure.131}%
+\contentsline {figure}{\numberline {132}{\ignorespaces camturn}}{96}{figure.132}%
+\contentsline {figure}{\numberline {133}{\ignorespaces HC-SR04 Timing Diagram}}{98}{figure.133}%
+\contentsline {figure}{\numberline {134}{\ignorespaces Beispiel für Messung}}{98}{figure.134}%
+\contentsline {figure}{\numberline {135}{\ignorespaces HC-SR04 Pinbelegung}}{99}{figure.135}%
+\contentsline {figure}{\numberline {136}{\ignorespaces HC-SR04 Schaltungs Beispiel}}{100}{figure.136}%
+\contentsline {figure}{\numberline {137}{\ignorespaces \texttt {HC-SR04.h} Bibliothek}}{101}{figure.137}%
+\contentsline {figure}{\numberline {138}{\ignorespaces Erstellung von Objekten der Klasse UltraSonicDistanceSensor}}{101}{figure.138}%
+\contentsline {figure}{\numberline {139}{\ignorespaces Messung der Entfernung in der \texttt {loop()}-Funktion}}{101}{figure.139}%
+\contentsline {figure}{\numberline {140}{\ignorespaces if-Abfrage für Mindestabstand und Geschwindigkeit}}{102}{figure.140}%
+\contentsline {figure}{\numberline {141}{\ignorespaces Halbbrücken-Wägezelle}}{102}{figure.141}%
+\contentsline {figure}{\numberline {142}{\ignorespaces HX711 24-bit A/D-Wandler}}{103}{figure.142}%
+\contentsline {figure}{\numberline {143}{\ignorespaces Prinzip einer Wägezelle }}{103}{figure.143}%
+\contentsline {figure}{\numberline {144}{\ignorespaces Wheatstone-Brückenschaltung}}{104}{figure.144}%
+\contentsline {figure}{\numberline {145}{\ignorespaces Beschaltung der Wägezellen}}{105}{figure.145}%
+\contentsline {figure}{\numberline {146}{\ignorespaces Verkabelung der Wägezellen mit HX711}}{106}{figure.146}%
+\contentsline {figure}{\numberline {147}{\ignorespaces Testaufbau der Wägezellen}}{107}{figure.147}%
+\contentsline {figure}{\numberline {148}{\ignorespaces Einbinden der \texttt {HX711\_ADC}-Bibliothek}}{107}{figure.148}%
+\contentsline {figure}{\numberline {149}{\ignorespaces \texttt {Setup();} - Code für den HX711}}{108}{figure.149}%
+\contentsline {figure}{\numberline {150}{\ignorespaces Timeout Abfrage in der \texttt {Setup();}-Funktion}}{109}{figure.150}%
+\contentsline {figure}{\numberline {151}{\ignorespaces Gewichtsmessung in der \texttt {loop();}-Funktion}}{109}{figure.151}%

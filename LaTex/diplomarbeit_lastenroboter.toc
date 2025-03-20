@@ -65,26 +65,26 @@
 \contentsline {subsubsection}{\numberline {7.3.1}Servomotor}{93}{subsubsection.7.3.1}%
 \contentsline {subsubsection}{\numberline {7.3.2}Nutzung}{94}{subsubsection.7.3.2}%
 \contentsline {subsubsection}{\numberline {7.3.3}Verbindung und Steuerung des Servomotors}{94}{subsubsection.7.3.3}%
-\contentsline {subsubsection}{\numberline {7.3.4}Gehäuse der Kameraschwenkung}{94}{subsubsection.7.3.4}%
-\contentsline {section}{\numberline {8}Sensoren}{95}{section.8}%
-\contentsline {subsection}{\numberline {8.1}Abstandsensor}{95}{subsection.8.1}%
-\contentsline {subsubsection}{\numberline {8.1.1}Grundprinzip}{95}{subsubsection.8.1.1}%
-\contentsline {subsubsection}{\numberline {8.1.2}Schaltungaufbau}{97}{subsubsection.8.1.2}%
-\contentsline {subsubsection}{\numberline {8.1.3}Nutzung}{98}{subsubsection.8.1.3}%
-\contentsline {subsubsection}{\numberline {8.1.4}Code}{99}{subsubsection.8.1.4}%
-\contentsline {subsection}{\numberline {8.2}Gewichtsmessung}{100}{subsection.8.2}%
-\contentsline {subsubsection}{\numberline {8.2.1}Grundprinzip}{100}{subsubsection.8.2.1}%
-\contentsline {subsubsection}{\numberline {8.2.2}Schaltungaufbau}{103}{subsubsection.8.2.2}%
-\contentsline {subsubsection}{\numberline {8.2.3}Nutzung}{104}{subsubsection.8.2.3}%
-\contentsline {subsubsection}{\numberline {8.2.4}Code}{105}{subsubsection.8.2.4}%
-\contentsline {section}{\numberline {9}Entwicklungstools}{108}{section.9}%
-\contentsline {subsection}{\numberline {9.1}Autodesk Fushion}{108}{subsection.9.1}%
-\contentsline {subsection}{\numberline {9.2}Eagle}{108}{subsection.9.2}%
-\contentsline {subsection}{\numberline {9.3}VS-Code}{108}{subsection.9.3}%
-\contentsline {subsubsection}{\numberline {9.3.1}Setup}{108}{subsubsection.9.3.1}%
-\contentsline {subsubsection}{\numberline {9.3.2}Bibliotheken}{109}{subsubsection.9.3.2}%
-\contentsline {subsubsection}{\numberline {9.3.3}verwendete Bibliotheken}{109}{subsubsection.9.3.3}%
-\contentsline {subsection}{\numberline {9.4}LaTex}{110}{subsection.9.4}%
-\contentsline {subsection}{\numberline {9.5}GitHub}{110}{subsection.9.5}%
-\contentsline {section}{\numberline {10}Abbildungsverzeichnis}{111}{section.10}%
-\contentsline {section}{\numberline {11}Literaturverzeichnis}{115}{section.11}%
+\contentsline {subsubsection}{\numberline {7.3.4}Gehäuse der Kameraschwenkung}{96}{subsubsection.7.3.4}%
+\contentsline {section}{\numberline {8}Sensoren}{97}{section.8}%
+\contentsline {subsection}{\numberline {8.1}Abstandsensor}{97}{subsection.8.1}%
+\contentsline {subsubsection}{\numberline {8.1.1}Grundprinzip}{97}{subsubsection.8.1.1}%
+\contentsline {subsubsection}{\numberline {8.1.2}Schaltungaufbau}{99}{subsubsection.8.1.2}%
+\contentsline {subsubsection}{\numberline {8.1.3}Nutzung}{100}{subsubsection.8.1.3}%
+\contentsline {subsubsection}{\numberline {8.1.4}Code}{101}{subsubsection.8.1.4}%
+\contentsline {subsection}{\numberline {8.2}Gewichtsmessung}{102}{subsection.8.2}%
+\contentsline {subsubsection}{\numberline {8.2.1}Grundprinzip}{102}{subsubsection.8.2.1}%
+\contentsline {subsubsection}{\numberline {8.2.2}Schaltungaufbau}{105}{subsubsection.8.2.2}%
+\contentsline {subsubsection}{\numberline {8.2.3}Nutzung}{106}{subsubsection.8.2.3}%
+\contentsline {subsubsection}{\numberline {8.2.4}Code}{107}{subsubsection.8.2.4}%
+\contentsline {section}{\numberline {9}Entwicklungstools}{110}{section.9}%
+\contentsline {subsection}{\numberline {9.1}Autodesk Fushion}{110}{subsection.9.1}%
+\contentsline {subsection}{\numberline {9.2}Eagle}{110}{subsection.9.2}%
+\contentsline {subsection}{\numberline {9.3}VS-Code}{110}{subsection.9.3}%
+\contentsline {subsubsection}{\numberline {9.3.1}Setup}{110}{subsubsection.9.3.1}%
+\contentsline {subsubsection}{\numberline {9.3.2}Bibliotheken}{111}{subsubsection.9.3.2}%
+\contentsline {subsubsection}{\numberline {9.3.3}verwendete Bibliotheken}{111}{subsubsection.9.3.3}%
+\contentsline {subsection}{\numberline {9.4}LaTex}{112}{subsection.9.4}%
+\contentsline {subsection}{\numberline {9.5}GitHub}{112}{subsection.9.5}%
+\contentsline {section}{\numberline {10}Abbildungsverzeichnis}{113}{section.10}%
+\contentsline {section}{\numberline {11}Literaturverzeichnis}{117}{section.11}%

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.2.24)  20 MAR 2025 10:23
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.2.24)  20 MAR 2025 10:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -3241,305 +3241,404 @@ Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 2270.
 See the caption package documentation for explanation.
 
-[93 <./Pictures/sg90.png>] [94]
-Underfull \hbox (badness 10000) in paragraph at lines 2289--2290
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2299--2301
-
- []
-
-<Pictures/hcsr04_timing.png, id=1246, 376.40625pt x 161.85469pt>
-File: Pictures/hcsr04_timing.png Graphic file (type png)
-<use Pictures/hcsr04_timing.png>
-Package pdftex.def Info: Pictures/hcsr04_timing.png  used on input line 2305.
-(pdftex.def)             Requested size: 298.75264pt x 128.4738pt.
-
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 2306.
-See the caption package documentation for explanation.
-
-[95]
-<Pictures/hcsr04_formel_beispiel.png, id=1254, 366.87062pt x 450.18187pt>
-File: Pictures/hcsr04_formel_beispiel.png Graphic file (type png)
-<use Pictures/hcsr04_formel_beispiel.png>
-Package pdftex.def Info: Pictures/hcsr04_formel_beispiel.png  used on input lin
-e 2320.
-(pdftex.def)             Requested size: 213.39568pt x 261.86128pt.
+[93 <./Pictures/sg90.png>]
+<Pictures/servo_verkabelung.jpg, id=1242, 737.00343pt x 371.88937pt>
+File: Pictures/servo_verkabelung.jpg Graphic file (type jpg)
+<use Pictures/servo_verkabelung.jpg>
+Package pdftex.def Info: Pictures/servo_verkabelung.jpg  used on input line 228
+8.
+(pdftex.def)             Requested size: 442.20547pt x 223.13533pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 2321.
+(caption)                particular \caption on input line 2289.
 See the caption package documentation for explanation.
 
-[96 <./Pictures/hcsr04_timing.png> <./Pictures/hcsr04_formel_beispiel.png>]
-LaTeX Info: Symbol \textrightarrow not provided by
-            font family ptm in TS1 encoding.
-            Default family used instead on input line 2333.
-LaTeX Info: Symbol \textrightarrow not provided by
-            font family ptm in TS1 encoding.
-            Default family used instead on input line 2334.
-LaTeX Info: Symbol \textrightarrow not provided by
-            font family ptm in TS1 encoding.
-            Default family used instead on input line 2335.
-LaTeX Info: Symbol \textrightarrow not provided by
-            font family ptm in TS1 encoding.
-            Default family used instead on input line 2336.
 
-Underfull \hbox (badness 10000) in paragraph at lines 2336--2337
-
+Overfull \hbox (15.41412pt too wide) in paragraph at lines 2288--2289
+[][] 
  []
 
-<Pictures/ultraschall_sensor.png, id=1264, 401.5pt x 401.5pt>
-File: Pictures/ultraschall_sensor.png Graphic file (type png)
-<use Pictures/ultraschall_sensor.png>
-Package pdftex.def Info: Pictures/ultraschall_sensor.png  used on input line 23
-42.
-(pdftex.def)             Requested size: 384.1096pt x 384.13681pt.
+<Pictures/esp32servo.png, id=1243, 154.07562pt x 27.10126pt>
+File: Pictures/esp32servo.png Graphic file (type png)
+<use Pictures/esp32servo.png>
+Package pdftex.def Info: Pictures/esp32servo.png  used on input line 2303.
+(pdftex.def)             Requested size: 154.07524pt x 27.10118pt.
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 2304.
+See the caption package documentation for explanation.
+
+[94 <./Pictures/servo_verkabelung.jpg> <./Pictures/esp32servo.png>]
+<Pictures/servopins.png, id=1251, 203.76125pt x 75.78313pt>
+File: Pictures/servopins.png Graphic file (type png)
+<use Pictures/servopins.png>
+Package pdftex.def Info: Pictures/servopins.png  used on input line 2316.
+(pdftex.def)             Requested size: 203.76074pt x 75.78293pt.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 2317.
+See the caption package documentation for explanation.
+
+
+Overfull \hbox (11.70595pt too wide) in paragraph at lines 2316--2317
+[][] 
+ []
+
+<Pictures/servofunktionen.png, id=1252, 271.0125pt x 53.44969pt>
+File: Pictures/servofunktionen.png Graphic file (type png)
+<use Pictures/servofunktionen.png>
+Package pdftex.def Info: Pictures/servofunktionen.png  used on input line 2329.
+
+(pdftex.def)             Requested size: 271.01183pt x 53.44954pt.
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 2330.
+See the caption package documentation for explanation.
+
+
+Overfull \hbox (14.93442pt too wide) in paragraph at lines 2329--2330
+[][] 
+ []
+
+
+Overfull \hbox (11.4884pt too wide) in paragraph at lines 2338--2339
+\T1/ptm/m/n/10.95 die-ser Funk-ti-on wird über-prüft, ob das JSON-Objekt json-D
+oc den Schlüs-sel "ca-me-ra_positionënthält.
+ []
+
+<Pictures/camerapos.png, id=1253, 455.45157pt x 152.82094pt>
+File: Pictures/camerapos.png Graphic file (type png)
+<use Pictures/camerapos.png>
+Package pdftex.def Info: Pictures/camerapos.png  used on input line 2342.
+(pdftex.def)             Requested size: 455.45045pt x 152.82054pt.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 2343.
 See the caption package documentation for explanation.
 
-[97 <./Pictures/ultraschall_sensor.png>]
-<Pictures/hcsr04_schaltung_bsp.png, id=1273, 455.45157pt x 349.305pt>
+
+Overfull \hbox (28.6591pt too wide) in paragraph at lines 2342--2343
+[][] 
+ []
+
+[95 <./Pictures/servopins.png> <./Pictures/servofunktionen.png>]
+<Pictures/camturn.png, id=1262, 343.2825pt x 139.27031pt>
+File: Pictures/camturn.png Graphic file (type png)
+<use Pictures/camturn.png>
+Package pdftex.def Info: Pictures/camturn.png  used on input line 2355.
+(pdftex.def)             Requested size: 343.28165pt x 139.26996pt.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 2356.
+See the caption package documentation for explanation.
+
+
+Overfull \hbox (44.529pt too wide) in paragraph at lines 2355--2356
+[][] 
+ []
+
+[96 <./Pictures/camerapos.png> <./Pictures/camturn.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 2370--2371
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2380--2382
+
+ []
+
+<Pictures/hcsr04_timing.png, id=1271, 376.40625pt x 161.85469pt>
+File: Pictures/hcsr04_timing.png Graphic file (type png)
+<use Pictures/hcsr04_timing.png>
+Package pdftex.def Info: Pictures/hcsr04_timing.png  used on input line 2386.
+(pdftex.def)             Requested size: 298.75264pt x 128.4738pt.
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 2387.
+See the caption package documentation for explanation.
+
+[97]
+<Pictures/hcsr04_formel_beispiel.png, id=1280, 366.87062pt x 450.18187pt>
+File: Pictures/hcsr04_formel_beispiel.png Graphic file (type png)
+<use Pictures/hcsr04_formel_beispiel.png>
+Package pdftex.def Info: Pictures/hcsr04_formel_beispiel.png  used on input lin
+e 2401.
+(pdftex.def)             Requested size: 213.39568pt x 261.86128pt.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 2402.
+See the caption package documentation for explanation.
+
+[98 <./Pictures/hcsr04_timing.png> <./Pictures/hcsr04_formel_beispiel.png>]
+LaTeX Info: Symbol \textrightarrow not provided by
+            font family ptm in TS1 encoding.
+            Default family used instead on input line 2414.
+LaTeX Info: Symbol \textrightarrow not provided by
+            font family ptm in TS1 encoding.
+            Default family used instead on input line 2415.
+LaTeX Info: Symbol \textrightarrow not provided by
+            font family ptm in TS1 encoding.
+            Default family used instead on input line 2416.
+LaTeX Info: Symbol \textrightarrow not provided by
+            font family ptm in TS1 encoding.
+            Default family used instead on input line 2417.
+
+Underfull \hbox (badness 10000) in paragraph at lines 2417--2418
+
+ []
+
+<Pictures/ultraschall_sensor.png, id=1290, 401.5pt x 401.5pt>
+File: Pictures/ultraschall_sensor.png Graphic file (type png)
+<use Pictures/ultraschall_sensor.png>
+Package pdftex.def Info: Pictures/ultraschall_sensor.png  used on input line 24
+23.
+(pdftex.def)             Requested size: 384.1096pt x 384.13681pt.
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 2424.
+See the caption package documentation for explanation.
+
+[99 <./Pictures/ultraschall_sensor.png>]
+<Pictures/hcsr04_schaltung_bsp.png, id=1298, 455.45157pt x 349.305pt>
 File: Pictures/hcsr04_schaltung_bsp.png Graphic file (type png)
 <use Pictures/hcsr04_schaltung_bsp.png>
 Package pdftex.def Info: Pictures/hcsr04_schaltung_bsp.png  used on input line 
-2354.
+2435.
 (pdftex.def)             Requested size: 384.1096pt x 294.59744pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 2355.
+(caption)                particular \caption on input line 2436.
 See the caption package documentation for explanation.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2363--2366
+Underfull \hbox (badness 10000) in paragraph at lines 2444--2447
 
  []
 
-[98 <./Pictures/hcsr04_schaltung_bsp.png>]
-<Pictures/code_hcsr04_libary.png, id=1280, 187.45032pt x 27.10126pt>
+[100 <./Pictures/hcsr04_schaltung_bsp.png>]
+<Pictures/code_hcsr04_libary.png, id=1305, 187.45032pt x 27.10126pt>
 File: Pictures/code_hcsr04_libary.png Graphic file (type png)
 <use Pictures/code_hcsr04_libary.png>
-Package pdftex.def Info: Pictures/code_hcsr04_libary.png  used on input line 23
-71.
+Package pdftex.def Info: Pictures/code_hcsr04_libary.png  used on input line 24
+52.
 (pdftex.def)             Requested size: 213.39568pt x 30.85439pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 2372.
+(caption)                particular \caption on input line 2453.
 See the caption package documentation for explanation.
 
-<Pictures/code_hcsr04_objekte.png, id=1281, 325.215pt x 36.135pt>
+<Pictures/code_hcsr04_objekte.png, id=1306, 325.215pt x 36.135pt>
 File: Pictures/code_hcsr04_objekte.png Graphic file (type png)
 <use Pictures/code_hcsr04_objekte.png>
 Package pdftex.def Info: Pictures/code_hcsr04_objekte.png  used on input line 2
-383.
+464.
 (pdftex.def)             Requested size: 426.79135pt x 47.42482pt.
-
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 2384.
-See the caption package documentation for explanation.
-
-<Pictures/code_hcsr04_messen.png, id=1282, 455.45157pt x 44.41594pt>
-File: Pictures/code_hcsr04_messen.png Graphic file (type png)
-<use Pictures/code_hcsr04_messen.png>
-Package pdftex.def Info: Pictures/code_hcsr04_messen.png  used on input line 23
-95.
-(pdftex.def)             Requested size: 426.79135pt x 41.62152pt.
-
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 2396.
-See the caption package documentation for explanation.
-
-[99 <./Pictures/code_hcsr04_libary.png> <./Pictures/code_hcsr04_objekte.png> <.
-/Pictures/code_hcsr04_messen.png>]
-<Pictures/code_hcsr04_abfrage.png, id=1293, 455.45157pt x 67.0003pt>
-File: Pictures/code_hcsr04_abfrage.png Graphic file (type png)
-<use Pictures/code_hcsr04_abfrage.png>
-Package pdftex.def Info: Pictures/code_hcsr04_abfrage.png  used on input line 2
-409.
-(pdftex.def)             Requested size: 426.79135pt x 62.785pt.
-
-
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 2410.
-See the caption package documentation for explanation.
-
-
-Overfull \hbox (5.88252pt too wide) in paragraph at lines 2421--2423
-\T1/ptm/m/n/10.95 zu grö-ÿe-ren Va-ri-an-ten für ho-he Ge-wich-te. Beim Las-ten
--ro-bo-ter kom-men ^^RHalbbrücken-Wägezellen^^P
- []
-
-<Pictures/halb_waegezellen.jpg, id=1294, 221.32687pt x 216.05719pt>
-File: Pictures/halb_waegezellen.jpg Graphic file (type jpg)
-<use Pictures/halb_waegezellen.jpg>
-Package pdftex.def Info: Pictures/halb_waegezellen.jpg  used on input line 2426
-.
-(pdftex.def)             Requested size: 213.39568pt x 208.32573pt.
-
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 2427.
-See the caption package documentation for explanation.
-
-[100 <./Pictures/code_hcsr04_abfrage.png> <./Pictures/halb_waegezellen.jpg>]
-<Pictures/hx711.jpg, id=1302, 359.84438pt x 228.855pt>
-File: Pictures/hx711.jpg Graphic file (type jpg)
-<use Pictures/hx711.jpg>
-Package pdftex.def Info: Pictures/hx711.jpg  used on input line 2437.
-(pdftex.def)             Requested size: 298.75264pt x 190.01595pt.
-
-
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 2438.
-See the caption package documentation for explanation.
-
-<Pictures/waegezelle_prinzip.jpg, id=1303, 246.1998pt x 209.1012pt>
-File: Pictures/waegezelle_prinzip.jpg Graphic file (type jpg)
-<use Pictures/waegezelle_prinzip.jpg>
-Package pdftex.def Info: Pictures/waegezelle_prinzip.jpg  used on input line 24
-51.
-(pdftex.def)             Requested size: 170.71393pt x 144.99467pt.
-
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 2452.
-See the caption package documentation for explanation.
-
-[101 <./Pictures/hx711.jpg> <./Pictures/waegezelle_prinzip.jpg>]
-<Pictures/wheatstone.png, id=1311, 319.1925pt x 191.21437pt>
-File: Pictures/wheatstone.png Graphic file (type png)
-<use Pictures/wheatstone.png>
-Package pdftex.def Info: Pictures/wheatstone.png  used on input line 2464.
-(pdftex.def)             Requested size: 384.1096pt x 230.10382pt.
-
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 2465.
 See the caption package documentation for explanation.
 
-[102 <./Pictures/wheatstone.png>]
-<Pictures/beschaltung_waegezelle.png, id=1322, 263.98625pt x 322.70563pt>
+<Pictures/code_hcsr04_messen.png, id=1307, 455.45157pt x 44.41594pt>
+File: Pictures/code_hcsr04_messen.png Graphic file (type png)
+<use Pictures/code_hcsr04_messen.png>
+Package pdftex.def Info: Pictures/code_hcsr04_messen.png  used on input line 24
+76.
+(pdftex.def)             Requested size: 426.79135pt x 41.62152pt.
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 2477.
+See the caption package documentation for explanation.
+
+[101 <./Pictures/code_hcsr04_libary.png> <./Pictures/code_hcsr04_objekte.png> <
+./Pictures/code_hcsr04_messen.png>]
+<Pictures/code_hcsr04_abfrage.png, id=1318, 455.45157pt x 67.0003pt>
+File: Pictures/code_hcsr04_abfrage.png Graphic file (type png)
+<use Pictures/code_hcsr04_abfrage.png>
+Package pdftex.def Info: Pictures/code_hcsr04_abfrage.png  used on input line 2
+490.
+(pdftex.def)             Requested size: 426.79135pt x 62.785pt.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 2491.
+See the caption package documentation for explanation.
+
+
+Overfull \hbox (5.88252pt too wide) in paragraph at lines 2502--2504
+\T1/ptm/m/n/10.95 zu grö-ÿe-ren Va-ri-an-ten für ho-he Ge-wich-te. Beim Las-ten
+-ro-bo-ter kom-men ^^RHalbbrücken-Wägezellen^^P
+ []
+
+<Pictures/halb_waegezellen.jpg, id=1319, 221.32687pt x 216.05719pt>
+File: Pictures/halb_waegezellen.jpg Graphic file (type jpg)
+<use Pictures/halb_waegezellen.jpg>
+Package pdftex.def Info: Pictures/halb_waegezellen.jpg  used on input line 2507
+.
+(pdftex.def)             Requested size: 213.39568pt x 208.32573pt.
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 2508.
+See the caption package documentation for explanation.
+
+[102 <./Pictures/code_hcsr04_abfrage.png> <./Pictures/halb_waegezellen.jpg>]
+<Pictures/hx711.jpg, id=1327, 359.84438pt x 228.855pt>
+File: Pictures/hx711.jpg Graphic file (type jpg)
+<use Pictures/hx711.jpg>
+Package pdftex.def Info: Pictures/hx711.jpg  used on input line 2518.
+(pdftex.def)             Requested size: 298.75264pt x 190.01595pt.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 2519.
+See the caption package documentation for explanation.
+
+<Pictures/waegezelle_prinzip.jpg, id=1328, 246.1998pt x 209.1012pt>
+File: Pictures/waegezelle_prinzip.jpg Graphic file (type jpg)
+<use Pictures/waegezelle_prinzip.jpg>
+Package pdftex.def Info: Pictures/waegezelle_prinzip.jpg  used on input line 25
+32.
+(pdftex.def)             Requested size: 170.71393pt x 144.99467pt.
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 2533.
+See the caption package documentation for explanation.
+
+[103 <./Pictures/hx711.jpg> <./Pictures/waegezelle_prinzip.jpg>]
+<Pictures/wheatstone.png, id=1337, 319.1925pt x 191.21437pt>
+File: Pictures/wheatstone.png Graphic file (type png)
+<use Pictures/wheatstone.png>
+Package pdftex.def Info: Pictures/wheatstone.png  used on input line 2545.
+(pdftex.def)             Requested size: 384.1096pt x 230.10382pt.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 2546.
+See the caption package documentation for explanation.
+
+[104 <./Pictures/wheatstone.png>]
+<Pictures/beschaltung_waegezelle.png, id=1348, 263.98625pt x 322.70563pt>
 File: Pictures/beschaltung_waegezelle.png Graphic file (type png)
 <use Pictures/beschaltung_waegezelle.png>
 Package pdftex.def Info: Pictures/beschaltung_waegezelle.png  used on input lin
-e 2496.
+e 2577.
 (pdftex.def)             Requested size: 256.07741pt x 313.05362pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 2497.
+(caption)                particular \caption on input line 2578.
 See the caption package documentation for explanation.
 
 
-Overfull \hbox (80.35736pt too wide) in paragraph at lines 2500--2501
+Overfull \hbox (80.35736pt too wide) in paragraph at lines 2581--2582
  []\T1/ptm/m/n/10.95 https://beelogger.de/stockwaage/aufbauanleitung_mit_halbbr
 ueckensensoren 
  []
 
-[103 <./Pictures/beschaltung_waegezelle.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 2510--2511
+[105 <./Pictures/beschaltung_waegezelle.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 2591--2592
 
  []
 
-<Pictures/hx711_verkabelung.jpg, id=1330, 806.26219pt x 364.36125pt>
+<Pictures/hx711_verkabelung.jpg, id=1355, 806.26219pt x 364.36125pt>
 File: Pictures/hx711_verkabelung.jpg Graphic file (type jpg)
 <use Pictures/hx711_verkabelung.jpg>
-Package pdftex.def Info: Pictures/hx711_verkabelung.jpg  used on input line 251
-5.
+Package pdftex.def Info: Pictures/hx711_verkabelung.jpg  used on input line 259
+6.
 (pdftex.def)             Requested size: 426.79135pt x 192.87146pt.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 2516.
+(caption)                particular \caption on input line 2597.
 See the caption package documentation for explanation.
 
-<Pictures/testaufbau_waegezellen.jpg, id=1331, 314.703pt x 287.4375pt>
+<Pictures/testaufbau_waegezellen.jpg, id=1356, 314.703pt x 287.4375pt>
 File: Pictures/testaufbau_waegezellen.jpg Graphic file (type jpg)
 <use Pictures/testaufbau_waegezellen.jpg>
 Package pdftex.def Info: Pictures/testaufbau_waegezellen.jpg  used on input lin
-e 2529.
+e 2610.
 (pdftex.def)             Requested size: 341.43437pt x 311.86644pt.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 2530.
+(caption)                particular \caption on input line 2611.
 See the caption package documentation for explanation.
 
-[104 <./Pictures/hx711_verkabelung.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 2538--2539
+[106 <./Pictures/hx711_verkabelung.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 2619--2620
 
  []
 
-<Pictures/code_hx711_libary.png, id=1337, 455.45157pt x 133.24782pt>
+<Pictures/code_hx711_libary.png, id=1362, 455.45157pt x 133.24782pt>
 File: Pictures/code_hx711_libary.png Graphic file (type png)
 <use Pictures/code_hx711_libary.png>
-Package pdftex.def Info: Pictures/code_hx711_libary.png  used on input line 254
-2.
+Package pdftex.def Info: Pictures/code_hx711_libary.png  used on input line 262
+3.
 (pdftex.def)             Requested size: 341.43437pt x 99.89291pt.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 2543.
+(caption)                particular \caption on input line 2624.
 See the caption package documentation for explanation.
 
-[105 <./Pictures/testaufbau_waegezellen.jpg> <./Pictures/code_hx711_libary.png>
+[107 <./Pictures/testaufbau_waegezellen.jpg> <./Pictures/code_hx711_libary.png>
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 2549--2554
+Underfull \hbox (badness 10000) in paragraph at lines 2630--2635
 
  []
 
-<Pictures/code_hx711_setup.png, id=1345, 423.08063pt x 161.10187pt>
+<Pictures/code_hx711_setup.png, id=1370, 423.08063pt x 161.10187pt>
 File: Pictures/code_hx711_setup.png Graphic file (type png)
 <use Pictures/code_hx711_setup.png>
-Package pdftex.def Info: Pictures/code_hx711_setup.png  used on input line 2557
+Package pdftex.def Info: Pictures/code_hx711_setup.png  used on input line 2638
 .
 (pdftex.def)             Requested size: 426.79135pt x 162.51985pt.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 2558.
+(caption)                particular \caption on input line 2639.
 See the caption package documentation for explanation.
 
-[106 <./Pictures/code_hx711_setup.png>]
-<Pictures/code_hx711_timeout.png, id=1352, 455.45157pt x 176.15813pt>
+[108 <./Pictures/code_hx711_setup.png>]
+<Pictures/code_hx711_timeout.png, id=1377, 455.45157pt x 176.15813pt>
 File: Pictures/code_hx711_timeout.png Graphic file (type png)
 <use Pictures/code_hx711_timeout.png>
-Package pdftex.def Info: Pictures/code_hx711_timeout.png  used on input line 25
-73.
+Package pdftex.def Info: Pictures/code_hx711_timeout.png  used on input line 26
+54.
 (pdftex.def)             Requested size: 426.79135pt x 165.07524pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 2574.
+(caption)                particular \caption on input line 2655.
 See the caption package documentation for explanation.
 
-<Pictures/code_hx711_messung.png, id=1353, 316.18124pt x 45.16875pt>
+<Pictures/code_hx711_messung.png, id=1378, 316.18124pt x 45.16875pt>
 File: Pictures/code_hx711_messung.png Graphic file (type png)
 <use Pictures/code_hx711_messung.png>
-Package pdftex.def Info: Pictures/code_hx711_messung.png  used on input line 25
-86.
+Package pdftex.def Info: Pictures/code_hx711_messung.png  used on input line 26
+67.
 (pdftex.def)             Requested size: 426.79135pt x 60.97447pt.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 2587.
+(caption)                particular \caption on input line 2668.
 See the caption package documentation for explanation.
 
-[107 <./Pictures/code_hx711_timeout.png> <./Pictures/code_hx711_messung.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 2607--2610
+[109 <./Pictures/code_hx711_timeout.png> <./Pictures/code_hx711_messung.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 2688--2691
 
  []
 
-[108] [109] [110] (diplomarbeit_lastenroboter.lof [111] [112] [113])
+[110] [111] [112] (diplomarbeit_lastenroboter.lof [113] [114] [115])
 \tf@lof=\write6
 \openout6 = `diplomarbeit_lastenroboter.lof'.
 
- [114]
+ [116]
 (diplomarbeit_lastenroboter.fnt)
 \tf@fnt=\write7
 \openout7 = `diplomarbeit_lastenroboter.fnt'.
 
- [115] (diplomarbeit_lastenroboter.aux)
+ [117] (diplomarbeit_lastenroboter.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
@@ -3556,10 +3655,10 @@ ged.
 (rerunfilecheck)             Checksum: D3D88AD1126A20A887D5AF14C2A11CDB;13338.
  ) 
 Here is how much of TeX's memory you used:
- 37400 strings out of 474486
- 870705 string characters out of 5743283
+ 37485 strings out of 474486
+ 872981 string characters out of 5743283
  1947542 words of memory out of 5000000
- 58674 multiletter control sequences out of 15000+600000
+ 58751 multiletter control sequences out of 15000+600000
  637068 words of font info for 165 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,12n,93p,934b,626s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -3623,9 +3722,9 @@ pData/Local/Programs/MiKTeX/fonts/type1/urw/symbol/usyr.pfb><C:/Users/Lenovo/Ap
 pData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/Lenovo/A
 ppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/Lenovo/
 AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on diplomarbeit_lastenroboter.pdf (115 pages, 14695142 bytes).
+Output written on diplomarbeit_lastenroboter.pdf (117 pages, 14836073 bytes).
 PDF statistics:
- 1832 PDF objects out of 2073 (max. 8388607)
- 405 named destinations out of 1000 (max. 500000)
- 1430 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1864 PDF objects out of 2073 (max. 8388607)
+ 413 named destinations out of 1000 (max. 500000)
+ 1460 words of extra memory for PDF output out of 10000 (max. 10000000)
 
