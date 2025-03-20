@@ -1690,13 +1690,412 @@ Im HTML-Code wird die Status-Box als HTML \texttt{<span>}-Tag definiert. Für da
 			\end{tabular} \\[0.74cm]
 			\textbf{Befestigungselemente}: Es wurden außerdem verschiedene Befestigungselemente verwendet, darunter Schrauben, Muttern, Schellen, Unterlegscheiben sowie Steckverbinder für die elektrische Verkabelung. Diese sind essenziell, um die mechanischen und elektrischen Komponenten sicher zu montieren und zu verbinden.
 	\newpage
-	\section{Platine}
+	\section{Hardwaredesign}
+
+	In diesem Kapitel wird die Entwicklung und Herstellung der Steuerplatine sowie die Integration der externen Komponenten beschrieben. Alle Schritte vom ersten Aufbau auf einem Steckbrett bis hin zur fertigen Platine werden verständlich erläutert. Die Platine wurde mehrfach getestet, um mögliche Fehler frühzeitig zu erkennen und einen reibungslosen Betrieb sicherzustellen. Bei der Gestaltung wurde darauf geachtet, die Bauteile strukturiert und übersichtlich anzuordnen. \\[0.4cm]
+	Zusätzlich zur Steuerplatine umfasst das System auch externe Komponenten wie die Batterie, den Solarladeregler und das IRM-30-15ST AC/DC-Leistungsmodul. Diese wurden separat verbaut, sind jedoch nahtlos in das Gesamtsystem integriert, um eine stabile Energieversorgung, effizientes Laden und die notwendige Spannungsumwandlung zu gewährleisten. Diese externen Bauteile sind ebenfalls ein wichtiger Bestandteil des Hardwaredesigns, auch wenn sie nicht direkt auf der Steuerplatine untergebracht sind.
 	
-		\subsection{Grundschaltung} %Felix
+	
+		\subsection{Zielsetzung} %Felix
 		
-		\subsection{Circuit Board} %Felix
+		Das Ziel der Hardwareentwicklung besteht darin, eine Steuerplatine zu entwerfen, die alle erforderlichen Funktionen zur Steuerung der Komponenten übernimmt, sowie eine effiziente Energieversorgungslösung zu entwickeln, die die nötige Leistung für das System bereitstellt.\\[0.4cm] 
+		Die Steuerplatine soll unter anderem die Ansteuerung der vier Motortreiber, Sensoren und Lichter mithilfe eines ESP32 übernehmen. Zur Erweiterung der verfügbaren Pins wird ein Expander-Board eingesetzt. Die Platine soll mithilfe eines LM317-Spannungsreglers, die Spannung von 12 Volt auf 5 Volt übernehmen. Zusätzlich sollen Anschlüsse für GND, 5 Volt und 12 Volt für die externe Verkabelung bereitgestellt werden, um die Stromversorgung weiterer Komponenten außerhalb der Platine zu ermöglichen.\\[0.4cm]
+		Für die Energieversorgung soll eine AGM 12V Batterie zum Einsatz kommen, die die gespeicherte Energie für den Betrieb des Systems bereitstellt. Diese Batterie wird durch den SOLSUM 0808 Solarladeregler geladen. Der Solarladeregler übernimmt die Aufgabe, die 15V Gleichspannung, die vom IRM-30-15ST AC/DC-Leistungsmodul geliefert wird, auf die erforderliche Ladespannung für die Batterie zu regeln. Der Solarladeregler sorgt zudem dafür, dass die Batterie nicht überladen wird, und stellt sicher, dass die Lade- und Entladeprozesse sicher und effizient ablaufen. Der Solarladeregler verfügt außerdem über einen Anschluss für die Verbraucher, über den die Platine mit der benötigten Energie versorgt wird
 		
-		\subsection{Fertiger Prototyp} %Felix
+		\subsection{Grundschaltungen} %Felix
+		
+		Bevor die Steuerplatine entwickelt wurde, wurden alle Bauteile und Schaltungen auf einem Steckbrett getestet. Dabei war es wichtig, Fehler vorzeitig zu erkennen und nicht erst dann, wenn die Platine fertig designt war. Nach der Überprüfung der einzelnen Komponenten wurden alle Schaltungen verbunden und getestet. Nachdem das erledigt war, wurde die Platine mithilfe von Eagle designt. \\[0.5cm]
+		Die Elektronik für die Energieversorgung, die sich nicht auf der Platine befindet, wurde ebenfalls zuerst separat getestet. Nachdem alle Komponenten fehlerfrei funktionierten, wurden sie miteinander verbunden und getestet. Anschließend wurde die gesamte Elektronik im Lastenroboter verbaut.
+		
+			\subsubsection{Schaltplan Steuerplatine}
+			
+		\begin{center} 
+			\begin{minipage}[t]{\textwidth}
+				\includegraphics[angle=90, scale=0.7]{Pictures/Steuerplatine.pdf}
+				\captionof{figure}{Schaltplan Steuerplatine}
+				\label{fig: Schaltplan Steuerplatine}
+				\vspace{-10pt}
+				\begin{center}
+					\par\small Quelle: eigene Abbildung
+				\end{center}
+			\end{minipage} \\[0.75cm]
+		\end{center}
+			
+			\subsubsection*{Schaltungszusammenfassung}
+		
+		Das gezeigte Schaltbild stellt eine elektronische Schaltung dar, die verschiedene Komponenten wie einen ESP32-Mikrocontroller, einen MCP23017 I/O-Expander, eine Spannungsregelung sowie mehrere Anschlussmodule integriert. Die Schaltung beinhaltet verschiedene Spannungsversorgungen (12V, 5V) und ermöglicht eine Vielzahl von Funktionen, darunter Lichtsteuerung, Batterieüberwachung, Pull-up-Widerstände für I2C-Kommunikation sowie erweiterte Ein- und Ausgänge.
+		
+			\subsection*{Einzelne Komponenten und ihre Beschreibung:}
+			
+			\subsubsection*{1) VCC\_12V (12V Spannungsversorgung)}
+			
+			\begin{center}
+				\begin{minipage}{0.4\linewidth}
+					\centering
+					\includegraphics{Pictures/Schaltplan-vcc-12v}
+					\captionof{figure}{Schaltplan Spannungsversorgung}
+					\label{fig:schaltplan-vcc-12v}
+					\small Quelle: eigene Abbildung
+				\end{minipage}
+				\hfill
+				\begin{minipage}{0.5\linewidth}
+					\centering
+					\includegraphics{Pictures/schraubklemme}
+					\captionof{figure}{Schraubklemmen}
+					\label{fig:Schraubklemme}
+					\small Quelle: eigene Abbildung
+				\end{minipage} \\[0.75cm]
+			\end{center} 
+		Die Platine wird über eine Batterie mit 12V Gleichspannung versorgt, die an einer speziellen Schraubklemme angeschlossen wird. Diese 12V-Spannung dient als Hauptversorgung und wird direkt für bestimmte Komponenten genutzt, wie beispielsweise die Lichtsteuerung, die mit 12V arbeitet. Zusätzlich gibt es weitere sieben Schraubklemmen, über die externen Komponenten mit 12V versorgt werden können.
+			
+			\subsubsection*{2) GND (Masseanschlüsse)}
+		
+			\begin{center}
+			\begin{minipage}{0.4\linewidth}
+				\centering
+				\includegraphics{Pictures/Schaltplan-masse}
+				\captionof{figure}{Schaltplan Masseanschlüsse}
+				\label{fig:Schaltplan Masseanschlüsse}
+				\small Quelle: eigene Abbildung
+			\end{minipage}
+			\hfill
+			\begin{minipage}{0.5\linewidth}
+				\centering
+				\includegraphics{Pictures/pinheader}
+				\captionof{figure}{Pinheader}
+				\label{fig:Pinheader}
+				\small Quelle: eigene Abbildung
+			\end{minipage} \\[0.75cm]
+			\end{center} 
+			
+			\subsubsection*{3) 5V-Regelung (Spannungswandlung von 12V auf 5V)}
+			
+			\begin{center} 
+				\begin{minipage}[t]{\textwidth}
+					\includegraphics{Pictures/spannungswandler}
+					\captionof{figure}{5V-Spannungsregelung}
+					\label{fig: spannungswandler}
+					\vspace{-10pt}
+					\begin{center}
+						\par\small Quelle: eigene Abbildung
+					\end{center}
+				\end{minipage} \\[0.75cm]
+			\end{center}
+		Da viele der verwendeten Komponenten, insbesondere der ESP32-Mikrocontroller, mit einer Betriebsspannung von 5V arbeiten, wird die 12V-Spannung in eine stabile 5V-Versorgung umgewandelt. Dies geschieht mithilfe eines LM317-Spannungsreglers.
+		
+		\subsubsection*{Funktionsweise LM317-Spannungsregler:}
+		
+		Der LM317 ist ein einstellbarer Linearregler, der eine höhere Eingangsspannung (z. B. 12V) auf eine stabilisierte Ausgangsspannung (z. B. 5V) reduziert. Dies geschieht durch eine kontinuierliche Regelung der Ausgangsspannung mithilfe eines internen Verstärkers und einer Referenzspannung von 1,25V.
+		
+		\subsubsection*{Der LM317 besitz drei Anschlüsse: }
+		
+		\begin{figure}[htbp]
+			\begin{minipage}[t]{6cm}
+				\vspace{0pt}
+				\begin{enumerate}
+					\item 	\textbf{Adjust}: Über diesen wird die Ausgangsspannung mit zwei Widerständen \textbf{(R1 \& R2)} eingestellt.
+					\item \textbf{Vout}: Hier wird die geregelte Ausgangsspannung (5V) ausgegeben.
+					\item \textbf{Vin}:  Hier wird die ungeregelte Eingangsspannung (12V) angelegt.
+				\end{enumerate}				
+			\end{minipage}
+			\hfill
+			\begin{minipage}[t]{6cm}
+				\vspace{0pt}
+				\centering
+				\includegraphics{Pictures/LM317}
+				\caption{LM317}
+				\label{fig: LM317}
+				\vspace{-10pt}
+				\begin{center}
+					\par\small Quelle: https://www.alldatasheet.com/datasheet-pdf/view/611120/ONSEMI/LM317.html
+				\end{center}
+			\end{minipage}
+		\end{figure}
+		
+		\subsubsection*{Berechnung der Widerstände:}
+		Mit dieser Formel kann man die Widerstände so bestimmen damit die gewünschte Ausgangsspannung erreicht wird:
+		
+		\begin{equation}
+			V_{out} = 1.25V \times \left( 1 + \frac{R2}{R1} \right)
+		\end{equation}
+		Für die Platine wurde ein Spannungsregler entwickelt für 12 Volt auf 5 Volt. Das heißt Vout soll 5 Volt betragen. Damit man die Widerstände bestimmen kann, muss bei einem Widerstand ein Wert angenommen werden. In diesem Fall wurde für R1 der Wert von 270 Ohm festgelegt.
+		\newpage
+		\begin{figure}[htbp]
+			\begin{minipage}[t]{6cm}
+				\vspace{0pt}
+				Formel mit den eingesetzten Werten:
+				\begin{equation}
+					5V = 1.25V \times \left( 1 + \frac{R2}{270} \right)
+				\end{equation}	
+				Durch Umformung und Berechnen des Widerstandes R2 ergibt sich:
+				\begin{equation}
+					R2 = 810 \Omega
+				\end{equation}	
+				In der Schaltung wurden daher die Widerstandswerte R1 = 270$\Omega$ und R2 = 810$\Omega$ gewählt, was eine Ausgangsspannung von 5V ergibt. 
+			\end{minipage}
+			\hfill
+			\begin{minipage}[t]{6cm}
+				\vspace{0pt}
+				\centering
+				\includegraphics{Pictures/spannungsregler}
+				\caption{Spannungsregler}
+				\label{fig: Spannungsregler}
+				\vspace{-10pt}
+				\begin{center}
+					\par\small Quelle: eigene Abbildung
+				\end{center}
+			\end{minipage}
+		\end{figure}
+		
+		\subsubsection*{Dioden (D3, D4):}
+		\begin{itemize}
+			\item \textbf{D3}: Verhindert Rückströme in den Eingang des LM317, um Schäden zu vermeiden.
+			\item \textbf{D4}: Schützt den Regler vor Spannungsrückkopplungen vom Ausgang.
+		\end{itemize}
+		
+		\subsubsection*{Kondensatoren:}
+		\begin{itemize}
+			\item \textbf{C1}: Stabilisiert die Eingangsspannung und filtert Störsignale.
+			\item \textbf{C3 \& C4}: Filtern Spannungsschwankungen am Ausgang und verbessern die Stabilität der 5V-Versorgung.
+		\end{itemize}
+		
+		\subsubsection*{VCC\_5V (5V Spannungsversorgung)}
+
+		\begin{figure}[htbp]
+			\begin{minipage}[t]{6cm}
+				\vspace{0pt}
+		Die Platine liefert geregelte 5V-Spannung zur Versorgung der entsprechenden Komponenten auf der Platine. Für externe Verbindungen stehen 6 Schraubklemmen zur Verfügung, zusätzlich gibt es 4 Pin-Header-Anschlüsse für weitere Verbindungen.			
+			\end{minipage}
+		\hfill
+			\begin{minipage}[t]{6cm}
+				\vspace{0pt}
+				\centering
+				\includegraphics{Pictures/Spannungsversorgung}
+				\caption{Schaltplan Spannungsversorgung}
+				\label{fig: Spannungsversorgung}
+				\vspace{-10pt}
+				\begin{center}
+					\par\small Quelle: eigene Abbildung
+				\end{center}
+			\end{minipage}
+		\end{figure}
+		
+		\subsubsection*{5) ESP32}
+		
+		\begin{center} 
+			\begin{minipage}[t]{0.5\textwidth}
+				\includegraphics{Pictures/Schaltplan-ESP32}
+				\captionof{figure}{Schaltplan ESP32}
+				\label{fig: Schaltplan ESP32}
+				\vspace{-10pt}
+				\begin{center}
+					\par\small Quelle: eigene Abbildung
+				\end{center}
+			\end{minipage} \\[0.75cm]
+		\end{center}
+		Der ESP32ist die wichtigste Komponente auf der Platine. Er übernimmt die Kommunikation zwischen den anderen Komponenten. Der ESP32verfügt über Wi-Fi, wodurch er sich ideal für IoT-Anwendungen eignet.\\[0.5cm]
+		Der ESP32 regelt die Batteriemessung und liest die Daten des HX711 ein. Er verfügt auch über eine I2C-Schnittstelle, die für die Wägezelle und das Expander-Board verwendet wird. Zusätzlich steuert der ESP32 die PWM-Signale für die Motorentreiber, um die Drehzahl der Motoren präzise zu regulieren.
+		
+		\subsubsection*{6. ESP32-Anschlüsse}
+		
+		\begin{center} 
+			\begin{minipage}[t]{0.5\textwidth}
+				\includegraphics{Pictures/ESP32-Anschlüsse}
+				\captionof{figure}{ESP32-Anschlüsse}
+				\label{fig: ESP32-Anschlüsse}
+				\vspace{-10pt}
+				\begin{center}
+					\par\small Quelle: eigene Abbildung
+				\end{center}
+			\end{minipage} \\[0.75cm]
+		\end{center}
+		Um den Zugriff auf die GPIO-Pins des ESP32 zu erleichtern, werden sie mit Schraubklemmen herausgeführt. Das ermöglicht eine einfache Verbindung mit Sensoren und Aktoren, ohne dass direkt auf den Mikrocontroller zugegriffen werden muss.
+		
+		\subsubsection*{7. MCP23017 (I/O-Expander mit I2C-Anbindung)}
+		
+		\begin{center} 
+			\begin{minipage}[t]{0.6\textwidth}
+				\includegraphics{Pictures/MCP23017}
+				\captionof{figure}{MCP23017}
+				\label{fig: MCP23017}
+				\vspace{-10pt}
+				\begin{center}
+					\par\small Quelle: eigene Abbildung
+				\end{center}
+			\end{minipage} \\[0.75cm]
+		\end{center}
+		Der MCP23017 ist ein I/O-Expander, der über den I2C-Bus mit dem ESP32 kommuniziert. Da der ESP32 nur eine begrenzte Anzahl an GPIOs besitzt, bietet der MCP23017 eine Erweiterung um 16 zusätzliche digitale Ein- und Ausgänge. Diese zusätzlichen GPIOs steuern die Richtung und die Bremsfunktion der Motoren. Aber auch das Licht wird über das Expander-Board gesteuert.\\[0.5cm]
+		Die Ausgänge des MCP23017 sind in zwei Gruppen unterteilt: A0–A7 und B0–B7.
+		
+		\subsubsection{8. Expander\_Anschlüsse (Zusätzliche GPIO-Erweiterung über MCP23017)}
+		
+		\begin{center} 
+			\begin{minipage}[t]{0.6\textwidth}
+				\includegraphics{Pictures/expander_anschlüsse}
+				\captionof{figure}{expander-Anschlüsse}
+				\label{fig: expander-anschlüsse}
+				\vspace{-10pt}
+				\begin{center}
+					\par\small Quelle: eigene Abbildung
+				\end{center}
+			\end{minipage} \\[0.75cm]
+		\end{center}
+		Die 16 digitalen I/O-Pins des MCP23017 werden über Schraubklemmen ausgegeben. Dies ermöglicht eine einfache Nutzung der zusätzlichen GPIOs, indem externe Module direkt an diese Schraubklemmen angeschlossen werden können.
+		
+		\subsubsection*{9) Lichtsteuerung (Transistor-Schaltung zur Steuerung einer LED)}
+		
+		\begin{center} 
+			\begin{minipage}[t]{0.45\textwidth}
+				\includegraphics{Pictures/Lichtsteuerung}
+				\captionof{figure}{Lichtsteuerung}
+				\label{fig: Lichtsteuerung}
+				\vspace{-10pt}
+				\begin{center}
+					\par\small Quelle: eigene Abbildung
+				\end{center}
+			\end{minipage} \\[0.75cm]
+		\end{center}
+		Diese Schaltung dient zur Steuerung der Scheinwerfer des Lastenroboters. Ein NPN-Leistungstransistor (TIP120) übernimmt das Schalten der Beleuchtung. Der Basiswiderstand R6 begrenzt den Basisstrom des Transistors. Die Ansteuerung des Transistors erfolgt über das Expander-Board.
+		
+		\subsubsection*{Berechnung des Basiswiderstand:}
+		Für die Berechnung des Basisstrom braucht man die Formel: 
+		
+		\begin{figure}[htbp]
+			\begin{minipage}[t]{6cm}
+				\vspace{0pt}
+				\begin{equation}
+					I_{b} = \frac{I_{c}}{h_{FE}}
+				\end{equation}		
+			\end{minipage}
+			\hfill
+			\begin{minipage}[t]{6cm}
+				\vspace{0pt}
+				\begin{itemize}
+					\item I\textsubscript{c} … Strom, den der Verbraucher benötigt
+					\item h\textsubscript{FE} … Stromverstärkung des Transistors 
+				\end{itemize}
+			\end{minipage}
+		\end{figure}
+		Die Scheinwerfer haben einen I\textsubscript{c} von 1,5 A und der Transistor hat eine h\textsubscript{FE} von 1000. 
+		\begin{equation}
+			I_{b} = \frac{I_{c}}{h_{FE}} = \frac{1.5}{1000} = 1.5mA
+		\end{equation}
+		Die Formel für den Basiswiderstand ist: 
+				\begin{figure}[htbp]
+			\begin{minipage}[t]{6cm}
+				\vspace{0pt}
+				\begin{equation}
+					R_{b} = \frac{U_{e} - 0.7V}{I_{b}}
+				\end{equation}		
+			\end{minipage}
+			\hfill
+			\begin{minipage}[t]{6cm}
+				\vspace{0pt}
+				\begin{itemize}
+					\item U\textsubscript{e} …  Ausgangsspannung des Expander-Boards
+				\end{itemize}
+			\end{minipage} 
+		\end{figure}
+		
+		Das Expander-Board hat eine Ausgangsspannung von 3,3 V.
+		\begin{equation}
+			R_{b} = \frac{U_{e} - 0.7V}{I_{b}} = \frac{3.3V - 0.7V}{1.5mA} = 1.73k\Omega
+		\end{equation}
+		Gewählt wurde ein Widerstand von \textbf{1.7 k$\Omega$.}\footnote{https://www.mikrocontroller.net/articles/Basiswiderstand}
+		
+		\subsubsection*{10. Batteriemessung (Spannungsteiler zur Messung der Batteriespannung)}
+		
+		\begin{center} 
+			\begin{minipage}[t]{\textwidth}
+				\includegraphics{Pictures/Batteriemessung}
+				\captionof{figure}{Batteriemessung}
+				\label{fig: Batteriemessung}
+				\vspace{-10pt}
+				\begin{center}
+					\par\small Quelle: eigene Abbildung
+				\end{center}
+			\end{minipage} \\[0.75cm]
+		\end{center}
+		Um die Batteriespannung zu überwachen, kommt ein Spannungsteiler bestehend aus den Widerständen R6 und R7 zum Einsatz. Da der ESP32 nur Spannungen bis maximal 3.3V messen kann, reduziert der Spannungsteiler die 12V Batteriespannung auf einen für den Mikrocontroller sicheren Bereich. \\[0.5cm]
+		Der ESP32 kann die Batteriespannung über seinen IO34 auslesen.
+		
+		\subsubsection*{	11) Power-LED}
+		
+		\begin{center} 
+			\begin{minipage}[t]{0.8\textwidth}
+				\includegraphics{Pictures/einschalt-led}
+				\captionof{figure}{einschalt-led}
+				\label{fig: einschalt-led}
+				\vspace{-10pt}
+				\begin{center}
+					\par\small Quelle: eigene Abbildung
+				\end{center}
+			\end{minipage} \\[0.75cm]
+		\end{center}
+		Diese Schaltung dient dazu, anzuzeigen, dass die Platine mit 12 Volt versorgt wird. Sobald die 12V-Spannung anliegt, leuchtet die Power-LED auf. Ein Vorwiderstand begrenzt den Strom durch die LED, um eine sichere und langlebige Funktion zu gewährleisten.
+		
+		\subsubsection*{12) Pull-Up-Widerstände für I2C (Widerstände zur Stabilisierung des I2C-Busses)}
+		
+		\begin{center} 
+			\begin{minipage}[t]{0.65\textwidth}
+				\includegraphics{Pictures/pullup-widerstände}
+				\captionof{figure}{pullup-widerstände}
+				\label{fig: pullup-widerstände}
+				\vspace{-10pt}
+				\begin{center}
+					\par\small Quelle: eigene Abbildung
+				\end{center}
+			\end{minipage} \\[0.75cm]
+		\end{center}
+		Da der I2C-Bus eine aktive Pegelsteuerung benötigt, kommen Pull-Up-Widerstände mit 10 kOhm zum Einsatz. Diese Widerstände sind zwischen den SDA/SCL-Leitungen und der Versorgungsspannung (5V) geschaltet und sorgen für eine stabile Signalübertragung.
+		Ohne diese Widerstände könnten Kommunikationsfehler auftreten, insbesondere bei längeren I2C-Leitungen. 
+		
+		\subsubsection*{13) HX711 (Wägezellen)}
+		
+		\begin{center} 
+			\begin{minipage}[t]{0.65\textwidth}
+				\includegraphics{Pictures/schaltplan-wägezellen}
+				\captionof{figure}{schaltplan-wägezellen}
+				\label{fig:schaltplan-wägezellen}
+				\vspace{-10pt}
+				\begin{center}
+					\par\small Quelle: eigene Abbildung
+				\end{center}
+			\end{minipage} \\[0.75cm]
+		\end{center}
+		Der HX711 ist ein spezialisierter IC, der für die Messung von Gewichtssensoren (Wägezellen) entwickelt wurde. Er verstärkt und digitalisiert das analoge Ausgangssignal der Wägezelle, sodass der ESP32 präzise Gewichts- oder Kraftmessungen durchführen kann. \\[0.5cm]
+		Die Kommunikation mit dem HX711 erfolgt über den I2C-Bus (SDA und SCL).
+		
+		\subsubsection*{14) I2C-Anschlüsse (Anschlussleiste für I2C-Kommunikation)}
+		
+		\begin{center} 
+			\begin{minipage}[t]{\textwidth}
+				\includegraphics{Pictures/i2c-anschlüsse}
+				\captionof{figure}{i2c-anschlüsse}
+				\label{fig:i2c-anschlüsse}
+				\vspace{-10pt}
+				\begin{center}
+					\par\small Quelle: eigene Abbildung
+				\end{center}
+			\end{minipage} \\[0.75cm]
+		\end{center}
+		Damit externe I2C-Geräte einfach angeschlossen werden können, gibt es eine eigene Schraubklemme für das I2C-Signale. Es stehen zwei SDA und zwei SCL Schraubklemmen zu Verfügung. 
+		
+	\subsubsection*{15) RX/TX (Serielle Schnittstelle für UART-Kommunikation)}
+	
+	\begin{center} 
+		\begin{minipage}[t]{0.45\textwidth}
+			\includegraphics{Pictures/RXTX}
+			\captionof{figure}{RXTX}
+			\label{fig:RXTX}
+			\vspace{-10pt}
+			\begin{center}
+				\par\small Quelle: eigene Abbildung
+			\end{center}
+		\end{minipage} \\[0.75cm]
+	\end{center}
+	Die Platine verfügt über eine TX-Schraubklemme und eine RX-Schraubklemme, die für die serielle Kommunikation verwendet werden. Diese Anschlüsse ermöglichen den Datenaustausch zwischen der Platine und externen Geräten.
+	
 	
 	\newpage
 	\section{Kamera}

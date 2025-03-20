@@ -49,41 +49,42 @@
 \contentsline {subsection}{\numberline {5.4}Materialliste}{70}{subsection.5.4}%
 \contentsline {subsubsection}{\numberline {5.4.1}Stahlliste}{70}{subsubsection.5.4.1}%
 \contentsline {subsubsection}{\numberline {5.4.2}Komponentenliste}{70}{subsubsection.5.4.2}%
-\contentsline {section}{\numberline {6}Platine}{71}{section.6}%
-\contentsline {subsection}{\numberline {6.1}Grundschaltung}{71}{subsection.6.1}%
-\contentsline {subsection}{\numberline {6.2}Circuit Board}{71}{subsection.6.2}%
-\contentsline {subsection}{\numberline {6.3}Fertiger Prototyp}{71}{subsection.6.3}%
-\contentsline {section}{\numberline {7}Kamera}{72}{section.7}%
-\contentsline {subsection}{\numberline {7.1}Kamera im Überblick}{72}{subsection.7.1}%
-\contentsline {subsubsection}{\numberline {7.1.1}Technische Daten}{73}{subsubsection.7.1.1}%
-\contentsline {subsubsection}{\numberline {7.1.2}Nutzung}{73}{subsubsection.7.1.2}%
-\contentsline {subsection}{\numberline {7.2}Code}{75}{subsection.7.2}%
-\contentsline {subsubsection}{\numberline {7.2.1}Kamera Setup}{75}{subsubsection.7.2.1}%
-\contentsline {subsubsection}{\numberline {7.2.2}Videoübertragung}{76}{subsubsection.7.2.2}%
-\contentsline {subsection}{\numberline {7.3}Schwenkmechanismus der Kamera}{79}{subsection.7.3}%
-\contentsline {subsubsection}{\numberline {7.3.1}Servomotor}{79}{subsubsection.7.3.1}%
-\contentsline {subsubsection}{\numberline {7.3.2}Nutzung}{80}{subsubsection.7.3.2}%
-\contentsline {subsubsection}{\numberline {7.3.3}Verbindung und Steuerung des Servomotors}{80}{subsubsection.7.3.3}%
-\contentsline {subsubsection}{\numberline {7.3.4}Gehäuse der Kameraschwenkung}{80}{subsubsection.7.3.4}%
-\contentsline {section}{\numberline {8}Sensoren}{81}{section.8}%
-\contentsline {subsection}{\numberline {8.1}Abstandsensor}{81}{subsection.8.1}%
-\contentsline {subsubsection}{\numberline {8.1.1}Grundprinzip}{81}{subsubsection.8.1.1}%
-\contentsline {subsubsection}{\numberline {8.1.2}Schaltungaufbau}{83}{subsubsection.8.1.2}%
-\contentsline {subsubsection}{\numberline {8.1.3}Nutzung}{84}{subsubsection.8.1.3}%
-\contentsline {subsubsection}{\numberline {8.1.4}Code}{85}{subsubsection.8.1.4}%
-\contentsline {subsection}{\numberline {8.2}Gewichtsmessung}{86}{subsection.8.2}%
-\contentsline {subsubsection}{\numberline {8.2.1}Grundprinzip}{86}{subsubsection.8.2.1}%
-\contentsline {subsubsection}{\numberline {8.2.2}Schaltungaufbau}{89}{subsubsection.8.2.2}%
-\contentsline {subsubsection}{\numberline {8.2.3}Nutzung}{90}{subsubsection.8.2.3}%
-\contentsline {subsubsection}{\numberline {8.2.4}Code}{91}{subsubsection.8.2.4}%
-\contentsline {section}{\numberline {9}Entwicklungstools}{94}{section.9}%
-\contentsline {subsection}{\numberline {9.1}Autodesk Fushion}{94}{subsection.9.1}%
-\contentsline {subsection}{\numberline {9.2}Eagle}{94}{subsection.9.2}%
-\contentsline {subsection}{\numberline {9.3}VS-Code}{94}{subsection.9.3}%
-\contentsline {subsubsection}{\numberline {9.3.1}Setup}{94}{subsubsection.9.3.1}%
-\contentsline {subsubsection}{\numberline {9.3.2}Bibliotheken}{95}{subsubsection.9.3.2}%
-\contentsline {subsubsection}{\numberline {9.3.3}verwendete Bibliotheken}{95}{subsubsection.9.3.3}%
-\contentsline {subsection}{\numberline {9.4}LaTex}{96}{subsection.9.4}%
-\contentsline {subsection}{\numberline {9.5}GitHub}{96}{subsection.9.5}%
-\contentsline {section}{\numberline {10}Abbildungsverzeichnis}{97}{section.10}%
-\contentsline {section}{\numberline {11}Literaturverzeichnis}{101}{section.11}%
+\contentsline {section}{\numberline {6}Hardwaredesign}{71}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Zielsetzung}{71}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Grundschaltungen}{72}{subsection.6.2}%
+\contentsline {subsubsection}{\numberline {6.2.1}Schaltplan Steuerplatine}{73}{subsubsection.6.2.1}%
+\contentsline {subsubsection}{\numberline {6.2.2}8. Expander\_Anschlüsse (Zusätzliche GPIO-Erweiterung über MCP23017)}{81}{subsubsection.6.2.2}%
+\contentsline {section}{\numberline {7}Kamera}{86}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Kamera im Überblick}{86}{subsection.7.1}%
+\contentsline {subsubsection}{\numberline {7.1.1}Technische Daten}{87}{subsubsection.7.1.1}%
+\contentsline {subsubsection}{\numberline {7.1.2}Nutzung}{87}{subsubsection.7.1.2}%
+\contentsline {subsection}{\numberline {7.2}Code}{89}{subsection.7.2}%
+\contentsline {subsubsection}{\numberline {7.2.1}Kamera Setup}{89}{subsubsection.7.2.1}%
+\contentsline {subsubsection}{\numberline {7.2.2}Videoübertragung}{90}{subsubsection.7.2.2}%
+\contentsline {subsection}{\numberline {7.3}Schwenkmechanismus der Kamera}{93}{subsection.7.3}%
+\contentsline {subsubsection}{\numberline {7.3.1}Servomotor}{93}{subsubsection.7.3.1}%
+\contentsline {subsubsection}{\numberline {7.3.2}Nutzung}{94}{subsubsection.7.3.2}%
+\contentsline {subsubsection}{\numberline {7.3.3}Verbindung und Steuerung des Servomotors}{94}{subsubsection.7.3.3}%
+\contentsline {subsubsection}{\numberline {7.3.4}Gehäuse der Kameraschwenkung}{94}{subsubsection.7.3.4}%
+\contentsline {section}{\numberline {8}Sensoren}{95}{section.8}%
+\contentsline {subsection}{\numberline {8.1}Abstandsensor}{95}{subsection.8.1}%
+\contentsline {subsubsection}{\numberline {8.1.1}Grundprinzip}{95}{subsubsection.8.1.1}%
+\contentsline {subsubsection}{\numberline {8.1.2}Schaltungaufbau}{97}{subsubsection.8.1.2}%
+\contentsline {subsubsection}{\numberline {8.1.3}Nutzung}{98}{subsubsection.8.1.3}%
+\contentsline {subsubsection}{\numberline {8.1.4}Code}{99}{subsubsection.8.1.4}%
+\contentsline {subsection}{\numberline {8.2}Gewichtsmessung}{100}{subsection.8.2}%
+\contentsline {subsubsection}{\numberline {8.2.1}Grundprinzip}{100}{subsubsection.8.2.1}%
+\contentsline {subsubsection}{\numberline {8.2.2}Schaltungaufbau}{103}{subsubsection.8.2.2}%
+\contentsline {subsubsection}{\numberline {8.2.3}Nutzung}{104}{subsubsection.8.2.3}%
+\contentsline {subsubsection}{\numberline {8.2.4}Code}{105}{subsubsection.8.2.4}%
+\contentsline {section}{\numberline {9}Entwicklungstools}{108}{section.9}%
+\contentsline {subsection}{\numberline {9.1}Autodesk Fushion}{108}{subsection.9.1}%
+\contentsline {subsection}{\numberline {9.2}Eagle}{108}{subsection.9.2}%
+\contentsline {subsection}{\numberline {9.3}VS-Code}{108}{subsection.9.3}%
+\contentsline {subsubsection}{\numberline {9.3.1}Setup}{108}{subsubsection.9.3.1}%
+\contentsline {subsubsection}{\numberline {9.3.2}Bibliotheken}{109}{subsubsection.9.3.2}%
+\contentsline {subsubsection}{\numberline {9.3.3}verwendete Bibliotheken}{109}{subsubsection.9.3.3}%
+\contentsline {subsection}{\numberline {9.4}LaTex}{110}{subsection.9.4}%
+\contentsline {subsection}{\numberline {9.5}GitHub}{110}{subsection.9.5}%
+\contentsline {section}{\numberline {10}Abbildungsverzeichnis}{111}{section.10}%
+\contentsline {section}{\numberline {11}Literaturverzeichnis}{115}{section.11}%
