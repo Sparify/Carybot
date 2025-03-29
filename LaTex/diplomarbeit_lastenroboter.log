@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2025.2.21)  29 MAR 2025 20:38
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2025.2.21)  29 MAR 2025 20:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -3338,11 +3338,11 @@ Overfull \hbox (15.41412pt too wide) in paragraph at lines 2286--2287
 <Pictures/esp32servo.png, id=1244, 154.07562pt x 27.10126pt>
 File: Pictures/esp32servo.png Graphic file (type png)
 <use Pictures/esp32servo.png>
-Package pdftex.def Info: Pictures/esp32servo.png  used on input line 2301.
-(pdftex.def)             Requested size: 154.07524pt x 27.10118pt.
+Package pdftex.def Info: Pictures/esp32servo.png  used on input line 2302.
+(pdftex.def)             Requested size: 298.75264pt x 52.5536pt.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 2302.
+(caption)                particular \caption on input line 2303.
 See the caption package documentation for explanation.
 
 
@@ -3359,11 +3359,6 @@ Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 2315.
 See the caption package documentation for explanation.
 
-
-Overfull \hbox (11.70595pt too wide) in paragraph at lines 2314--2315
-[][] 
- []
-
 <Pictures/servofunktionen.png, id=1253, 271.0125pt x 53.44969pt>
 File: Pictures/servofunktionen.png Graphic file (type png)
 <use Pictures/servofunktionen.png>
@@ -3378,12 +3373,6 @@ See the caption package documentation for explanation.
 
 Overfull \hbox (14.93442pt too wide) in paragraph at lines 2327--2328
 [][] 
- []
-
-
-Overfull \hbox (11.4884pt too wide) in paragraph at lines 2336--2337
-\T1/ptm/m/n/10.95 die-ser Funk-ti-on wird über-prüft, ob das JSON-Objekt json-D
-oc den Schlüs-sel "ca-me-ra_positionënthält.
  []
 
 <Pictures/camerapos.png, id=1254, 455.45157pt x 152.82094pt>
@@ -3852,8 +3841,8 @@ ged.
  ) 
 Here is how much of TeX's memory you used:
  37600 strings out of 473530
- 865696 string characters out of 5724861
- 1293698 words of memory out of 5000000
+ 865694 string characters out of 5724861
+ 1293753 words of memory out of 5000000
  59803 multiletter control sequences out of 15000+600000
  637836 words of font info for 165 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -3920,7 +3909,7 @@ iKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX/fonts/
 type1/urw/symbol/usyr.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmb8a
 .pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Program File
 s/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on diplomarbeit_lastenroboter.pdf (120 pages, 15140962 bytes).
+Output written on diplomarbeit_lastenroboter.pdf (120 pages, 15141251 bytes).
 PDF statistics:
  1912 PDF objects out of 2073 (max. 8388607)
  423 named destinations out of 1000 (max. 500000)
