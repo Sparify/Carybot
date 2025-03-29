@@ -150,3 +150,7 @@
 \contentsline {figure}{\numberline {149}{\ignorespaces \texttt {Setup();} - Code für den HX711}}{107}{figure.149}%
 \contentsline {figure}{\numberline {150}{\ignorespaces Timeout Abfrage in der \texttt {Setup();}-Funktion}}{108}{figure.150}%
 \contentsline {figure}{\numberline {151}{\ignorespaces Gewichtsmessung in der \texttt {loop();}-Funktion}}{108}{figure.151}%
+\contentsline {figure}{\numberline {152}{\ignorespaces Variablen für die Spannungsmessung}}{109}{figure.152}%
+\contentsline {figure}{\numberline {153}{\ignorespaces Messung der Spannung}}{110}{figure.153}%
+\contentsline {figure}{\numberline {154}{\ignorespaces Berechnung der Spannung in Prozent}}{110}{figure.154}%
+\contentsline {figure}{\numberline {155}{\ignorespaces Werte in JSON umwandeln und an Client senden}}{111}{figure.155}%

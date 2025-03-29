@@ -225,7 +225,7 @@
 					2 Stück PWM Motor Steuerung Treiber Platinen & 35.78 € & 2 & 71.56 € \\ \hline
 					Micro Servo Motor SG90 & 6.04 € & 1 & 6.04 € \\ \hline
 					IRM-30-15ST AC/DC-Leistungsmodul & 17.04 € & 1 & 17.04 € \\ \hline
-					SOLSUM 0808 Solarladeregler & 25.17 € & 1 & 25.17 € \\ \hline
+					Dino KRAFTPAKET 4A/12V Batterieladegerät & 17.99 € & 1 & 17.99 € \\ \hline
 					Platinen & 37.14 € & 1 & 37.14 € \\ \hline
 					ESP32-CAM & 13.70 € & 1 & 13.70 € \\ \hline
 					12 Stück Halbbrücken Wägezelle & 11.09 € & 1 & 11.09 € \\ \hline
@@ -233,7 +233,7 @@
 					Dunkermotoren & 65.00 € & 2 & 130.00 € \\ \hline
 					AGM 12V Batterie & 24.80 € & 1 & 24.80 € \\ \hline
 					Diverse Kleinteile & 30.00 € & 1 & 30.00 € \\ \hline
-					\textbf{Summe} & & & \textbf{466.61 €} \\
+					\textbf{Summe} & & & \textbf{459.43 €} \\
 					\hline
 				\end{longtable}
 			\end{center}
@@ -2669,11 +2669,90 @@ Im HTML-Code wird die Status-Box als HTML \texttt{<span>}-Tag definiert. Für da
 				{\small Quelle: {eigene Abbildung}}
 			\end{minipage}
 		\end{center}
+		
+	 \subsection{Spannungsmessung per ESP32}
+	 Bei der Spannungsmessung wird kein eigentlicher Sensor verwendet stattdessen dient ein analoger Eingang des ESP32 selbst zur Spannungsmessung, wodurch der Mikrocontroller direkt als Messeinheit fungiert.\\[0.5cm]
+	 Zur Bestimmung des Akkustands wird die Spannung am analogen Eingang gemessen und über einen Spannungsteiler korrekt auf die tatsächliche Eingangsspannung zurückgerechnet.
+	 Zunächst werden mit define drei wichtige Konstanten festgelegt: \\[0.3cm]
+	 Der analoge Eingangspin (PIN\_TEST) ist auf GPIO 34 gesetzt. Die Referenzspannung (REF\_VOLTAGE) des ESP32 beträgt 3,3 Volt, und der ADC (Analog-Digital-Wandler) hat eine 12-Bit-Auflösung, was 4095 möglichen Stufen entspricht (PIN\_STEPS).\\[1cm]
+	 Zur Messung der hohen Spannungen wird ein Spannungsteiler mit zwei Widerständen verwendet: R1 (120 kOhm) und R2 (10,8 kOhm). Dieser reduziert die Eingangsspannung auf einen für den ESP32 messbaren Bereich. Die tatsächliche Spannung am Eingang des Spannungsteilers, also die reduzierte Spannung, wird später als vout gespeichert. Die berechnete Originalspannung vor dem Spannungsteiler wird in vin abgelegt. Der vom ADC gelieferte Rohwert wird in der Variable rawValue gespeichert.
+	 \begin{center}
+	 	\begin{minipage}{1\textwidth}
+	 		\centering
+	 		\includegraphics[width=\textwidth]{Pictures/code_spannungsmessung_dek}
+	 		\captionof{figure}{Variablen für die Spannungsmessung}
+	 		\label{fig:code_spannungsmessung_dek}
+	 		\vspace{-3pt}
+	 		{\small Quelle: {eigene Abbildung}}
+	 	\end{minipage}
+	 \end{center}
+	 
+	 	\subsubsection*{Messung und Berechnung der Spannungswerte:}
+	 	
+	 	\begin{itemize}
+	 		\item Der analoge Eingangspin PIN\_TEST wird im Setup als Eingang konfiguriert, damit Spannungen gelesen werden können.
+	 	
+	 		\item \texttt{rawValue = analogRead(PIN\_TEST);} \\
+	 		Der Rohwert vom ADC wird am analogen Pin 34 eingelesen.
+	 		
+	 		\item \texttt{vout = (rawValue * REF\_VOLTAGE) / PIN\_STEPS;} \\
+	 		Der Rohwert wird in eine Spannung (\texttt{vout}) umgerechnet, basierend auf der Referenzspannung (3{,}3~V) und der 12-Bit-Auflösung (4095 Schritte).
+	 		
+	 		\item \texttt{vin = vout / (R2 / (R1 + R2));} \\
+	 		Über den Spannungsteilerfaktor wird die ursprüngliche Eingangsspannung (\texttt{vin}) berechnet – also die tatsächliche Akkuspannung vor dem Teiler.
+	 		
+	 		\item \texttt{if (vin < 0.09)} \\
+	 		Falls die berechnete Spannung kleiner als 0{,}09~V ist (z.\,B. wegen Rauschen oder fehlerhafter Messung), wird \texttt{vin} auf 0~V gesetzt, um unrealistische Werte zu vermeiden.
+	 	\end{itemize}
+	 	
+	 	\begin{center}
+	 		\begin{minipage}{1\textwidth}
+	 			\centering
+	 			\includegraphics[width=\textwidth]{Pictures/code_spannungsmessung}
+	 			\captionof{figure}{Messung der Spannung}
+	 			\label{fig:code_spannungsmessung}
+	 			\vspace{-3pt}
+	 			{\small Quelle: {eigene Abbildung}}
+	 			\vspace{1cm}
+	 		\end{minipage}
+	 	\end{center}
+	 	\noindent 
+	 	Danach wird die zuvor berechnete Eingangsspannung
+	 	(\texttt{vin}) verwendet, um den Akkustand in Prozent zu berechnen und über die serielle Schnittstelle auszugeben. Zunächst wird vin um 2~V als Korrektur erhöht und mit einer Nachkommastelle formatiert angezeigt. Anschließend wird der Akkustand in Prozent berechnet, wobei angenommen wird, dass 9~V einem leeren Akku (0\%) und 13~V einem vollen Akku (10\%) entsprechen.\\
+	 	Der berechnete Prozentwert wird auf die nächsten 10\% gerundet, um eine übersichtliche Anzeige zu ermöglichen. Schließlich wird der gerundete Akkustand als Prozentwert ohne Nachkommastellen über die serielle Schnittstelle ausgegeben.
+	 	
+	 	\begin{center}
+			\begin{minipage}{1.1\textwidth}
+			\centering
+			\includegraphics[width=\textwidth]{Pictures/code_spannungsmessung_percent}
+			\captionof{figure}{Berechnung der Spannung in Prozent}
+			\label{fig:code_spannungsmessung_percent}
+			\vspace{-3pt}
+			{\small Quelle: {eigene Abbildung}}
+			\end{minipage}
+		\end{center}
+		\newpage \noindent
+		Dann werden der berechnete Akkustand \texttt{akku\_round} und der Gewichtswert (\texttt{weight}) \footnote{Siehe Kapitel~8.2 für Details zur Gewichtsmessung} in Strings umgewandelt und anschließend in eine JSON-formatierte Nachricht verpackt. Die Nachricht enthält zwei Schlüssel: "battery" und "weight", denen die entsprechenden Werte als Text zugewiesen werden.\\
+		Diese Nachricht wird dann über eine WebSocket-Verbindung mit \texttt{websocket.broadcastTXT()} an den verbundenen Client gesendet. Dadurch sieht man dann auf der Website den Akkustand der Batterie.\\
+		\begin{center}
+			\begin{minipage}{1\textwidth}
+				\centering
+				\includegraphics[width=\textwidth]{Pictures/code_spannungsmessung_json}
+				\captionof{figure}{Werte in JSON umwandeln und an Client senden}
+				\label{fig:code_spannungsmessung_json}
+				\vspace{-3pt}
+				{\small Quelle: {eigene Abbildung}}
+				\vspace{0.5cm}
+			\end{minipage}
+		\end{center}
+		Die hier verwendete Methode zur Berechnung des Akkustands ist nur eine grobe Schätzung. Sie geht davon aus, dass der Akku zwischen 9~V (0\%) und 13~V (100\%) eine lineare Entladung zeigt. In der Realität ist die Entladekurve eines Akkus jedoch nicht linear: Die Spannung bleibt über einen langen Zeitraum relativ konstant und fällt erst am Ende der Entladung schnell ab.\\
+		Deshalb liefert eine einfache lineare Berechnung oft ungenaue oder irreführende Prozentwerte. Um realistischere und genauere Werte zu erhalten, sollte man stattdessen eine Mapping-Funktion oder eine Kennlinie per Tabelle oder mathematischer Funktion verwenden, die die tatsächliche Entladekurve des Akkutyps berücksichtigt.
+		
 
 	\newpage
 	\section{Entwicklungstools}
 	
-	 \subsection{Autodesk Fushion}
+	 \subsection{Autodesk Fusion}
 	 
 	 \subsection{Eagle}
 	 	 

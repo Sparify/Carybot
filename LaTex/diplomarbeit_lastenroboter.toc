@@ -77,14 +77,15 @@
 \contentsline {subsubsection}{\numberline {8.2.2}Schaltungaufbau}{104}{subsubsection.8.2.2}%
 \contentsline {subsubsection}{\numberline {8.2.3}Nutzung}{105}{subsubsection.8.2.3}%
 \contentsline {subsubsection}{\numberline {8.2.4}Code}{106}{subsubsection.8.2.4}%
-\contentsline {section}{\numberline {9}Entwicklungstools}{109}{section.9}%
-\contentsline {subsection}{\numberline {9.1}Autodesk Fushion}{109}{subsection.9.1}%
-\contentsline {subsection}{\numberline {9.2}Eagle}{109}{subsection.9.2}%
-\contentsline {subsection}{\numberline {9.3}VS-Code}{109}{subsection.9.3}%
-\contentsline {subsubsection}{\numberline {9.3.1}Setup}{109}{subsubsection.9.3.1}%
-\contentsline {subsubsection}{\numberline {9.3.2}Bibliotheken}{110}{subsubsection.9.3.2}%
-\contentsline {subsubsection}{\numberline {9.3.3}verwendete Bibliotheken}{110}{subsubsection.9.3.3}%
-\contentsline {subsection}{\numberline {9.4}LaTex}{111}{subsection.9.4}%
-\contentsline {subsection}{\numberline {9.5}GitHub}{111}{subsection.9.5}%
-\contentsline {section}{\numberline {10}Abbildungsverzeichnis}{112}{section.10}%
-\contentsline {section}{\numberline {11}Literaturverzeichnis}{116}{section.11}%
+\contentsline {subsection}{\numberline {8.3}Spannungsmessung per ESP32}{108}{subsection.8.3}%
+\contentsline {section}{\numberline {9}Entwicklungstools}{112}{section.9}%
+\contentsline {subsection}{\numberline {9.1}Autodesk Fusion}{112}{subsection.9.1}%
+\contentsline {subsection}{\numberline {9.2}Eagle}{112}{subsection.9.2}%
+\contentsline {subsection}{\numberline {9.3}VS-Code}{112}{subsection.9.3}%
+\contentsline {subsubsection}{\numberline {9.3.1}Setup}{112}{subsubsection.9.3.1}%
+\contentsline {subsubsection}{\numberline {9.3.2}Bibliotheken}{113}{subsubsection.9.3.2}%
+\contentsline {subsubsection}{\numberline {9.3.3}verwendete Bibliotheken}{113}{subsubsection.9.3.3}%
+\contentsline {subsection}{\numberline {9.4}LaTex}{114}{subsection.9.4}%
+\contentsline {subsection}{\numberline {9.5}GitHub}{114}{subsection.9.5}%
+\contentsline {section}{\numberline {10}Abbildungsverzeichnis}{115}{section.10}%
+\contentsline {section}{\numberline {11}Literaturverzeichnis}{120}{section.11}%
