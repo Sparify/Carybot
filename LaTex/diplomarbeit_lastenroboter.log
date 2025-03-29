@@ -1,3 +1,4 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2025.2.21)  29 MAR 2025 20:59
 This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.2.24)  29 MAR 2025 21:11
 entering extended mode
  restricted \write18 enabled.
@@ -1191,8 +1192,8 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
 ovo/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc} <./Pictures/bulm
 e_logo.png>] [2] [3] (diplomarbeit_lastenroboter.toc [4]
 Overfull \hbox (32.36775pt too wide) in paragraph at lines 53--53
- [][] [][]\T1/ptm/m/n/12 8. Ex-pan-der_Anschlüsse (Zu-sätz-li-che GPIO-Erweiter
-ung über MCP23017)[] []  
+ [][] [][]\T1/ptm/m/n/12 8. Ex-pan-der_Anschlï¿½sse (Zu-sï¿½tz-li-che GPIO-Erweiter
+ung ï¿½ber MCP23017)[] []  
  []
 
 [5])
@@ -1234,12 +1235,12 @@ See the caption package documentation for explanation.
 
 
 Underfull \hbox (badness 2035) in paragraph at lines 142--143
-[]\T1/ptm/m/n/12 Benutzeroberfläche (Web-Oberfläche) für Steue-
+[]\T1/ptm/m/n/12 Benutzeroberflï¿½che (Web-Oberflï¿½che) fï¿½r Steue-
  []
 
 
 Underfull \hbox (badness 5446) in paragraph at lines 143--144
-[]\T1/ptm/m/n/12 Übertragung der Steue-rung/Befehle von Web-
+[]\T1/ptm/m/n/12 ï¿½bertragung der Steue-rung/Befehle von Web-
  []
 
 <Pictures/felix.jpg, id=481, 607.51968pt x 901.11656pt>
@@ -1583,8 +1584,8 @@ See the caption package documentation for explanation.
 
 
 Overfull \hbox (0.333pt too wide) in paragraph at lines 556--576
-\T1/ptm/m/n/12 Am An-fang des Setup-Codes wird über-prüft, ob ein Ex-pan-der Mo
--dul über die I2C Schnitt-
+\T1/ptm/m/n/12 Am An-fang des Setup-Codes wird ï¿½ber-prï¿½ft, ob ein Ex-pan-der Mo
+-dul ï¿½ber die I2C Schnitt-
  []
 
 <Pictures/code_enum_motoren.png, id=594, 194.22563pt x 207.77625pt>
@@ -1690,7 +1691,7 @@ Overfull \hbox (8.63322pt too wide) in paragraph at lines 650--651
 
 [28 <./Pictures/code_analogWrite_pwm_motoren.png>]
 Overfull \hbox (3.35641pt too wide) in paragraph at lines 666--667
-\T1/ptm/m/n/12 Die Web-si-te er-mög-licht die Echtzeit-Videoübertragung des Ka-
+\T1/ptm/m/n/12 Die Web-si-te er-mï¿½g-licht die Echtzeit-Videoï¿½bertragung des Ka-
 me-ra-bilds der ESP32-CAM.
  []
 
@@ -1828,12 +1829,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 801--802
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 803--804
-[]|\T1/ptm/m/n/12 Übergabe an
+[]|\T1/ptm/m/n/12 ï¿½bergabe an
  []
 
 
 Underfull \hbox (badness 1281) in paragraph at lines 805--805
-[]|\T1/ptm/m/n/12 Binärdaten wer-den emp-fan-
+[]|\T1/ptm/m/n/12 Binï¿½rdaten wer-den emp-fan-
  []
 
 
@@ -1889,7 +1890,7 @@ Overfull \hbox (6.19656pt too wide) in paragraph at lines 836--837
 
 Overfull \hbox (32.41138pt too wide) in paragraph at lines 845--846
 \T1/ptm/m/n/12 Ganz-zahl in die Va-ria-ble \T1/cmtt/m/n/12 camera_pos \T1/ptm/m
-/n/12 ge-spei-chert. An-schlie-ÿend wird die Funk-ti-on \T1/cmtt/m/n/12 cam_tur
+/n/12 ge-spei-chert. An-schlie-ï¿½end wird die Funk-ti-on \T1/cmtt/m/n/12 cam_tur
 n()
  []
 
@@ -1956,7 +1957,7 @@ r
 
 
 Overfull \hbox (19.5976pt too wide) in paragraph at lines 899--900
-\T1/ptm/m/n/12 for-ma-tiert. Beim je-wei-li-gen Tas-ten-druck wird au-ÿer-dem i
+\T1/ptm/m/n/12 for-ma-tiert. Beim je-wei-li-gen Tas-ten-druck wird au-ï¿½er-dem i
 m-mer das At-tri-but \T1/cmtt/m/n/12 data-direction
  []
 
@@ -2392,7 +2393,7 @@ See the caption package documentation for explanation.
 [51 <./Pictures/sensordaten-html.png>]
 Overfull \hbox (1.30785pt too wide) in paragraph at lines 1196--1197
 \T1/ptm/m/n/12 Die CSS-Klasse \T1/cmtt/m/n/12 daten \T1/ptm/m/n/12 for-ma-tiert
- die ein-zel-nen Da-ten im Me-nü. Sie wer-den in der Schrift-
+ die ein-zel-nen Da-ten im Me-nï¿½. Sie wer-den in der Schrift-
  []
 
 
@@ -2498,7 +2499,7 @@ Overfull \hbox (4.45215pt too wide) in paragraph at lines 1276--1277
 
 Overfull \hbox (10.39986pt too wide) in paragraph at lines 1291--1295
 \T1/ptm/m/n/12 Als Bild-for-mat wird JPEG ver-wen-det, um Spei-cher-platz zu sp
-a-ren. Al-ter-na-tiv wä-re RGB565
+a-ren. Al-ter-na-tiv wï¿½-re RGB565
  []
 
 
@@ -2672,8 +2673,8 @@ See the caption package documentation for explanation.
 
 [63 <./Pictures/Stahlprofil.png>]
 Overfull \hbox (4.2564pt too wide) in paragraph at lines 1488--1490
-\T1/ptm/m/n/12 Schwei-ÿer an der Naht-stel-le ent-lang-ge-führt. Die Um-hül-lun
-g schmilzt wäh-rend des Schwei-
+\T1/ptm/m/n/12 Schwei-ï¿½er an der Naht-stel-le ent-lang-ge-fï¿½hrt. Die Um-hï¿½l-lun
+g schmilzt wï¿½h-rend des Schwei-
  []
 
 [64]
@@ -2740,7 +2741,7 @@ See the caption package documentation for explanation.
 
 [66]
 Overfull \hbox (5.57646pt too wide) in paragraph at lines 1578--1582
-\T1/ptm/m/n/12 Der ers-te Lö-sungs-ver-such war, die Schrau-ben mit Schrau-ben-
+\T1/ptm/m/n/12 Der ers-te Lï¿½-sungs-ver-such war, die Schrau-ben mit Schrau-ben-
 si-che-rungs-mit-tel ein-zu-schmie-
  []
 
@@ -2814,8 +2815,8 @@ See the caption package documentation for explanation.
 
 [72]
 Overfull \hbox (41.44461pt too wide) in paragraph at lines 1720--1721
-\T1/ptm/m/n/12 nen, dar-un-ter Licht-steue-rung, Bat-te-rie-über-wa-chung, Pull
--up-Widerstände für I2C-Kommunikation
+\T1/ptm/m/n/12 nen, dar-un-ter Licht-steue-rung, Bat-te-rie-ï¿½ber-wa-chung, Pull
+-up-Widerstï¿½nde fï¿½r I2C-Kommunikation
  []
 
 [73 <./Pictures/Steuerplatine.pdf>]
@@ -3122,13 +3123,13 @@ Overfull \hbox (28.50853pt too wide) in paragraph at lines 2153--2154
 
 [86] [87 <./Pictures/videoÃ¼bertragung-web.png>]
 Overfull \hbox (22.17618pt too wide) in paragraph at lines 2166--2168
-\T1/ptm/m/n/10.95 Um die Ka-me-ra pro-gram-mie-ren zu kön-nen, muss zu-nächst d
+\T1/ptm/m/n/10.95 Um die Ka-me-ra pro-gram-mie-ren zu kï¿½n-nen, muss zu-nï¿½chst d
 as rich-ti-ge Board \T1/cmtt/m/n/10.95 AI Thinker ESP32-CAM
  []
 
 
 Overfull \hbox (1.89662pt too wide) in paragraph at lines 2166--2168
-\T1/ptm/m/n/10.95 aus-ge-wählt wer-den. Da-nach müs-sen die ESP32-Kamera-Treibe
+\T1/ptm/m/n/10.95 aus-ge-wï¿½hlt wer-den. Da-nach mï¿½s-sen die ESP32-Kamera-Treibe
 r mit der Bi-blio-thek \T1/cmtt/m/n/10.95 esp_camera.h
  []
 
@@ -3264,10 +3265,13 @@ Overfull \hbox (15.41412pt too wide) in paragraph at lines 2281--2282
 <Pictures/esp32servo.png, id=1229, 154.07562pt x 27.10126pt>
 File: Pictures/esp32servo.png Graphic file (type png)
 <use Pictures/esp32servo.png>
+Package pdftex.def Info: Pictures/esp32servo.png  used on input line 2302.
+(pdftex.def)             Requested size: 298.75264pt x 52.5536pt.
 Package pdftex.def Info: Pictures/esp32servo.png  used on input line 2296.
 (pdftex.def)             Requested size: 154.07524pt x 27.10118pt.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 2303.
 (caption)                particular \caption on input line 2297.
 See the caption package documentation for explanation.
 
@@ -3283,6 +3287,7 @@ Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 2310.
 See the caption package documentation for explanation.
 
+<Pictures/servofunktionen.png, id=1253, 271.0125pt x 53.44969pt>
 
 Overfull \hbox (11.70595pt too wide) in paragraph at lines 2309--2310
 [][] 
@@ -3304,10 +3309,11 @@ Overfull \hbox (14.93442pt too wide) in paragraph at lines 2322--2323
 [][] 
  []
 
+<Pictures/camerapos.png, id=1254, 455.45157pt x 152.82094pt>
 
 Overfull \hbox (11.4884pt too wide) in paragraph at lines 2331--2332
-\T1/ptm/m/n/10.95 die-ser Funk-ti-on wird über-prüft, ob das JSON-Objekt json-D
-oc den Schlüs-sel "ca-me-ra_positionënthält.
+\T1/ptm/m/n/10.95 die-ser Funk-ti-on wird ï¿½ber-prï¿½ft, ob das JSON-Objekt json-D
+oc den Schlï¿½s-sel "ca-me-ra_positionï¿½nthï¿½lt.
  []
 
 <Pictures/camerapos.png, id=1239, 455.45157pt x 152.82094pt>
@@ -3473,8 +3479,8 @@ See the caption package documentation for explanation.
 
 
 Overfull \hbox (5.88252pt too wide) in paragraph at lines 2495--2497
-\T1/ptm/m/n/10.95 zu grö-ÿe-ren Va-ri-an-ten für ho-he Ge-wich-te. Beim Las-ten
--ro-bo-ter kom-men ^^RHalbbrücken-Wägezellen^^P
+\T1/ptm/m/n/10.95 zu grï¿½-ï¿½e-ren Va-ri-an-ten fï¿½r ho-he Ge-wich-te. Beim Las-ten
+-ro-bo-ter kom-men ^^RHalbbrï¿½cken-Wï¿½gezellen^^P
  []
 
 <Pictures/halb_waegezellen.jpg, id=1305, 221.32687pt x 216.05719pt>
@@ -3698,7 +3704,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 2760--2763
 
 [112] [113]
 Overfull \hbox (1.32764pt too wide) in paragraph at lines 2797--2799
-\T1/ptm/m/n/10.95 Für ei-ne ein-fa-che Ver-wal-tung wur-de für un-ser Pro-jekt 
+\T1/ptm/m/n/10.95 Fï¿½r ei-ne ein-fa-che Ver-wal-tung wur-de fï¿½r un-ser Pro-jekt 
 GitHub Desktop ver-wen-det. GitHub Desktop
  []
 
@@ -3734,6 +3740,11 @@ ged.
 (rerunfilecheck)             Checksum: C42D6B359552792A65054A7E17E0274E;12776.
  ) 
 Here is how much of TeX's memory you used:
+ 37600 strings out of 473530
+ 865694 string characters out of 5724861
+ 1293753 words of memory out of 5000000
+ 59803 multiletter control sequences out of 15000+600000
+ 637836 words of font info for 165 fonts, out of 8000000 for 9000
  37541 strings out of 474486
  875091 string characters out of 5743283
  1947542 words of memory out of 5000000
@@ -3793,6 +3804,17 @@ pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exist
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist
 , replaced by a fixed one
 
+ <C:\Users\danie\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm10
+95.pk> <C:\Users\danie\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\
+ectt1095.pk> <C:\Users\danie\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/d
+pi600\ectt1200.pk><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmex1
+0.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Pr
+ogram Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/M
+iKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX/fonts/
+type1/urw/symbol/usyr.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmb8a
+.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Program File
+s/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
+Output written on diplomarbeit_lastenroboter.pdf (120 pages, 15141251 bytes).
  <C:\Users\Lenovo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1
 095.pk> <C:\Users\Lenovo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi60
 0\ectt1095.pk> <C:\Users\Lenovo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/e

@@ -125,12 +125,12 @@
 \contentsline {figure}{\numberline {124}{\ignorespaces CSS-Formatierung für \texttt {dynamicimage}}}{91}{figure.124}%
 \contentsline {figure}{\numberline {125}{\ignorespaces Videoübertragung im JavaScript-Code}}{91}{figure.125}%
 \contentsline {figure}{\numberline {126}{\ignorespaces SG90-Servomotor}}{92}{figure.126}%
-\contentsline {figure}{\numberline {127}{\ignorespaces servo verkabelung}}{93}{figure.127}%
-\contentsline {figure}{\numberline {128}{\ignorespaces esp32servo Bibliothek}}{93}{figure.128}%
-\contentsline {figure}{\numberline {129}{\ignorespaces servopins}}{94}{figure.129}%
-\contentsline {figure}{\numberline {130}{\ignorespaces servofunktionen}}{94}{figure.130}%
+\contentsline {figure}{\numberline {127}{\ignorespaces Verkabelung des Servomotors}}{93}{figure.127}%
+\contentsline {figure}{\numberline {128}{\ignorespaces \texttt {ESP32Servo}-Bibliothek}}{93}{figure.128}%
+\contentsline {figure}{\numberline {129}{\ignorespaces Variablen für Servo}}{94}{figure.129}%
+\contentsline {figure}{\numberline {130}{\ignorespaces \texttt {Setup();}-Code für Servo}}{94}{figure.130}%
 \contentsline {figure}{\numberline {131}{\ignorespaces camerapos}}{95}{figure.131}%
-\contentsline {figure}{\numberline {132}{\ignorespaces camturn}}{95}{figure.132}%
+\contentsline {figure}{\numberline {132}{\ignorespaces Funktion zum Kamera drehen}}{95}{figure.132}%
 \contentsline {figure}{\numberline {133}{\ignorespaces HC-SR04 Timing Diagram}}{97}{figure.133}%
 \contentsline {figure}{\numberline {134}{\ignorespaces Beispiel für Messung}}{97}{figure.134}%
 \contentsline {figure}{\numberline {135}{\ignorespaces HC-SR04 Pinbelegung}}{98}{figure.135}%
