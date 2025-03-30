@@ -116,41 +116,45 @@
 \contentsline {figure}{\numberline {115}{\ignorespaces schaltplan-wägezellen}}{83}{figure.115}%
 \contentsline {figure}{\numberline {116}{\ignorespaces i2c-anschlüsse}}{84}{figure.116}%
 \contentsline {figure}{\numberline {117}{\ignorespaces RX/TX}}{84}{figure.117}%
-\contentsline {figure}{\numberline {118}{\ignorespaces ESP32-CAM Modul}}{85}{figure.118}%
-\contentsline {figure}{\numberline {119}{\ignorespaces Videoübertragung auf der Website}}{87}{figure.119}%
-\contentsline {figure}{\numberline {120}{\ignorespaces Kamera-GPIO Konfiguration}}{88}{figure.120}%
-\contentsline {figure}{\numberline {121}{\ignorespaces Kamera-Initialisierung}}{89}{figure.121}%
-\contentsline {figure}{\numberline {122}{\ignorespaces Videoübertragung über WebSocket}}{90}{figure.122}%
-\contentsline {figure}{\numberline {123}{\ignorespaces Videoübertragung HTML-Code}}{90}{figure.123}%
-\contentsline {figure}{\numberline {124}{\ignorespaces CSS-Formatierung für \texttt {dynamicimage}}}{91}{figure.124}%
-\contentsline {figure}{\numberline {125}{\ignorespaces Videoübertragung im JavaScript-Code}}{91}{figure.125}%
-\contentsline {figure}{\numberline {126}{\ignorespaces SG90-Servomotor}}{92}{figure.126}%
-\contentsline {figure}{\numberline {127}{\ignorespaces Verkabelung des Servomotors}}{93}{figure.127}%
-\contentsline {figure}{\numberline {128}{\ignorespaces \texttt {ESP32Servo}-Bibliothek}}{93}{figure.128}%
-\contentsline {figure}{\numberline {129}{\ignorespaces Variablen für Servo}}{94}{figure.129}%
-\contentsline {figure}{\numberline {130}{\ignorespaces \texttt {Setup();}-Code für Servo}}{94}{figure.130}%
-\contentsline {figure}{\numberline {131}{\ignorespaces camerapos}}{95}{figure.131}%
-\contentsline {figure}{\numberline {132}{\ignorespaces Funktion zum Kamera drehen}}{95}{figure.132}%
-\contentsline {figure}{\numberline {133}{\ignorespaces HC-SR04 Timing Diagram}}{97}{figure.133}%
-\contentsline {figure}{\numberline {134}{\ignorespaces Beispiel für Messung}}{97}{figure.134}%
-\contentsline {figure}{\numberline {135}{\ignorespaces HC-SR04 Pinbelegung}}{98}{figure.135}%
-\contentsline {figure}{\numberline {136}{\ignorespaces HC-SR04 Schaltungs Beispiel}}{99}{figure.136}%
-\contentsline {figure}{\numberline {137}{\ignorespaces \texttt {HC-SR04.h} Bibliothek}}{100}{figure.137}%
-\contentsline {figure}{\numberline {138}{\ignorespaces Erstellung von Objekten der Klasse UltraSonicDistanceSensor}}{100}{figure.138}%
-\contentsline {figure}{\numberline {139}{\ignorespaces Messung der Entfernung in der \texttt {loop()}-Funktion}}{100}{figure.139}%
-\contentsline {figure}{\numberline {140}{\ignorespaces if-Abfrage für Mindestabstand und Geschwindigkeit}}{101}{figure.140}%
-\contentsline {figure}{\numberline {141}{\ignorespaces Halbbrücken-Wägezelle}}{101}{figure.141}%
-\contentsline {figure}{\numberline {142}{\ignorespaces HX711 24-bit A/D-Wandler}}{102}{figure.142}%
-\contentsline {figure}{\numberline {143}{\ignorespaces Prinzip einer Wägezelle }}{102}{figure.143}%
-\contentsline {figure}{\numberline {144}{\ignorespaces Wheatstone-Brückenschaltung}}{103}{figure.144}%
-\contentsline {figure}{\numberline {145}{\ignorespaces Beschaltung der Wägezellen}}{104}{figure.145}%
-\contentsline {figure}{\numberline {146}{\ignorespaces Verkabelung der Wägezellen mit HX711}}{105}{figure.146}%
-\contentsline {figure}{\numberline {147}{\ignorespaces Testaufbau der Wägezellen}}{106}{figure.147}%
-\contentsline {figure}{\numberline {148}{\ignorespaces Einbinden der \texttt {HX711\_ADC}-Bibliothek}}{106}{figure.148}%
-\contentsline {figure}{\numberline {149}{\ignorespaces \texttt {Setup();} - Code für den HX711}}{107}{figure.149}%
-\contentsline {figure}{\numberline {150}{\ignorespaces Timeout Abfrage in der \texttt {Setup();}-Funktion}}{108}{figure.150}%
-\contentsline {figure}{\numberline {151}{\ignorespaces Gewichtsmessung in der \texttt {loop();}-Funktion}}{108}{figure.151}%
-\contentsline {figure}{\numberline {152}{\ignorespaces Variablen für die Spannungsmessung}}{109}{figure.152}%
-\contentsline {figure}{\numberline {153}{\ignorespaces Messung der Spannung}}{110}{figure.153}%
-\contentsline {figure}{\numberline {154}{\ignorespaces Berechnung der Spannung in Prozent}}{110}{figure.154}%
-\contentsline {figure}{\numberline {155}{\ignorespaces Werte in JSON umwandeln und an Client senden}}{111}{figure.155}%
+\contentsline {figure}{\numberline {118}{\ignorespaces PCB}}{85}{figure.118}%
+\contentsline {figure}{\numberline {119}{\ignorespaces Steuerungsplatine}}{86}{figure.119}%
+\contentsline {figure}{\numberline {120}{\ignorespaces ESP32-CAM Modul}}{87}{figure.120}%
+\contentsline {figure}{\numberline {121}{\ignorespaces Videoübertragung auf der Website}}{89}{figure.121}%
+\contentsline {figure}{\numberline {122}{\ignorespaces Kamera-GPIO Konfiguration}}{90}{figure.122}%
+\contentsline {figure}{\numberline {123}{\ignorespaces Kamera-Initialisierung}}{91}{figure.123}%
+\contentsline {figure}{\numberline {124}{\ignorespaces Halterung der Kamera}}{92}{figure.124}%
+\contentsline {figure}{\numberline {125}{\ignorespaces Videoübertragung HTML-Code}}{92}{figure.125}%
+\contentsline {figure}{\numberline {126}{\ignorespaces CSS-Formatierung für \texttt {dynamicimage}}}{93}{figure.126}%
+\contentsline {figure}{\numberline {127}{\ignorespaces Videoübertragung im JavaScript-Code}}{93}{figure.127}%
+\contentsline {figure}{\numberline {128}{\ignorespaces SG90-Servomotor}}{94}{figure.128}%
+\contentsline {figure}{\numberline {129}{\ignorespaces Verkabelung des Servomotors}}{95}{figure.129}%
+\contentsline {figure}{\numberline {130}{\ignorespaces \texttt {ESP32Servo}-Bibliothek}}{95}{figure.130}%
+\contentsline {figure}{\numberline {131}{\ignorespaces Variablen für Servo}}{96}{figure.131}%
+\contentsline {figure}{\numberline {132}{\ignorespaces \texttt {Setup();}-Code für Servo}}{96}{figure.132}%
+\contentsline {figure}{\numberline {133}{\ignorespaces camerapos}}{97}{figure.133}%
+\contentsline {figure}{\numberline {134}{\ignorespaces Funktion zum Kamera drehen}}{97}{figure.134}%
+\contentsline {figure}{\numberline {135}{\ignorespaces Kameragehäuse}}{98}{figure.135}%
+\contentsline {figure}{\numberline {136}{\ignorespaces Aussparung für den Servomotor}}{98}{figure.136}%
+\contentsline {figure}{\numberline {137}{\ignorespaces HC-SR04 Timing Diagram}}{100}{figure.137}%
+\contentsline {figure}{\numberline {138}{\ignorespaces Beispiel für Messung}}{100}{figure.138}%
+\contentsline {figure}{\numberline {139}{\ignorespaces HC-SR04 Pinbelegung}}{101}{figure.139}%
+\contentsline {figure}{\numberline {140}{\ignorespaces HC-SR04 Schaltungs Beispiel}}{102}{figure.140}%
+\contentsline {figure}{\numberline {141}{\ignorespaces \texttt {HC-SR04.h} Bibliothek}}{103}{figure.141}%
+\contentsline {figure}{\numberline {142}{\ignorespaces Erstellung von Objekten der Klasse UltraSonicDistanceSensor}}{103}{figure.142}%
+\contentsline {figure}{\numberline {143}{\ignorespaces Messung der Entfernung in der \texttt {loop()}-Funktion}}{103}{figure.143}%
+\contentsline {figure}{\numberline {144}{\ignorespaces if-Abfrage für Mindestabstand und Geschwindigkeit}}{104}{figure.144}%
+\contentsline {figure}{\numberline {145}{\ignorespaces Halbbrücken-Wägezelle}}{104}{figure.145}%
+\contentsline {figure}{\numberline {146}{\ignorespaces HX711 24-bit A/D-Wandler}}{105}{figure.146}%
+\contentsline {figure}{\numberline {147}{\ignorespaces Prinzip einer Wägezelle }}{105}{figure.147}%
+\contentsline {figure}{\numberline {148}{\ignorespaces Wheatstone-Brückenschaltung}}{106}{figure.148}%
+\contentsline {figure}{\numberline {149}{\ignorespaces Beschaltung der Wägezellen}}{107}{figure.149}%
+\contentsline {figure}{\numberline {150}{\ignorespaces Verkabelung der Wägezellen mit HX711}}{108}{figure.150}%
+\contentsline {figure}{\numberline {151}{\ignorespaces Testaufbau der Wägezellen}}{109}{figure.151}%
+\contentsline {figure}{\numberline {152}{\ignorespaces Einbinden der \texttt {HX711\_ADC}-Bibliothek}}{109}{figure.152}%
+\contentsline {figure}{\numberline {153}{\ignorespaces \texttt {Setup();} - Code für den HX711}}{110}{figure.153}%
+\contentsline {figure}{\numberline {154}{\ignorespaces Timeout Abfrage in der \texttt {Setup();}-Funktion}}{111}{figure.154}%
+\contentsline {figure}{\numberline {155}{\ignorespaces Gewichtsmessung in der \texttt {loop();}-Funktion}}{111}{figure.155}%
+\contentsline {figure}{\numberline {156}{\ignorespaces Variablen für die Spannungsmessung}}{112}{figure.156}%
+\contentsline {figure}{\numberline {157}{\ignorespaces Messung der Spannung}}{113}{figure.157}%
+\contentsline {figure}{\numberline {158}{\ignorespaces Berechnung der Spannung in Prozent}}{113}{figure.158}%
+\contentsline {figure}{\numberline {159}{\ignorespaces Werte in JSON umwandeln und an Client senden}}{114}{figure.159}%

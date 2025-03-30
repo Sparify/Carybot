@@ -1620,9 +1620,7 @@ Im HTML-Code wird die Status-Box als HTML \texttt{<span>}-Tag definiert. Für da
 	 	\item Steuerplatine
 	 	\item Motortreiber für jeden BLDC-Motor
 	 	\item 12V-Akku als Energiequelle
-	 	\item IRM-30-15ST AC/DC-Leistungsmodul
-	 	\item SOLSUM 0808 Solarladeregler
-	 	\item SOLSUM 0808 Solarladeregler
+	 	\item Dino KRAFTPAKET 4A-6V/12V Ladegerät
 	 \end{itemize} 
 	 Die elektronischen Komponenten wurden auf einer Holzplatte montiert. Die Holzplatte wurde zusätzlich mit zwei Querstreben verstärkt. Beim Platzieren der Komponenten wurde darauf geachtet, dass alle Bauteile sicher befestigt sind und ausreichend Platz für die Verkabelung bleibt. Zusätzlich wurden die Beleuchtungselemente montiert und in die Verkabelung integriert. \\[0.5cm]
 	 Bei der Verkabelung wurde darauf geachtet, dass alles sorgfältig verlegt wird. Die Kabel wurden in verschiedenen Farben gekennzeichnet. Die roten Kabel sind für 12 Volt und 5 Volt, die schwarzen Kabel sind die GND-Leitungen, und die gelben und weißen Kabel sind die Signalleitungen.
@@ -1677,9 +1675,7 @@ Im HTML-Code wird die Status-Box als HTML \texttt{<span>}-Tag definiert. Für da
 				\hline  
 				AGM 12V Batterie & 1x \\ 
 				\hline  
-				IRM-30-15ST AC/DC-Leistungsmodul & 1x \\ 
-				\hline  
-				SOLSUM 0808 Solarladeregler & 1x \\ 
+				Dino KRAFTPAKET 4A-6V/12V Ladegerät & 1x \\ 
 				\hline  
 			\end{tabular} \\[0.74cm]
 			\textbf{Befestigungselemente}: Es wurden außerdem verschiedene Befestigungselemente verwendet, darunter Schrauben, Muttern, Schellen, Unterlegscheiben sowie Steckverbinder für die elektrische Verkabelung. Diese sind essenziell, um die mechanischen und elektrischen Komponenten sicher zu montieren und zu verbinden.
@@ -1687,14 +1683,14 @@ Im HTML-Code wird die Status-Box als HTML \texttt{<span>}-Tag definiert. Für da
 	\section{Hardwaredesign}
 
 	In diesem Kapitel wird die Entwicklung und Herstellung der Steuerplatine sowie die Integration der externen Komponenten beschrieben. Alle Schritte vom ersten Aufbau auf einem Steckbrett bis hin zur fertigen Platine werden verständlich erläutert. Die Platine wurde mehrfach getestet, um mögliche Fehler frühzeitig zu erkennen und einen reibungslosen Betrieb sicherzustellen. Bei der Gestaltung wurde darauf geachtet, die Bauteile strukturiert und übersichtlich anzuordnen. \\[0.4cm]
-	Zusätzlich zur Steuerplatine umfasst das System auch externe Komponenten wie die Batterie, den Solarladeregler und das IRM-30-15ST AC/DC-Leistungsmodul. Diese wurden separat verbaut, sind jedoch nahtlos in das Gesamtsystem integriert, um eine stabile Energieversorgung, effizientes Laden und die notwendige Spannungsumwandlung zu gewährleisten. Diese externen Bauteile sind ebenfalls ein wichtiger Bestandteil des Hardwaredesigns, auch wenn sie nicht direkt auf der Steuerplatine untergebracht sind.
+	Zusätzlich zur Steuerplatine umfasst das System auch externe Komponenten wie die Batterie und den Dino KRAFTPAKET 4A-6V/12V Batterieladegerät. Diese wurden separat verbaut, sind jedoch nahtlos in das Gesamtsystem integriert, um eine stabile Energieversorgung, effizientes Laden und die notwendige Spannungsumwandlung zu gewährleisten. Diese externen Bauteile sind ebenfalls ein wichtiger Bestandteil des Hardwaredesigns, auch wenn sie nicht direkt auf der Steuerplatine untergebracht sind.
 	
 	
 		\subsection{Zielsetzung} %Felix
 		
 		Das Ziel der Hardwareentwicklung besteht darin, eine Steuerplatine zu entwerfen, die alle erforderlichen Funktionen zur Steuerung der Komponenten übernimmt, sowie eine effiziente Energieversorgungslösung zu entwickeln, die die nötige Leistung für das System bereitstellt.\\[0.4cm] 
 		Die Steuerplatine soll unter anderem die Ansteuerung der vier Motortreiber, Sensoren und Lichter mithilfe eines ESP32 übernehmen. Zur Erweiterung der verfügbaren Pins wird ein Expander-Board eingesetzt. Die Platine soll mithilfe eines LM317-Spannungsreglers, die Spannung von 12 Volt auf 5 Volt übernehmen. Zusätzlich sollen Anschlüsse für GND, 5 Volt und 12 Volt für die externe Verkabelung bereitgestellt werden, um die Stromversorgung weiterer Komponenten außerhalb der Platine zu ermöglichen.\\[0.4cm]
-		Für die Energieversorgung soll eine AGM 12V Batterie zum Einsatz kommen, die die gespeicherte Energie für den Betrieb des Systems bereitstellt. Diese Batterie wird durch den SOLSUM 0808 Solarladeregler geladen. Der Solarladeregler übernimmt die Aufgabe, die 15V Gleichspannung, die vom IRM-30-15ST AC/DC-Leistungsmodul geliefert wird, auf die erforderliche Ladespannung für die Batterie zu regeln. Der Solarladeregler sorgt zudem dafür, dass die Batterie nicht überladen wird, und stellt sicher, dass die Lade- und Entladeprozesse sicher und effizient ablaufen. Der Solarladeregler verfügt außerdem über einen Anschluss für die Verbraucher, über den die Platine mit der benötigten Energie versorgt wird
+		Für die Energieversorgung wird eine AGM 12V-Batterie verwendet, die den Betrieb des Systems sicherstellt. Das Dino KRAFTPAKET 4A-6V/12V Ladegerät übernimmt das Laden der Batterie und sorgt für eine geregelte Ladespannung, um eine sichere und effiziente Energieversorgung zu gewährleisten. Die Batterie versorgt direkt die angeschlossenen Verbraucher, einschließlich der Steuerungsplatine, mit 12V Gleichspannung. Dadurch wird sichergestellt, dass das gesamte System stabil und zuverlässig mit Energie betrieben wird.
 		
 		\subsection{Grundschaltungen} %Felix
 		
@@ -2088,7 +2084,41 @@ Im HTML-Code wird die Status-Box als HTML \texttt{<span>}-Tag definiert. Für da
 		\end{minipage} \\[0.75cm]
 	\end{center}
 	Die Platine verfügt über eine TX-Schraubklemme und eine RX-Schraubklemme, die für die serielle Kommunikation verwendet werden. Diese Anschlüsse ermöglichen den Datenaustausch zwischen der Platine und externen Geräten.
+	\newpage
 	
+	\subsection{Steuerplatine PCB}
+	
+	\begin{center} 
+		\begin{minipage}[t]{\textwidth}
+			\includegraphics{Pictures/PCB}
+			\captionof{figure}{PCB}
+			\label{fig:i2c-anschlüsse}
+			\vspace{-10pt}
+			\begin{center}
+				\par\small Quelle: eigene Abbildung
+			\end{center}
+		\end{minipage} \\[0.75cm]
+	\end{center}
+	Für die Steuerungsplatine wurde eine einseitige Leiterplatte entwickelt, um eine einfache und kosteneffiziente Fertigung zu gewährleisten. Die Leiterbahnen sind entsprechend der erforderlichen Stromstärken dimensioniert, insbesondere in den Bereichen der 12V-Versorgung, um Spannungsabfälle und übermäßige Erwärmung zu vermeiden. Dabei wurde darauf geachtet, dass die Bahnen für höhere Ströme ausreichend breit ausgeführt sind.\\[0.75cm]
+	Die Platine verfügt über mehrere beschriftete Anschlussklemmen, um externe Sensoren, Aktoren und weitere elektronische Bauteile sicher und übersichtlich integrieren zu können. Durch die klare Kennzeichnung der Klemmen wird die Verkabelung vereinfacht, was den Aufbau und die Wartung erleichtert.\\[0.75cm]
+	Zusätzlich wurden in jeder Ecke der Platine Befestigungslöcher vorgesehen, um eine stabile Montage innerhalb des Lastenroboters zu ermöglichen. Diese sorgen dafür, dass die Platine sicher fixiert ist und während des Betriebs nicht verrutscht oder beschädigt wird.
+	
+	\subsection{Leiterplatten herstellen mit JLCPCB}
+	JLCPCB ist ein weltweit führender Anbieter für die Herstellung von Leiterplatten und bietet eine benutzerfreundliche Online-Plattform zur individuellen Fertigung von PCBs. Kunden können ihre eigenen Designs hochladen, verschiedene Produktionsoptionen wählen und die Platinen nach ihren Anforderungen konfigurieren. Für unsere Diplomarbeit haben wir uns für JLCPCB entschieden, da der Hersteller eine schnelle, zuverlässige und kostengünstige Lösung für die Fertigung unserer Platinen bietet. Im Vergleich zu anderen Anbietern ermöglicht JLCPCB eine kurze Produktionszeit, sodass die bestellten Leiterplatten bereits nach wenigen Tagen versandfertig sind. Zudem sind die Fertigungskosten im Vergleich zu vielen europäischen Herstellern deutlich günstiger, ohne dabei Einbußen in der Qualität hinnehmen zu müssen.
+	
+	\subsection{Bestückte Platine}
+	\begin{center} 
+		\begin{minipage}[t]{0.85\textwidth}
+			\includegraphics[scale=0.9]{Pictures/Platine}
+			\captionof{figure}{Steuerungsplatine}
+			\label{fig:i2c-anschlüsse}
+			\vspace{-10pt}
+			\begin{center}
+				\par\small Quelle: eigene Abbildung
+			\end{center}
+		\end{minipage} \\[0.75cm]
+	\end{center}
+	Nach der Fertigung der Platinen wurden alle erforderlichen Bauteile darauf montiert und verlötet, um die Schaltung funktionsfähig zu machen. Dabei wurde besonders darauf geachtet, die Bauteile präzise zu platzieren und richtig auszurichten, um eine einwandfreie Funktion zu gewährleisten. Nach dem Lötvorgang erfolgte eine gründliche Kontrolle, bei der alle Verbindungen überprüft und die Platinen getestet wurden, um mögliche Fehler frühzeitig zu erkennen und zu beheben.
 	
 	\newpage
 	\section{Kamera}
@@ -2197,7 +2227,7 @@ Im HTML-Code wird die Status-Box als HTML \texttt{<span>}-Tag definiert. Für da
 			\begin{center}
 				\begin{minipage}[t]{0.75\textwidth}
 					\includegraphics[scale=0.6]{Pictures/videoübertragung}
-					\captionof{figure}{Videoübertragung über WebSocket}
+					\captionof{figure}{Halterung der Kamera}
 					\label{fig:Videoübertragung}
 					\vspace{-10pt}
 					\begin{center}
@@ -2205,6 +2235,10 @@ Im HTML-Code wird die Status-Box als HTML \texttt{<span>}-Tag definiert. Für da
 					\end{center}
 				\end{minipage}
 			\end{center}
+			
+			
+			
+			
 			\noindent
 			Im HTML-Code wird die Videoübertragung als HTML \texttt{<img>}-Tag mit der id \texttt{dynamicimage} im Hauptbereich definiert.
 			\begin{center}
@@ -2354,7 +2388,40 @@ Im HTML-Code wird die Status-Box als HTML \texttt{<span>}-Tag definiert. Für da
 						\end{center}
 					\end{minipage} \\[0.70cm]
 				\end{center}
+				\newpage
 				\subsubsection{Gehäuse der Kameraschwenkung} %Felix
+				Das Gehäuse für die Kameraschwenkung wurde so konstruiert, dass es eine robuste und sichere Halterung für eine Kamera bietet. Es besteht aus mehreren Bauteilen, die eine einfache Montage und Demontage ermöglichen.
+				
+				\begin{center}
+					\begin{minipage}[t]{0.7\textwidth}
+						\includegraphics[scale=0.3]{Pictures/Kameragehäuse}
+						\captionof{figure}{Kameragehäuse}
+						\label{fig:camturn}
+						\vspace{-10pt}
+						\begin{center}
+							\par\small Quelle: eigene Abbildung 
+						\end{center}
+					\end{minipage} \\[0.20cm]
+				\end{center}
+				\textbf{Aufbau und Funktionen:}
+				\begin{itemize}
+					\item \textbf{Hauptgehäuse:} Der größte Bauteil bildet das Grundgerüst der Halterung. Es ist als stabiler Kasten ausgeführt, der die Kamera aufnimmt und schützt. Eine Aussparung an der Oberseite ermöglicht die einfache Installation und Fixierung der Kamera. Nachdem die Kamera platziert ist, kann die Öffnung mit einer Platte geschlossen werden.
+					\item \textbf{Kabeldurchführung:} Eine separate Abdeckplatte mit einer runden Öffnung dient zur Kabelführung. Dadurch können Stromversorgung und Datenleitungen sicher verlegt werden, ohne die Beweglichkeit der Kamera zu beeinträchtigen.
+					\item \textbf{Schwenkmechanismus:} Ein angeschrägtes Bauteil mit einer Befestigungsbohrung dient zur Montage des Schwenkmechanismus. Im Grundgehäuse befindet sich auf der Unterseite eine Aussparung, in der der Servomotor eingesetzt wird. Die Achse des Servomotors wird anschließend in die Befestigungsbohrung des angeschrägten Bauteils geführt, um die Schwenkbewegung der Kamera zu ermöglichen.
+				\end{itemize}
+				
+				\begin{center}
+					\begin{minipage}[t]{0.2\textwidth}
+						\includegraphics[scale=0.5]{Pictures/Aussparung_servo}
+						\captionof{figure}{Aussparung für den Servomotor}
+						\label{fig:camturn}
+						\vspace{-10pt}
+						\begin{center}
+							\par\small Quelle: eigene Abbildung
+						\end{center}
+					\end{minipage} \\[0.70cm]
+				\end{center}
+				
 	\newpage
 	\section{Sensoren}
 	
