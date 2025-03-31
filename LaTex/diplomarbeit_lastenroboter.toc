@@ -6,90 +6,90 @@
 \contentsline {subsection}{\numberline {2.1}Projektteam}{9}{subsection.2.1}%
 \contentsline {subsection}{\numberline {2.2}Projektstrukturplan}{10}{subsection.2.2}%
 \contentsline {subsection}{\numberline {2.3}Meilensteine}{11}{subsection.2.3}%
-\contentsline {subsection}{\numberline {2.4}Kostenaufstellung}{11}{subsection.2.4}%
-\contentsline {section}{\numberline {3}Antrieb}{12}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Motoren}{12}{subsection.3.1}%
-\contentsline {subsubsection}{\numberline {3.1.1}Übersicht}{12}{subsubsection.3.1.1}%
-\contentsline {subsubsection}{\numberline {3.1.2}Funktionsweise}{12}{subsubsection.3.1.2}%
-\contentsline {subsubsection}{\numberline {3.1.3}Technische Daten}{14}{subsubsection.3.1.3}%
-\contentsline {subsection}{\numberline {3.2}Motorentreiber}{14}{subsection.3.2}%
-\contentsline {subsubsection}{\numberline {3.2.1}Überblick}{14}{subsubsection.3.2.1}%
-\contentsline {subsubsection}{\numberline {3.2.2}Aufbau und Funktionen}{14}{subsubsection.3.2.2}%
-\contentsline {subsection}{\numberline {3.3}Schaltungsaufbau mit einem Motor}{18}{subsection.3.3}%
-\contentsline {subsubsection}{\numberline {3.3.1}Komponenten}{18}{subsubsection.3.3.1}%
-\contentsline {subsubsection}{\numberline {3.3.2}Schaltungsaufbau und Verbindungen}{18}{subsubsection.3.3.2}%
-\contentsline {subsection}{\numberline {3.4}Schaltungsaufbau mit vier Motor}{20}{subsection.3.4}%
-\contentsline {subsubsection}{\numberline {3.4.1}Komponenten}{20}{subsubsection.3.4.1}%
-\contentsline {subsubsection}{\numberline {3.4.2}Schaltungserweiterung für vier Motoren:}{21}{subsubsection.3.4.2}%
-\contentsline {subsection}{\numberline {3.5}Code}{21}{subsection.3.5}%
-\contentsline {subsubsection}{\numberline {3.5.1}Initialisierung}{21}{subsubsection.3.5.1}%
-\contentsline {subsubsection}{\numberline {3.5.2}Setup-Code}{23}{subsubsection.3.5.2}%
-\contentsline {subsubsection}{\numberline {3.5.3}Handling der Steuerbefehle}{24}{subsubsection.3.5.3}%
-\contentsline {subsubsection}{\numberline {3.5.4}Ansteuerung der Treiberplatinen:}{25}{subsubsection.3.5.4}%
-\contentsline {section}{\numberline {4}Webserver}{29}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Grundlegende Ziele}{29}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}Webserver}{30}{subsection.4.2}%
-\contentsline {subsubsection}{\numberline {4.2.1}Webserver Setup}{30}{subsubsection.4.2.1}%
-\contentsline {subsubsection}{\numberline {4.2.2}SPIFFS Setup}{31}{subsubsection.4.2.2}%
-\contentsline {subsection}{\numberline {4.3}WebSocket Kommunikation}{33}{subsection.4.3}%
-\contentsline {subsubsection}{\numberline {4.3.1}Kommunikation Setup}{33}{subsubsection.4.3.1}%
-\contentsline {subsubsection}{\numberline {4.3.2}Message Handling}{34}{subsubsection.4.3.2}%
-\contentsline {subsection}{\numberline {4.4}Website}{38}{subsection.4.4}%
-\contentsline {subsubsection}{\numberline {4.4.1}Implementierung der Steuerung}{38}{subsubsection.4.4.1}%
-\contentsline {subsubsection}{\numberline {4.4.2}Anzeige von Sensordaten und Verbindungsstatus}{49}{subsubsection.4.4.2}%
-\contentsline {subsection}{\numberline {4.5}Herausforderungen und Optimierungen}{56}{subsection.4.5}%
-\contentsline {subsubsection}{\numberline {4.5.1}Latenz- und Performance Optimierungen}{56}{subsubsection.4.5.1}%
-\contentsline {section}{\numberline {5}Gehäuse}{57}{section.5}%
-\contentsline {subsection}{\numberline {5.1}Planung und Design}{57}{subsection.5.1}%
-\contentsline {subsection}{\numberline {5.2}Realisierung}{63}{subsection.5.2}%
-\contentsline {subsection}{\numberline {5.3}Vor- und Nachteile von Elektrodenschweißen}{65}{subsection.5.3}%
-\contentsline {subsection}{\numberline {5.4}Materialliste}{70}{subsection.5.4}%
-\contentsline {subsubsection}{\numberline {5.4.1}Stahlliste}{70}{subsubsection.5.4.1}%
-\contentsline {subsubsection}{\numberline {5.4.2}Komponentenliste}{70}{subsubsection.5.4.2}%
-\contentsline {section}{\numberline {6}Hardwaredesign}{71}{section.6}%
-\contentsline {subsection}{\numberline {6.1}Zielsetzung}{71}{subsection.6.1}%
-\contentsline {subsection}{\numberline {6.2}Grundschaltungen}{72}{subsection.6.2}%
-\contentsline {subsubsection}{\numberline {6.2.1}Schaltplan Steuerplatine}{73}{subsubsection.6.2.1}%
-\contentsline {subsubsection}{\numberline {6.2.2}8. Expander\_Anschlüsse (Zusätzliche GPIO-Erweiterung über MCP23017)}{80}{subsubsection.6.2.2}%
-\contentsline {subsection}{\numberline {6.3}Steuerplatine PCB}{85}{subsection.6.3}%
-\contentsline {subsection}{\numberline {6.4}Leiterplatten herstellen mit JLCPCB}{86}{subsection.6.4}%
-\contentsline {subsection}{\numberline {6.5}Bestückte Platine}{86}{subsection.6.5}%
-\contentsline {section}{\numberline {7}Kamera}{87}{section.7}%
-\contentsline {subsection}{\numberline {7.1}Kamera im Überblick}{87}{subsection.7.1}%
-\contentsline {subsubsection}{\numberline {7.1.1}Technische Daten}{88}{subsubsection.7.1.1}%
-\contentsline {subsubsection}{\numberline {7.1.2}Nutzung}{88}{subsubsection.7.1.2}%
-\contentsline {subsection}{\numberline {7.2}Code}{89}{subsection.7.2}%
-\contentsline {subsubsection}{\numberline {7.2.1}Kamera Setup}{89}{subsubsection.7.2.1}%
-\contentsline {subsubsection}{\numberline {7.2.2}Videoübertragung}{91}{subsubsection.7.2.2}%
-\contentsline {subsection}{\numberline {7.3}Schwenkmechanismus der Kamera}{94}{subsection.7.3}%
-\contentsline {subsubsection}{\numberline {7.3.1}Servomotor}{94}{subsubsection.7.3.1}%
-\contentsline {subsubsection}{\numberline {7.3.2}Nutzung}{95}{subsubsection.7.3.2}%
-\contentsline {subsubsection}{\numberline {7.3.3}Verbindung und Steuerung des Servomotors}{95}{subsubsection.7.3.3}%
-\contentsline {subsubsection}{\numberline {7.3.4}Gehäuse der Kameraschwenkung}{98}{subsubsection.7.3.4}%
-\contentsline {section}{\numberline {8}Sensoren und Aktoren}{100}{section.8}%
-\contentsline {subsection}{\numberline {8.1}Abstandsensor}{100}{subsection.8.1}%
-\contentsline {subsubsection}{\numberline {8.1.1}Grundprinzip}{100}{subsubsection.8.1.1}%
-\contentsline {subsubsection}{\numberline {8.1.2}Schaltungaufbau}{102}{subsubsection.8.1.2}%
-\contentsline {subsubsection}{\numberline {8.1.3}Nutzung}{103}{subsubsection.8.1.3}%
-\contentsline {subsubsection}{\numberline {8.1.4}Code}{104}{subsubsection.8.1.4}%
-\contentsline {subsection}{\numberline {8.2}Gewichtsmessung}{105}{subsection.8.2}%
-\contentsline {subsubsection}{\numberline {8.2.1}Grundprinzip}{105}{subsubsection.8.2.1}%
-\contentsline {subsubsection}{\numberline {8.2.2}Schaltungaufbau}{108}{subsubsection.8.2.2}%
-\contentsline {subsubsection}{\numberline {8.2.3}Nutzung}{109}{subsubsection.8.2.3}%
-\contentsline {subsubsection}{\numberline {8.2.4}Code}{110}{subsubsection.8.2.4}%
-\contentsline {subsection}{\numberline {8.3}Spannungsmessung per ESP32}{112}{subsection.8.3}%
-\contentsline {subsubsection}{\numberline {8.3.1}Code}{112}{subsubsection.8.3.1}%
-\contentsline {subsubsection}{\numberline {8.3.2}Verbesserungen und Optimierungen}{115}{subsubsection.8.3.2}%
-\contentsline {subsection}{\numberline {8.4}Lichtsteuerung per Transistor}{115}{subsection.8.4}%
-\contentsline {subsubsection}{\numberline {8.4.1}Code}{115}{subsubsection.8.4.1}%
-\contentsline {section}{\numberline {9}Entwicklungstools}{118}{section.9}%
-\contentsline {subsection}{\numberline {9.1}Autodesk Fusion}{118}{subsection.9.1}%
-\contentsline {subsection}{\numberline {9.2}Autodesk Eagle}{118}{subsection.9.2}%
-\contentsline {subsection}{\numberline {9.3}VS-Code}{118}{subsection.9.3}%
-\contentsline {subsubsection}{\numberline {9.3.1}Setup}{119}{subsubsection.9.3.1}%
-\contentsline {subsubsection}{\numberline {9.3.2}Bibliotheken}{119}{subsubsection.9.3.2}%
-\contentsline {subsubsection}{\numberline {9.3.3}verwendete Bibliotheken}{119}{subsubsection.9.3.3}%
-\contentsline {subsection}{\numberline {9.4}LaTex}{121}{subsection.9.4}%
-\contentsline {subsection}{\numberline {9.5}GitHub}{121}{subsection.9.5}%
-\contentsline {section}{\numberline {10}Abbildungsverzeichnis}{122}{section.10}%
-\contentsline {section}{\numberline {11}Literaturverzeichnis}{127}{section.11}%
+\contentsline {subsection}{\numberline {2.4}Kostenaufstellung}{12}{subsection.2.4}%
+\contentsline {section}{\numberline {3}Antrieb}{13}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Motoren}{13}{subsection.3.1}%
+\contentsline {subsubsection}{\numberline {3.1.1}Übersicht}{13}{subsubsection.3.1.1}%
+\contentsline {subsubsection}{\numberline {3.1.2}Funktionsweise}{13}{subsubsection.3.1.2}%
+\contentsline {subsubsection}{\numberline {3.1.3}Technische Daten}{15}{subsubsection.3.1.3}%
+\contentsline {subsection}{\numberline {3.2}Motorentreiber}{15}{subsection.3.2}%
+\contentsline {subsubsection}{\numberline {3.2.1}Überblick}{15}{subsubsection.3.2.1}%
+\contentsline {subsubsection}{\numberline {3.2.2}Aufbau und Funktionen}{15}{subsubsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.3}Schaltungsaufbau mit einem Motor}{19}{subsection.3.3}%
+\contentsline {subsubsection}{\numberline {3.3.1}Komponenten}{19}{subsubsection.3.3.1}%
+\contentsline {subsubsection}{\numberline {3.3.2}Schaltungsaufbau und Verbindungen}{19}{subsubsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.4}Schaltungsaufbau mit vier Motor}{21}{subsection.3.4}%
+\contentsline {subsubsection}{\numberline {3.4.1}Komponenten}{21}{subsubsection.3.4.1}%
+\contentsline {subsubsection}{\numberline {3.4.2}Schaltungserweiterung für vier Motoren:}{22}{subsubsection.3.4.2}%
+\contentsline {subsection}{\numberline {3.5}Code}{22}{subsection.3.5}%
+\contentsline {subsubsection}{\numberline {3.5.1}Initialisierung}{22}{subsubsection.3.5.1}%
+\contentsline {subsubsection}{\numberline {3.5.2}Setup-Code}{24}{subsubsection.3.5.2}%
+\contentsline {subsubsection}{\numberline {3.5.3}Handling der Steuerbefehle}{25}{subsubsection.3.5.3}%
+\contentsline {subsubsection}{\numberline {3.5.4}Ansteuerung der Treiberplatinen:}{26}{subsubsection.3.5.4}%
+\contentsline {section}{\numberline {4}Webserver}{30}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Grundlegende Ziele}{30}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Webserver}{31}{subsection.4.2}%
+\contentsline {subsubsection}{\numberline {4.2.1}Webserver Setup}{31}{subsubsection.4.2.1}%
+\contentsline {subsubsection}{\numberline {4.2.2}SPIFFS Setup}{32}{subsubsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.3}WebSocket Kommunikation}{34}{subsection.4.3}%
+\contentsline {subsubsection}{\numberline {4.3.1}Kommunikation Setup}{34}{subsubsection.4.3.1}%
+\contentsline {subsubsection}{\numberline {4.3.2}Message Handling}{35}{subsubsection.4.3.2}%
+\contentsline {subsection}{\numberline {4.4}Website}{39}{subsection.4.4}%
+\contentsline {subsubsection}{\numberline {4.4.1}Implementierung der Steuerung}{39}{subsubsection.4.4.1}%
+\contentsline {subsubsection}{\numberline {4.4.2}Anzeige von Sensordaten und Verbindungsstatus}{50}{subsubsection.4.4.2}%
+\contentsline {subsection}{\numberline {4.5}Herausforderungen und Optimierungen}{57}{subsection.4.5}%
+\contentsline {subsubsection}{\numberline {4.5.1}Latenz- und Performance Optimierungen}{57}{subsubsection.4.5.1}%
+\contentsline {section}{\numberline {5}Gehäuse}{58}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Planung und Design}{58}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Realisierung}{64}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}Vor- und Nachteile von Elektrodenschweißen}{66}{subsection.5.3}%
+\contentsline {subsection}{\numberline {5.4}Materialliste}{71}{subsection.5.4}%
+\contentsline {subsubsection}{\numberline {5.4.1}Stahlliste}{71}{subsubsection.5.4.1}%
+\contentsline {subsubsection}{\numberline {5.4.2}Komponentenliste}{71}{subsubsection.5.4.2}%
+\contentsline {section}{\numberline {6}Hardwaredesign}{72}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Zielsetzung}{72}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Grundschaltungen}{73}{subsection.6.2}%
+\contentsline {subsubsection}{\numberline {6.2.1}Schaltplan Steuerplatine}{74}{subsubsection.6.2.1}%
+\contentsline {subsubsection}{\numberline {6.2.2}8. Expander\_Anschlüsse (Zusätzliche GPIO-Erweiterung über MCP23017)}{81}{subsubsection.6.2.2}%
+\contentsline {subsection}{\numberline {6.3}Steuerplatine PCB}{86}{subsection.6.3}%
+\contentsline {subsection}{\numberline {6.4}Leiterplatten herstellen mit JLCPCB}{87}{subsection.6.4}%
+\contentsline {subsection}{\numberline {6.5}Bestückte Platine}{87}{subsection.6.5}%
+\contentsline {section}{\numberline {7}Kamera}{88}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Kamera im Überblick}{88}{subsection.7.1}%
+\contentsline {subsubsection}{\numberline {7.1.1}Technische Daten}{89}{subsubsection.7.1.1}%
+\contentsline {subsubsection}{\numberline {7.1.2}Nutzung}{89}{subsubsection.7.1.2}%
+\contentsline {subsection}{\numberline {7.2}Code}{90}{subsection.7.2}%
+\contentsline {subsubsection}{\numberline {7.2.1}Kamera Setup}{90}{subsubsection.7.2.1}%
+\contentsline {subsubsection}{\numberline {7.2.2}Videoübertragung}{92}{subsubsection.7.2.2}%
+\contentsline {subsection}{\numberline {7.3}Schwenkmechanismus der Kamera}{95}{subsection.7.3}%
+\contentsline {subsubsection}{\numberline {7.3.1}Servomotor}{95}{subsubsection.7.3.1}%
+\contentsline {subsubsection}{\numberline {7.3.2}Nutzung}{96}{subsubsection.7.3.2}%
+\contentsline {subsubsection}{\numberline {7.3.3}Verbindung und Steuerung des Servomotors}{96}{subsubsection.7.3.3}%
+\contentsline {subsubsection}{\numberline {7.3.4}Gehäuse der Kameraschwenkung}{99}{subsubsection.7.3.4}%
+\contentsline {section}{\numberline {8}Sensoren und Aktoren}{101}{section.8}%
+\contentsline {subsection}{\numberline {8.1}Abstandsensor}{101}{subsection.8.1}%
+\contentsline {subsubsection}{\numberline {8.1.1}Grundprinzip}{101}{subsubsection.8.1.1}%
+\contentsline {subsubsection}{\numberline {8.1.2}Schaltungaufbau}{103}{subsubsection.8.1.2}%
+\contentsline {subsubsection}{\numberline {8.1.3}Nutzung}{104}{subsubsection.8.1.3}%
+\contentsline {subsubsection}{\numberline {8.1.4}Code}{105}{subsubsection.8.1.4}%
+\contentsline {subsection}{\numberline {8.2}Gewichtsmessung}{106}{subsection.8.2}%
+\contentsline {subsubsection}{\numberline {8.2.1}Grundprinzip}{106}{subsubsection.8.2.1}%
+\contentsline {subsubsection}{\numberline {8.2.2}Schaltungaufbau}{109}{subsubsection.8.2.2}%
+\contentsline {subsubsection}{\numberline {8.2.3}Nutzung}{110}{subsubsection.8.2.3}%
+\contentsline {subsubsection}{\numberline {8.2.4}Code}{111}{subsubsection.8.2.4}%
+\contentsline {subsection}{\numberline {8.3}Spannungsmessung per ESP32}{113}{subsection.8.3}%
+\contentsline {subsubsection}{\numberline {8.3.1}Code}{113}{subsubsection.8.3.1}%
+\contentsline {subsubsection}{\numberline {8.3.2}Verbesserungen und Optimierungen}{116}{subsubsection.8.3.2}%
+\contentsline {subsection}{\numberline {8.4}Lichtsteuerung per Transistor}{116}{subsection.8.4}%
+\contentsline {subsubsection}{\numberline {8.4.1}Code}{116}{subsubsection.8.4.1}%
+\contentsline {section}{\numberline {9}Entwicklungstools}{119}{section.9}%
+\contentsline {subsection}{\numberline {9.1}Autodesk Fusion}{119}{subsection.9.1}%
+\contentsline {subsection}{\numberline {9.2}Autodesk Eagle}{119}{subsection.9.2}%
+\contentsline {subsection}{\numberline {9.3}VS-Code}{119}{subsection.9.3}%
+\contentsline {subsubsection}{\numberline {9.3.1}Setup}{120}{subsubsection.9.3.1}%
+\contentsline {subsubsection}{\numberline {9.3.2}Bibliotheken}{120}{subsubsection.9.3.2}%
+\contentsline {subsubsection}{\numberline {9.3.3}verwendete Bibliotheken}{120}{subsubsection.9.3.3}%
+\contentsline {subsection}{\numberline {9.4}LaTex}{122}{subsection.9.4}%
+\contentsline {subsection}{\numberline {9.5}GitHub}{122}{subsection.9.5}%
+\contentsline {section}{\numberline {10}Abbildungsverzeichnis}{123}{section.10}%
+\contentsline {section}{\numberline {11}Literaturverzeichnis}{128}{section.11}%
