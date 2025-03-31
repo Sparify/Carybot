@@ -1471,9 +1471,9 @@ Im HTML-Code wird die Status-Box als HTML \texttt{<span>}-Tag definiert. Für da
 		Nachdem alle Stahlteile zugeschnitten waren, wurde das Gehäuse verschweißt. Zuerst wurde der rechteckige Stahlrahmen ausgerichtet, um sicherzustellen, dass alle Teile korrekt positioniert sind. Um den Zugang zur Elektronik im Inneren des Lastenroboters zu erleichtern, wurden am oberen Rahmen zwei kurze Stangen angebracht, sodass der obere Teil leicht abgenommen werden kann.
 		
 		\begin{center} 
-			\begin{minipage}[t]{0.6\textwidth}
-				\includegraphics{Pictures/modell-fertig}
-				\captionof{figure}{<Platzhalter>}
+			\begin{minipage}[t]{0.53\textwidth}
+				\includegraphics[scale=0.2]{Pictures/oberen Rahmen}
+				\captionof{figure}{Oberer Rahmen}
 				\label{fig:modell-fertig}
 				\vspace{-10pt}
 				\begin{center}
@@ -1488,7 +1488,7 @@ Im HTML-Code wird die Status-Box als HTML \texttt{<span>}-Tag definiert. Für da
 	Beim Elektrodenschweißen wird ein elektrischer Lichtbogen zwischen der Stabelektrode und Material erzeugt. Durch die Hohe Temperatur des Lichtbogens schmilzt die Elektrode aber auch das Material. Die Elektrode besteht aus einem Metallkern und einer Umhüllung und liefert somit den Zusatzwerkstoff gleich mit.\\[0.5cm]
 	Zum Schweißen wird die Stabelektrode in den Elektrodenhalter eingespannt und vom Schweißer an der Nahtstelle entlanggeführt. Die Umhüllung schmilzt während des Schweißens ab und schützt durch freiwerdende Gase und Schlacke das Schmelzbad und den Lichtbogen vor der Außenluft.\footnote{https://www.lorch.eu/de/produkte/manuelles-schweissen/elektroden-schweissen}
 	
-	
+	\newpage
 	\subsection{Vor- und Nachteile von Elektrodenschweißen}
 	
 	 \subsubsection*{Vorteile}
@@ -1532,13 +1532,13 @@ Im HTML-Code wird die Status-Box als HTML \texttt{<span>}-Tag definiert. Für da
 	
 	\subsubsection*{Schritt 3: Montage der BLDC-Motoren}
 	
-	In diesem Schritt erfolgt die Montage der BLDC-Motoren. Dabei ist zu beachten das die Motoren exakt ausgerichtet sind und sich während dem Betrieb nicht verdrehen oder lockern.\\[2cm]
+	In diesem Schritt erfolgt die Montage der BLDC-Motoren. Dabei ist zu beachten das die Motoren exakt ausgerichtet sind und sich während dem Betrieb nicht verdrehen oder lockern.\\[0.7cm]
 	Um zu verhindern das sich die BLDC-Motoren verdrehen wurde auf beide Seiten eine Querstrebe verschweißt. Nachdem die Querstange montiert war, wurde für jeden Motor zwei Löcher gebohrt damit sie dort angeschraubt werden können. Die Befestigung erfolgte mithilfe von M4-Schrauben, die mit einer Mutter festgezogen wurden.
 	
 	\begin{center} 
-		\begin{minipage}[t]{0.6\textwidth}
-			\includegraphics{Pictures/modell-fertig}
-			\captionof{figure}{<Bild vom befestigen>}
+		\begin{minipage}[t]{0.33\textwidth}
+			\includegraphics[scale=0.07]{Pictures/Motor-befestigung}
+			\captionof{figure}{Motorbefestigung}
 			\label{fig:modell-fertig}
 			\vspace{-10pt}
 			\begin{center}
@@ -1549,9 +1549,9 @@ Im HTML-Code wird die Status-Box als HTML \texttt{<span>}-Tag definiert. Für da
 	Da BLDC-Motoren bei hohen Drehzahlen ein starkes Drehmoment erzeugen können, wurden sie zusätzlich mit Schellen am Boden befestigt. Diese verhindern, dass sich die Motoren während des Betriebs lockern.
 	
 		\begin{center} 
-		\begin{minipage}[t]{0.6\textwidth}
-			\includegraphics{Pictures/modell-fertig}
-			\captionof{figure}{<Bild Motoren mit Schelle>}
+		\begin{minipage}[t]{0.2\textwidth}
+			\includegraphics[scale=0.07]{Pictures/Motor-befestigung2}
+			\captionof{figure}{Motorbefestigung}
 			\label{fig:modell-fertig}
 			\vspace{-10pt}
 			\begin{center}
@@ -1612,7 +1612,21 @@ Im HTML-Code wird die Status-Box als HTML \texttt{<span>}-Tag definiert. Für da
 	 	\item Die Platzierung wurde sorgfältig gewählt, um eine gleichmäßige Gewichtsverteilung sicherzustellen.
 	 	\item Die Wägezelle wurde so montiert, dass sie möglichst direkt das gesamte Gewicht der Last erfasst, ohne dass zusätzliche Kräfte durch die Rahmenstruktur einwirken.
 	 \end{itemize}
-
+	 
+	 
+	 \begin{center} 
+	 	\begin{minipage}[t]{0.3\textwidth}
+	 		\includegraphics[scale=0.07]{Pictures/Montierung-wägezelle}
+	 		\captionof{figure}{Integration der Wägezelle}
+	 		\label{fig:modell-fertig}
+	 		\vspace{-10pt}
+	 		\begin{center}
+	 			\par\small Quelle: eigene Abbildung 
+	 		\end{center}
+	 	\end{minipage} \\[0.75cm]
+	 \end{center} 
+	 
+	 \newpage
 	 \subsubsection*{Schritt 6: Elektronik-Integration}
 	 
 	 Nach der mechanischen Konstruktion wurde die Elektronik montiert. Dazu gehören:
@@ -2421,6 +2435,8 @@ Im HTML-Code wird die Status-Box als HTML \texttt{<span>}-Tag definiert. Für da
 						\end{center}
 					\end{minipage} \\[0.70cm]
 				\end{center}
+				\textbf{Montierung:}\\[0.2cm]
+				Das Gehäuse für die Kameraschwenkung wird auf der unteren Verkantrohr-Konstruktion befestigt. Dies sorgt für eine stabile und vibrationsarme Montage. Die Befestigung erfolgt über Schrauben und andere geeignete Verbindungselemente, um eine sichere Fixierung zu gewährleisten. Der Servomotor ist im Inneren des Gehäuses untergebracht und ermöglicht die präzise Schwenkbewegung der Kamera.
 				
 	\newpage
 	\section{Sensoren}
@@ -2815,8 +2831,14 @@ Im HTML-Code wird die Status-Box als HTML \texttt{<span>}-Tag definiert. Für da
 	\section{Entwicklungstools}
 	
 	 \subsection{Autodesk Fusion}
+
+	 Autodesk Fusion ist eine cloudbasierte 3D-CAD-, CAM- und CAE-Software, die für die Konstruktion, Simulation und Fertigung von Bauteilen verwendet wird. Die Software bietet eine Vielzahl von Funktionen, um den Entwicklungsprozess effizient zu gestalten, darunter parametrisches Modellieren, Freiformmodellierung und Baugruppenverwaltung. Autodesk Fusion ist unter https://www.autodesk.de/products/fusion verfügbar und kann sowohl als Desktop-Anwendung als auch über die Cloud genutzt werden. \\[0.5cm]
+	 Für unser Projekt wurde Autodesk Fusion verwendet, um komplexe Bauteile zu entwerfen und zu optimieren. Die Software ermöglicht eine benutzerfreundliche Bedienung und bietet leistungsstarke Werkzeuge zur Analyse und Simulation. \\[0.5cm]
 	 
-	 \subsection{Eagle}
+	 
+	 \subsection{Autodesk Eagle}
+	 Autodesk Eagle ist eine leistungsstarke Software zur Erstellung von Leiterplatten-Layouts (PCB-Design). Sie wird vor allem für das Entwerfen und Platzieren elektronischer Schaltungen genutzt. Eagle bietet umfangreiche Funktionen wie einen Schematic-Editor, ein PCB-Layout-Tool und eine große Bauteilbibliothek. Die Software ist unter https://www.autodesk.de/products/eagle verfügbar und kann sowohl eigenständig als auch in Kombination mit Autodesk Fusion verwendet werden. \\[0.5cm]
+	 Für unser Projekt wurde Autodesk Eagle zur Entwicklung und Optimierung elektronischer Schaltungen genutzt. Durch die benutzerfreundliche Benutzeroberfläche und die Bibliotheken mit zahlreichen vorgefertigten Bauteilen konnte der Entwicklungsprozess effizient gestaltet werden.
 	 	 
 	 \subsection{VS-Code}
 	 

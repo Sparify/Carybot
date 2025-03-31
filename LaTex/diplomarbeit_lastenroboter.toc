@@ -42,7 +42,7 @@
 \contentsline {section}{\numberline {5}Gehäuse}{57}{section.5}%
 \contentsline {subsection}{\numberline {5.1}Planung und Design}{57}{subsection.5.1}%
 \contentsline {subsection}{\numberline {5.2}Realisierung}{63}{subsection.5.2}%
-\contentsline {subsection}{\numberline {5.3}Vor- und Nachteile von Elektrodenschweißen}{64}{subsection.5.3}%
+\contentsline {subsection}{\numberline {5.3}Vor- und Nachteile von Elektrodenschweißen}{65}{subsection.5.3}%
 \contentsline {subsection}{\numberline {5.4}Materialliste}{70}{subsection.5.4}%
 \contentsline {subsubsection}{\numberline {5.4.1}Stahlliste}{70}{subsubsection.5.4.1}%
 \contentsline {subsubsection}{\numberline {5.4.2}Komponentenliste}{70}{subsubsection.5.4.2}%
@@ -66,26 +66,26 @@
 \contentsline {subsubsection}{\numberline {7.3.2}Nutzung}{95}{subsubsection.7.3.2}%
 \contentsline {subsubsection}{\numberline {7.3.3}Verbindung und Steuerung des Servomotors}{95}{subsubsection.7.3.3}%
 \contentsline {subsubsection}{\numberline {7.3.4}Gehäuse der Kameraschwenkung}{98}{subsubsection.7.3.4}%
-\contentsline {section}{\numberline {8}Sensoren}{99}{section.8}%
-\contentsline {subsection}{\numberline {8.1}Abstandsensor}{99}{subsection.8.1}%
-\contentsline {subsubsection}{\numberline {8.1.1}Grundprinzip}{99}{subsubsection.8.1.1}%
-\contentsline {subsubsection}{\numberline {8.1.2}Schaltungaufbau}{101}{subsubsection.8.1.2}%
-\contentsline {subsubsection}{\numberline {8.1.3}Nutzung}{102}{subsubsection.8.1.3}%
-\contentsline {subsubsection}{\numberline {8.1.4}Code}{103}{subsubsection.8.1.4}%
-\contentsline {subsection}{\numberline {8.2}Gewichtsmessung}{104}{subsection.8.2}%
-\contentsline {subsubsection}{\numberline {8.2.1}Grundprinzip}{104}{subsubsection.8.2.1}%
-\contentsline {subsubsection}{\numberline {8.2.2}Schaltungaufbau}{107}{subsubsection.8.2.2}%
-\contentsline {subsubsection}{\numberline {8.2.3}Nutzung}{108}{subsubsection.8.2.3}%
-\contentsline {subsubsection}{\numberline {8.2.4}Code}{109}{subsubsection.8.2.4}%
-\contentsline {subsection}{\numberline {8.3}Spannungsmessung per ESP32}{111}{subsection.8.3}%
-\contentsline {section}{\numberline {9}Entwicklungstools}{115}{section.9}%
-\contentsline {subsection}{\numberline {9.1}Autodesk Fusion}{115}{subsection.9.1}%
-\contentsline {subsection}{\numberline {9.2}Eagle}{115}{subsection.9.2}%
-\contentsline {subsection}{\numberline {9.3}VS-Code}{115}{subsection.9.3}%
-\contentsline {subsubsection}{\numberline {9.3.1}Setup}{115}{subsubsection.9.3.1}%
-\contentsline {subsubsection}{\numberline {9.3.2}Bibliotheken}{116}{subsubsection.9.3.2}%
-\contentsline {subsubsection}{\numberline {9.3.3}verwendete Bibliotheken}{116}{subsubsection.9.3.3}%
-\contentsline {subsection}{\numberline {9.4}LaTex}{117}{subsection.9.4}%
-\contentsline {subsection}{\numberline {9.5}GitHub}{117}{subsection.9.5}%
-\contentsline {section}{\numberline {10}Abbildungsverzeichnis}{119}{section.10}%
-\contentsline {section}{\numberline {11}Literaturverzeichnis}{124}{section.11}%
+\contentsline {section}{\numberline {8}Sensoren}{100}{section.8}%
+\contentsline {subsection}{\numberline {8.1}Abstandsensor}{100}{subsection.8.1}%
+\contentsline {subsubsection}{\numberline {8.1.1}Grundprinzip}{100}{subsubsection.8.1.1}%
+\contentsline {subsubsection}{\numberline {8.1.2}Schaltungaufbau}{102}{subsubsection.8.1.2}%
+\contentsline {subsubsection}{\numberline {8.1.3}Nutzung}{103}{subsubsection.8.1.3}%
+\contentsline {subsubsection}{\numberline {8.1.4}Code}{104}{subsubsection.8.1.4}%
+\contentsline {subsection}{\numberline {8.2}Gewichtsmessung}{105}{subsection.8.2}%
+\contentsline {subsubsection}{\numberline {8.2.1}Grundprinzip}{105}{subsubsection.8.2.1}%
+\contentsline {subsubsection}{\numberline {8.2.2}Schaltungaufbau}{108}{subsubsection.8.2.2}%
+\contentsline {subsubsection}{\numberline {8.2.3}Nutzung}{109}{subsubsection.8.2.3}%
+\contentsline {subsubsection}{\numberline {8.2.4}Code}{110}{subsubsection.8.2.4}%
+\contentsline {subsection}{\numberline {8.3}Spannungsmessung per ESP32}{112}{subsection.8.3}%
+\contentsline {section}{\numberline {9}Entwicklungstools}{116}{section.9}%
+\contentsline {subsection}{\numberline {9.1}Autodesk Fusion}{116}{subsection.9.1}%
+\contentsline {subsection}{\numberline {9.2}Autodesk Eagle}{116}{subsection.9.2}%
+\contentsline {subsection}{\numberline {9.3}VS-Code}{116}{subsection.9.3}%
+\contentsline {subsubsection}{\numberline {9.3.1}Setup}{117}{subsubsection.9.3.1}%
+\contentsline {subsubsection}{\numberline {9.3.2}Bibliotheken}{117}{subsubsection.9.3.2}%
+\contentsline {subsubsection}{\numberline {9.3.3}verwendete Bibliotheken}{117}{subsubsection.9.3.3}%
+\contentsline {subsection}{\numberline {9.4}LaTex}{119}{subsection.9.4}%
+\contentsline {subsection}{\numberline {9.5}GitHub}{119}{subsection.9.5}%
+\contentsline {section}{\numberline {10}Abbildungsverzeichnis}{120}{section.10}%
+\contentsline {section}{\numberline {11}Literaturverzeichnis}{125}{section.11}%
