@@ -58,15 +58,15 @@
 \contentsline {subsection}{\numberline {7.1}Kamera im Überblick}{87}{subsection.7.1}%
 \contentsline {subsubsection}{\numberline {7.1.1}Technische Daten}{88}{subsubsection.7.1.1}%
 \contentsline {subsubsection}{\numberline {7.1.2}Nutzung}{88}{subsubsection.7.1.2}%
-\contentsline {subsection}{\numberline {7.2}Code}{90}{subsection.7.2}%
-\contentsline {subsubsection}{\numberline {7.2.1}Kamera Setup}{90}{subsubsection.7.2.1}%
+\contentsline {subsection}{\numberline {7.2}Code}{89}{subsection.7.2}%
+\contentsline {subsubsection}{\numberline {7.2.1}Kamera Setup}{89}{subsubsection.7.2.1}%
 \contentsline {subsubsection}{\numberline {7.2.2}Videoübertragung}{91}{subsubsection.7.2.2}%
 \contentsline {subsection}{\numberline {7.3}Schwenkmechanismus der Kamera}{94}{subsection.7.3}%
 \contentsline {subsubsection}{\numberline {7.3.1}Servomotor}{94}{subsubsection.7.3.1}%
 \contentsline {subsubsection}{\numberline {7.3.2}Nutzung}{95}{subsubsection.7.3.2}%
 \contentsline {subsubsection}{\numberline {7.3.3}Verbindung und Steuerung des Servomotors}{95}{subsubsection.7.3.3}%
 \contentsline {subsubsection}{\numberline {7.3.4}Gehäuse der Kameraschwenkung}{98}{subsubsection.7.3.4}%
-\contentsline {section}{\numberline {8}Sensoren}{100}{section.8}%
+\contentsline {section}{\numberline {8}Sensoren und Aktoren}{100}{section.8}%
 \contentsline {subsection}{\numberline {8.1}Abstandsensor}{100}{subsection.8.1}%
 \contentsline {subsubsection}{\numberline {8.1.1}Grundprinzip}{100}{subsubsection.8.1.1}%
 \contentsline {subsubsection}{\numberline {8.1.2}Schaltungaufbau}{102}{subsubsection.8.1.2}%
@@ -78,14 +78,18 @@
 \contentsline {subsubsection}{\numberline {8.2.3}Nutzung}{109}{subsubsection.8.2.3}%
 \contentsline {subsubsection}{\numberline {8.2.4}Code}{110}{subsubsection.8.2.4}%
 \contentsline {subsection}{\numberline {8.3}Spannungsmessung per ESP32}{112}{subsection.8.3}%
-\contentsline {section}{\numberline {9}Entwicklungstools}{116}{section.9}%
-\contentsline {subsection}{\numberline {9.1}Autodesk Fusion}{116}{subsection.9.1}%
-\contentsline {subsection}{\numberline {9.2}Autodesk Eagle}{116}{subsection.9.2}%
-\contentsline {subsection}{\numberline {9.3}VS-Code}{116}{subsection.9.3}%
-\contentsline {subsubsection}{\numberline {9.3.1}Setup}{117}{subsubsection.9.3.1}%
-\contentsline {subsubsection}{\numberline {9.3.2}Bibliotheken}{117}{subsubsection.9.3.2}%
-\contentsline {subsubsection}{\numberline {9.3.3}verwendete Bibliotheken}{117}{subsubsection.9.3.3}%
-\contentsline {subsection}{\numberline {9.4}LaTex}{119}{subsection.9.4}%
-\contentsline {subsection}{\numberline {9.5}GitHub}{119}{subsection.9.5}%
-\contentsline {section}{\numberline {10}Abbildungsverzeichnis}{120}{section.10}%
-\contentsline {section}{\numberline {11}Literaturverzeichnis}{125}{section.11}%
+\contentsline {subsubsection}{\numberline {8.3.1}Code}{112}{subsubsection.8.3.1}%
+\contentsline {subsubsection}{\numberline {8.3.2}Verbesserungen und Optimierungen}{115}{subsubsection.8.3.2}%
+\contentsline {subsection}{\numberline {8.4}Lichtsteuerung per Transistor}{115}{subsection.8.4}%
+\contentsline {subsubsection}{\numberline {8.4.1}Code}{115}{subsubsection.8.4.1}%
+\contentsline {section}{\numberline {9}Entwicklungstools}{118}{section.9}%
+\contentsline {subsection}{\numberline {9.1}Autodesk Fusion}{118}{subsection.9.1}%
+\contentsline {subsection}{\numberline {9.2}Autodesk Eagle}{118}{subsection.9.2}%
+\contentsline {subsection}{\numberline {9.3}VS-Code}{118}{subsection.9.3}%
+\contentsline {subsubsection}{\numberline {9.3.1}Setup}{119}{subsubsection.9.3.1}%
+\contentsline {subsubsection}{\numberline {9.3.2}Bibliotheken}{119}{subsubsection.9.3.2}%
+\contentsline {subsubsection}{\numberline {9.3.3}verwendete Bibliotheken}{119}{subsubsection.9.3.3}%
+\contentsline {subsection}{\numberline {9.4}LaTex}{121}{subsection.9.4}%
+\contentsline {subsection}{\numberline {9.5}GitHub}{121}{subsection.9.5}%
+\contentsline {section}{\numberline {10}Abbildungsverzeichnis}{122}{section.10}%
+\contentsline {section}{\numberline {11}Literaturverzeichnis}{127}{section.11}%

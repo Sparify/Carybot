@@ -84,7 +84,7 @@
 \contentsline {figure}{\numberline {83}{\ignorespaces Räder}}{61}{figure.83}%
 \contentsline {figure}{\numberline {84}{\ignorespaces Wägezellen}}{61}{figure.84}%
 \contentsline {figure}{\numberline {85}{\ignorespaces Wägezellenhalterung}}{62}{figure.85}%
-\contentsline {figure}{\numberline {86}{\ignorespaces modell-fertig}}{62}{figure.86}%
+\contentsline {figure}{\numberline {86}{\ignorespaces Fertiges Modell}}{62}{figure.86}%
 \contentsline {figure}{\numberline {87}{\ignorespaces Stahlprofile}}{63}{figure.87}%
 \contentsline {figure}{\numberline {88}{\ignorespaces Oberer Rahmen}}{64}{figure.88}%
 \contentsline {figure}{\numberline {89}{\ignorespaces Elektrodenschweißen}}{65}{figure.89}%
@@ -159,3 +159,7 @@
 \contentsline {figure}{\numberline {158}{\ignorespaces Messung der Spannung}}{114}{figure.158}%
 \contentsline {figure}{\numberline {159}{\ignorespaces Berechnung der Spannung in Prozent}}{114}{figure.159}%
 \contentsline {figure}{\numberline {160}{\ignorespaces Werte in JSON umwandeln und an Client senden}}{115}{figure.160}%
+\contentsline {figure}{\numberline {161}{\ignorespaces Pin und Variable für Lichtsteuerung}}{116}{figure.161}%
+\contentsline {figure}{\numberline {162}{\ignorespaces \texttt {Setup();} - Code für Lichtsteuerung}}{116}{figure.162}%
+\contentsline {figure}{\numberline {163}{\ignorespaces \texttt {onWebSocketEvent();} - Code für Lichtsteuerung}}{116}{figure.163}%
+\contentsline {figure}{\numberline {164}{\ignorespaces Funktionen zum Ein-/Auschalten des Lichtes}}{117}{figure.164}%

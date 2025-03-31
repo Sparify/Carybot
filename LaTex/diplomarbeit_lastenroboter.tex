@@ -224,7 +224,6 @@
 					PICAA LED Arbeitsscheinwerfer & 6.55 € & 2 & 13.10 € \\ \hline
 					2 Stück PWM Motor Steuerung Treiber Platinen & 35.78 € & 2 & 71.56 € \\ \hline
 					Micro Servo Motor SG90 & 6.04 € & 1 & 6.04 € \\ \hline
-					IRM-30-15ST AC/DC-Leistungsmodul & 17.04 € & 1 & 17.04 € \\ \hline
 					Dino KRAFTPAKET 4A/12V Batterieladegerät & 17.99 € & 1 & 17.99 € \\ \hline
 					Platinen & 37.14 € & 1 & 37.14 € \\ \hline
 					ESP32-CAM & 13.70 € & 1 & 13.70 € \\ \hline
@@ -233,7 +232,7 @@
 					Dunkermotoren & 65.00 € & 2 & 130.00 € \\ \hline
 					AGM 12V Batterie & 24.80 € & 1 & 24.80 € \\ \hline
 					Diverse Kleinteile & 30.00 € & 1 & 30.00 € \\ \hline
-					\textbf{Summe} & & & \textbf{459.43 €} \\
+					\textbf{Summe} & & & \textbf{442.39 €} \\
 					\hline
 				\end{longtable}
 			\end{center}
@@ -1435,7 +1434,7 @@ Im HTML-Code wird die Status-Box als HTML \texttt{<span>}-Tag definiert. Für da
 		\begin{center} 
 			\begin{minipage}[t]{0.6\textwidth}
 				\includegraphics{Pictures/modell-fertig}
-				\captionof{figure}{modell-fertig}
+				\captionof{figure}{Fertiges Modell}
 				\label{fig:modell-fertig}
 				\vspace{-10pt}
 				\begin{center}
@@ -2203,8 +2202,6 @@ Im HTML-Code wird die Status-Box als HTML \texttt{<span>}-Tag definiert. Für da
 				\end{center}
 			\end{minipage} \\[0.75cm]
 		\end{center}
-		
-		\newpage \noindent
 		\subsection{Code} %Daniel und %Simon
 			\subsubsection{Kamera Setup}
 			Um die Kamera programmieren zu können, muss zunächst das richtige Board \texttt{AI Thinker ESP32-CAM} ausgewählt werden. Danach müssen die ESP32-Kamera-Treiber mit der Bibliothek \texttt{esp\_camera.h} inkludiert werden. Dann muss das passende ESP32-CAM-Modell festgelegt werden. Da wir uns für das \texttt{Ai-Thinker} Modell entschieden haben, muss diese nun definiert werden. Falls ein anderes Modell genutzt wird, muss es entsprechend angepasst werden. \\[0.2cm]
@@ -2439,7 +2436,7 @@ Im HTML-Code wird die Status-Box als HTML \texttt{<span>}-Tag definiert. Für da
 				Das Gehäuse für die Kameraschwenkung wird auf der unteren Verkantrohr-Konstruktion befestigt. Dies sorgt für eine stabile und vibrationsarme Montage. Die Befestigung erfolgt über Schrauben und andere geeignete Verbindungselemente, um eine sichere Fixierung zu gewährleisten. Der Servomotor ist im Inneren des Gehäuses untergebracht und ermöglicht die präzise Schwenkbewegung der Kamera.
 				
 	\newpage
-	\section{Sensoren}
+	\section{Sensoren und Aktoren}
 	
 		\subsection{Abstandsensor} %Daniel
 		\subsubsection{Grundprinzip}
@@ -2749,6 +2746,7 @@ Im HTML-Code wird die Status-Box als HTML \texttt{<span>}-Tag definiert. Für da
 		\end{center}
 		
 	 \subsection{Spannungsmessung per ESP32}
+	 \subsubsection{Code}
 	 Bei der Spannungsmessung wird kein eigentlicher Sensor verwendet stattdessen dient ein analoger Eingang des ESP32 selbst zur Spannungsmessung, wodurch der Mikrocontroller direkt als Messeinheit fungiert.\\[0.5cm]
 	 Zur Bestimmung des Akkustands wird die Spannung am analogen Eingang gemessen und über einen Spannungsteiler korrekt auf die tatsächliche Eingangsspannung zurückgerechnet.
 	 Zunächst werden mit define drei wichtige Konstanten festgelegt: \\[0.3cm]
@@ -2823,10 +2821,76 @@ Im HTML-Code wird die Status-Box als HTML \texttt{<span>}-Tag definiert. Für da
 				\vspace{0.5cm}
 			\end{minipage}
 		\end{center}
+			 \subsubsection{Verbesserungen und Optimierungen}
 		Die hier verwendete Methode zur Berechnung des Akkustands ist nur eine grobe Schätzung. Sie geht davon aus, dass der Akku zwischen 9~V (0\%) und 13~V (100\%) eine lineare Entladung zeigt. In der Realität ist die Entladekurve eines Akkus jedoch nicht linear: Die Spannung bleibt über einen langen Zeitraum relativ konstant und fällt erst am Ende der Entladung schnell ab.\\
-		Deshalb liefert eine einfache lineare Berechnung oft ungenaue oder irreführende Prozentwerte. Um realistischere und genauere Werte zu erhalten, sollte man stattdessen eine Mapping-Funktion oder eine Kennlinie per Tabelle oder mathematischer Funktion verwenden, die die tatsächliche Entladekurve des Akkutyps berücksichtigt.
+		Deshalb liefert eine einfache lineare Berechnung oft ungenaue oder irreführende Prozentwerte. Um realistischere und genauere Werte zu erhalten, sollte man stattdessen eine Mapping-Funktion oder eine Kennlinie per Tabelle oder mathematischer Funktion verwenden, die die tatsächliche Entladekurve des Akkutyps berücksichtigt.\\
+		\subsection{Lichtsteuerung per Transistor}
+		\subsubsection{Code}
+		Am Anfang wird mit \texttt{const int light\_pin = 0;} festgelegt, dass das Licht über Pin 0 des Expander-Boards (MCP) gesteuert wird. An diesem Pin ist ein Transistor angeschlossen, der das Licht ein- und ausschaltet. Der Transistor dient dabei als elektronischer Schalter, über das Signal vom Expander-Pin wird der Transistor geschaltet, der dann das Licht steuert.\\
+		Die Zeile \texttt{int light\_st = 0;} legt eine Variable an, die den aktuellen Zustand des Lichts speichert, also ob es gerade an oder aus ist. 
+		\begin{center}
+			\begin{minipage}{0.8\textwidth}
+				\centering
+				\includegraphics[width=\textwidth]{Pictures/code_licht_pins}
+				\captionof{figure}{Pin und Variable für Lichtsteuerung}
+				\label{fig:code_licht_pins}
+				\vspace{-3pt}
+				{\small Quelle: {eigene Abbildung}}
+				\vspace{0.5cm}
+			\end{minipage}
+		\end{center}
+		Damit der Pin überhaupt ein Ausgang ist, wird im \texttt{Setup();} mit \texttt{mcp.pinMode(light\_pin, OUTPUT);} festgelegt, dass dieser Pin als Ausgang (OUTPUT) arbeitet.
+		\begin{center}
+			\begin{minipage}{0.8\textwidth}
+				\centering
+				\includegraphics[width=\textwidth]{Pictures/code_licht_setup}
+				\captionof{figure}{\texttt{Setup();} - Code für Lichtsteuerung}
+				\label{fig:code_licht_setup}
+				\vspace{-3pt}
+				{\small Quelle: {eigene Abbildung}}
+				\vspace{0.5cm}
+			\end{minipage}
+		\end{center}
+		Danach wird geprüft, ob im vom Webserver erhaltenen JSON ein Eintrag mit dem Namen\\ "light\_status"vorhanden ist. Wenn ja, wird der Wert daraus ausgelesen und in der Variable \\ \texttt{light\_status} gespeichert.
+		Anschließend wird geprüft, ob \texttt{light\_st} gleich 1 ist. Falls ja, wird die Funktion \texttt{lights\_on();} aufgerufen, und das Licht geht an. Wenn nicht, wird \texttt{lights\_off();} ausgeführt, um das Licht auszuschalten.
 		
-
+		\begin{center}
+			\begin{minipage}{0.8\textwidth}
+				\centering
+				\includegraphics[width=\textwidth]{Pictures/code_licht_json}
+				\captionof{figure}{\texttt{onWebSocketEvent();} - Code für Lichtsteuerung}
+				\label{fig:code_licht_json}
+				\vspace{-3pt}
+				{\small Quelle: {eigene Abbildung}}
+				\vspace{0.5cm}
+			\end{minipage}
+		\end{center}
+		
+		Wenn \texttt{lights\_on()} aufgerufen wird, passiert Folgendes:
+		\begin{itemize}
+			\item Im seriellen Monitor wird ,,Licht an'' ausgegeben.
+			\item Dann wird über \texttt{mcp.digitalWrite(light\_pin, HIGH);} ein HIGH-Signal an den entsprechenden Pin des MCP-Expanders geschickt. Dadurch wird der Transistor aktiviert und das Licht geht an.
+		\end{itemize}
+		
+		In \texttt{lights\_off()} läuft es genau umgekehrt:
+		
+		\begin{itemize}
+			\item Es wird ,,Licht aus'' im seriellen Monitor ausgegeben.
+			\item Mit \texttt{mcp.digitalWrite(light\_pin, LOW);} wird ein LOW-Signal geschickt, der Transistor wird deaktiviert, und das Licht geht aus.
+		\end{itemize}
+		
+		\begin{center}
+			\begin{minipage}{0.8\textwidth}
+				\centering
+				\includegraphics[width=\textwidth]{Pictures/code_licht_schalten}
+				\captionof{figure}{Funktionen zum Ein-/Auschalten des Lichtes}
+				\label{fig:code_licht_schalten}
+				\vspace{-3pt}
+				{\small Quelle: {eigene Abbildung}}
+				\vspace{0.5cm}
+			\end{minipage}
+		\end{center}
+		
 	\newpage
 	\section{Entwicklungstools}
 	
