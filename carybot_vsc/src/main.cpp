@@ -8,9 +8,9 @@
 
 #include <Adafruit_MCP23X17.h>
 
-// const int HX711_dout = 21;
-// const int HX711_sck = 22;
-// HX711_ADC LoadCell(HX711_dout, HX711_sck);
+const int HX711_dout = 33;
+const int HX711_sck = 14;
+HX711_ADC LoadCell(HX711_dout, HX711_sck);
 
 Adafruit_MCP23X17 mcp;
 const int light_pin = 0;
@@ -162,6 +162,15 @@ void handleWebSocketMessage(uint8_t num, uint8_t *payload, size_t length)
   }
 }
 
+void stop()
+{
+    mcp.digitalWrite(leftfrontwheel_brake, HIGH);
+    mcp.digitalWrite(rightfrontwheel_brake, HIGH);
+    mcp.digitalWrite(leftrearwheel_brake, HIGH);
+    mcp.digitalWrite(rightrearwheel_brake, HIGH);
+    Serial.println("Stop");
+}
+
 void onWebSocketEvent(uint8_t num, WStype_t type, uint8_t *payload, size_t length)
 {
   switch (type)
@@ -240,12 +249,12 @@ void setup()
 
   startMillis = millis();
 
-  // LoadCell.begin();
+  LoadCell.begin();
   float calibrationValue;               // calibration value (see example file "Calibration.ino")
-  calibrationValue = 696.0;             // uncomment this if you want to set the calibration value in the sketch
+  calibrationValue = 21.82;             // uncomment this if you want to set the calibration value in the sketch
   unsigned long stabilizingtime = 2000; // preciscion right after power-up can be improved by adding a few seconds of stabilizing time
   boolean _tare = true;                 // set this to false if you don't want tare to be performed in the next step
-  /*
+  
   LoadCell.start(stabilizingtime, _tare);
   if (LoadCell.getTareTimeoutFlag())
   {
@@ -258,7 +267,7 @@ void setup()
     LoadCell.setCalFactor(calibrationValue); // set calibration value (float)
     Serial.println("Startup is complete");
   }
- */
+ 
   myservo.attach(servoPin);
   myservo.write(camera_pos);
 
@@ -299,15 +308,6 @@ void turnRight()
   mcp.digitalWrite(leftrearwheel, HIGH);
   mcp.digitalWrite(rightrearwheel, HIGH);
   Serial.println("Rechts");
-}
-
-void stop()
-{
-    mcp.digitalWrite(leftfrontwheel_brake, HIGH);
-    mcp.digitalWrite(rightfrontwheel_brake, HIGH);
-    mcp.digitalWrite(leftrearwheel_brake, HIGH);
-    mcp.digitalWrite(rightrearwheel_brake, HIGH);
-    Serial.println("Stop");
 }
 
 void cam_turn()
@@ -393,6 +393,12 @@ void loop()
   websocket.loop();
   navigate();
 
+  if (websocket.connectedClients() == 0)
+  {
+    Serial.println("fahr in arsch");
+    dir = HALT;
+   stop();
+  }
   // Spannungsmessung
   rawValue = analogRead(PIN_TEST);
   vout = (rawValue * REF_VOLTAGE) / PIN_STEPS;
@@ -413,9 +419,14 @@ void loop()
     distance_front = distanceSensor_front.measureDistanceCm();
     distance_rear = distanceSensor_rear.measureDistanceCm();
     Serial.println(distance_front);
-    // weight = LoadCell.getData();
-    // Serial.print("Load_cell output val: ");
-    // Serial.println(weight);
+    static boolean newDataReady = 0;
+    if (LoadCell.update()) newDataReady = true;
+    if (newDataReady) {
+      weight = LoadCell.getData();
+      Serial.print("Load_cell output val: ");
+      Serial.println(weight);
+      newDataReady=0;
+    }
 
     if(((distance_front >= 5 && distance_front <= 20) && speed_cb >= 50) || ((distance_rear >= 5 && distance_rear <= 20) && speed_cb >= 50)){
       stop();
