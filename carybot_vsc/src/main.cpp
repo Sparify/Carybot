@@ -392,6 +392,13 @@ void loop()
 {
   websocket.loop();
   navigate();
+  //Stopp wenn nix verbunden
+  if (websocket.connectedClients() == 0)
+  {
+    dir = HALT;
+    stop();
+  }
+  //ALARM!!
 
   // Spannungsmessung
   rawValue = analogRead(PIN_TEST);
