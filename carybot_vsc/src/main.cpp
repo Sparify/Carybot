@@ -400,12 +400,6 @@ void loop()
   }
   //ALARM!!
 
-  if (websocket.connectedClients() == 0)
-  {
-    Serial.println("fahr in arsch");
-    dir = HALT;
-   stop();
-  }
   // Spannungsmessung
   rawValue = analogRead(PIN_TEST);
   vout = (rawValue * REF_VOLTAGE) / PIN_STEPS;
