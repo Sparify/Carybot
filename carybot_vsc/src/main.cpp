@@ -3,7 +3,9 @@
 #include "HCSR04.h"
 #include "WebSocketsServer.h"
 #include <HX711_ADC.h>
+
 #include <ESP32Servo.h>
+
 #include <Adafruit_MCP23X17.h>
 
 // const int HX711_dout = 21;
@@ -55,9 +57,9 @@ float weight = 0.0;
 //-----------------------
 
 // Servo Motor
-int camera_pos = 0;
+int camera_pos = 90;
 Servo myservo;
-static const int servoPin = 26; // Pin umändern auf PWM Pin
+static const int servoPin = 26;
 //-----------------
 
 int speed_cb = 0;
@@ -174,6 +176,8 @@ void onWebSocketEvent(uint8_t num, WStype_t type, uint8_t *payload, size_t lengt
 
   case WStype_DISCONNECTED:
     Serial.printf("[WS] Client %u disconnected.\n", num);
+    dir = HALT;
+    stop();
     break;
 
   case WStype_CONNECTED:
