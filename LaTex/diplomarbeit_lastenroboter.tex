@@ -100,7 +100,7 @@
 	The robot is controlled via a website, which allows the user to operate the robot and access important data such as battery level and weight. A particular focus is also placed on transferring the camera feed to the web interface and integrating a swivel camera to ensure flexible viewing of the transport area. The ESP32-microcontroller ensures that the user's commands are transmitted to the robot.\\[0.5 cm]
 	Additionally, onboard software is developed to read the sensors and control the motors and camera.
 	%Namen links unten als muster für später
-	\fancyfoot[L]{Daniel Schauer - nur als Muster}
+	\fancyfoot[L]{}
 	\thispagestyle{fancy}
 	\newpage
 	\section{Projektmanagement}
@@ -251,7 +251,7 @@
 			\end{center}
 			\newpage
 	\section{Antrieb}
-	
+		\fancyfoot[L]{Felix Hochegger}
 		\subsection{Motoren} %Felix
 		
 			\subsubsection{Übersicht}
@@ -532,22 +532,15 @@
 			\newpage
 			
 			\subsubsection{Schaltungserweiterung für vier Motoren:}
-			Der Lastenroboter wird von vier BLDC-Motoren angetrieben, die jeweils über einen eigenen Motortreiber gesteuert werden. Jeder Motortreiber wird über einen PWM-Pin des Esp32 verbunden, um die Geschwindigkeit zu regulieren. Zusätzlich wird jeder Motortreiber über das Expander-Modul angesteuert, um die Richtung zu ändern und die Bremse zu aktivieren. Alle Treiber werden mit 12 Volt von der Batterie versorgt. \\[0.5cm]
-			\begin{minipage}{\textwidth}
-				\centering
-				\includegraphics[scale=1.05]{Pictures/code_pins_motoren}
-				\captionof{figure}{Motoren-GPIO Konfiguration}
-				\label{fig:code_pins_motoren}
-				\vspace{-2pt}
-				\small Quelle: eigene Abbildung
-			\end{minipage}
-			
+			Der Lastenroboter wird von vier BLDC-Motoren angetrieben, die jeweils über einen eigenen Motortreiber gesteuert werden. Jeder Motortreiber wird über einen PWM-Pin des Esp32 verbunden, um die Geschwindigkeit zu regulieren. Zusätzlich wird jeder Motortreiber über das Expander-Modul angesteuert, um die Richtung zu ändern und die Bremse zu aktivieren. Alle Treiber werden mit 12 Volt von der Batterie versorgt. \\
+			\newpage \noindent
 		\subsection{Code} 
+		\fancyfoot[L]{Felix Hochegger \& Daniel Schauer}
 		\subsubsection{Initialisierung}
 		Um die Motoren beziehungsweise die Treiberplatinen anzusteuern, gibt es pro Motor drei Pins. Einer dieser Pins wird mit einem PWM-fähigen Pin am ESP32 verbunden. Die anderen beiden werden mit dem Expander Modul verbunden. Da das Expander Modul nur Digitale Ein-/Ausgänge besitzt, ist es nicht möglich die PWM-Signale auch über dieses Modul zu realisieren. Der Hauptgrund für diese Aufteilung auf den Expander ist, der das wir Analoge Pins am ESP32 einsparen müssen, um diese für andere Sensoren oder Aktoren einzusetzen. \\[0.5cm]
 		\begin{minipage}{\textwidth}
 			\centering
-			\includegraphics[scale=1.05]{Pictures/code_pins_motoren}
+			\includegraphics[scale=0.8]{Pictures/code_pins_motoren}
 			\captionof{figure}{Motoren-GPIO Konfiguration}
 			\label{fig:code_pins_motoren}
 			\vspace{-2pt}
@@ -555,6 +548,7 @@
 			\vspace{20pt}
 		\end{minipage}
 		Um das Expander-Board zu nutzen, wird die Bibliothek Adafruit\_MCP23X17 verwendet. Diese Bibliothek ermöglicht eine einfachere Initialisierung und Ansteuerung der MCP-Pins, sodass die GPIOs ähnlich wie die des ESP32 genutzt werden können. Außerdem wird ein Objekt der Klasse Adafruit MCP23X17 erstellt, über das man später auf den Expander zugreifen kann. \\[0.5cm]
+		\fancyfoot[L]{Daniel Schauer}
 		\begin{minipage}{\textwidth}
 			\centering
 			\includegraphics[scale=1.3]{Pictures/code_libary_motoren}
@@ -668,7 +662,7 @@
 	\end{minipage}
 	\newpage
 	\section{Webserver} %Spari
-	 
+	 \fancyfoot[L]{Simon Spari}
 		\subsection{Grundlegende Ziele}
 	In diesem Kapitel wird die geplante Website thematisiert, die die Steuerung des Lastenroboters ermöglichen soll. Zunächst werden die grundlegenden Funktionen definiert, die die Website erfüllen muss. Sobald diese Anforderungen umgesetzt sind, liegt der Fokus auf einer möglichst einfachen und benutzerfreundlichen Gestaltung des User Interfaces. Ein weiterer zentraler Aspekt ist die Darstellung spezifischer Messwerte und Daten, sodass diese über den Webserver schnell und unkompliziert zugänglich sind. \\[0.5cm]
 	Für die Entwicklung der Website kommen HTML, CSS und JavaScript zum Einsatz, um sowohl die funktionalen als auch die optischen Anforderungen zu erfüllen. 
@@ -1307,7 +1301,7 @@ Im HTML-Code wird die Status-Box als HTML \texttt{<span>}-Tag definiert. Für da
 					
 	\newpage
 	\section{Gehäuse}
-	
+	\fancyfoot[L]{Felix Hochegger}
 		\subsection{Planung und Design} %Felix
 		
 		Das Gehäuse des Lastenroboters wurde entwickelt, um die Sicherheit und Stabilität beim Transport von schweren Lasten zu gewährleisten. Dabei lag der Fokus auf einer stabilen Bauweise, damit der Lastenroboter ein Gewicht von zirka 25 Kilo aushaltet. 
@@ -1583,7 +1577,7 @@ Im HTML-Code wird die Status-Box als HTML \texttt{<span>}-Tag definiert. Für da
 			\label{fig: Rad}
 			\vspace{-10pt}
 			\begin{center}
-				\par\small Quelle: <Link einfügen>
+				\par\small Quelle: https://amzn.eu/d/5EHdhJk
 			\end{center}
 		\end{minipage} \\[0.75cm]
 	\end{center}
@@ -1654,7 +1648,7 @@ Im HTML-Code wird die Status-Box als HTML \texttt{<span>}-Tag definiert. Für da
 	 \begin{center} 
 	 	\begin{minipage}[t]{0.5\textwidth}
 	 		\includegraphics{Pictures/cb-verkabelt}
-	 		\captionof{figure}{<>}
+	 		\captionof{figure}{Erster funktionierender Prototyp}
 	 		\label{fig: cb-verkabelt}
 	 		\vspace{-10pt}
 	 		\begin{center}
@@ -2148,7 +2142,7 @@ Im HTML-Code wird die Status-Box als HTML \texttt{<span>}-Tag definiert. Für da
 	
 	\newpage
 	\section{Kamera}
-	
+		\fancyfoot[L]{Daniel Schauer}
 		\subsection{Kamera im Überblick} %Daniel
 		Die ESP32-CAM ist ein kompaktes Kameramodul, das auf dem ESP32-Mikrocontroller basiert. Dieses Modul kombiniert WLAN- und Bluetooth-Funktionen, wodurch die Kamera Bilder und Videos drahtlos übertragen kann. Das Grundprinzip der ESP32-Kamera besteht darin, dass der ESP32-Chip Bilddaten vom Kamerasensor verarbeitet und über eine drahtlose Verbindung an ein Endgerät, in diesem Fall ein Webserver, sendet. \\[0.5cm]
 		Bei der ESP32-CAM wird häufig die OV2640-Kamera verwendet, die eine Auflösung von bis zu 1600 × 1200 Pixeln bietet. Das Modul verfügt zudem über einen microSD-Kartenslot zur Speicherung von Aufnahmen.\\[0.5cm]
@@ -2413,6 +2407,7 @@ Im HTML-Code wird die Status-Box als HTML \texttt{<span>}-Tag definiert. Für da
 					\end{minipage} \\[0.70cm]
 				\end{center}
 				\newpage
+				\fancyfoot[L]{Felix Hochegger}
 				\subsubsection{Gehäuse der Kameraschwenkung} %Felix
 				Das Gehäuse für die Kameraschwenkung wurde so konstruiert, dass es eine robuste und sichere Halterung für eine Kamera bietet. Es besteht aus mehreren Bauteilen, die eine einfache Montage und Demontage ermöglichen.
 				
@@ -2450,7 +2445,7 @@ Im HTML-Code wird die Status-Box als HTML \texttt{<span>}-Tag definiert. Für da
 				
 	\newpage
 	\section{Sensoren und Aktoren}
-	
+		\fancyfoot[L]{Daniel Schauer}
 		\subsection{Abstandsensor} %Daniel
 		\subsubsection{Grundprinzip}
 		Der HC-SR04 ist ein Ultraschallsensor, der mithilfe von Schallwellen Entfernungen messen kann. Sein Funktionsprinzip basiert auf der Laufzeitmessung von Schallwellen. Dabei sendet der Sensor hochfrequente Ultraschallwellen aus, die von Objekten in der Umgebung reflektiert und anschließend wieder vom Sensor empfangen werden. Durch die Messung der Zeit, die der Schall für den Hin- und Rückweg benötigt, kann die Entfernung zum Objekt bestimmt werden. \\[0.3cm]
@@ -2906,7 +2901,7 @@ Im HTML-Code wird die Status-Box als HTML \texttt{<span>}-Tag definiert. Für da
 		
 	\newpage
 	\section{Entwicklungstools}
-	
+	\fancyfoot[L]{Felix Hochegger \& Simon Spari}
 	 \subsection{Autodesk Fusion}
 
 	 Autodesk Fusion ist eine cloudbasierte 3D-CAD-, CAM- und CAE-Software, die für die Konstruktion, Simulation und Fertigung von Bauteilen verwendet wird. Die Software bietet eine Vielzahl von Funktionen, um den Entwicklungsprozess effizient zu gestalten, darunter parametrisches Modellieren, Freiformmodellierung und Baugruppenverwaltung. Autodesk Fusion ist unter https://www.autodesk.de/products/fusion verfügbar und kann sowohl als Desktop-Anwendung als auch über die Cloud genutzt werden. \\[0.5cm]
@@ -2920,9 +2915,9 @@ Im HTML-Code wird die Status-Box als HTML \texttt{<span>}-Tag definiert. Für da
 	 \subsection{VS-Code}
 	 
 	 Visual Studio Code (VS-Code) ist eine kostenlose IDE (integrated development environment) entwickelt von Microsoft. VS-Code funktioniert auch auf anderen Betriebssystemen wie zum Beispiel Windows, Linux oder macOS. VS-Code unterstützt einen Großteil der Programmiersprachen und kann durch Extentions mit vielen nützlichen Features und Sprachen immer wieder erweitert werden.\footnote{https://code.visualstudio.com/}
-	 	
+	 \newpage \noindent
 	 	\subsubsection{Setup}
-	 	
+	 \fancyfoot[L]{Simon Spari \& Daniel Schauer}
 	 Um ein Projekt in VS-Code erstellen zu können, müssen einige Schritte befolgt werden. Zuallererst muss die IDE von https://code.visualstudio.com/ für das jeweilig passende Betriebssystem heruntergeladen und installiert werden. Um Mikrocontroller wie ESPs oder Arduinos in VS-Code programmieren zu können, wird die PlatformIO IDE Extension benötigt. Um die PlatformIO IDE Extension in VS-Code zu installieren, drückt man einfach auf das Extensions Symbol oder drückt die Tastenkombination Ctrl+Shift+X um das Extensions Menü zu öffnen. Danach gibt man in der Suchleiste “PlatformIO IDE“ ein und wählt die Extension mit der Ameise als Icon. Dann drückt man auf “Install“ und wartet, bis die Extension fertig heruntergeladen ist. Nach der Installation sollte das PlatformIO Icon (Ameisenkopf) auf der linken Seite unter dem Extension Menü erscheinen. \\[0.5cm]
 	 Um nun ein neues Projekt zu erstellen, klickt man auf das PlatformIO Icon und wählt “+ New Project“. \\[0.5cm]
 	 Im Project Wizard wählt man nun den gewünschten Namen, das Board, das Framework als auch den Speicherungsort des Projektes. Bei unserem Projekt wählten wir das Board “Espressif ESP32 Dev Module“ und als Framework “Arduino“, da wir einen EPS32 zum Programmieren verwendeten. \\[0.5cm]
@@ -2968,7 +2963,7 @@ Im HTML-Code wird die Status-Box als HTML \texttt{<span>}-Tag definiert. Für da
 	 Unser Projekt ist unter https://github.com/Sparify/Carybot zu finden.
 	 
 \newpage
-	
+	\fancyfoot[L]{}
 	\section{Abbildungsverzeichnis}
 	
 		\listoffigures

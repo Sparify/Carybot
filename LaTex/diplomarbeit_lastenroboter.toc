@@ -21,8 +21,8 @@
 \contentsline {subsection}{\numberline {3.4}Schaltungsaufbau mit vier Motor}{21}{subsection.3.4}%
 \contentsline {subsubsection}{\numberline {3.4.1}Komponenten}{21}{subsubsection.3.4.1}%
 \contentsline {subsubsection}{\numberline {3.4.2}Schaltungserweiterung für vier Motoren:}{22}{subsubsection.3.4.2}%
-\contentsline {subsection}{\numberline {3.5}Code}{22}{subsection.3.5}%
-\contentsline {subsubsection}{\numberline {3.5.1}Initialisierung}{22}{subsubsection.3.5.1}%
+\contentsline {subsection}{\numberline {3.5}Code}{23}{subsection.3.5}%
+\contentsline {subsubsection}{\numberline {3.5.1}Initialisierung}{23}{subsubsection.3.5.1}%
 \contentsline {subsubsection}{\numberline {3.5.2}Setup-Code}{24}{subsubsection.3.5.2}%
 \contentsline {subsubsection}{\numberline {3.5.3}Handling der Steuerbefehle}{25}{subsubsection.3.5.3}%
 \contentsline {subsubsection}{\numberline {3.5.4}Ansteuerung der Treiberplatinen:}{26}{subsubsection.3.5.4}%

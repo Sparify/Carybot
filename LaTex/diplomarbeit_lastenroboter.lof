@@ -20,147 +20,146 @@
 \contentsline {figure}{\numberline {19}{\ignorespaces \raggedright Treiber Phasen}}{20}{figure.19}%
 \contentsline {figure}{\numberline {20}{\ignorespaces Versorgung der Motoren und Treiberplatine}}{20}{figure.20}%
 \contentsline {figure}{\numberline {21}{\ignorespaces Ansteuerung der Treiberplatine}}{21}{figure.21}%
-\contentsline {figure}{\numberline {22}{\ignorespaces Motoren-GPIO Konfiguration}}{22}{figure.22}%
-\contentsline {figure}{\numberline {23}{\ignorespaces Motoren-GPIO Konfiguration}}{23}{figure.23}%
-\contentsline {figure}{\numberline {24}{\ignorespaces \texttt {Adafruit\_MCP23X17.h}-Bibliothek}}{23}{figure.24}%
-\contentsline {figure}{\numberline {25}{\ignorespaces MCP-Setup}}{24}{figure.25}%
-\contentsline {figure}{\numberline {26}{\ignorespaces Initialisierung Motoren}}{24}{figure.26}%
-\contentsline {figure}{\numberline {27}{\ignorespaces Enumeration von Bewegungsrichtungen}}{25}{figure.27}%
-\contentsline {figure}{\numberline {28}{\ignorespaces Strings zu Enum Variable umwandeln}}{26}{figure.28}%
-\contentsline {figure}{\numberline {29}{\ignorespaces \texttt {navigate() in loop()}}}{26}{figure.29}%
-\contentsline {figure}{\numberline {30}{\ignorespaces Überprüfung auf Änderung und Speed in Integer umwandeln in \texttt {navigate()}-Funktion}}{27}{figure.30}%
-\contentsline {figure}{\numberline {31}{\ignorespaces Motorbremse deaktivieren in \texttt {navigate()}-Funktion}}{27}{figure.31}%
-\contentsline {figure}{\numberline {32}{\ignorespaces switch-case Struktur in \texttt {navigate()}-Funktion}}{28}{figure.32}%
-\contentsline {figure}{\numberline {33}{\ignorespaces PWM mit analogWrite übertragen und letzte Werte speichern in \texttt {navigate()}-Funktion}}{29}{figure.33}%
-\contentsline {figure}{\numberline {34}{\ignorespaces \texttt {ESPAsyncWebServer.h}-Bibliothek}}{31}{figure.34}%
-\contentsline {figure}{\numberline {35}{\ignorespaces WebServer Netzwerkkonfiguration}}{31}{figure.35}%
-\contentsline {figure}{\numberline {36}{\ignorespaces Webserver Setup}}{32}{figure.36}%
-\contentsline {figure}{\numberline {37}{\ignorespaces SPIFFS Initalisierung}}{33}{figure.37}%
-\contentsline {figure}{\numberline {38}{\ignorespaces \texttt {readfile()}-Funktion}}{34}{figure.38}%
-\contentsline {figure}{\numberline {39}{\ignorespaces Bibliotheken für die Kommunikation}}{34}{figure.39}%
-\contentsline {figure}{\numberline {40}{\ignorespaces Setup ESP32}}{35}{figure.40}%
-\contentsline {figure}{\numberline {41}{\ignorespaces \texttt {onWebSocketEvent()}-Funktion}}{36}{figure.41}%
-\contentsline {figure}{\numberline {42}{\ignorespaces JSON-Beispiel für Steuerung}}{37}{figure.42}%
-\contentsline {figure}{\numberline {43}{\ignorespaces JSON-Beispiel für Kamerasteuerung}}{37}{figure.43}%
-\contentsline {figure}{\numberline {44}{\ignorespaces JSON-Beispiel für Lichtsteuerung}}{37}{figure.44}%
-\contentsline {figure}{\numberline {45}{\ignorespaces \texttt {handleWebSocketMessage()}-Funktion}}{38}{figure.45}%
-\contentsline {figure}{\numberline {46}{\ignorespaces Steuerkreuz auf der Website}}{39}{figure.46}%
-\contentsline {figure}{\numberline {47}{\ignorespaces Steuerkreuz HTML-Code}}{39}{figure.47}%
-\contentsline {figure}{\numberline {48}{\ignorespaces CSS-Klassen \texttt {.dpad-container} und \texttt {.button}}}{40}{figure.48}%
-\contentsline {figure}{\numberline {49}{\ignorespaces CSS-Richtungsklassen}}{41}{figure.49}%
-\contentsline {figure}{\numberline {50}{\ignorespaces EventListener für ungewünschte Aktionen}}{42}{figure.50}%
-\contentsline {figure}{\numberline {51}{\ignorespaces EventListener für Eingabe}}{42}{figure.51}%
-\contentsline {figure}{\numberline {52}{\ignorespaces \texttt {send()}-Funktion}}{43}{figure.52}%
-\contentsline {figure}{\numberline {53}{\ignorespaces \texttt {stop()}-Funktion}}{44}{figure.53}%
-\contentsline {figure}{\numberline {54}{\ignorespaces Geschwindigkeitssteuerung auf der Website}}{44}{figure.54}%
-\contentsline {figure}{\numberline {55}{\ignorespaces Geschwindigkeitssteuerung HTML-Code}}{45}{figure.55}%
-\contentsline {figure}{\numberline {56}{\ignorespaces CSS-Klassen für die Geschwindigkeitssteuerung}}{45}{figure.56}%
-\contentsline {figure}{\numberline {57}{\ignorespaces \texttt {speed-change()}-Funktion}}{46}{figure.57}%
-\contentsline {figure}{\numberline {58}{\ignorespaces Kamerasteuerung auf der Website}}{46}{figure.58}%
-\contentsline {figure}{\numberline {59}{\ignorespaces Kamerasteuerung HTML-Code}}{47}{figure.59}%
-\contentsline {figure}{\numberline {60}{\ignorespaces CSS-Klassen für die Kamerasteuerung}}{47}{figure.60}%
-\contentsline {figure}{\numberline {61}{\ignorespaces \texttt {camera-change()}-Funktion}}{48}{figure.61}%
-\contentsline {figure}{\numberline {62}{\ignorespaces Fernlicht-Icon auf der Website}}{48}{figure.62}%
-\contentsline {figure}{\numberline {63}{\ignorespaces HTML-Code für Fernlicht}}{49}{figure.63}%
-\contentsline {figure}{\numberline {64}{\ignorespaces CSS-Klassen für das Fernlicht}}{49}{figure.64}%
-\contentsline {figure}{\numberline {65}{\ignorespaces \texttt {togglelight()}-Funktion}}{50}{figure.65}%
-\contentsline {figure}{\numberline {66}{\ignorespaces Menü-Icon auf der Website}}{51}{figure.66}%
-\contentsline {figure}{\numberline {67}{\ignorespaces Sidebar mit Sensordaten}}{51}{figure.67}%
-\contentsline {figure}{\numberline {68}{\ignorespaces Sensordaten HTML-Code}}{52}{figure.68}%
-\contentsline {figure}{\numberline {69}{\ignorespaces CSS-Klassen für das Menü}}{53}{figure.69}%
-\contentsline {figure}{\numberline {70}{\ignorespaces CSS-Klasse \texttt {.daten}}}{54}{figure.70}%
-\contentsline {figure}{\numberline {71}{\ignorespaces JavaScript-Verarbeitung der Sensordaten}}{54}{figure.71}%
-\contentsline {figure}{\numberline {72}{\ignorespaces Statusbox auf der Website}}{55}{figure.caption.2}%
-\contentsline {figure}{\numberline {73}{\ignorespaces Statusbox: Verbunden}}{55}{figure.caption.2}%
-\contentsline {figure}{\numberline {74}{\ignorespaces Statusbox: Verbindung getrennt}}{55}{figure.caption.2}%
-\contentsline {figure}{\numberline {75}{\ignorespaces Statusbox HTML-Code}}{55}{figure.75}%
-\contentsline {figure}{\numberline {76}{\ignorespaces CSS-Klassen für die Statusbox}}{56}{figure.76}%
-\contentsline {figure}{\numberline {77}{\ignorespaces JavaScript Funktionen für den Verbindungsstatus}}{56}{figure.77}%
-\contentsline {figure}{\numberline {78}{\ignorespaces Erstes Modell}}{59}{figure.78}%
-\contentsline {figure}{\numberline {79}{\ignorespaces Zweites Modell}}{60}{figure.79}%
-\contentsline {figure}{\numberline {80}{\ignorespaces Rahmen}}{60}{figure.80}%
-\contentsline {figure}{\numberline {81}{\ignorespaces Halterung 1}}{61}{figure.caption.3}%
-\contentsline {figure}{\numberline {82}{\ignorespaces Halterung 2}}{61}{figure.caption.3}%
-\contentsline {figure}{\numberline {83}{\ignorespaces Motorenhalterung}}{61}{figure.83}%
-\contentsline {figure}{\numberline {84}{\ignorespaces Räder}}{62}{figure.84}%
-\contentsline {figure}{\numberline {85}{\ignorespaces Wägezellen}}{62}{figure.85}%
-\contentsline {figure}{\numberline {86}{\ignorespaces Wägezellenhalterung}}{63}{figure.86}%
-\contentsline {figure}{\numberline {87}{\ignorespaces Fertiges Modell}}{63}{figure.87}%
-\contentsline {figure}{\numberline {88}{\ignorespaces Stahlprofile}}{64}{figure.88}%
-\contentsline {figure}{\numberline {89}{\ignorespaces Oberer Rahmen}}{65}{figure.89}%
+\contentsline {figure}{\numberline {22}{\ignorespaces Motoren-GPIO Konfiguration}}{23}{figure.22}%
+\contentsline {figure}{\numberline {23}{\ignorespaces \texttt {Adafruit\_MCP23X17.h}-Bibliothek}}{23}{figure.23}%
+\contentsline {figure}{\numberline {24}{\ignorespaces MCP-Setup}}{24}{figure.24}%
+\contentsline {figure}{\numberline {25}{\ignorespaces Initialisierung Motoren}}{24}{figure.25}%
+\contentsline {figure}{\numberline {26}{\ignorespaces Enumeration von Bewegungsrichtungen}}{25}{figure.26}%
+\contentsline {figure}{\numberline {27}{\ignorespaces Strings zu Enum Variable umwandeln}}{26}{figure.27}%
+\contentsline {figure}{\numberline {28}{\ignorespaces \texttt {navigate() in loop()}}}{26}{figure.28}%
+\contentsline {figure}{\numberline {29}{\ignorespaces Überprüfung auf Änderung und Speed in Integer umwandeln in \texttt {navigate()}-Funktion}}{27}{figure.29}%
+\contentsline {figure}{\numberline {30}{\ignorespaces Motorbremse deaktivieren in \texttt {navigate()}-Funktion}}{27}{figure.30}%
+\contentsline {figure}{\numberline {31}{\ignorespaces switch-case Struktur in \texttt {navigate()}-Funktion}}{28}{figure.31}%
+\contentsline {figure}{\numberline {32}{\ignorespaces PWM mit analogWrite übertragen und letzte Werte speichern in \texttt {navigate()}-Funktion}}{29}{figure.32}%
+\contentsline {figure}{\numberline {33}{\ignorespaces \texttt {ESPAsyncWebServer.h}-Bibliothek}}{31}{figure.33}%
+\contentsline {figure}{\numberline {34}{\ignorespaces WebServer Netzwerkkonfiguration}}{31}{figure.34}%
+\contentsline {figure}{\numberline {35}{\ignorespaces Webserver Setup}}{32}{figure.35}%
+\contentsline {figure}{\numberline {36}{\ignorespaces SPIFFS Initalisierung}}{33}{figure.36}%
+\contentsline {figure}{\numberline {37}{\ignorespaces \texttt {readfile()}-Funktion}}{34}{figure.37}%
+\contentsline {figure}{\numberline {38}{\ignorespaces Bibliotheken für die Kommunikation}}{34}{figure.38}%
+\contentsline {figure}{\numberline {39}{\ignorespaces Setup ESP32}}{35}{figure.39}%
+\contentsline {figure}{\numberline {40}{\ignorespaces \texttt {onWebSocketEvent()}-Funktion}}{36}{figure.40}%
+\contentsline {figure}{\numberline {41}{\ignorespaces JSON-Beispiel für Steuerung}}{37}{figure.41}%
+\contentsline {figure}{\numberline {42}{\ignorespaces JSON-Beispiel für Kamerasteuerung}}{37}{figure.42}%
+\contentsline {figure}{\numberline {43}{\ignorespaces JSON-Beispiel für Lichtsteuerung}}{37}{figure.43}%
+\contentsline {figure}{\numberline {44}{\ignorespaces \texttt {handleWebSocketMessage()}-Funktion}}{38}{figure.44}%
+\contentsline {figure}{\numberline {45}{\ignorespaces Steuerkreuz auf der Website}}{39}{figure.45}%
+\contentsline {figure}{\numberline {46}{\ignorespaces Steuerkreuz HTML-Code}}{39}{figure.46}%
+\contentsline {figure}{\numberline {47}{\ignorespaces CSS-Klassen \texttt {.dpad-container} und \texttt {.button}}}{40}{figure.47}%
+\contentsline {figure}{\numberline {48}{\ignorespaces CSS-Richtungsklassen}}{41}{figure.48}%
+\contentsline {figure}{\numberline {49}{\ignorespaces EventListener für ungewünschte Aktionen}}{42}{figure.49}%
+\contentsline {figure}{\numberline {50}{\ignorespaces EventListener für Eingabe}}{42}{figure.50}%
+\contentsline {figure}{\numberline {51}{\ignorespaces \texttt {send()}-Funktion}}{43}{figure.51}%
+\contentsline {figure}{\numberline {52}{\ignorespaces \texttt {stop()}-Funktion}}{44}{figure.52}%
+\contentsline {figure}{\numberline {53}{\ignorespaces Geschwindigkeitssteuerung auf der Website}}{44}{figure.53}%
+\contentsline {figure}{\numberline {54}{\ignorespaces Geschwindigkeitssteuerung HTML-Code}}{45}{figure.54}%
+\contentsline {figure}{\numberline {55}{\ignorespaces CSS-Klassen für die Geschwindigkeitssteuerung}}{45}{figure.55}%
+\contentsline {figure}{\numberline {56}{\ignorespaces \texttt {speed-change()}-Funktion}}{46}{figure.56}%
+\contentsline {figure}{\numberline {57}{\ignorespaces Kamerasteuerung auf der Website}}{46}{figure.57}%
+\contentsline {figure}{\numberline {58}{\ignorespaces Kamerasteuerung HTML-Code}}{47}{figure.58}%
+\contentsline {figure}{\numberline {59}{\ignorespaces CSS-Klassen für die Kamerasteuerung}}{47}{figure.59}%
+\contentsline {figure}{\numberline {60}{\ignorespaces \texttt {camera-change()}-Funktion}}{48}{figure.60}%
+\contentsline {figure}{\numberline {61}{\ignorespaces Fernlicht-Icon auf der Website}}{48}{figure.61}%
+\contentsline {figure}{\numberline {62}{\ignorespaces HTML-Code für Fernlicht}}{49}{figure.62}%
+\contentsline {figure}{\numberline {63}{\ignorespaces CSS-Klassen für das Fernlicht}}{49}{figure.63}%
+\contentsline {figure}{\numberline {64}{\ignorespaces \texttt {togglelight()}-Funktion}}{50}{figure.64}%
+\contentsline {figure}{\numberline {65}{\ignorespaces Menü-Icon auf der Website}}{51}{figure.65}%
+\contentsline {figure}{\numberline {66}{\ignorespaces Sidebar mit Sensordaten}}{51}{figure.66}%
+\contentsline {figure}{\numberline {67}{\ignorespaces Sensordaten HTML-Code}}{52}{figure.67}%
+\contentsline {figure}{\numberline {68}{\ignorespaces CSS-Klassen für das Menü}}{53}{figure.68}%
+\contentsline {figure}{\numberline {69}{\ignorespaces CSS-Klasse \texttt {.daten}}}{54}{figure.69}%
+\contentsline {figure}{\numberline {70}{\ignorespaces JavaScript-Verarbeitung der Sensordaten}}{54}{figure.70}%
+\contentsline {figure}{\numberline {71}{\ignorespaces Statusbox auf der Website}}{55}{figure.caption.2}%
+\contentsline {figure}{\numberline {72}{\ignorespaces Statusbox: Verbunden}}{55}{figure.caption.2}%
+\contentsline {figure}{\numberline {73}{\ignorespaces Statusbox: Verbindung getrennt}}{55}{figure.caption.2}%
+\contentsline {figure}{\numberline {74}{\ignorespaces Statusbox HTML-Code}}{55}{figure.74}%
+\contentsline {figure}{\numberline {75}{\ignorespaces CSS-Klassen für die Statusbox}}{56}{figure.75}%
+\contentsline {figure}{\numberline {76}{\ignorespaces JavaScript Funktionen für den Verbindungsstatus}}{56}{figure.76}%
+\contentsline {figure}{\numberline {77}{\ignorespaces Erstes Modell}}{59}{figure.77}%
+\contentsline {figure}{\numberline {78}{\ignorespaces Zweites Modell}}{60}{figure.78}%
+\contentsline {figure}{\numberline {79}{\ignorespaces Rahmen}}{60}{figure.79}%
+\contentsline {figure}{\numberline {80}{\ignorespaces Halterung 1}}{61}{figure.caption.3}%
+\contentsline {figure}{\numberline {81}{\ignorespaces Halterung 2}}{61}{figure.caption.3}%
+\contentsline {figure}{\numberline {82}{\ignorespaces Motorenhalterung}}{61}{figure.82}%
+\contentsline {figure}{\numberline {83}{\ignorespaces Räder}}{62}{figure.83}%
+\contentsline {figure}{\numberline {84}{\ignorespaces Wägezellen}}{62}{figure.84}%
+\contentsline {figure}{\numberline {85}{\ignorespaces Wägezellenhalterung}}{63}{figure.85}%
+\contentsline {figure}{\numberline {86}{\ignorespaces Fertiges Modell}}{63}{figure.86}%
+\contentsline {figure}{\numberline {87}{\ignorespaces Stahlprofile}}{64}{figure.87}%
+\contentsline {figure}{\numberline {88}{\ignorespaces Oberer Rahmen}}{65}{figure.88}%
+\contentsline {figure}{\numberline {89}{\ignorespaces Elektrodenschweißen}}{66}{figure.89}%
 \contentsline {figure}{\numberline {90}{\ignorespaces Elektrodenschweißen}}{66}{figure.90}%
-\contentsline {figure}{\numberline {91}{\ignorespaces Elektrodenschweißen}}{66}{figure.91}%
+\contentsline {figure}{\numberline {91}{\ignorespaces Motorbefestigung}}{67}{figure.91}%
 \contentsline {figure}{\numberline {92}{\ignorespaces Motorbefestigung}}{67}{figure.92}%
-\contentsline {figure}{\numberline {93}{\ignorespaces Motorbefestigung}}{67}{figure.93}%
-\contentsline {figure}{\numberline {94}{\ignorespaces WERKA PRO 10}}{68}{figure.94}%
+\contentsline {figure}{\numberline {93}{\ignorespaces WERKA PRO 10}}{68}{figure.93}%
+\contentsline {figure}{\numberline {94}{\ignorespaces Verbindungselement}}{69}{figure.94}%
 \contentsline {figure}{\numberline {95}{\ignorespaces Verbindungselement}}{69}{figure.95}%
 \contentsline {figure}{\numberline {96}{\ignorespaces Verbindungselement}}{69}{figure.96}%
-\contentsline {figure}{\numberline {97}{\ignorespaces Verbindungselement}}{69}{figure.97}%
-\contentsline {figure}{\numberline {98}{\ignorespaces Integration der Wägezelle}}{69}{figure.98}%
-\contentsline {figure}{\numberline {99}{\ignorespaces <>}}{70}{figure.99}%
-\contentsline {figure}{\numberline {100}{\ignorespaces Schaltplan Steuerplatine}}{74}{figure.100}%
-\contentsline {figure}{\numberline {101}{\ignorespaces Schaltplan Spannungsversorgung}}{75}{figure.101}%
-\contentsline {figure}{\numberline {102}{\ignorespaces Schraubklemmen}}{75}{figure.102}%
-\contentsline {figure}{\numberline {103}{\ignorespaces Schaltplan Masseanschlüsse}}{76}{figure.103}%
-\contentsline {figure}{\numberline {104}{\ignorespaces Pinheader}}{76}{figure.104}%
-\contentsline {figure}{\numberline {105}{\ignorespaces 5V-Spannungsregelung}}{76}{figure.105}%
-\contentsline {figure}{\numberline {106}{\ignorespaces LM317}}{77}{figure.caption.4}%
-\contentsline {figure}{\numberline {107}{\ignorespaces Spannungsregler}}{78}{figure.caption.5}%
-\contentsline {figure}{\numberline {108}{\ignorespaces Schaltplan Spannungsversorgung}}{79}{figure.caption.6}%
-\contentsline {figure}{\numberline {109}{\ignorespaces Schaltplan ESP32}}{79}{figure.109}%
-\contentsline {figure}{\numberline {110}{\ignorespaces ESP32-Anschlüsse}}{80}{figure.110}%
-\contentsline {figure}{\numberline {111}{\ignorespaces MCP23017}}{80}{figure.111}%
-\contentsline {figure}{\numberline {112}{\ignorespaces expander-Anschlüsse}}{81}{figure.112}%
-\contentsline {figure}{\numberline {113}{\ignorespaces Lichtsteuerung}}{82}{figure.113}%
-\contentsline {figure}{\numberline {114}{\ignorespaces Batteriemessung}}{83}{figure.114}%
-\contentsline {figure}{\numberline {115}{\ignorespaces Power-LED}}{83}{figure.115}%
-\contentsline {figure}{\numberline {116}{\ignorespaces pullup-widerstände}}{84}{figure.116}%
-\contentsline {figure}{\numberline {117}{\ignorespaces schaltplan-wägezellen}}{84}{figure.117}%
-\contentsline {figure}{\numberline {118}{\ignorespaces i2c-anschlüsse}}{85}{figure.118}%
-\contentsline {figure}{\numberline {119}{\ignorespaces RX/TX}}{85}{figure.119}%
-\contentsline {figure}{\numberline {120}{\ignorespaces PCB}}{86}{figure.120}%
-\contentsline {figure}{\numberline {121}{\ignorespaces Steuerungsplatine}}{87}{figure.121}%
-\contentsline {figure}{\numberline {122}{\ignorespaces ESP32-CAM Modul}}{88}{figure.122}%
-\contentsline {figure}{\numberline {123}{\ignorespaces Videoübertragung auf der Website}}{90}{figure.123}%
-\contentsline {figure}{\numberline {124}{\ignorespaces Kamera-GPIO Konfiguration}}{91}{figure.124}%
-\contentsline {figure}{\numberline {125}{\ignorespaces Kamera-Initialisierung}}{92}{figure.125}%
-\contentsline {figure}{\numberline {126}{\ignorespaces Halterung der Kamera}}{93}{figure.126}%
-\contentsline {figure}{\numberline {127}{\ignorespaces Videoübertragung HTML-Code}}{93}{figure.127}%
-\contentsline {figure}{\numberline {128}{\ignorespaces CSS-Formatierung für \texttt {dynamicimage}}}{94}{figure.128}%
-\contentsline {figure}{\numberline {129}{\ignorespaces Videoübertragung im JavaScript-Code}}{94}{figure.129}%
-\contentsline {figure}{\numberline {130}{\ignorespaces SG90-Servomotor}}{95}{figure.130}%
-\contentsline {figure}{\numberline {131}{\ignorespaces Verkabelung des Servomotors}}{96}{figure.131}%
-\contentsline {figure}{\numberline {132}{\ignorespaces \texttt {ESP32Servo}-Bibliothek}}{96}{figure.132}%
-\contentsline {figure}{\numberline {133}{\ignorespaces Variablen für Servo}}{97}{figure.133}%
-\contentsline {figure}{\numberline {134}{\ignorespaces \texttt {Setup();}-Code für Servo}}{97}{figure.134}%
-\contentsline {figure}{\numberline {135}{\ignorespaces camerapos}}{98}{figure.135}%
-\contentsline {figure}{\numberline {136}{\ignorespaces Funktion zum Kamera drehen}}{98}{figure.136}%
-\contentsline {figure}{\numberline {137}{\ignorespaces Kameragehäuse}}{99}{figure.137}%
-\contentsline {figure}{\numberline {138}{\ignorespaces Aussparung für den Servomotor}}{99}{figure.138}%
-\contentsline {figure}{\numberline {139}{\ignorespaces HC-SR04 Timing Diagram}}{102}{figure.139}%
-\contentsline {figure}{\numberline {140}{\ignorespaces Beispiel für Messung}}{102}{figure.140}%
-\contentsline {figure}{\numberline {141}{\ignorespaces HC-SR04 Pinbelegung}}{103}{figure.141}%
-\contentsline {figure}{\numberline {142}{\ignorespaces HC-SR04 Schaltungs Beispiel}}{104}{figure.142}%
-\contentsline {figure}{\numberline {143}{\ignorespaces \texttt {HC-SR04.h} Bibliothek}}{105}{figure.143}%
-\contentsline {figure}{\numberline {144}{\ignorespaces Erstellung von Objekten der Klasse UltraSonicDistanceSensor}}{105}{figure.144}%
-\contentsline {figure}{\numberline {145}{\ignorespaces Messung der Entfernung in der \texttt {loop()}-Funktion}}{105}{figure.145}%
-\contentsline {figure}{\numberline {146}{\ignorespaces if-Abfrage für Mindestabstand und Geschwindigkeit}}{106}{figure.146}%
-\contentsline {figure}{\numberline {147}{\ignorespaces Halbbrücken-Wägezelle}}{106}{figure.147}%
-\contentsline {figure}{\numberline {148}{\ignorespaces HX711 24-bit A/D-Wandler}}{107}{figure.148}%
-\contentsline {figure}{\numberline {149}{\ignorespaces Prinzip einer Wägezelle }}{107}{figure.149}%
-\contentsline {figure}{\numberline {150}{\ignorespaces Wheatstone-Brückenschaltung}}{108}{figure.150}%
-\contentsline {figure}{\numberline {151}{\ignorespaces Beschaltung der Wägezellen}}{109}{figure.151}%
-\contentsline {figure}{\numberline {152}{\ignorespaces Verkabelung der Wägezellen mit HX711}}{110}{figure.152}%
-\contentsline {figure}{\numberline {153}{\ignorespaces Testaufbau der Wägezellen}}{111}{figure.153}%
-\contentsline {figure}{\numberline {154}{\ignorespaces Einbinden der \texttt {HX711\_ADC}-Bibliothek}}{111}{figure.154}%
-\contentsline {figure}{\numberline {155}{\ignorespaces \texttt {Setup();} - Code für den HX711}}{112}{figure.155}%
-\contentsline {figure}{\numberline {156}{\ignorespaces Timeout Abfrage in der \texttt {Setup();}-Funktion}}{113}{figure.156}%
-\contentsline {figure}{\numberline {157}{\ignorespaces Gewichtsmessung in der \texttt {loop();}-Funktion}}{113}{figure.157}%
-\contentsline {figure}{\numberline {158}{\ignorespaces Variablen für die Spannungsmessung}}{114}{figure.158}%
-\contentsline {figure}{\numberline {159}{\ignorespaces Messung der Spannung}}{115}{figure.159}%
-\contentsline {figure}{\numberline {160}{\ignorespaces Berechnung der Spannung in Prozent}}{115}{figure.160}%
-\contentsline {figure}{\numberline {161}{\ignorespaces Werte in JSON umwandeln und an Client senden}}{116}{figure.161}%
-\contentsline {figure}{\numberline {162}{\ignorespaces Pin und Variable für Lichtsteuerung}}{117}{figure.162}%
-\contentsline {figure}{\numberline {163}{\ignorespaces \texttt {Setup();} - Code für Lichtsteuerung}}{117}{figure.163}%
-\contentsline {figure}{\numberline {164}{\ignorespaces \texttt {onWebSocketEvent();} - Code für Lichtsteuerung}}{117}{figure.164}%
-\contentsline {figure}{\numberline {165}{\ignorespaces Funktionen zum Ein-/Auschalten des Lichtes}}{118}{figure.165}%
+\contentsline {figure}{\numberline {97}{\ignorespaces Integration der Wägezelle}}{69}{figure.97}%
+\contentsline {figure}{\numberline {98}{\ignorespaces Erster funktionierender Prototyp}}{70}{figure.98}%
+\contentsline {figure}{\numberline {99}{\ignorespaces Schaltplan Steuerplatine}}{74}{figure.99}%
+\contentsline {figure}{\numberline {100}{\ignorespaces Schaltplan Spannungsversorgung}}{75}{figure.100}%
+\contentsline {figure}{\numberline {101}{\ignorespaces Schraubklemmen}}{75}{figure.101}%
+\contentsline {figure}{\numberline {102}{\ignorespaces Schaltplan Masseanschlüsse}}{76}{figure.102}%
+\contentsline {figure}{\numberline {103}{\ignorespaces Pinheader}}{76}{figure.103}%
+\contentsline {figure}{\numberline {104}{\ignorespaces 5V-Spannungsregelung}}{76}{figure.104}%
+\contentsline {figure}{\numberline {105}{\ignorespaces LM317}}{77}{figure.caption.4}%
+\contentsline {figure}{\numberline {106}{\ignorespaces Spannungsregler}}{78}{figure.caption.5}%
+\contentsline {figure}{\numberline {107}{\ignorespaces Schaltplan Spannungsversorgung}}{79}{figure.caption.6}%
+\contentsline {figure}{\numberline {108}{\ignorespaces Schaltplan ESP32}}{79}{figure.108}%
+\contentsline {figure}{\numberline {109}{\ignorespaces ESP32-Anschlüsse}}{80}{figure.109}%
+\contentsline {figure}{\numberline {110}{\ignorespaces MCP23017}}{80}{figure.110}%
+\contentsline {figure}{\numberline {111}{\ignorespaces expander-Anschlüsse}}{81}{figure.111}%
+\contentsline {figure}{\numberline {112}{\ignorespaces Lichtsteuerung}}{82}{figure.112}%
+\contentsline {figure}{\numberline {113}{\ignorespaces Batteriemessung}}{83}{figure.113}%
+\contentsline {figure}{\numberline {114}{\ignorespaces Power-LED}}{83}{figure.114}%
+\contentsline {figure}{\numberline {115}{\ignorespaces pullup-widerstände}}{84}{figure.115}%
+\contentsline {figure}{\numberline {116}{\ignorespaces schaltplan-wägezellen}}{84}{figure.116}%
+\contentsline {figure}{\numberline {117}{\ignorespaces i2c-anschlüsse}}{85}{figure.117}%
+\contentsline {figure}{\numberline {118}{\ignorespaces RX/TX}}{85}{figure.118}%
+\contentsline {figure}{\numberline {119}{\ignorespaces PCB}}{86}{figure.119}%
+\contentsline {figure}{\numberline {120}{\ignorespaces Steuerungsplatine}}{87}{figure.120}%
+\contentsline {figure}{\numberline {121}{\ignorespaces ESP32-CAM Modul}}{88}{figure.121}%
+\contentsline {figure}{\numberline {122}{\ignorespaces Videoübertragung auf der Website}}{90}{figure.122}%
+\contentsline {figure}{\numberline {123}{\ignorespaces Kamera-GPIO Konfiguration}}{91}{figure.123}%
+\contentsline {figure}{\numberline {124}{\ignorespaces Kamera-Initialisierung}}{92}{figure.124}%
+\contentsline {figure}{\numberline {125}{\ignorespaces Halterung der Kamera}}{93}{figure.125}%
+\contentsline {figure}{\numberline {126}{\ignorespaces Videoübertragung HTML-Code}}{93}{figure.126}%
+\contentsline {figure}{\numberline {127}{\ignorespaces CSS-Formatierung für \texttt {dynamicimage}}}{94}{figure.127}%
+\contentsline {figure}{\numberline {128}{\ignorespaces Videoübertragung im JavaScript-Code}}{94}{figure.128}%
+\contentsline {figure}{\numberline {129}{\ignorespaces SG90-Servomotor}}{95}{figure.129}%
+\contentsline {figure}{\numberline {130}{\ignorespaces Verkabelung des Servomotors}}{96}{figure.130}%
+\contentsline {figure}{\numberline {131}{\ignorespaces \texttt {ESP32Servo}-Bibliothek}}{96}{figure.131}%
+\contentsline {figure}{\numberline {132}{\ignorespaces Variablen für Servo}}{97}{figure.132}%
+\contentsline {figure}{\numberline {133}{\ignorespaces \texttt {Setup();}-Code für Servo}}{97}{figure.133}%
+\contentsline {figure}{\numberline {134}{\ignorespaces camerapos}}{98}{figure.134}%
+\contentsline {figure}{\numberline {135}{\ignorespaces Funktion zum Kamera drehen}}{98}{figure.135}%
+\contentsline {figure}{\numberline {136}{\ignorespaces Kameragehäuse}}{99}{figure.136}%
+\contentsline {figure}{\numberline {137}{\ignorespaces Aussparung für den Servomotor}}{99}{figure.137}%
+\contentsline {figure}{\numberline {138}{\ignorespaces HC-SR04 Timing Diagram}}{102}{figure.138}%
+\contentsline {figure}{\numberline {139}{\ignorespaces Beispiel für Messung}}{102}{figure.139}%
+\contentsline {figure}{\numberline {140}{\ignorespaces HC-SR04 Pinbelegung}}{103}{figure.140}%
+\contentsline {figure}{\numberline {141}{\ignorespaces HC-SR04 Schaltungs Beispiel}}{104}{figure.141}%
+\contentsline {figure}{\numberline {142}{\ignorespaces \texttt {HC-SR04.h} Bibliothek}}{105}{figure.142}%
+\contentsline {figure}{\numberline {143}{\ignorespaces Erstellung von Objekten der Klasse UltraSonicDistanceSensor}}{105}{figure.143}%
+\contentsline {figure}{\numberline {144}{\ignorespaces Messung der Entfernung in der \texttt {loop()}-Funktion}}{105}{figure.144}%
+\contentsline {figure}{\numberline {145}{\ignorespaces if-Abfrage für Mindestabstand und Geschwindigkeit}}{106}{figure.145}%
+\contentsline {figure}{\numberline {146}{\ignorespaces Halbbrücken-Wägezelle}}{106}{figure.146}%
+\contentsline {figure}{\numberline {147}{\ignorespaces HX711 24-bit A/D-Wandler}}{107}{figure.147}%
+\contentsline {figure}{\numberline {148}{\ignorespaces Prinzip einer Wägezelle }}{107}{figure.148}%
+\contentsline {figure}{\numberline {149}{\ignorespaces Wheatstone-Brückenschaltung}}{108}{figure.149}%
+\contentsline {figure}{\numberline {150}{\ignorespaces Beschaltung der Wägezellen}}{109}{figure.150}%
+\contentsline {figure}{\numberline {151}{\ignorespaces Verkabelung der Wägezellen mit HX711}}{110}{figure.151}%
+\contentsline {figure}{\numberline {152}{\ignorespaces Testaufbau der Wägezellen}}{111}{figure.152}%
+\contentsline {figure}{\numberline {153}{\ignorespaces Einbinden der \texttt {HX711\_ADC}-Bibliothek}}{111}{figure.153}%
+\contentsline {figure}{\numberline {154}{\ignorespaces \texttt {Setup();} - Code für den HX711}}{112}{figure.154}%
+\contentsline {figure}{\numberline {155}{\ignorespaces Timeout Abfrage in der \texttt {Setup();}-Funktion}}{113}{figure.155}%
+\contentsline {figure}{\numberline {156}{\ignorespaces Gewichtsmessung in der \texttt {loop();}-Funktion}}{113}{figure.156}%
+\contentsline {figure}{\numberline {157}{\ignorespaces Variablen für die Spannungsmessung}}{114}{figure.157}%
+\contentsline {figure}{\numberline {158}{\ignorespaces Messung der Spannung}}{115}{figure.158}%
+\contentsline {figure}{\numberline {159}{\ignorespaces Berechnung der Spannung in Prozent}}{115}{figure.159}%
+\contentsline {figure}{\numberline {160}{\ignorespaces Werte in JSON umwandeln und an Client senden}}{116}{figure.160}%
+\contentsline {figure}{\numberline {161}{\ignorespaces Pin und Variable für Lichtsteuerung}}{117}{figure.161}%
+\contentsline {figure}{\numberline {162}{\ignorespaces \texttt {Setup();} - Code für Lichtsteuerung}}{117}{figure.162}%
+\contentsline {figure}{\numberline {163}{\ignorespaces \texttt {onWebSocketEvent();} - Code für Lichtsteuerung}}{117}{figure.163}%
+\contentsline {figure}{\numberline {164}{\ignorespaces Funktionen zum Ein-/Auschalten des Lichtes}}{118}{figure.164}%
