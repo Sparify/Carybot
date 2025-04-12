@@ -313,8 +313,9 @@ void turnRight()
 void cam_turn()
 {
   Serial.println("Cam_Turn");
-  myservo.write(camera_pos);
-  Serial.println(String(camera_pos));
+  int inverted_pos = 180 - camera_pos;
+  myservo.write(inverted_pos);
+  Serial.println(String(inverted_pos));
 }
 
 // Licht einschalten und auschalten
@@ -425,7 +426,7 @@ void loop()
     if (newDataReady) {
       weight = LoadCell.getData();
       Serial.print("Load_cell output val: ");
-      Serial.println(weight);
+      Serial.println(weight/1000.f);
       newDataReady=0;
     }
 
@@ -434,7 +435,7 @@ void loop()
     }
 
     String batterystatus = String(akku_round, 0);
-    String weightstatus = String(weight, 0);
+    String weightstatus = String(weight/1000.f, 0);
     String message = "{\"battery\": \"" + batterystatus + "\", \"weight\": \"" + weightstatus + "\"}";
     websocket.broadcastTXT(message.c_str());
   }
