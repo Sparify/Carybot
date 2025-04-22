@@ -789,7 +789,7 @@
 	
 			\subsubsection{Message Handling}
 			
-	In der Funktion onWebSocketEvent() werden die WebSocket-Ereignisse verarbeitet. Sie wird aufgerufen, wenn sich ein WebSocket-Client verbindent, eine Nachricht sendet oder die Verbindung sich trennt.
+	In der Funktion onWebSocketEvent() werden die WebSocket-Ereignisse verarbeitet. Sie wird aufgerufen, wenn sich ein WebSocket-Client verbindent, eine Nachricht sendet oder die Verbindung getrennt wird.
 	Der Parameter num steht für die ID des Clients, der das Event ausgelöst hat. Der Parameter type gibt die Art des WebSocket-Event an. Der Parameter payload sind die empfangenen Daten. Der Parameter length steht für die Größe des payload-Buffers. 
 	In der Funktion werden die Events mit einem switch-case verarbeitet\\[5cm]
 	Übersicht der WebSocket-Ereignisse:
@@ -890,7 +890,7 @@
 			
 			\subsubsection*{Steuerkreuz}
 				
-	Um den Roboter überhaupt steuern zu können, wird ein Steuerkreuz implementiert. Das Steuerkreuz befindet sich mittig am rechten Bildschirmrand. Das Steuerkreuz besteht aus fünf Tasten, nämlich: Vorwarts (\texttt{UP}), (\texttt{DOWN} ), links (\texttt{LEFT}), rechts (\texttt{RIGHT}) und in der Mitte Stop (\texttt{HALT}). \\[0.5cm]
+	Um den Roboter überhaupt steuern zu können, wird ein Steuerkreuz implementiert. Das Steuerkreuz befindet sich mittig am rechten Bildschirmrand. Das Steuerkreuz besteht aus fünf Tasten, nämlich: Vorwärts (\texttt{UP}), (\texttt{DOWN} ), links (\texttt{LEFT}), rechts (\texttt{RIGHT}) und in der Mitte Stop (\texttt{HALT}). \\[0.5cm]
 	\begin{center}
 		\begin{minipage}[t]{1\textwidth}
 			\includegraphics[scale=0.4]{Pictures/Steuerung-web}
@@ -1117,9 +1117,9 @@
 			\end{center}
 		\end{minipage} \\[0.75cm]
 	\end{center}
-	In der CSS-Klasse \texttt{fernlicht-icon} wird das Icon 20\% vom oberen Rand und 2\% von rechten Rand mit einer Größe von 50x50 Pixel positioniert. Es wird auf der 2 z-Ebene angezeigt und der nicht sichtbare Hintergrund wird transparent angezeigt. Beim Ändern der Farbe wird eine sanfte Animation über 0,3 Sekunden angezeigt. \\[0.5cm]
+	In der CSS-Klasse \texttt{fernlicht-icon} wird das Icon 20\% vom oberen Rand und 2\% von rechten Rand mit einer Größe von 50x50 Pixel positioniert. Es liegt in der zweiten Ebene über dem Hintergrund, so dass es nicht von anderen Elementen überdeckt wird. Der Hintergrund, der außerhalb des Icons liegt, wird transparent angezeigt. Beim Ändern der Farbe wird eine sanfte Animation über 0,3 Sekunden angezeigt. \\[0.3cm]
 	Die \texttt{grayscale} Klasse wandelt das Icon in die ausgegraute Darstellung um, um anzuzeigen, dass das Fernlicht deaktiviert ist.
-	Die \texttt{active-light} Klasse ändert die Hintergrundfarbe zu einem transparenten grünen Ton, um anzuzeigen, dass das Fernlicht aktiv ist. \\[0.5cm]
+	Die \texttt{active-light} Klasse ändert die Hintergrundfarbe zu einem transparenten grünen Ton, um anzuzeigen, dass das Fernlicht aktiv ist. 
 	\begin{center}
 		\begin{minipage}[t]{0.65\textwidth}
 			\includegraphics{Pictures/fernlicht-css}
@@ -1148,7 +1148,7 @@
 			
 				\subsubsection*{Sensordaten}	
 			
-	In der linken oberen Ecke der Website befindet sich das Menü-icon. Ein Klick darauf ruft die Sidebar für die Daten auf. Die Sidebar klappt sich am linken Bildschirmrand auf. Darin kann ist der aktuelle Akkustand sowie das aktuelle aufliegende Gewicht auslesbar. Um das Menü wieder schließen zu können, ist ein erneuter Klick auf das Icon erforderlich und die Sidebar wird wieder zugeklappt. \\[0.5cm]	
+	In der linken oberen Ecke der Website befindet sich das Menü-icon. Ein Klick darauf ruft die Sidebar für die Daten auf. Die Sidebar klappt sich am linken Bildschirmrand auf. Darin ist der aktuelle Akkustand sowie das aktuelle aufliegende Gewicht auslesbar. Um das Menü wieder schließen zu können, ist ein erneuter Klick auf das Icon erforderlich und die Sidebar wird wieder zugeklappt. \\[0.5cm]	
 	\begin{center}
 		\begin{minipage}[t]{1\textwidth}
 			\includegraphics[scale=0.4]{Pictures/menu-web1}
@@ -1184,7 +1184,7 @@
 			\end{center}
 		\end{minipage} \\[0.75cm]
 	\end{center}
-	In der CSS-Klasse \texttt{mymenu} wird die sidebar formatiert. Das Menü ist fixiert und nimmt 100\% der Höhe ein. Die Anfängliche Höhe ist 0, da es versteckt bzw. eingeklappt ist. Die Hintergrundfarbe ist schwarz und es befindet sich auf der z-Ebene 1 um den Hauptinhalt überdecken zu können. Beim Ein- und Ausblenden dauert 0.5 Sekunden, um einen sanften Übergang zu ermöglichen. \\[0.5cm]
+	In der CSS-Klasse \texttt{mymenu} wird die sidebar formatiert. Das Menü ist fixiert und nimmt 100\% der Höhe ein. Die Anfängliche Höhe ist 0, da es versteckt bzw. eingeklappt ist. Die Hintergrundfarbe ist schwarz und das Menü liegt auf der ersten Ebene über dem Hauptinhalt, damit es diesen überlagern kann, wenn es eingeblendet wird. Beim Ein- und Ausblenden dauert 0.5 Sekunden, um einen sanften Übergang zu ermöglichen. \\[0.5cm]
 	Der Hauptinhalt \texttt{\#main} hat eine Animation, damit er beim Öffnen des Menüs nach rechts verschoben werden kann. \\[0.5cm]
 	Falls der Bildschirm kleiner als 450px Höhe hat, werden die Abstände der angezeigten Daten verkleinert. Das dient dazu, um besonders auf Handys die Ansicht zu optimieren. \\[0.5cm]
 	Die CSS-Klasse \texttt{menu-icon} positioniert das Icon in der linken oberen Ecke mit einer 30x30px Format. \texttt{Cursor: pointer} sorgt dafür, dass das Icon anklickbar ist. \\[0.5cm]
