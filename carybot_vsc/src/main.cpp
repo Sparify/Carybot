@@ -16,14 +16,14 @@ Adafruit_MCP23X17 mcp;
 const int light_pin = 0;
 int light_st = 0;
 
-UltraSonicDistanceSensor distanceSensor_rear(23, 19);
+UltraSonicDistanceSensor distanceSensor_rear(15, 19);
 UltraSonicDistanceSensor distanceSensor_front(13,12);
 float distance_front = 0.0;
 float distance_rear = 0.0;
 
 unsigned long startMillis;
 unsigned long currentMillis;
-const unsigned long period = 1000;
+const unsigned long period = 500;
 
 int leftfrontwheel_pwm = 32;
 const int leftfrontwheel_brake = 1;
@@ -420,22 +420,25 @@ void loop()
     Serial.println("Akkustand: " + String(akku_round, 0) + "%");
     distance_front = distanceSensor_front.measureDistanceCm();
     distance_rear = distanceSensor_rear.measureDistanceCm();
-    Serial.println(distance_front);
     static boolean newDataReady = 0;
     if (LoadCell.update()) newDataReady = true;
     if (newDataReady) {
       weight = LoadCell.getData();
       Serial.print("Load_cell output val: ");
-      Serial.println(weight/1000.f);
+      Serial.println(weight/1000);
       newDataReady=0;
     }
 
-    if(((distance_front >= 5 && distance_front <= 20) && speed_cb >= 50) || ((distance_rear >= 5 && distance_rear <= 20) && speed_cb >= 50)){
+    if(((distance_front >= 5 && distance_front <= 60) && speed_cb >= 50) || ((distance_rear >= 5 && distance_rear <= 60) && speed_cb >= 50)){
+      Serial.print("Hinten: ");
+      Serial.println(distance_rear);
+      Serial.print("Vorne: ");
+      Serial.println(distance_front);
       stop();
     }
 
     String batterystatus = String(akku_round, 0);
-    String weightstatus = String(weight/1000.f, 0);
+    String weightstatus = String(weight/1000, 1);
     String message = "{\"battery\": \"" + batterystatus + "\", \"weight\": \"" + weightstatus + "\"}";
     websocket.broadcastTXT(message.c_str());
   }
