@@ -18,7 +18,7 @@
 \contentsline {subsection}{\numberline {3.3}Schaltungsaufbau mit einem Motor}{19}{subsection.3.3}%
 \contentsline {subsubsection}{\numberline {3.3.1}Komponenten}{19}{subsubsection.3.3.1}%
 \contentsline {subsubsection}{\numberline {3.3.2}Schaltungsaufbau und Verbindungen}{19}{subsubsection.3.3.2}%
-\contentsline {subsection}{\numberline {3.4}Schaltungsaufbau mit vier Motor}{21}{subsection.3.4}%
+\contentsline {subsection}{\numberline {3.4}Schaltungsaufbau mit vier Motoren}{21}{subsection.3.4}%
 \contentsline {subsubsection}{\numberline {3.4.1}Komponenten}{21}{subsubsection.3.4.1}%
 \contentsline {subsubsection}{\numberline {3.4.2}Schaltungserweiterung für vier Motoren:}{22}{subsubsection.3.4.2}%
 \contentsline {subsection}{\numberline {3.5}Code}{23}{subsection.3.5}%
@@ -50,7 +50,7 @@
 \contentsline {subsection}{\numberline {6.1}Zielsetzung}{72}{subsection.6.1}%
 \contentsline {subsection}{\numberline {6.2}Grundschaltungen}{73}{subsection.6.2}%
 \contentsline {subsubsection}{\numberline {6.2.1}Schaltplan Steuerplatine}{74}{subsubsection.6.2.1}%
-\contentsline {subsubsection}{\numberline {6.2.2}8. Expander\_Anschlüsse (Zusätzliche GPIO-Erweiterung über MCP23017)}{81}{subsubsection.6.2.2}%
+\contentsline {subsubsection}{\numberline {6.2.2}8. Expander\_Anschlüsse (GPIO-Erweiterung über MCP23017)}{81}{subsubsection.6.2.2}%
 \contentsline {subsection}{\numberline {6.3}Steuerplatine PCB}{86}{subsection.6.3}%
 \contentsline {subsection}{\numberline {6.4}Leiterplatten herstellen mit JLCPCB}{87}{subsection.6.4}%
 \contentsline {subsection}{\numberline {6.5}Bestückte Platine}{87}{subsection.6.5}%
@@ -88,7 +88,7 @@
 \contentsline {subsection}{\numberline {9.3}VS-Code}{119}{subsection.9.3}%
 \contentsline {subsubsection}{\numberline {9.3.1}Setup}{120}{subsubsection.9.3.1}%
 \contentsline {subsubsection}{\numberline {9.3.2}Bibliotheken}{120}{subsubsection.9.3.2}%
-\contentsline {subsubsection}{\numberline {9.3.3}verwendete Bibliotheken}{120}{subsubsection.9.3.3}%
+\contentsline {subsubsection}{\numberline {9.3.3}Verwendete Bibliotheken}{120}{subsubsection.9.3.3}%
 \contentsline {subsection}{\numberline {9.4}LaTex}{122}{subsection.9.4}%
 \contentsline {subsection}{\numberline {9.5}GitHub}{122}{subsection.9.5}%
 \contentsline {section}{\numberline {10}Abbildungsverzeichnis}{123}{section.10}%

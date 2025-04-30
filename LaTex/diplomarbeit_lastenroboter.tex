@@ -89,7 +89,7 @@
 	In dieser Diplomarbeit wird ein Lastenroboter entwickelt, der bis zu 25 Kilogramm transportieren kann. Der Roboter wird über eine Website gesteuert, die als Steuerungsplattform dient. Zusätzlich ist eine Kamera eingebaut, die zur visuellen Überwachung des Transportbereichs dient, sowie eine Waage, die das Gewicht der transportierten Last misst.\\[0.5 cm]
 	Ein Schwerpunkt der Arbeit liegt auf der mechanischen Konstruktion des Roboters, bei der ein stabiles Gehäuse aus Stahl gebaut wird, um Sicherheit und Stabilität zu gewährleisten. Außerdem wird eine eigene Platine entwickelt, die die verschiedenen Hardware-Komponenten, wie die Sensoren und die Motoren miteinander verbindet.\\[0.5 cm]
 	Die Steuerung des Roboters erfolgt über eine Website, welche die Bedienung sowie die Anzeige relevanter Daten wie Akkustand und Gewicht ermöglicht. Ein besonderer Fokus liegt dabei auf der Übertragung des Kamerabildes auf die Web-Oberfläche sowie der Integration einer schwenkbaren Kamera, um eine flexible Sicht auf den Transportbereich zu gewährleisten. Der ESP32-Mikrocontroller sorgt dafür, dass die Befehle des Benutzers an den Roboter übermittelt werden.\\[0.5 cm]
-	Zusätzlich wird eine OnBoard-Software entwickelt, die es ermöglicht, die Sensoren auszulesen und die Motoren als auch die Kamera anzusteuern.\\[0.5 cm]
+	Zusätzlich wird eine OnBoard-Software entwickelt, die es ermöglicht, die Sensoren auszulesen und sowohl die Motoren als auch die Kamera anzusteuern.\\[0.5 cm]
 	
 	\newpage
 	
@@ -164,7 +164,7 @@
 			\end{center}
 			\newpage
 		\subsection{Projektstrukturplan} %Daniel
-		Unsere Diplomarbeit beschäftigt sich mit der Entwicklung eines Lastenroboters. Der Lastenroboter soll etwa ein Gewicht von 25 Kilogramm tragen können. Die Steuerung erfolgt über eine Website, und zusätzlich soll eine Kamera eingebaut werden. Im Lastenroboter wird auch eine Waage eingebaut, damit man sehen kann, wie schwer die transportierte Last ist. \\ Das Ziel dieser Diplomarbeit ist also, ein betriebsbereiter Prototyp eines Lastenroboters mit Kamerasystem und Waage zu entwickeln und zu realisieren. \\[0.4cm]
+		Unsere Diplomarbeit beschäftigt sich mit der Entwicklung eines Lastenroboters. Der Lastenroboter soll etwa ein Gewicht von 25 Kilogramm tragen können. Die Steuerung erfolgt über eine Website, und zusätzlich soll eine Kamera eingebaut werden. Im Lastenroboter wird auch eine Waage eingebaut, damit man sehen kann, wie schwer die transportierte Last ist. \\ Das Ziel dieser Diplomarbeit ist also, einen betriebsbereiten Prototyp eines Lastenroboters mit Kamerasystem und Waage zu entwickeln und zu realisieren. \\[0.4cm]
 		\textbf{Geplantes Ergebnis der individuellen Themenstellungen:} \\
 		\textbf{Felix Hochegger:}
 		Bau des Roboter-Gehäuses und Integration der Komponenten, Verbindung der Hardware im besonderen Ansteuerung der Motoren \\
@@ -185,7 +185,7 @@
 			\end{minipage}
 		\end{center}
 		\newpage \noindent
-		Anschließend haben wir basierend auf dem Grobplan einen genaueren, detaillierten Plan erstellt. In diesem Feinkonzept wurden die einzelnen Arbeitsschritte konkreter ausgearbeitet, Zuständigkeiten verteilt und ein zeitlicher Ablauf festgelegt. So konnten wir gezielt vorgehen und mögliche Probleme frühzeitig erkennen und vermeiden.
+		Anschließend haben wir, basierend auf dem Grobplan, einen genaueren, detaillierten Plan erstellt. In diesem Feinkonzept wurden die einzelnen Arbeitsschritte konkreter ausgearbeitet, Zuständigkeiten verteilt und ein zeitlicher Ablauf festgelegt. So konnten wir gezielt vorgehen und mögliche Probleme frühzeitig erkennen und vermeiden.
 		\begin{center}
 			\begin{minipage}{\textwidth}
 				\centering
@@ -255,7 +255,7 @@
 		\subsection{Motoren} %Felix
 		
 			\subsubsection{Übersicht}
-			Für den Antrieb des Lastenroboters werden BLDC-Motoren eingesetzt. Verwendet werden die BLDC-Motoren von Dunkermotoren (Typ BG 40X25). Ein BLDC-Motor auch bürstenloser Gleichstrommoter gennant, wird über drei Phasen betrieben. Der BLDC-Motor wird oft in der Industrie eingesetzt, da er eine hohe Leistung bietet.
+			Für den Antrieb des Lastenroboters werden BLDC-Motoren eingesetzt. Verwendet werden die BLDC-Motoren von Dunkermotoren (Typ BG 40X25). Ein BLDC-Motor, auch bürstenloser Gleichstrommoter gennant, wird über drei Phasen betrieben. Der BLDC-Motor wird oft in der Industrie eingesetzt, da er eine hohe Leistung bietet.
 			
 			\begin{center}
 				\begin{minipage}{\textwidth}
@@ -271,7 +271,7 @@
 			\subsubsection{Funktionsweise}
 			Die Funktionsweise eines bürstenlosen Gleichstrommotors basiert auf der Wechselwirkung zwischen dem Magnetfeld des Stators und dem Magnetfeld des Rotors.\\[0.5cm]
 			\textbf{Stator:} Der Stator besteht aus mehreren Spulen, die üblicherweise drei Phasen umfasst. Die drei Phasen werden mit Wechselstrom angesteuert die dann ein rotierendes Magnetfeld erzeugen.\\[0.5cm]
-			\textbf{Rotor:} Der Rotor besteht aus einem Permanentmagneten. Dadurch das die Spulen ein rotierendes Magnetfeld erzeugen dreht sich der Rotor synchron mit diesem Magnetfeld mit.
+			\textbf{Rotor:} Der Rotor besteht aus einem Permanentmagneten. Dadurch, dass die Spulen ein rotierendes Magnetfeld erzeugen, dreht sich der Rotor synchron mit diesem Magnetfeld mit.
 			
 			\begin{center}
 				\begin{minipage}{\textwidth}
@@ -283,8 +283,9 @@
 					\small Quelle: www.elektrikrehberiniz.com
 				\end{minipage}
 			\end{center}
-			Damit die Phasen des Motors korrekt geschaltet werden, muss die genaue Position des Rotors im Inneren des Motors erfasst werden. Die genaue Position des Rotors wird durch Hallsensoren erfasst. Die drei Hallsensoren geben diese Informationen an die Steuerelektronik weiter. Mit diesen Daten kann die optimale Beschaltung der Phasen berechnet werden.\\[0.5cm]
-			Zur Steuerung der Drehzahl wird ein Pulsweitenmodulations-Signal (PWM-Signal) verwendet. Durch die PWM wird die Stromzufuhr zu den Phasen des Motors gesteuert. Wenn das Pulsweitenmodulations-Signal (PWM) erhöht wird, bedeutet das, dass die Phasen in kürzeren Abständen angesteuert werden. Dadurch erhält der Motor häufiger Energieimpulse, was zu einer höheren Drehzahl des Rotors führt. Das PWM-Signal regelt die Versorgungsspannung, indem es sie in schneller Folge ein- und ausschaltet. Je höher das Tastverhältnis des PWM-Signals, desto länger bleibt die Spannung während eines Zyklus eingeschaltet, wodurch der Motor mehr Energie erhält und sich schneller dreht.\\[0.5cm]
+			\vspace{10pt}
+			Damit die Phasen des Motors korrekt geschaltet werden, muss die genaue Position des Rotors im Inneren des Motors erfasst werden. Die genaue Position des Rotors wird durch Hallsensoren erfasst. Die drei Hallsensoren geben diese Informationen an die Steuerelektronik weiter. Mit diesen Daten kann die optimale Beschaltung der Phasen berechnet werden.\\[0.3cm]
+			Zur Steuerung der Drehzahl wird ein Pulsweitenmodulations-Signal (PWM-Signal) verwendet. Durch die PWM wird die Stromzufuhr zu den Phasen des Motors gesteuert. Wenn das Pulsweitenmodulations-Signal (PWM) erhöht wird, bedeutet das, dass die Phasen in kürzeren Abständen angesteuert werden. Dadurch erhält der Motor häufiger Energieimpulse, was zu einer höheren Drehzahl des Rotors führt. Das PWM-Signal regelt die Versorgungsspannung, indem es sie in schneller Folge ein- und ausschaltet. Je höher das Tastverhältnis des PWM-Signals, desto länger bleibt die Spannung während eines Zyklus eingeschaltet, wodurch der Motor mehr Energie erhält und sich schneller dreht.\\[0.3cm]
 			Auf diese Weise kann der Motor effizient mit variabler Geschwindigkeit betrieben werden.
 			
 			\begin{center}
@@ -366,7 +367,7 @@
 		\newpage
 		\subsubsection*{Richtungswechsel und Bremse}
 		\begin{itemize}
-			\item Die Platine verfügt über zwei Steuereingänge ein für Richtungswechsel (DIR) und eine Bremsfunktion (BRAKE).
+			\item Die Platine verfügt über zwei Steuereingänge, einen für Richtungswechsel (DIR) und eine Bremsfunktion (BRAKE).
 			\item Der Richtungswechsel erfolgt, indem das Signal bei dem Eingang von LOW auf HIGH oder umgekehrt wechselt. Das Umschalten der Richtung wechselt die Reihenfolge der Phasenströme, wodurch sich dann der Motor in die andere Richtung dreht.
 			\item Die Bremse reagiert auf ein HIGH-Signal. Das heißt wenn am Eingang ein HIGH-Signal angelegt wird, stoppt der Motor, indem die Wicklungen kurzgeschlossen werden.
 		\end{itemize}
@@ -520,7 +521,7 @@
 				\small Quelle: eigene Abbildung
 			\end{minipage}
 			
-		\subsection{Schaltungsaufbau mit vier Motor} %Felix
+		\subsection{Schaltungsaufbau mit vier Motoren} %Felix
 			
 			\subsubsection{Komponenten}
 			\begin{itemize}
@@ -1310,7 +1311,7 @@ Im HTML-Code wird die Status-Box als HTML \texttt{<span>}-Tag definiert. Für da
 		
 		\begin{enumerate}
 			\item Stabilität: Das Gehäuse muss das Eigengewicht des Roboters aber auch das Gewicht der Last aushalten.
-			\item Größe: Bei der Größe ist es wichtig darauf zu achten das alle Komponenten sich sehr gut im Gehäuse ausgehen.
+			\item Größe: Bei der Größe ist es wichtig darauf zu achten das alle Komponenten problemlos ins Gehäuse passen.
 			\item Fahrverhalten: Durch die Verwendung von vier Räder, die jeweils über einen Motor angetrieben werden, soll eine gute Manövrierfähigkeit erreicht werden.
 			\item Integration der Elektronik: Alle Komponenten müssen sicher im Gehäuse untergebracht werden.
 			\item Gewichtsmessung: Die Wägezelle muss in das Gehäuse integriert werden, um eine präzise Messung zu ermöglichen.
@@ -1451,7 +1452,7 @@ Im HTML-Code wird die Status-Box als HTML \texttt{<span>}-Tag definiert. Für da
 		\end{center} 
 	
 		\subsubsection*{Materialwahl für das Gehäuse}
-		Für das Gehäuse wurde Stahl als Hauptmaterial gewählt, weil es sehr robust und widerstandsfähig gegenüber äußeren Einflüssen ist. Ein weiter Grund, warum Stahl als Hauptmaterial verwendet wurde, ist die einfache Verarbeitung. Stahl kann man gut Schweißen aber auch verschrauben.
+		Für das Gehäuse wurde Stahl als Hauptmaterial gewählt, weil es sehr robust und widerstandsfähig gegenüber äußeren Einflüssen ist. Ein weiter Grund, warum Stahl als Hauptmaterial verwendet wurde, ist die einfache Verarbeitung. Stahl kann man gut schweißen aber auch verschrauben.
 		
 		\subsection{Realisierung} %Felix
 		Nach der abgeschlossenen Planungsphase begann die schrittweise Umsetzung des Baus des Lastenroboters. Dabei wurde besonders darauf geachtet, dass alle Komponenten präzise gefertigt und montiert wurden, um die gewünschte Stabilität, Funktionalität und Sicherheit zu gewährleisten. Der Bau des Gehäuses erfolgte in mehreren aufeinanderfolgenden Arbeitsschritten.
@@ -1491,7 +1492,7 @@ Im HTML-Code wird die Status-Box als HTML \texttt{<span>}-Tag definiert. Für da
 	
 	\subsubsection*{Funktionsweise des Elektrodenschweißens:}
 	
-	Beim Elektrodenschweißen wird ein elektrischer Lichtbogen zwischen der Stabelektrode und Material erzeugt. Durch die Hohe Temperatur des Lichtbogens schmilzt die Elektrode aber auch das Material. Die Elektrode besteht aus einem Metallkern und einer Umhüllung und liefert somit den Zusatzwerkstoff gleich mit.\\[0.5cm]
+	Beim Elektrodenschweißen wird ein elektrischer Lichtbogen zwischen der Stabelektrode und Material erzeugt. Durch die hohe Temperatur des Lichtbogens schmilzt die Elektrode aber auch das Material. Die Elektrode besteht aus einem Metallkern und einer Umhüllung und liefert somit den Zusatzwerkstoff gleich mit.\\[0.5cm]
 	Zum Schweißen wird die Stabelektrode in den Elektrodenhalter eingespannt und vom Schweißer an der Nahtstelle entlanggeführt. Die Umhüllung schmilzt während des Schweißens ab und schützt durch freiwerdende Gase und Schlacke das Schmelzbad und den Lichtbogen vor der Außenluft.\footnote{https://www.lorch.eu/de/produkte/manuelles-schweissen/elektroden-schweissen}
 	
 	\newpage
@@ -1828,7 +1829,7 @@ Im HTML-Code wird die Status-Box als HTML \texttt{<span>}-Tag definiert. Für da
 		\begin{equation}
 			V_{out} = 1.25V \times \left( 1 + \frac{R2}{R1} \right)
 		\end{equation}
-		Für die Platine wurde ein Spannungsregler entwickelt für 12 Volt auf 5 Volt. Das heißt Vout soll 5 Volt betragen. Damit man die Widerstände bestimmen kann, muss bei einem Widerstand ein Wert angenommen werden. In diesem Fall wurde für R1 der Wert von 270 Ohm festgelegt.
+		Für die Platine wurde ein Spannungsregler entwickelt der 12 Volt auf 5 Volt herunterregelt. Das heißt Vout soll 5 Volt betragen. Damit man die Widerstände bestimmen kann, muss bei einem Widerstand ein Wert angenommen werden. In diesem Fall wurde für R1 der Wert von 270 Ohm festgelegt.
 		\newpage
 		\begin{figure}[htbp]
 			\begin{minipage}[t]{6cm}
@@ -1868,16 +1869,18 @@ Im HTML-Code wird die Status-Box als HTML \texttt{<span>}-Tag definiert. Für da
 			\item \textbf{C1}: Stabilisiert die Eingangsspannung und filtert Störsignale.
 			\item \textbf{C3 \& C4}: Filtern Spannungsschwankungen am Ausgang und verbessern die Stabilität der 5V-Versorgung.
 		\end{itemize}
+		\newpage \noindent
 		
-		\subsubsection*{VCC\_5V (5V Spannungsversorgung)}
+		\subsubsection*{4) VCC\_5V (5V Spannungsversorgung)}
 
 		\begin{figure}[htbp]
-			\begin{minipage}[t]{6cm}
+			\begin{minipage}[t]{8cm}
 				\vspace{0pt}
 		Die Platine liefert geregelte 5V-Spannung zur Versorgung der entsprechenden Komponenten auf der Platine. Für externe Verbindungen stehen 6 Schraubklemmen zur Verfügung, zusätzlich gibt es 4 Pin-Header-Anschlüsse für weitere Verbindungen.			
 			\end{minipage}
+		\vspace{-5pt}
 		\hfill
-			\begin{minipage}[t]{6cm}
+			\begin{minipage}[t]{5cm}
 				\vspace{0pt}
 				\centering
 				\includegraphics[scale=0.7]{Pictures/Spannungsversorgung}
@@ -1889,9 +1892,8 @@ Im HTML-Code wird die Status-Box als HTML \texttt{<span>}-Tag definiert. Für da
 				\end{center}
 			\end{minipage}
 		\end{figure}
-		
+		\vspace{-5pt}
 		\subsubsection*{5) ESP32}
-		
 		\begin{center} 
 			\begin{minipage}[t]{0.5\textwidth}
 				\includegraphics{Pictures/Schaltplan-ESP32}
@@ -1904,7 +1906,7 @@ Im HTML-Code wird die Status-Box als HTML \texttt{<span>}-Tag definiert. Für da
 			\end{minipage} \\[0.75cm]
 		\end{center}
 		Der ESP32ist die wichtigste Komponente auf der Platine. Er übernimmt die Kommunikation zwischen den anderen Komponenten. Der ESP32verfügt über Wi-Fi, wodurch er sich ideal für IoT-Anwendungen eignet.\\[0.5cm]
-		Der ESP32 regelt die Batteriemessung und liest die Daten des HX711 ein. Er verfügt auch über eine I2C-Schnittstelle, die für die Wägezelle und das Expander-Board verwendet wird. Zusätzlich steuert der ESP32 die PWM-Signale für die Motorentreiber, um die Drehzahl der Motoren präzise zu regulieren.
+		Der ESP32 misst die Batteriespannung und liest die Daten des HX711 ein. Er verfügt auch über eine I2C-Schnittstelle, die für die Wägezelle und das Expander-Board verwendet wird. Zusätzlich steuert der ESP32 die PWM-Signale für die Motorentreiber, um die Drehzahl der Motoren präzise zu regulieren.
 		
 		\subsubsection*{6. ESP32-Anschlüsse}
 		
@@ -1937,7 +1939,7 @@ Im HTML-Code wird die Status-Box als HTML \texttt{<span>}-Tag definiert. Für da
 		Der MCP23017 ist ein I/O-Expander, der über den I2C-Bus mit dem ESP32 kommuniziert. Da der ESP32 nur eine begrenzte Anzahl an GPIOs besitzt, bietet der MCP23017 eine Erweiterung um 16 zusätzliche digitale Ein- und Ausgänge. Diese zusätzlichen GPIOs steuern die Richtung und die Bremsfunktion der Motoren. Aber auch das Licht wird über das Expander-Board gesteuert.\\[0.5cm]
 		Die Ausgänge des MCP23017 sind in zwei Gruppen unterteilt: A0–A7 und B0–B7.
 		
-		\subsubsection{8. Expander\_Anschlüsse (Zusätzliche GPIO-Erweiterung über MCP23017)}
+		\subsubsection{8. Expander\_Anschlüsse (GPIO-Erweiterung über MCP23017)}
 		
 		\begin{center} 
 			\begin{minipage}[t]{0.6\textwidth}
@@ -1966,7 +1968,7 @@ Im HTML-Code wird die Status-Box als HTML \texttt{<span>}-Tag definiert. Für da
 		\end{center}
 		Diese Schaltung dient zur Steuerung der Scheinwerfer des Lastenroboters. Ein NPN-Leistungstransistor (TIP120) übernimmt das Schalten der Beleuchtung. Der Basiswiderstand R6 begrenzt den Basisstrom des Transistors. Die Ansteuerung des Transistors erfolgt über das Expander-Board.
 		
-		\subsubsection*{Berechnung des Basiswiderstand:}
+		\subsubsection*{Berechnung des Basiswiderstands:}
 		Für die Berechnung des Basisstrom braucht man die Formel: 
 		
 		\begin{figure}[htbp]
@@ -2285,7 +2287,7 @@ Im HTML-Code wird die Status-Box als HTML \texttt{<span>}-Tag definiert. Für da
 					\end{center}
 				\end{minipage} \\[0.2cm]
 			\end{center}
-			Im JavaScript-Code wird die WebSocket-Verbindung zur ESP32-CAM gehandelt. In der Funktion \texttt{connectWebSocket\_cam()} wird zuerst ein WebSocket mit der eigenen IP-Adresse (da Webserver auf ESP32-CAM gehostet wird) und dem Port 81 geöffnet. Wenn nun eine Nachricht auf der WebSockte-Verbindung ankommt (siehe Videoübertragung \ref{subsec:Videoübertragung}) wird diese extrahiert. Das mitgesendete BLOB wird in einem neuem BLOB als jpeg-Bild gespeichert. Danach wird eine URL (Adresse) erstellt, die zu diesem BLOB führt. Dann wird eine Variable für die Videoübertragung im HTML \texttt{<img>}-Tag erstellt. Die Quelle dieses Bildes wird dann mit dem neuen, erhaltenen Bild ersetzt. Da die ESP32-CAM die ganze Zeit neue Blobs sendet, wird das Bild die ganze Zeit ersetzt, was dazu führt, dass es aussieht, als wäre es ein Video. \\[0.1cm]
+			Im JavaScript-Code wird die WebSocket-Verbindung zur ESP32-CAM gehandelt. In der Funktion \texttt{connectWebSocket\_cam()} wird zuerst ein WebSocket mit der eigenen IP-Adresse (da Webserver auf ESP32-CAM gehostet wird) und dem Port 81 geöffnet. Wenn nun eine Nachricht auf der WebSockte-Verbindung ankommt, wird diese extrahiert. Das mitgesendete BLOB wird in einem neuem BLOB als jpeg-Bild gespeichert. Danach wird eine URL (Adresse) erstellt, die zu diesem BLOB führt. Dann wird eine Variable für die Videoübertragung im HTML \texttt{<img>}-Tag erstellt. Die Quelle dieses Bildes wird dann mit dem neuen, erhaltenen Bild ersetzt. Da die ESP32-CAM die ganze Zeit neue Blobs sendet, wird das Bild die ganze Zeit ersetzt, was dazu führt, dass es aussieht, als wäre es ein Video. \\[0.1cm]
 			Wenn sich die ESP32-CAM verbindet, wird zu Debug-Zwecken eine Nachricht in der Webkonsole ausgegeben. Wenn die Verbindung zur ESP32-CAM verloren geht, wird wieder zu Debug-Zwecke eine Nachricht in der Webkonsole ausgegeben und ein neuer Verbindungsversuch wird nach 5 Sekunden gestartet.
 			\begin{center}
 				\begin{minipage}[t]{\textwidth}
@@ -2304,7 +2306,7 @@ Im HTML-Code wird die Status-Box als HTML \texttt{<span>}-Tag definiert. Für da
 				\subsubsection{Servomotor} %Daniel
 				Der SG90 ist ein kompakter Servomotor, der häufig in Modellbauprojekten eingesetzt wird. Aufgrund seiner geringen Größe und seines leichten Gewichts ist der Servomotor ideal für Anwendungen geeignet, die präzise Bewegungen erfordern.\\
 				Seine definierte Winkelsteuerung ermöglicht eine exakte Positionierung. Über den ESP32 kann der Motor so programmiert werden, dass er die Kamera auf eine gewünschte Position ausrichtet. \\
-				Der SG90 ist ein per PWM-Signal gesteuerter Servomotor, dessen Position durch einen Winkel zwischen 0° und 180° festgelegt wird. Zusätzlich gibt es Servomotoren mit einem Drehbereich von 360°, die in der Richtung, und auch in der Drehgeschwindigkeit gesteuert werden können.
+				Der SG90 ist ein per PWM-Signal gesteuerter Servomotor, dessen Position durch einen Winkel zwischen 0° und 180° festgelegt wird. Zusätzlich gibt es Servomotoren mit einem Drehbereich von 360°, die in der Richtung als auch  in der Drehgeschwindigkeit gesteuert werden können.
 				\subsubsection*{Die Anschlussbelegung des SG90-Servomotors ist wie folgt:}
 				\begin{itemize}
 					\item \textbf{Rot}: VCC (ca. 5 Volt)
@@ -2326,8 +2328,8 @@ Im HTML-Code wird die Status-Box als HTML \texttt{<span>}-Tag definiert. Für da
 				
 				\subsubsection{Nutzung} %Daniel
 				Der SG90-Servomotor wird genutzt, um die Kamera an der Front des Roboters zu steuern und horizontal von links nach rechts zu schwenken. Dadurch wird das Sichtfeld vergrößert, was eine bessere Übersicht über die Umgebung ermöglicht. \\
-				Diese Funktion ist besonders hilfreich, da der Roboter dadurch präziser gesteuert und manövriert werden kann, ohne direkten Sichtkontakt zu haben.\\
-				Außerdem lassen sich durch das erweiterte Blickfeld, Hindernisse besser erkennen und Ausweichmanöver gezielt durchführen.
+				Diese Funktion ist besonders hilfreich, da der Roboter dadurch präziser gesteuert und manövriert werden kann ohne direkten Sichtkontakt zu haben.\\
+				Außerdem lassen sich durch das erweiterte Blickfeld Hindernisse besser erkennen und Ausweichmanöver gezielt durchführen.
 				\subsubsection{Verbindung und Steuerung des Servomotors} %Daniel
 				
 				Der Servomotor wurde mit dem ESP32 folgend verbunden:
@@ -2820,7 +2822,7 @@ Im HTML-Code wird die Status-Box als HTML \texttt{<span>}-Tag definiert. Für da
 			\end{minipage}
 		\end{center}
 		\newpage \noindent
-		Dann werden der berechnete Akkustand \texttt{akku\_round} und der Gewichtswert (\texttt{weight}) \footnote{Siehe Kapitel~8.2 für Details zur Gewichtsmessung} in Strings umgewandelt und anschließend in eine JSON-formatierte Nachricht verpackt. Die Nachricht enthält zwei Schlüssel: "battery" und "weight", denen die entsprechenden Werte als Text zugewiesen werden.\\
+		Dann werden der berechnete Akkustand \texttt{akku\_round} und der Gewichtswert (\texttt{weight}) \footnote{Siehe Kapitel~8.2 für Details zur Gewichtsmessung} in Strings umgewandelt und anschließend in eine JSON-formatierte Nachricht verpackt. Die Nachricht enthält zwei Schlüssel: ``battery'' und ``weight'', denen die entsprechenden Werte als Text zugewiesen werden.\\
 		Diese Nachricht wird dann über eine WebSocket-Verbindung mit \texttt{websocket.broadcastTXT()} an den verbundenen Client gesendet. Dadurch sieht man dann auf der Website den Akkustand der Batterie.\\
 		\begin{center}
 			\begin{minipage}{1\textwidth}
@@ -2931,15 +2933,15 @@ Im HTML-Code wird die Status-Box als HTML \texttt{<span>}-Tag definiert. Für da
 	 	
 	 Bibliotheken sind ein weiterer wichtiger Bestandteil für das Programmieren. Bibliotheken beinhalten bereits eine Sammlung von vorgefertigtem Code, der für bestimmte Aufgaben, wie zum Beispiel zum Auswerten eines Sensors, verwendet werden kann. Bibliotheken werden verwendet, um den Code zu minimieren und dadurch die Lesbarkeit sowie die Effizienz zu steigern. Um eine Bibliothek für PlatformIO in VS-Code zu installieren, muss das PIO Home Menü geöffnet werden. Darin befindet sich der Reiter „Libraries“. Wenn dieses geöffnet wird, erscheint eine Suchleiste, mit der die gewünschten Bibliotheken zum Projekt hinzugefügt werden können.
 	 
-		\subsubsection{verwendete Bibliotheken}
+		\subsubsection{Verwendete Bibliotheken}
 		
 			\subsubsection*{ESPAsyncWebServer}
 			
-	Die ESPAsnycWebServer Bibliothek ermöglicht es, Webanwendungen effizient und mit hoher Performance auf ESP8266- und ESP32 Mikrocontroller zu hosten. Der Asynchrone Betrieb verhindert Blockierungen und sorgt für eine flüssige Verarbeitung mehrere Anfragen gleichzeitig. Außerdem unterstützt die Bibliothek WebSockets, welche für die Echtzeitkommunikation zwischen Client und Server benötigt wurden. Die Bibliothek ist eine leistungsfähigere Alternative zur klassischen WebServer-Bibliothek, da sie ressourcenschonender und nicht blockieren arbeitet.\footnote{https://github.com/lacamera/ESPAsyncWebServer}
+	Die ESPAsnycWebServer Bibliothek ermöglicht es, Webanwendungen effizient und mit hoher Performance auf ESP8266- und ESP32 Mikrocontroller zu hosten. Der asynchrone Betrieb verhindert Blockierungen und sorgt für eine flüssige Verarbeitung mehrere Anfragen gleichzeitig. Außerdem unterstützt die Bibliothek WebSockets, welche für die Echtzeitkommunikation zwischen Client und Server benötigt wurden. Die Bibliothek ist eine leistungsfähigere Alternative zur klassischen WebServer-Bibliothek, da sie ressourcenschonender und nicht blockieren arbeitet.\footnote{https://github.com/lacamera/ESPAsyncWebServer}
 	
 			\subsubsection*{ArduinoJSON}
 			
-	Die ArduinoJson Bibliothek ermöglicht die Verarbeitung von JSON-String in Objekte und umgekehrt. Sie ist speziell für Geräte mit begrenztem Speicher und Rechenleistung optimiert. Die Bibliothek wird benötigt, um die erhaltenen Steuerbefehle am ESp32 zu konvertieren und um sie anschließend weiterzuverarbeiten.\footnote{https://arduinojson.org/}
+	Die ArduinoJson Bibliothek ermöglicht die Verarbeitung von JSON-String in Objekte und umgekehrt. Sie ist speziell für Geräte mit begrenztem Speicher und Rechenleistung optimiert. Die Bibliothek wird benötigt, um die erhaltenen Steuerbefehle am ESP32 zu konvertieren und um sie anschließend weiterzuverarbeiten.\footnote{https://arduinojson.org/}
 			
 			\subsubsection*{HCSR04}
 	Die HCSR04.h-Bibliothek ermöglicht es mit einem ESP32, das HC-SR04 Ultraschallmodul zur Entfernungsmessung zu nutzen. Sie erlaubt die Verwendung mehrerer Sensoren gleichzeitig, um die aktuelle Distanz in cm zu erfassen. \footnote{https://docs.arduino.cc/libraries/hcsr04-ultrasonic-sensor/}
@@ -2947,7 +2949,7 @@ Im HTML-Code wird die Status-Box als HTML \texttt{<span>}-Tag definiert. Für da
 			
 	Die WebSockets Bibliothek ermöglicht eine Kommunikation über das WebSocket Protokoll für Arduino-Boards, ESP8266 und ESP32. Die Bibliothek wird für die Echtzeit-Kommunikation zwischen dem Webserver und den ESP32 benötigt. Außerdem werden die Bilder der ESP32-CAM über einen WebSocket an den Webserver gesendet. Die Bibliothek ist eine großartige Ergänzung zur ESPAsyncWebServer Bibliothek.\footnote{https://github.com/Links2004/arduinoWebSockets}
 			
-			\subsubsection*{ESp32Servo}
+			\subsubsection*{ESP32Servo}
 	Die ESP32Servo-Bibliothek ermöglicht es, Servomotoren mit einem ESP32 einfach zu steuern. Sie unterstützt viele Servotypen und funktioniert ähnlich wie die Arduino Servo-Bibliothek \footnote{https://docs.arduino.cc/libraries/servo/}. Zusätzlich bietet sie zwei Funktionen zur Anpassung der PWM-Timerbreite des ESP32 für genauere Steuerung. \footnote{https://github.com/madhephaestus/ESP32Servos}
 			
 			\subsubsection*{Adafruit\_MCP23x17}
